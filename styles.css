@@ -1,0 +1,1107 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: igra-sans;
+}
+
+html {
+    background-color: #33333333;
+}
+
+body {
+    background-color:white;
+    max-width: 1200px;
+}
+
+section {
+    background-color: white;
+}
+
+@font-face {
+    font-family: igra-sans;
+    src: url("fonts/IgraSans.otf");
+}
+
+section.full-section {
+    width: 100%;
+    height: 100%;
+}
+
+section#attractive-direction {
+    background: #393939;
+}
+
+section#quote-with-four-men {
+    background: linear-gradient(236.63deg, rgba(0, 0, 0, 0) 41.75%, rgba(0, 0, 0, 0.7) 100%);
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+section#quote-with-four-men img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section#quote-with-four-men div.quote {
+    position: absolute;
+    top: 0;
+    left: 0;
+    align-content: center;
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    font-size: 33px;
+    background: linear-gradient(236.63deg, rgba(0, 0, 0, 0) 41.75%, rgba(0, 0, 0, 0.7) 100%);
+    background-blend-mode: multiply;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+section#quote-with-four-men div.quote .left {
+    text-align: left;
+    padding-left: 11%;
+}
+
+section#quote-with-four-men div.quote .right {
+    text-align: right;
+    padding-right: 11%;
+}
+
+section#quote-with-four-men div.quote-sign {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 80px;
+    padding-bottom: 80px;
+    color: white;
+}
+
+section#main-page {
+    background-image: url("images/first_section_bg.png");
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+section#main-page header {
+    width: 100%;
+    height: 76px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    background-repeat: linear-gradient(360deg, rgba(57, 57, 57, 0) 0%, #393939 100%);
+    border: 1px solid #000000;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+div#greetings {
+    padding-top: 76px;
+    width: 100%;
+    height: 100%;
+    color: white;
+}
+
+div#text {
+    font-size: 48px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 78px;
+    padding-top: 95px;
+    line-height: 1.3;
+}
+
+span#for-life::before {
+    content: url("images/for_life_before.png");
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    margin-right: 11px;
+}
+
+section#company-owner {
+    display: flex;
+
+}
+
+section#company-owner div#i-know-everything {
+    padding-top: 80px;
+    padding-left: 80px;
+    height: auto;
+    position: relative;
+}
+
+section#company-owner div#picture {
+    position: relative;
+    width: auto;    height: auto;
+
+}
+
+section#company-owner #owner-bage {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-left: 1%;
+    padding-bottom: 1%;
+
+}
+
+#investment-info {
+    padding-top: 80px;
+    padding-left: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+}
+
+section#company-owner .quote-sign {
+    position: absolute;
+    top: 0;
+    padding-left: 8px;
+    color: white;
+    font-size: 0.78em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
+
+}
+
+#best-points {
+    background-color: #fdfdfd;
+    padding: 80px;
+}
+  
+#best-points .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+#best-points h2 {
+    font-size: 36px;
+    text-align: left;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+}
+  
+#best-points h2 img {
+    margin-right: 15px;
+}
+  
+#best-points .grid {
+    display: grid;
+    grid-template-columns: repeat(22, 1fr);
+    gap: 40px;
+}
+
+#best-points .grid-item {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    height: 90px;
+    justify-content: space-between;
+}
+  
+  /* Пример распределения долей для элементов */
+  #best-points .item1 {
+    grid-column: span 7;
+    grid-row: span 1;
+
+}
+  
+  #best-points .item2 {
+    grid-column: span 8;
+    grid-row: span 1;
+
+}
+  
+  #best-points .item3 {
+    grid-column: span 7;
+    grid-row: span 1;
+
+}
+  
+  #best-points .item4 {
+    grid-column: span 9;
+    grid-row: span 1;
+
+}
+  
+  #best-points .item5 {
+    grid-column: span 6; /* 6 долей */
+    grid-row: span 1;
+  }
+  
+  #best-points .item6 {
+    grid-column: span 7;
+    grid-row: span 1;
+
+}
+  
+  #best-points .item7 {
+    grid-column: span 7;
+    grid-row: span 1;
+
+}
+  
+  #best-points .item8 {
+    grid-column: span 8; /* 8 долей */
+    grid-row: span 1;
+  }
+  
+  #best-points .cta {
+    grid-column: span 7;
+    grid-row: span 1;
+    background-color: #27ABC1;
+    background-image: url("images/rectangle-palms.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+  
+  #best-points .grid-item.cta p {
+    margin-bottom: 10px;
+    font-family: igra-sans;
+    font-size: 16px;
+    line-height: 100%;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+    position: relative;
+    padding-top: 18px;
+
+}
+  
+  #best-points .cta button {
+    color: #fff;
+    cursor: pointer;
+    background-color: #27ABC1;
+    width: 45%;
+    height: 26px;
+    border-radius: 14px;
+    border: 1px solid white;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 9px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    padding-left: 13px;
+
+}
+  
+  #best-points .cta button:hover {
+    background-color: #138496;
+  }
+
+  .cta p::before {
+    content: '';
+    position: absolute;
+    top: -7px;
+    left: 0;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.cta button::after {
+    content: '→';
+    font-size: 18px;
+    margin-left: 10px;
+    color: white;
+    font-weight: 300;
+    width: auto;
+
+}
+
+  #best-points .grid-item h3:first-of-type {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #393939;
+    margin: 0;
+
+}
+
+#best-points .grid-item h3:nth-of-type(2) {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-feature-settings: 'liga' off;
+    color: #27ABC1;
+    margin: 0;
+    padding-top: 10px;
+
+}
+
+#best-points .grid-item p {
+    font-family: 'Commissioner';
+    font-size: 12px;
+    line-height: 130%;
+    color: #393939;
+    margin: 0;
+
+}
+
+#best-points .container > h2 {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #393939;
+    margin: 0;
+}
+
+#best-points .container > h2:nth-of-type(2)::before {
+    content: url("images/rectangle-points-fron-denis.png");
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    height: 36px;
+    margin-right: 11px;
+}
+
+#best-points .container > h2:nth-of-type(2) {
+    margin-bottom: 25px;
+}
+
+#investment-info {
+
+}
+
+#investment-info .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#investment-info .text-content h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+#investment-info .details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  text-align: left;
+}
+
+#investment-info > p {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #393939;
+}
+
+#investment-info .detail-item h3 {
+  font-size: 16px;
+  color: #28a745;
+  margin: 0;
+  font-weight: 400;
+}
+
+#investment-info .detail-item p {
+    color: #333;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 130%;
+}
+
+#investments-base img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+#investments-base {
+    background: linear-gradient(286.18deg, rgba(0, 0, 0, 0) 44.31%, rgba(0, 0, 0, 0.4) 80.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+    background-blend-mode: multiply, multiply, normal;
+    position: relative;
+    height: auto;
+}
+
+#investments-base .quote {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-left: 80px;
+    padding-top: 80px;
+
+}
+
+#investments-base .quote p.title {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+#investments-base .quote p.description {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin: 0;
+
+}
+
+/* форма с подборкой */
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-text {
+    padding-top: 20px;
+    padding-left: 20px;
+
+}
+
+.form-text p {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.form-inputs {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    padding: 20px 20px 0 20px;
+
+}
+
+.form-input, .form-select {
+    padding: 10px 20px;
+    outline: none;
+    box-sizing: border-box;
+    border: 1px solid #FCBD21;
+    border-radius: 30px;
+    height: 26px;
+    background-color: #0000;
+    width: 19%;
+
+}
+
+.form-actions {
+    margin-left: 10px;
+    width: 175px;
+
+}
+
+.form-button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #959595;
+    border-radius: 50px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+.form-button::after {
+    content: '→';
+    color: white;
+    font-weight: 300;
+    margin-left: 5px;
+    font-size: 18px;
+
+}
+
+.form-agreement {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 120%;
+    text-align: center;
+    color: #959595;
+    display: flex;
+    margin-top: 2px;
+}
+
+.form-agreement label {
+    margin-top: 3px;
+}
+
+.form-agreement input {
+    /* margin-right: 5px; */
+    background-color: #0000;
+    border: 1px solid yellow;
+    appearance: initial;
+    width: 10px;
+    min-width: 10px;
+    height: 10px;
+    min-height: 10px;
+
+}
+
+/* форма с подборкой */
+
+#get-properties {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    margin-bottom: 80px;
+    margin-left: 80px;
+    height: 140px;
+    background: #393939;
+    opacity: 0.9;
+    border-radius: 20px;
+    width: 86%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* Основные стили для секции с ID prices-and-benefits */
+#prices-and-benefits .header-section {
+    padding: 80px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin-bottom: 20px;
+
+}
+
+#prices-and-benefits .header-content h1 {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #393939;
+    margin: 0;
+
+}
+
+#prices-and-benefits .header-content p {
+    margin: 0;
+    margin-left: 45px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 130%;
+    color: #393939;
+
+}
+
+#prices-and-benefits .quiz-section p {
+    width: auto;
+    margin: 20px 20px 0 20px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #393939;
+
+}
+
+#prices-and-benefits .quiz-section .quiz-progress {
+
+}
+
+#prices-and-benefits .quiz-section .quiz-question {
+
+}
+
+#prices-and-benefits .quiz-section {
+    margin-top: 20px;
+    background-image: url("images/palms-investments.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+#prices-and-benefits .quiz-progress {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: baseline;
+    position: relative;
+    justify-content: revert;
+
+}
+
+#prices-and-benefits .quiz-progress span {
+    margin-right: 10px;
+    background: #D7D9D8;
+    border-radius: 30px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    color: #393939;
+    width: 40px;
+    margin: 20px 20px 0 20px;
+
+}
+
+#prices-and-benefits .progress-bar {
+    height: 5px;
+    background-color: #CAE7D4;;
+    border-radius: 5px;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    position: relative;
+    align-self: center;
+
+}
+
+#prices-and-benefits .progress {
+    width: 20%;
+    height: 100%;
+    background-color: #4caf50;
+    margin: 0;
+    padding: 0;
+
+}
+
+#prices-and-benefits .quiz-question p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#prices-and-benefits .quiz-question p.green-question {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-feature-settings: 'liga' off;
+    color: #299948;
+    margin: 20px 20px 0 20px;
+
+}
+
+#prices-and-benefits .quiz-options {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+
+}
+
+#prices-and-benefits .quiz-option {
+    padding: 10px 0;
+    background-color: #fff;
+    border: 1px solid #4caf50;
+    cursor: pointer;
+    color: #4caf50;
+    text-align: center;
+    width: auto;
+    min-width: 70px;
+    height: 26px;
+    border-radius: 50px;
+    line-height: 100%;
+    padding: 0;
+    color: black;
+
+}
+
+#prices-and-benefits .next-button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 26px;
+    padding: 0;
+    width: auto;
+    min-width: 100px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 100%;
+    color: #FFFFFF;
+
+}
+
+#prices-and-benefits .content-section {
+    display: flex;
+    gap: 20px;
+    padding: 80px;
+    background-color: #fff;
+    border-radius: 15px;
+
+}
+
+#prices-and-benefits .image-content img {
+    border-radius: 15px;
+    max-width: 100%;
+    height: auto;
+}
+
+#prices-and-benefits .text-content h2 {
+    margin: 0;
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #393939;
+
+}
+
+#prices-and-benefits .text-content h2:nth-of-type(2)::before {
+    content: url("images/price-garant.png");
+    display: inline-block;
+    position: relative;
+    top: 3px;
+    height: 36px;
+    margin-right: 11px;
+}
+
+#prices-and-benefits .text-content p {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #393939;
+    margin: 0;
+    margin-top: 10px;
+
+}
+
+#prices-and-benefits .fact-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+#prices-and-benefits .fact-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#prices-and-benefits .fact-number {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#prices-and-benefits .fact-short {
+    font-size: 18px;
+    color: #008080;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#prices-and-benefits .fact-long {
+    font-size: 16px;
+    color: #666;
+}
+
+
+#prices-and-benefits .fact-list {
+    margin-top: 20px;
+}
+
+#prices-and-benefits .fact-item {
+    margin-bottom: 15px;
+}
+
+#prices-and-benefits .fact-item p {
+    margin: 0;
+    font-size: 16px;
+    color: #333;
+}
+
+#prices-and-benefits .fact-item p.number {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #393939;
+}
+
+#prices-and-benefits .fact-item p.little-title {
+    margin-top: 10px;
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #27ABC1;
+}
+
+#prices-and-benefits .fact-item p.little-description {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #393939;
+}
+
+#prices-and-benefits .fact-item strong {
+    font-size: 18px;
+    color: #008080;
+}
+
+#prices-and-benefits .header-content {
+    display: flex;
+    align-items: self-end;
+}
+
+#prices-and-benefits .text-content {
+    margin-left: 40px;
+    margin-top: 11px;
+}
+
+#check-objects .header-section {
+    padding: 80px;
+    background-color: #fff;
+    /* border-radius: 15px; */
+    margin-bottom: 20px;
+    background: url("images/check-objects-bg.png");
+    width: auto;
+    height: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+#check-objects .header-content {
+    display: flex;
+    align-items: end;
+
+}
+
+#check-objects .header-content h3 {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: white;
+    margin: 0;
+    width: auto;
+
+}
+
+#check-objects .header-content p {
+    margin: 0;
+    margin-left: 45px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 130%;
+    color: white;
+    bottom: 10px;
+    position: relative;
+
+}
+
+#check-objects .quiz-section p {
+    width: auto;
+    margin: 20px 20px 0 20px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: white;
+
+}
+
+#check-objects .quiz-section {
+    margin-top: 20px;
+    background-image: url("images/palms-investments.png");
+    background-repeat: no-repeat;
+    background-position: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    background: #393939;
+    opacity: 0.9;
+    box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+
+}
+
+#check-objects .quiz-progress {
+    display: flex;
+    margin-bottom: 20px;
+    flex-direction: column;
+    align-items: baseline;
+    position: relative;
+    justify-content: revert;
+}
+
+#check-objects .quiz-progress span {
+    margin-right: 10px;
+    background: #D7D9D8;
+    border-radius: 30px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    color: #393939;
+    width: 40px;
+    margin: 20px 20px 0 20px;
+}
+
+#check-objects .progress-bar {
+    height: 5px;
+    overflow: hidden;
+    width: calc(100% - 40px);
+    margin-top: 20px;
+    position: relative;
+    align-self: center;
+    border-radius: 20px;
+    background-color: rgba(252, 189, 33, 0.3);
+
+}
+
+#check-objects .progress {
+    width: 33%;
+    height: 100%;
+    background-color: #4caf50;
+    margin: 0;
+    padding: 0;
+    background: #FCBD21;
+    border-radius: 20px;
+
+}
+
+#check-objects .quiz-question p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#check-objects .quiz-question p.green-question {
+    margin: 20px 20px 0 20px;
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-feature-settings: 'liga' off;
+    color: #FCBD21;
+
+}
+
+#check-objects .quiz-options {
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#check-objects .quiz-option {
+    background-color: #0000;
+    border: 1px solid #FCBD21;
+    cursor: pointer;
+    text-align: center;
+    width: auto;
+    min-width: 70px;
+    height: 26px;
+    border-radius: 50px;
+    line-height: 100%;
+    padding: 0;
+    color: #FCBD21;
+
+}
+
+#check-objects .next-button {
+    background-color: #ccc;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    height: 26px;
+    padding: 0;
+    width: auto;
+    min-width: 100px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    line-height: 100%;
+    color: #393939;;
+
+}
+
+
+@media (max-width: 768px) {
+    #investment-info .details-grid {
+        grid-template-columns: 1fr; /* Одна колонка на маленьких экранах */
+        grid-template-rows: auto;
+    }
+}
+
+
