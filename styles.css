@@ -920,7 +920,7 @@ section#company-owner .quote-sign {
     padding: 80px;
     background-color: #fff;
     /* border-radius: 15px; */
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     background: url("images/check-objects-bg.png");
     width: auto;
     height: 100%;
@@ -1092,8 +1092,482 @@ section#company-owner .quote-sign {
     font-weight: 500;
     font-size: 9px;
     line-height: 100%;
-    color: #393939;;
+    color: #393939;
+}
 
+section#additional-company-info {
+    background-color: #393939;
+    padding: 80px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+
+}
+
+section#additional-company-info > h2 {
+    font-family: igra-sans;
+    font-size: 36px;
+    line-height: 100%;
+    color: #FFFFFF;
+    font-weight: 400;
+
+}
+
+section#additional-company-info > h2::before {
+    content: url("images/black-badge.png");
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    margin-right: 11px;
+}
+
+section#additional-company-info div.awards-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section#additional-company-info div.award-card {
+    width: 300px;
+}
+
+section#additional-company-info div.award-card.big {
+    width: 360px;
+    background-color: #00000066;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+
+section#additional-company-info div.award-card p {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-feature-settings: 'liga' off;
+    color: white;
+}
+
+section#additional-company-info div.award-card.big p {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-feature-settings: 'liga' off;
+    color: #FCBD21;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+section#additional-company-info div.conference-logos {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+section#additional-company-info div.conference-logos img {
+    max-height: 34px;
+    height: auto;
+    width: auto;
+}
+
+section#additional-company-info div.award-card p span {
+    color: #FCBD21;
+}
+
+section#additional-company-info > h3 {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+section#additional-company-info div.countries-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+section#additional-company-info div.country-card {
+    width: 260px;
+    padding: 20px;
+    height: 90px;
+    background-color: white;
+    box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+section#additional-company-info div.country-card.big {
+    width: 320px;
+}
+
+section#additional-company-info div.country-card div.header {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-feature-settings: 'liga' off;
+    color: #393939;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+section#additional-company-info div.country-card div.header div.agent-flags img {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+
+}
+
+section#additional-company-info div.country-card div.header > h4 {
+    margin: 0;
+}
+
+section#additional-company-info div.country-card .agent-info {
+    display: flex;
+    align-items: self-end;
+
+}
+
+section#additional-company-info div.country-card .agent-info img {
+    width: 64px;
+    height: 64px;
+
+}
+
+section#additional-company-info div.country-card .agent-info .agent-details {
+    margin-left: 15px;
+}
+
+section#additional-company-info div.country-card .agent-info .agent-details p.agent-name {
+    margin: 0;
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-feature-settings: 'liga' off;
+    color: #299948;
+}
+
+section#additional-company-info div.country-card .agent-info .agent-details p.agent-position {
+    margin: 0;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;/
+    color: #393939;
+}
+
+section#tenth-section {
+    background-color: #393939;
+
+}
+
+section#tenth-section div.header {
+    display: flex;
+    align-items: end;
+    padding: 50px 80px;
+    padding-bottom: 20px;
+
+}
+
+p#main-thought {
+    margin: 0;
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #FFFFFF;
+    min-width: 68%;
+
+}
+
+p#main-thought span {
+    
+}
+
+p#main-thought-comment {
+    margin: 0;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #FFFFFF;
+
+}
+
+section#tenth-section div.content {
+    background: url("images/10-section-bg.png");
+    height: 418px;
+    width: auto;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+
+}
+
+section#tenth-section div.content .block-link {
+    height: 114px;
+    margin-right: 80px;
+    width: 180px;
+    border-radius: 15px;
+    padding: 20px;
+
+}
+
+section#tenth-section div.content .block-link:nth-of-type(2) {
+    margin-bottom: 80px;
+    margin-top: 30px;
+    background: #27ABC1;
+}
+
+section#tenth-section div.content .block-link:first-of-type {
+    margin-top: 80px;
+    background-color: #393939;
+}
+
+
+section#tenth-section div.content .block-link p {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-feature-settings: 'liga' off;
+    color: #FFFFFF;
+    margin: 0;
+    margin-bottom: 16px;
+
+}
+
+section#tenth-section div.content .block-link span {
+    box-sizing: border-box;
+    border: 1px solid #FFFFFF;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 90px;
+    height: 26px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: inline-block;
+    line-height: 26px;
+    text-align: center;
+
+}
+
+section#tenth-section div.content .block-link span:after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 4px;
+    margin-left: 10px;
+    background-image: url("images/button-right-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+section#our-partners {
+    display: flex;
+    flex-direction: column;
+    padding: 0 80px;
+
+}
+
+section#our-partners h3 {
+    margin: 0;
+    margin-top: 100px;
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    text-align: center;
+    color: #393939;
+
+}
+
+section#our-partners p {
+    margin-top: 10px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    text-align: center;
+    color: #393939;
+
+}
+
+section#our-partners #partners-carousel {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+section#our-partners #partners-carousel img {
+    width: 134px;
+    height: auto;
+}
+
+section#news {
+    padding: 80px;
+
+}
+
+section#news div.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-bottom: 10px;
+
+}
+
+section#news div.header p {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    color: #393939;
+    margin: 0;
+    
+
+}
+
+section#news div.header > p > span::before {
+    content: url("images/news-title-badge.png");
+    display: inline-block;
+    position: relative;
+    top: 6px;
+    margin-right: 11px;
+    max-width: 97px;
+    max-height: 27px;
+    width: auto;
+    height: auto;
+
+}
+
+section#news div.header > span {
+    border: 1px solid #299948;
+    border-radius: 50px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #393939;
+    display: inline-block;
+    width: 132px;
+    height: 26px;
+    line-height: 26px;
+    cursor: pointer;
+
+}
+section#news div.header > span:after {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 4px;
+    margin-left: 10px;
+    background-image: url("images/black-right-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: translateY(-1px);
+}
+
+section#news div#news-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+section#news div#news-list div.news-block-link {
+    display: flex;
+    flex-direction: column;
+    height: 373px;
+    width: 245px;
+    background: #FFFFFF;
+    box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+
+}
+
+section#news div#news-list div.news-block-link .image-wrapper {
+    width: 100%;
+    height: auto;
+}
+
+section#news div#news-list div.news-block-link .image-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+section#news div#news-list .news-date {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 100%;
+    color: #D7D9D8;
+    margin-left: 20px;
+    display: block;
+    margin-top: 15px;
+}
+
+section#news div#news-list .news-title {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    font-feature-settings: 'liga' off;
+    color: #393939;
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+section#news div#news-list .news-description {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #393939;
+    padding-bottom: 20px;
+    margin: 0;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 4px;
 }
 
 
