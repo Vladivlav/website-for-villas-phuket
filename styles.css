@@ -209,10 +209,45 @@ div#greetings {
     color: white;
 }
 
+div#greetings .yellow-link {
+    background: #FCBD21;
+    border-radius: 50px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: #393939;
+    width: 200px;
+    display: flex;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
+    margin-left: 80px;
+    margin-top: 30px;
+
+}
+
+div#special-offer-slider > span {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+}
+
+div#special-offer-slider > span:before {
+    content: url("images/passport-only-mark.svg");
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+}
+
 div#text {
     display: flex;
     flex-direction: column;
-    padding-left: 78px;
+    padding-left: 80px;
     padding-top: 95px;
     font-family: igra-sans;
     font-style: normal;
@@ -220,6 +255,7 @@ div#text {
     font-size: 48px;
     line-height: 48px;
     color: #FFFFFF;
+
 }
 
 div#location_tag {
@@ -232,6 +268,89 @@ div#location_tag {
     margin-bottom: 11px;
 }
 
+div#location_tag::before {
+    content: url("images/location-mark.svg");
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+}
+
+div#special-offer-slider {
+    margin-top: 15px;
+    padding: 0 80px;
+
+}
+
+div#special-offer-slider > p {
+    margin: 0;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+
+}
+
+div#special-offer-slider div.stats {
+    display: flex;
+
+}
+
+div#special-offer-slider div.stats .rent-stats {
+    height: 70px;
+    margin-right: 10px;
+    background-image: url("images/rent-stats-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0 15px;
+
+}
+
+div#special-offer-slider div.stats .sale-stats {
+    height: 70px;
+    margin-right: 10px;
+    background-image: url("images/sale-stats-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    padding: 0 15px;
+
+}
+
+div#special-offer-slider div.stats .digits {
+    margin: 0;
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: #FCBD21;
+    margin-top: 15px;
+
+}
+
+div#special-offer-slider div.stats .digits-description {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 16px;
+    color: #FFFFFF;
+    margin: 0;
+    position: relative;
+    bottom: 7px;
+
+}
+
+
+
 span#for-life::before {
     content: url("images/for_life_before.png");
     display: inline-block;
@@ -242,7 +361,6 @@ span#for-life::before {
 
 section#company-owner {
     display: flex;
-
 }
 
 section#company-owner div#i-know-everything {
