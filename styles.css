@@ -75,6 +75,182 @@ section.full-section {
 
 section#attractive-direction {
     background: #393939;
+    position: relative;
+
+}
+
+section#attractive-direction .fact-container {
+    display: none;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+    padding: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+section#attractive-direction .fact-container.current {
+    display: grid;
+}
+
+section#attractive-direction .fact-container .fact-left-part {
+    grid-column: span 6;
+    grid-row: span 1;
+    background-image: url("images/fact-1-bg.png");
+    background-size: 620px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    top: 10px;
+    max-width: 620px;
+    max-height: 296px;
+}
+
+section#attractive-direction .fact-container .fact-left-part.second {
+    background-image: url("images/fact-2-bg.png");
+}
+
+section#attractive-direction .fact-container .fact-left-part.third {
+    background-image: url("images/fact-3-bg.png");
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-text {
+    height: 204px;
+    width: 300px;
+    background-color: white;
+    display: flex;
+    border-radius: 15px;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-end;
+
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-footer {
+    display: flex;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-footer p {
+    margin: 20px;
+    max-width: 66%;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 120%;
+    color: #FFFFFF;
+
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button {
+    border-radius: 50px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #299948;
+    display: inline-block;
+    width: 132px;
+    height: 26px;
+    line-height: 26px;
+    cursor: pointer;
+    max-width: 123px;
+    max-height: 26px;
+    margin: auto 0;
+    margin-right: 20px;
+    background-color: white;
+
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button:after {
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    background-image: url("images/green-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 4px;
+    position: relative;
+    top: -1px;
+
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-text .fact-badge {
+    width: 64px;
+    height: 18px;
+    background: #393939;
+    border-radius: 20px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 18px;
+    color: #D7D9D880;
+    display: inline-block;
+    text-align: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
+    content: url("images/fact-info-badge.svg");
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge.no-info-badge::before {
+    content: '';
+    margin: 0;
+
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge {
+    margin-left: 20px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    color: #393939;
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge:last-of-type {
+    margin-bottom: 20px;
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-text p {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #299948;
+    margin: 0 20px;
+}
+
+section#attractive-direction .fact-container .fact-right-part {
+    grid-column: span 4;
+    grid-row: span 1;
+
+}
+
+section#attractive-direction .fact-container .fact-right-part img {
+    width: 100%;
+    height: auto;
+    max-width: 400px;
+
 }
 
 section#quote-with-four-men {

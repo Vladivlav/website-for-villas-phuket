@@ -12,3 +12,24 @@ faqItems.forEach(item => {
         }
     });
 });
+
+
+  const factContainers = document.querySelectorAll('.fact-container');
+
+  function showNextFact() {
+    const current = document.querySelector('.fact-container.current');
+    let next;
+
+    if (current.nextElementSibling && current.nextElementSibling.classList.contains('fact-container')) {
+      next = current.nextElementSibling;
+    } else {
+      next = factContainers[0];
+    }
+
+    current.classList.remove('current');
+    next.classList.add('current');
+  }
+
+  factContainers.forEach(container => {
+    container.addEventListener('click', showNextFact);
+  });
