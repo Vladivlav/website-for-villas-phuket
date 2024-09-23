@@ -3,12 +3,14 @@ const faqItems = document.querySelectorAll('.faq-question');
 faqItems.forEach(item => {
     item.addEventListener('click', () => {
         const answer = item.nextElementSibling;
+        var faqItemElement = answer.parentElement;
+        var imgElement = faqItemElement.querySelector('img');
         if (answer.style.display === 'block') {
             answer.style.display = 'none';
-            item.querySelector('::after').textContent = '+';
+            imgElement.classList.remove('animated');
         } else {
             answer.style.display = 'block';
-            item.querySelector('::after').textContent = '−';
+            imgElement.classList.add('animated');
         }
     });
 });

@@ -2220,7 +2220,22 @@ section#news div#news-list .news-description {
     border-bottom: 1px solid #D7D9D8;
     line-height: 16px;
     max-width: 500px;
+    position: relative;
 
+}
+
+.faq-item img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+}
+
+.faq-item img.animated {
+    transform: rotate(135deg);
+    animation: slideIn 0.5s forwards;
 }
 
 .faq-question {
@@ -2285,15 +2300,31 @@ section#news div#news-list .news-description {
 .faq-ask-question span {
     background: #FCBD21;
     border-radius: 50px;
-    height: 28px;
-    padding: 4px 15px;
     font-family: 'Commissioner';
+    color: #393939;
+    height: 18px;
+    padding: 4px 15px;
     font-style: normal;
     font-weight: 500;
     font-size: 9px;
-    line-height: 26px;
-    color: #393939;
+    line-height: 18px;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 30px;
+    cursor: pointer;
 
+}
+
+.faq-ask-question span:after {
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    background-image: url("images/black-right-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 5px;
+    top: -1px;
 }
 
 .faq-ask-question img {
