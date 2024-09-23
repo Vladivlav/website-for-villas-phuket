@@ -25,6 +25,16 @@ html {
 body {
     background-color:white;
     max-width: 1200px;
+    margin: 0 auto;
+}
+
+.soon-link {
+    position: absolute;
+    width: 3px;
+    height: 3px;
+    top: 3px;
+    right: 1px;
+
 }
 
 section {
@@ -38,11 +48,23 @@ section {
 
 }
 
+.grid8 {
+    grid-column: span 8;
+    grid-row: span 1;
+    display: flex;
+
+}
+
+.grid16 {
+    grid-column: span 16;
+    grid-row: span 1;
+    display: flex;
+}
+
 .grid15 {
     grid-column: span 15;
     grid-row: span 1;
     display: flex;
-
 }
 
 @font-face {
@@ -181,7 +203,6 @@ section#attractive-direction .fact-container .fact-left-part .fact-footer span.f
     height: 4px;
     position: relative;
     top: -1px;
-
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-text .fact-badge {
@@ -2289,7 +2310,7 @@ footer {
     background-position: top;
     background-size: 30%;
     background-repeat: no-repeat;
-    height: 370px;
+    height: 330px;
     padding-top: 80px;
 
 }
@@ -2299,7 +2320,7 @@ footer {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(22, 1fr);
+    grid-template-columns: repeat(24, 1fr);
     margin-bottom: 80px;
 
 }
@@ -2307,7 +2328,7 @@ footer {
   .footer-left {
     flex: 1;
     padding-left: 80px;
-    grid-column: span 15;
+    grid-column: span 16;
     grid-row: span 1;
 
 }
@@ -2347,21 +2368,37 @@ footer {
   .btn-ask {
     background: #FCBD21;
     border-radius: 50px;
-    height: 28px;
+    height: 18px;
     padding: 4px 15px;
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 500;
     font-size: 9px;
-    line-height: 26px;
+    line-height: 18px;
     color: #393939;
+    display: inline-block;
+    text-transform: uppercase;
+    margin-top: 30px;
+    cursor: pointer;
 
+}
+
+  .btn-ask:after {
+    content: '';
+    display: inline-block;
+    margin-left: 10px;
+    background-image: url("images/gray-arrow.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 14px;
+    height: 5px;
+    top: -1px;
 }
   
   .footer-right {
     flex: 1;
     padding-right: 80px;
-    grid-column: span 7;
+    grid-column: span 8;
     grid-row: span 1;
 
 }
@@ -2429,7 +2466,7 @@ footer {
     margin: 0 20px;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(22, 1fr);
+    grid-template-columns: repeat(24, 1fr);
     height: 30px;
     align-items: center;
     border-bottom: 2px solid #848484;
@@ -2444,6 +2481,11 @@ footer {
     font-size: 8px;
     line-height: 8px;
     color: #FFFFFF;
+    position: relative;
+    height: 20px;
+    line-height: 20px;
+    min-height: 20px;
+
 }
 
 .footer-nav ul > div > div > li:first-of-type {
@@ -2452,11 +2494,14 @@ footer {
 
 .footer-nav ul > div > div > li:last-of-type {
     margin-right: 0px;
+    padding-right: 5px;
+
 }
   
 .footer-nav ul li a {
     color: #fff;
     text-decoration: none;
+    position: relative;
 
 }
   
@@ -2466,7 +2511,7 @@ footer {
     border-top: 1px solid #444;
     padding-top: 10px;
     display: grid;
-    grid-template-columns: repeat(22, 1fr);
+    grid-template-columns: repeat(24, 1fr);
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 400;
@@ -2476,11 +2521,22 @@ footer {
     margin: 0 20px;
     padding: 0;
     text-align: left;
-
 }
   
 .footer-bottom p {
-    margin: 5px 0;
+    height: 20px;
+}
+
+.footer-bottom p:first-of-type {
+    line-height: 20px;
+}
+
+.footer-bottom p img {
+    height: 3px;
+    width: auto;
+    position: relative;
+    top: 9px;
+    margin: 0 5px;
 }
 
 @media (max-width: 768px) {
