@@ -1505,6 +1505,10 @@ section#additional-company-info {
     padding: 80px;
     padding-top: 100px;
     padding-bottom: 50px;
+    background-image: url("images/meru-white-back.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+
 }
 
 section#additional-company-info > h2 {
@@ -1586,6 +1590,8 @@ section#additional-company-info > h3 {
     font-size: 36px;
     line-height: 100%;
     color: #FFFFFF;
+    margin-top: 0;
+
 }
 
 section#additional-company-info div.countries-section {
@@ -1613,13 +1619,13 @@ section#additional-company-info div.country-card.big {
 section#additional-company-info div.country-card div.header {
     font-family: igra-sans;
     font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     font-feature-settings: 'liga' off;
     color: #393939;
     display: flex;
     justify-content: space-between;
+
 }
 
 section#additional-company-info div.country-card div.header div.agent-flags img {
@@ -1630,6 +1636,8 @@ section#additional-company-info div.country-card div.header div.agent-flags img 
 
 section#additional-company-info div.country-card div.header > h4 {
     margin: 0;
+    font-weight: 400;
+
 }
 
 section#additional-company-info div.country-card .agent-info {
@@ -1655,6 +1663,7 @@ section#additional-company-info div.country-card .agent-info .agent-details p.ag
     line-height: 100%;
     font-feature-settings: 'liga' off;
     color: #299948;
+
 }
 
 section#additional-company-info div.country-card .agent-info .agent-details p.agent-position {
@@ -1682,25 +1691,33 @@ p#main-thought {
     margin: 0;
     font-family: igra-sans;
     font-style: normal;
-    font-weight: 400;
     font-size: 36px;
     line-height: 100%;
     color: #FFFFFF;
     min-width: 68%;
 }
 
-p#main-thought span {
-    
+p#main-thought span:before {
+    content: '';
+    display: inline-block;
+    position: relative;
+    margin-right: 5px;
+    width: 110px;
+    height: 25px;
+    background: url("images/sofa-badge.png");
+    background-size: 100%;
+
 }
 
 p#main-thought-comment {
     margin: 0;
     font-family: 'Commissioner';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 12px;
     line-height: 130%;
     color: #FFFFFF;
+
 }
 
 section#tenth-section div.content {
@@ -1718,20 +1735,49 @@ section#tenth-section div.content {
 section#tenth-section div.content .block-link {
     height: 114px;
     margin-right: 80px;
-    width: 180px;
+    width: 160px;
     border-radius: 15px;
     padding: 20px;
+
 }
 
 section#tenth-section div.content .block-link:nth-of-type(2) {
     margin-bottom: 80px;
     margin-top: 30px;
     background: #27ABC1;
+    background-image: url("images/layer-azure.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center right;
+
+    section#tenth-section div.content .block-link:first-of-type {
+    margin-top: 80px;
+    background-color: #393939;
+    background-image: url("images/layer-black.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+    section#tenth-section div.content .block-link:first-of-type {
+    margin-top: 80px;
+    background-color: #393939;
+    background-image: url("images/layer-black.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
 }
 
 section#tenth-section div.content .block-link:first-of-type {
     margin-top: 80px;
     background-color: #393939;
+    background-image: url("images/layer-black.png");
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: top  right;
+
 }
 
 
@@ -1756,13 +1802,14 @@ section#tenth-section div.content .block-link span {
     height: 26px;
     font-family: 'Commissioner';
     font-style: normal;
-    font-weight: 500;
+    font-weight: 400;
     font-size: 9px;
     text-transform: uppercase;
     color: #FFFFFF;
     display: inline-block;
     line-height: 26px;
     text-align: center;
+
 }
 
 section#tenth-section div.content .block-link span:after {
@@ -1820,13 +1867,16 @@ section#our-partners #partners-carousel img {
 
 section#news {
     padding: 80px;
+    padding-bottom: 150px;
+
 }
 
 section#news div.header {
     display: flex;
     justify-content: space-between;
     align-items: end;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+
 }
 
 section#news div.header p {
@@ -1871,14 +1921,15 @@ section#news div.header > span {
 section#news div.header > span:after {
     content: '';
     display: inline-block;
-    width: 15px;
-    height: 4px;
+    width: 18px;
+    height: 5px;
     margin-left: 10px;
     background-image: url("images/black-right-arrow.svg");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     transform: translateY(-1px);
+
 }
 
 section#news div#news-list {
@@ -1895,6 +1946,8 @@ section#news div#news-list div.news-block-link {
     background: #FFFFFF;
     box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    cursor: pointer;
+
 }
 
 section#news div#news-list div.news-block-link .image-wrapper {
