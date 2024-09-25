@@ -32,30 +32,62 @@ document.querySelectorAll('.quiz-option').forEach(option => {
 });
 // Обновление счетчика
 function updateProgress(index) {
-    const progress = document.querySelector('#check-objects .quiz-progress span');
+  const progress = document.querySelector('#check-objects .quiz-progress span');
 
-    switch (index) {
-        case 0:
-            document.querySelector('#check-objects .progress').style.width = '0%';
-            break;
-        case 1:
-            document.querySelector('#check-objects .progress').style.width = '33%';
-            break;
-        case 2:
-            document.querySelector('#check-objects .progress').style.width = '66%';
-            break;
-        case 3:
-            document.querySelector('#check-objects .progress').style.width = '100%';
-            break;
-    }
-
-    if (index >= 3) {
-        progress.classList.add('final');
-    } else {
-        progress.classList.remove('final');
-        progress.textContent = `${index + 1}/3`;
-    }
+  switch (index) {
+      case 0:
+          document.querySelector('#check-objects .progress').style.width = '0%';
+          break;
+      case 1:
+          document.querySelector('#check-objects .progress').style.width = '33%';
+          break;
+      case 2:
+          document.querySelector('#check-objects .progress').style.width = '66%';
+          break;
+      case 3:
+          document.querySelector('#check-objects .progress').style.width = '100%';
+          break;
   }
+
+  if (index >= 3) {
+      progress.classList.add('final');
+  } else {
+      progress.classList.remove('final');
+      progress.textContent = `${index + 1}/3`;
+  }
+}
+
+function updateProgressFive(index) {
+  const progress = document.querySelector('#prices-and-benefits .quiz-progress span');
+
+  switch (index) {
+      case 0:
+          document.querySelector('#prices-and-benefits .progress').style.width = '0%';
+          break;
+      case 1:
+          document.querySelector('#prices-and-benefits .progress').style.width = '20%';
+          break;
+      case 2:
+          document.querySelector('#prices-and-benefits .progress').style.width = '40%';
+          break;
+      case 3:
+          document.querySelector('#prices-and-benefits .progress').style.width = '60%';
+          break;
+      case 4:
+          document.querySelector('#prices-and-benefits .progress').style.width = '80%';
+          break;
+      case 5:
+          document.querySelector('#prices-and-benefits .progress').style.width = '100%';
+          break;
+  }
+
+  if (index >= 5) {
+      progress.classList.add('final');
+  } else {
+      progress.classList.remove('final');
+      progress.textContent = `${index + 1}/5`;
+  }
+}
   
   // Обработчик для кнопок вперед
   document.querySelectorAll('.next-button').forEach(button => {
@@ -78,9 +110,30 @@ function updateProgress(index) {
       }
     });
   });
+
+  document.querySelectorAll('#prices-and-benefits .next-button').forEach(button => {
+    button.addEventListener('click', function() {
+      if (!this.classList.contains('active')) return;
+  
+      const currentQuestion = document.querySelector('#prices-and-benefits .quiz-question.active');
+      const allQuestions = document.querySelectorAll('#prices-and-benefits .quiz-question');
+  
+      if (currentQuestion) {
+        currentQuestion.classList.remove('active');
+        const nextQuestion = currentQuestion.nextElementSibling;
+        if (nextQuestion && nextQuestion.classList.contains('quiz-question')) {
+          nextQuestion.classList.add('active');
+          
+          // Получаем индекс следующего вопроса и обновляем прогресс
+          const newIndex = Array.from(allQuestions).indexOf(nextQuestion);
+          updateProgressFive(newIndex); // обновляем прогресс
+        }
+      }
+    });
+  });
   
   // Обработчик для кнопок назад
-  document.querySelectorAll('.prev-button').forEach(button => {
+  document.querySelectorAll('#check-objects .prev-button').forEach(button => {
     button.addEventListener('click', function() {
       const currentQuestion = document.querySelector('#check-objects .quiz-question.active');
       const allQuestions = document.querySelectorAll('#check-objects .quiz-question');
@@ -94,6 +147,25 @@ function updateProgress(index) {
           // Получаем индекс предыдущего вопроса и обновляем прогресс
           const newIndex = Array.from(allQuestions).indexOf(prevQuestion);
           updateProgress(newIndex, allQuestions.length) - 1; // обновляем прогресс
+        }
+      }
+    });
+  });
+
+  document.querySelectorAll('#prices-and-benefits .prev-button').forEach(button => {
+    button.addEventListener('click', function() {
+      const currentQuestion = document.querySelector('#prices-and-benefits .quiz-question.active');
+      const allQuestions = document.querySelectorAll('#prices-and-benefits .quiz-question');
+  
+      if (currentQuestion) {
+        currentQuestion.classList.remove('active');
+        const prevQuestion = currentQuestion.previousElementSibling;
+        if (prevQuestion && prevQuestion.classList.contains('quiz-question')) {
+          prevQuestion.classList.add('active');
+          
+          // Получаем индекс предыдущего вопроса и обновляем прогресс
+          const newIndex = Array.from(allQuestions).indexOf(prevQuestion);
+          updateProgressFive(newIndex); // обновляем прогресс
         }
       }
     });

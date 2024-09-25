@@ -940,6 +940,10 @@ section#company-owner .quote-sign {
     padding-left: 20px;
 }
 
+#prices-and-benefits .form-text {
+    padding: 0;
+}
+
 .form-text p {
     font-family: 'Commissioner';
     font-style: normal;
@@ -968,6 +972,10 @@ section#company-owner .quote-sign {
     width: 19%;
 }
 
+#prices-and-benefits .form-input, #prices-and-benefits .form-select {
+    border: 1px solid #4caf50;
+}
+
 .form-actions {
     margin-left: 10px;
     width: 175px;
@@ -991,8 +999,18 @@ section#company-owner .quote-sign {
     text-transform: uppercase;
 }
 
+#prices-and-benefits .form-button {
+    color: white;
+}
+
+#prices-and-benefits .form-button svg {
+    stroke: white;
+}
+
 .form-button svg {
     margin-left: 10px;
+    fill: black;
+
 }
 
 .form-agreement {
@@ -1006,6 +1024,12 @@ section#company-owner .quote-sign {
     display: flex;
     margin-top: 2px;
     flex-direction: column;
+}
+
+#prices-and-benefits .form-agreement {
+    font-size: 8px;
+    line-height: 120%;
+    color: #393939;
 }
 
 .form-agreement > div {
@@ -1034,10 +1058,11 @@ section#company-owner .quote-sign {
     height: 10px;
     min-height: 10px;
     border-radius: 2px;
-
 }
 
-/* форма с подборкой */
+#prices-and-benefits .form-agreement input {
+    border-color: #4caf50;
+}
 
 #get-properties {
     position: absolute;
@@ -1055,7 +1080,6 @@ section#company-owner .quote-sign {
     flex-direction: column;
 }
 
-/* Основные стили для секции с ID prices-and-benefits */
 #prices-and-benefits .header-section {
     padding: 80px;
     background-color: #fff;
@@ -1095,10 +1119,12 @@ section#company-owner .quote-sign {
     color: #393939;
 }
 
-#prices-and-benefits .quiz-section .quiz-progress {
+#prices-and-benefits .quiz-section .forn-text p {
+    
 }
 
 #prices-and-benefits .quiz-section .quiz-question {
+    display: none;
 }
 
 #prices-and-benefits .quiz-section {
@@ -1109,6 +1135,8 @@ section#company-owner .quote-sign {
     background-color: #FFFFFF;
     box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
+    background-size: auto 100%;
+
 }
 
 #prices-and-benefits .quiz-progress {
@@ -1135,15 +1163,22 @@ section#company-owner .quote-sign {
     margin: 20px 20px 0 20px;
 }
 
+
+#prices-and-benefits .quiz-progress span.final {
+    background-color: #4caf50;
+    color: white;
+}
+
 #prices-and-benefits .progress-bar {
-    height: 5px;
-    background-color: #CAE7D4;;
+    height: 9px;
+    background-color: #CAE7D4;
     border-radius: 5px;
     overflow: hidden;
     width: calc(100% - 40px);
     margin-top: 20px;
     position: relative;
     align-self: center;
+
 }
 
 #prices-and-benefits .progress {
@@ -1152,12 +1187,18 @@ section#company-owner .quote-sign {
     background-color: #4caf50;
     margin: 0;
     padding: 0;
+    border-radius: 9px;
+
 }
 
 #prices-and-benefits .quiz-question p {
     font-size: 18px;
     color: #333;
     margin-bottom: 10px;
+}
+
+#prices-and-benefits .quiz-question .form-text p {
+    margin-bottom: 0px;
 }
 
 #prices-and-benefits .quiz-question p.green-question {
@@ -1180,22 +1221,65 @@ section#company-owner .quote-sign {
 }
 
 #prices-and-benefits .quiz-option {
-    padding: 10px 0;
     background-color: #fff;
     border: 1px solid #4caf50;
+    padding: 0;
+    color: black;
     cursor: pointer;
-    color: #4caf50;
     text-align: center;
     width: auto;
-    min-width: 70px;
     height: 26px;
     border-radius: 50px;
     line-height: 100%;
-    padding: 0;
-    color: black;
+    display: flex;
+    align-items: center;
 }
 
-#prices-and-benefits .next-button {
+#prices-and-benefits .quiz-option.active span {
+    color: #4caf50;
+}
+
+#prices-and-benefits .quiz-option.active div.circle {
+    background-color: #4caf50;
+}
+
+#prices-and-benefits .quiz-option span {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 12px;
+    color: #393939;
+    margin-right: 20px;
+    margin-left: 6px;
+
+}
+
+#check-objects .quiz-option div.circle {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #FCBD21;
+    border-radius: 50%;
+    margin: 4px;
+    transition: 0.1s ease;
+}
+
+
+#prices-and-benefits .quiz-option:hover .circle {
+    background-color: #4caf50;
+}
+
+
+#prices-and-benefits .quiz-option .circle {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #4caf50;
+    border-radius: 50%;
+    margin: 4px;
+    transition: 0.1s ease;
+}
+
+#prices-and-benefits .next-button, #prices-and-benefits .prev-button {
     background-color: #ccc;
     border: none;
     border-radius: 25px;
@@ -1209,7 +1293,18 @@ section#company-owner .quote-sign {
     font-weight: 500;
     font-size: 9px;
     line-height: 100%;
-    color: #FFFFFF;
+    color: white;
+    background: #959595;
+    border-radius: 50px;
+}
+
+#prices-and-benefits .next-button.active {
+    background-color: #4caf50;
+}
+
+#prices-and-benefits .next-button svg {
+    margin-left: 10px;
+    stroke: white;
 }
 
 #prices-and-benefits .content-section {
@@ -1218,6 +1313,8 @@ section#company-owner .quote-sign {
     padding: 80px;
     background-color: #fff;
     border-radius: 15px;
+    padding-top: 40px;
+
 }
 
 #prices-and-benefits .image-content img {
@@ -1429,7 +1526,7 @@ section#company-owner .quote-sign {
     color: #FCBD21;
 }
 
-#check-objects .quiz-question.active {
+#check-objects .quiz-question.active, #prices-and-benefits .quiz-question.active {
     display: inherit;
 }
 
@@ -1573,11 +1670,12 @@ section#company-owner .quote-sign {
     font-size: 9px;
     line-height: 100%;
     color: #393939;
-    transition: ;
 }
 
 #check-objects .next-button svg {
     margin-left: 10px;
+    stroke: #393939;
+
 }
 
 #check-objects .next-button.active {
@@ -2462,7 +2560,9 @@ section#news div#news-list .news-description {
 }
 
 .faq-ask-question span svg {
-    margin-left: 10px
+    margin-left: 10px;
+    stroke: #393939;
+
 }
 
 .faq-ask-question img {
@@ -2557,6 +2657,8 @@ footer {
 .btn-ask svg {
     fill: #393939;
     margin-left: 10px;
+    stroke: #393939;
+
 }
   
 .footer-right {
@@ -2707,7 +2809,6 @@ footer {
     appearance: none;
     color: #959595;
     text-decoration: none;
-
 }
 
 .footer-bottom a:hover {
