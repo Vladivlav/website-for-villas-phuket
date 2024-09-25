@@ -1314,13 +1314,13 @@ section#company-owner .quote-sign {
     background-color: #fff;
     border-radius: 15px;
     padding-top: 40px;
+    height: auto;
 
 }
 
 #prices-and-benefits .image-content img {
     border-radius: 15px;
-    max-width: 100%;
-    height: auto;
+
 }
 
 #prices-and-benefits .text-content h2 {
@@ -1355,14 +1355,18 @@ section#company-owner .quote-sign {
 
 #prices-and-benefits .fact-list {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 2fr);
     gap: 20px;
+
 }
 
 #prices-and-benefits .fact-item {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    height: 90px;
+    justify-content: space-between;
+
 }
 
 #prices-and-benefits .fact-number {
