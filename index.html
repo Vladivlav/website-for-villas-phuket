@@ -168,6 +168,28 @@
             </div>
         </div>
     </section>
+    <section id="youtube-video">
+        <div class="youtube-container">
+            <div class="image-container">
+                <img src="images/youtube-video-preview.png" />
+                <div class="play-icon">
+                    <svg width="31" height="33" viewBox="0 0 31 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="0.6" d="M29.6499 14.2199C31.45 15.1857 31.45 17.8143 29.6499 18.7801L3.70233 32.7003C2.02011 33.6027 3.54962e-07 32.3586 4.47958e-07 30.4202L1.78358e-06 2.57981C1.87658e-06 0.641351 2.02011 -0.602727 3.70233 0.29974L29.6499 14.2199Z" fill="white"/>
+                    </svg>                        
+                </div>
+            </div>
+            <div class="text-container">
+                <img src="images/youtube_logo.png">
+                <p>Подробные обзоры недвижимости<br />смотрите на нашем канале</p>
+                <a class="link" href="#">
+                    YOUTUBE КАНАЛ
+                    <svg width="16" height="6" viewBox="0 0 16 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 3H0M15 3L12.973 1M15 3L12.973 5" stroke-width="0.6"/>
+                    </svg>    
+                </a>
+            </div>
+        </div>
+    </section>
     <section id="quote-with-four-men" class="full-section">
         <img src="images/quote-with-four-men-bg.png" />
         <div class="quote">
@@ -281,7 +303,12 @@
             </div>
             <div class="cta grid-item item9">
                 <p>Записаться на личную консультацию</p>
-                <button>ЗАПИСАТЬСЯ</button>
+                <button>
+                    ЗАПИСАТЬСЯ
+                    <svg width="16" height="6" viewBox="0 0 16 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15 3H0M15 3L12.973 1M15 3L12.973 5" stroke-width="0.6"/>
+                    </svg>
+                </button>
               </div>
           </div>
         </div>
@@ -304,16 +331,38 @@
                 <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
                 <input type="text" placeholder="Ваш номер телефона" class="form-input">
                 <input type="text" placeholder="Ваш e-mail" class="form-input">
-                <select class="form-select">
-                    <option>Как удобнее связаться?</option>
-                    <option>По телефону</option>
-                    <option>По e-mail</option>
-                </select>
+                <div class="form-select">
+                    <span>
+                        Как удобнее связаться?
+                        <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M14 6.59766L7.5 1.39766L1 6.59766" stroke="#FCBD21"/>
+                        </svg>
+                    </span>
+                    <div style="display: none;" class="feddback-options-list">
+                        <span>
+                            Как удобнее связаться?
+                            <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14 6.59766L7.5 1.39766L1 6.59766" stroke="#FCBD21"/>
+                            </svg>
+                        </span>
+                        <span class="option">Звонок</span>
+                        <span class="option">WhatsApp</span>
+                        <span class="option">Telegram</span>
+                    </div>
+                </div>
                 <div class="form-actions">
-                    <button class="form-button">ПОЛУЧИТЬ ПОДБОРКУ</button>
+                    <button class="form-button">
+                        ПОЛУЧИТЬ ПОДБОРКУ
+                        <svg width="16" height="6" viewBox="0 0 16 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M15 3H0M15 3L12.973 1M15 3L12.973 5" stroke-width="0.6"/>
+                        </svg>
+                    </button>
                     <div class="form-agreement">
-                        <input type="checkbox" id="agreement" name="agreement">
-                        <label for="agreement">Я соглашаюсь с политикой в отношении персональных данных</label>
+                        <div>
+                            <input type="checkbox" id="agreement" name="agreement">
+                            <span class="first-line">Я соглашаюсь с политикой</span>
+                        </div>
+                        <span class="second-line">в отношении персональных данных</label>
                     </div>
                 </div>
             </div>
@@ -452,11 +501,25 @@
                         <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
                         <input type="text" placeholder="Ваш номер телефона" class="form-input">
                         <input type="text" placeholder="Ваш e-mail" class="form-input">
-                        <select class="form-select">
-                            <option>Как удобнее связаться?</option>
-                            <option>По телефону</option>
-                            <option>По e-mail</option>
-                        </select>
+                        <div class="form-select">
+                            <span>
+                                Как удобнее связаться?
+                                <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 6.59766L7.5 1.39766L1 6.59766" stroke="#4caf50"/>
+                                </svg>
+                            </span>
+                            <div style="display: none;" class="feddback-options-list">
+                                <span>
+                                    Как удобнее связаться?
+                                    <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 6.59766L7.5 1.39766L1 6.59766" stroke="#4caf50"/>
+                                    </svg>
+                                </span>
+                                <span class="option">Звонок</span>
+                                <span class="option">WhatsApp</span>
+                                <span class="option">Telegram</span>
+                            </div>
+                        </div>
                         <div class="form-actions">
                             <button class="form-button">
                                 ПОЛУЧИТЬ ПОДБОРКУ
@@ -494,7 +557,7 @@
                     <div class="fact-item">
                         <p class="number">02</p>
                         <p class="little-title">7 этажей</p>
-                        <p class="little-description">ограничение по максимальной высоте зданий</p>
+                        <p class="little-description">ограничение по максимальной высоте зданий: только 7 этажей, а в некоторых районах — 3</p>
                     </div>
                     <div class="fact-item">
                         <p class="number">03</p>
@@ -504,7 +567,7 @@
                     <div class="fact-item">
                         <p class="number">04</p>
                         <p class="little-title">запрещен намыв</p>
-                        <p class="little-description">на государственном уровне запрещен намыв территорий</p>
+                        <p class="little-description">на государственном уровне запрещен намыв территории в целях сохранения естественной флоры и фауны острова</p>
                     </div>
                 </div>
             </div>
@@ -602,11 +665,25 @@
                         <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
                         <input type="text" placeholder="Ваш номер телефона" class="form-input">
                         <input type="text" placeholder="Ваш e-mail" class="form-input">
-                        <select class="form-select">
-                            <option>Как удобнее связаться?</option>
-                            <option>По телефону</option>
-                            <option>По e-mail</option>
-                        </select>
+                        <div class="form-select">
+                            <span>
+                                Как удобнее связаться?
+                                <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M14 6.59766L7.5 1.39766L1 6.59766" stroke="#FCBD21"/>
+                                </svg>
+                            </span>
+                            <div style="display: none;" class="feddback-options-list">
+                                <span>
+                                    Как удобнее связаться?
+                                    <svg width="15" height="7" viewBox="0 0 15 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14 6.59766L7.5 1.39766L1 6.59766" stroke="#FCBD21"/>
+                                    </svg>
+                                </span>
+                                <span class="option">Звонок</span>
+                                <span class="option">WhatsApp</span>
+                                <span class="option">Telegram</span>
+                            </div>
+                        </div>
                         <div class="form-actions">
                             <button class="form-button">
                                 ПОЛУЧИТЬ ПОДБОРКУ

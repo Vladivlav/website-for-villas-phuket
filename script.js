@@ -90,7 +90,7 @@ function updateProgressFive(index) {
 }
   
   // Обработчик для кнопок вперед
-  document.querySelectorAll('.next-button').forEach(button => {
+  document.querySelectorAll('#check-objects .next-button').forEach(button => {
     button.addEventListener('click', function() {
       if (!this.classList.contains('active')) return;
   
@@ -152,30 +152,87 @@ function updateProgressFive(index) {
     });
   });
 
-  document.querySelectorAll('#prices-and-benefits .prev-button').forEach(button => {
-    button.addEventListener('click', function() {
-      const currentQuestion = document.querySelector('#prices-and-benefits .quiz-question.active');
-      const allQuestions = document.querySelectorAll('#prices-and-benefits .quiz-question');
-  
-      if (currentQuestion) {
-        currentQuestion.classList.remove('active');
-        const prevQuestion = currentQuestion.previousElementSibling;
-        if (prevQuestion && prevQuestion.classList.contains('quiz-question')) {
-          prevQuestion.classList.add('active');
-          
-          // Получаем индекс предыдущего вопроса и обновляем прогресс
-          const newIndex = Array.from(allQuestions).indexOf(prevQuestion);
-          updateProgressFive(newIndex); // обновляем прогресс
-        }
+document.querySelectorAll('#prices-and-benefits .prev-button').forEach(button => {
+  button.addEventListener('click', function() {
+    const currentQuestion = document.querySelector('#prices-and-benefits .quiz-question.active');
+    const allQuestions = document.querySelectorAll('#prices-and-benefits .quiz-question');
+
+    if (currentQuestion) {
+      currentQuestion.classList.remove('active');
+      const prevQuestion = currentQuestion.previousElementSibling;
+      if (prevQuestion && prevQuestion.classList.contains('quiz-question')) {
+        prevQuestion.classList.add('active');
+        
+        // Получаем индекс предыдущего вопроса и обновляем прогресс
+        const newIndex = Array.from(allQuestions).indexOf(prevQuestion);
+        updateProgressFive(newIndex); // обновляем прогресс
       }
-    });
+    }
   });
+});
+
+document.querySelectorAll('#prices-and-benefits .form-select div.feddback-options-list > span.option').forEach(option => {
+  option.addEventListener('click', function() {
+    const option_text = option.textContent;
+    const option_list = document.querySelector('#prices-and-benefits .form-select div.feddback-options-list');
+    const option_input = document.querySelector('#prices-and-benefits .form-select > span');
+
+    option_list.style.display = 'none';
+    option_input.textContent = option_text
+  });
+});
+
+document.querySelectorAll('#prices-and-benefits .form-select > span').forEach(span => {
+  span.addEventListener('click', function() {
+    const option_list = document.querySelector('#prices-and-benefits .form-select div.feddback-options-list');
+
+    option_list.style.display = '';
+  });
+});
+
+document.querySelectorAll('#investments-base .form-select div.feddback-options-list > span.option').forEach(option => {
+  option.addEventListener('click', function() {
+    const option_text = option.textContent;
+    const option_list = document.querySelector('#investments-base .form-select div.feddback-options-list');
+    const option_input = document.querySelector('#investments-base .form-select > span');
+
+    option_list.style.display = 'none';
+    option_input.textContent = option_text
+  });
+});
+
+document.querySelectorAll('#investments-base .form-select > span').forEach(span => {
+  span.addEventListener('click', function() {
+    const option_list = document.querySelector('#investments-base .form-select div.feddback-options-list');
+
+    option_list.style.display = '';
+  });
+});
+
+document.querySelectorAll('#check-objects .form-select div.feddback-options-list > span.option').forEach(option => {
+  option.addEventListener('click', function() {
+    const option_text = option.textContent;
+    const option_list = document.querySelector('#check-objects .form-select div.feddback-options-list');
+    const option_input = document.querySelector('#check-objects .form-select > span');
+
+    option_list.style.display = 'none';
+    option_input.textContent = option_text
+  });
+});
+
+document.querySelectorAll('#check-objects .form-select > span').forEach(span => {
+  span.addEventListener('click', function() {
+    const option_list = document.querySelector('#check-objects .form-select div.feddback-options-list');
+
+    option_list.style.display = '';
+  });
+});
   
-  // Устанавливаем начальный прогресс при загрузке страницы
-  const initialQuestion = document.querySelector('#check-objects .quiz-question.active');
-  const allQuestions = document.querySelectorAll('# check-objects .quiz-question');
-  const initialIndex = Array.from(allQuestions).indexOf(initialQuestion);
-  updateProgress(initialIndex);
+// Устанавливаем начальный прогресс при загрузке страницы
+const initialQuestion = document.querySelector('#check-objects .quiz-question.active');
+const allQuestions = document.querySelectorAll('#check-objects .quiz-question');
+const initialIndex = Array.from(allQuestions).indexOf(initialQuestion);
+updateProgress(initialIndex);
 
 
 const factContainers = document.querySelectorAll('.fact-container');
@@ -191,9 +248,9 @@ if (current.nextElementSibling && current.nextElementSibling.classList.contains(
 }
 
 current.classList.remove('current');
-next.classList.add('current');
+  next.classList.add('current');
 }
 
 factContainers.forEach(container => {
-container.addEventListener('click', showNextFact);
+  container.addEventListener('click', showNextFact);
 });

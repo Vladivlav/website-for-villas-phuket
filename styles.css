@@ -98,6 +98,7 @@ section.full-section {
 section#attractive-direction {
     background: #393939;
     position: relative;
+    height: 580px;
 
 }
 
@@ -272,6 +273,115 @@ section#attractive-direction .fact-container .fact-right-part img {
     height: auto;
     max-width: 400px;
 
+}
+
+section#youtube-video {
+    background-color: #393939;
+    height: 425px;
+    padding: 100px 80px;
+    box-sizing: border-box;
+    background-image: url("images/palm-youtube-bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 309px auto;
+
+}
+
+section#youtube-video .youtube-container {
+    height: 100%;
+    display: flex;
+
+}
+
+section#youtube-video .youtube-container .image-container {
+    height: inherit;
+    position: relative;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+}
+
+section#youtube-video .youtube-container .image-container img {
+    height: 100%;
+    width: auto;
+
+}
+
+section#youtube-video .youtube-container .image-container .play-icon {
+    position: absolute;
+    top: 71px;
+    left: 158px;
+    width: 83px;
+    height: 83px;
+    border-radius: 50%;
+    background: #393939;
+    opacity: 0.7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section#youtube-video .youtube-container .image-container .play-icon svg {
+    position: relative;
+    left: 5px;
+
+}
+
+section#youtube-video .youtube-container .text-container {
+    margin-left: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+section#youtube-video .youtube-container .text-container img {
+    height: 22px;
+    width: 100px;
+
+}
+
+section#youtube-video .youtube-container .text-container p {
+    font-family: Igra-Sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+section#youtube-video .youtube-container .text-container a {
+    text-decoration: none;
+    height: 26px;
+    color: white;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 9px;
+    border: 1px solid #FCBD21;
+    display: inline-flex;
+    width: 118px;
+    line-height: 26px;
+    border-radius: 13px;
+    padding-left: 15px;
+}
+
+section#youtube-video .youtube-container .text-container a:hover {
+    background-color: #FCBD21;
+    color: #393939;
+}
+
+section#youtube-video .youtube-container .text-container a:hover svg{
+    stroke: #393939;
+}
+
+section#youtube-video .youtube-container .text-container a svg {
+    align-self: center;
+    margin-left: 10px;
+    stroke: white;
 }
 
 section#quote-with-four-men {
@@ -758,11 +868,12 @@ section#company-owner .quote-sign {
     padding-left: 13px;
 }
   
-  #best-points .cta button:hover {
-    background-color: #138496;
-  }
+#best-points .cta button svg {
+    stroke: white;
+    margin-left: 10px;
+}
 
-  .cta p::before {
+.cta p::before {
     content: '';
     position: absolute;
     top: -7px;
@@ -773,16 +884,7 @@ section#company-owner .quote-sign {
     border-radius: 50%;
 }
 
-.cta button::after {
-    content: '→';
-    font-size: 18px;
-    margin-left: 10px;
-    color: white;
-    font-weight: 300;
-    width: auto;
-}
-
-  #best-points .grid-item h3:first-of-type {
+#best-points .grid-item h3:first-of-type {
     font-family: igra-sans;
     font-style: normal;
     font-weight: 400;
@@ -955,21 +1057,122 @@ section#company-owner .quote-sign {
 }
 
 .form-inputs {
-    display: flex;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
     justify-content: space-between;
     padding: 20px 20px 0 20px;
+
 }
 
 .form-input, .form-select {
-    padding: 10px 20px;
     outline: none;
     box-sizing: border-box;
     border: 1px solid #FCBD21;
     border-radius: 30px;
     height: 26px;
     background-color: #0000;
-    width: 19%;
+    padding: 0 20px;
+}
+
+#investments-base .form-select,
+#check-objects .form-select,
+#prices-and-benefits .form-select
+{
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #D7D9D8;
+    position: relative;
+    padding: 0;
+}
+
+#investments-base .form-select div.feddback-options-list,
+#check-objects .form-select div.feddback-options-list,
+#prices-and-benefits .form-select div.feddback-options-list
+{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    height: 109px;
+    width: 100%;
+    border-radius: 13px;
+    border: 1px solid #FCBD21;
+    background-color: #393939;
+    z-index: 9;
+}
+
+#prices-and-benefits .form-select div.feddback-options-list {
+    background: white;
+    border: 1px solid #4caf50;
+
+}
+
+#investments-base .form-select div.feddback-options-list > span svg,
+#check-objects .form-select div.feddback-options-list > span svg,
+#prices-and-benefits .form-select div.feddback-options-list > span svg
+{
+    padding-right: 10px;
+    transform: rotate(180deg);
+
+}
+
+#investments-base .form-select div.feddback-options-list span,
+#check-objects .form-select div.feddback-options-list span,
+#prices-and-benefits .form-select div.feddback-options-list span
+{
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    padding-left: 15px;
+    color: #D7D9D8;
+}
+
+#investments-base .form-select div.feddback-options-list span.active:hover,
+#check-objects .form-select div.feddback-options-list span.option:hover
+{
+    color: #FCBD21;
+    cursor: pointer;
+}
+
+#prices-and-benefits .form-select div.feddback-options-list span {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: #393939;
+}
+
+#prices-and-benefits .form-select div.feddback-options-list span.option:hover {
+    color: #4caf50;
+    cursor: pointer;
+}
+
+
+#investments-base .form-select > span,
+#check-objects .form-select > span,
+#prices-and-benefits .form-select > span
+{
+    height: 26px;
+    display: flex;
+    line-height: 26px;
+    padding-left: 15px;
+    z-index: 10;
+}
+
+#prices-and-benefits .form-select > span {
+    color: #393939;
+}
+
+#investments-base .form-select > span svg,
+#check-objects .form-select > span svg,
+#prices-and-benefits .form-select > span svg
+{
+    height: 26px;
+    line-height: 26px;
+    padding-left: 10px;
 }
 
 #prices-and-benefits .form-input, #prices-and-benefits .form-select {
@@ -977,10 +1180,8 @@ section#company-owner .quote-sign {
 }
 
 .form-actions {
-    margin-left: 10px;
     width: 175px;
     margin-bottom: 20px;
-
 }
 
 .form-button {
@@ -997,6 +1198,9 @@ section#company-owner .quote-sign {
     display: flex;
     align-items: center;
     text-transform: uppercase;
+    margin: 0;
+    width: 100%;
+
 }
 
 #prices-and-benefits .form-button {
@@ -1009,8 +1213,7 @@ section#company-owner .quote-sign {
 
 .form-button svg {
     margin-left: 10px;
-    fill: black;
-
+    stroke: black;
 }
 
 .form-agreement {
@@ -1355,8 +1558,8 @@ section#company-owner .quote-sign {
 
 #prices-and-benefits .fact-list {
     display: grid;
-    grid-template-columns: repeat(2, 2fr);
-    gap: 20px;
+    grid-template-columns: 215px 1fr;
+    gap: 50px 80px;
 
 }
 
@@ -1389,11 +1592,8 @@ section#company-owner .quote-sign {
 
 
 #prices-and-benefits .fact-list {
-    margin-top: 20px;
-}
+    margin-top: 50px;
 
-#prices-and-benefits .fact-item {
-    margin-bottom: 15px;
 }
 
 #prices-and-benefits .fact-item p {
@@ -1419,15 +1619,17 @@ section#company-owner .quote-sign {
     font-size: 36px;
     line-height: 100%;
     color: #27ABC1;
+
 }
 
 #prices-and-benefits .fact-item p.little-description {
     font-family: 'Commissioner';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 12px;
     line-height: 130%;
     color: #393939;
+
 }
 
 #prices-and-benefits .fact-item strong {
@@ -1443,13 +1645,12 @@ section#company-owner .quote-sign {
 #prices-and-benefits .text-content {
     margin-left: 40px;
     margin-top: 11px;
+    width: auto;
 }
 
 #check-objects .header-section {
     padding: 80px;
     background-color: #fff;
-    /* border-radius: 15px; */
-    /* margin-bottom: 20px; */
     background: url("images/check-objects-bg.png");
     width: auto;
     height: 100%;
@@ -1946,12 +2147,13 @@ section#tenth-section div.content .block-link:first-of-type span:hover svg {
     stroke: #393939;
 }
 
-section#tenth-section div.content .block-link:nth-of-type(2) span:hover {
+
+section#tenth-section div.content .block-link:nth-of-type(2) span:hover, #best-points .cta button:hover {
     background-color: white;
     color: #27ABC1;
 }
 
-section#tenth-section div.content .block-link:nth-of-type(2) span:hover svg {
+section#tenth-section div.content .block-link:nth-of-type(2) span:hover svg, #best-points .cta button:hover svg {
     stroke: #27ABC1;
 }
 
