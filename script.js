@@ -238,16 +238,26 @@ updateProgress(initialIndex);
 const factContainers = document.querySelectorAll('.fact-container');
 
 function showNextFact() {
-const current = document.querySelector('.fact-container.current');
-let next;
+  const current = document.querySelector('.fact-container.current');
+  const last_fact = document.querySelector('.last-fact-container');
+  let next;
 
-if (current.nextElementSibling && current.nextElementSibling.classList.contains('fact-container')) {
+  if (current.nextElementSibling && current.nextElementSibling.classList.contains('fact-container')) {
     next = current.nextElementSibling;
-} else {
+  } else {
     next = factContainers[0];
-}
+  }
 
-current.classList.remove('current');
+  const parent = next.parentElement;
+  const elementsWithClass = parent.querySelectorAll('section#attractive-direction .fact-container');
+  
+  if (next === elementsWithClass[elementsWithClass.length - 1]) {
+    last_fact.style.visibility = 'initial';
+  } else {
+    last_fact.style.visibility = 'hidden';
+  }
+
+  current.classList.remove('current');
   next.classList.add('current');
 }
 

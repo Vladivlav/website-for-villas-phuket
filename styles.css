@@ -34,7 +34,6 @@ body {
     height: 3px;
     top: 3px;
     right: 1px;
-
 }
 
 section {
@@ -45,14 +44,12 @@ section {
     grid-column: span 7;
     grid-row: span 1;
     display: flex;
-
 }
 
 .grid8 {
     grid-column: span 8;
     grid-row: span 1;
     display: flex;
-
 }
 
 .grid16 {
@@ -98,7 +95,10 @@ section.full-section {
 section#attractive-direction {
     background: #393939;
     position: relative;
-    height: 580px;
+    height: auto;
+    padding: 80px;
+    box-sizing: border-box;
+    padding-bottom: 50px;
 
 }
 
@@ -106,10 +106,22 @@ section#attractive-direction .fact-container {
     display: none;
     grid-template-columns: repeat(10, 1fr);
     gap: 20px;
-    padding: 80px;
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
+}
+
+section#attractive-direction .last-fact-container {
+    margin-top: 40px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 20px;
+    background: #333333;
+    box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    visibility: hidden;
+
 }
 
 section#attractive-direction .fact-container.current {
@@ -129,6 +141,52 @@ section#attractive-direction .fact-container .fact-left-part {
     max-height: 296px;
 }
 
+section#attractive-direction .last-fact-container .fact-left-part {
+    grid-column: span 6;
+    grid-row: span 1;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+section#attractive-direction .last-fact-container .fact-left-part .big-fact-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 240px;
+    padding: 20px;
+
+}
+
+section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p {
+    margin: 0;
+    padding: 0;
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    color: white;
+
+}
+
+section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p.yellow {
+    color: #FCBD21;
+}
+
+section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .number {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item {
+}
+
 section#attractive-direction .fact-container .fact-left-part.second {
     background-image: url("images/fact-2-bg.png");
 }
@@ -146,7 +204,6 @@ section#attractive-direction .fact-container .fact-left-part .fact-text {
     position: relative;
     flex-direction: column;
     justify-content: flex-end;
-
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-footer {
@@ -156,7 +213,6 @@ section#attractive-direction .fact-container .fact-left-part .fact-footer {
     left: 0;
     justify-content: space-between;
     width: 100%;
-
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-footer p {
@@ -168,7 +224,6 @@ section#attractive-direction .fact-container .fact-left-part .fact-footer p {
     font-size: 13px;
     line-height: 120%;
     color: #FFFFFF;
-
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button {
@@ -181,7 +236,7 @@ section#attractive-direction .fact-container .fact-left-part .fact-footer span.f
     text-transform: uppercase;
     color: #299948;
     display: inline-block;
-    width: 132px;
+    width: auto;
     height: 26px;
     line-height: 26px;
     cursor: pointer;
@@ -190,20 +245,40 @@ section#attractive-direction .fact-container .fact-left-part .fact-footer span.f
     margin: auto 0;
     margin-right: 20px;
     background-color: white;
-
+    padding: 0 15px;
 }
 
-section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button:after {
-    content: '';
-    display: inline-block;
+section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button.yellow {
+    color: #FCBD21;
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button.yellow svg {
+    stroke: #FCBD21;
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button.yellow:hover {
+    background-color: #FCBD21;
+    color: white;
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button.yellow:hover svg {
+    stroke: white;
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button svg {
+    stroke: #299948;
+    width: 15px;
     margin-left: 10px;
-    background-image: url("images/green-arrow.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 20px;
-    height: 4px;
-    position: relative;
-    top: -1px;
+    height: auto;
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button:hover {
+    background-color: #299948;
+    color: white;
+}
+
+section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button:hover svg {
+    stroke: white;
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-text .fact-badge {
@@ -222,7 +297,6 @@ section#attractive-direction .fact-container .fact-left-part .fact-text .fact-ba
     position: absolute;
     top: 20px;
     left: 20px;
-
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
@@ -235,7 +309,6 @@ section#attractive-direction .fact-container .fact-left-part .fact-text .info-ba
 section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge.no-info-badge::before {
     content: '';
     margin: 0;
-
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge {
@@ -262,17 +335,69 @@ section#attractive-direction .fact-container .fact-left-part .fact-text p {
     margin: 0 20px;
 }
 
+section#attractive-direction .last-fact-container .fact-items,
+section#attractive-direction .last-fact-container .fact-right-part {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-sizing: border-box;
+    padding-top: 24px;
+    padding-bottom: 17px;
+    gap: 20px;
+}
+
+section#attractive-direction .last-fact-container .fact-items {
+    display: flex;
+    flex-direction: column;
+    max-width: 180px;
+    margin-right: 35px;
+
+}
+
+section#attractive-direction .last-fact-container .fact-items p,
+section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item,
+section#attractive-direction .last-fact-container .fact-right-part p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 120%;
+    color: #FCBD21;
+
+}
+
+section#attractive-direction .last-fact-container .fact-items span,
+section#attractive-direction .last-fact-container .fact-right-part span {
+    max-width: 215px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 130%;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+section#attractive-direction .last-fact-container .fact-right-part svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 137px;
+}
+
+section#attractive-direction .last-fact-container .fact-right-part,
 section#attractive-direction .fact-container .fact-right-part {
     grid-column: span 4;
     grid-row: span 1;
-
 }
 
 section#attractive-direction .fact-container .fact-right-part img {
     width: 100%;
     height: auto;
     max-width: 400px;
-
 }
 
 section#youtube-video {
@@ -284,13 +409,11 @@ section#youtube-video {
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 309px auto;
-
 }
 
 section#youtube-video .youtube-container {
     height: 100%;
     display: flex;
-
 }
 
 section#youtube-video .youtube-container .image-container {
@@ -299,13 +422,11 @@ section#youtube-video .youtube-container .image-container {
     display: flex;
     align-self: center;
     justify-content: center;
-
 }
 
 section#youtube-video .youtube-container .image-container img {
     height: 100%;
     width: auto;
-
 }
 
 section#youtube-video .youtube-container .image-container .play-icon {
@@ -325,7 +446,6 @@ section#youtube-video .youtube-container .image-container .play-icon {
 section#youtube-video .youtube-container .image-container .play-icon svg {
     position: relative;
     left: 5px;
-
 }
 
 section#youtube-video .youtube-container .text-container {
@@ -333,13 +453,11 @@ section#youtube-video .youtube-container .text-container {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
 }
 
 section#youtube-video .youtube-container .text-container img {
     height: 22px;
     width: 100px;
-
 }
 
 section#youtube-video .youtube-container .text-container p {
@@ -466,6 +584,10 @@ section#main-page > header {
     width: 100%;
 }
 
+.main-nav li:hover a {
+    color: #FCBD21;
+}
+
 .main-nav ul {
     display: flex;
     list-style: none;
@@ -482,7 +604,6 @@ section#main-page > header {
 }
 
 .main-nav > ul > div.language-selector {
-    /* width: 47px; */
     height: 27px;
     border-radius: 50px;
     border: 1px solid #575757;
@@ -501,6 +622,8 @@ section#main-page > header {
     margin: 0 10px;
     height: 19px;
     line-height: 12px;
+    position: relative;
+
 }
 
 .main-nav a {
@@ -567,19 +690,15 @@ div#greetings .yellow-link {
     margin-top: 30px;
     padding-right: 15px;
     padding-left: 15px;
+    cursor: pointer;
 }
 
-div#greetings .yellow-link:after {
-    content: '';
-    display: inline-block;
+div#greetings .yellow-link svg {
     width: 15px;
-    height: 25px;
     margin-left: 10px;
-    background-image: url("images/black-right-arrow.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: auto;
 }
+
 div#special-offer-slider > span {
     font-family: 'Commissioner';
     font-style: normal;
@@ -716,7 +835,12 @@ section#company-owner div#i-know-everything {
 
 section#company-owner div#picture {
     position: relative;
-    width: auto;    height: auto;
+    width: 400px;
+}
+
+section#company-owner div#picture img {
+    width: 100%;
+    height: 100%;
 }
 
 section#company-owner #owner-bage {
@@ -787,7 +911,6 @@ section#company-owner .quote-sign {
     justify-content: space-between;
 }
   
-  /* Пример распределения долей для элементов */
   #best-points .item1 {
     grid-column: span 7;
     grid-row: span 1;
@@ -809,7 +932,7 @@ section#company-owner .quote-sign {
 }
   
   #best-points .item5 {
-    grid-column: span 6; /* 6 долей */
+    grid-column: span 6;
     grid-row: span 1;
   }
   
@@ -824,7 +947,7 @@ section#company-owner .quote-sign {
 }
   
   #best-points .item8 {
-    grid-column: span 8; /* 8 долей */
+    grid-column: span 8;
     grid-row: span 1;
   }
   
@@ -983,6 +1106,9 @@ section#company-owner .quote-sign {
     font-weight: 300;
     font-size: 12px;
     line-height: 130%;
+    margin: 0;
+    margin-top: 3px;
+
 }
 
 #investments-base img {
@@ -1026,8 +1152,6 @@ section#company-owner .quote-sign {
     margin: 0;
 }
 
-/* форма с подборкой */
-
 .form-container {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
@@ -1062,7 +1186,6 @@ section#company-owner .quote-sign {
     gap: 18px;
     justify-content: space-between;
     padding: 20px 20px 0 20px;
-
 }
 
 .form-input, .form-select {
@@ -1107,7 +1230,6 @@ section#company-owner .quote-sign {
 #prices-and-benefits .form-select div.feddback-options-list {
     background: white;
     border: 1px solid #4caf50;
-
 }
 
 #investments-base .form-select div.feddback-options-list > span svg,
@@ -1116,7 +1238,6 @@ section#company-owner .quote-sign {
 {
     padding-right: 10px;
     transform: rotate(180deg);
-
 }
 
 #investments-base .form-select div.feddback-options-list span,
@@ -1200,7 +1321,6 @@ section#company-owner .quote-sign {
     text-transform: uppercase;
     margin: 0;
     width: 100%;
-
 }
 
 #prices-and-benefits .form-button {
@@ -1245,7 +1365,6 @@ section#company-owner .quote-sign {
     line-height: 16px;
     display: block;
     margin-left: 3px;
-
 }
 
 .form-agreement label {
@@ -1339,7 +1458,6 @@ section#company-owner .quote-sign {
     box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     background-size: auto 100%;
-
 }
 
 #prices-and-benefits .quiz-progress {
@@ -1381,7 +1499,6 @@ section#company-owner .quote-sign {
     margin-top: 20px;
     position: relative;
     align-self: center;
-
 }
 
 #prices-and-benefits .progress {
@@ -1391,7 +1508,6 @@ section#company-owner .quote-sign {
     margin: 0;
     padding: 0;
     border-radius: 9px;
-
 }
 
 #prices-and-benefits .quiz-question p {
@@ -1455,7 +1571,6 @@ section#company-owner .quote-sign {
     color: #393939;
     margin-right: 20px;
     margin-left: 6px;
-
 }
 
 #check-objects .quiz-option div.circle {
@@ -1518,12 +1633,10 @@ section#company-owner .quote-sign {
     border-radius: 15px;
     padding-top: 40px;
     height: auto;
-
 }
 
 #prices-and-benefits .image-content img {
     border-radius: 15px;
-
 }
 
 #prices-and-benefits .text-content h2 {
@@ -1560,7 +1673,6 @@ section#company-owner .quote-sign {
     display: grid;
     grid-template-columns: 215px 1fr;
     gap: 50px 80px;
-
 }
 
 #prices-and-benefits .fact-item {
@@ -1569,7 +1681,6 @@ section#company-owner .quote-sign {
     align-items: flex-start;
     height: 90px;
     justify-content: space-between;
-
 }
 
 #prices-and-benefits .fact-number {
@@ -1593,7 +1704,6 @@ section#company-owner .quote-sign {
 
 #prices-and-benefits .fact-list {
     margin-top: 50px;
-
 }
 
 #prices-and-benefits .fact-item p {
@@ -1619,7 +1729,6 @@ section#company-owner .quote-sign {
     font-size: 36px;
     line-height: 100%;
     color: #27ABC1;
-
 }
 
 #prices-and-benefits .fact-item p.little-description {
@@ -1629,7 +1738,6 @@ section#company-owner .quote-sign {
     font-size: 12px;
     line-height: 130%;
     color: #393939;
-
 }
 
 #prices-and-benefits .fact-item strong {
@@ -1772,7 +1880,6 @@ section#company-owner .quote-sign {
     align-self: center;
     border-radius: 20px;
     background-color: rgba(252, 189, 33, 0.3);
-
 }
 
 #check-objects .progress {
@@ -1783,7 +1890,6 @@ section#company-owner .quote-sign {
     background: #FCBD21;
     border-radius: 20px;
     transition: 0.3s ease-in;
-
 }
 
 #check-objects .quiz-question p {
@@ -1824,7 +1930,6 @@ section#company-owner .quote-sign {
     color: #FCBD21;
     display: flex;
     align-items: center;
-
 }
 
 #check-objects .quiz-option.active span {
@@ -1844,7 +1949,6 @@ section#company-owner .quote-sign {
     color: #FFFFFF;
     margin-left: 5px;
     margin-right: 20px;
-
 }
 
 #check-objects .quiz-option div.circle {
@@ -1880,7 +1984,6 @@ section#company-owner .quote-sign {
 #check-objects .next-button svg {
     margin-left: 10px;
     stroke: #393939;
-
 }
 
 #check-objects .next-button.active {
@@ -1895,7 +1998,6 @@ section#additional-company-info {
     background-image: url("images/meru-white-back.png");
     background-position: bottom;
     background-repeat: no-repeat;
-
 }
 
 section#additional-company-info > h2 {
@@ -1978,7 +2080,6 @@ section#additional-company-info > h3 {
     line-height: 100%;
     color: #FFFFFF;
     margin-top: 0;
-
 }
 
 section#additional-company-info div.countries-section {
@@ -2012,7 +2113,6 @@ section#additional-company-info div.country-card div.header {
     color: #393939;
     display: flex;
     justify-content: space-between;
-
 }
 
 section#additional-company-info div.country-card div.header div.agent-flags img {
@@ -2024,7 +2124,6 @@ section#additional-company-info div.country-card div.header div.agent-flags img 
 section#additional-company-info div.country-card div.header > h4 {
     margin: 0;
     font-weight: 400;
-
 }
 
 section#additional-company-info div.country-card .agent-info {
@@ -2050,7 +2149,6 @@ section#additional-company-info div.country-card .agent-info .agent-details p.ag
     line-height: 100%;
     font-feature-settings: 'liga' off;
     color: #299948;
-
 }
 
 section#additional-company-info div.country-card .agent-info .agent-details p.agent-position {
@@ -2093,7 +2191,6 @@ p#main-thought span:before {
     height: 25px;
     background: url("images/sofa-badge.png");
     background-size: 100%;
-
 }
 
 p#main-thought-comment {
@@ -2104,7 +2201,6 @@ p#main-thought-comment {
     font-size: 12px;
     line-height: 130%;
     color: #FFFFFF;
-
 }
 
 section#tenth-section div.content {
@@ -2125,7 +2221,6 @@ section#tenth-section div.content .block-link {
     width: 160px;
     border-radius: 15px;
     padding: 20px;
-
 }
 
 section#tenth-section div.content .block-link:nth-of-type(2) {
@@ -2173,7 +2268,6 @@ section#tenth-section div.content .block-link:first-of-type {
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: top  right;
-
 }
 
 
@@ -2210,7 +2304,6 @@ section#tenth-section div.content .block-link span {
 section#tenth-section div.content .block-link span svg {
     stroke: white;
     margin-left: 10px;
-
 }
 
 section#our-partners {
@@ -2257,7 +2350,6 @@ section#our-partners #partners-carousel img {
 section#news {
     padding: 80px;
     padding-bottom: 150px;
-
 }
 
 section#news div.header {
@@ -2265,7 +2357,6 @@ section#news div.header {
     justify-content: space-between;
     align-items: end;
     margin-bottom: 20px;
-
 }
 
 section#news div.header p {
@@ -2275,8 +2366,7 @@ section#news div.header p {
     font-size: 36px;
     line-height: 100%;
     color: #393939;
-    margin: 0;
-    
+    margin: 0
 }
 
 section#news div.header > p > span::before {
@@ -2441,19 +2531,22 @@ section#news div#news-list .news-description {
     position: relative;
     left: 130px;
     height: 100%;
+
 }
 
 .offers-header {
     display: flex;
-    justify-content: space-between;
     align-items: baseline;
+    margin-bottom: 10px;
+
 }
 
 .offers-header .header-text {
     display: flex;
-    justify-content: space-between;
-    width: 300px;
+    /* justify-content: space-between; */
+    width: 280px;
     align-items: center;
+
 }
 
 .offers-header .header-text .line {
@@ -2472,8 +2565,11 @@ section#news div#news-list .news-description {
     align-items: center;
 }
 
+.offers-controls .offers-nav {
+    margin-left: 60px;
+}
+
 .offers-count {
-    /* margin-right: 20px; */
     position: relative;
     bottom: 3px;
     min-width: 40px;
@@ -2501,32 +2597,54 @@ section#news div#news-list .news-description {
 
 .offers-nav button {
     background-color: transparent;
-    border: 2px solid yellow;
     color: yellow;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 38px;
+    height: 14px;
     font-size: 18px;
     cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid #FCBD21;
+    border-radius: 50px;
+    padding: 0 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.offers-nav button.prev-btn {
+    box-sizing: border-box;
+    border: 1px solid #393939;
+    border-radius: 50px;
+    margin-right: 10px;
+}
+
+.offers-nav button svg {
+    height: auto;
+    margin: 0;
+    stroke: white;
+    padding: 0;
+
 }
 
 .offers-content {
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .offer {
     background-color: #333;
     border-radius: 20px;
     overflow: hidden;
-    width: 300px;
+    width: 280px;
+
 }
 
 .offer-image {
     width: 300px;
     position: relative;
     height: 167px;
-    /* min-width: 300px; */
 }
 
 .offer-image img {
@@ -2584,35 +2702,32 @@ section#news div#news-list .news-description {
     transition: background-color 0.3s;
 }
 
-.offer-button:after {
-    content: '';
-    display: inline-block;
+.offer-button svg {
+    margin-left: 15px;
     width: 15px;
-    height: 7px;
-    margin-left: 10px;
-    background-image: url("images/button-right-arrow.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: auto;
+    stroke: white;
 }
-
+.offers-nav button:hover,
 .offer-button:hover {
     background-color: #FCBD21;
-    color: #333;
+    color: #393939;
+}
+.offers-nav button:hover svg,
+.offer-button:hover svg {
+    stroke: #393939;
 }
 
 .faq-container {
     display: flex;
     max-width: 1200px;
     padding-bottom: 100px;
-
 }
 
 .faq-left {
     flex: 1;
     padding: 0 80px;
     max-width: 100px;
-
 }
 
 .faq-header h1 {
@@ -2622,7 +2737,6 @@ section#news div#news-list .news-description {
     font-weight: 400;
     font-size: 36px;
     color: #393939;
-
 }
 
 .faq-header p {
@@ -2634,16 +2748,13 @@ section#news div#news-list .news-description {
     color: #393939;
     margin: 0;
     padding: 0;
-    margin-top: 10px;
-    
-
+    margin-top: 10px
 }
 
 .faq-header img {
     width: 76px;
     height: auto;
     margin-bottom: 10px;
-
 }
 
 .faq-right {
@@ -2652,7 +2763,6 @@ section#news div#news-list .news-description {
     padding-top: 0;
     background-color: #fff;
     max-width: 500px;
-
 }
 
 .faq-item:first-of-type {
@@ -2668,7 +2778,6 @@ section#news div#news-list .news-description {
     line-height: 16px;
     max-width: 500px;
     position: relative;
-
 }
 
 .faq-item img {
@@ -2696,7 +2805,6 @@ section#news div#news-list .news-description {
     margin: 0;
     padding: 0;
     line-height: 53px;
-
 }
 
 .faq-answer {
@@ -2708,7 +2816,6 @@ section#news div#news-list .news-description {
     font-size: 12px;
     line-height: 16px;
     color: #393939;
-
 }
 
 .ask-question-btn {
@@ -2730,7 +2837,6 @@ section#news div#news-list .news-description {
 
 .faq-ask-question {
     max-width: 300px;
-
 }
 
 .faq-ask-question h3 {
@@ -2741,7 +2847,6 @@ section#news div#news-list .news-description {
     line-height: 16px;
     color: #393939;
     width: 50%;
-
 }
 
 .faq-ask-question span {
@@ -2768,7 +2873,6 @@ section#news div#news-list .news-description {
 .faq-ask-question span svg {
     margin-left: 10px;
     stroke: #393939;
-
 }
 
 .faq-ask-question img {
@@ -2786,7 +2890,6 @@ footer {
     background-repeat: no-repeat;
     height: 330px;
     padding-top: 80px;
-
 }
   
   .footer-container {
@@ -2796,7 +2899,6 @@ footer {
     display: grid;
     grid-template-columns: repeat(24, 1fr);
     margin-bottom: 80px;
-
 }
   
   .footer-left {
@@ -2804,7 +2906,6 @@ footer {
     padding-left: 80px;
     grid-column: span 16;
     grid-row: span 1;
-
 }
   
   .footer-left h2 {
@@ -2815,7 +2916,6 @@ footer {
     line-height: 36px;
     color: #FFFFFF;
     margin: 0;
-
 }
 
   
@@ -2824,7 +2924,6 @@ footer {
     display: inline-block;
     position: relative;
     margin-right: 13px;
-
 }
 
 .footer-nav {
@@ -2836,7 +2935,6 @@ footer {
     color: #FFFFFF;
     height: 30px;
     margin: 0 auto;
-
 }
   
 .btn-ask {
@@ -2856,6 +2954,7 @@ footer {
     cursor: pointer;
 }
 
+div#greetings .yellow-link:hover,
 .btn-ask:hover {
     background: #FDCC65;
 }
@@ -2864,7 +2963,6 @@ footer {
     fill: #393939;
     margin-left: 10px;
     stroke: #393939;
-
 }
   
 .footer-right {
@@ -2872,7 +2970,6 @@ footer {
     padding-right: 80px;
     grid-column: span 8;
     grid-row: span 1;
-
 }
   
   .contact-info {
@@ -2887,7 +2984,6 @@ footer {
     line-height: 16px;
     color: #FFFFFF;
     margin: 0;
-
 }
   
   .contact-phone, .contact-email {
@@ -2899,7 +2995,6 @@ footer {
     line-height: 16px;
     font-feature-settings: 'liga' off;
     color: #FFFFFF;
-
 }
   
   .contact-phone span, .contact-email span, .social-title {
@@ -2912,7 +3007,6 @@ footer {
     display: inline-block;
     margin: 0;
     margin-bottom: 6px;
-
 }
 
   .contact-email a, .contact-phone a {
@@ -2923,12 +3017,10 @@ footer {
   .social-icons a {
     display: inline-block;
     margin-right: 20px;
-
 }
 
 .social-icons a:hover svg path {
     fill: #FCBD21;
-
 }
 
 .contact-email a:hover, .contact-phone a:hover {
@@ -2954,7 +3046,6 @@ footer {
     height: 30px;
     align-items: center;
     border-bottom: 2px solid #848484;
-
 }
   
 .footer-nav ul li {
@@ -2969,7 +3060,6 @@ footer {
     height: 20px;
     line-height: 20px;
     min-height: 20px;
-
 }
 
 .footer-nav ul > div > div > li:first-of-type {
@@ -2979,7 +3069,6 @@ footer {
 .footer-nav ul > div > div > li:last-of-type {
     margin-right: 0px;
     padding-right: 5px;
-
 }
   
 .footer-nav ul li a {
@@ -3009,7 +3098,6 @@ footer {
     padding: 0;
     text-align: left;
 }
-
   
 .footer-bottom a {
     appearance: none;
@@ -3039,7 +3127,7 @@ footer {
 
 @media (max-width: 768px) {
     #investment-info .details-grid {
-        grid-template-columns: 1fr; /* Одна колонка на маленьких экранах */
+        grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
 }
