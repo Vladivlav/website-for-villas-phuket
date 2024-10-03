@@ -644,6 +644,11 @@ section#main-page > header {
     border-radius: 10px;
 }
 
+.main-nav a.highlight:hover {
+    background: #FCBD21;
+    color: #393939;
+}
+
 .language-selector img {
     height: 24px;
 }
@@ -879,7 +884,6 @@ section#company-owner .quote-sign {
 }
   
 #best-points .container {
-    max-width: 1200px;
     margin: 0 auto;
 }
   
@@ -1061,11 +1065,7 @@ section#company-owner .quote-sign {
     margin-bottom: 25px;
 }
 
-#investment-info {
-}
-
 #investment-info .container {
-    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -2523,7 +2523,6 @@ section#news div#news-list .news-description {
 
 .offers {
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 30px;
     height: 350px;
@@ -2723,14 +2722,14 @@ section#news div#news-list .news-description {
 
 .faq-container {
     display: flex;
-    max-width: 1200px;
     padding-bottom: 100px;
 }
 
 .faq-left {
-    flex: 1;
+    /* flex: 1; */
     padding: 0 80px;
     max-width: 100px;
+
 }
 
 .faq-header h1 {
@@ -2761,11 +2760,10 @@ section#news div#news-list .news-description {
 }
 
 .faq-right {
-    flex: 2;
     padding-right: 50px;
     padding-top: 0;
     background-color: #fff;
-    max-width: 500px;
+
 }
 
 .faq-item:first-of-type {
@@ -2895,9 +2893,8 @@ footer {
     padding-top: 80px;
 }
   
-  .footer-container {
+.footer-container {
     justify-content: space-between;
-    max-width: 1200px;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(24, 1fr);
@@ -3006,10 +3003,11 @@ div#greetings .yellow-link:hover,
     font-weight: 300;
     font-size: 9px;
     line-height: 11px;
-    color: #D7D9D8;
+    color: #FCBD21;
     display: inline-block;
     margin: 0;
     margin-bottom: 6px;
+
 }
 
   .contact-email a, .contact-phone a {
@@ -3133,4 +3131,244 @@ div#greetings .yellow-link:hover,
         grid-template-columns: 1fr;
         grid-template-rows: auto;
     }
+}
+
+@media (min-width: 1920px) {
+    body {
+        max-width: initial;
+        margin: 0 auto;
+    }
+
+    /* Footer */
+
+    footer {
+        padding-top: 0;
+        background-image: unset;
+        background-color: #393939;
+        height: auto;
+    }
+
+    .footer-container {
+        padding: 150px 140px;
+        margin-bottom: 0;
+        height: 580px;
+        box-sizing: border-box;
+        background-image: url("images/footer-palm-bg.png");
+        background-position: top;
+        background-size: 25%;
+        background-repeat: no-repeat;
+        background-color: #393939;
+    }
+
+    .footer-left {
+        padding-left: 0;
+    }
+
+    .footer-right {
+        padding-right: 0;
+    }
+
+    .contact-title {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    .contact-phone, .contact-email {
+        margin-top: 30px;
+    }
+
+    .contact-phone span, .contact-email span, .social-title {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .contact-email a, .contact-phone a {
+        font-size: 26px;
+        line-height: 100%;
+    }
+
+    .footer-left h2 {
+        font-size: 56px;
+        line-height: 100%;
+    }
+
+    .btn-ask {
+        height: 40px;
+        font-size: 15px;
+        line-height: 40px;
+        padding: 0 25px;
+        margin-top: 40px;
+    }
+    
+    .btn-ask svg {
+        margin-left: 15px;
+        width: 24px;
+        height: 10px;
+    }
+
+    .social-icons svg {
+        width: 37px;
+        height: 37px;
+    }
+
+    #youtube-svg {
+        width: 45px;
+        height: 37px;
+    }
+
+    .social-icons a {
+        margin-right: 30px;
+    }
+
+    .footer-nav ul {
+        margin: 0 30px;
+    }
+
+    .footer-nav ul li {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 100%;
+        margin: 0 30px;
+    }
+
+    .footer-bottom {
+        height: 61px;
+        align-content: baseline;
+        margin: 0 30px;
+    }
+
+    .footer-bottom a, .footer-bottom p {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 130%;
+        align-self: center;
+    }
+
+    /* Footer END */
+
+    /*           */
+    /* FAQ START */
+    /*           */
+
+    .faq-left {
+        max-width: 175px;
+    }
+
+    .faq-right, .faq-item {
+        min-width: 800px;
+    
+    }
+
+    .faq-header img {
+        width: 118px;
+        max-height: 40px;
+        margin-bottom: 15px;
+    }
+
+    .faq-header h1 {
+        font-size: 56px;
+        line-height: 100%;
+    }
+
+    .faq-header p {
+        font-size: 20px;
+        line-height: 130%;
+        font-weight: 300;
+    }
+
+    .faq-question {
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 85px;
+        height: 85px;
+    }
+
+    .faq-answer {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        max-width: 650px;
+        padding-bottom: 30px;
+    
+    }
+
+    .faq-item img {
+        width: 24px;
+        height: 24px;
+        top: 30px;
+        right: 30px;    
+    }
+
+    .faq-ask-question img {
+        width: 440px;
+        height: 462px;
+    }
+
+    .faq-ask-question h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+    .faq-ask-question {
+        max-width: initial;
+    }
+
+    /* ALL BUTTONS */
+    .faq-ask-question span,
+    section#news div.header > span {
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+        padding: 0 25px;
+    }
+
+    .faq-ask-question span svg {
+        width: 24px;
+        height: auto;
+    }
+
+    .faq-container {
+        justify-content: space-between;
+        padding: 150px 140px 200px 140px;
+        box-sizing: border-box;
+    }
+
+    /* FAQ END */
+
+    /* News START */
+    section#news {
+        width: auto;
+        height: auto;
+        padding: 150px 140px 60px 140px;
+    }
+
+    section#news div#news-list {
+        gap: 40px;
+    }
+
+    section#news div#news-list div.news-block-link {
+        width: auto;
+        height: 590px;
+    }
+
+    section#news div.header {
+        margin-bottom: 40px;
+    }
+
+    section#news div.header p {
+        font-size: 56px;
+    }
+
+    section#news div.header > p > span::before {
+        width: 40px;
+        height: 155px;
+    }
+
+    /* News END */
 }
