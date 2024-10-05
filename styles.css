@@ -18,10 +18,6 @@ body, html {
     justify-content: space-between;
 }
 
-html {
-    background-color: #33333333;
-}
-
 body {
     background-color:white;
     max-width: 1200px;
@@ -447,6 +443,7 @@ section#youtube-video .youtube-container .image-container .play-icon {
 section#youtube-video .youtube-container .image-container .play-icon svg {
     position: relative;
     left: 5px;
+
 }
 
 section#youtube-video .youtube-container .text-container {
@@ -2723,11 +2720,13 @@ section#news div#news-list .news-description {
 .faq-container {
     display: flex;
     padding-bottom: 100px;
+    justify-content: space-between;
+    padding-left: 80px;
+    padding-right: 80px;
+
 }
 
 .faq-left {
-    /* flex: 1; */
-    padding: 0 80px;
     max-width: 100px;
 
 }
@@ -3139,6 +3138,13 @@ div#greetings .yellow-link:hover,
         margin: 0 auto;
     }
 
+    section {
+        max-width: 1920px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    
+    }
+
     /* Footer */
 
     footer {
@@ -3254,6 +3260,8 @@ div#greetings .yellow-link:hover,
 
     .faq-left {
         max-width: 175px;
+        padding: 0px;
+    
     }
 
     .faq-right, .faq-item {
@@ -3315,12 +3323,16 @@ div#greetings .yellow-link:hover,
     }
 
     .faq-ask-question {
-        max-width: initial;
+        max-width: 440px;
+    
     }
 
     /* ALL BUTTONS */
     .faq-ask-question span,
-    section#news div.header > span {
+    section#news div.header > span,
+    #best-points .cta button,
+    section#youtube-video .youtube-container .text-container a,
+    section#tenth-section div.content .block-link span {
         width: auto;
         height: 40px;
         line-height: 40px;
@@ -3328,7 +3340,11 @@ div#greetings .yellow-link:hover,
         padding: 0 25px;
     }
 
-    .faq-ask-question span svg {
+    .faq-ask-question span svg,
+    section#news div.header > span svg,
+    #best-points .cta button svg,
+    section#youtube-video .youtube-container .text-container a svg,
+    section#tenth-section div.content .block-link span svg {
         width: 24px;
         height: auto;
     }
@@ -3353,8 +3369,9 @@ div#greetings .yellow-link:hover,
     }
 
     section#news div#news-list div.news-block-link {
-        width: auto;
+        width: 380px;
         height: 590px;
+    
     }
 
     section#news div.header {
@@ -3370,5 +3387,432 @@ div#greetings .yellow-link:hover,
         height: 155px;
     }
 
+
+    section#news div#news-list .news-date {
+        font-size: 15.9992px;
+        line-height: 100%;
+        margin-left: 30px;
+        margin-top: 20px;
+    }
+
+    section#news div#news-list .news-title {
+        font-size: 26px;
+        line-height: 100%;
+        margin-left: 30px;
+        margin-top: 30px;
+    }
+
+    section#news div#news-list .news-description {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        margin-left: 30px;
+        margin-top: 10px;
+        font-weight: 300;
+    }
+
     /* News END */
+
+
+    /* Partners START */
+
+    section#our-partners {
+        padding: 0 65px;
+    
+    }
+
+    section#our-partners h3 {
+        font-size: 56px;
+        line-height: 100%;
+        margin-top: 200px;
+    }
+
+    section#our-partners p {
+        font-size: 20px;
+        line-height: 130%;
+        margin-top: 15px;
+    }
+
+    section#our-partners #partners-carousel {
+        margin-top: 85px;
+    }
+
+    section#our-partners #partners-carousel img {
+        width: 215px;
+    }
+
+    /* Partners END */
+
+
+    /* Tenth START */
+
+    section#tenth-section {
+        max-width: initial;
+        height: 100%;
+        position: relative;
+    }
+
+    section#tenth-section div.header {
+        height: 260px;
+        box-sizing: border-box;
+        padding: 0 140px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+    }
+
+    section#tenth-section div.content {
+        height: calc(100% - 260px);
+        width: 100%;
+        background-size: cover;
+        box-sizing: border-box;
+        max-width: 1920px;
+        margin: 0 auto;
+    
+    }
+
+    p#main-thought-comment {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    p#main-thought {
+        font-size: 56px;
+        line-height: 100%;
+    }
+
+    p#main-thought span:before {
+        width: 176px;
+        height: 39px;
+        margin-right: 10px;
+    }
+
+    section#tenth-section div.content .block-link {
+        width: 340px;
+        height: 182px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+
+    section#tenth-section div.content .block-link p {
+        font-size: 26px;
+        line-height: 100%;
+        margin-bottom: 30px;
+    }
+
+    section#tenth-section div.content .block-link:nth-of-type(2) {
+        margin-top: 50px;
+    }
+
+    /* Tenth END */
+
+    /* Best points START */
+
+    #best-points {
+        max-width: 1920px;
+        box-sizing: border-box;
+        padding: 200px 140px 150px 140px;
+    }
+
+    #best-points .grid-item {
+        height: 208px;
+        box-sizing: border-box;
+        padding: 30px;
+        border-radius: 24px;
+    }
+
+    #best-points .grid-item h3:first-of-type {
+        font-size: 20px;
+        line-height: 100%;
+    }
+
+    #best-points .grid-item h3:nth-of-type(2) {
+        font-family: igra-sans;
+        font-size: 26px;
+        line-height: 100%;
+        padding-top: 0;
+        margin-top: 20px;
+    }
+
+    #best-points .grid-item p {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    #best-points .container > h2 {
+        font-size: 56px;
+        line-height: 100%;
+    }
+
+    #best-points .container > h2:nth-of-type(2) {
+        margin-bottom: 50px;
+    }
+
+    #best-points .grid-item.cta p {
+        padding-top: 41px;
+        font-size: 25.5987px;
+        line-height: 100%;
+    
+    }
+
+    .cta p::before {
+        width: 22px;
+        height: 22px;
+        top: 0px;
+    }
+
+    #best-points .cta button {
+        width: fit-content;
+        border-radius: 50px;
+    }
+
+    /* Best points END */
+
+    /* Prices and benefits START */
+
+    section#prices-and-benefits {
+        max-width: 1920px;
+        box-sizing: border-box;
+        padding: 150px 120px 200px 140px;
+    
+    }
+
+    #prices-and-benefits .content-section {
+        gap: 40px;
+        padding: 0;
+    }
+
+    #prices-and-benefits .image-content img {
+        width: 600px;
+        height: auto;
+    }
+
+    #prices-and-benefits .text-content {
+        margin-left: 0;
+        margin-top: 27px;
+    
+    }
+
+    #prices-and-benefits .text-content h2 {
+        font-size: 56px;
+        line-height: 100%;
+    }
+
+    #prices-and-benefits .text-content > p {
+        margin-top: 30px;
+    
+    }
+
+    #prices-and-benefits .text-content p {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    #prices-and-benefits .fact-list {
+        grid-template-columns: 335px 1fr;
+        row-gap: 80px;
+        column-gap: 140px;
+        margin-top: 80px;
+    
+    }
+
+    #prices-and-benefits .fact-item p.number {
+        font-size: 19.199px;
+        line-height: 100%;
+    }
+
+    #prices-and-benefits .fact-item p.little-title {
+        font-size: 56px;
+        line-height: 100%;
+        margin-top: 15px;
+    
+    }
+
+    #prices-and-benefits .fact-item p.little-description {
+        font-size: 20px;
+        line-height: 130%;
+    }
+
+    #prices-and-benefits .fact-item {
+        height: auto;
+    
+    }
+
+    /* Prices and benefits END */
+
+    /* Four men quote START */
+
+    section#quote-with-four-men {
+        max-width: initial;
+        width: 100%;
+        height: 100%;
+    }
+    
+    section#quote-with-four-men img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    section#quote-with-four-men div.quote {
+        font-family: igra-sans;
+        font-size: 56px;
+        line-height: 100%;
+    }
+
+    section#quote-with-four-men div.quote-sign > span:first-of-type {
+        font-family: igra-sans;
+        font-size: 26px;
+        line-height: 100%;
+    }
+
+    section#quote-with-four-men div.quote-sign > span:nth-of-type(2) {
+        font-family: 'Commissioner';
+        font-size: 16px;
+        line-height: 110%;
+        margin-top: 10px;
+        display: block;
+    }
+
+    /* Four men quote END */
+
+
+    section#attractive-direction {
+        max-width: 1920px;
+        box-sizing: border-box;
+        padding: 50px 140px 150px 140px;
+    }
+
+    /* Youtube video START */
+
+    section#youtube-video {
+        padding: 150px 140px 200px 140px;
+        box-sizing: border-box;
+        max-width: 1920px;
+        height: 710px;
+    }
+
+    section#youtube-video .youtube-container .image-container img {
+        width: 640px;
+        height: 360px;
+    }
+
+    section#youtube-video .youtube-container .image-container .play-icon {
+        width: 132px;
+        height: 132px;
+        top: 114px;
+        left: 254px;
+    }
+
+    section#youtube-video .youtube-container .image-container .play-icon svg {
+        height: 52.6px;
+        width: auto;
+        left: 8px;
+    }
+
+    section#youtube-video .youtube-container .text-container {
+        margin-left: 52px;
+    }
+
+    section#youtube-video .youtube-container .text-container img {
+        width: 160px;
+        height: auto;
+    
+    }
+
+    section#youtube-video .youtube-container .text-container p {
+        font-family: igra-sans;
+        font-size: 56px;
+        line-height: 100%;
+    
+    }
+
+    section#youtube-video .youtube-container .text-container a {
+        width: fit-content;
+        border-radius: 50px;
+    }
+
+    /* Youtube video END */
+
+    /* Company owner START */
+
+    section#company-owner {
+        padding: 200px 140px 50px 140px;
+    }
+    
+    section#company-owner div#i-know-everything,
+    #investment-info {
+        padding: 0;
+    
+    }
+    
+    #investment-info {
+        margin-left: 52px;
+        justify-content: space-between;
+        gap: 110px;
+        padding: 13px 0px 49px;
+        flex: 1;
+    
+    }
+    
+    section#company-owner div#picture {
+        width: 642px;
+    
+    }
+
+    #investment-info > p {
+        font-family: igra-sans;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 100%;
+        margin: 0;
+    }
+    
+    #investment-info .details-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto auto;
+        column-gap: 110px;
+        row-gap: 80px;
+    
+    }
+    
+    #investment-info .details-grid .detail-item {
+        height: 80px;
+        width: fit-content;
+    
+    }
+    
+    #investment-info .detail-item h3 {
+        font-family: igra-sans;
+        font-size: 26px;
+        line-height: 100%;
+    
+    }
+    
+    #investment-info .detail-item p {
+        font-size: 20px;
+        line-height: 130%;
+    
+    }
+
+    /* Company owner END */
+    
+  .column1 {
+        grid-column: 1;
+        min-width: 262px;
+    
+    }
+
+.column2 {
+  grid-column: 2; /* Первый элемент второй колонки */
+}
+
+.column3 {
+  grid-column: 3; /* Второй элемент второй колонки */
+}
+
+.column2-wide {
+  grid-column: 2 / span 2; /* Элемент растягивается на две колонки */
+  grid-row: 2; /* Второй ряд */
+}
 }
