@@ -118,6 +118,13 @@ section#attractive-direction .last-fact-container {
     box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     visibility: hidden;
+    position: relative;
+}
+
+section#attractive-direction .last-fact-container > svg {
+    position: absolute;
+    top: -11px;
+    left: -11px;
 
 }
 
@@ -297,10 +304,11 @@ section#attractive-direction .fact-container .fact-left-part .fact-text .fact-ba
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
-    content: url("images/fact-info-badge.svg");
+    content: '';
     display: inline-block;
     position: relative;
     margin-right: 5px;
+
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge.no-info-badge::before {
@@ -341,6 +349,8 @@ section#attractive-direction .last-fact-container .fact-right-part {
     padding-top: 24px;
     padding-bottom: 17px;
     gap: 20px;
+    justify-content: space-between;
+
 }
 
 section#attractive-direction .last-fact-container .fact-items {
@@ -389,6 +399,9 @@ section#attractive-direction .last-fact-container .fact-right-part,
 section#attractive-direction .fact-container .fact-right-part {
     grid-column: span 4;
     grid-row: span 1;
+    width: 100%;
+    height: 100%;
+
 }
 
 section#attractive-direction .fact-container .fact-right-part img {
@@ -419,6 +432,7 @@ section#youtube-video .youtube-container .image-container {
     display: flex;
     align-self: center;
     justify-content: center;
+
 }
 
 section#youtube-video .youtube-container .image-container img {
@@ -823,6 +837,7 @@ span#for-life::before {
     position: relative;
     top: 6px;
     margin-right: 11px;
+
 }
 
 section#company-owner {
@@ -876,8 +891,9 @@ section#company-owner .quote-sign {
 }
 
 #best-points {
-    background-color: #fdfdfd;
+    background-color: white;
     padding: 80px;
+
 }
   
 #best-points .container {
@@ -1194,6 +1210,10 @@ section#company-owner .quote-sign {
     height: 26px;
     background-color: #0000;
     padding: 0 20px;
+    color: white;
+    font-family: 'Commissioner';
+    font-weight: 300;
+
 }
 
 #investments-base .form-select,
@@ -1458,7 +1478,7 @@ section#company-owner .quote-sign {
     background-size: auto 100%;
 }
 
-#prices-and-benefits .quiz-progress {
+#prices-and-benefits .quiz-progress, #check-objects .quiz-progress {
     display: flex;
     margin-bottom: 20px;
     flex-direction: column;
@@ -1491,12 +1511,13 @@ section#company-owner .quote-sign {
 #prices-and-benefits .progress-bar {
     height: 9px;
     background-color: #CAE7D4;
-    border-radius: 5px;
+    border-radius: 9px;
     overflow: hidden;
     width: calc(100% - 40px);
     margin-top: 20px;
     position: relative;
     align-self: center;
+
 }
 
 #prices-and-benefits .progress {
@@ -2000,7 +2021,7 @@ section#additional-company-info {
     background-repeat: no-repeat;
 }
 
-section#additional-company-info > h2 {
+section#additional-company-info > div > h2 {
     font-family: igra-sans;
     font-size: 36px;
     line-height: 100%;
@@ -2008,7 +2029,7 @@ section#additional-company-info > h2 {
     font-weight: 400;
 }
 
-section#additional-company-info > h2::before {
+section#additional-company-info > div > h2::before {
     content: url("images/black-badge.png");
     display: inline-block;
     position: relative;
@@ -2066,13 +2087,14 @@ section#additional-company-info div.conference-logos img {
     max-height: 34px;
     height: auto;
     width: auto;
+
 }
 
 section#additional-company-info div.award-card p span {
     color: #FCBD21;
 }
 
-section#additional-company-info > h3 {
+section#additional-company-info > div > h3 {
     font-family: igra-sans;
     font-style: normal;
     font-weight: 400;
@@ -2267,7 +2289,8 @@ section#tenth-section div.content .block-link:first-of-type {
     background-image: url("images/layer-black.png");
     background-size: 50%;
     background-repeat: no-repeat;
-    background-position: top  right;
+    background-position: top right;
+
 }
 
 
@@ -2529,7 +2552,7 @@ section#news div#news-list .news-description {
     color: white;
     position: relative;
     left: 130px;
-    height: 100%;
+    height: initial;
 
 }
 
@@ -2542,7 +2565,6 @@ section#news div#news-list .news-description {
 
 .offers-header .header-text {
     display: flex;
-    /* justify-content: space-between; */
     width: 280px;
     align-items: center;
 
@@ -3142,7 +3164,6 @@ div#greetings .yellow-link:hover,
         max-width: 1920px;
         margin: 0 auto;
         box-sizing: border-box;
-    
     }
 
     /* Footer */
@@ -3332,6 +3353,9 @@ div#greetings .yellow-link:hover,
     section#news div.header > span,
     #best-points .cta button,
     section#youtube-video .youtube-container .text-container a,
+    .offer-button,
+    #prices-and-benefits .next-button,
+    section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button,
     section#tenth-section div.content .block-link span {
         width: auto;
         height: 40px;
@@ -3339,14 +3363,71 @@ div#greetings .yellow-link:hover,
         font-size: 15px;
         padding: 0 25px;
     }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button {
+        width: auto;
+        min-width: 202px;
+        box-sizing: border-box;
+        min-height: 40px;
+        margin-right: 30px;
+    
+    }
+    
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item {
+        padding: 30px;
+        box-sizing: border-box;
+        max-width: 500px;
+    
+    }
+    
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .number {
+        font-family: igra-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p.yellow {
+        max-width: 360px;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p {
+        font-family: igra-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 100%;
+        max-width: 300px;
+    
+    }
+    
+    section#attractive-direction .last-fact-container .fact-items, section#attractive-direction .last-fact-container .fact-right-part {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+    
+    }
+    
+    section#attractive-direction .last-fact-container .fact-right-part svg {
+        height: 100%;
+        width: auto;
+    }
 
     .faq-ask-question span svg,
     section#news div.header > span svg,
     #best-points .cta button svg,
+    .offer-button svg,
     section#youtube-video .youtube-container .text-container a svg,
+    #prices-and-benefits .next-button svg,
     section#tenth-section div.content .block-link span svg {
         width: 24px;
         height: auto;
+    }
+    
+    #prices-and-benefits .next-button svg {
+        height: 13px;
+    
     }
 
     .faq-container {
@@ -3458,6 +3539,9 @@ div#greetings .yellow-link:hover,
         padding: 0 140px;
         padding-top: 50px;
         padding-bottom: 30px;
+        max-width: 1920px;
+        margin: 0 auto;
+    
     }
 
     section#tenth-section div.content {
@@ -3465,8 +3549,20 @@ div#greetings .yellow-link:hover,
         width: 100%;
         background-size: cover;
         box-sizing: border-box;
-        max-width: 1920px;
         margin: 0 auto;
+    
+    }
+    
+    section#tenth-section div.content .wrapper1920 {
+        margin: 0 auto;
+        padding: 150px 140px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 50px;
     
     }
 
@@ -3491,6 +3587,8 @@ div#greetings .yellow-link:hover,
         height: 182px;
         padding: 30px;
         box-sizing: border-box;
+        margin: 0 !important;
+    
     }
 
     section#tenth-section div.content .block-link p {
@@ -3511,6 +3609,7 @@ div#greetings .yellow-link:hover,
         max-width: 1920px;
         box-sizing: border-box;
         padding: 200px 140px 150px 140px;
+    
     }
 
     #best-points .grid-item {
@@ -3573,12 +3672,144 @@ div#greetings .yellow-link:hover,
         max-width: 1920px;
         box-sizing: border-box;
         padding: 150px 120px 200px 140px;
+    }
+    
+    #prices-and-benefits .header-section {
+        padding: 0;
+        margin-bottom: 50px;
+    }
+    
+    #prices-and-benefits .quiz-section,
+    #check-objects .quiz-section {
+        margin-top: 55px;
+        min-height: 325px;
+        padding: 30px;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+    
+    #check-objects .quiz-question.active, #prices-and-benefits .quiz-question.active {
+        display: block;
+    }
+    
+    #prices-and-benefits .quiz-options,
+    #check-objects .quiz-options {
+        margin: 0;
+        margin-top: 30px;
+        gap: 30px;
+    
+    }
+    
+    #prices-and-benefits .quiz-option,
+    #prices-and-benefits .next-button,
+    #prices-and-benefits .prev-button,
+    #check-objects .quiz-option,
+    #check-objects .next-button,
+    #check-objects .prev-button {
+        height: 40px;
+        font-size: 20px;
+        font-weight: 400;
+        width: auto;
+    
+    }
+    
+    #prices-and-benefits .next-button,
+    #prices-and-benefits .prev-button,
+    #check-objects .next-button,
+    #check-objects .prev-button {
+        width: auto;
+        padding: 0 25px
+    }
+    
+    #prices-and-benefits .quiz-question p.green-question,
+    #check-objects .quiz-question p.green-question {
+        font-family: igra-sans;
+        margin: 0;
+        margin-top: 15px;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 100%;
+    }
+    
+    #prices-and-benefits .quiz-option .circle,
+    #check-objects .quiz-option div.circle {
+        width: 26px;
+        height: 26px;
+        margin: 7px;
+        box-sizing: border-box;
+        border-radius: 30px;
+    
+    }
+    
+    #prices-and-benefits .quiz-option span,
+    #check-objects .quiz-option span {
+        margin-left: 8px;
+        margin-right: 30px;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+    
+    }
+    
+    #prices-and-benefits .progress-bar,
+    #check-objects .progress-bar {
+        margin: 0;
+        height: 15px;
+        width: 100%;
+    
+    }
+    
+    #prices-and-benefits .quiz-progress span,
+    #check-objects .quiz-progress span {
+        width: 63px;
+        height: 27px;
+        margin: 0;
+        margin-top: 30px;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 27px;
+    
+    }
+    
+    #prices-and-benefits .quiz-section p,
+    #check-objects .quiz-section p{
+        font-family: 'Commissioner';
+        margin: 0;
+        margin-top: 30px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+    
+    }
+    
+    #prices-and-benefits .header-content h1 {
+        font-family: igra-sans;
+        font-size: 56px;
+        line-height: 100%;
+    
+    }
+    
+    #prices-and-benefits .header-content p {
+        font-family: 'Commissioner';
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        margin-left: 92px;
     
     }
 
     #prices-and-benefits .content-section {
         gap: 40px;
         padding: 0;
+        margin-top: 150px;
+    
     }
 
     #prices-and-benefits .image-content img {
@@ -3658,6 +3889,11 @@ div#greetings .yellow-link:hover,
         font-size: 56px;
         line-height: 100%;
     }
+    
+    section#quote-with-four-men div.quote-sign {
+        padding-left: 140px;
+        padding-bottom: 150px;
+    }
 
     section#quote-with-four-men div.quote-sign > span:first-of-type {
         font-family: igra-sans;
@@ -3677,18 +3913,166 @@ div#greetings .yellow-link:hover,
 
 
     section#attractive-direction {
-        max-width: 1920px;
+        max-width: 100%;
         box-sizing: border-box;
-        padding: 50px 140px 150px 140px;
+        padding: 0;
+        margin: 0 auto;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-footer p {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 120%;
+        align-self: center;
+        margin: 0;
+        padding: 30px;
+    
+    }
+    
+    section#attractive-direction .last-fact-container .fact-items {
+        padding: 30px 0;
+        width: 318px;
+        max-width: 500px;
+    
+    }
+    
+    section#attractive-direction .last-fact-container .fact-right-part span
+    {
+        max-width: 360px;
+        display: block !important;
+    
+    }
+
+    section#attractive-direction .fact-container .fact-left-part {
+        max-width: initial;
+        height: 502px;
+        background-size: cover;
+        min-height: 502px;
+        max-height: 502px;
+        border-radius: 24px;
+        margin: 17px 0;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text p {
+        margin: 0;
+        font-family: igra-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 100%;
+        max-width: 60%;
+    
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge {
+        margin: 0;
+        margin-top: 10px;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge:last-of-type {
+        margin-bottom: 0;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge svg {
+        width: 14px;
+        height: 14px;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
+        width: 0;
+        height: 0;
+        content: unset;
+    }
+    
+    section#attractive-direction .fact-container {
+        height: 536px;
+        gap: 30px;
+    
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text .fact-badge {
+        margin: 0;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 29px;
+        width: 100px;
+        height: 29px;
+        top: 30px;
+        left: 30px;
+    
+    }
+    
+    section#attractive-direction .last-fact-container .fact-items p, section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item, section#attractive-direction .last-fact-container .fact-right-part p {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 21px;
+        line-height: 120%;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-items span, section#attractive-direction .last-fact-container .fact-right-part span {
+        font-size: 20px;
+        margin-right: 0;
+        display: inline;
+        font-weight: 300;
+    
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text {
+        width: 480px;
+        height: 360px;
+        padding: 30px;
+        box-sizing: border-box;
+        margin-top: 0px;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-footer {
+        height: 110px;
+        line-height: 55px;
+    
+    }
+    
+    section#attractive-direction .wrapper1920 {
+        padding-bottom: 50px;
+    }
+    
+    section#attractive-direction .fact-container .fact-right-part img {
+        max-width: initial;
+        height: 100%;
+        width: 100%;
+    
     }
 
     /* Youtube video START */
 
     section#youtube-video {
+        max-width: initial;
+        padding: 0;
+        margin: 0 auto;
+        height: auto;
+        background-size: 520px auto;
+    
+    }
+    
+    section#youtube-video .youtube-container {
         padding: 150px 140px 200px 140px;
         box-sizing: border-box;
         max-width: 1920px;
         height: 710px;
+        margin: 0 auto;
+    }
+    
+    section#youtube-video .youtube-container .image-container {
+        height: auto;
     }
 
     section#youtube-video .youtube-container .image-container img {
@@ -3792,27 +4176,709 @@ div#greetings .yellow-link:hover,
     #investment-info .detail-item p {
         font-size: 20px;
         line-height: 130%;
-    
     }
 
     /* Company owner END */
-    
-  .column1 {
-        grid-column: 1;
-        min-width: 262px;
+
+
+    /* country section start */
+
+    section#additional-company-info {
+        max-width: initial;
+        box-sizing: border-box;
+        padding: 0;
+        margin: auto;
+        background-size: 1920px auto;
     
     }
 
-.column2 {
-  grid-column: 2; /* Первый элемент второй колонки */
-}
+    section#additional-company-info div.country-card.big {
+        width: 556px;
+    }
 
-.column3 {
-  grid-column: 3; /* Второй элемент второй колонки */
-}
+    section#additional-company-info > div > h2::before {
+        width: 100px;
+        height: 48px;
+        content: '';
+        background: url("images/black-badge.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        top: 4px;
+        margin-right: 15px;
+    
+    }
+    
+    section#additional-company-info > div > h2 {
+        font-size: 56px;
+        line-height: 100%;
+    }
 
-.column2-wide {
-  grid-column: 2 / span 2; /* Элемент растягивается на две колонки */
-  grid-row: 2; /* Второй ряд */
-}
+    section#additional-company-info div.country-card {
+        width: 500px;
+        height: 208px;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+    
+    section#additional-company-info div.country-card div.header {
+        font-family: igra-sans;
+        font-size: 26px;
+        line-height: 100%;
+    }
+    
+    section#additional-company-info div.country-card .agent-info img {
+        width: 110px;
+        height: 110px;
+    }
+    
+    section#additional-company-info div.country-card .agent-info .agent-details p.agent-name {
+        font-family: igra-sans;
+        font-size: 26px;
+        line-height: 100%;
+    }
+    
+    section#additional-company-info div.country-card .agent-info .agent-details p.agent-position {
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        font-family: 'Commissioner';
+    
+    }
+    
+    section#additional-company-info div.country-card div.header div.agent-flags img {
+        width: 30px;
+        height: 30px;
+    }
+    
+    section#additional-company-info > div > h3 {
+        font-size: 56px;
+        line-height: 100%;
+        margin-bottom: 50px;
+    }
+    
+    section#additional-company-info div.award-card {
+        width: 500px;
+    }
+    
+    section#additional-company-info div.award-card p {
+        font-family: igra-sans;
+        font-size: 26px;
+        line-height: 100%;
+    }
+    
+    section#additional-company-info div.conference-logos {
+        display: flex;
+        gap: 31px;
+        margin-top: 34px;
+    
+    }
+    
+    section#additional-company-info div.conference-logos img {
+        max-height: initial;
+        width: 130px;
+    
+    }
+    
+    section#additional-company-info div.conference-logos img:nth-of-type(2) {
+        width: 149px;
+    }
+    
+    section#additional-company-info div.conference-logos img:first-of-type {
+        width: 138px;
+    }
+    
+    section#additional-company-info div.award-card.big {
+        width: 540px;
+        height: 534px;
+        box-sizing: border-box;
+        padding: 30px;
+    
+    }
+    
+    section#additional-company-info div.award-card > img {
+        width: 100%;
+        height: 326px;
+        object-fit: cover;
+    }
+    
+    section#additional-company-info div.award-card.big > img {
+        border-radius: 16px;
+    
+    }
+    
+    section#additional-company-info div.award-card.big p {
+        font-family: igra-sans;
+        font-size: 26px;
+        line-height: 100%;
+    }
+
+    /* country section end */
+    
+    /*  investment base start */
+    
+    #investments-base {
+        max-width: initial;
+        height: 100%;
+        width: 100%;
+        max-height: 863px;
+        background: url("images/investments-base.png");
+        background-size: cover;
+    }
+    
+    #investments-base .quote {
+        position: unset;
+        padding: 0;
+    }
+    
+    #investments-base .quote p.title {
+        font-family: igra-sans;
+        font-size: 56px;
+        line-height: 100%;
+        margin: 0;
+        margin-bottom: 30px;
+    }
+    
+    #investments-base .quote p.description {
+        font-family: 'Commissioner';
+        font-size: 20px;
+        line-height: 130%;
+        font-weight: 300;
+    
+    }
+
+    #investments-base .form-inputs,
+    #prices-and-benefits .form-inputs,
+    #check-objects .form-inputs {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        gap: 30px;
+        display: flex;
+        grid-template-columns: none;
+    
+    }
+    
+    #get-properties {
+        position: unset;
+        margin: 0;
+        width: 100%;
+        height: 243px;
+        box-sizing: border-box;
+        padding: 30px;
+    }
+    
+    .form-input,
+    .form-select {
+        width: 298px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 100%;
+        padding: 0 25px;
+    
+    }
+    
+    #investments-base .form-select > span,
+    #check-objects .form-select > span,
+    #prices-and-benefits .form-select > span {
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+        justify-content: space-between;
+        padding: 0;
+        padding-left: 30px;
+        padding-right: 25px;
+        align-items: center;
+        box-sizing: border-box;
+        border: 1px solid #FCBD21;
+        border-radius: 20px;
+        z-index: 8;
+    
+    }
+    
+    #investments-base .form-select > span svg,
+    #check-objects .form-select > span svg,
+    #prices-and-benefits .form-select > span svg {
+        width: 20px;
+        /* max-width: 20px; */
+        height: 8px;
+    
+    }
+    
+    #investments-base .form-select {
+        display: flex;
+        box-sizing: border-box;
+        width: 300px;
+        height: 40px;
+        border-width: 0;
+        padding: 0;
+    
+    }
+    
+    #investments-base .form-actions,
+    #check-objects .form-actions,
+    #prices-and-benefits .form-actions {
+        width: auto;
+        flex: 1;
+        margin-bottom: 0;
+    
+    }
+    
+    .form-agreement,
+    #prices-and-benefits .form-agreement {
+        margin-top: 10px;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 120%;
+    }
+    
+    .form-agreement input {
+        width: 15px;
+        height: 15px;
+        border-radius: 3px;
+        margin: 0px;
+        margin-right: 2px;
+        box-sizing: content-box;
+    
+    }
+    
+    .form-button {
+        font-family: 'Commissioner';
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 100%;
+        height: 40px;
+        padding: 0 25px;
+    
+    }
+    
+    .form-button svg {
+        width: 24px;
+        height: 6px;
+        margin-left: 15px;
+    
+    }
+    
+    #investments-base .form-select div.feddback-options-list span,
+    #check-objects .form-select div.feddback-options-list span,
+    #prices-and-benefits .form-select div.feddback-options-list span {
+        height: 40px;
+        line-height: 40px;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+    }
+    
+    #investments-base .form-select div.feddback-options-list, #check-objects .form-select div.feddback-options-list,       #prices-and-benefits .form-select div.feddback-options-list {
+        height: 160px;
+        box-sizing: border-box;
+        top: 0;
+        left: 0;
+        position: absolute;
+        border-radius: 20px;
+    
+    }
+    
+    #investments-base .form-select div.feddback-options-list > span svg, #check-objects .form-select div.feddback-          options-list > span svg, #prices-and-benefits .form-select div.feddback-options-list > span svg {
+        width: 20px;
+        height: 8px;
+        padding: 0;
+    
+    }
+    
+    #investments-base .form-text {
+        padding: 0;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+    
+    }
+    
+    #investments-base .form-text > p,
+    #prices-and-benefits .quiz-question .form-text p {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 130%;
+        margin-bottom: 50px;
+    
+    }
+    
+    #prices-and-benefits .quiz-question .form-text p,
+    #check-objects .quiz-question .form-text p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-family: igra-sans;
+    
+    }
+    
+    #investments-base .wrapper1920 {
+        width: 100%;
+        height: 100%;
+        padding: 150px 140px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+    
+    #investments-base img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: none;
+    
+    }
+    
+    /*  investment base end  */
+    
+    /*  check-objects start   */
+    
+    section#check-objects {
+        max-width: 100%;
+        height: 787px;
+        box-sizing: border-box;
+        background: url("images/check-objects-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    
+    #check-objects .header-content h3 {
+        font-family: igra-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 56px;
+        line-height: 100%;
+    }
+    
+    #check-objects .header-content p {
+        margin-left: 97px;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+    
+    }
+    
+    #check-objects .quiz-section {
+        margin-top: 50px;
+    }
+    
+    #check-objects .header-section {
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 0;
+        background: unset;
+        padding: 150px 140px;
+        box-sizing: border-box;
+    }
+    /*  check-objects ens    */
+
+
+    /* main page start */
+
+    section#main-page {
+        max-width: 100%;
+        height: 100%;
+    }
+    
+    section#main-page .right-line {
+        width: 160px;
+    }
+    
+    section#main-page #logo img {
+        width: 117px;
+        margin-top: 15px;
+    
+    }
+    
+    section#main-page #logo {
+        width: 160px;
+    }
+    
+    section#main-page > .flex {
+        position: relative;
+        bottom: 0;
+        height: 100%;
+        max-width: 1920px;
+        margin: 0 auto;
+        overflow: initial;
+        align-items: center;
+        padding-top: 120px;
+    
+    }
+    
+    div#greetings {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        padding-left: 140px;
+        padding-top: 0;
+        padding-bottom: 77px;
+    }
+    
+    .offers-header .header-text {
+        width: 480px;
+        box-sizing: border-box;
+    }
+    
+    .offers-header {
+        margin-bottom: 20px;
+    
+    }
+    
+    .offers-count {
+        min-width: 63px;
+    }
+    
+    .offers-count .current-number {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23.9987px;
+        line-height: 29px;
+    }
+    
+    .offers-count .total-number {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+    }
+    
+    
+    .offers-header h2 {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+    }
+    
+    section.offers {
+        height: 557px;
+        padding: 40px;
+        box-sizing: border-box;
+        width: 896px;
+    }
+    
+    .offers-nav button {
+        width: 60px;
+        height: 22px;
+    
+    }
+    
+    .offers-nav button svg {
+        width: 24px;
+        height: auto;
+    }
+    
+    .offer {
+        min-width: 480px;
+        background-color: unset;
+        border-radius: 0;
+        height: 427px;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .offer-info {
+        padding: 0;
+    }
+    
+    .offer-info h3 {
+        font-family: igra-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 25.5987px;
+        line-height: 100%;
+        margin-top: 20px;
+        margin-bottom: 5px;
+    
+    }
+    
+    .offer-info p {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        margin-bottom: 6px;
+    
+    }
+    
+    .offer-image {
+        width: 100%;
+        height: 267px;
+    
+    }
+    
+    .offer-label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 100%;
+        height: 34px;
+        line-height: 31px;
+        border-radius: 17px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        top: 15px;
+        left: 15px;
+    
+    }
+    
+    .offer img {
+        width: 100%;
+    }
+    
+    div#text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 76px;
+        line-height: 100%;
+        padding-top: 0;
+    
+    }
+    
+    div#location_tag {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        margin-bottom: 32px;
+    }
+    
+    span#for-life::before {
+        content: url("images/for_life_before.png");
+        display: inline-block;
+        position: relative;
+        top: 6px;
+        margin-right: 11px;
+        width: 256px;
+        height: 64px;
+        background: url("images/for_life_before.png");
+        content: '';
+        background-size: 256px 64px;
+        background-repeat: no-repeat;
+    }
+    
+    div#special-offer-slider div.stats .digits {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 57px;
+        line-height: 100%;
+        margin-left: 30px;
+    
+    }
+    
+    div#special-offer-slider div.stats .digits-description {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        margin-left: 30px;
+    
+    }
+    
+    
+    div#greetings .yellow-link {
+        font-size: 15px;
+        padding: 0 25px;
+        margin-top: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+    
+    div#greetings .yellow-link svg {
+        widows: 24px;
+        height: 8px;
+        align-self: center;
+    }
+
+    div#special-offer-slider div.stats .sale-stats,
+    div#special-offer-slider div.stats .rent-stats {
+        min-height: 120px;
+        min-width: 260px;
+        background-size: contain;
+        justify-content: center;
+        padding: 0;
+    }
+    
+    
+    
+    div#special-offer-slider div.stats .rent-stats {
+        background-position: left;
+    
+    }
+    
+    div#special-offer-slider > p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+    
+    }
+    
+    section#main-page > header {
+        height: 121px;
+        z-index: 1000;
+        padding: 30px;
+    
+    }
+    
+    section#main-page .main-nav > ul > div > li a {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 15px;
+        align-self: center;
+    
+    }
+    
+    .main-nav a.highlight {
+        padding: 33px;
+    
+    }
+
+    /* main page end */
+    
+    .column1 {
+        grid-column: 1;
+        min-width: 262px;
+    }
+
+    .column2 {
+        grid-column: 2; /* Первый элемент второй колонки */
+    }
+
+    .column3 {
+        grid-column: 3; /* Второй элемент второй колонки */
+    }
+
+    .column2-wide {
+        grid-column: 2 / span 2; /* Элемент растягивается на две колонки */
+        grid-row: 2; /* Второй ряд */
+    }
+    
+    .wrapper1920 {
+        max-width: 1920px;
+        margin: 0 auto;
+        padding: 200px 140px 150px 140px;
+        box-sizing: border-box;
+    
+    }
 }
