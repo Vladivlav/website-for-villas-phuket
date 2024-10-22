@@ -2937,7 +2937,13 @@ section#news div#news-list .news-description {
     max-height: 0;
     opacity: 0;
     visibility: hidden;
+}
 
+.faq-answer.current {
+    max-height: unset;
+    opacity: 1;
+    visibility: unset;
+    transition: 0.3s ease-in-out;
 }
 
 .ask-question-btn {
