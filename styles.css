@@ -2927,7 +2927,6 @@ section#news div#news-list .news-description {
 }
 
 .faq-answer {
-    display: none;
     padding-bottom: 20px;
     font-family: 'Commissioner';
     font-style: normal;
@@ -2935,6 +2934,10 @@ section#news div#news-list .news-description {
     font-size: 12px;
     line-height: 16px;
     color: #393939;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+
 }
 
 .ask-question-btn {
