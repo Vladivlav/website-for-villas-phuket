@@ -5,7 +5,7 @@ body, html {
     height: 100%;
     font-family: igra-sans;
     max-width: 100vw;
-
+    overflow-x: hidden;
 }
 
 .flex {
@@ -160,6 +160,8 @@ section#attractive-direction .last-fact-container .fact-left-part {
     display: flex;
     justify-content: space-between;
     z-index: 10;
+    width: 992px;
+
 }
 
 section#attractive-direction .last-fact-container .fact-left-part .big-fact-item {
@@ -370,7 +372,7 @@ section#attractive-direction .last-fact-container .fact-items {
     display: flex;
     flex-direction: column;
     max-width: 180px;
-    margin-right: 35px;
+    margin-right: 32px;
 
 }
 
@@ -556,6 +558,7 @@ section#quote-with-four-men div.quote {
     position: absolute;
     top: 0;
     left: 0;
+    font-family: igra-sans;
     align-content: center;
     display: flex;
     color: white;
@@ -568,6 +571,7 @@ section#quote-with-four-men div.quote {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+
 }
 
 section#quote-with-four-men div.quote .left {
@@ -610,13 +614,11 @@ section#main-page > header {
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
-    border: 1px solid #000000;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    background-color: linear-gradient(360deg, rgba(57, 57, 57, 0) 0%, #393939 100%);
-    border: 1px solid #000000;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     display: flex;
     padding-top: 18px;
+    background: linear-gradient(360deg, rgba(57, 57, 57, 0) 0%, #393939 100%);
+
 }
 
 .main-nav {
@@ -920,7 +922,10 @@ section#company-owner .quote-sign {
 #best-points {
     background-color: white;
     padding: 80px;
+}
 
+section#best-points .grid .grid-item.img {
+    display: none;
 }
   
 #best-points .container {
@@ -1247,6 +1252,10 @@ section#company-owner .quote-sign {
     font-weight: 300;
 }
 
+#prices-and-benefits .form-input, #prices-and-benefits .form-select {
+    color: #393939;
+}
+
 #investments-base .form-select,
 #check-objects .form-select,
 #prices-and-benefits .form-select
@@ -1257,6 +1266,7 @@ section#company-owner .quote-sign {
     font-size: 12px;
     line-height: 100%;
     color: #D7D9D8;
+    cursor: unset !important;
     position: relative;
     padding: 0;
 
@@ -1298,7 +1308,9 @@ section#company-owner .quote-sign {
     height: 26px;
     line-height: 26px;
     padding-left: 15px;
-    color: #D7D9D8;
+    color: white;
+    cursor: pointer;
+
 }
 
 #investments-base .form-select div.feddback-options-list span.active:hover,
@@ -1412,6 +1424,13 @@ section#company-owner .quote-sign {
 .form-agreement > div {
     display: flex;
     justify-content: center;
+    position: relative;
+}
+
+.form-agreement > div svg, .form-agreement > div input {
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .form-agreement .first-line {
@@ -1502,7 +1521,15 @@ section#company-owner .quote-sign {
 }
 
 #prices-and-benefits .quiz-section .quiz-question {
-    display: none;
+    display: block;
+    opacity: 0;
+    transition: 0.3s ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    visibility: hidden;
+
 }
 
 #prices-and-benefits .quiz-section {
@@ -1514,6 +1541,8 @@ section#company-owner .quote-sign {
     box-shadow: 5px 6px 13px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     background-size: auto 100%;
+    position: relative;
+
 }
 
 #prices-and-benefits .quiz-progress, #check-objects .quiz-progress {
@@ -1523,6 +1552,14 @@ section#company-owner .quote-sign {
     align-items: baseline;
     position: relative;
     justify-content: revert;
+}
+
+#check-objects .quiz-questions-container,
+#prices-and-benefits .quiz-questions-container {
+    position: relative;
+    width: 100%;
+    height: 140px;
+
 }
 
 #prices-and-benefits .quiz-progress span {
@@ -1880,7 +1917,11 @@ section#company-owner .quote-sign {
 }
 
 #check-objects .quiz-question {
-    display: none;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+
 }
 
 #check-objects .quiz-question .form-text {
@@ -1900,6 +1941,9 @@ section#company-owner .quote-sign {
 
 #check-objects .quiz-question.active, #prices-and-benefits .quiz-question.active {
     display: inherit;
+    opacity: 1;
+    visibility: visible;
+
 }
 
 #check-objects .quiz-progress {
@@ -1989,6 +2033,13 @@ section#company-owner .quote-sign {
     color: #FCBD21;
     display: flex;
     align-items: center;
+    visibility: hidden;
+    opacity: 0;
+
+}
+
+#check-objects .quiz-question.active .quiz-option {
+    visibility: visible;
 }
 
 #check-objects .quiz-option.active span {
@@ -3523,6 +3574,7 @@ div#greetings .yellow-link:hover,
         padding-top: 30px;
         padding-bottom: 30px;
         box-sizing: border-box;
+        width: 618px;
     
     }
     
@@ -3863,8 +3915,16 @@ div#greetings .yellow-link:hover,
     
     }
     
-    #check-objects .quiz-question.active, #prices-and-benefits .quiz-question.active {
+    #check-objects .quiz-question, #prices-and-benefits .quiz-question {
         display: block;
+        opacity: 0;
+        transition: 0.3s ease-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        z-index: 1;
+    
     }
     
     #prices-and-benefits .quiz-options,
@@ -3885,7 +3945,53 @@ div#greetings .yellow-link:hover,
         font-size: 20px;
         font-weight: 400;
         width: auto;
+        opacity: 0;
+        position: relative;
+        left: -40px;
+        top: 0;
     
+    }
+    
+    #prices-and-benefits .quiz-question.active .quiz-option,
+    #prices-and-benefits .quiz-question.active .next-button,
+    #prices-and-benefits .quiz-question.active .prev-button,
+    #check-objects .quiz-question.active .quiz-option,
+    #check-objects .quiz-question.active .next-button,
+    #check-objects .quiz-question.active .prev-button {
+        opacity: 1;
+        left: 0px;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        visibility: visible;
+    
+    }
+    
+    .quiz-question .quiz-delay:nth-child(1) {
+        transition-delay: 0.10s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(2) {
+        transition-delay: 0.15s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(3) {
+        transition-delay: 0.20s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(4) {
+        transition-delay: 0.25s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(5) {
+        transition-delay: 0.30s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(6) {
+        transition-delay: 0.35s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(7) {
+        transition-delay: 0.4s;
     }
     
     #prices-and-benefits .next-button,
@@ -3893,7 +3999,8 @@ div#greetings .yellow-link:hover,
     #check-objects .next-button,
     #check-objects .prev-button {
         width: auto;
-        padding: 0 25px
+        padding: 0 25px;
+    
     }
     
     #prices-and-benefits .quiz-question p.green-question,
@@ -3904,6 +4011,18 @@ div#greetings .yellow-link:hover,
         font-weight: 400;
         font-size: 26px;
         line-height: 100%;
+        position: relative;
+        left: -40px;
+        opacity: 0;
+    
+    }
+    
+    #prices-and-benefits .quiz-question.active p.green-question,
+    #check-objects .quiz-question.active p.green-question {
+        opacity: 1;
+        left: 0;
+        transition: 0.3s ease-out;
+    
     }
     
     #prices-and-benefits .quiz-option .circle,
@@ -4227,6 +4346,8 @@ div#greetings .yellow-link:hover,
 
     section#attractive-direction .last-fact-container {
         border-radius: 24px;
+        gap: 30px;
+    
     }
     
     section#attractive-direction .last-fact-container .fact-items p, section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item, section#attractive-direction .last-fact-container .fact-right-part p {
@@ -4631,12 +4752,16 @@ div#greetings .yellow-link:hover,
         top: 0;
         left: 0;
         width: 100%;
-        color: rgba(215, 217, 216, 0.5);
+        color: white;
+        font-weight: 300;
     
     }
     
     #prices-and-benefits .form-select > span {
         border: 1px solid #4caf50;
+        color: #393939;
+        font-weight: 300;
+    
     }
     
     #investments-base .form-select > span svg,
@@ -4714,11 +4839,12 @@ div#greetings .yellow-link:hover,
         align-items: center;
         justify-content: space-between;
         font-size: 18px;
+        font-weight: 300;
     
     }
     
     #investments-base .form-select div.feddback-options-list, #check-objects .form-select div.feddback-options-list,       #prices-and-benefits .form-select div.feddback-options-list {
-        height: 160px;
+        height: 165px;
         box-sizing: border-box;
         top: -1px;
         left: 0;
@@ -4849,6 +4975,7 @@ div#greetings .yellow-link:hover,
     
     section#main-page .right-line {
         width: 160px;
+    
     }
     
     section#main-page #logo img {
@@ -4859,6 +4986,32 @@ div#greetings .yellow-link:hover,
     
     section#main-page #logo {
         width: 160px;
+        min-width: 160px;
+    }
+
+    .main-nav > ul > div.language-selector {
+        width: 72px;
+        height: 32px;
+    }
+    
+    .language-selector img:nth-of-type(2) {
+        width: 16px;
+        height: 6px;
+        min-width: 16px;
+        min-height: 10px;
+        margin-left: 10px;
+    
+    }
+    
+    .language-selector img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .box {
+        width: 80px;
+        height: 23px;
+    
     }
     
     section#main-page > .flex {
@@ -5014,6 +5167,25 @@ div#greetings .yellow-link:hover,
         padding-left: 0;
     }
     
+    div#special-offer-slider > span {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+    }
+    
+    div#special-offer-slider > span:before {
+        width: 13px;
+        height: 13px;
+        background: url("images/passport-only-mark.svg");
+        background-repeat: no-repeat;
+        background-size: 13px 13px;
+        margin-right: 8px;
+        content: '';
+    
+    }
+    
     div#location_tag {
         font-family: 'Commissioner';
         font-style: normal;
@@ -5101,22 +5273,30 @@ div#greetings .yellow-link:hover,
         height: 121px;
         z-index: 1000;
         padding: 30px;
+        padding-bottom: 0;
     
     }
     
-    section#main-page .main-nav > ul > div > li a {
+    section#main-page .main-nav > ul li a {
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
         font-size: 13px;
         line-height: 15px;
         align-self: center;
+    }
     
+    section#main-page .main-nav > ul li a.highlight {
+        padding: 35px;
+        background-color: #848484;
     }
     
     .main-nav a.highlight {
         padding: 33px;
+    }
     
+    .main-nav > ul > li {
+        padding-left: 35px;
     }
 
     /* main page end */
