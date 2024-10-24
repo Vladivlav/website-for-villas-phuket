@@ -4,8 +4,7 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: igra-sans;
-    max-width: 100vw;
-    overflow-x: hidden;
+
 }
 
 .flex {
@@ -21,9 +20,10 @@ body, html {
 }
 
 body {
-    background-color:white;
-    max-width: 1200px;
+    background-color: white;
+    max-width: 100%;
     margin: 0 auto;
+
 }
 
 .soon-link {
@@ -49,8 +49,7 @@ section {
     display: flex;
     position: absolute;
     left: 50%;
-    transform: translateX(280px);
-    min-width: 700px;
+    /* transform: translateX(280px); */
 
 }
 
@@ -98,10 +97,19 @@ section#attractive-direction {
     background: #393939;
     position: relative;
     height: auto;
-    padding: 80px;
+    padding: 80px 0;
     box-sizing: border-box;
     padding-bottom: 50px;
+    max-width: 100%;
+    margin: 0 auto;
 
+}
+
+section#attractive-direction .wrapper1920 {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 80px;
 }
 
 section#attractive-direction .fact-container {
@@ -126,6 +134,7 @@ section#attractive-direction .last-fact-container {
     position: relative;
     opacity: 0;
     transition: 0.3s ease-in-out;
+    height: 138px;
 
 }
 
@@ -140,17 +149,44 @@ section#attractive-direction .fact-container.current {
     display: grid;
 }
 
+section#attractive-direction .fact-container.current .fact-left-part .fact-footer span.fact-button {
+    opacity: 1;
+    right: 0;
+
+}
+
+section#attractive-direction .fact-container.current .fact-left-part .fact-footer p {
+    left: 0px;
+    opacity: 1;
+}
+
+
+section#attractive-direction .fact-container.current .fact-left-part {
+    background-size: 100%;
+    opacity: 1;
+}
+
+section#attractive-direction .fact-container.current .fact-left-part .fact-text {
+    transform: scale(1);
+    opacity: 1;
+}
+
 section#attractive-direction .fact-container .fact-left-part {
     grid-column: span 6;
     grid-row: span 1;
-    background-image: url("images/fact-1-bg.png");
-    background-size: 620px auto;
+    background-image: url("images/fact-1-bg-1200.png");
+    background-size: 640px auto;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     top: 10px;
-    max-width: 620px;
+    max-width: 640px;
     max-height: 296px;
+    width: 620px;
+    transition: 0.3s ease-in-out;
+    opacity: 0;
+    background-size: 120%;
+
 }
 
 section#attractive-direction .last-fact-container .fact-left-part {
@@ -160,7 +196,7 @@ section#attractive-direction .last-fact-container .fact-left-part {
     display: flex;
     justify-content: space-between;
     z-index: 10;
-    width: 992px;
+    width: 620px;
 
 }
 
@@ -168,8 +204,11 @@ section#attractive-direction .last-fact-container .fact-left-part .big-fact-item
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    max-width: 240px;
+    max-width: 280px;
     padding: 20px;
+    height: 138px;
+    box-sizing: border-box;
+    
 
 }
 
@@ -202,11 +241,11 @@ section#attractive-direction .last-fact-container .fact-left-part .big-fact-item
 }
 
 section#attractive-direction .fact-container .fact-left-part.second {
-    background-image: url("images/fact-2-bg.png");
+    background-image: url("images/fact-2-bg-1200.png");
 }
 
 section#attractive-direction .fact-container .fact-left-part.third {
-    background-image: url("images/fact-3-bg.png");
+    background-image: url("images/fact-3-bg-1200.png");
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-text {
@@ -218,6 +257,10 @@ section#attractive-direction .fact-container .fact-left-part .fact-text {
     position: relative;
     flex-direction: column;
     justify-content: flex-end;
+    transform-origin: top left;
+    transform: scale(0.6);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-footer {
@@ -260,6 +303,9 @@ section#attractive-direction .fact-container .fact-left-part .fact-footer span.f
     margin-right: 20px;
     background-color: white;
     padding: 0 15px;
+    right: -30px;
+    transition: 0.3s ease-in-out;
+
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button.yellow {
@@ -317,8 +363,6 @@ section#attractive-direction .fact-container .fact-left-part .fact-text .info-ba
     content: '';
     display: inline-block;
     position: relative;
-    margin-right: 5px;
-
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge.no-info-badge::before {
@@ -365,6 +409,12 @@ section#attractive-direction .last-fact-container .fact-right-part {
     padding-bottom: 17px;
     gap: 20px;
     justify-content: space-between;
+    height: 138px;
+}
+
+section#attractive-direction .last-fact-container .fact-right-part {
+    width: 400px;
+    min-width: 400px;
 
 }
 
@@ -423,6 +473,8 @@ section#attractive-direction .fact-container .fact-right-part {
     transition: 0.3s ease-out;
     transform-origin: bottom right;
     opacity: 0;
+    width: 618px;
+
 }
 
 section#attractive-direction .fact-container.current .fact-right-part {
@@ -440,17 +492,23 @@ section#attractive-direction .fact-container .fact-right-part img {
 section#youtube-video {
     background-color: #393939;
     height: 425px;
-    padding: 100px 80px;
+    padding: 100px 0px;
     box-sizing: border-box;
     background-image: url("images/palm-youtube-bg.png");
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 309px auto;
+
 }
 
 section#youtube-video .youtube-container {
     height: 100%;
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 80px;
+    box-sizing: border-box;
+
 }
 
 section#youtube-video .youtube-container .image-container {
@@ -524,6 +582,11 @@ section#youtube-video .youtube-container .text-container a {
     line-height: 26px;
     border-radius: 13px;
     padding-left: 15px;
+    box-sizing: border-box;
+    width: auto;
+    max-width: 163px;
+    padding: 0 15px;
+
 }
 
 section#youtube-video .youtube-container .text-container a:hover {
@@ -571,26 +634,34 @@ section#quote-with-four-men div.quote {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    overflow: hidden;
 
 }
 
 section#quote-with-four-men div.quote .left {
     text-align: left;
-    padding-left: 11%;
+    left: 50%;
+    position: relative;
+    transform: translateX(-476px);
+
 }
 
 section#quote-with-four-men div.quote .right {
     text-align: right;
-    padding-right: 11%;
+    position: relative;
+    right: 50%;
+    transform: translateX(476px);
+
 }
 
 section#quote-with-four-men div.quote-sign {
     position: absolute;
     bottom: 0;
-    left: 0;
-    padding-left: 80px;
+    left: 50%;
     padding-bottom: 80px;
     color: white;
+    transform: translateX(-520px);
+
 }
 
 section#main-page {
@@ -871,13 +942,18 @@ span#for-life::before {
 
 section#company-owner {
     display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 80px;
+
 }
 
 section#company-owner div#i-know-everything {
     padding-top: 80px;
-    padding-left: 80px;
     height: auto;
     position: relative;
+
 }
 
 section#company-owner div#picture {
@@ -921,7 +997,8 @@ section#company-owner .quote-sign {
 
 #best-points {
     background-color: white;
-    padding: 80px;
+    padding: 80px 0;
+
 }
 
 section#best-points .grid .grid-item.img {
@@ -929,7 +1006,11 @@ section#best-points .grid .grid-item.img {
 }
   
 #best-points .container {
+    max-width: 1200px;
     margin: 0 auto;
+    box-sizing: border-box;
+    padding: 0 80px;
+
 }
   
 #best-points h2 {
@@ -959,16 +1040,39 @@ section#best-points .grid .grid-item.img {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
-    height: 90px;
+    height: 130px;
     justify-content: space-between;
+    box-sizing: border-box;
+
 }
   
-  #best-points .item1 {
+#best-points .item1 {
     grid-column: span 7;
     grid-row: span 1;
 }
+
+#best-points .grid-item.item1,
+#best-points .grid-item.item3,
+#best-points .grid-item.item6,
+#best-points .grid-item.item7,
+#best-points .grid-item.item9 {
+    width: 300px;
+}
+
+#best-points .grid-item.item2,
+#best-points .grid-item.item8 {
+    width: 360px;
+}
+
+#best-points .grid-item.item5 {
+    width: 260px;
+}
+
+#best-points .grid-item.item4 {
+    width: 400px;
+}
   
-  #best-points .item2 {
+#best-points .item2 {
     grid-row: span 1;
 
 }
@@ -1104,13 +1208,20 @@ section#best-points .grid .grid-item.img {
     content: url("images/rectangle-points-from-denis.png");
     display: inline-block;
     position: relative;
-    top: 3px;
-    height: 36px;
+    top: 0px;
+    height: 25px;
     margin-right: 11px;
+    width: 88px;
+    background: url("images/rectangle-points-from-denis.png");
+    content: '';
+    background-size: 100%;
+    background-repeat: no-repeat;
+
 }
 
 #best-points .container > h2:nth-of-type(2) {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+
 }
 
 #investment-info .container {
@@ -1125,12 +1236,31 @@ section#best-points .grid .grid-item.img {
 }
 
 #investment-info .details-grid {
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    gap: 20px;
     text-align: left;
-    row-gap: 80px;
+    column-gap: 86px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 50px;
+
+}
+
+#investment-info  .detail-item.column1 {
+    width: 174px;
+
+}
+
+#investment-info .detail-item.column2 {
+    width: 116px;
+}
+
+#investment-info .detail-item.column2-wide {
+    width: 218px;
+}
+
+#investment-info .detail-item.column3 {
+    width: 100px;
 
 }
 
@@ -1141,13 +1271,21 @@ section#best-points .grid .grid-item.img {
     font-size: 36px;
     line-height: 100%;
     color: #393939;
+    margin-bottom: 60px;
+    margin-top: 11px;
+
 }
 
 #investment-info .detail-item h3 {
-  font-size: 16px;
-  color: #28a745;
-  margin: 0;
-  font-weight: 400;
+    color: #28a745;
+    margin: 0;
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    padding-bottom: 2px;
+
 }
 
 #investment-info .detail-item p {
@@ -1165,7 +1303,12 @@ section#best-points .grid .grid-item.img {
 #investments-base img {
     display: block;
     width: 100%;
-    height: auto;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+
 }
 
 #investments-base {
@@ -1175,12 +1318,23 @@ section#best-points .grid .grid-item.img {
     height: auto;
 }
 
+#investments-base .wrapper1920 {
+    box-sizing: border-box;
+    padding: 80px;
+    margin: 0 auto;
+    max-width: 1200px;
+    height: auto;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
 #investments-base .quote {
-    position: absolute;
-    top: 0;
-    left: 0;
-    padding-left: 80px;
-    padding-top: 80px;
+    position: relative;
+
 }
 
 #investments-base .quote p.title {
@@ -1196,11 +1350,12 @@ section#best-points .grid .grid-item.img {
 #investments-base .quote p.description {
     font-family: 'Commissioner';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 12px;
     line-height: 130%;
     color: #FFFFFF;
     margin: 0;
+
 }
 
 .form-container {
@@ -1224,11 +1379,12 @@ section#best-points .grid .grid-item.img {
 .form-text p {
     font-family: 'Commissioner';
     font-style: normal;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 12px;
     line-height: 130%;
     color: #FFFFFF;
     margin: 0;
+
 }
 
 .form-inputs {
@@ -1254,6 +1410,10 @@ section#best-points .grid .grid-item.img {
 
 #prices-and-benefits .form-input, #prices-and-benefits .form-select {
     color: #393939;
+}
+
+#prices-and-benefits .form-select {
+    border-width: 0px;
 }
 
 #investments-base .form-select,
@@ -1364,20 +1524,23 @@ section#best-points .grid .grid-item.img {
 
 #prices-and-benefits .form-select > span {
     border: 1px solid #4caf50;
+    border-radius: 13px;
+
 }
 
 .form-actions {
-    width: 175px;
+    width: auto;
     margin-bottom: 20px;
+
 }
 
 .form-button {
-    padding: 10px 20px;
+    padding: 0px 10px;
     border: none;
     cursor: pointer;
     background: #959595;
     border-radius: 50px;
-    font-family: 'Commissioner';
+    font-family: Commissioner;
     font-style: normal;
     font-weight: 500;
     font-size: 9px;
@@ -1386,11 +1549,18 @@ section#best-points .grid .grid-item.img {
     align-items: center;
     text-transform: uppercase;
     margin: 0;
-    width: 100%;
+    width: auto;
+    box-sizing: border-box;
+    height: 25px;
+    word-break: break-all;
+
 }
 
 #prices-and-benefits .form-button {
     color: white;
+    height: 28px;
+    width: 161px;
+
 }
 
 #prices-and-benefits .form-button svg {
@@ -1398,8 +1568,11 @@ section#best-points .grid .grid-item.img {
 }
 
 .form-button svg {
-    margin-left: 10px;
+    margin-left: 3px;
     stroke: black;
+    width: 15px;
+    height: 4px;
+
 }
 
 .form-agreement {
@@ -1413,6 +1586,10 @@ section#best-points .grid .grid-item.img {
     display: flex;
     margin-top: 2px;
     flex-direction: column;
+    width: 161px;
+    margin-top: 7px;
+    box-sizing: border-box;
+
 }
 
 #prices-and-benefits .form-agreement {
@@ -1425,13 +1602,34 @@ section#best-points .grid .grid-item.img {
     display: flex;
     justify-content: center;
     position: relative;
+    left: -8px;
+
+}
+
+.form-agreement > div svg {
+    position: absolute !important;
+    left: 28px !important;
+    top: 3px !important;
+    transform: scale(1.3);
+    z-index: 1;
+    opacity: 0;
 }
 
 .form-agreement > div svg, .form-agreement > div input {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
 }
+
+.form-agreement > div svg {
+    position: absolute;
+    left: 28px;
+    top: 3px;
+    transform: scale(1.3);
+    z-index: 1;
+    opacity: 0;
+}
+
 
 .form-agreement .first-line {
     height: 16px;
@@ -1460,27 +1658,26 @@ section#best-points .grid .grid-item.img {
 }
 
 #get-properties {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     color: white;
-    margin-bottom: 80px;
-    margin-left: 80px;
     height: 140px;
     background: #393939;
     opacity: 0.9;
     border-radius: 20px;
-    width: 86%;
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 85px;
+
 }
 
 #prices-and-benefits .header-section {
-    padding: 80px;
+    padding: 100px 80px 50px 80px;
     background-color: #fff;
     border-radius: 15px;
-    margin-bottom: 20px;
     position: relative;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
 
@@ -1533,7 +1730,7 @@ section#best-points .grid .grid-item.img {
 }
 
 #prices-and-benefits .quiz-section {
-    margin-top: 20px;
+    margin-top: 25px;
     background-image: url("images/palms-investments.png");
     background-repeat: no-repeat;
     background-position: 100%;
@@ -1558,7 +1755,7 @@ section#best-points .grid .grid-item.img {
 #prices-and-benefits .quiz-questions-container {
     position: relative;
     width: 100%;
-    height: 140px;
+    height: 120px;
 
 }
 
@@ -1624,7 +1821,8 @@ section#best-points .grid .grid-item.img {
     line-height: 100%;
     font-feature-settings: 'liga' off;
     color: #299948;
-    margin: 20px 20px 0 20px;
+    margin: 0px 20px 0 20px;
+
 }
 
 #prices-and-benefits .quiz-options {
@@ -1723,12 +1921,16 @@ section#best-points .grid .grid-item.img {
 
 #prices-and-benefits .content-section {
     display: flex;
-    gap: 20px;
-    padding: 80px;
+    gap: 40px;
+    padding: 90px 80px;
     background-color: #fff;
     border-radius: 15px;
     padding-top: 40px;
     height: auto;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
 }
 
 #prices-and-benefits .image-content img {
@@ -1777,6 +1979,8 @@ section#best-points .grid .grid-item.img {
     align-items: flex-start;
     height: 90px;
     justify-content: space-between;
+    max-width: 329px;
+
 }
 
 #prices-and-benefits .fact-number {
@@ -1834,6 +2038,8 @@ section#best-points .grid .grid-item.img {
     font-size: 12px;
     line-height: 130%;
     color: #393939;
+    min-width: unset !important;
+
 }
 
 #prices-and-benefits .fact-item strong {
@@ -1847,21 +2053,27 @@ section#best-points .grid .grid-item.img {
 }
 
 #prices-and-benefits .text-content {
-    margin-left: 40px;
     margin-top: 11px;
-    width: auto;
+    width: 640px;
+
+}
+
+section#check-objects {
+    background: url("images/check-objects-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
 }
 
 #check-objects .header-section {
     padding: 80px;
-    background-color: #fff;
-    background: url("images/check-objects-bg.png");
     width: auto;
     height: 100%;
     position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
 }
 
 #check-objects .header-content {
@@ -1918,9 +2130,10 @@ section#best-points .grid .grid-item.img {
 
 #check-objects .quiz-question {
     display: block;
-    position: relative;
+    position: absolute;
     top: 0;
     left: 0;
+    visibility: hidden;
 
 }
 
@@ -2040,6 +2253,8 @@ section#best-points .grid .grid-item.img {
 
 #check-objects .quiz-question.active .quiz-option {
     visibility: visible;
+    opacity: 1;
+
 }
 
 #check-objects .quiz-option.active span {
@@ -2102,12 +2317,18 @@ section#best-points .grid .grid-item.img {
 
 section#additional-company-info {
     background-color: #393939;
-    padding: 80px;
-    padding-top: 100px;
-    padding-bottom: 50px;
     background-image: url("images/meru-white-back.png");
     background-position: bottom;
     background-repeat: no-repeat;
+}
+
+section#additional-company-info .wrapper1920 {
+    padding: 80px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
 section#additional-company-info > div > h2 {
@@ -2282,7 +2503,11 @@ section#tenth-section div.header {
     align-items: end;
     padding: 50px 80px;
     padding-bottom: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
 }
+
 p.main-thought,
 p#main-thought {
     margin: 0;
@@ -2292,6 +2517,12 @@ p#main-thought {
     line-height: 100%;
     color: #FFFFFF;
     min-width: 68%;
+}
+
+.facts-wrapper {
+    height: 310px;
+    margin-top: 30px;
+
 }
 p.main-thought span:before,
 p#main-thought span:before {
@@ -2318,22 +2549,30 @@ p#main-thought-comment {
 
 section#tenth-section div.content {
     background: url("images/10-section-bg.png");
-    height: 418px;
+    height: auto;
     width: auto;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
-    align-items: end;
-    flex-direction: column;
+
+}
+
+section#tenth-section div.content .wrapper1920 {
+    position: relative;
+    left: 50%;
+    transform: translateX(320px);
+
 }
 
 section#tenth-section div.content .block-link {
     height: 114px;
     margin-right: 80px;
-    width: 160px;
+    width: 200px;
     border-radius: 15px;
     padding: 20px;
+    box-sizing: border-box;
+
 }
 
 section#tenth-section div.content .block-link:nth-of-type(2) {
@@ -2344,6 +2583,7 @@ section#tenth-section div.content .block-link:nth-of-type(2) {
     background-size: 50%;
     background-repeat: no-repeat;
     background-position: center right;
+
 }
 
 section#tenth-section div.content .block-link:first-of-type span:hover {
@@ -2424,6 +2664,10 @@ section#our-partners {
     display: flex;
     flex-direction: column;
     padding: 0 80px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 section#our-partners h3 {
@@ -2464,6 +2708,10 @@ section#our-partners #partners-carousel img {
 section#news {
     padding: 80px;
     padding-bottom: 150px;
+    margin: 0 auto;
+    max-width: 1200px;
+    box-sizing: border-box;
+
 }
 
 section#news div.header {
@@ -2487,14 +2735,15 @@ section#news div.header > p > span::before {
     content: '';
     display: inline-block;
     position: relative;
-    top: 6px;
+    top: 3px;
     margin-right: 11px;
     max-width: 97px;
     max-height: 27px;
-    width: 100%;
-    height: auto;
+    width: 97px;
+    height: 27px;
     background: url("images/news-title-badge.png");
     background-size: 100%;
+    background-repeat: no-repeat;
 
 }
 
@@ -2839,6 +3088,9 @@ section#news div#news-list .news-description {
     justify-content: space-between;
     padding-left: 80px;
     padding-right: 80px;
+    box-sizing: border-box;
+    max-width: 1200px;
+    margin: 0 auto;
 
 }
 
@@ -2927,7 +3179,7 @@ section#news div#news-list .news-description {
 }
 
 .faq-answer {
-    padding-bottom: 20px;
+    padding-bottom: 0;
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 400;
@@ -2937,6 +3189,7 @@ section#news div#news-list .news-description {
     max-height: 0;
     opacity: 0;
     visibility: hidden;
+
 }
 
 .faq-answer.current {
@@ -2944,6 +3197,8 @@ section#news div#news-list .news-description {
     opacity: 1;
     visibility: unset;
     transition: 0.3s ease-in-out;
+    padding-bottom: 20px;
+
 }
 
 .ask-question-btn {
@@ -2992,6 +3247,10 @@ section#news div#news-list .news-description {
     text-transform: uppercase;
     margin-top: 30px;
     cursor: pointer;
+    box-sizing: border-box;
+    height: 26px;
+    width: 162px;
+
 }
 
 .faq-ask-question span:hover {
@@ -3016,8 +3275,12 @@ footer {
     background-position: top;
     background-size: 30%;
     background-repeat: no-repeat;
-    height: 330px;
     padding-top: 80px;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0 auto;
+    padding-bottom: 0;
+
 }
   
 .footer-container {
@@ -3028,9 +3291,10 @@ footer {
 
 }
   
-  .footer-left {
-    /* flex: 1; */
-    padding-left: 80px;
+.footer-left {
+    position: relative;
+    left: 50%;
+    transform: translateX(-520px);
 
 }
   
@@ -3092,10 +3356,11 @@ div#greetings .yellow-link:hover,
 }
   
 .footer-right {
-    flex: 1;
-    padding-right: 80px;
-    grid-column: span 8;
-    grid-row: span 1;
+    display: flex;
+    position: relative;
+    right: 50%;
+    transform: translateX(300px);
+
 }
   
   .contact-info {
@@ -3554,6 +3819,11 @@ div#greetings .yellow-link:hover,
         padding: 30px;
         box-sizing: border-box;
         max-width: 500px;
+        height: initial;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-left-part {
+        width: 992px;
     
     }
     
@@ -3614,6 +3884,7 @@ div#greetings .yellow-link:hover,
         padding: 150px 140px 200px 140px;
         box-sizing: border-box;
         gap: 100px;
+        max-width: 1920px;
     
     }
 
@@ -3624,6 +3895,8 @@ div#greetings .yellow-link:hover,
         width: auto;
         height: auto;
         padding: 150px 140px 60px 140px;
+        max-width: 1920px;
+    
     }
 
     section#news div#news-list {
@@ -3683,6 +3956,9 @@ div#greetings .yellow-link:hover,
 
     section#our-partners {
         padding: 0 65px;
+        max-width: 1920px;
+        padding-left: 140px;
+        padding-right: 140px;
     
     }
 
@@ -3806,6 +4082,7 @@ div#greetings .yellow-link:hover,
         padding: 30px;
         border-radius: 24px;
         box-sizing: border-box;
+    
     }
     
     #best-points .grid-item.item1,
@@ -3814,6 +4091,7 @@ div#greetings .yellow-link:hover,
     #best-points .grid-item.item7,
     #best-points .grid-item.item9 {
         width: 500px;
+    
     }
     
     #best-points .grid-item.item2,
@@ -3900,6 +4178,8 @@ div#greetings .yellow-link:hover,
     #prices-and-benefits .header-section {
         padding: 0;
         margin-bottom: 50px;
+        max-width: 1920px;
+    
     }
 
     #prices-and-benefits .text-content h2:nth-of-type(2)::before {
@@ -4109,6 +4389,7 @@ div#greetings .yellow-link:hover,
         gap: 40px;
         padding: 0;
         margin-top: 150px;
+        max-width: 1920px;
     
     }
 
@@ -4120,6 +4401,7 @@ div#greetings .yellow-link:hover,
     #prices-and-benefits .text-content {
         margin-left: 0;
         margin-top: 27px;
+        width: auto;
     
     }
 
@@ -4166,6 +4448,7 @@ div#greetings .yellow-link:hover,
 
     #prices-and-benefits .fact-item {
         height: auto;
+        max-width: 495px;
     
     }
 
@@ -4189,6 +4472,14 @@ div#greetings .yellow-link:hover,
         font-family: igra-sans;
         font-size: 56px;
         line-height: 100%;
+    }
+    
+    section#quote-with-four-men div.quote .left {
+        transform: translateX(-820px);
+    }
+    
+    section#quote-with-four-men div.quote .right {
+        transform: translateX(820px);
     }
     
     section#quote-with-four-men div.quote-sign {
@@ -4251,14 +4542,12 @@ div#greetings .yellow-link:hover,
         padding: 30px 0;
         width: 318px;
         max-width: 500px;
-    
     }
     
     section#attractive-direction .last-fact-container .fact-right-part span
     {
         max-width: 360px;
         display: block !important;
-    
     }
 
     section#attractive-direction .fact-container .fact-left-part {
@@ -4336,7 +4625,10 @@ div#greetings .yellow-link:hover,
     section#attractive-direction .fact-container {
         height: 536px;
         gap: 30px;
+    }
     
+    .facts-wrapper {
+        height: 536px;
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-text .fact-badge {
@@ -4356,6 +4648,7 @@ div#greetings .yellow-link:hover,
     section#attractive-direction .last-fact-container {
         border-radius: 24px;
         gap: 30px;
+        height: 224px;
     
     }
     
@@ -4385,7 +4678,6 @@ div#greetings .yellow-link:hover,
         transform: scale(0.6);
         opacity: 0;
         transition: 0.3s ease-in-out;
-    
     }
     
     section#attractive-direction .fact-container.current .fact-left-part .fact-text {
@@ -4404,6 +4696,9 @@ div#greetings .yellow-link:hover,
         padding-bottom: 50px;
         z-index: 20000;
         position: relative;
+        max-width: 1920px;
+        padding: 0 140px;
+        padding-top: 150px;
     
     }
     
@@ -4482,6 +4777,8 @@ div#greetings .yellow-link:hover,
 
     section#company-owner {
         padding: 200px 140px 50px 140px;
+        max-width: 1920px;
+    
     }
     
     section#company-owner div#i-know-everything,
@@ -4516,6 +4813,7 @@ div#greetings .yellow-link:hover,
     #investment-info .details-grid {
         display: flex;
         flex-wrap: wrap;
+        column-gap: 138px;
     
     }
     
@@ -4828,6 +5126,7 @@ div#greetings .yellow-link:hover,
         line-height: 100%;
         height: 40px;
         padding: 0 25px;
+        width: auto;
     
     }
     
@@ -4915,6 +5214,7 @@ div#greetings .yellow-link:hover,
         justify-content: space-between;
         position: relative;
         z-index: 200000;
+        max-width: 1920px;
     
     }
     
@@ -5374,6 +5674,10 @@ div#greetings .yellow-link:hover,
     #best-points .container {
         position: relative;
         z-index: 20000;
+        max-width: 1920px;
+        box-sizing: border-box;
+        padding: 0;
+    
     }
 
     .footer-left h2 span::before {
@@ -5385,13 +5689,12 @@ div#greetings .yellow-link:hover,
     }
     
     .column1 {
-        width: 380px !important;
+        width: 262px !important;
     
     }
 
     .column2 {
         width: 192px !important;
-        margin-right: 89px;
     
     }
 
@@ -5409,6 +5712,11 @@ div#greetings .yellow-link:hover,
         margin: 0 auto;
         padding: 200px 140px 150px 140px;
         box-sizing: border-box;
+    }
+    
+    section#additional-company-info .wrapper1920 {
+        padding: 200px 140px 150px 140px;
+        max-width: 1920px;
     
     }
 }
