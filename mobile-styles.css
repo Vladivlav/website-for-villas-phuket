@@ -4,8 +4,8 @@
     }
     
     section#main-page > header {
-        height: 65px;
-        max-height: 65px;
+        height: 18.06vw;
+        max-height: 18.06vw;
     }
 
     section#main-page {
@@ -17,127 +17,216 @@
     }
     
     section#main-page span#for-life::before {
-        width: 106px;
-        height: 24px;
+        width: 29.44vw;
+        height: 6.67vw;
         background: url("images/for_life_before.png");
         background-repeat: no-repeat;
         content: '';
-        background-size: 106px 24px;
+        background-size: 29.44vw 6.67vw;
     }
 
     section#main-page div#location_tag {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
+        margin-bottom: 4.17vw;
+    
     }
     
     section#main-page div#location_tag::before {
-        width: 8px;
-        height: 13px;
+        width: 2.22vw;
+        height: 3.61vw;
         background: url("images/location-mark.svg");
         background-repeat: no-repeat;
-        background-size: 8px 13px;
+        background-size: 2.22vw 3.61vw;
         content: '';
+        margin-right: 1.39vw;
+    
     }
     
     section#main-page .flex div#text {
         font-weight: 400;
-        font-size: 32px;
+        font-size: 8.89vw;
         line-height: 100%;
-        padding: 80px 30px;
+        padding: 22.22vw 8.33vw;
         padding-bottom: 0;
     }
     
     section#main-page div#special-offer-slider div.stats .rent-stats {
-        width: 47%;
-        min-width: 47%;
-        padding: 15px;
+        width: 38.89vw;
+        padding: 4.17vw;
         box-sizing: border-box;
+        height: 20.56vw;
+        margin-right: 3.61vw;
+        background-size: contain;
+    
     }
     
     section#main-page div#special-offer-slider div.stats .digits {
         font-style: normal;
         font-weight: 400;
-        font-size: 32px;
+        font-size: 8.89vw;
         line-height: 100%;
     }
     
     section#main-page div#special-offer-slider {
-        padding: 30px;
+        padding: 8.33vw;
         margin-top: 0;
     }
     
     section#main-page div#special-offer-slider > p {
         text-transform: uppercase;
+        font-size: 3.89vw;
+        line-height: 3.89vw;
+        margin-bottom: 2.22vw;
+    
     }
 
     section#main-page section.offers .offer .offer-button {
-        line-height: 32px;
+        line-height: 8.89vw;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 3.33vw;
         box-sizing: border-box;
-        padding: 0 20px;
+        padding: 0 5.56vw;
     }
 
     section#main-page div#greetings .yellow-link {
-        margin: 0 30px;
-        margin-bottom: 70px;
-        height: 32px;
-        width: 252px;
+        margin: 0 8.33vw;
+        margin-bottom: 19.44vw;
+        height: 8.89vw;
+        width: 70.0vw;
         box-sizing: border-box;
-        line-height: 32px;
+        line-height: 8.89vw;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 3.33vw;
+        padding: 0 5.56vw;
+    }
     
+    div#greetings .yellow-link svg {
+        width: 4.17vw;
+        margin-left: 2.78vw;
     }
     
     section#main-page section.offers {
         margin: 0;
         box-sizing: border-box;
-        left: 10px;
+        left: 2.78vw;
         width: 150%;
         align-self: baseline;
-        padding: 20px;
-        margin-bottom: 50px;
+        padding: 5.56vw;
+        height: 100vw;
+        margin-bottom: 13.89vw;
+        border-radius: 5.56vw;
+        padding-top: 5.00vw;
+        overflow: hidden;
+    
+    }
+    
+    section#main-page .offers-header .header-text {
+        width: unset;
+        align-items: end;
+    
+    }
+    
+    section#main-page .offers-header h2 {
+        font-size: 3.89vw;
+    }
+    
+    section#main-page .line:nth-child(2) {
+        width: 23.33vw;
+        margin: 0 2.22vw;
+        min-height: 1px;
+        margin-bottom: 2.22vw;
+    
+    }
+    
+    section#main-page .offers-count .current-number {
+        font-size: 5.00vw
+    }
+    
+    section#main-page .offers-count .total-number {
+        font-size: 3.89vw;
+    }
+    
+    section#main-page .offer-image {
+        width: 83.33vw;
+        height: 46.39vw;
+        margin-top: 4.17vw;
+        margin-bottom: 4.17vw;
+    }
+    
+    section#main-page .offer-label {
+        font-size: 3.89vw;
+        height: 5.83vw;
+        line-height: 5.83vw;
+        border-radius: 5.83vw;
+        padding: 0 2.78vw;
+        left: 2.78vw;
+        top: 2.78vw;
     }
     
     section#main-page section.offers .offers-controls {
         position: absolute;
-        bottom: 20px;
-        left: calc(100vw - 160px);
+        bottom: 5.56vw;
+        left: 55.56vw;
         width: auto;
-        height: 32px;
+        height: 5.56vw;
+        z-index: 1000;
+        background-color: #393939;
+        border-radius: 50vw;
     
     }
     
     section#main-page section.offers .offers-controls .offers-nav button.next-btn,
     section#main-page section.offers .offers-controls .offers-nav button.prev-btn {
-        width: 55px;
-        height: 20px;
+        width: 15.28vw;
+        height: 5.56vw;
         margin: 0;
-    
     }
     
     section#main-page section.offers .offers-controls .offers-nav {
         margin-left: 0;
-        gap: 10px;
+        gap: 2.78vw;
         display: flex;
-    
     }
     
     section#main-page section.offers .offer {
         width: 100vw;
         min-width: 100vw;
-        border-radius: 0px;
+        border-radius: 0.0vw;
         background-color: unset;
     }
     
+    .offers-content {
+        position: relative;
+        transition: 0.3s ease-in-out;
+        left: 0;
+        overflow: hidden;
+        width: 200vw;
+        /* left: -100vw; */
+    
+    }
+    
     section#main-page section.offers .offer .offer-button {
-        margin-top: 15px;
+        margin-top: 4.17vw;
+        height: 8.89vw;
+        box-sizing: border-box;
+        line-height: 8.89vw;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.33vw;
+        padding: 0 5.56vw;
+        border-radius: 50px;
+        background-color: #FCBD21;
+        color: #393939;
+        display: inline-flex;
+        align-items: center;
+    
     }
     
     section#main-page section.offers .offer .offers-content {
@@ -148,15 +237,28 @@
         padding-left: 0;
         padding-bottom: 0;
         background-color: unset;
-        border-radius: 0px;
+        border-radius: 0.0vw;
+    }
+    
+    section#main-page .offer-info h3 {
+        font-size: 5.00vw;
+    }
+    
+    section#main-page .offer-info p {
+        font-size: 3.89vw;
     }
     
     section#main-page div#special-offer-slider div.stats .sale-stats {
-        width: 53%;
-        min-width: 53%;
+        width: 40.83vw;
         box-sizing: border-box;
-        padding: 15px;
+        padding: 0;
         margin: 0;
+        height: 20.56vw;
+        background-size: contain;
+        background-image: url("images/sale-stats-bg-360.png");
+        align-items: baseline;
+        justify-content: center;
+        padding-left: 3.89vw;
     }
     
     section#main-page div#special-offer-slider div.stats p.digits {
@@ -164,11 +266,34 @@
     }
     
     div#special-offer-slider div.stats .digits-description {
-        margin-top: 4px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 13px;
-        line-height: 130%;
+        font-size: 3.61vw;
+        line-height: 3.61vw;
+    }
+    
+    div#special-offer-slider > span {
+        font-size: 3.61vw;
+        margin-top: 1.67vw;
+        display: block;
+    
+    }
+    
+    div#special-offer-slider > span:before {
+        margin-right: 1.11vw;
+        width: 3.06vw;
+        height: 3.06vw;
+        background-image: url("images/passport-only-mark.svg");
+        content: '';
+        background-size: 100%;
+        position: relative;
+        top: 0.5vw;
+    }
+    
+    section#main-page .offer-button svg {
+        width: 4.17vw;
+        margin-left: 2.78vw;
+        stroke: #393939;
+        line-height: 8.89vw;
+    
     }
 
     section#main-page .main-nav > ul li {
@@ -176,25 +301,25 @@
     }
     
     section#main-page .main-nav > ul > div.language-selector {
-        width: 47px;
-        height: 27px;
+        width: 13.06vw;
+        height: 7.5vw;
         box-sizing: border-box;
     }
     
     section#main-page .main-nav > ul > div.language-selector img {
-        width: 21px;
-        height: 21px;
+        width: 5.83vw;
+        height: 5.83vw;
     }
     
     section#main-page .main-nav > ul > div.language-selector img:nth-of-type(2) {
-        width: 10px;
+        width: 2.78vw;
         height: auto;
     }
 
     section#attractive-direction {
-        padding: 10px;
-        padding-top: 100px;
-        padding-bottom: 50px;
+        padding: 2.78vw;
+        padding-top: 27.78vw;
+        padding-bottom: 13.89vw;
     }
     
     section#attractive-direction .wrapper1920 {
@@ -209,34 +334,68 @@
     section#attractive-direction p#main-thought {
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
-        padding: 20px;
-        padding-top: 0px;
+        padding: 5.56vw;
+        padding-top: 0.0vw;
+    }
+    
+    p.main-thought span:before,
+    p#main-thought span:before {
+        height: 5.83vw;
+        width: 19.72vw;
+        background-image: url("images/facts-badge-360.png");
+        margin-right: 3.06vw;
     
     }
     
     section#attractive-direction .fact-container {
-        height: 447px;
-        display: flex !important;
-        gap: 0px;
+        height: 124.17vw;
+        display: none;
+        gap: 0.0vw;
         flex-direction: column;
         position: unset;
-        margin-bottom: 80px;
+        margin-bottom: 13.89vw;
+    }
+    
+    section#attractive-direction .fact-container.current {
+        display: flex;
     }
     
     section#attractive-direction .last-fact-container {
         display: block;
-        opacity: 1 !important;
+        opacity: 0;
         background: url("images/last-fact-bg-767.png");
-        background-size: cover;
-        height: auto;
+        height: 121.94vw;
+        border-radius: 4.17vw;
+        margin-top: 0;
+        padding: 5.56vw;
+        box-sizing: border-box;
+        background-size: 106%;
+        background-position: bottom;
     
     }
     
     section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .number {
-        margin-bottom: 20px;
+        margin-bottom: 5.83vw;
+        font-size: 3.33vw;
+    
     }
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p,
+    section#attractive-direction .last-fact-container .fact-item p {
+        font-size: 5vw;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-items p {
+        font-size: 4.17vw;       
+    }
+    
+    section#attractive-direction .last-fact-container .fact-items span, section#attractive-direction .last-fact-container .fact-right-part span {
+        font-size: 3.89vw;
+        max-width: unset;
+    
+    }
+
     section#attractive-direction .last-fact-container .fact-right-part svg,
     section#attractive-direction .last-fact-container > svg {
         display: none;
@@ -245,25 +404,30 @@
     section#attractive-direction .last-fact-container .fact-left-part {
         flex-direction: column;
         width: 100%;
-    
     }
-    
+
     section#attractive-direction .last-fact-container .fact-items {
         width: 100%;
         max-width: unset;
-        gap: 30px;
+        gap: 8.33vw;
+        height: auto;
+        padding: 0;
     
     }
     
     section#attractive-direction .last-fact-container .fact-right-part {
-        gap: 30px;
+        gap: 8.33vw;
+        height: auto;
+        padding: 0;
     
     }
 
     section#attractive-direction .last-fact-container .fact-right-part .fact-item:first-of-type,
     section#attractive-direction .last-fact-container .fact-items .fact-item:first-of-type {
-        left: 100px;
+        left: 27.78vw;
         position: relative;
+        margin-top: 30px;
+    
     }
     
     section#attractive-direction .fact-container .fact-left-part {
@@ -275,72 +439,85 @@
         grid-column: unset;
         grid-row: unset;
         background-image: url("images/fact-1-bg-767.png");
-        background-size: 340px 260px;
+        background-size: 94.44vw 72.22vw;
         background-position: bottom;
-        height: 447px;
+        height: 124.17vw;
         opacity: 1;
+        border-radius: 4.17vw;
     
     }
     
     section#attractive-direction .fact-container .fact-left-part.second {
         background-image: url("images/fact-2-bg-767.png");
-        border-radius: 15px;
-    
+        border-radius: 4.17vw;
     }
         section#attractive-direction .fact-container .fact-left-part.third {
         background-image: url("images/fact-3-bg-767-shadow.png");
-    
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-footer {
         position: relative;
         top: 0;
         left: 0;
-        height: 239px;
+        height: 66.39vw;
         width: 100%;
         flex-direction: column;
         align-items: baseline;
         justify-content: end;
-        padding: 20px;
+        padding: 5.56vw;
         box-sizing: border-box;
-    
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button {
         margin: 0;
-        height: 32px;
+        height: 8.89vw;
         max-height: unset;
-        line-height: 32px;
-        font-size: 12px;
+        line-height: 8.89vw;
+        font-size: 3.33vw;
         width: auto;
-        padding: 0 20px;
+        padding: 0 5.56vw;
         box-sizing: border-box;
-        min-width: 160px;
+        min-width: 44.44vw;
+        display: flex;
+        align-items: center;
+    }
+    
+    #prices-and-benefits .next-button svg,
+    section#investments-base .form-button svg,
+    section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button svg {
+        width: 4.17vw;
+        margin-left: 2.78vw;
+        height: auto;
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-footer p {
         margin: 0;
         padding: 0;
-        margin-bottom: 15px;
-        max-width: 80%;
+        margin-bottom: 4.17vw;
+        max-width: 83.33vw;
+        font-size: 4.17vw;
     
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-text {
         margin: 0;
         width: 100%;
-        height: 208px;
+        height: 57.78vw;
         opacity: 1;
         transform: unset;
-    
+        border-radius: 4.17vw;
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-text .fact-badge {
-        font-style: normal;
-        font-weight: 600;
-        font-size: 12px;
-        height: 20px;
-        padding: 0 4px;
+        font-size: 3.33vw;
+        height: 5.56vw;
+        padding: 0 2.78vw;
+        width: auto;
+        border-radius: 80px;
+        line-height: 5.56vw;
+        top: 5.56vw;
+        left: 5.56vw;
+    
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
@@ -350,24 +527,29 @@
     section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge {
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
         position: relative;
-        left: -3px;
+        left: -0.83vw;
+        margin-left: 5.56vw;
+    }
     
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge:last-of-type {
+        margin-bottom: 5.56vw;
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge svg {
-        width: 9px;
-        height: 9px;
+        width: 2.5vw;
+        height: 2.5vw;
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-text p {
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 5.0vw;
         line-height: 100%;
-        max-width: 60%
+        max-width: 60%;
+        margin-left: 5.56vw;
     }
     
     section#attractive-direction .fact-container .fact-right-part {
@@ -376,70 +558,74 @@
         width: 100%;
         position: relative;
         display: none;
-    
     }
     
     section#youtube-video {
-        padding: 100px 10px;
+        padding: 27.78vw 2.78vw;
         position: relative;
         height: auto;
-        padding-bottom: 152px;
+        padding-bottom: 42.22vw;
         background-position: 100% 35%;
         background-size: 60%;
-    
     }
     
     section#youtube-video .youtube-container {
         flex-direction: column;
         padding: 0;
         max-width: unset;
+    }
     
+    section#youtube-video .youtube-container .text-container img {
+        width: 27.78vw;
+        height: 6.11vw;
     }
     
     section#youtube-video .youtube-container .image-container {
         width: 100%;
         order: 2;
-    
     }
     
     section#youtube-video .youtube-container .text-container {
         top: 0;
         left: 0;
         margin: 0;
-        padding: 0 30px;
+        padding: 0 8.33vw;
         order: 1;
     }
     
     section#youtube-video .youtube-container .text-container a {
         position: absolute;
-        bottom: 100px;
-        right: 10px;
-        font-style: normal;
-        font-size: 12px;
-        width: auto;
-        padding-left: 20px;
-        padding-right: 20px;
-        height: 32px;
-        border-radius: 16px;
-        font-weight: 400;
-        min-width: 168px;
+        bottom: 27.78vw;
+        right: 2.78vw;
+        width: 46.9vw;
         align-self: center;
         display: flex;
+        margin-top: 4.17vw;
+        height: 8.89vw;
+        line-height: 8.89vw;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.33vw;
+        padding: 0 5.56vw;
+        border-radius: 50px;
+        max-width: unset;
     
     }
     
     section#youtube-video .youtube-container .text-container a svg {
-        margin-left: 5px;
+        margin-left: 1.39vw;
         align-self: center;
+        width: 4.17vw;
+        margin-left: 2.78vw;
     
     }
     
     section#youtube-video .youtube-container .text-container p {
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
-        margin: 30px 0;
+        margin: 8.33vw 0;
     
     }
     
@@ -449,41 +635,39 @@
     }
     
     section#youtube-video .youtube-container .image-container .play-icon {
-        width: 70px;
-        height: 70px;
+        width: 19.44vw;
+        height: 19.44vw;
         top: 50%;
         left: 50%;
-        transform: translate(-35px, -35px);
+        transform: translate(-9.72vw, -9.72vw);
     }
     
     section#quote-with-four-men {
-        min-height: 395px;
-        height: 395px;
+        min-height: 109.72vw;
+        height: 109.72vw;
     }
     
     section#quote-with-four-men div.quote-sign {
-        padding: 30px;
+        padding: 8.33vw;
     }
     
     section#quote-with-four-men div.quote-sign {
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 3.33vw;
         line-height: 113.2%;
         left: 0;
         transform: unset;
-    
     }
     
     section#quote-with-four-men div.quote-sign span:first-of-type {
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 5.0vw;
         line-height: 100%;
-        margin-bottom: 8px;
+        margin-bottom: 2.22vw;
         display: block;
-    
     }
     
     section#quote-with-four-men img {
@@ -497,14 +681,14 @@
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
     }
     
     section#quote-with-four-men div.quote .right {
         text-align: left;
-        padding-left: 110px;
-        padding-right: 30px;
+        padding-left: 30.56vw;
+        padding-right: 8.33vw;
         position: unset;
         left: unset;
         transform: unset;
@@ -512,7 +696,7 @@
     }
     
     section#quote-with-four-men div.quote .left {
-        padding-left: 30px;
+        padding-left: 8.33vw;
         position: unset;
         left: unset;
         transform: unset;
@@ -521,7 +705,7 @@
     
     section#company-owner {
         flex-direction: column;
-        padding: 100px 10px 50px 10px;
+        padding: 27.78vw 2.78vw 13.89vw 2.78vw;
         position: relative;
     
     }
@@ -529,7 +713,7 @@
     section#company-owner div#i-know-everything {
         padding: 0;
         width: 100%;
-        padding-top: 90px;
+        padding-top: 25.0vw;
     
     }
     
@@ -539,7 +723,7 @@
     }
     
     section#company-owner #investment-info {
-        padding-top: 30px;
+        padding-top: 8.33vw;
     
     }
     
@@ -547,21 +731,21 @@
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
         position: absolute;
         top: 0;
         margin: 0;
-        padding-top: 100px;
+        padding-top: 27.78vw;
     }
     
     section#company-owner #investment-info .details-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        gap: 20px;
+        gap: 5.56vw;
         text-align: left;
-        row-gap: 40px;
+        row-gap: 11.11vw;
     }
     
     #investment-info .detail-item {
@@ -577,7 +761,7 @@
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 5.0vw;
         line-height: 100%;
     }
     
@@ -585,31 +769,40 @@
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
     }
     
     section#best-points {
         width: 100%;
         height: auto;
-        padding: 100px 10px;
+        padding: 27.78vw 2.78vw;
         margin: 0;
         box-sizing: border-box;
     }
     
     section#best-points .container {
-        max-width: 360px;
+        max-width: 100.0vw;
         padding: 0;
     }
     
     section#best-points .container > h2 {
-        padding: 0 20px;
+        padding: 0 5.56vw;
+        font-size: 7.50vw;
+    }
+    
+    #best-points .container > h2:nth-of-type(2)::before {
+        height: 6.39vw;
+        width: 20.56vw;
+        display: block;
+        min-width: 20.56vw;
+    
     }
     
     section#best-points .grid {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 5.56vw;
     
     }
     
@@ -617,28 +810,42 @@
         width: 100%;
         box-sizing: border-box;
         height: auto;
-        border-radius: 15px;
+        border-radius: 4.17vw;
+        padding: 5.56vw;
+    
     }
     
     #best-points .cta button {
-        font-family: 'Commissioner';
+        width: 40.56vw;
+        display: flex;
+        height: 8.89vw;
+        line-height: 8.89vw;
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
-        line-height: 100%;
-        padding: 0 20px;
-        width: 146px;
+        font-size: 3.33vw;
+        padding: 0 5.56vw;
+        border-radius: 50px;
+    
+    }
+    
+    #best-points .cta button svg {
+        width: 4.17vw;
+        margin-left: 2.78vw;
     
     }
     
     #best-points .grid-item.cta p {
         margin: 0;
-        padding-top: 31px;
-        margin-bottom: 20px;
+        padding-top: 8.61vw;
+        margin-bottom: 5.56vw;
+        font-size: 5.56vw;
+    
     }
     
     .cta p::before {
-        top: 0px;
+        top: 0.0vw;
+        width: 3.89vw;
+        height: 3.89vw;
     
     }
     
@@ -658,27 +865,33 @@
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 12px;
+        font-size: 3.33vw;
         line-height: 100%;
+    }
+
+    #best-points .grid-item h3:first-of-type {
+        font-size: 3.33vw;
     }
     
     #best-points .grid-item h3:nth-of-type(2) {
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 5.0vw;
         line-height: 100%;
+        padding-top: 2.78vw;
+    
     }
     
     section#best-points .grid-item p {
-        margin-top: 20px;
-        font-size: 14px;
+        margin-top: 5.56vw;
+        font-size: 3.89vw;
     }
     
     section#investments-base {
         height: auto;
         position: relative;
-        padding-bottom: 100px;
+        padding-bottom: 27.78vw;
     }
     
     #investments-base .wrapper1920 {
@@ -696,8 +909,8 @@
     }
     
     section#investments-base .quote {
-        padding-top: 100px;
-        padding-left: 30px;
+        padding-top: 27.78vw;
+        padding-left: 8.33vw;
         box-sizing: border-box;
         position: relative;
         z-index: 10;
@@ -707,21 +920,21 @@
     section#investments-base .quote p.title {
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
         margin-top: 0;
-        margin-bottom: 15px;
+        margin-bottom: 4.17vw;
     }
     
     section#investments-base .quote p.description {
         width: 100%;
-        padding-right: 30px;
+        padding-right: 8.33vw;
         text-align: right;
         box-sizing: border-box;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
     
     }
@@ -731,24 +944,24 @@
     }
     
     #get-properties {
-        margin: 0 10px;
-        margin-top: 30px;
+        margin: 0 2.78vw;
+        margin-top: 8.33vw;
         height: auto;
-        width: calc(100% - 20px);
+        width: calc(100% - 5.56vw);
         position: relative;
     
     }
     
     #get-properties .form-text {
-        padding-top: 30px;
-        padding-left: 34px;
-        padding-right: 34px;
+        padding-top: 8.33vw;
+        padding-left: 9.44vw;
+        padding-right: 9.44vw;
         box-sizing: border-box;
         text-align: center;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
     }
     
@@ -756,7 +969,7 @@
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
     
     }
@@ -765,53 +978,155 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 30px;
-        gap: 20px;
+        padding-top: 8.33vw;
+        gap: 5.56vw;
+        padding: 8.33vw 5.56vw 0 5.56vw;
+    
     }
     
-    #get-properties .form-inputs .form-actions {
-        margin-top: 10px;
+    #prices-and-benefits .form-inputs .form-actions {
+        margin-bottom: 0;
+    }
+    
+    .form-inputs .form-actions {
+        margin-top: 2.78vw;
         width: auto;
-        margin-bottom: 30px;
+        margin-bottom: 8.33vw;
+    }
+    
+    .form-agreement {
+        font-size: 2.5vw !important;
+        width: 41.94vw;
+        margin: 0 auto;
+    
     }
     
     .form-agreement > div {
-        left: 8px;
+        left: 2.22vw;
+        align-items: center;
+    
     }
     
     #get-properties .form-inputs .form-actions .form-button {
-        margin-bottom: 10px;
+        margin-bottom: 2.78vw;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 3.33vw;
         line-height: 100%;
-        width: 208px;
+        width: 57.78vw;
         box-sizing: border-box;
-        padding: 0 20px;
-        height: 32px;
+        padding: 0 5.56vw;
+        height: 8.89vw;
     }
     
-    #get-properties .form-agreement > div svg,
-    #get-properties .form-agreement > div input {
+    .form-agreement > div svg,
+    .form-agreement > div input {
         position: relative;
-        left: -17px;
+        left: -4.72vw;
+        width: 2.50vw;
+        height: 2.50vw;
+        margin: 0;
     }
     
-    #get-properties .form-agreement .first-line {
+    input#agreement {
+        margin-right: 0.83vw;
+        border-radius: 0.56vw;
+    
+    }
+    
+    .form-agreement .first-line {
         position: relative;
-        left: -17px;
+        left: -4.72vw;
+        height: unset;
+        line-height: unset;
+    
     }
     
     #get-properties .form-input,
     #get-properties .form-select {
         width: 100%;
-        height: 32px;
+        height: 8.89vw;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 13px;
+        height: 32px;
+        height: 8.89vw !important;
+        font-size: 3.61vw;
+        border-radius: 8.89vw;
+        padding: 0 5.56vw;
+    
+    }
+    
+    #investments-base .form-select div.feddback-options-list {
+        border-radius: 4.44vw;
+        border: 1px solid #FCBD21;
+        height: 35.56vw;
+    
+    }
+    
+    .feddback-options-list span {
+        height: 8.89vw !important;
+        line-height: 8.89vw !important;
+        padding: 0 5.56vw !important;
+        font-size: 3.61vw !important;
+        border-radius: 8.89vw;    
+    }
+    
+    #prices-and-benefits div.feddback-options-list span {
+        color: rgba(57, 57, 57, 0.49);
+    }
+
+    .feddback-options-list span:first-of-type {
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    
+    #investments-base .form-select > span, #check-objects .form-select > span, #prices-and-benefits .form-select > span {
+        height: 8.89vw;
+        line-height: 8.89vw;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 0;
+        height: 8.89vw;
+        font-size: 3.61vw;
+        border-radius: 8.89vw;
+        padding: 0 5.56vw;
+        color: rgba(57, 57, 57, 0.49);
+    }
+    
+    #investments-base .form-select > span, #check-objects .form-select > span {
+        color: rgba(255, 255, 255, 0.5);
+        padding: 0;
+    }
+    
+    #check-objects .form-select > span {
+        padding: 0 5.56vw;
+    }
+    
+    #check-objects .form-button,
+    #prices-and-benefits .form-button {
+        margin-bottom: 2.78vw;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 3.33vw;
         line-height: 100%;
+        width: 57.78vw;
+        box-sizing: border-box;
+        padding: 0 5.56vw;
+        height: 8.89vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #prices-and-benefits .form-button svg {
+        width: 4.17vw;
+        margin-left: 2.78vw;
+        height: auto;
+    
     }
     
     section#prices-and-benefits {
@@ -821,11 +1136,11 @@
 
     section#check-objects .header-section,
     section#prices-and-benefits .header-section {
-        padding: 100px 10px 50px 10px;
+        padding: 27.78vw 2.78vw 13.89vw 2.78vw;
     }
     
     section#check-objects .header-section {
-        padding-bottom: 100px;
+        padding-bottom: 27.78vw;
     
     }
     
@@ -834,9 +1149,9 @@
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 2.78vw;
     
     }
     
@@ -844,26 +1159,46 @@
     section#prices-and-benefits .header-content p {
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
         margin: 0;
-        margin-top: 10px;
+        margin-top: 2.78vw;
     
     }
     
     section#prices-and-benefits .quiz-section {
         background: white;
+        display: flex;
+        flex-direction: column;
+        padding: 5.56vw;
+        margin-top: 8.33vw;
+        border-radius: 4.17vw;
+    
     }
     
     #prices-and-benefits .quiz-progress,  #check-objects .quiz-progress {
         margin-bottom: 0;
         position: unset;
         display: flex;
-    
     }
     
+    #check-objects .progress-bar,
+    #prices-and-benefits .progress-bar {
+        margin-top: 0;
+        height: 2.5vw;
+        border-radius: 2.5vw;
+        width: 100%;
+    }
+    
+    #prices-and-benefits .progress {
+        border-radius: 8vw;
+    }
+    
+    #check-objects .quiz-question p.green-question,
     #prices-and-benefits .quiz-question p.green-question {
-        margin-top: 10px;
+        margin: 0;
+        margin-top: 2.78vw;
+        font-size: 5.00vw;
     }
     
     #check-objects .quiz-questions-container, #prices-and-benefits .quiz-questions-container {
@@ -874,8 +1209,89 @@
     #check-objects .quiz-question.active, #prices-and-benefits .quiz-question.active {
         position: relative;
     }
+    
+    .quiz-buttons {
+        display: flex;
+        gap: 4.17vw;
+    }
+
     #check-objects .quiz-question p.green-question {
         margin-top: 0;        
+    }
+    
+    .form-inputs {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        gap: 5.56vw;
+        margin-top: 5.56vw;
+    
+    }
+    
+    .form-input, .form-select {
+        width: 100%;
+        height: 8.89vw;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        height: 32px;
+        height: 8.89vw;
+        font-size: 3.61vw;
+        border-radius: 8.89vw;
+        padding: 0 5.56vw;
+    }
+    
+    #prices-and-benefits .form-select span:first-of-type {
+        padding: 0 5.56vw;
+    }
+    
+    #prices-and-benefits .form-select div.feddback-options-list {
+        border-radius: 4.44vw;
+        border: 1px solid #4caf50;
+        height: 35.56vw;
+    
+    }
+    
+    #check-objects .quiz-option span,
+    #check-objects .next-button,
+    #check-objects .prev-button,
+    #check-objects .quiz-option,
+    #prices-and-benefits .quiz-option span,
+    #prices-and-benefits .next-button,
+    #prices-and-benefits .prev-button,
+    #prices-and-benefits .quiz-option {
+        height: 8.89vw;
+        font-size: 3.33vw;
+        line-height: 8.89vw;
+        box-sizing: border-box;
+    }
+
+    #check-objects .next-button,
+    #check-objects .prev-button,
+    #prices-and-benefits .next-button,
+    #prices-and-benefits .prev-button {
+        padding: 0 5.56vw;
+        display: flex;
+        width: 29.72vw;
+        align-items: center;
+        min-width: 29.72vw;
+        border-radius: 20vw;
+    
+    }
+    
+    #check-objects .quiz-option span,
+    #prices-and-benefits .quiz-option span {
+        margin-left: 1.89vw;
+        margin-right: 5.56vw;
+        font-size: 3.89vw;
+    }
+    
+    #check-objects .quiz-option div.circle, #prices-and-benefits .quiz-option div.circle {
+        width: 6.11vw;
+        height: 6.11vw;
+        margin: 1.39vw;
+        border-width: 0.28vw;
+        box-sizing: border-box;
     }
 
     #check-objects .quiz-question.active .quiz-option {
@@ -887,54 +1303,87 @@
         visibility: hidden;
     }
     
+    #check-objects .quiz-options,
     #prices-and-benefits .quiz-options {
-        margin-top: 15px;
+        margin: 0;
+        margin-top: 4.17vw;
         max-width: 100%;
         overflow: hidden;
+        gap: 4.17vw;
+        flex-wrap: wrap;
     
     }
     
+    #check-objects .quiz-section p,
     section#prices-and-benefits .quiz-section p {
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
-        max-width: 100%
+        max-width: 100%;
+        margin-top: 5.56vw;
+        margin-left: 0;
+    
     }
     
+    #check-objects .quiz-progress span,
     #prices-and-benefits .quiz-progress span {
-        margin-top: 30px;
+        margin-top: 8.33vw;
+        font-size: 3.33vw;
+        width: 10.56vw;
+        height: 4.72vw;
+        margin-left: 0;
+    
     }
 
     section#check-objects .header-content,
     section#prices-and-benefits .header-content {
         flex-direction: column;
-        padding: 0 20px;
+        padding: 0 5.56vw;
         align-items: unset;
     }
     
     #check-objects .quiz-section {
         background-image: unset;
+        display: flex;
+        flex-direction: column;
+        padding: 5.56vw;
+        margin-top: 8.33vw;
+        border-radius: 4.17vw;
+    }
+    
+
+    #prices-and-benefits .prev-button,
+    #check-objects .prev-button {
+        width: 23.06vw;
+        min-width: unset;
+        flex-basis: 100%;
+        max-width: 23.06vw;
+    
     }
     
     #check-objects .quiz-progress {
-        margin-bottom: 10px;
+        margin-bottom: 2.78vw;
     }
     
     section#prices-and-benefits .content-section {
-        padding-top: 100px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-top: 27.78vw;
+        padding-left: 2.78vw;
+        padding-right: 2.78vw;
         box-sizing: border-box;
         width: 100%;
         flex-direction: column;
-        gap: 30px;
+        gap: 8.33vw;
     
     }
     
     section#prices-and-benefits .text-content {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 5.56vw;
+        margin-right: 5.56vw;
+        width: 100%;
+        margin: 0;
+        padding: 5.56vw;
+        box-sizing: border-box;
     
     }
     
@@ -942,50 +1391,55 @@
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
-        line-height: 100%;
+        font-size: 7.5vw;
+        line-height: 7.50vw;
         width: 106%;
-    }
     
-    section#prices-and-benefits .text-content h2:nth-of-type(2) {
-        position: relative;
-        top: -15px;
     }
     
     section#prices-and-benefits .text-content p {
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
-        width: 62%;
-        margin-bottom: 40px;
+        width: 64.44vw;
+        margin-bottom: 11.11vw;
+        margin-top: 2.78vw;
+    }
+    
+    section#prices-and-benefits .text-content p br {
+        display: none;
     }
     
     section#prices-and-benefits .fact-list {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 11.11vw;
     
     }
     
     section#prices-and-benefits .fact-item {
         height: auto;
+        max-width: unset;
     
     }
     
     section#prices-and-benefits .fact-item p.number {
-        margin-bottom: 10px;
+        margin-bottom: 2.78vw;
+        font-size: 3.33vw;
+        margin-top: 0;
+    
     }
     
     section#prices-and-benefits .fact-item p.little-title {
         width: 100%;
-        margin-bottom: 9px;
-        margin-top: 0px;
+        margin-bottom: 2.5vw;
+        margin-top: 0.0vw;
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
     
     }
@@ -997,7 +1451,7 @@
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
     
     }
@@ -1026,7 +1480,7 @@
     }
     
     section#additional-company-info {
-        padding: 100px 10px 50px 10px;
+        padding: 27.78vw 2.78vw 13.89vw 2.78vw;
         background-image: unset;
     }
     
@@ -1039,18 +1493,18 @@
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
-        padding: 0 20px;
-        margin-bottom: 20px;
+        padding: 0 5.56vw;
+        margin-bottom: 5.56vw;
         position: relative;
     }
     
     section#additional-company-info > div > h2::before {
         position: absolute;
-        top: -38px;
-        width: 64px;
-        height: 28px;
+        top: -10.56vw;
+        width: 17.78vw;
+        height: 7.78vw;
     }
     
     section#additional-company-info div.awards-section {
@@ -1064,7 +1518,7 @@
     section#additional-company-info div.award-card > img {
         width: 100%;
         order: 1;
-        border-radius: 15px;
+        border-radius: 4.17vw;
     
     }
     
@@ -1072,17 +1526,17 @@
         order: 2;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 5.0vw;
         line-height: 100%;
         padding: 0;
-        margin-top: 10px;
+        margin-top: 2.78vw;
     
     }
     
     section#additional-company-info div.conference-logos {
         order: 3;
-        margin-top: 7px;
-        gap: 5px;
+        margin-top: 1.94vw;
+        gap: 1.39vw;
         align-items: baseline;
     
     }
@@ -1091,40 +1545,49 @@
         height: auto;
         max-height: unset;
         max-width: 30%;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item {
+        height: auto;
+        max-width: 72.83vw;
+        padding: 0;
+        margin-bottom: 2.78vw;
     
     }
     
     section#additional-company-info div.award-card p {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-top: 2.78vw;
+        margin-bottom: 5.56vw;
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 5.0vw;
         line-height: 100%;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 5.56vw;
+        padding-right: 5.56vw;
     }
     
     section#additional-company-info div.award-card.big {
         width: 100%;
         box-sizing: border-box;
-        margin-top: 10px;
+        margin-top: 2.78vw;
         display: flex;
         flex-direction: column;
-        border-radius: 20px;
+        border-radius: 5.56vw;
+        padding: 5.56vw;
+    
     }
     
     section#additional-company-info > div > h3 {
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
-        padding: 50px 46px 20px 30px;
+        padding: 13.89vw 12.78vw 5.56vw 8.33vw;
         background: url("images/meru-white-back.png");
         background-size: 100%;
-        margin-top: 30px;
+        margin-top: 8.33vw;
         margin-bottom: 0;
         background-position: bottom;
         background-repeat: no-repeat;
@@ -1133,8 +1596,8 @@
     
     section#additional-company-info div.countries-section {
         flex-direction: column;
-        gap: 20px;
-        padding: 0 20px;
+        gap: 5.56vw;
+        padding: 0 5.56vw;
         box-sizing: border-box;
         width: 100%;
     
@@ -1144,15 +1607,17 @@
         font-family: igra-sans;
 font-style: normal;
 font-weight: 400;
-font-size: 18px;
+font-size: 5.0vw;
 line-height: 100%;
     }
 
     section#additional-company-info div.country-card.big,
     section#additional-company-info div.country-card {
         width: 100%;
-        max-height: 136px;
+        max-height: 37.78vw;
         height: auto;
+        border-radius: 4.17vw;
+        padding: 5.56vw;
     
     }
     
@@ -1160,35 +1625,35 @@ line-height: 100%;
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 5.0vw;
         line-height: 100%;
     }
     
     section#additional-company-info div.country-card div.header div.agent-flags img {
-        width: 22px;
-        height: 22px;
+        width: 6.11vw;
+        height: 6.11vw;
     }
     
     section#additional-company-info div.country-card .agent-info .agent-details p.agent-position {
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
     
     }
     
     section#additional-company-info div.country-card .agent-info .agent-details {
-        margin-left: 10px;
+        margin-left: 2.78vw;
     }
     
     section#additional-company-info div.country-card .agent-info img {
-        width: 70px;
-        height: 70px;
+        width: 19.44vw;
+        height: 19.44vw;
     }
     
     section#tenth-section div.header {
-        padding: 100px 30px 10px 30px;
+        padding: 27.78vw 8.33vw 2.78vw 8.33vw;
         flex-direction: column;
     }
     
@@ -1196,16 +1661,16 @@ line-height: 100%;
         transform: unset;
         position: unset;
         left: 0;
-        padding: 0 30px;
+        padding: 0 8.33vw;
     
     }
     
     section#tenth-section div.content .block-link {
         margin: 0;
         padding: 0;
-        width: 300px;
-        height: 128px;
-        margin-top: 20px !important;
+        width: 83.33vw;
+        height: 35.56vw;
+        margin-top: 5.56vw !important;
         justify-content: space-between;
         display: flex;
         flex-direction: column;
@@ -1214,25 +1679,31 @@ line-height: 100%;
     
     section#tenth-section div.content .block-link:first-of-type {
         background-color: #252525;
-        padding: 20px;
         box-sizing: border-box;
+        border-radius: 4.17vw;
+        padding: 5.56vw;
+    }
+    
+    section#tenth-section div.content .block-link p {
+        font-size: 5vw;
     }
     
     section#tenth-section div.content .block-link span {
-        height: 32px;
-        width: 112px;
+        height: 8.89vw;
+        width: 31.11vw;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
-        line-height: 30px;
+        font-size: 3.33vw;
+        line-height: 8.33vw;
     
     }
     
     section#tenth-section div.content .block-link:nth-of-type(2) {
-        margin-bottom: 20px;
-        padding: 20px;
+        margin-bottom: 5.56vw;
         box-sizing: border-box;
+        border-radius: 4.17vw;
+        padding: 5.56vw;
     
     }
     
@@ -1240,9 +1711,9 @@ line-height: 100%;
         width: 100%;
         height: auto;
         align-items: center;
-        padding-bottom: 192px;
+        padding-bottom: 43.33vw;
         background-position: bottom;
-        background-size: 360px 193px;
+        background-size: contain;
     
     }
     
@@ -1251,9 +1722,9 @@ line-height: 100%;
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
-        margin-bottom: 10px;
+        margin-bottom: 2.78vw;
     }
     
     section#tenth-section p.main-thought, section#tenth-section p#main-thought br {
@@ -1265,12 +1736,14 @@ line-height: 100%;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
     }
     
     section#our-partners {
-        padding: 100px 0px 50px 0px;
+        padding: 27.78vw 0.0vw 13.89vw 0.0vw;
+        overflow: hidden;
+    
     }
     
     section#our-partners h3 {
@@ -1278,34 +1751,41 @@ line-height: 100%;
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
     }
     
     section#our-partners p {
-        margin-top: 10px;
+        margin-top: 2.78vw;
         margin-bottom: 0;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
     }
     
     section#our-partners #partners-carousel {
         display: grid;
-        row-gap: 34px;
+        row-gap: 9.44vw;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, auto);
-        column-gap: 63px;
+        column-gap: 17.5vw;
         margin-bottom: 0;
+        margin-top: 11.11vw;
     
+    }
+    
+    section#our-partners #partners-carousel img {
+        
+        width: 37.22vw;
+        height: auto;
     }
     
     section#our-partners #partners-carousel img:nth-of-type(2),
     section#our-partners #partners-carousel img:first-of-type {
         position: relative;
-        left: 50px;
+        left: 13.89vw;
     }
     
     
@@ -1314,74 +1794,98 @@ line-height: 100%;
     }
     
     section#news {
-        padding-top: 100px;
-        padding-left: 10px;
-        padding-right: 10px;
+        padding-top: 27.78vw;
+        padding-left: 2.78vw;
+        padding-right: 2.78vw;
         position: relative;
-        padding-bottom: 112px;
+        padding-bottom: 31.11vw;
     
     }
     
     section#news div.header p {
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
+        margin-left: 5.56vw;
+        margin-bottom: 8.33vw;
+    
     }
     
     section#news div.header > p > span::before {
-        height: 24px;
-        width: 73px;
+        height: 6.67vw;
+        width: 20.28vw;
         background-repeat: no-repeat;
+        max-width: unset;
+        max-height: unset;
+        background-position: bottom;
+        margin-right: 2.50vw;
     
     }
     
     section#news div.header > span {
         position: absolute;
-        bottom: 50px;
-        right: 10px;
-        width: 168px;
-        height: 32px;
-        line-height: 32px;
+        bottom: 13.89vw;
+        right: 2.78vw;
+        width: 46.67vw;
+        height: 8.89vw;
+        line-height: 8.89vw;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 3.33vw;
+        border-width: 1px;
     
     }
     
     section#news div#news-list {
         flex-direction: column;
-        gap: 30px;
+        gap: 8.33vw;
     
     }
     
     section#news div#news-list div.news-block-link {
         width: 100%;
         height: auto;
-        border-radius: 20px;
+        border-radius: 5.56vw;
+    }
     
+    section#news div#news-list div.news-block-link .image-wrapper {
+        widows: 94.44vw;
+        height: 94.44vw;
+        border-radius: 5.56vw;
     }
     
     section#news div#news-list .news-date {
-        font-size: 10px;
+        font-size: 2.78vw;
+        margin-top: 4.17vw;
+        margin-left: 5.56vw;
+    
     }
     
     section#news div#news-list .news-title {
-        font-size: 18px;
+        font-size: 5.0vw;
+        margin-top: 4.17vw;
+        margin-left: 5.56vw;
+    
     }
     
     section#news div#news-list .news-description {
-        font-size: 14px;
+        font-size: 3.89vw;
+        padding-bottom: 5.56vw;
+        margin-left: 5.56vw;
+        margin-top: 1.39vw;
+    
     }
     
     section.faq-container {
-        padding: 100px 30px;
+        padding: 27.78vw 8.33vw;
         flex-direction: column;
+    
     }
     
     section.faq-container .faq-header h1 {
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 36px;
+        font-size: 10.0vw;
         line-height: 100%;
     }
     
@@ -1389,21 +1893,34 @@ line-height: 100%;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
     }
 
     .faq-left {
         max-width: 40%;
-        margin-bottom: 40px;
+        margin-bottom: 11.11vw;
+    }
+    
+    .faq-header img {
+        width: 21.11vw;
+        height: 5.83vw;
+        margin-bottom: 2.78vw;
+    
     }
     
     .faq-right {
         padding: 0;
     }
     
+    .faq-item {
+        max-width: unset;
+    }
+    
     .faq-ask-question {
-        margin-top: 50px;
+        margin-top: 13.89vw;
+        max-width: 100%;
+    
     }
     
     .faq-ask-question img {
@@ -1414,34 +1931,44 @@ line-height: 100%;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
         width: 70%;
         margin-bottom: 0;
+        margin-top: 5.56vw;
+    
     }
     
     .btn-ask,
     .faq-ask-question span {
-        width: 172px;
-        height: 32px;
-        line-height: 32px;
+        width: 47.78vw;
+        height: 8.89vw;
+        line-height: 8.89vw;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 500;
-        font-size: 12px;
+        font-size: 3.33vw;
         box-sizing: border-box;
-        margin-top: 10px;
-        padding: 0 20px;
+        margin-top: 2.78vw;
+        padding: 0 5.56vw;
     
     }
     
     .faq-answer {
         padding-bottom: 0;
+        font-size: 3.89vw;
+        max-height: 0;
+        line-height: 3.89vw;
+        transition: 0.3s ease-in;
+    
     }
     
     .faq-item img {
         right: 0;
         background-color: white;
+        width: 4.17vw;
+        height: 4.17vw;
+        top: 5.56vw;
     
     }
     
@@ -1449,34 +1976,37 @@ line-height: 100%;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 600;
-        font-size: 15px;
+        font-size: 4.17vw;
         overflow: hidden;
+        height: 13.89vw;
+        line-height: 13.89vw;
     
     }
     
     .faq-answer.current {
         opacity: 1;
-        max-height: 200px;
-        padding-bottom: 30px;
+        padding-bottom: 8.33vw;
         transition: 0.3s ease-in max-height;
         visibility: unset;
+    
     }
     
     footer {
         height: auto;
-        padding: 100px 10px;
-        padding-bottom: 67px;
+        padding: 27.78vw 2.78vw;
+        padding-bottom: 18.61vw;
         background-size: 182%;
         background-position-x: -25%;
         position: relative;
+        box-sizing: border-box;
     
     }
     
     footer .footer-container {
         display: flex;
         flex-direction: column;
-        padding-bottom: 80px;
-        border-bottom: 1px solid #848484;
+        padding-bottom: 22.22vw;
+        border-bottom: 0.28vw solid #848484;
         margin-bottom: 0;
     }
     
@@ -1484,14 +2014,13 @@ line-height: 100%;
         display: flex;
         flex-wrap: wrap;
         height: auto;
-        padding-bottom: 20px;
-        border-bottom-width: 1px;
+        border-bottom-width: 0.28vw;
     
     }
     
     .footer-nav {
         height: initial;
-        padding-top: 20px;
+        padding-top: 5.56vw;
     
     }
     
@@ -1501,7 +2030,7 @@ line-height: 100%;
         margin: 0;
         padding: 0;
         display: flex;
-        column-gap: 40px;
+        column-gap: 11.11vw;
         flex-wrap: wrap;
         justify-content: center;
     }
@@ -1514,20 +2043,21 @@ line-height: 100%;
     .footer-nav .flex {
         display: flex;
         flex-wrap: wrap;
-        gap: 24px;
-        margin-bottom: 20px;
+        gap: 6.67vw;
+        margin-bottom: 5.56vw;
     
     }
     
     .footer-nav ul li {
         margin: 0;
         white-space: nowrap;
+        height: unset;
     
     }
     
     footer .footer-left {
-        padding: 0 20px;
-        margin-bottom: 50px;
+        padding: 0 5.56vw;
+        margin-bottom: 13.89vw;
         position: unset;
         left: 0;
         transform: unset;
@@ -1535,68 +2065,75 @@ line-height: 100%;
     }
     
     .footer-right {
-        padding: 0 20px;
+        padding: 0 5.56vw;
         position: unset;
         left: 0;
         transform: unset;
-    
     }
     
     .contact-title {
         font-weight: 400;
-        font-size: 14px;
+        font-size: 3.89vw;
         line-height: 130%;
-        margin-bottom: 19px;
+        margin-bottom: 5.28vw;
+    }
+    
+    .contact-phone, .contact-email {
+        margin-top: 0;
+        margin-bottom: 4.72vw;
+    
     }
     
     .social-icons a svg {
-        width: 31px;
-        height: 31px;
+        width: 8.61vw;
+        height: 8.61vw;
     }
     
     svg#youtube-svg {
-        width: 38px;
-        height: 25px;
+        width: 10.56vw;
+        height: 6.94vw;
     }
     
     .contact-phone span, .contact-email span, .social-title {
         font-style: normal;
         font-weight: 300;
-        font-size: 11px;
-        line-height: 13px;
+        font-size: 3.06vw;
+        line-height: 3.61vw;
+        margin-bottom: 1.39vw;
+    
     }
     
     .contact-email a, .contact-phone a {
         font-family: igra-sans;
         font-style: normal;
         font-weight: 400;
-        font-size: 18px;
+        font-size: 5.0vw;
         line-height: 100%;
     }
     
     footer .footer-left h2 {
         font-style: normal;
         font-weight: 400;
-        font-size: 27px;
+        font-size: 7.5vw;
         line-height: 100%;
     }
     
     .footer-left h2 span::before {
-        width: 50px;
-        height: 19px;
+        width: 13.89vw;
+        height: 5.28vw;
         background: url("images/footer-text-badge-767.png");
         background-size: 100%;
         background-repeat: no-repeat;
         content: '';
         position: relative;
-        top: 2px;
-        margin-right: 8px;
+        top: 0.56vw;
+        margin-right: 2.22vw;
     }
     
     .footer-nav ul li a {
         font-style: normal;
         font-weight: 400;
-        font-size: 10px;
+        font-size: 2.78vw;
         line-height: 113.2%;
     }
     
@@ -1613,32 +2150,29 @@ line-height: 100%;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 10px;
-        line-height: 25px;
-        width: 216px;
+        font-size: 2.78vw;
+        line-height: 6.94vw;
+        width: 60.0vw;
         margin: 0 auto;
-        border-bottom: 1px solid #848484;
+        border-bottom: 0.28vw solid #848484;
         position: unset;
-    
     }
     
     footer .footer-bottom p:first-of-type span {
         position: absolute;
-        bottom: 20px;
+        bottom: 5.56vw;
         width: 100%;
         left: 0;
-    
     }
     
     footer .footer-bottom p.grid8 {
-        font-size: 10px;
+        font-size: 2.78vw;
         text-align: center;
         line-height: 130%;
         width: 100%;
-        padding: 0 30px;
+        padding: 0 8.33vw;
         box-sizing: border-box;
         height: auto;
-    
     }
     
     footer .footer-bottom p:first-of-type img {
@@ -1646,7 +2180,14 @@ line-height: 100%;
     }
     
     .footer-bottom a:last-of-type {
-        padding-bottom: 10px;
+        padding-bottom: 2.78vw;
         margin-bottom: 0;
+        text-decoration: underline;
+    }
+    
+    .footer-bottom a:first-of-type {
+        padding-top: 2.78vw;
+        margin-bottom: 0;
+        text-decoration: underline;
     }
 }

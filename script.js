@@ -266,3 +266,37 @@ function showNextFact() {
 factContainers.forEach(container => {
   container.addEventListener('click', showNextFact);
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const offersContent = document.querySelector('.offers-content');
+  const prevBtn = document.querySelector('.offers-nav .prev-btn');
+  const nextBtn = document.querySelector('.offers-nav .next-btn');
+  const currentNumber = document.querySelector('section#main-page .offers-count .current-number');
+
+  // Изначальное значение left
+  let currentLeft = 0;
+
+  prevBtn.addEventListener('click', function() {
+    if (currentLeft < 0) { // Не выполняем, если currentLeft == 0
+      currentLeft += 100;
+      offersContent.style.left = `${currentLeft}vw`;
+
+      // Уменьшаем значение currentNumber, если больше 1
+      let number = parseInt(currentNumber.textContent);
+      if (number > 1) {
+        currentNumber.textContent = '0' + `${number - 1}`;
+      }
+    }
+  });
+
+  nextBtn.addEventListener('click', function() {
+    if (currentLeft > -100) { // Не выполняем, если currentLeft == -100
+      currentLeft -= 100;
+      offersContent.style.left = `${currentLeft}vw`;
+
+      // Увеличиваем значение currentNumber
+      let number = parseInt(currentNumber.textContent);
+      currentNumber.textContent = '0' + `${number + 1}`;
+    }
+  });
+});
