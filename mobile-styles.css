@@ -2,14 +2,89 @@
     body {
         100%
     }
+
+    #line-around-sections {
+        position: fixed;
+        height: 100%;
+        width: 0;
+        left: 2.78vw;
+        border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
+        z-index: 2000;
+    
+    }
+    #line-around-sections-right {
+        position: fixed;
+        height: 100%;
+        width: 0;
+        left: 8.33vw;
+        border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
+        z-index: 2000;
+    
+    }
+    #line-start-30 {
+        position: fixed;
+        height: 100%;
+        width: 0;
+        left: 47.22vw;
+        border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
+        z-index: 2000;
+    
+    }
+    #line-start-640 {
+        position: fixed;
+        height: 100%;
+        width: 0;
+        right: 2.78vw;
+        border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
+        z-index: 2000;
+    
+    }
+
+    .box {
+        width: 12.22vw;
+        height: 4.72vw;
+    
+    }
+    
+    .line:nth-child(1) {
+        
+    }
+    
+    .line:nth-child(2) {
+        width: 5.28vw;
+    }
+    
+    .line:nth-child(3) {
+        width: 12.22vw;
+    }
     
     section#main-page > header {
         height: 18.06vw;
         max-height: 18.06vw;
+        padding: 2.78vw;
+        padding-bottom: 0;
+    }
+    
+    section#main-page #logo img {
+        width: 22.22vw;
+        margin-top: 2.78vw;
+    
+    }
+    section#main-page .right-line,
+    section#main-page #logo {
+        width: 26.94vw;
+        min-width: 26.94vw;
+    }
+    
+    section#main-page .right-line {
+        height: 5.56vw;
+    
     }
 
     section#main-page {
-        height: auto;        
+        height: auto;
+        background-image: url("images/first_section_bg-360.png");
+    
     }
 
     section#main-page .flex {
@@ -134,14 +209,6 @@
     
     section#main-page .offers-header h2 {
         font-size: 3.89vw;
-    }
-    
-    section#main-page .line:nth-child(2) {
-        width: 23.33vw;
-        margin: 0 2.22vw;
-        min-height: 1px;
-        margin-bottom: 2.22vw;
-    
     }
     
     section#main-page .offers-count .current-number {
@@ -304,6 +371,9 @@
         width: 13.06vw;
         height: 7.5vw;
         box-sizing: border-box;
+        position: absolute;
+        right: 23.33vw;
+    
     }
     
     section#main-page .main-nav > ul > div.language-selector img {
@@ -336,8 +406,14 @@
         font-weight: 400;
         font-size: 7.5vw;
         line-height: 100%;
-        padding: 5.56vw;
+        padding-left: 5.56vw;
         padding-top: 0.0vw;
+        padding-right: 4.17vw;
+    
+    }
+    
+    p.main-thought br {
+        display: none;
     }
     
     p.main-thought span:before,
@@ -347,6 +423,10 @@
         background-image: url("images/facts-badge-360.png");
         margin-right: 3.06vw;
     
+    }
+    
+    p.main-thought span.desktop-badge:before {
+        display: none;
     }
     
     section#attractive-direction .fact-container {
@@ -360,6 +440,10 @@
     
     section#attractive-direction .fact-container.current {
         display: flex;
+        background: #393939;
+        box-shadow: 0.83vw 1.67vw 2.78vw rgba(0, 0, 0, 0.3);
+        border-radius: 0px 0px 5.56vw 5.56vw;
+    
     }
     
     section#attractive-direction .last-fact-container {
@@ -367,33 +451,44 @@
         opacity: 0;
         background: url("images/last-fact-bg-767.png");
         height: 121.94vw;
-        border-radius: 4.17vw;
         margin-top: 0;
         padding: 5.56vw;
         box-sizing: border-box;
         background-size: 106%;
         background-position: bottom;
+        box-shadow: 0.83vw 1.67vw 2.78vw rgba(0, 0, 0, 0.3);
+        border-radius: 5.56vw;
     
     }
     
     section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .number {
         margin-bottom: 5.83vw;
         font-size: 3.33vw;
-    
     }
+    
     section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p,
     section#attractive-direction .last-fact-container .fact-item p {
-        font-size: 5vw;
+        font-size: 4.17vw;
+    
     }
     
-    section#attractive-direction .last-fact-container .fact-items p {
-        font-size: 4.17vw;       
+    section#attractive-direction .fact-items .fact-item p {
+        font-size: 4.17vw;
+    
     }
     
     section#attractive-direction .last-fact-container .fact-items span, section#attractive-direction .last-fact-container .fact-right-part span {
         font-size: 3.89vw;
         max-width: unset;
+    }
     
+    section#attractive-direction .last-fact-container .fact-items span.second-fact-item {
+        width: 41.94vw;
+    
+    }
+    
+    section#attractive-direction .last-fact-container span.fourth-fact-item {
+        width: 70vw;
     }
 
     section#attractive-direction .last-fact-container .fact-right-part svg,
@@ -419,14 +514,19 @@
         gap: 8.33vw;
         height: auto;
         padding: 0;
+    }
     
+    
+    
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item p {
+        font-size: 5vw !important;
     }
 
     section#attractive-direction .last-fact-container .fact-right-part .fact-item:first-of-type,
     section#attractive-direction .last-fact-container .fact-items .fact-item:first-of-type {
         left: 27.78vw;
         position: relative;
-        margin-top: 30px;
+        margin-top: 8.33vw;
     
     }
     
@@ -522,6 +622,7 @@
     
     section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
         margin: 0;
+        display: none;
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge {
@@ -530,8 +631,9 @@
         font-size: 3.89vw;
         line-height: 130%;
         position: relative;
-        left: -0.83vw;
         margin-left: 5.56vw;
+        margin-top: 1.11vw;
+    
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge:last-of-type {
@@ -583,21 +685,24 @@
     section#youtube-video .youtube-container .image-container {
         width: 100%;
         order: 2;
+        border-radius: 5.56vw;
+    
     }
     
     section#youtube-video .youtube-container .text-container {
         top: 0;
         left: 0;
         margin: 0;
-        padding: 0 8.33vw;
+        padding: 0 5.56vw;
         order: 1;
+    
     }
     
     section#youtube-video .youtube-container .text-container a {
         position: absolute;
         bottom: 27.78vw;
         right: 2.78vw;
-        width: 46.9vw;
+        width: 48vw;
         align-self: center;
         display: flex;
         margin-top: 4.17vw;
@@ -632,6 +737,8 @@
     section#youtube-video .youtube-container .image-container img {
         width: 100%;
         height: auto;
+        border-radius: 5.56vw;
+    
     }
     
     section#youtube-video .youtube-container .image-container .play-icon {
@@ -713,7 +820,7 @@
     section#company-owner div#i-know-everything {
         padding: 0;
         width: 100%;
-        padding-top: 25.0vw;
+        padding-top: 28.06vw;
     
     }
     
@@ -724,6 +831,7 @@
     
     section#company-owner #investment-info {
         padding-top: 8.33vw;
+        padding-left: 5.56vw;
     
     }
     
@@ -763,6 +871,7 @@
         font-weight: 400;
         font-size: 5.0vw;
         line-height: 100%;
+    
     }
     
     #investment-info .detail-item p {
@@ -786,17 +895,43 @@
         padding: 0;
     }
     
+    #best-points .container > h2:nth-of-type(2) {
+        padding-left: 2.78vw;
+    }
+    
     section#best-points .container > h2 {
         padding: 0 5.56vw;
         font-size: 7.50vw;
+        display: inline;
+        padding-right: 0;
+    
     }
     
+    section#best-points span.mobile-badge::before {
+        background: url("images/rectangle-points-from-denis.png");
+        content: '';
+        height: 6.39vw;
+        width: 20.56vw;
+        display: inline-block;
+        min-width: 20.56vw;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom;
+        margin-right: 1.94vw;
+    
+    }
+    
+    section#best-points span.mobile-badge {
+        padding: 0 5.56vw;
+        display: block;
+    
+    }
+
     #best-points .container > h2:nth-of-type(2)::before {
         height: 6.39vw;
         width: 20.56vw;
-        display: block;
+        display: none;
         min-width: 20.56vw;
-    
     }
     
     section#best-points .grid {
@@ -810,8 +945,9 @@
         width: 100%;
         box-sizing: border-box;
         height: auto;
-        border-radius: 4.17vw;
         padding: 5.56vw;
+        box-shadow: 0.83vw 1.67vw 2.78vw rgba(0, 0, 0, 0.15);
+        border-radius: 5.56vw;
     
     }
     
@@ -949,6 +1085,7 @@
         height: auto;
         width: calc(100% - 5.56vw);
         position: relative;
+        border-radius: 5.56vw;
     
     }
     
@@ -980,7 +1117,7 @@
         align-items: center;
         padding-top: 8.33vw;
         gap: 5.56vw;
-        padding: 8.33vw 5.56vw 0 5.56vw;
+        padding: 0 5.56vw 0 5.56vw;
     
     }
     
@@ -1018,6 +1155,8 @@
         box-sizing: border-box;
         padding: 0 5.56vw;
         height: 8.89vw;
+        color: #393939;
+    
     }
     
     .form-agreement > div svg,
@@ -1055,7 +1194,14 @@
         font-size: 3.61vw;
         border-radius: 8.89vw;
         padding: 0 5.56vw;
+    }
     
+    #get-properties .form-select span svg {
+        transform: rotate(180deg);
+    }
+    
+    #investments-base .form-select div.feddback-options-list > span svg {
+        transform: rotate(0deg);
     }
     
     #investments-base .form-select div.feddback-options-list {
@@ -1100,6 +1246,10 @@
     #investments-base .form-select > span, #check-objects .form-select > span {
         color: rgba(255, 255, 255, 0.5);
         padding: 0;
+    }
+    
+    #investments-base .form-select > span.selected {
+        color: white;
     }
     
     #check-objects .form-select > span {
@@ -1551,7 +1701,7 @@
         height: auto;
         max-width: 72.83vw;
         padding: 0;
-        margin-bottom: 2.78vw;
+        margin-bottom: 0;
     
     }
     
@@ -1965,7 +2115,7 @@ line-height: 100%;
     
     .faq-item img {
         right: 0;
-        background-color: white;
+        background-color: #F9F9F9;
         width: 4.17vw;
         height: 4.17vw;
         top: 5.56vw;

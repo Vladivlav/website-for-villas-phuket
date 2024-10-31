@@ -180,7 +180,8 @@ document.querySelectorAll('#prices-and-benefits .form-select div.feddback-option
     const option_input = document.querySelector('#prices-and-benefits .form-select > span');
 
     option_list.style.display = 'none';
-    option_input.textContent = option_text
+    option_input.textContent = option_text;
+    option_input.classList.add('selected');
   });
 });
 
@@ -199,7 +200,8 @@ document.querySelectorAll('#investments-base .form-select div.feddback-options-l
     const option_input = document.querySelector('#investments-base .form-select > span');
 
     option_list.style.display = 'none';
-    option_input.textContent = option_text
+    option_input.textContent = option_text;
+    option_input.classList.add('selected');
   });
 });
 

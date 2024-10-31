@@ -1132,7 +1132,7 @@ section#best-points .grid .grid-item.img {
   #best-points .cta button {
     color: #fff;
     cursor: pointer;
-    background-color: #27ABC1;
+    background-color: transparent;
     width: 45%;
     height: 2.17vw;
     border-radius: 1.17vw;
@@ -1146,6 +1146,7 @@ section#best-points .grid .grid-item.img {
     align-items: center;
     text-transform: uppercase;
     padding-left: 1.08vw;
+
 }
   
 #best-points .cta button svg {
@@ -1277,7 +1278,7 @@ section#best-points .grid .grid-item.img {
 }
 
 #investment-info .detail-item h3 {
-    color: #28a745;
+    color: #299948;
     margin: 0;
     font-family: igra-sans;
     font-style: normal;
@@ -2599,6 +2600,7 @@ section#tenth-section div.content .block-link:first-of-type span:hover svg {
 section#tenth-section div.content .block-link:nth-of-type(2) span:hover, #best-points .cta button:hover {
     background-color: white;
     color: #27ABC1;
+
 }
 
 section#tenth-section div.content .block-link:nth-of-type(2) span:hover svg, #best-points .cta button:hover svg {
