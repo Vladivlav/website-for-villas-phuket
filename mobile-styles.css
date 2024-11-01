@@ -1,8 +1,4 @@
 @media (max-width: 767px) {
-    body {
-        100%
-    }
-
     #line-around-sections {
         position: fixed;
         height: 100%;
@@ -43,15 +39,22 @@
     .box {
         width: 12.22vw;
         height: 4.72vw;
+    }
+    
+    .menu {
+        display: flex;
+        align-items: center;
     
     }
     
     .line:nth-child(1) {
         
     }
-    
-    .line:nth-child(2) {
-        width: 5.28vw;
+
+    .offers-header .header-text .line {
+        width: 23.33vw;
+        align-self: center;
+        margin: 0 2.22vw !important;
     }
     
     .line:nth-child(3) {
@@ -720,7 +723,6 @@
         position: absolute;
         bottom: 27.78vw;
         right: 2.78vw;
-        width: 48vw;
         align-self: center;
         display: flex;
         margin-top: 4.17vw;
@@ -1161,7 +1163,7 @@
         align-items: center;
     
     }
-    
+    #check-objects .form-button,
     #get-properties .form-inputs .form-actions .form-button {
         margin-bottom: 2.78vw;
         font-family: 'Commissioner';
