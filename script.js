@@ -193,6 +193,27 @@ document.querySelectorAll('#prices-and-benefits .form-select > span').forEach(sp
   });
 });
 
+document.querySelectorAll('#check-objects .form-select div.feddback-options-list > span.option').forEach(option => {
+  option.addEventListener('click', function() {
+    const option_text = option.textContent;
+    const option_list = document.querySelector('#check-objects .form-select div.feddback-options-list');
+    const option_input = document.querySelector('#check-objects .form-select > span');
+
+    option_list.style.display = 'none';
+    option_input.textContent = option_text;
+    option_input.classList.add('selected');
+  });
+});
+
+document.querySelectorAll('#check-objects .form-select > span').forEach(span => {
+  span.addEventListener('click', function() {
+    const option_list = document.querySelector('#check-objects .form-select div.feddback-options-list');
+
+    option_list.style.display = '';
+  });
+});
+
+
 document.querySelectorAll('#investments-base .form-select div.feddback-options-list > span.option').forEach(option => {
   option.addEventListener('click', function() {
     const option_text = option.textContent;

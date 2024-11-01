@@ -416,12 +416,21 @@
         display: none;
     }
     
-    p.main-thought span:before,
-    p#main-thought span:before {
+    p.main-thought span::before, p#main-thought span::before {
         height: 5.83vw;
         width: 19.72vw;
-        background-image: url("images/facts-badge-360.png");
         margin-right: 3.06vw;
+    }
+    
+    p.main-thought span::before {
+        background-image: url("images/facts-badge-360.png");
+    }
+    
+    p#main-thought span::before {
+        background: url("images/sofa-badge-360.png");
+        width: 30.56vw;
+        height: 5.83vw;
+        background-size: 100%;
     
     }
     
@@ -582,6 +591,15 @@
         align-items: center;
     }
     
+    #check-objects .form-select > span svg {
+        transform: rotate(180deg);
+    }
+    
+    .btn-ask svg,
+    .faq-ask-question span svg,
+    section#tenth-section div.content .block-link span svg,
+    .form-button svg,
+    #check-objects .next-button svg,
     #prices-and-benefits .next-button svg,
     section#investments-base .form-button svg,
     section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button svg {
@@ -1204,6 +1222,7 @@
         transform: rotate(0deg);
     }
     
+    #check-objects .form-select div.feddback-options-list,
     #investments-base .form-select div.feddback-options-list {
         border-radius: 4.44vw;
         border: 1px solid #FCBD21;
@@ -1248,6 +1267,7 @@
         padding: 0;
     }
     
+    #check-objects .form-select > span.selected,
     #investments-base .form-select > span.selected {
         color: white;
     }
@@ -1289,6 +1309,12 @@
         padding: 27.78vw 2.78vw 13.89vw 2.78vw;
     }
     
+    section#check-objects {
+        background: url("images/check-objects-bg-360.png");
+        background-size: cover;
+    
+    }
+    
     section#check-objects .header-section {
         padding-bottom: 27.78vw;
     
@@ -1313,7 +1339,10 @@
         line-height: 130%;
         margin: 0;
         margin-top: 2.78vw;
+    }
     
+    section#check-objects .header-content p {
+        margin-top: 0;
     }
     
     section#prices-and-benefits .quiz-section {
@@ -1323,6 +1352,7 @@
         padding: 5.56vw;
         margin-top: 8.33vw;
         border-radius: 4.17vw;
+        box-shadow: 1.39vw 1.67vw 3.61vw rgba(0, 0, 0, 0.1);
     
     }
     
@@ -1360,6 +1390,10 @@
         position: relative;
     }
     
+    #prices-and-benefits .form-select > span svg {
+        transform: rotate(180deg);
+    }
+    
     .quiz-buttons {
         display: flex;
         gap: 4.17vw;
@@ -1394,6 +1428,9 @@
     #prices-and-benefits .form-select span:first-of-type {
         padding: 0 5.56vw;
     }
+        #prices-and-benefits .form-select span.selected {
+    color: #393939;
+    }
     
     #prices-and-benefits .form-select div.feddback-options-list {
         border-radius: 4.44vw;
@@ -1402,6 +1439,9 @@
     
     }
     
+    .btn-ask,
+    .faq-ask-question span,
+    section#tenth-section div.content .block-link span,
     #check-objects .quiz-option span,
     #check-objects .next-button,
     #check-objects .prev-button,
@@ -1414,6 +1454,13 @@
         font-size: 3.33vw;
         line-height: 8.89vw;
         box-sizing: border-box;
+        border-radius: 50vw;
+    
+    }
+    
+    #prices-and-benefits .quiz-option.need-width span {
+        font-weight: 300;
+    
     }
 
     #check-objects .next-button,
@@ -1431,9 +1478,9 @@
     
     #check-objects .quiz-option span,
     #prices-and-benefits .quiz-option span {
-        margin-left: 1.89vw;
+        margin-left: 2.78vw;
         margin-right: 5.56vw;
-        font-size: 3.89vw;
+        font-size: 3.89vw;    
     }
     
     #check-objects .quiz-option div.circle, #prices-and-benefits .quiz-option div.circle {
@@ -1442,6 +1489,8 @@
         margin: 1.39vw;
         border-width: 0.28vw;
         box-sizing: border-box;
+        margin-right: 0;
+    
     }
 
     #check-objects .quiz-question.active .quiz-option {
@@ -1461,6 +1510,7 @@
         overflow: hidden;
         gap: 4.17vw;
         flex-wrap: wrap;
+        padding-bottom: 0;
     
     }
     
@@ -1473,6 +1523,7 @@
         max-width: 100%;
         margin-top: 5.56vw;
         margin-left: 0;
+        font-weight: 300;
     
     }
     
@@ -1483,6 +1534,14 @@
         width: 10.56vw;
         height: 4.72vw;
         margin-left: 0;
+    }
+    
+    #check-objects .quiz-progress span {
+        background-color: #575757;
+        color: white;
+        width: 10.56vw;
+        height: 4.72vw;
+        line-height: 4.72vw;
     
     }
 
@@ -1509,7 +1568,14 @@
         min-width: unset;
         flex-basis: 100%;
         max-width: 23.06vw;
+    }
+    #check-objects .prev-button {
+        background: #959595;
+    }
     
+    #prices-and-benefits .prev-button {
+        background-color: #D7D9D8;
+        color: #393939;
     }
     
     #check-objects .quiz-progress {
@@ -1630,8 +1696,9 @@
     }
     
     section#additional-company-info {
-        padding: 27.78vw 2.78vw 13.89vw 2.78vw;
+        padding: 38.34vw 2.78vw 13.89vw 2.78vw;
         background-image: unset;
+    
     }
     
     section#additional-company-info .wrapper1920 {
@@ -1665,6 +1732,10 @@
         width: 100%;
     }
     
+        section#additional-company-info div.award-card img {
+        width: 100%;
+    }
+    
     section#additional-company-info div.award-card > img {
         width: 100%;
         order: 1;
@@ -1688,6 +1759,12 @@
         margin-top: 1.94vw;
         gap: 1.39vw;
         align-items: baseline;
+    }
+    
+    section#additional-company-info div.conference-logos img {
+        width: 23.89vw;
+        min-width: 23.89vw;
+        max-width: unset !important;
     
     }
     
@@ -1734,7 +1811,7 @@
         font-weight: 400;
         font-size: 7.5vw;
         line-height: 100%;
-        padding: 13.89vw 12.78vw 5.56vw 8.33vw;
+        padding: 13.89vw 12.78vw 5.56vw 5.56vw;
         background: url("images/meru-white-back.png");
         background-size: 100%;
         margin-top: 8.33vw;
@@ -1768,6 +1845,14 @@ line-height: 100%;
         height: auto;
         border-radius: 4.17vw;
         padding: 5.56vw;
+    }
+    
+    section#additional-company-info div.country-card.last-with-image {
+        height: 37.78vw;
+        padding: 0 5.56vw;
+        background: url("images/last-country-bg.png");
+        background-size: 100%;
+        display: block;
     
     }
     
@@ -1782,6 +1867,8 @@ line-height: 100%;
     section#additional-company-info div.country-card div.header div.agent-flags img {
         width: 6.11vw;
         height: 6.11vw;
+        margin-left: 2.78vw;
+    
     }
     
     section#additional-company-info div.country-card .agent-info .agent-details p.agent-position {
@@ -1832,6 +1919,8 @@ line-height: 100%;
         box-sizing: border-box;
         border-radius: 4.17vw;
         padding: 5.56vw;
+        background-size: contain;
+    
     }
     
     section#tenth-section div.content .block-link p {
@@ -1854,6 +1943,7 @@ line-height: 100%;
         box-sizing: border-box;
         border-radius: 4.17vw;
         padding: 5.56vw;
+        background-size: contain;
     
     }
     
@@ -1861,7 +1951,9 @@ line-height: 100%;
         width: 100%;
         height: auto;
         align-items: center;
-        padding-bottom: 43.33vw;
+        padding-bottom: 54.2vw;
+        background: url("images/10-section-bg-360.png");
+        background-repeat: no-repeat;
         background-position: bottom;
         background-size: contain;
     
@@ -2145,10 +2237,11 @@ line-height: 100%;
         height: auto;
         padding: 27.78vw 2.78vw;
         padding-bottom: 18.61vw;
-        background-size: 182%;
-        background-position-x: -25%;
         position: relative;
         box-sizing: border-box;
+        background-image: url("images/footer-palm-bg-360.png");
+        background-position: top right;
+        background-size: 81.39vw 146vw;
     
     }
     
@@ -2165,6 +2258,9 @@ line-height: 100%;
         flex-wrap: wrap;
         height: auto;
         border-bottom-width: 0.28vw;
+        column-gap: 6.67vw;
+        row-gap: 8.33vw;
+        padding-bottom: 5.56vw;
     
     }
     
@@ -2172,6 +2268,11 @@ line-height: 100%;
         height: initial;
         padding-top: 5.56vw;
     
+    }
+    
+    .footer-nav ul div.grid8,
+    .footer-nav ul div.grid16 {
+        display: none;
     }
     
     .footer-nav ul div {
@@ -2249,7 +2350,7 @@ line-height: 100%;
         font-weight: 300;
         font-size: 3.06vw;
         line-height: 3.61vw;
-        margin-bottom: 1.39vw;
+        margin-bottom: 1.67vw;
     
     }
     
@@ -2339,5 +2440,13 @@ line-height: 100%;
         padding-top: 2.78vw;
         margin-bottom: 0;
         text-decoration: underline;
+    }
+    
+    .social-icons {
+        display: flex;
+        align-items: center;
+        gap: 5vw;
+        margin-top: 1.67vw;
+    
     }
 }

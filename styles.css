@@ -36,7 +36,8 @@ body {
 }
 
 section {
-    background-color: white;
+    background-color: #F9F9F9;
+
 }
 
 .grid7 {
@@ -996,7 +997,7 @@ section#company-owner .quote-sign {
 }
 
 #best-points {
-    background-color: white;
+    background-color: #F9F9F9;
     padding: 6.67vw 0;
 
 }
@@ -1458,7 +1459,8 @@ section#best-points .grid .grid-item.img {
 #prices-and-benefits .form-select div.feddback-options-list > span svg
 {
     padding-right: 0.83vw;
-    transform: rotate(180deg);
+    /* transform: rotate(180deg); */
+
 }
 
 #investments-base .form-select div.feddback-options-list span,
@@ -1893,7 +1895,7 @@ section#best-points .grid .grid-item.img {
 }
 
 #prices-and-benefits .next-button, #prices-and-benefits .prev-button {
-    background-color: #ccc;
+    background-color: #D7D9D8;
     border: none;
     border-radius: 2.08vw;
     cursor: pointer;
@@ -1909,6 +1911,11 @@ section#best-points .grid .grid-item.img {
     color: white;
     background: #959595;
     border-radius: 4.17vw;
+}
+
+#prices-and-benefits .prev-button {
+    background-color: #D7D9D8;
+    color: #393939;
 }
 
 #prices-and-benefits .next-button.active {
@@ -2291,7 +2298,7 @@ section#check-objects {
 }
 
 #check-objects .next-button, #check-objects .prev-button {
-    background-color: #ccc;
+    background-color: #D7D9D8;
     border: none;
     border-radius: 2.08vw;
     cursor: pointer;
@@ -2305,6 +2312,7 @@ section#check-objects {
     font-size: 0.75vw;
     line-height: 100%;
     color: #393939;
+
 }
 
 #check-objects .next-button svg {
@@ -2432,6 +2440,10 @@ section#additional-company-info div.country-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+section#additional-company-info div.country-card.last-with-image {
+    display: none;
 }
 
 section#additional-company-info div.country-card.big {
@@ -2579,7 +2591,7 @@ section#tenth-section div.content .block-link {
 section#tenth-section div.content .block-link:nth-of-type(2) {
     margin-bottom: 6.67vw;
     margin-top: 2.5vw;
-    background: #27ABC1;
+    background-color: #27ABC1;
     background-image: url("images/layer-azure.png");
     background-size: 50%;
     background-repeat: no-repeat;
@@ -3131,7 +3143,6 @@ section#news div#news-list .news-description {
 .faq-right {
     padding-right: 4.17vw;
     padding-top: 0;
-    background-color: #fff;
 
 }
 
@@ -3178,6 +3189,8 @@ section#news div#news-list .news-description {
     margin: 0;
     padding: 0;
     line-height: 4.42vw;
+    color: #393939;
+
 }
 
 .faq-answer {
