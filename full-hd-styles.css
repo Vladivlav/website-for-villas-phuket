@@ -1,2196 +1,2286 @@
 @media (min-width: 1920px) {
-body {
-    max-width: initial;
-    margin: 0 auto;
-
-}
-
-section {
-    max-width: 100.0vw;
-    margin: 0 auto;
-    box-sizing: border-box;
-    position: relative;
-    overflow: hidden;
-
-}
-
-/* Footer */
-
-footer {
-    padding-top: 0;
-    background-image: unset;
-    background-color: #393939;
-    height: auto;
-}
-
-.footer-container {
-    padding: 7.81vw 7.29vw;
-    margin-bottom: 0;
-    height: 30.21vw;
-    box-sizing: border-box;
-    background-image: url("images/footer-palm-bg.png");
-    background-position: top;
-    background-size: 25%;
-    background-repeat: no-repeat;
-    background-color: #393939;
-    max-width: 100.0vw;
-
-}
-
-.footer-left {
-    padding-left: 0;
-    width: 57.29vw;
-
-}
-
-.footer-right {
-    padding-right: 0;
-    width: 28.13vw;
-    min-width: 28.13vw;
-
-}
-
-.contact-title {
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-}
-
-.contact-phone, .contact-email {
-    margin-top: 1.56vw;
-}
-
-.contact-phone span, .contact-email span, .social-title {
-    font-weight: 300;
-    font-size: 0.83vw;
-    line-height: 1.04vw;
-}
-
-.contact-email a, .contact-phone a {
-    font-size: 1.35vw;
-    line-height: 100%;
-}
-
-.footer-left h2 {
-    font-size: 2.92vw;
-    line-height: 100%;
-}
-
-.btn-ask {
-    height: 2.08vw;
-    font-size: 0.78vw;
-    line-height: 2.08vw;
-    padding: 0 1.3vw;
-    margin-top: 2.08vw;
-}
-
-.btn-ask svg {
-    margin-left: 0.78vw;
-    width: 1.25vw;
-    height: 0.52vw;
-}
-
-.social-icons svg {
-    width: 1.93vw;
-    height: 1.93vw;
-}
-
-#youtube-svg {
-    width: 2.34vw;
-    height: 1.93vw;
-}
-
-.social-icons a {
-    margin-right: 1.56vw;
-}
-
-.footer-nav ul {
-    margin: 0 1.56vw;
-}
-
-.footer-nav ul li {
-    font-weight: 400;
-    font-size: 0.68vw;
-    line-height: 100%;
-    margin-right: 1.56vw;
-    margin-left: 0;
-
-}
-
-.footer-bottom {
-    height: 3.18vw;
-    align-content: baseline;
-    margin: 0 1.56vw;
-}
-
-.footer-bottom a, .footer-bottom p {
-    font-weight: 400;
-    font-size: 0.63vw;
-    line-height: 130%;
-    align-self: center;
-}
-
-.footer-bottom p.grid8 {
-    max-width: calc(50vw - 14.58vw);
-
-}
-
-/* Footer END */
-
-/*           */
-/* FAQ START */
-/*           */
-
-.faq-left {
-    max-width: 10.42vw;
-    padding: 0.0vw;
-    width: 10.42vw;
-}
-
-.faq-header {
-    max-width: 9.11vw;
-}
-
-.faq-right, .faq-item {
-    min-width: 41.67vw;
-    padding-right: 0;
-
-}
-
-.faq-header img {
-    width: 6.15vw;
-    max-height: 2.08vw;
-    margin-bottom: 0.78vw;
-}
-
-.faq-header h1 {
-    font-size: 2.92vw;
-    line-height: 100%;
-}
-
-.faq-header p {
-    font-size: 1.04vw;
-    line-height: 130%;
-    font-weight: 300;
-}
-
-.faq-question {
-    font-weight: 600;
-    font-size: 1.09vw;
-    line-height: 4.43vw;
-    height: 4.43vw;
-    z-index: 20;
-    background-color: white;
-}
-
-.faq-answer {
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-    max-width: 33.85vw;
-    padding-bottom: 0;
-    max-height: 0;
-    overflow: hidden;
-    z-index: 10;
-    opacity: 0;
-    /* transition: 0.3s ease-in max-height; */
-    display: block;
-
-}
-
-.faq-answer.current {
-    opacity: 1;
-    max-height: 18.23vw;
-    padding-bottom: 1.56vw;
-    transition: 0.3s ease-in max-height;
-
-}
-
-.faq-item img {
-    width: 1.25vw;
-    height: 1.25vw;
-    top: 1.56vw;
-    right: 1.56vw;
-    z-index: 20;
-
-}
-
-.faq-ask-question img {
-    width: 22.92vw;
-    height: 24.06vw;
-}
-
-.faq-ask-question h3 {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    margin-top: 1.04vw;
-    margin-bottom: 0;
-}
-
-.faq-ask-question {
-    max-width: 22.92vw;
-
-}
-
-/* ALL BUTTONS */
-.faq-ask-question span,
-section#news div.header > span,
-#best-points .cta button,
-section#youtube-video .youtube-container .text-container a,
-.offer-button,
-#prices-and-benefits .next-button,
-section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button,
-section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button,
-section#tenth-section div.content .block-link span {
-    width: auto;
-    height: 2.08vw;
-    line-height: 2.08vw;
-    font-size: 0.78vw;
-    padding: 0 1.3vw;
-}
-
-section#attractive-direction p.main-thought {
-    font-family: igra-sans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.92vw;
-    line-height: 100%;
-    margin-bottom: 1.56vw;
-}
-
-section#attractive-direction p.main-thought span:before {
-    content: '';
-    display: inline-block;
-    position: relative;
-    margin-right: 1.04vw;
-    background: url("images/attractive-directions-badge.png");
-    background-size: 100%;
-    width: 7.81vw;
-    height: 2.08vw;
-    top: 0.26vw;
-}
-
-section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button {
-    width: auto;
-    min-width: 10.52vw;
-    box-sizing: border-box;
-    min-height: 2.08vw;
-    margin-right: 1.56vw;
-    transition: 0.3s ease-out;
-    opacity: 0;
-    position: relative;
-    right: -1.56vw;
-
-}
-
-section#attractive-direction .fact-container.current .fact-left-part .fact-footer span.fact-button {
-    opacity: 1;
-    right: 0;
-}
-
-section#attractive-direction .last-fact-container .fact-left-part .big-fact-item {
-    padding: 1.56vw;
-    box-sizing: border-box;
-    max-width: 26.04vw;
-    height: initial;
-}
-
-section#attractive-direction .last-fact-container .fact-left-part {
-    width: 51.67vw;
-
-}
-
-section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .number {
-    font-family: igra-sans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 100%;
-}
-
-section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p.yellow {
-    max-width: 18.75vw;
-}
-
-section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p {
-    font-family: igra-sans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.35vw;
-    line-height: 100%;
-    max-width: 15.63vw;
-
-}
-
-section#attractive-direction .last-fact-container .fact-items, section#attractive-direction .last-fact-container .fact-right-part {
-    padding-top: 1.56vw;
-    padding-bottom: 1.56vw;
-    box-sizing: border-box;
-    width: 32.19vw;
-
-}
-
-section#attractive-direction .last-fact-container .fact-right-part svg {
-    height: 100%;
-    width: auto;
-}
-
-.faq-ask-question span svg,
-section#news div.header > span svg,
-#best-points .cta button svg,
-.offer-button svg,
-section#youtube-video .youtube-container .text-container a svg,
-#prices-and-benefits .next-button svg,
-section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button svg,
-section#tenth-section div.content .block-link span svg {
-    width: 1.25vw;
-    height: auto;
-}
-
-#prices-and-benefits .next-button svg {
-    height: 0.68vw;
-
-}
-
-.faq-container {
-    justify-content: space-between;
-    padding: 7.81vw 7.29vw 10.42vw 7.29vw;
-    box-sizing: border-box;
-    gap: 5.21vw;
-    max-width: 100.0vw;
-
-}
-
-/* FAQ END */
-
-/* News START */
-section#news {
-    width: auto;
-    height: auto;
-    padding: 7.81vw 7.29vw 3.13vw 7.29vw;
-    max-width: 100.0vw;
-
-}
-
-section#news div#news-list {
-    gap: 2.08vw;
-}
-
-section#news div#news-list div.news-block-link {
-    width: 19.79vw;
-    height: 30.73vw;
-
-}
-
-section#news div.header {
-    margin-bottom: 2.08vw;
-}
-
-section#news div.header p {
-    font-size: 2.92vw;
-}
-
-section#news div.header > p > span::before {
-    width: 8.07vw;
-    height: 2.08vw;
-    max-width: unset;
-    max-height: unset;
-    top: 0;
-}
-
-
-section#news div#news-list .news-date {
-    font-size: 0.83vw;
-    line-height: 100%;
-    margin-left: 1.56vw;
-    margin-top: 1.04vw;
-}
-
-section#news div#news-list .news-title {
-    font-size: 1.35vw;
-    line-height: 100%;
-    margin-left: 1.56vw;
-    margin-top: 1.56vw;
-}
-
-section#news div#news-list .news-description {
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-    margin-left: 1.56vw;
-    margin-top: 0.52vw;
-    font-weight: 300;
-}
-
-/* News END */
-
-
-/* Partners START */
-
-section#our-partners {
-    padding: 0 3.39vw;
-    max-width: 100.0vw;
-    padding-left: 7.29vw;
-    padding-right: 7.29vw;
-
-}
-
-section#our-partners h3 {
-    font-size: 2.92vw;
-    line-height: 100%;
-    margin-top: 10.42vw;
-}
-
-section#our-partners p {
-    font-size: 1.04vw;
-    line-height: 130%;
-    margin-top: 0.78vw;
-}
-
-section#our-partners #partners-carousel {
-    margin-top: 4.43vw;
-}
-
-section#our-partners #partners-carousel img {
-    width: 11.2vw;
-}
-
-/* Partners END */
-
-
-/* Tenth START */
-
-section#tenth-section {
-    max-width: initial;
-    height: 100%;
-    position: relative;
-}
-
-section#tenth-section div.header {
-    height: 13.54vw;
-    box-sizing: border-box;
-    padding: 0 7.29vw;
-    padding-top: 2.6vw;
-    padding-bottom: 1.56vw;
-    max-width: 100.0vw;
-    margin: 0 auto;
-
-}
-
-section#tenth-section div.content {
-    height: calc(100% - 13.54vw);
-    width: 100%;
-    background-size: cover;
-    box-sizing: border-box;
-    margin: 0 auto;
-
-}
-
-section#tenth-section div.content .wrapper1920 {
-    margin: 0 auto;
-    padding: 7.81vw 7.29vw;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
-    gap: 2.6vw;
-
-}
-
-p#main-thought-comment {
-    font-size: 1.04vw;
-    line-height: 130%;
-    max-width: 25.78vw;
-
-}
-
-p#main-thought {
-    font-size: 2.92vw;
-    line-height: 100%;
-    min-width: 57.29vw;
-
-}
-
-p#main-thought span:before {
-    width: 9.17vw;
-    height: 2.03vw;
-    margin-right: 0.52vw;
-}
-
-section#tenth-section div.content .block-link {
-    width: 17.71vw;
-    height: 9.48vw;
-    padding: 1.56vw;
-    box-sizing: border-box;
-    margin: 0 !important;
-
-}
-
-section#tenth-section div.content .block-link p {
-    font-size: 1.35vw;
-    line-height: 100%;
-    margin-bottom: 1.56vw;
-}
-
-section#tenth-section div.content .block-link:nth-of-type(2) {
-    margin-top: 2.6vw;
-}
-
-/* Tenth END */
-
-/* Best points START */
-
-#best-points {
-    max-width: 100.0vw;
-    box-sizing: border-box;
-    padding: 10.42vw 7.29vw 7.81vw 7.29vw;
-
-}
-
-#best-points .grid-item {
-    height: 10.83vw;
-    box-sizing: border-box;
-    padding: 1.56vw;
-    border-radius: 1.25vw;
-    box-sizing: border-box;
-
-}
-
-#best-points .grid-item.item1,
-#best-points .grid-item.item3,
-#best-points .grid-item.item6,
-#best-points .grid-item.item7,
-#best-points .grid-item.item9 {
-    width: 26.04vw;
-
-}
-
-#best-points .grid-item.item2,
-#best-points .grid-item.item8 {
-    width: 29.17vw;
-}
-
-#best-points .grid-item.item5 {
-    width: 23.96vw;
-}
-
-    #best-points .grid-item.item4 {
-    width: 31.25vw;
-}
-
-#best-points .grid-item h3:first-of-type {
-    font-size: 1.04vw;
-    line-height: 100%;
-}
-
-#best-points .grid-item h3:nth-of-type(2) {
-    font-family: igra-sans;
-    font-size: 1.35vw;
-    line-height: 100%;
-    padding-top: 0;
-    margin-top: 1.04vw;
-}
-
-#best-points .grid-item p {
-    font-size: 1.04vw;
-    line-height: 130%;
-}
-
-#best-points .container > h2 {
-    font-size: 2.92vw;
-    line-height: 100%;
-}
-
-#best-points .container > h2:nth-of-type(2)::before {
-    background: url("images/rectangle-points-from-denis.png");
-    background-repeat: no-repeat;
-    content: '';
-    width: 7.14vw;
-    height: 2.08vw;
-    background-size: 100%;
-    top: 0;
-
-}
-
-#best-points .container > h2:nth-of-type(2) {
-    margin-bottom: 2.6vw;
-}
-
-#best-points .grid-item.cta p {
-    padding-top: 2.14vw;
-    font-size: 1.33vw;
-    line-height: 100%;
-
-}
-
-.cta p::before {
-    width: 1.15vw;
-    height: 1.15vw;
-    top: 0.0vw;
-}
-
-#best-points .cta button {
-    width: fit-content;
-    border-radius: 2.6vw;
-}
-
-/* Best points END */
-
-/* Prices and benefits START */
-
-section#prices-and-benefits {
-    max-width: 100.0vw;
-    box-sizing: border-box;
-    padding: 7.81vw 7.29vw 10.42vw 7.29vw;
-    z-index: 22;
-
-}
-
-#prices-and-benefits .header-section {
-    padding: 0;
-    margin-bottom: 2.6vw;
-    max-width: 100.0vw;
-
-}
-
-#prices-and-benefits .text-content h2:nth-of-type(2)::before {
-    content: '';
-    background: url("images/price-garant.png");
-    background-size: 100%;
-    width: 8.33vw;
-    height: 2.08vw;
-    background-repeat: no-repeat;
-
-}
-
-#prices-and-benefits .quiz-section,
-#check-objects .quiz-section {
-    margin-top: 2.86vw;
-    min-height: 16.93vw;
-    padding: 1.56vw;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-}
-
-#check-objects .quiz-question, #prices-and-benefits .quiz-question {
-    display: block;
-    opacity: 0;
-    transition: 0.3s ease-out;
-    position: absolute;
-    top: 0;
-    left: 0;
-    visibility: hidden;
-    z-index: 1;
-
-}
-
-#prices-and-benefits .quiz-options,
-#check-objects .quiz-options {
-    margin: 0;
-    margin-top: 1.56vw;
-    gap: 1.56vw;
-
-}
-
-#prices-and-benefits .quiz-option,
-#prices-and-benefits .next-button,
-#prices-and-benefits .prev-button,
-#check-objects .quiz-option,
-#check-objects .next-button,
-#check-objects .prev-button {
-    height: 2.08vw;
-    font-size: 1.04vw;
-    font-weight: 400;
-    width: auto;
-    opacity: 0;
-    position: relative;
-    left: -2.08vw;
-    top: 0;
-
-}
-
-#prices-and-benefits .quiz-question.active .quiz-option,
-#prices-and-benefits .quiz-question.active .next-button,
-#prices-and-benefits .quiz-question.active .prev-button,
-#check-objects .quiz-question.active .quiz-option,
-#check-objects .quiz-question.active .next-button,
-#check-objects .quiz-question.active .prev-button {
-    opacity: 1;
-    left: 0.0vw;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;
-    visibility: visible;
-
-}
-
-.quiz-question .quiz-delay:nth-child(1) {
-    transition-delay: 0.10s;
-}
-
-.quiz-question .quiz-delay:nth-child(2) {
-    transition-delay: 0.15s;
-}
-
-.quiz-question .quiz-delay:nth-child(3) {
-    transition-delay: 0.20s;
-}
-
-.quiz-question .quiz-delay:nth-child(4) {
-    transition-delay: 0.25s;
-}
-
-.quiz-question .quiz-delay:nth-child(5) {
-    transition-delay: 0.30s;
-}
-
-.quiz-question .quiz-delay:nth-child(6) {
-    transition-delay: 0.35s;
-}
-
-.quiz-question .quiz-delay:nth-child(7) {
-    transition-delay: 0.4s;
-}
-
-#prices-and-benefits .next-button,
-#prices-and-benefits .prev-button,
-#check-objects .next-button,
-#check-objects .prev-button {
-    width: auto;
-    padding: 0 1.3vw;
-
-}
-
-#prices-and-benefits .quiz-question p.green-question,
-#check-objects .quiz-question p.green-question {
-    font-family: igra-sans;
-    margin: 0;
-    margin-top: 0.78vw;
-    font-weight: 400;
-    font-size: 1.35vw;
-    line-height: 100%;
-    position: relative;
-    left: -2.08vw;
-    opacity: 0;
-
-}
-
-#prices-and-benefits .quiz-question.active p.green-question,
-#check-objects .quiz-question.active p.green-question {
-    opacity: 1;
-    left: 0;
-    transition: 0.3s ease-out;
-
-}
-
-#prices-and-benefits .quiz-option .circle,
-#check-objects .quiz-option div.circle {
-    width: 1.35vw;
-    height: 1.35vw;
-    margin: 0.36vw;
-    box-sizing: border-box;
-    border-radius: 1.56vw;
-
-}
-
-#prices-and-benefits .quiz-option span,
-#check-objects .quiz-option span {
-    margin-left: 0.42vw;
-    margin-right: 1.56vw;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 100%;
-
-}
-
-#prices-and-benefits .progress-bar,
-#check-objects .progress-bar {
-    margin: 0;
-    height: 0.78vw;
-    width: 100%;
-
-}
-
-#prices-and-benefits .quiz-progress span,
-#check-objects .quiz-progress span {
-    width: 3.28vw;
-    height: 1.41vw;
-    margin: 0;
-    margin-top: 1.56vw;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 1.41vw;
-
-}
-
-#prices-and-benefits .quiz-section p,
-#check-objects .quiz-section p{
-    font-family: 'Commissioner';
-    margin: 0;
-    margin-top: 1.56vw;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-
-}
-
-#prices-and-benefits .header-content h1 {
-    font-family: igra-sans;
-    font-size: 2.92vw;
-    line-height: 100%;
-
-}
-
-#prices-and-benefits .header-content p {
-    font-family: 'Commissioner';
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-    margin-left: 4.79vw;
-
-}
-
-#prices-and-benefits .content-section {
-    gap: 2.08vw;
-    padding: 0;
-    margin-top: 7.81vw;
-    max-width: 100.0vw;
-
-}
-
-#prices-and-benefits .image-content img {
-    width: 31.25vw;
-    height: auto;
-}
-
-#prices-and-benefits .text-content {
-    margin-left: 0;
-    margin-top: 1.41vw;
-    width: auto;
-
-}
-
-#prices-and-benefits .text-content h2 {
-    font-size: 2.92vw;
-    line-height: 100%;
-}
-
-#prices-and-benefits .text-content > p {
-    margin-top: 1.56vw;
-
-}
-
-#prices-and-benefits .text-content p {
-    font-size: 1.04vw;
-    line-height: 130%;
-
-}
-
-#prices-and-benefits .fact-list {
-    grid-template-columns: 17.71vw 28.13vw;
-    row-gap: 4.17vw;
-    column-gap: 6.25vw;
-    margin-top: 4.17vw;
-
-}
-
-#prices-and-benefits .fact-item p.number {
-    font-size: 1.0vw;
-    line-height: 100%;
-}
-
-#prices-and-benefits .fact-item p.little-title {
-    font-size: 2.92vw;
-    line-height: 100%;
-    margin-top: 0.78vw;
-
-}
-
-#prices-and-benefits .fact-item p.little-description {
-    font-size: 1.04vw;
-    line-height: 130%;
-}
-
-#prices-and-benefits .fact-item {
-    height: auto;
-    max-width: 25.78vw;
-
-}
-
-/* Prices and benefits END */
-
-/* Four men quote START */
-
-section#quote-with-four-men {
-    max-width: initial;
-    width: 100%;
-    height: 100%;
-}
-
-section#quote-with-four-men img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-section#quote-with-four-men div.quote {
-    font-family: igra-sans;
-    font-size: 2.92vw;
-    line-height: 100%;
-}
-
-section#quote-with-four-men div.quote .left {
-    transform: translateX(-42.71vw);
-}
-
-section#quote-with-four-men div.quote .right {
-    transform: translateX(42.71vw);
-}
-
-section#quote-with-four-men div.quote-sign {
-    padding-left: 7.29vw;
-    padding-bottom: 7.81vw;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50.0vw);
-    max-width: 100.0vw;
-
-}
-
-section#quote-with-four-men div.quote-sign > span:first-of-type {
-    font-family: igra-sans;
-    font-size: 1.35vw;
-    line-height: 100%;
-}
-
-section#quote-with-four-men div.quote-sign > span:nth-of-type(2) {
-    font-family: 'Commissioner';
-    font-size: 0.83vw;
-    line-height: 110%;
-    margin-top: 0.52vw;
-    display: block;
-}
-
-/* Four men quote END */
-
-
-section#attractive-direction {
-    max-width: 100%;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0 auto;
-    min-height: 100%;
-
-}
-
-section#attractive-direction .fact-container .fact-left-part .fact-footer p {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.09vw;
-    line-height: 120%;
-    align-self: center;
-    margin: 0;
-    padding: 1.56vw;
-    position: relative;
-    left: -1.56vw;
-    opacity: 0;
-    transition: 0.3s ease-out;
-}
-
-section#attractive-direction .fact-container.current .fact-left-part .fact-footer p {
-    left: 0.0vw;
-    opacity: 1;
-}
-
-section#attractive-direction .last-fact-container .fact-items {
-    padding: 1.56vw 0;
-    width: 16.56vw;
-    max-width: 26.04vw;
-}
-
-section#attractive-direction .last-fact-container .fact-right-part span
-{
-    max-width: 18.75vw;
-    display: block !important;
-}
-
-section#attractive-direction .fact-container .fact-left-part {
-    max-width: initial;
-    height: 26.15vw;
-    background-size: contain;
-    min-height: 26.15vw;
-    max-height: 26.15vw;
-    border-radius: 1.25vw;
-    top: 0.89vw;
-    background-image: url("images/fact-1-bg-1920.png");
-    background-size: 120%;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-    width: 51.67vw;
-    min-width: 51.67vw;
-    max-width: 51.67vw;
-
-}
-
-section#attractive-direction .fact-container .fact-left-part.second {
-    background-image: url("images/fact-2-bg-1920.png");
-}
-
-section#attractive-direction .fact-container .fact-left-part.third {
-    background-image: url("images/fact-3-bg-1920.png");
-}
-
-section#attractive-direction .fact-container .fact-left-part {
-
+    body {
+        max-width: initial;
+        margin: 0 auto;
     
-}
-
-section#attractive-direction .fact-container.current .fact-left-part {
-    background-size: 100%;
-    opacity: 1;
-}
-
-section#attractive-direction .fact-container .fact-left-part .fact-text p {
-    margin: 0;
-    font-family: igra-sans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.35vw;
-    line-height: 100%;
-    max-width: 60%;
-
-}
-
-section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge {
-    margin: 0;
-    margin-top: 0.52vw;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-}
-
-section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge:last-of-type {
-    margin-bottom: 0;
-}
-
-section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge svg {
-    width: 0.73vw;
-    height: 0.73vw;
-}
-
-section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
-    width: 0;
-    height: 0;
-    content: unset;
-}
-
-section#attractive-direction .fact-container {
-    height: 27.92vw;
-    gap: 1.56vw;
-}
-
-.facts-wrapper {
-    height: 27.92vw;
-}
-
-section#attractive-direction .fact-container .fact-left-part .fact-text .fact-badge {
-    margin: 0;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 0.83vw;
-    line-height: 1.51vw;
-    width: 5.21vw;
-    height: 1.51vw;
-    top: 1.56vw;
-    left: 1.56vw;
-
-}
-
-section#attractive-direction .last-fact-container {
-    border-radius: 1.25vw;
-    gap: 1.56vw;
-    height: 11.67vw;
-
-}
-
-section#attractive-direction .last-fact-container .fact-items p, section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item, section#attractive-direction .last-fact-container .fact-right-part p {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.09vw;
-    line-height: 120%;
-}
-
-section#attractive-direction .last-fact-container .fact-items span, section#attractive-direction .last-fact-container .fact-right-part span {
-    font-size: 1.04vw;
-    margin-right: 0;
-    display: inline;
-    font-weight: 300;
-
-}
-
-section#attractive-direction .fact-container .fact-left-part .fact-text {
-    width: 25.0vw;
-    height: 19.38vw;
-    padding: 1.56vw;
-    box-sizing: border-box;
-    margin-top: 0.0vw;
-    transform-origin: top left;
-    transform: scale(0.6);
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-
-section#attractive-direction .fact-container.current .fact-left-part .fact-text {
-    transform: scale(1);
-    opacity: 1;
-}
-
-section#attractive-direction .fact-container .fact-left-part .fact-footer {
-    height: 5.73vw;
-    line-height: 2.86vw;
-    bottom: 0;
-
-}
-
-section#attractive-direction .wrapper1920 {
-    padding-bottom: 2.6vw;
-    z-index: 20000;
-    position: relative;
-    max-width: 100.0vw;
-    padding: 0 7.29vw;
-    padding-top: 7.81vw;
-
-}
-
-section#attractive-direction .fact-container .fact-right-part img {
-    max-width: 32.19vw;
-    object-fit: contain;
-
-}
-
-/* Youtube video START */
-
-section#youtube-video {
-    max-width: initial;
-    padding: 0;
-    margin: 0 auto;
-    height: auto;
-    background-size: 27.08vw auto;
-
-}
-
-section#youtube-video .youtube-container {
-    padding: 7.81vw 7.29vw 10.42vw 7.29vw;
-    box-sizing: border-box;
-    max-width: 100.0vw;
-    height: 36.98vw;
-    margin: 0 auto;
-}
-
-section#youtube-video .youtube-container .image-container {
-    height: auto;
-}
-
-section#youtube-video .youtube-container .image-container img {
-    width: 33.33vw;
-    height: 18.75vw;
-}
-
-section#youtube-video .youtube-container .image-container .play-icon {
-    width: 6.88vw;
-    height: 6.88vw;
-    top: 5.94vw;
-    left: 13.23vw;
-}
-
-section#youtube-video .youtube-container .image-container .play-icon svg {
-    height: 2.74vw;
-    width: auto;
-    left: 0.42vw;
-}
-
-section#youtube-video .youtube-container .text-container {
-    margin-left: 2.71vw;
-}
-
-section#youtube-video .youtube-container .text-container img {
-    width: 8.33vw;
-    height: auto;
-
-}
-
-section#youtube-video .youtube-container .text-container p {
-    font-family: igra-sans;
-    font-size: 2.92vw;
-    line-height: 100%;
-
-}
-
-section#youtube-video .youtube-container .text-container a {
-    width: fit-content;
-    border-radius: 2.6vw;
-}
-
-/* Youtube video END */
-
-/* Company owner START */
-
-section#company-owner {
-    padding: 10.42vw 7.29vw 2.6vw 7.29vw;
-    max-width: 100.0vw;
-
-}
-
-section#company-owner div#i-know-everything,
-#investment-info {
-    padding: 0;
-
-}
-
-#investment-info {
-    margin-left: 2.71vw;
-    justify-content: space-between;
-    gap: 5.73vw;
-    padding: 0.68vw 0.0vw 2.55vw;
-    flex: 1;
-
-}
-
-section#company-owner div#picture {
-    width: 33.75vw;
-    height: 27.29vw;
-
-}
-
-#investment-info > p {
-    font-family: igra-sans;
-    font-weight: 400;
-    font-size: 2.92vw;
-    line-height: 100%;
-    margin: 0;
-}
-
-#investment-info .details-grid {
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 7.19vw;
-
-}
-
-#investment-info .details-grid .detail-item {
-    height: 4.17vw;
-    width: fit-content;
-
-}
-
-#investment-info .detail-item h3 {
-    font-family: igra-sans;
-    font-size: 1.35vw;
-    line-height: 100%;
-
-}
-
-#investment-info .detail-item p {
-    font-size: 1.04vw;
-    line-height: 130%;
-}
-
-/* Company owner END */
-
-
-/* country section start */
-
-section#additional-company-info {
-    max-width: initial;
-    box-sizing: border-box;
-    padding: 0;
-    margin: auto;
-    background-size: 100.0vw auto;
-
-}
-
-section#additional-company-info div.country-card.big {
-    width: 28.96vw;
-}
-
-section#additional-company-info > div > h2::before {
-    width: 5.21vw;
-    height: 2.5vw;
-    content: '';
-    background: url("images/black-badge.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    top: 0.21vw;
-    margin-right: 0.78vw;
-
-}
-
-section#additional-company-info > div > h2 {
-    font-size: 2.92vw;
-    line-height: 100%;
-}
-
-section#additional-company-info div.country-card {
-    width: 26.04vw;
-    height: 10.83vw;
-    box-sizing: border-box;
-    padding: 1.56vw;
-    min-width: 26.04vw;
-
-}
-
-section#additional-company-info div.country-card div.header {
-    font-family: igra-sans;
-    font-size: 1.35vw;
-    line-height: 100%;
-}
-
-section#additional-company-info div.country-card .agent-info img {
-    width: 5.73vw;
-    height: 5.73vw;
-}
-
-section#additional-company-info div.country-card .agent-info .agent-details p.agent-name {
-    font-family: igra-sans;
-    font-size: 1.35vw;
-    line-height: 100%;
-}
-
-section#additional-company-info div.country-card .agent-info .agent-details p.agent-position {
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-    font-family: 'Commissioner';
-
-}
-
-section#additional-company-info div.country-card div.header div.agent-flags img {
-    width: 1.56vw;
-    height: 1.56vw;
-}
-
-section#additional-company-info > div > h3 {
-    font-size: 2.92vw;
-    line-height: 100%;
-    margin-bottom: 2.6vw;
-}
-
-section#additional-company-info div.award-card {
-    width: 26.04vw;
-}
-
-section#additional-company-info div.award-card p {
-    font-family: igra-sans;
-    font-size: 1.35vw;
-    line-height: 100%;
-}
-
-section#additional-company-info div.conference-logos {
-    display: flex;
-    gap: 1.61vw;
-    margin-top: 1.77vw;
-
-}
-
-section#additional-company-info div.conference-logos img {
-    max-height: initial;
-    width: 6.77vw;
-
-}
-
-section#additional-company-info div.conference-logos img:nth-of-type(2) {
-    width: 7.76vw;
-}
-
-section#additional-company-info div.conference-logos img:first-of-type {
-    width: 7.19vw;
-}
-
-section#additional-company-info div.award-card.big {
-    width: 28.13vw;
-    height: 27.81vw;
-    box-sizing: border-box;
-    padding: 1.56vw;
-
-}
-
-section#additional-company-info div.award-card > img {
-    width: 100%;
-    height: 16.98vw;
-    object-fit: cover;
-}
-
-section#additional-company-info div.award-card.big > img {
-    border-radius: 0.83vw;
-
-}
-
-section#additional-company-info div.award-card.big p {
-    font-family: igra-sans;
-    font-size: 1.35vw;
-    line-height: 100%;
-}
-
-/* country section end */
-
-/*  investment base start */
-
-#investments-base {
-    max-width: initial;
-    height: 100%;
-    width: 100%;
-    max-height: 44.95vw;
-    background: url("images/investments-base.png");
-    background-size: cover;
-}
-
-#investments-base .quote {
-    position: unset;
-    padding: 0;
-}
-
-#investments-base .quote p.title {
-    font-family: igra-sans;
-    font-size: 2.92vw;
-    line-height: 100%;
-    margin: 0;
-    margin-bottom: 1.56vw;
-}
-
-#investments-base .quote p.description {
-    font-family: 'Commissioner';
-    font-size: 1.04vw;
-    line-height: 130%;
-    font-weight: 300;
-
-}
-
-#investments-base .form-inputs,
-#prices-and-benefits .form-inputs,
-#check-objects .form-inputs {
-    width: 100%;
-    box-sizing: border-box;
-    padding: 0;
-    gap: 1.56vw;
-    display: flex;
-    grid-template-columns: none;
-
-}
-
-#get-properties {
-    position: unset;
-    margin: 0;
-    width: 100%;
-    height: 12.66vw;
-    box-sizing: border-box;
-    padding: 1.56vw;
-}
-
-.form-input,
-.form-select {
-    width: 15.52vw;
-    height: 2.08vw;
-    font-size: 0.94vw;
-    line-height: 100%;
-    padding: 0 1.3vw;
-}
-
-.form-select {
-    border: 0.0vw;
-}
-
-#investments-base .form-select > span,
-#check-objects .form-select > span,
-#prices-and-benefits .form-select > span {
-    width: 100%;
-    height: 2.08vw;
-    line-height: 2.08vw;
-    justify-content: space-between;
-    padding: 0;
-    padding-left: 1.56vw;
-    padding-right: 1.3vw;
-    align-items: center;
-    box-sizing: border-box;
-    border: 0.05vw solid #FCBD21;
-    border-radius: 1.04vw;
-    z-index: 8;
-    font-size: 0.94vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    color: white;
-    font-weight: 300;
-
-}
-
-#prices-and-benefits .form-select > span {
-    border: 0.05vw solid #4caf50;
-    color: #393939;
-    font-weight: 300;
-
-}
-
-#investments-base .form-select > span svg,
-#check-objects .form-select > span svg,
-#prices-and-benefits .form-select > span svg {
-    width: 1.04vw;
-    /* max-width: 1.04vw; */
-    height: 0.42vw;
-
-}
-
-#investments-base .form-select {
-    display: flex;
-    box-sizing: border-box;
-    width: 15.63vw;
-    height: 2.08vw;
-    border-width: 0;
-    padding: 0;
-
-}
-
-#investments-base .form-actions,
-#check-objects .form-actions,
-#prices-and-benefits .form-actions {
-    width: auto;
-    flex: 1;
-    margin-bottom: 0;
-
-}
-
-.form-agreement,
-#prices-and-benefits .form-agreement {
-    margin-top: 0.52vw;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.68vw;
-    line-height: 120%;
-}
-
-.form-agreement input {
-    width: 0.78vw;
-    height: 0.78vw;
-    border-radius: 0.16vw;
-    margin: 0.0vw;
-    margin-right: 0.1vw;
-    box-sizing: content-box;
-
-}
-
-.form-button {
-    font-family: 'Commissioner';
-    font-weight: 500;
-    font-size: 0.78vw;
-    line-height: 100%;
-    height: 2.08vw;
-    padding: 0 1.3vw;
-    width: auto;
-
-}
-
-.form-button svg {
-    width: 1.25vw;
-    height: 0.31vw;
-    margin-left: 0.78vw;
-
-}
-
-#investments-base .form-select div.feddback-options-list span,
-#check-objects .form-select div.feddback-options-list span,
-#prices-and-benefits .form-select div.feddback-options-list span {
-    height: 2.08vw;
-    line-height: 2.08vw;
-    padding: 0 1.56vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 0.94vw;
-    font-weight: 300;
-
-}
-
-#investments-base .form-select div.feddback-options-list, #check-objects .form-select div.feddback-options-list,       #prices-and-benefits .form-select div.feddback-options-list {
-    height: 8.59vw;
-    box-sizing: border-box;
-    top: -0.05vw;
-    left: 0;
-    position: absolute;
-    border-radius: 1.04vw;
-    width: 15.42vw;
-    box-sizing: initial;
-    left: -0.1vw;
-    position: absolute;
-    top: 0.0vw;
-    left: 0.0vw;
-    width: 100%;
-    box-sizing: border-box;
-
-}
-
-#investments-base .form-select div.feddback-options-list > span svg, #check-objects .form-select div.feddback-          options-list > span svg, #prices-and-benefits .form-select div.feddback-options-list > span svg {
-    width: 1.04vw;
-    height: 0.42vw;
-    padding: 0;
-
-}
-
-#investments-base .form-text {
-    padding: 0;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-
-}
-
-#investments-base .form-text > p,
-#prices-and-benefits .quiz-question .form-text p {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 1.04vw;
-    line-height: 130%;
-    margin-bottom: 2.6vw;
-
-}
-
-#prices-and-benefits .quiz-question .form-text p,
-#check-objects .quiz-question .form-text p {
-    margin-top: 0.52vw;
-    margin-bottom: 1.04vw;
-    font-family: igra-sans;
-
-}
-
-#investments-base .wrapper1920 {
-    width: 100%;
-    height: 100%;
-    padding: 7.81vw 7.29vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    position: relative;
-    z-index: 200000;
-    max-width: 100.0vw;
-
-}
-
-#investments-base img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: none;
-
-}
-
-/*  investment base end  */
-
-/*  check-objects start   */
-
-section#check-objects {
-    max-width: 100%;
-    height: 40.99vw;
-    box-sizing: border-box;
-    background: url("images/check-objects-bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-
-}
-
-#check-objects .header-content h3 {
-    font-family: igra-sans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.92vw;
-    line-height: 100%;
-}
-
-#check-objects .header-content p {
-    margin-left: 5.05vw;
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-
-}
-
-#check-objects .quiz-section {
-    margin-top: 2.6vw;
-}
-
-#check-objects .header-section {
-    max-width: 100.0vw;
-    margin: 0 auto;
-    padding: 0;
-    background: unset;
-    padding: 7.81vw 7.29vw;
-    box-sizing: border-box;
-}
-/*  check-objects ens    */
-
-
-/* main page start */
-
-section#main-page {
-    max-width: 100%;
-    height: 100%;
-    overflow: hidden;
-
-}
-
-section#main-page .right-line {
-    width: 8.33vw;
-
-}
-
-section#main-page #logo img {
-    width: 6.09vw;
-    margin-top: 0.78vw;
-
-}
-
-section#main-page #logo {
-    width: 8.33vw;
-    min-width: 8.33vw;
-}
-
-.main-nav > ul > div.language-selector {
-    width: 3.75vw;
-    height: 1.67vw;
-}
-
-.language-selector img:nth-of-type(2) {
-    width: 0.83vw;
-    height: 0.31vw;
-    min-width: 0.83vw;
-    min-height: 0.52vw;
-    margin-left: 0.52vw;
-
-}
-
-.language-selector img {
-    width: 1.67vw;
-    height: 1.67vw;
-}
-
-.box {
-    width: 4.17vw;
-    height: 1.2vw;
-
-}
-
-section#main-page > .flex {
-    position: relative;
-    bottom: 0;
-    height: 100%;
-    max-width: 100.0vw;
-    margin: 0 auto;
-    overflow: initial;
-    align-items: center;
-    padding-top: 6.25vw;
-
-}
-
-div#greetings {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    justify-content: center;
-    padding-left: 7.29vw;
-    padding-top: 0;
-    padding-bottom: 4.01vw;
-}
-
-.offers-header .header-text {
-    width: 25.0vw;
-    box-sizing: border-box;
-}
-
-.offers-header {
-    margin-bottom: 1.04vw;
-
-}
-
-.offers-count {
-    min-width: 3.28vw;
-}
-
-.offers-count .current-number {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25vw;
-    line-height: 1.51vw;
-}
-
-.offers-count .total-number {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 1.25vw;
-}
-
-
-.offers-header h2 {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-}
-
-section.offers {
-    height: 29.01vw;
-    padding: 2.08vw;
-    box-sizing: border-box;
-    min-width: 46.67vw;
-    left: 6.77vw;
-
-}
-
-.offers-nav button {
-    width: 3.13vw;
-    height: 1.15vw;
-
-}
-
-.offers-nav button svg {
-    width: 1.25vw;
-    height: auto;
-}
-
-.offer {
-    min-width: 25.0vw;
-    background-color: unset;
-    border-radius: 0;
-    height: 22.24vw;
-    display: flex;
-    flex-direction: column;
-
-}
-
-.offer-info {
-    padding: 0;
-}
-
-.offer-info h3 {
-    font-family: igra-sans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.33vw;
-    line-height: 100%;
-    margin-top: 1.04vw;
-    margin-bottom: 0.26vw;
-
-}
-
-.offer-info p {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-    margin-bottom: 0.31vw;
-
-}
-
-.offer-image {
-    width: 100%;
-    height: 13.91vw;
-
-}
-
-.offer-label {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 100%;
-    height: 1.77vw;
-    line-height: 1.61vw;
-    border-radius: 0.89vw;
-    padding: 0 0.78vw;
-    box-sizing: border-box;
-    top: 0.78vw;
-    left: 0.78vw;
-
-}
-
-.offer img {
-    width: 100%;
-}
-
-div#text {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 3.96vw;
-    line-height: 100%;
-    padding-top: 0;
-    padding-left: 0;
-}
-
-div#special-offer-slider {
-    padding-left: 0;
-}
-
-div#special-offer-slider > span {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-}
-
-div#special-offer-slider > span:before {
-    width: 0.68vw;
-    height: 0.68vw;
-    background: url("images/passport-only-mark.svg");
-    background-repeat: no-repeat;
-    background-size: 0.68vw 0.68vw;
-    margin-right: 0.42vw;
-    content: '';
-
-}
-
-div#location_tag {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-    margin-bottom: 1.67vw;
-}
-
-span#for-life::before {
-    content: url("images/for_life_before.png");
-    display: inline-block;
-    position: relative;
-    top: 0.31vw;
-    margin-right: 0.57vw;
-    width: 13.33vw;
-    height: 3.33vw;
-    background: url("images/for_life_before.png");
-    content: '';
-    background-size: 13.33vw 3.33vw;
-    background-repeat: no-repeat;
-}
-
-div#special-offer-slider div.stats .digits {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 2.97vw;
-    line-height: 100%;
-    margin-left: 1.56vw;
-
-}
-
-div#special-offer-slider div.stats .digits-description {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-    margin-left: 1.56vw;
-
-}
-
-
-div#greetings .yellow-link {
-    font-size: 0.78vw;
-    padding: 0 1.3vw;
-    margin-top: 2.08vw;
-    height: 2.08vw;
-    line-height: 2.08vw;
-    margin-left: 0;
-
-}
-
-div#greetings .yellow-link svg {
-    widows: 1.25vw;
-    height: 0.42vw;
-    align-self: center;
-}
-
-div#special-offer-slider div.stats .sale-stats,
-div#special-offer-slider div.stats .rent-stats {
-    min-height: 6.25vw;
-    min-width: 13.54vw;
-    background-size: contain;
-    justify-content: center;
-    padding: 0;
-}
-
-
-
-div#special-offer-slider div.stats .rent-stats {
-    background-position: left;
-
-}
-
-div#special-offer-slider > p {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.04vw;
-    line-height: 130%;
-
-}
-
-section#main-page > header {
-    height: 6.3vw;
-    z-index: 1000;
-    padding: 1.56vw;
-    padding-bottom: 0;
-
-}
-
-section#main-page .main-nav > ul li a {
-    font-family: 'Commissioner';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 0.68vw;
-    line-height: 0.78vw;
-    align-self: center;
-}
-
-section#main-page .main-nav > ul li a.highlight {
-    padding: 1.82vw;
-    background-color: #848484;
-}
-
-.main-nav a.highlight {
-    padding: 1.72vw;
-}
-
-.main-nav > ul > li {
-    padding-left: 1.82vw;
-}
-
-/* main page end */
-
-/* LINES start */
-
-#line-around-sections {
-    position: fixed;
-    top: 0;
-    width: 0;
-    height: 100%;
-    max-width: 85.42vw;
-    left: 50%;
-    transform: translateX(-42.71vw);
-    border-left: 0.08vw solid rgba(149, 149, 149, 0.15);
-    z-index: 100;
-    box-sizing: border-box;
-
-}
-
-#line-around-sections-right {
-    position: fixed;
-    top: 0;
-    width: 0;
-    height: 100%;
-    max-width: 85.42vw;
-    left: 50%;
-    transform: translateX(42.71vw);
-    border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
-    z-index: 100;
-
-}
-
-#line-start-30 {
-    position: fixed;
-    top: 0;
-    height: 100%;
-    width: 0;
-    z-index: 10000;
-    left: 1.56vw;
-    border-left: 0.08vw solid rgba(149, 149, 149, 0.15);
-}
-
-#line-start-640 {
-    position: fixed;
-    height: 100%;
-    width: 0;
-    border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
-    left: 50%;
-    z-index: 2000;
-    transform: translateX(-9.38vw);
-}
-
-#line-end-208 {
-    position: fixed;
-    height: 100%;
-    width: 0;
-    border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
-    left: 50%;
-    z-index: 2000;
-    transform: translateX(14.58vw);
-}
-
-/* LINES end */
-
-#best-points .container {
-    position: relative;
-    z-index: 20000;
-    max-width: 100.0vw;
-    box-sizing: border-box;
-    padding: 0;
-
-}
-
-.footer-left h2 span::before {
-    width: 3.65vw;
-    height: 1.88vw;
-    background: url("images/footer-text-badge.png");
-    content: '';
-    background-size: 100%;
-}
-
-.column1 {
-    width: 13.65vw !important;
-
-}
-
-.column2 {
-    width: 10.0vw !important;
-
-}
-
-.column3 {
-    grid-column: 3; /* Второй элемент второй колонки */
-}
-
-.column2-wide {
-    width: 28.13vw !important;
-
-}
-
-.wrapper1920 {
-    max-width: 100.0vw;
-    margin: 0 auto;
-    padding: 10.42vw 7.29vw 7.81vw 7.29vw;
-    box-sizing: border-box;
-}
-
-section#additional-company-info .wrapper1920 {
-    padding: 10.42vw 7.29vw 7.81vw 7.29vw;
-    max-width: 100.0vw;
-
-}
+    }
+
+    #prices-and-benefits .header-content p {
+        margin-left: 18vw;  
+    }
+    
+    section {
+        max-width: 100.0vw;
+        margin: 0 auto;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+    
+    }
+    
+    /* Footer */
+    
+    footer {
+        padding-top: 0;
+        background-image: unset;
+        background-color: #393939;
+        height: auto;
+    }
+    
+    footer .grid16 .flex:first-of-type {
+        padding-right: 21.3vw;
+    
+    }
+    
+    .footer-nav ul li:first-of-type {
+        padding-right: 3.4vw !important;
+        width: 2.34375vw;
+    
+    }
+    
+    footer .footer-nav .grid16 {
+        padding-right: 16.2vw;
+    
+    }
+    
+    .footer-nav {
+        height: unset;
+    }
+
+    .footer-container {
+        padding: 7.81vw 7.2917vw;
+        margin-bottom: 0;
+        height: 30.21vw;
+        box-sizing: border-box;
+        background-image: url("images/footer-palm-bg.png");
+        background-position: top;
+        background-size: 25%;
+        background-repeat: no-repeat;
+        background-color: #393939;
+        max-width: 100.0vw;
+    
+    }
+    
+    .footer-left {
+        padding-left: 0;
+        left: 0;
+        transform: unset;
+    
+    }
+    
+    .footer-right {
+        padding-right: 0;
+        width: 28.13vw;
+        min-width: 28.13vw;
+        right: 0;
+    
+    }
+    
+    .contact-title {
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+    }
+    
+    .contact-phone, .contact-email {
+        margin-top: 1.56vw;
+    }
+    
+    .contact-phone span, .contact-email span, .social-title {
+        font-weight: 300;
+        font-size: 0.83vw;
+        line-height: 1.04vw;
+    }
+    
+    .contact-email a, .contact-phone a {
+        font-size: 1.35vw;
+        line-height: 100%;
+    }
+    
+    .footer-left h2 {
+        font-size: 2.92vw;
+        line-height: 100%;
+    }
+    
+    .btn-ask {
+        height: 2.08vw;
+        font-size: 0.78vw;
+        line-height: 2.08vw;
+        padding: 0 1.3vw;
+        margin-top: 2.08vw;
+    }
+    
+    .btn-ask svg {
+        margin-left: 0.78vw;
+        width: 1.25vw;
+        height: 0.52vw;
+    }
+    
+    .social-icons svg {
+        width: 1.93vw;
+        height: 1.93vw;
+    }
+    
+    #youtube-svg {
+        width: 2.34vw;
+        height: 1.93vw;
+    }
+    
+    .social-icons a {
+        margin-right: 1.56vw;
+    }
+    
+    .footer-nav ul {
+        margin: 0 1.56vw;
+        height: auto;
+        border-bottom: 1px solid #848484;
+    
+    }
+    
+    .footer-nav ul > div.grid8 > div.flex:last-of-type > li:first-of-type {
+        padding-right: 2.3vw !important;
+        width: auto;
+    
+    }
+    
+    .footer-nav ul li {
+        font-weight: 400;
+        font-size: 0.68vw;
+        line-height: 100%;
+        margin-right: 1.56vw;
+        margin-left: 0;
+        padding-right: 0;
+    
+    }
+    
+    .footer-bottom {
+        height: 3.18vw;
+        align-content: baseline;
+        margin: 0 1.56vw;
+        line-height: 3.18vw;
+    
+    }
+    
+    .footer-bottom a, .footer-bottom p {
+        font-weight: 400;
+        font-size: 0.63vw;
+        line-height: 130%;
+        align-self: center;
+    }
+    
+    .footer-bottom p:first-of-type {
+        width: 66vw;
+        margin: 0;
+    
+    }
+
+    .footer-bottom p.grid8 {
+        max-width: calc(50vw - 14.58vw);
+        margin: 0;
+    
+    }
+    
+    /* Footer END */
+    
+    /*           */
+    /* FAQ START */
+    /*           */
+    
+    .faq-left {
+        max-width: 10.42vw;
+        padding: 0.0vw;
+        width: 10.42vw;
+    }
+    
+    .faq-header {
+        max-width: 9.11vw;
+    }
+    
+    .faq-right, .faq-item {
+        min-width: 41.67vw;
+        padding-right: 0;
+    
+    }
+    
+    .faq-header img {
+        width: 6.15vw;
+        max-height: 2.08vw;
+        margin-bottom: 0.78vw;
+    }
+    
+    .faq-header h1 {
+        font-size: 2.92vw;
+        line-height: 100%;
+    }
+    
+    .faq-header p {
+        font-size: 1.04vw;
+        line-height: 130%;
+        font-weight: 300;
+    }
+    
+    .faq-question {
+        font-weight: 600;
+        font-size: 1.09vw;
+        line-height: 4.43vw;
+        height: 4.43vw;
+        z-index: 20;
+    
+    }
+    
+    .faq-answer {
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+        max-width: 33.85vw;
+        padding-bottom: 0;
+        max-height: 0;
+        overflow: hidden;
+        z-index: 10;
+        opacity: 0;
+        /* transition: 0.3s ease-in max-height; */
+        display: block;
+    
+    }
+    
+    .faq-answer.current {
+        opacity: 1;
+        max-height: 18.23vw;
+        padding-bottom: 1.56vw;
+        transition: 0.3s ease-in max-height;
+    
+    }
+    
+    .faq-item img {
+        width: 1.25vw;
+        height: 1.25vw;
+        top: 1.56vw;
+        right: 1.56vw;
+        z-index: 20;
+    
+    }
+    
+    .faq-ask-question img {
+        width: 22.92vw;
+        height: 24.06vw;
+    }
+    
+    .faq-ask-question h3 {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        margin-top: 1.04vw;
+        margin-bottom: 0;
+    }
+    
+    .faq-ask-question {
+        max-width: 22.92vw;
+    
+    }
+    
+    /* ALL BUTTONS */
+    .faq-ask-question span,
+    section#news div.header > span,
+    #best-points .cta button,
+    section#youtube-video .youtube-container .text-container a,
+    .offer-button,
+    #prices-and-benefits .next-button,
+    section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button,
+    section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button,
+    section#tenth-section div.content .block-link span {
+        width: auto;
+        height: 2.08vw;
+        line-height: 2.08vw;
+        font-size: 0.78vw;
+        padding: 0 1.3vw;
+        display: inline-flex;
+    
+    }
+    
+    section#attractive-direction p.main-thought {
+        font-family: igra-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.92vw;
+        line-height: 100%;
+        margin-bottom: 1.56vw;
+    }
+    
+    section#attractive-direction p.main-thought span:before {
+        content: '';
+        display: inline-block;
+        position: relative;
+        margin-right: 1.04vw;
+        background: url("images/attractive-directions-badge.png");
+        background-size: 100%;
+        width: 7.81vw;
+        height: 2.08vw;
+        top: 0.26vw;
+    }
+    
+        section#attractive-direction p.main-thought span.mobile-badge:before,
+        section#attractive-direction p#main-thought span.mobile-badge:before {
+            display: none;    
+        }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button {
+        width: auto;
+        min-width: 10.52vw;
+        box-sizing: border-box;
+        min-height: 2.08vw;
+        margin-right: 1.56vw;
+        transition: 0.3s ease-out;
+        opacity: 0;
+        position: relative;
+        right: -1.56vw;
+    
+    }
+    
+    section#attractive-direction .fact-container.current .fact-left-part .fact-footer span.fact-button {
+        opacity: 1;
+        right: 0;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item {
+        padding: 1.56vw;
+        box-sizing: border-box;
+        max-width: 26.04vw;
+        height: initial;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-left-part {
+        width: 51.67vw;
+    
+    }
+    
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .number {
+        font-family: igra-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 100%;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p.yellow {
+        max-width: 18.75vw;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p {
+        font-family: igra-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.35vw;
+        line-height: 100%;
+        max-width: 15.63vw;
+    
+    }
+    
+    section#attractive-direction .last-fact-container .fact-items, section#attractive-direction .last-fact-container .fact-right-part {
+        padding-top: 1.56vw;
+        padding-bottom: 1.56vw;
+        box-sizing: border-box;
+        width: 32.19vw;
+    
+    }
+    
+    section#attractive-direction .last-fact-container .fact-right-part svg {
+        height: 100%;
+        width: auto;
+    }
+    
+    .faq-ask-question span svg,
+    section#news div.header > span svg,
+    #best-points .cta button svg,
+    .offer-button svg,
+    section#youtube-video .youtube-container .text-container a svg,
+    #prices-and-benefits .next-button svg,
+    section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button svg,
+    section#tenth-section div.content .block-link span svg {
+        width: 1.25vw;
+        height: auto;
+    }
+    
+    #prices-and-benefits .next-button svg {
+        height: 0.68vw;
+    
+    }
+    
+    .faq-container {
+        justify-content: space-between;
+        padding: 7.81vw 7.29vw 10.42vw 7.29vw;
+        box-sizing: border-box;
+        gap: 5.21vw;
+        max-width: 100.0vw;
+    
+    }
+    
+    /* FAQ END */
+    
+    /* News START */
+    section#news {
+        width: auto;
+        height: auto;
+        padding: 7.81vw 7.29vw 3.13vw 7.29vw;
+        max-width: 100.0vw;
+    
+    }
+    
+    section#news div#news-list {
+        gap: 2.08vw;
+    }
+    
+    section#news div#news-list div.news-block-link {
+        width: 19.79vw;
+        height: 30.73vw;
+    
+    }
+    
+    section#news div.header {
+        margin-bottom: 2.08vw;
+    }
+    
+    section#news div.header p {
+        font-size: 2.92vw;
+    }
+    
+    section#news div.header > p > span::before {
+        width: 8.07vw;
+        height: 2.08vw;
+        max-width: unset;
+        max-height: unset;
+        top: 0;
+    }
+    
+    
+    section#news div#news-list .news-date {
+        font-size: 0.83vw;
+        line-height: 100%;
+        margin-left: 1.56vw;
+        margin-top: 1.04vw;
+    }
+    
+    section#news div#news-list .news-title {
+        font-size: 1.35vw;
+        line-height: 100%;
+        margin-left: 1.56vw;
+        margin-top: 1.56vw;
+    }
+    
+    section#news div#news-list .news-description {
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+        margin-left: 1.56vw;
+        margin-top: 0.52vw;
+        font-weight: 300;
+    }
+    
+    /* News END */
+    
+    
+    /* Partners START */
+    
+    section#our-partners {
+        padding: 0 3.39vw;
+        max-width: 100.0vw;
+        padding-left: 7.29vw;
+        padding-right: 7.29vw;
+    
+    }
+    
+    section#our-partners h3 {
+        font-size: 2.92vw;
+        line-height: 100%;
+        margin-top: 10.42vw;
+    }
+    
+    section#our-partners p {
+        font-size: 1.04vw;
+        line-height: 130%;
+        margin-top: 0.78vw;
+    }
+    
+    section#our-partners #partners-carousel {
+        margin-top: 4.43vw;
+    }
+    
+    section#our-partners #partners-carousel img {
+        width: 11.2vw;
+    }
+    
+    /* Partners END */
+    
+    
+    /* Tenth START */
+    
+    section#tenth-section {
+        max-width: initial;
+        height: 100%;
+        position: relative;
+    }
+    
+    section#tenth-section div.header {
+        height: 13.54vw;
+        box-sizing: border-box;
+        padding: 0 7.29vw;
+        padding-top: 2.6vw;
+        padding-bottom: 1.56vw;
+        max-width: 100.0vw;
+        margin: 0 auto;
+    
+    }
+    
+    section#tenth-section div.content {
+        height: calc(100% - 13.54vw);
+        width: 100%;
+        background-size: cover;
+        box-sizing: border-box;
+        margin: 0 auto;
+    
+    }
+    
+    section#tenth-section div.content .wrapper1920 {
+        margin: 0 auto;
+        padding: 7.81vw 7.29vw;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        gap: 2.6vw;
+    
+    }
+    
+    p#main-thought-comment {
+        font-size: 1.04vw;
+        line-height: 130%;
+        max-width: 25.78vw;
+    
+    }
+    
+    p#main-thought {
+        font-size: 2.92vw;
+        line-height: 100%;
+        min-width: 57.29vw;
+    
+    }
+    
+    p#main-thought span:before {
+        width: 9.17vw;
+        height: 2.03vw;
+        margin-right: 0.52vw;
+    }
+    
+    section#tenth-section div.content .block-link {
+        width: 17.71vw;
+        height: 9.48vw;
+        padding: 1.56vw;
+        box-sizing: border-box;
+        margin: 0 !important;
+    
+    }
+    
+    section#tenth-section div.content .block-link p {
+        font-size: 1.35vw;
+        line-height: 100%;
+        margin-bottom: 1.56vw;
+    }
+    
+    section#tenth-section div.content .block-link:nth-of-type(2) {
+        margin-top: 2.6vw;
+    }
+    
+    /* Tenth END */
+    
+    /* Best points START */
+    
+    #best-points {
+        max-width: 100.0vw;
+        box-sizing: border-box;
+        padding: 10.42vw 7.29vw 7.81vw 7.29vw;
+    
+    }
+    
+    #best-points .grid-item {
+        height: 10.83vw;
+        box-sizing: border-box;
+        padding: 1.56vw;
+        border-radius: 1.25vw;
+        box-sizing: border-box;
+    
+    }
+    
+    #best-points .grid {
+        gap: 2.0833vw;
+    }
+    
+    #best-points .grid-item.item1,
+    #best-points .grid-item.item3,
+    #best-points .grid-item.item6,
+    #best-points .grid-item.item7,
+    #best-points .grid-item.item9 {
+        width: 26.04vw;
+    
+    }
+    
+    #best-points .grid-item.item2,
+    #best-points .grid-item.item8 {
+        width: 29.17vw;
+    }
+    
+    #best-points .grid-item.item5 {
+        width: 23.96vw;
+    }
+    
+        #best-points .grid-item.item4 {
+        width: 31.25vw;
+    }
+    
+    #best-points .grid-item h3:first-of-type {
+        font-size: 1.04vw;
+        line-height: 100%;
+    }
+    
+    #best-points .grid-item h3:nth-of-type(2) {
+        font-family: igra-sans;
+        font-size: 1.35vw;
+        line-height: 100%;
+        padding-top: 0;
+        margin-top: 1.04vw;
+    }
+    
+    #best-points .grid-item p {
+        font-size: 1.04vw;
+        line-height: 130%;
+    }
+    
+    #best-points .container > h2 {
+        font-size: 2.92vw;
+        line-height: 100%;
+    }
+    
+    #best-points .container > h2:nth-of-type(2)::before {
+        background: url("images/rectangle-points-from-denis.png");
+        background-repeat: no-repeat;
+        content: '';
+        width: 7.14vw;
+        height: 2.08vw;
+        background-size: 100%;
+        top: 0;
+    
+    }
+    
+    #best-points .container > h2:nth-of-type(2) {
+        margin-bottom: 2.6vw;
+    }
+    
+    #best-points .grid-item.cta p {
+        padding-top: 2.14vw;
+        font-size: 1.33vw;
+        line-height: 100%;
+    
+    }
+    
+    .cta p::before {
+        width: 1.15vw;
+        height: 1.15vw;
+        top: 0.0vw;
+    }
+    
+    #best-points .cta button {
+        width: fit-content;
+        border-radius: 2.6vw;
+    }
+    
+    /* Best points END */
+    
+    /* Prices and benefits START */
+    
+    section#prices-and-benefits {
+        max-width: 100.0vw;
+        box-sizing: border-box;
+        padding: 7.81vw 7.29vw 10.42vw 7.29vw;
+        z-index: 22;
+    
+    }
+    
+    #prices-and-benefits .header-section {
+        padding: 0;
+        margin-bottom: 2.6vw;
+        max-width: 100.0vw;
+        background-color: unset;
+    }
+    
+    #prices-and-benefits .content-section .image-content {
+        width: 31.25vw;
+        height: 34.4792vw;
+    }
+    
+    #prices-and-benefits .text-content h2:nth-of-type(2)::before {
+        content: '';
+        background: url("images/price-garant.png");
+        background-size: 100%;
+        width: 8.33vw;
+        height: 2.08vw;
+        background-repeat: no-repeat;
+    
+    }
+    
+    #prices-and-benefits .quiz-section,
+    #check-objects .quiz-section {
+        margin-top: 2.86vw;
+        min-height: 16.93vw;
+        padding: 1.56vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+    }
+    
+    #check-objects .quiz-question, #prices-and-benefits .quiz-question {
+        display: block;
+        opacity: 0;
+        transition: 0.3s ease-out;
+        position: absolute;
+        top: 0;
+        left: 0;
+        visibility: hidden;
+        z-index: 1;
+    
+    }
+    
+    #prices-and-benefits .quiz-options,
+    #check-objects .quiz-options {
+        margin: 0;
+        margin-top: 1.56vw;
+        gap: 1.56vw;
+    
+    }
+    
+    #prices-and-benefits .quiz-option,
+    #prices-and-benefits .next-button,
+    #prices-and-benefits .prev-button,
+    #check-objects .quiz-option,
+    #check-objects .next-button,
+    #check-objects .prev-button {
+        height: 2.08vw;
+        font-size: 1.04vw;
+        font-weight: 400;
+        width: auto;
+        opacity: 0;
+        position: relative;
+        left: -2.08vw;
+        top: 0;
+    
+    }
+    
+    #prices-and-benefits .quiz-question.active .quiz-option,
+    #prices-and-benefits .quiz-question.active .next-button,
+    #prices-and-benefits .quiz-question.active .prev-button,
+    #check-objects .quiz-question.active .quiz-option,
+    #check-objects .quiz-question.active .next-button,
+    #check-objects .quiz-question.active .prev-button {
+        opacity: 1;
+        left: 0.0vw;
+        transition-duration: 0.3s;
+        transition-timing-function: ease-out;
+        visibility: visible;
+        align-items: center;
+    
+    }
+    
+    .quiz-question .quiz-delay:nth-child(1) {
+        transition-delay: 0.10s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(2) {
+        transition-delay: 0.15s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(3) {
+        transition-delay: 0.20s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(4) {
+        transition-delay: 0.25s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(5) {
+        transition-delay: 0.30s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(6) {
+        transition-delay: 0.35s;
+    }
+    
+    .quiz-question .quiz-delay:nth-child(7) {
+        transition-delay: 0.4s;
+    }
+    
+    #prices-and-benefits .next-button,
+    #prices-and-benefits .prev-button,
+    #check-objects .next-button,
+    #check-objects .prev-button {
+        width: auto;
+        padding: 0 1.3vw;
+    
+    }
+    
+    #prices-and-benefits .quiz-question p.green-question,
+    #check-objects .quiz-question p.green-question {
+        font-family: igra-sans;
+        margin: 0;
+        margin-top: 0.78vw;
+        font-weight: 400;
+        font-size: 1.35vw;
+        line-height: 100%;
+        position: relative;
+        left: -2.08vw;
+        opacity: 0;
+    
+    }
+    
+    #prices-and-benefits .quiz-question.active p.green-question,
+    #check-objects .quiz-question.active p.green-question {
+        opacity: 1;
+        left: 0;
+        transition: 0.3s ease-out;
+    
+    }
+    
+    #prices-and-benefits .quiz-option .circle,
+    #check-objects .quiz-option div.circle {
+        width: 1.35vw;
+        height: 1.35vw;
+        margin: 0.36vw;
+        box-sizing: border-box;
+        border-radius: 1.56vw;
+    
+    }
+    
+    #prices-and-benefits .quiz-option span,
+    #check-objects .quiz-option span {
+        margin-left: 0.42vw;
+        margin-right: 1.56vw;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: unset;
+    
+    }
+    
+    #prices-and-benefits .progress-bar,
+    #check-objects .progress-bar {
+        margin: 0;
+        height: 0.78vw;
+        width: 100%;
+    }
+    
+    #check-objects .quiz-questions-container,
+    #prices-and-benefits .quiz-questions-container {
+        height: 7.3vw;
+    
+    }
+    
+    #prices-and-benefits .quiz-progress span,
+    #check-objects .quiz-progress span {
+        width: 3.28vw;
+        height: 1.41vw;
+        margin: 0;
+        margin-top: 1.56vw;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 1.41vw;
+    
+    }
+    
+    #prices-and-benefits .quiz-section p,
+    #check-objects .quiz-section p{
+        font-family: 'Commissioner';
+        margin: 0;
+        margin-top: 1.56vw;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+    }
+    
+    #check-objects .quiz-section .quiz-progress p,
+    #prices-and-benefits .quiz-section .quiz-progressprogress-bar p {
+        width: 20.4vw;
+    }
+    
+    #prices-and-benefits .header-content h1 {
+        font-family: igra-sans;
+        font-size: 2.92vw;
+        line-height: 100%;
+    
+    }
+    
+    #prices-and-benefits .header-content p {
+        font-family: 'Commissioner';
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+        margin-left: 12.79vw;
+        width: 27vw;
+    
+    }
+    
+    #prices-and-benefits .content-section {
+        gap: 2.08vw;
+        padding: 0;
+        margin-top: 7.81vw;
+        max-width: 100.0vw;
+        background-color: unset;
+    
+    }
+    
+    #prices-and-benefits .image-content img {
+        width: 31.25vw;
+        height: auto;
+    }
+    
+    #prices-and-benefits .text-content {
+        margin-left: 0;
+        margin-top: 1.41vw;
+        width: auto;
+    
+    }
+    
+    #prices-and-benefits .text-content h2 {
+        font-size: 2.92vw;
+        line-height: 100%;
+    }
+    
+    #prices-and-benefits .text-content > p {
+        margin-top: 1.56vw;
+    
+    }
+    
+    #prices-and-benefits .text-content p {
+        font-size: 1.04vw;
+        line-height: 130%;
+    
+    }
+    
+    #prices-and-benefits .fact-list {
+        grid-template-columns: 17.71vw 28.13vw;
+        row-gap: 4.17vw;
+        column-gap: 6.25vw;
+        margin-top: 4.17vw;
+    
+    }
+    
+    #prices-and-benefits .fact-item p.number {
+        font-size: 1.0vw;
+        line-height: 100%;
+    }
+    
+    #prices-and-benefits .fact-item p.little-title {
+        font-size: 2.92vw;
+        line-height: 100%;
+        margin-top: 0.78vw;
+    
+    }
+    
+    #prices-and-benefits .fact-item p.little-description {
+        font-size: 1.04vw;
+        line-height: 130%;
+    }
+    
+    #prices-and-benefits .fact-item {
+        height: auto;
+        max-width: 25.78vw;
+    
+    }
+    
+    /* Prices and benefits END */
+    
+    /* Four men quote START */
+    
+    section#quote-with-four-men {
+        max-width: initial;
+        width: 100%;
+        height: 100%;
+    }
+    
+    section#quote-with-four-men img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    section#quote-with-four-men div.quote {
+        font-family: igra-sans;
+        font-size: 2.92vw;
+        line-height: 100%;
+    }
+    
+    section#quote-with-four-men div.quote .left {
+        transform: translateX(-42.71vw);
+    }
+    
+    section#quote-with-four-men div.quote .right {
+        transform: translateX(42.71vw);
+    }
+    
+    section#quote-with-four-men div.quote-sign {
+        padding-left: 7.29vw;
+        padding-bottom: 7.81vw;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50.0vw);
+        max-width: 100.0vw;
+    
+    }
+    
+    section#quote-with-four-men div.quote-sign > span:first-of-type {
+        font-family: igra-sans;
+        font-size: 1.35vw;
+        line-height: 100%;
+    }
+    
+    section#quote-with-four-men div.quote-sign > span:nth-of-type(2) {
+        font-family: 'Commissioner';
+        font-size: 0.83vw;
+        line-height: 110%;
+        margin-top: 0.52vw;
+        display: block;
+    }
+    
+    /* Four men quote END */
+    
+    
+    section#attractive-direction {
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0 auto;
+        min-height: 100%;
+    
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-footer p {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.09vw;
+        line-height: 120%;
+        align-self: center;
+        margin: 0;
+        padding: 1.56vw;
+        position: relative;
+        left: -1.56vw;
+        opacity: 0;
+        transition: 0.3s ease-out;
+    }
+    
+    section#attractive-direction .fact-container.current .fact-left-part .fact-footer p {
+        left: 0.0vw;
+        opacity: 1;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-items {
+        padding: 1.56vw 0;
+        width: 16.56vw;
+        max-width: 26.04vw;
+        margin-right: 1.8vw;
+    
+    }
+    
+    section#attractive-direction .last-fact-container .fact-right-part span
+    {
+        max-width: 18.75vw;
+        display: block !important;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part {
+        max-width: initial;
+        height: 26.15vw;
+        background-size: contain;
+        min-height: 26.15vw;
+        max-height: 26.15vw;
+        border-radius: 1.25vw;
+        top: 0.89vw;
+        background-image: url("images/fact-1-bg-1920.png");
+        background-size: 120%;
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+        width: 51.67vw;
+        min-width: 51.67vw;
+        max-width: 51.67vw;
+    
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part.second {
+        background-image: url("images/fact-2-bg-1920.png");
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part.third {
+        background-image: url("images/fact-3-bg-1920.png");
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part {
+    
+        
+    }
+    
+    section#attractive-direction .fact-container.current .fact-left-part {
+        background-size: 100%;
+        opacity: 1;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text p {
+        margin: 0;
+        font-family: igra-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.35vw;
+        line-height: 100%;
+        max-width: 60%;
+    
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge {
+        margin: 0;
+        margin-top: 0.52vw;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge:last-of-type {
+        margin-bottom: 0;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge svg {
+        width: 0.73vw;
+        height: 0.73vw;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
+        width: 0;
+        height: 0;
+        content: unset;
+    }
+    
+    section#attractive-direction .fact-container {
+        height: 27.92vw;
+        gap: 1.56vw;
+    }
+    
+    .facts-wrapper {
+        height: 27.92vw;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text .fact-badge {
+        margin: 0;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 0.83vw;
+        line-height: 1.51vw;
+        width: 5.21vw;
+        height: 1.51vw;
+        top: 1.56vw;
+        left: 1.56vw;
+    
+    }
+    
+    section#attractive-direction .last-fact-container {
+        border-radius: 1.25vw;
+        gap: 1.56vw;
+        height: 11.67vw;
+    }
+    
+    section#attractive-direction .last-fact-container > svg {
+        transform: scale(1.3);
+        left: 4vw;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-items p, section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item, section#attractive-direction .last-fact-container .fact-right-part p {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.09vw;
+        line-height: 120%;
+    }
+    
+    section#attractive-direction .last-fact-container .fact-items span, section#attractive-direction .last-fact-container .fact-right-part span {
+        font-size: 1.04vw;
+        margin-right: 0;
+        display: inline;
+        font-weight: 300;
+    
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-text {
+        width: 25.0vw;
+        height: 19.38vw;
+        padding: 1.56vw;
+        box-sizing: border-box;
+        margin-top: 0.0vw;
+        transform-origin: top left;
+        transform: scale(0.6);
+        opacity: 0;
+        transition: 0.3s ease-in-out;
+    }
+    
+    section#attractive-direction .fact-container.current .fact-left-part .fact-text {
+        transform: scale(1);
+        opacity: 1;
+    }
+    
+    section#attractive-direction .fact-container .fact-left-part .fact-footer {
+        height: 5.73vw;
+        line-height: 2.86vw;
+        bottom: 0;
+    
+    }
+    
+    section#attractive-direction .wrapper1920 {
+        padding-bottom: 2.6vw;
+        z-index: 20000;
+        position: relative;
+        max-width: 100.0vw;
+        padding: 0 7.29vw;
+        padding-top: 7.81vw;
+    
+    }
+    
+    section#attractive-direction .fact-container .fact-right-part img {
+        max-width: 32.19vw;
+        object-fit: contain;
+    
+    }
+    
+    /* Youtube video START */
+    
+    section#youtube-video {
+        max-width: initial;
+        padding: 0;
+        margin: 0 auto;
+        height: auto;
+        background-size: 27.08vw auto;
+    
+    }
+    
+    section#youtube-video .youtube-container {
+        padding: 7.81vw 7.29vw 10.42vw 7.29vw;
+        box-sizing: border-box;
+        max-width: 100.0vw;
+        height: 36.98vw;
+        margin: 0 auto;
+    }
+    
+    section#youtube-video .youtube-container .image-container {
+        height: auto;
+    }
+    
+    section#youtube-video .youtube-container .image-container img {
+        width: 33.33vw;
+        height: 18.75vw;
+    }
+    
+    section#youtube-video .youtube-container .image-container .play-icon {
+        width: 6.88vw;
+        height: 6.88vw;
+        top: 5.94vw;
+        left: 13.23vw;
+    }
+    
+    section#youtube-video .youtube-container .image-container .play-icon svg {
+        height: 2.74vw;
+        width: auto;
+        left: 0.42vw;
+    }
+    
+    section#youtube-video .youtube-container .text-container {
+        margin-left: 2.71vw;
+    }
+    
+    section#youtube-video .youtube-container .text-container img {
+        width: 8.33vw;
+        height: auto;
+    
+    }
+    
+    section#youtube-video .youtube-container .text-container p {
+        font-family: igra-sans;
+        font-size: 2.92vw;
+        line-height: 100%;
+        max-width: 85%;
+    
+    }
+    
+    section#youtube-video .youtube-container .text-container a {
+        width: fit-content;
+        border-radius: 2.6vw;
+    }
+    
+    /* Youtube video END */
+    
+    /* Company owner START */
+    
+    section#company-owner {
+        padding: 10.42vw 7.29vw 2.6vw 7.29vw;
+        max-width: 100.0vw;
+    
+    }
+    
+    section#company-owner div#i-know-everything,
+    #investment-info {
+        padding: 0;
+    
+    }
+    
+    #investment-info {
+        margin-left: 2.71vw;
+        justify-content: space-between;
+        gap: 5.73vw;
+        padding: 0.68vw 0.0vw 2.55vw;
+        flex: 1;
+    
+    }
+    
+    section#company-owner div#picture {
+        width: 33.75vw;
+        height: 27.29vw;
+    
+    }
+    
+    #investment-info > p {
+        font-family: igra-sans;
+        font-weight: 400;
+        font-size: 2.92vw;
+        line-height: 100%;
+        margin: 0;
+    }
+    
+    #investment-info .details-grid {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 7.19vw;
+    
+    }
+    
+    #investment-info .details-grid .detail-item {
+        height: 4.17vw;
+        width: fit-content;
+    
+    }
+    
+    #investment-info .detail-item h3 {
+        font-family: igra-sans;
+        font-size: 1.35vw;
+        line-height: 100%;
+    
+    }
+    
+    #investment-info .detail-item p {
+        font-size: 1.04vw;
+        line-height: 130%;
+    }
+    
+    /* Company owner END */
+    
+    
+    /* country section start */
+    
+    section#additional-company-info {
+        max-width: initial;
+        box-sizing: border-box;
+        padding: 0;
+        margin: auto;
+        background-size: 100.0vw auto;
+    
+    }
+    
+    section#additional-company-info div.country-card.big {
+        width: 28.96vw;
+    }
+    
+    section#additional-company-info > div > h2::before {
+        width: 5.21vw;
+        height: 2.5vw;
+        content: '';
+        background: url("images/black-badge.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        top: 0.21vw;
+        margin-right: 0.78vw;
+    
+    }
+    
+    section#additional-company-info > div > h2 {
+        font-size: 2.92vw;
+        line-height: 100%;
+    }
+    
+    section#additional-company-info div.country-card {
+        width: 26.04vw;
+        height: 10.83vw;
+        box-sizing: border-box;
+        padding: 1.56vw;
+        min-width: 26.04vw;
+    
+    }
+    
+    section#additional-company-info div.country-card div.header {
+        font-family: igra-sans;
+        font-size: 1.35vw;
+        line-height: 100%;
+    }
+    
+    section#additional-company-info div.country-card .agent-info img {
+        width: 5.73vw;
+        height: 5.73vw;
+    }
+    
+    section#additional-company-info div.country-card .agent-info .agent-details p.agent-name {
+        font-family: igra-sans;
+        font-size: 1.35vw;
+        line-height: 100%;
+    }
+    
+    section#additional-company-info div.country-card .agent-info .agent-details p.agent-position {
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+        font-family: 'Commissioner';
+    
+    }
+    
+    section#additional-company-info div.country-card div.header div.agent-flags img {
+        width: 1.56vw;
+        height: 1.56vw;
+    }
+    
+    section#additional-company-info > div > h3 {
+        font-size: 2.92vw;
+        line-height: 100%;
+        margin-bottom: 2.6vw;
+    }
+    
+    section#additional-company-info div.award-card {
+        width: 26.04vw;
+    }
+    
+    section#additional-company-info div.award-card img {
+        width: 100%;
+    }
+    
+    section#additional-company-info div.award-card p {
+        font-family: igra-sans;
+        font-size: 1.35vw;
+        line-height: 100%;
+    }
+    
+    section#additional-company-info div.conference-logos {
+        display: flex;
+        gap: 1.61vw;
+        margin-top: 1.77vw;
+    
+    }
+    
+    section#additional-company-info div.conference-logos img {
+        max-height: initial;
+        width: 6.77vw;
+    
+    }
+    
+    section#additional-company-info div.conference-logos img:nth-of-type(2) {
+        width: 7.76vw;
+    }
+    
+    section#additional-company-info div.conference-logos img:first-of-type {
+        width: 7.19vw;
+    }
+    
+    section#additional-company-info div.award-card.big {
+        width: 28.13vw;
+        height: 25.21vw;
+        box-sizing: border-box;
+        padding: 1.56vw;
+    
+    }
+    
+    section#additional-company-info div.award-card > img {
+        width: 100%;
+        height: 16.98vw;
+        object-fit: cover;
+    }
+    
+    section#additional-company-info div.award-card.big > img {
+        border-radius: 0.83vw;
+    
+    }
+    
+    section#additional-company-info div.award-card.big p {
+        font-family: igra-sans;
+        font-size: 1.35vw;
+        line-height: 100%;
+    }
+    
+    /* country section end */
+    
+    /*  investment base start */
+    
+    #investments-base {
+        max-width: initial;
+        height: 43.2vw;
+        width: 100%;
+        max-height: 44.95vw;
+        background: url("images/investments-base.png");
+        background-size: cover;
+    
+    }
+    
+    #investments-base .quote {
+        position: unset;
+        padding: 0;
+    }
+    
+    #investments-base .quote p.title {
+        font-family: igra-sans;
+        font-size: 2.92vw;
+        line-height: 100%;
+        margin: 0;
+        margin-bottom: 1.56vw;
+    }
+    
+    #investments-base .quote p.description {
+        font-family: 'Commissioner';
+        font-size: 1.04vw;
+        line-height: 130%;
+        font-weight: 300;
+        padding-bottom: 5.2vw;
+    
+    }
+    
+    #investments-base .form-inputs,
+    #prices-and-benefits .form-inputs,
+    #check-objects .form-inputs {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0;
+        gap: 1.56vw;
+        display: flex;
+        grid-template-columns: none;
+    
+    }
+    
+    #get-properties {
+        position: unset;
+        margin: 0;
+        width: 100%;
+        height: 12.66vw;
+        box-sizing: border-box;
+        padding: 1.56vw;
+    }
+    
+    .form-input,
+    .form-select {
+        width: 15.52vw;
+        height: 2.08vw;
+        font-size: 0.94vw;
+        line-height: 100%;
+        padding: 0 1.3vw;
+    }
+    
+    .form-select {
+        border: 0.0vw;
+    }
+    
+    #investments-base .form-select > span,
+    #check-objects .form-select > span,
+    #prices-and-benefits .form-select > span {
+        width: 100%;
+        height: 2.08vw;
+        line-height: 2.08vw;
+        justify-content: space-between;
+        padding: 0;
+        padding-left: 1.56vw;
+        padding-right: 1.3vw;
+        align-items: center;
+        box-sizing: border-box;
+        border: 0.05vw solid #FCBD21;
+        border-radius: 1.04vw;
+        z-index: 8;
+        font-size: 0.94vw;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        color: white;
+        font-weight: 300;
+    
+    }
+    
+    #prices-and-benefits .form-select > span {
+        border: 1px solid #4caf50;
+        color: #393939;
+        font-weight: 300;
+    
+    }
+    
+    #investments-base .form-select > span svg,
+    #check-objects .form-select > span svg,
+    #prices-and-benefits .form-select > span svg {
+        width: 1.04vw;
+        /* max-width: 1.04vw; */
+        height: 0.42vw;
+    
+    }
+    
+    #investments-base .form-select {
+        display: flex;
+        box-sizing: border-box;
+        width: 15.63vw;
+        height: 2.08vw;
+        border-width: 0;
+        padding: 0;
+    
+    }
+    
+    #investments-base .form-actions,
+    #check-objects .form-actions,
+    #prices-and-benefits .form-actions {
+        width: auto;
+        flex: 1;
+        margin-bottom: 0;
+    
+    }
+    
+    .form-agreement,
+    #prices-and-benefits .form-agreement {
+        margin-top: 0.52vw;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.68vw;
+        line-height: 120%;
+    }
+    
+    .form-agreement input {
+        width: 0.78vw;
+        height: 0.78vw;
+        border-radius: 0.16vw;
+        margin: 0.0vw;
+        margin-right: 0.1vw;
+        box-sizing: content-box;
+    
+    }
+    
+    .form-button {
+        font-family: 'Commissioner';
+        font-weight: 500;
+        font-size: 0.78vw;
+        line-height: 100%;
+        height: 2.08vw;
+        padding: 0 1.3vw;
+        width: auto;
+    
+    }
+    
+    .form-button svg {
+        width: 1.25vw;
+        height: 0.31vw;
+        margin-left: 0.78vw;
+    
+    }
+    
+    #investments-base .form-select div.feddback-options-list span,
+    #check-objects .form-select div.feddback-options-list span,
+    #prices-and-benefits .form-select div.feddback-options-list span {
+        height: 2.08vw;
+        line-height: 2.08vw;
+        padding: 0 1.56vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 0.94vw;
+        font-weight: 300;
+    
+    }
+    
+    #investments-base .form-select div.feddback-options-list, #check-objects .form-select div.feddback-options-list,       #prices-and-benefits .form-select div.feddback-options-list {
+        height: 8.59vw;
+        box-sizing: border-box;
+        top: -0.05vw;
+        left: 0;
+        position: absolute;
+        border-radius: 1.04vw;
+        width: 15.42vw;
+        box-sizing: initial;
+        left: -0.1vw;
+        position: absolute;
+        top: 0.0vw;
+        left: 0.0vw;
+        width: 100%;
+        box-sizing: border-box;
+    
+    }
+    
+    #investments-base .form-select div.feddback-options-list > span svg, #check-objects .form-select div.feddback-          options-list > span svg, #prices-and-benefits .form-select div.feddback-options-list > span svg {
+        width: 1.04vw;
+        height: 0.42vw;
+        padding: 0;
+        transform: unset;
+    
+    }
+    
+    #investments-base .form-text {
+        padding: 0;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+    
+    }
+    
+    #investments-base .form-text > p,
+    #prices-and-benefits .quiz-question .form-text p {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 1.04vw;
+        line-height: 130%;
+        margin-bottom: 2.6vw;
+    
+    }
+    
+    #prices-and-benefits .quiz-question .form-text p,
+    #check-objects .quiz-question .form-text p {
+        margin-top: 0.52vw;
+        margin-bottom: 1.04vw;
+        font-family: igra-sans;
+    
+    }
+    
+    #investments-base .wrapper1920 {
+        width: 100%;
+        height: 43.2vw;
+        padding: 7.81vw 7.29vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 200000;
+        max-width: 100.0vw;
+    
+    }
+    
+    #investments-base img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: none;
+    
+    }
+    
+    /*  investment base end  */
+    
+    /*  check-objects start   */
+    
+    section#check-objects {
+        max-width: 100%;
+        height: 40.99vw;
+        box-sizing: border-box;
+        background: url("images/check-objects-bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+    }
+    
+    #check-objects .header-content h3 {
+        font-family: igra-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.92vw;
+        line-height: 100%;
+    }
+    
+    #check-objects .header-content p {
+        margin-left: 9.3vw;
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+    
+    }
+    
+    #check-objects .quiz-section {
+        margin-top: 2.6vw;
+    }
+    
+    #check-objects .quiz-progress {
+        margin-bottom: 0.78vw;
+    }
+    
+    #check-objects .header-section {
+        max-width: 100.0vw;
+        margin: 0 auto;
+        padding: 0;
+        background: unset;
+        padding: 7.81vw 7.29vw;
+        box-sizing: border-box;
+    }
+    /*  check-objects ens    */
+    
+    
+    /* main page start */
+    
+    section#main-page {
+        max-width: 100%;
+        height: 100%;
+        overflow: hidden;
+    
+    }
+    
+    section#main-page .right-line {
+        width: 8.33vw;
+    
+    }
+    
+    section#main-page #logo img {
+        width: 6.09vw;
+        margin-top: 0.78vw;
+    
+    }
+    
+    section#main-page #logo {
+        width: 8.33vw;
+        min-width: 8.33vw;
+    }
+    
+    .main-nav > ul > div.language-selector {
+        width: 3.75vw;
+        height: 1.67vw;
+    }
+    
+    .language-selector img:nth-of-type(2) {
+        width: 0.83vw;
+        height: 0.31vw;
+        min-width: 0.83vw;
+        min-height: 0.52vw;
+        margin-left: 0.52vw;
+    
+    }
+    
+    .language-selector img {
+        width: 1.67vw;
+        height: 1.67vw;
+    }
+    
+    .box {
+        width: 4.17vw;
+        height: 1.2vw;
+    
+    }
+    
+    section#main-page > .flex {
+        position: relative;
+        bottom: 0;
+        height: 100%;
+        max-width: 100.0vw;
+        margin: 0 auto;
+        overflow: initial;
+        align-items: center;
+        padding-top: 6.25vw;
+    
+    }
+    
+    div#greetings {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: center;
+        padding-left: 7.29vw;
+        padding-top: 0;
+        padding-bottom: 4.01vw;
+    }
+    
+    .offers-header .header-text {
+        width: 25.0vw;
+        box-sizing: border-box;
+    }
+    
+    .offers-header {
+        margin-bottom: 1.04vw;
+    
+    }
+    
+    .offers-count {
+        min-width: 3.28vw;
+    }
+    
+    .offers-count .current-number {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.25vw;
+        line-height: 1.51vw;
+    }
+    
+    .offers-count .total-number {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 1.25vw;
+    }
+    
+    
+    .offers-header h2 {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+    }
+    
+    section.offers {
+        height: 29.01vw;
+        padding: 2.08vw;
+        box-sizing: border-box;
+        min-width: 46.67vw;
+        left: 6.77vw;
+    
+    }
+    
+    .offers-nav button {
+        width: 3.13vw;
+        height: 1.15vw;
+    
+    }
+    
+    .offers-nav button svg {
+        width: 1.25vw;
+        height: auto;
+    }
+    
+    .offer {
+        min-width: 25.0vw;
+        background-color: unset;
+        border-radius: 0;
+        height: 22.24vw;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    .offer-info {
+        padding: 0;
+    }
+    
+    .offer-info h3 {
+        font-family: igra-sans;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.33vw;
+        line-height: 100%;
+        margin-top: 1.04vw;
+        margin-bottom: 0.26vw;
+    
+    }
+    
+    .offer-info p {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+        margin-bottom: 0.31vw;
+    
+    }
+    
+    .offer-image {
+        width: 100%;
+        height: 13.91vw;
+    
+    }
+    
+    .offer-label {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 100%;
+        height: 1.77vw;
+        line-height: 1.61vw;
+        border-radius: 0.89vw;
+        padding: 0 0.78vw;
+        box-sizing: border-box;
+        top: 0.78vw;
+        left: 0.78vw;
+    }
+    
+    .offer img {
+        width: 100%;
+    }
+    
+    div#text {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.96vw;
+        line-height: 100%;
+        padding-top: 0;
+        padding-left: 0;
+    }
+    
+    div#special-offer-slider {
+        padding-left: 0;
+    }
+    
+    div#special-offer-slider > span {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+    }
+    
+    div#special-offer-slider > span:before {
+        width: 0.68vw;
+        height: 0.68vw;
+        background: url("images/passport-only-mark.svg");
+        background-repeat: no-repeat;
+        background-size: 0.68vw 0.68vw;
+        margin-right: 0.42vw;
+        content: '';
+    
+    }
+    
+    div#location_tag {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+        margin-bottom: 1.67vw;
+    }
+    
+    span#for-life::before {
+        content: url("images/for_life_before.png");
+        display: inline-block;
+        position: relative;
+        top: 0.31vw;
+        margin-right: 0.57vw;
+        width: 13.33vw;
+        height: 3.33vw;
+        background: url("images/for_life_before.png");
+        content: '';
+        background-size: 13.33vw 3.33vw;
+        background-repeat: no-repeat;
+    }
+    
+    div#special-offer-slider div.stats .digits {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.97vw;
+        line-height: 100%;
+        margin-left: 1.56vw;
+    
+    }
+    
+    div#special-offer-slider div.stats .digits-description {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+        margin-left: 1.56vw;
+    
+    }
+    
+    
+    div#greetings .yellow-link {
+        font-size: 0.78vw;
+        padding: 0 1.3vw;
+        margin-top: 2.08vw;
+        height: 2.08vw;
+        line-height: 2.08vw;
+        margin-left: 0;
+    
+    }
+    
+    div#greetings .yellow-link svg {
+        widows: 1.25vw;
+        height: 0.42vw;
+        align-self: center;
+    }
+    
+    div#special-offer-slider div.stats .sale-stats,
+    div#special-offer-slider div.stats .rent-stats {
+        min-height: 6.25vw;
+        min-width: 13.54vw;
+        background-size: contain;
+        justify-content: center;
+        padding: 0;
+    
+    }
+    
+    
+    
+    div#special-offer-slider div.stats .rent-stats {
+        background-position: left;
+    
+    }
+    
+    div#special-offer-slider > p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.04vw;
+        line-height: 130%;
+    
+    }
+    
+    section#main-page > header {
+        height: 6.3vw;
+        z-index: 1000;
+        padding: 1.56vw;
+        padding-bottom: 0;
+    
+    }
+    
+    section#main-page .main-nav > ul li a {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.68vw;
+        line-height: 0.78vw;
+        align-self: center;
+    }
+    
+    section#main-page .main-nav > ul li a.highlight {
+        padding: 1.82vw;
+        background-color: #848484;
+    }
+    
+    .main-nav a.highlight {
+        padding: 1.72vw;
+    }
+    
+    .main-nav > ul > li {
+        padding-left: 1.82vw;
+    }
+    
+    /* main page end */
+
+    #prices-and-benefits .header-content p {
+        margin-left: 4vw;
+    }
+    
+    /* LINES start */
+    
+    #line-around-sections {
+        position: fixed;
+        top: 0;
+        width: 0;
+        height: 100%;
+        max-width: 85.42vw;
+        left: 7.2917vw;
+        border-right: 1px solid rgba(149, 149, 149, 0.15);
+        z-index: 100;
+        box-sizing: border-box;
+    
+    }
+    
+    #line-around-sections-right {
+        position: fixed;
+        top: 0;
+        width: 0;
+        height: 100%;
+        max-width: 85.42vw;
+        left: 50%;
+        transform: translateX(42.71vw);
+        border-right: 1px solid rgba(149, 149, 149, 0.15);
+        z-index: 100;
+    
+    }
+    
+    #line-start-30 {
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 0;
+        z-index: 10000;
+        left: 1.56vw;
+        border-right: 1px solid rgba(149, 149, 149, 0.15);
+    
+    }
+    
+    #line-start-640 {
+        position: fixed;
+        height: 100%;
+        width: 0;
+        border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
+        left: 50%;
+        z-index: 2000;
+        transform: translateX(-9.38vw);
+    }
+    
+    #line-end-208 {
+        position: fixed;
+        height: 100%;
+        width: 0;
+        border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
+        left: 50%;
+        z-index: 2000;
+        transform: translateX(14.58vw);
+    }
+    
+    /* LINES end */
+    
+    #best-points .container {
+        position: relative;
+        z-index: 20000;
+        max-width: 100.0vw;
+        box-sizing: border-box;
+        padding: 0;
+    
+    }
+    
+    .footer-left h2 span::before {
+        width: 3.65vw;
+        height: 1.88vw;
+        background: url("images/footer-text-badge.png");
+        content: '';
+        background-size: 100%;
+    }
+    
+    .column1 {
+        width: 13.65vw !important;
+    
+    }
+    
+    .column2 {
+        width: 10.0vw !important;
+    
+    }
+    
+    .column3 {
+        grid-column: 3; /* Второй элемент второй колонки */
+    }
+    
+    .wrapper1920 {
+        max-width: 100.0vw;
+        margin: 0 auto;
+        padding: 10.42vw 7.29vw 7.81vw 7.29vw;
+        box-sizing: border-box;
+    }
+    
+    section#additional-company-info .wrapper1920 {
+        padding: 10.42vw 7.29vw 7.81vw 7.29vw;
+        max-width: 100.0vw;
+    
+    }
 }

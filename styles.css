@@ -4,6 +4,51 @@ body, html {
     width: 100%;
     height: 100%;
     font-family: igra-sans;
+}
+
+#line-around-sections {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    left: 1.667vw;
+    border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
+    z-index: 2000;
+
+}
+#line-around-sections-right {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    left: 6.667vw;
+    border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
+    z-index: 2000;
+
+}
+#line-start-30 {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    left: 40vw;
+    border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
+    z-index: 2000;
+
+}
+#line-start-640 {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    right: 6.667vw;
+    border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
+    z-index: 2000;
+}
+
+#line-end-208 {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    right: 35vw;
+    border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
+    z-index: 2000;
 
 }
 
@@ -17,6 +62,7 @@ body, html {
 .space-between {
     display: flex;
     justify-content: space-between;
+
 }
 
 body {
@@ -48,9 +94,22 @@ section {
 
 .grid8 {
     display: flex;
-    position: absolute;
     left: 50%;
     /* transform: translateX(23.33vw); */
+}
+
+footer .footer-nav .grid8 {
+    width: 33.33vw;
+}
+
+footer .grid16 .flex:first-of-type {
+    padding-right: 18.25vw;
+}
+
+footer .grid8 .flex:first-of-type {}
+
+footer .footer-nav .grid16 {
+    padding-right: 15.33vw;
 
 }
 
@@ -142,7 +201,7 @@ section#attractive-direction .last-fact-container {
 section#attractive-direction .last-fact-container > svg {
     position: absolute;
     top: -0.92vw;
-    left: -0.92vw;
+    left: -1.92vw;
 
 }
 
@@ -423,7 +482,7 @@ section#attractive-direction .last-fact-container .fact-items {
     display: flex;
     flex-direction: column;
     max-width: 15.0vw;
-    margin-right: 2.67vw;
+    margin-right: 3.3vw;
 
 }
 
@@ -585,8 +644,9 @@ section#youtube-video .youtube-container .text-container a {
     padding-left: 1.25vw;
     box-sizing: border-box;
     width: auto;
-    max-width: 13.58vw;
+    max-width: 11.5vw;
     padding: 0 1.25vw;
+    align-items: center;
 
 }
 
@@ -706,14 +766,18 @@ section#main-page > header {
     list-style: none;
     padding: 0;
     margin: 0;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     height: 100%;
     align-items: center;
     border-top: 1px solid #848484;
+
 }
 
 .main-nav > ul > div {
     display: flex;
+    padding-right: 9.17vw;
+    gap: 2.500vw;
+
 }
 
 .main-nav > ul > div.language-selector {
@@ -723,20 +787,31 @@ section#main-page > header {
     display: flex;
     align-items: center;
     padding: 0.25vw;
+    gap: 0;
+
 }
 
 .main-nav > ul > li {
     height: 1.58vw;
     line-height: 1.0vw;
     padding-left: 2.5vw;
+    padding-right: 11.5vw;
+
 }
 
 .main-nav > ul > div > li {
-    margin: 0 0.83vw;
     height: 1.58vw;
     line-height: 1.0vw;
     position: relative;
 
+}
+
+.main-nav > ul > div > li:first-of-type {
+    padding-left: 0;
+}
+
+.main-nav > ul > div > li:last-of-type {
+    padding-right: 0;
 }
 
 .main-nav a {
@@ -752,8 +827,12 @@ section#main-page > header {
 
 .main-nav a.highlight {
     background-color: rgba(255, 255, 255, 0.2);
-    padding: 1.92vw 1.5vw;
+    padding: 2vw 1.5vw;
     border-radius: 0.83vw;
+    box-sizing: border-box;
+    position: relative;
+    left: 0.250vw;
+
 }
 
 .main-nav a.highlight:hover {
@@ -877,6 +956,8 @@ div#special-offer-slider > p {
     line-height: 1.33vw;
     color: #FFFFFF;
     margin-bottom: 0.58vw;
+    text-transform: uppercase;
+
 }
 
 div#special-offer-slider div.stats {
@@ -893,6 +974,8 @@ div#special-offer-slider div.stats .rent-stats {
     flex-direction: column;
     align-items: baseline;
     padding: 0 1.25vw;
+    background-size: cover;
+
 }
 
 div#special-offer-slider div.stats .sale-stats {
@@ -905,6 +988,8 @@ div#special-offer-slider div.stats .sale-stats {
     flex-direction: column;
     align-items: baseline;
     padding: 0 1.25vw;
+    background-size: cover;
+
 }
 
 div#special-offer-slider div.stats .digits {
@@ -977,10 +1062,11 @@ section#company-owner #owner-bage {
 
 #investment-info {
     padding-top: 6.67vw;
-    padding-left: 5%;
+    padding-left: 3.333vw;
     display: flex;
     flex-direction: column;
     justify-content: start;
+
 }
 
 section#company-owner .quote-sign {
@@ -1206,6 +1292,12 @@ section#best-points .grid .grid-item.img {
     margin: 0;
 }
 
+#best-points .container > h2 .mobile-badge {
+    margin-left: 0.833vw;
+    display: inline-flex;
+
+}
+
 #best-points .container > h2:nth-of-type(2)::before {
     content: url("images/rectangle-points-from-denis.png");
     display: inline-block;
@@ -1241,7 +1333,7 @@ section#best-points .grid .grid-item.img {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
     text-align: left;
-    column-gap: 7.17vw;
+    column-gap: 7.13vw;
     display: flex;
     flex-wrap: wrap;
     row-gap: 4.17vw;
@@ -1408,6 +1500,9 @@ section#best-points .grid .grid-item.img {
     color: white;
     font-family: 'Commissioner';
     font-weight: 300;
+    width: 15.83vw;
+    font-size: 1.0vw;
+
 }
 
 #prices-and-benefits .form-input, #prices-and-benefits .form-select {
@@ -1459,7 +1554,7 @@ section#best-points .grid .grid-item.img {
 #prices-and-benefits .form-select div.feddback-options-list > span svg
 {
     padding-right: 0.83vw;
-    /* transform: rotate(180deg); */
+    transform: rotate(180deg);
 
 }
 
@@ -1518,7 +1613,9 @@ section#best-points .grid .grid-item.img {
 {
     height: 2.17vw;
     line-height: 2.17vw;
-    padding-left: 0.83vw;
+    padding-right: 0.83vw;
+    transform: rotate(180deg);
+
 }
 
 #prices-and-benefits .form-input {
@@ -1552,10 +1649,11 @@ section#best-points .grid .grid-item.img {
     align-items: center;
     text-transform: uppercase;
     margin: 0;
-    width: auto;
+    width: 13.42vw;
     box-sizing: border-box;
     height: 2.08vw;
     word-break: break-all;
+    justify-content: space-evenly;
 
 }
 
@@ -1696,13 +1794,15 @@ section#best-points .grid .grid-item.img {
 
 #prices-and-benefits .header-content p {
     margin: 0;
-    margin-left: 3.75vw;
+    margin-left: 4.3vw;
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 300;
     font-size: 1.0vw;
     line-height: 130%;
     color: #393939;
+    width: 28.3vw;
+
 }
 
 #prices-and-benefits .quiz-section p {
@@ -1938,7 +2038,16 @@ section#best-points .grid .grid-item.img {
     max-width: 100.0vw;
     margin: 0 auto;
     box-sizing: border-box;
+}
 
+#prices-and-benefits .content-section .image-content {
+    width: 30vw;
+    height: 34.5vw;
+}
+
+#prices-and-benefits .content-section .image-content img {
+    width: 100%;
+    height: 100%;
 }
 
 #prices-and-benefits .image-content img {
@@ -1978,7 +2087,8 @@ section#best-points .grid .grid-item.img {
 #prices-and-benefits .fact-list {
     display: grid;
     grid-template-columns: 17.92vw 1fr;
-    gap: 4.17vw 6.67vw;
+    gap: 4.17vw 6.97vw;
+
 }
 
 #prices-and-benefits .fact-item {
@@ -2102,7 +2212,7 @@ section#check-objects {
 
 #check-objects .header-content p {
     margin: 0;
-    margin-left: 3.75vw;
+    margin-left: 4.24vw;
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 300;
@@ -2111,6 +2221,9 @@ section#check-objects {
     color: white;
     bottom: 0.83vw;
     position: relative;
+    width: 25vw;
+    display: inline-flex;
+
 }
 
 #check-objects .quiz-section p {
@@ -2122,6 +2235,11 @@ section#check-objects {
     font-size: 1.0vw;
     line-height: 130%;
     color: white;
+}
+
+#check-objects .quiz-section .progress-bar p:first-of-type {
+    width: 23.33vw;
+
 }
 
 #check-objects .quiz-section {
@@ -2312,8 +2430,18 @@ section#check-objects {
     font-size: 0.75vw;
     line-height: 100%;
     color: #393939;
-
 }
+
+#prices-and-benefits .prev-button {
+    margin-right: 1.667vw;
+}
+
+#check-objects .prev-button {
+    background: #959595;
+    margin-right: 1.667vw;
+}
+
+
 
 #check-objects .next-button svg {
     margin-left: 0.83vw;
@@ -2352,8 +2480,15 @@ section#additional-company-info > div > h2::before {
     content: url("images/black-badge.png");
     display: inline-block;
     position: relative;
-    top: 0.5vw;
+    top: 0.3vw;
     margin-right: 0.92vw;
+    background: url("images/black-badge.png");
+    background-repeat: no-repeat;
+    content: '';
+    width: 5.33vw;
+    height: 2.33vw;
+    background-size: contain;
+
 }
 
 section#additional-company-info div.awards-section {
@@ -2529,14 +2664,17 @@ p#main-thought {
     font-size: 3.0vw;
     line-height: 100%;
     color: #FFFFFF;
-    min-width: 68%;
+    min-width: 58.3vw;
+
 }
 
 .facts-wrapper {
     height: 25.83vw;
     margin-top: 2.5vw;
+    overflow: hidden;
 
 }
+
 p.main-thought span:before,
 p#main-thought span:before {
     content: '';
@@ -2547,6 +2685,14 @@ p#main-thought span:before {
     height: 2.08vw;
     background: url("images/sofa-badge.png");
     background-size: 100%;
+}
+
+
+p.main-thought span:before {
+    background: url("images/why-investments-attract-badge.png");
+    width: 7.83vw;
+    height: 2.08vw;
+    background-size: contain;
 }
 
 p.main-thought-comment,
@@ -2924,11 +3070,13 @@ section#news div#news-list .news-description {
     display: flex;
     width: 23.33vw;
     align-items: center;
+    justify-content: space-between;
 
 }
 
 .offers-header .header-text .line {
-    margin: 0 0.83vw;
+    width: 8vw;
+
 }
 
 .offers-header h2 {
@@ -2941,10 +3089,14 @@ section#news div#news-list .news-description {
 .offers-controls {
     display: flex;
     align-items: center;
+
 }
 
 .offers-controls .offers-nav {
-    margin-left: 5.0vw;
+    margin-left: 2.52vw;
+    position: relative;
+    top: -0.250vw;
+
 }
 
 .offers-count {
@@ -2995,6 +3147,7 @@ section#news div#news-list .news-description {
     border: 1px solid #393939;
     border-radius: 4.17vw;
     margin-right: 0.83vw;
+
 }
 
 .offers-nav button svg {
@@ -3009,6 +3162,7 @@ section#news div#news-list .news-description {
     display: flex;
     justify-content: space-between;
     gap: 1.67vw;
+
 }
 
 .offer {
@@ -3099,7 +3253,7 @@ section#news div#news-list .news-description {
 .faq-container {
     display: flex;
     padding-bottom: 8.33vw;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding-left: 6.67vw;
     padding-right: 6.67vw;
     box-sizing: border-box;
@@ -3109,7 +3263,9 @@ section#news div#news-list .news-description {
 }
 
 .faq-left {
-    max-width: 8.33vw;
+    /* max-width: 8.33vw; */
+    padding-right: 7.167vw;
+    width: 9.5vw;
 
 }
 
@@ -3141,7 +3297,7 @@ section#news div#news-list .news-description {
 }
 
 .faq-right {
-    padding-right: 4.17vw;
+    padding-right: 3.333vw;
     padding-top: 0;
 
 }
@@ -3157,8 +3313,9 @@ section#news div#news-list .news-description {
     font-size: 1.08vw;
     border-bottom: 1px solid #D7D9D8;
     line-height: 1.33vw;
-    max-width: 41.67vw;
+    width: 41.67vw;
     position: relative;
+
 }
 
 .faq-item img {
@@ -3204,6 +3361,7 @@ section#news div#news-list .news-description {
     max-height: 0;
     opacity: 0;
     visibility: hidden;
+    max-width: 90%;
 
 }
 
@@ -3245,6 +3403,8 @@ section#news div#news-list .news-description {
     line-height: 1.33vw;
     color: #393939;
     width: 50%;
+    margin: 0;
+
 }
 
 .faq-ask-question span {
@@ -3280,7 +3440,8 @@ section#news div#news-list .news-description {
 .faq-ask-question img {
     width: 100%;
     height: auto;
-    margin-bottom: 2.5vw;
+    margin-bottom: 1.67vw;
+
 }
 
 footer {
@@ -3329,6 +3490,14 @@ footer {
     display: inline-block;
     position: relative;
     margin-right: 1.08vw;
+    width: 3.67vw;
+    height: 1.75vw;
+    background: url("images/footer-text-badge.png");
+    content: '';
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
 
 .footer-nav {
@@ -3373,16 +3542,14 @@ div#greetings .yellow-link:hover,
 .footer-right {
     display: flex;
     position: relative;
-    right: 50%;
-    transform: translateX(25.0vw);
-
+    right: 19.5vw;
 }
   
-  .contact-info {
+.contact-info {
     font-size: 1.17vw;
-  }
-  
-  .contact-title {
+}
+
+.contact-title {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 400;
@@ -3391,8 +3558,8 @@ div#greetings .yellow-link:hover,
     color: #FFFFFF;
     margin: 0;
 }
-  
-  .contact-phone, .contact-email {
+
+.contact-phone, .contact-email {
     margin-top: 0.83vw;
     font-family: igra-sans;
     font-style: normal;
@@ -3403,7 +3570,7 @@ div#greetings .yellow-link:hover,
     color: #FFFFFF;
 }
   
-  .contact-phone span, .contact-email span, .social-title {
+.contact-phone span, .contact-email span, .social-title {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 300;
@@ -3413,15 +3580,14 @@ div#greetings .yellow-link:hover,
     display: inline-block;
     margin: 0;
     margin-bottom: 0.5vw;
-
 }
 
-  .contact-email a, .contact-phone a {
+.contact-email a, .contact-phone a {
     color: #fff;
     text-decoration: none;
   }
   
-  .social-icons a {
+.social-icons a {
     display: inline-block;
     margin-right: 1.67vw;
 }
@@ -3434,29 +3600,32 @@ div#greetings .yellow-link:hover,
     color: #FCBD21;
 }
   
-  .social-icons img {
+.social-icons img {
     height: 1.83vw;
     width: auto;
 }
 
-  .social-icons img:hover {
+.social-icons img:hover {
     fill: #D7D9D8;
-  }
+}
   
-  .footer-nav ul {
-    justify-content: center;
+.footer-nav ul {
     list-style: none;
     margin: 0 1.67vw;
     padding: 0;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(24, 1fr);
     height: 2.5vw;
     align-items: center;
     border-bottom: 0.17vw solid #848484;
 }
+
+.footer-nav ul > li {
+    display: none;
+}
   
 .footer-nav ul li {
-    margin: 0 0.83vw;
+    margin: 0;
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 400;
@@ -3467,15 +3636,18 @@ div#greetings .yellow-link:hover,
     height: 1.67vw;
     line-height: 1.67vw;
     min-height: 1.67vw;
+    padding-right: 1.667vw;
 }
 
 .footer-nav ul > div > div > li:first-of-type {
     margin-left: 0.0vw;
+    margin-right: 0;
+    padding-right: 2.917vw;
 }
 
 .footer-nav ul > div > div > li:last-of-type {
     margin-right: 0.0vw;
-
+    padding-right: 0;
 }
   
 .footer-nav ul li a {
@@ -3493,7 +3665,7 @@ div#greetings .yellow-link:hover,
     margin-top: 0.83vw;
     border-top: 1px solid #444;
     padding-top: 0.83vw;
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(24, 1fr);
     font-family: 'Commissioner';
     font-style: normal;
@@ -3522,6 +3694,7 @@ div#greetings .yellow-link:hover,
 
 .footer-bottom p:first-of-type {
     line-height: 1.67vw;
+    width: 115.5vw;
 }
 
 .footer-bottom p img {
@@ -3529,7 +3702,62 @@ div#greetings .yellow-link:hover,
     width: auto;
     position: relative;
     top: 0.75vw;
-    margin: 0 0.42vw;
+    margin: 0 0.45vw;
+}
+
+p.main-thought span.mobile-badge:before, p#main-thought span.mobile-badge:before {
+    display: none;
+}
+
+.btn-ask,
+.faq-ask-question span,
+section#tenth-section div.content .block-link span,
+#check-objects .quiz-option span,
+#check-objects .next-button,
+#check-objects .prev-button,
+#check-objects .quiz-option,
+#prices-and-benefits .quiz-option span,
+#prices-and-benefits .next-button,
+#prices-and-benefits .prev-button,
+#prices-and-benefits .quiz-option {
+    height: 2.167vw;
+    font-size: 0.75vw;
+    line-height: 2.167vw;
+    box-sizing: border-box;
+    border-radius: 50vw;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#prices-and-benefits .quiz-question.active .quiz-option,
+#prices-and-benefits .quiz-question.active .next-button,
+#prices-and-benefits .quiz-question.active .prev-button,
+#check-objects .quiz-question.active .quiz-option,
+#check-objects .quiz-question.active .next-button,
+#check-objects .quiz-question.active .prev-button {
+    opacity: 1;
+    left: 0.0vw;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+    visibility: visible;
+}
+
+#prices-and-benefits .quiz-option,
+#prices-and-benefits .next-button,
+#prices-and-benefits .prev-button,
+#check-objects .quiz-option,
+#check-objects .next-button,
+#check-objects .prev-button {
+    font-weight: 400;
+    width: auto;
+    opacity: 0;
+    position: relative;
+    left: -2.08vw;
+    top: 0;
+}
+
+#prices-and-benefits .quiz-option span {
+    font-size: 1vw;
 }
 
 @media (max-width: 64.0vw) {
