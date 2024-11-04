@@ -2813,6 +2813,8 @@ section#tenth-section div.content .block-link span {
     display: inline-block;
     line-height: 2.17vw;
     text-align: center;
+    padding: 0.33vw 1.25vw;
+
 }
 
 section#tenth-section div.content .block-link span svg {
@@ -2917,11 +2919,14 @@ section#news div.header > span {
     text-align: center;
     text-transform: uppercase;
     color: #393939;
-    display: inline-block;
-    width: 11.0vw;
+    display: inline-flex;
+    align-items: center;
+    padding: 0 1.25vw;
+    width: auto;
     height: 2.17vw;
     line-height: 2.17vw;
     cursor: pointer;
+
 }
 
 section#news div.header > span svg {
@@ -3727,6 +3732,20 @@ section#tenth-section div.content .block-link span,
     border-radius: 50vw;
     padding-top: 0;
     padding-bottom: 0;
+    width: auto;
+    display: inline-flex;
+    align-items: center;
+
+}
+
+#prices-and-benefits .quiz-question.active .next-button,
+#prices-and-benefits .quiz-question.active .prev-button,
+#check-objects .quiz-question.active .next-button,
+#check-objects .quiz-question.active .prev-button {
+    padding: 0 1.25vw;
+    width: auto;
+    min-width: unset;
+
 }
 
 #prices-and-benefits .quiz-question.active .quiz-option,
@@ -3740,6 +3759,7 @@ section#tenth-section div.content .block-link span,
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
     visibility: visible;
+
 }
 
 #prices-and-benefits .quiz-option,
@@ -3754,6 +3774,7 @@ section#tenth-section div.content .block-link span,
     position: relative;
     left: -2.08vw;
     top: 0;
+
 }
 
 #prices-and-benefits .quiz-option span {
