@@ -596,6 +596,7 @@
         transform: rotate(180deg);
     }
     
+    section#news div.header > span svg,
     .btn-ask svg,
     .faq-ask-question span svg,
     section#tenth-section div.content .block-link span svg,
@@ -1226,7 +1227,8 @@
     #investments-base .form-select div.feddback-options-list {
         border-radius: 4.44vw;
         border: 1px solid #FCBD21;
-        height: 35.56vw;
+        height: 26.67vw;
+        padding-top: 8.89vw;
     
     }
     
@@ -1437,7 +1439,8 @@
     #prices-and-benefits .form-select div.feddback-options-list {
         border-radius: 4.44vw;
         border: 1px solid #4caf50;
-        height: 35.56vw;
+        height: 37.5vw;
+        padding-top: 8.89vw;
     
     }
     
@@ -1469,7 +1472,7 @@
     #check-objects .prev-button,
     #prices-and-benefits .next-button,
     #prices-and-benefits .prev-button {
-        padding: 0 5.56vw;
+        padding: 0 5.56vw !important;
         display: flex;
         width: 29.72vw;
         align-items: center;
@@ -1937,6 +1940,8 @@ line-height: 100%;
         font-weight: 500;
         font-size: 3.33vw;
         line-height: 8.33vw;
+        justify-content: space-evenly;
+        padding: 0 5.56vw;
     
     }
     
@@ -2070,12 +2075,14 @@ line-height: 100%;
         position: absolute;
         bottom: 13.89vw;
         right: 2.78vw;
-        width: 46.67vw;
+        width: auto;
         height: 8.89vw;
         line-height: 8.89vw;
         font-weight: 500;
         font-size: 3.33vw;
         border-width: 1px;
+        padding: 0 5.56vw;
+        border-radius: 50px;
     
     }
     

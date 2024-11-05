@@ -1,5 +1,12 @@
-const faqItems = document.querySelectorAll('.faq-question');
+const faqItems   = document.querySelectorAll('.faq-question');
 const faqAnswers = document.querySelectorAll('.faq-answer');
+const faqButtons = document.querySelectorAll('.faq-item img');
+
+faqButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      button.parentNode.querySelector('.faq-question').click();
+    })
+});
 
 faqItems.forEach(item => {
     item.addEventListener('click', () => {
@@ -12,6 +19,7 @@ faqItems.forEach(item => {
         } else {
             faqAnswers.forEach((element) => { element.classList.remove('current'); });
             answer.classList.add('current');
+            faqButtons.forEach(img => { img.classList.remove('animated') });
             imgElement.classList.add('animated');
         }
     });
@@ -182,6 +190,7 @@ document.querySelectorAll('#prices-and-benefits .form-select div.feddback-option
     option_list.style.display = 'none';
     option_input.textContent = option_text;
     option_input.classList.add('selected');
+    option_input.style.display = 'flex';
   });
 });
 
@@ -190,6 +199,7 @@ document.querySelectorAll('#prices-and-benefits .form-select > span').forEach(sp
     const option_list = document.querySelector('#prices-and-benefits .form-select div.feddback-options-list');
 
     option_list.style.display = '';
+    span.style.display = 'none';
   });
 });
 
@@ -202,6 +212,7 @@ document.querySelectorAll('#check-objects .form-select div.feddback-options-list
     option_list.style.display = 'none';
     option_input.textContent = option_text;
     option_input.classList.add('selected');
+    option_input.style.display = 'flex';
   });
 });
 
@@ -210,6 +221,7 @@ document.querySelectorAll('#check-objects .form-select > span').forEach(span => 
     const option_list = document.querySelector('#check-objects .form-select div.feddback-options-list');
 
     option_list.style.display = '';
+    span.style.display = 'none';
   });
 });
 
@@ -223,6 +235,7 @@ document.querySelectorAll('#investments-base .form-select div.feddback-options-l
     option_list.style.display = 'none';
     option_input.textContent = option_text;
     option_input.classList.add('selected');
+    option_input.style.display = 'flex';
   });
 });
 
@@ -231,6 +244,7 @@ document.querySelectorAll('#investments-base .form-select > span').forEach(span 
     const option_list = document.querySelector('#investments-base .form-select div.feddback-options-list');
 
     option_list.style.display = '';
+    span.style.display = 'none';
   });
 });
 
@@ -244,6 +258,54 @@ document.querySelectorAll('#check-objects .form-select div.feddback-options-list
     option_input.textContent = option_text
   });
 });
+
+document.querySelectorAll('#investments-base .form-agreement svg').forEach(input => {
+  input.addEventListener('click', function() {
+    const icon = document.querySelector('#investments-base .form-agreement svg');
+    const button = document.querySelector('#investments-base .form-button');
+
+    console.log('click');
+    if (icon.style.opacity == 0) {
+      icon.style.opacity = 1;
+      button.classList.add('active');
+    } else {
+      icon.style.opacity = 0;
+      button.classList.remove('active');
+    }
+  })
+})
+
+document.querySelectorAll('#prices-and-benefits .form-agreement svg').forEach(input => {
+  input.addEventListener('click', function() {
+    const icon = document.querySelector('#prices-and-benefits .form-agreement svg');
+    const button = document.querySelector('#prices-and-benefits .form-button');
+
+    console.log('click');
+    if (icon.style.opacity == 0) {
+      icon.style.opacity = 1;
+      button.classList.add('active');
+    } else {
+      icon.style.opacity = 0;
+      button.classList.remove('active');
+    }
+  })
+})
+
+document.querySelectorAll('#check-objects .form-agreement svg').forEach(input => {
+  input.addEventListener('click', function() {
+    const icon = document.querySelector('#check-objects .form-agreement svg');
+    const button = document.querySelector('#check-objects .form-button');
+
+    console.log('click');
+    if (icon.style.opacity == 0) {
+      icon.style.opacity = 1;
+      button.classList.add('active');
+    } else {
+      icon.style.opacity = 0;
+      button.classList.remove('active');
+    }
+  })
+})
 
 document.querySelectorAll('#check-objects .form-select > span').forEach(span => {
   span.addEventListener('click', function() {
