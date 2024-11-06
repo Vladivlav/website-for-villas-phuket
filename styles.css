@@ -83,7 +83,10 @@ body {
 
 section {
     background-color: #F9F9F9;
+}
 
+section#prices-and-benefits {
+    position: relative;
 }
 
 .grid7 {
@@ -1853,10 +1856,6 @@ section#best-points .grid .grid-item.img {
     color: #393939;
 }
 
-#prices-and-benefits .quiz-section .forn-text p {
-    
-}
-
 #prices-and-benefits .quiz-section .quiz-question {
     display: block;
     opacity: 0;
@@ -1866,7 +1865,173 @@ section#best-points .grid .grid-item.img {
     left: 0;
     z-index: 1;
     visibility: hidden;
+}
+#check-objects .quiz-result,
+#prices-and-benefits .quiz-result {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40.5vw;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    padding: 4vw 0;
+    box-sizing: border-box;
+}
 
+#check-objects .quiz-result.hidden, #prices-and-benefits .quiz-result.hidden {
+    display: none;
+}
+
+#check-objects .quiz-result {
+    padding: 1.58vw 0;
+
+}
+#check-objects .quiz-result .close-popup,
+#prices-and-benefits .quiz-result .close-popup {
+    position: absolute;
+    display: inline-flex;
+    width: 36.67vw;
+    justify-content: end;
+    cursor: pointer;
+
+}
+#check-objects .quiz-result .close-popup img,
+#prices-and-benefits .quiz-result .close-popup img {
+    width: 3.08vw;
+    height: 3.08vw;
+    position: relative;
+    top: 0.83vw;
+    right: 0.83vw;
+    z-index: 10;
+    padding: 0.83vw;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 50px;
+    transform: rotate(45deg);
+
+}
+#check-objects .quiz-result > img,
+#prices-and-benefits .quiz-result > img {
+    width: 36.67vw;
+    height: auto;
+    position: absolute;
+    top: 1.58vw;
+}
+
+#prices-and-benefits .quiz-result > img {
+    top: 4vw;
+}
+#check-objects .quiz-result .result-container,
+#prices-and-benefits .quiz-result .result-container {
+    width: 36.67vw;
+    background-color: white;
+    height: 24.17vw;
+    position: relative;
+    top: 8.33vw;
+    border-radius: 1.67vw;
+    display: flex;
+    flex-direction: column;
+    padding: 1.67vw;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+#check-objects .quiz-result .result-container {
+    height: 29vw;
+    padding-top: 3.33vw;
+
+}
+#check-objects .quiz-result .result-container .result-footer,
+#prices-and-benefits .quiz-result .result-container .result-footer {
+    background-color: white;
+    border-radius: 1.67vw;
+    width: 33.33vw;
+    min-height: 9.83vw;
+    background: #393939;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.67vw;
+    box-sizing: border-box;
+    justify-content: space-between;
+
+}
+#check-objects .quiz-result h4,
+#prices-and-benefits .quiz-result h4 {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    color: #299948;
+    margin: 0;
+    margin-top: 3.33vw;
+}
+
+#check-objects .quiz-result h4 {
+    margin-top: 0;
+}
+#check-objects .quiz-result .result-footer p,
+#prices-and-benefits .quiz-result .result-footer p {
+    margin: 0;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 130%;
+    width: 18.58vw;
+    text-align: center;
+}
+#check-objects .quiz-result .result-container .result-footer span,
+#prices-and-benefits .quiz-result .result-container .result-footer span {
+    border: 1px solid #FCBD21;
+    text-transform: uppercase;
+}
+#check-objects .quiz-result .result-container .result-footer span svg,
+#prices-and-benefits .quiz-result .result-container .result-footer span svg {
+    margin-left: 0.83vw;
+    height: auto;
+    stroke: white;
+}
+#check-objects .quiz-result .result-container > p,
+#prices-and-benefits .quiz-result .result-container > p {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1vw;
+    line-height: 130%;
+    color: #393939;
+    width: 27.83vw;
+    margin-top: 0.25vw;
+    margin-bottom: 2.5vw;
+}
+
+#check-objects .quiz-result .result-container > p {
+    text-align: center;
+    margin-top: 0.83vw;
+    margin-bottom: 1.66vw;
+}
+
+#check-objects .quiz-result .result-container .social-icons {
+    margin-bottom: 3.33vw;
+    display: flex;
+    gap: 2.92vw;
+
+}
+
+#check-objects .quiz-result .result-container .social-icons svg {
+    width: 2.17vw;
+    height: 2.17vw;
+}
+
+#check-objects .quiz-result .result-container .social-icons a {
+    margin: 0;
 }
 
 #prices-and-benefits .quiz-section {
@@ -2217,7 +2382,9 @@ section#check-objects {
     background: url("images/check-objects-bg.png");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;    
+    background-repeat: no-repeat;
+    position: relative;
+
 }
 
 #check-objects .header-section {
@@ -2228,7 +2395,10 @@ section#check-objects {
     max-width: 100.0vw;
     margin: 0 auto;
     box-sizing: border-box;
+}
 
+.header-section.blur {
+    filter: blur(3px);
 }
 
 #check-objects .header-content {
@@ -3758,6 +3928,8 @@ p.main-thought span.mobile-badge:before, p#main-thought span.mobile-badge:before
     display: none;
 }
 
+#check-objects .quiz-result .result-container .result-footer span,
+#prices-and-benefits .quiz-result .result-container .result-footer span,
 .btn-ask,
 .faq-ask-question span,
 section#tenth-section div.content .block-link span,
@@ -3781,7 +3953,8 @@ section#tenth-section div.content .block-link span,
     align-items: center;
 
 }
-
+#check-objects .quiz-result .result-container .result-footer span,
+#prices-and-benefits .quiz-result .result-container .result-footer span,
 #prices-and-benefits .quiz-question.active .next-button,
 #prices-and-benefits .quiz-question.active .prev-button,
 #check-objects .quiz-question.active .next-button,
@@ -3791,7 +3964,6 @@ section#tenth-section div.content .block-link span,
     min-width: unset;
 
 }
-
 #prices-and-benefits .quiz-question.active .quiz-option,
 #prices-and-benefits .quiz-question.active .next-button,
 #prices-and-benefits .quiz-question.active .prev-button,

@@ -1187,6 +1187,12 @@
         margin: 0;
     }
     
+    .form-agreement > div svg {
+        left: -1vw !important;
+        top: 1vw !important;
+    
+    }
+    
     input#agreement {
         margin-right: 0.83vw;
         border-radius: 0.56vw;

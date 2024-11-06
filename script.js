@@ -25,6 +25,50 @@ faqItems.forEach(item => {
     });
 });
 
+document.querySelectorAll('#prices-and-benefits .quiz-result .close-popup').forEach(button => {
+  button.addEventListener('click', function() {
+    const backToBlur = document.querySelector('#prices-and-benefits .header-section');
+    const result     = document.querySelector('#prices-and-benefits .quiz-result');
+
+    result.classList.add('hidden');
+    backToBlur.classList.remove('blur');
+  });
+});
+
+document.querySelectorAll('#check-objects .quiz-result .close-popup').forEach(button => {
+  button.addEventListener('click', function() {
+    const backToBlur = document.querySelector('#check-objects .header-section');
+    const result     = document.querySelector('#check-objects .quiz-result');
+
+    result.classList.add('hidden');
+    backToBlur.classList.remove('blur');
+  });
+});
+
+document.querySelectorAll('#prices-and-benefits .form-button').forEach(button => {
+  button.addEventListener('click', function() {
+    if (button.classList.contains('active')) {
+      const backToBlur = document.querySelector('#prices-and-benefits .header-section');
+      const result     = document.querySelector('#prices-and-benefits .quiz-result');
+
+      result.classList.remove('hidden');
+      backToBlur.classList.add('blur');
+    }
+  });
+});
+
+document.querySelectorAll('#check-objects .form-button').forEach(button => {
+  button.addEventListener('click', function() {
+    if (button.classList.contains('active')) {
+      const backToBlur = document.querySelector('#check-objects .header-section');
+      const result     = document.querySelector('#check-objects .quiz-result');
+
+      result.classList.remove('hidden');
+      backToBlur.classList.add('blur');
+    }
+  });
+});
+
 document.querySelectorAll('.quiz-option').forEach(option => {
     option.addEventListener('click', function() {
         // Убираем класс active у всех соседних элементов с классом quiz-option
