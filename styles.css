@@ -1938,6 +1938,7 @@ section#best-points .grid .grid-item.img {
     padding: 1.67vw;
     box-sizing: border-box;
     align-items: center;
+
 }
 
 #check-objects .quiz-result .result-container {
@@ -2010,6 +2011,8 @@ section#best-points .grid .grid-item.img {
     width: 27.83vw;
     margin-top: 0.25vw;
     margin-bottom: 2.5vw;
+    text-align: center;
+
 }
 
 #check-objects .quiz-result .result-container > p {

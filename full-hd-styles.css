@@ -707,6 +707,64 @@
         box-sizing: border-box;
         padding: 7.81vw 7.29vw 10.42vw 7.29vw;
         z-index: 22;
+    }
+    
+    #check-objects .quiz-result h4,
+    #prices-and-benefits .quiz-result h4 {
+        font-size: 2.4vw;
+        margin-top: 2.08vw;
+    }
+    
+    #check-objects .quiz-result .result-footer p,
+    #prices-and-benefits .quiz-result .result-footer p {
+        font-size: 1.04vw;
+    
+    }
+    
+    #check-objects .quiz-result .close-popup img,
+    #prices-and-benefits .quiz-result .close-popup img {
+        width: 2.08vw;
+        height: 2.08vw;
+        padding: 0.73vw;
+        top: 0.78vw;
+        right: 0.78vw;
+    }
+    
+    #check-objects .quiz-result, #prices-and-benefits .quiz-result {
+        padding-top: 2.34vw;
+        padding-bottom: 3.13vw;
+    }
+    
+    #check-objects .quiz-result .close-popup,
+    #prices-and-benefits .quiz-result .close-popup {
+        top: 4vw;
+    }
+    
+    #check-objects .quiz-result .result-container > p,
+    #prices-and-benefits .quiz-result .result-container > p {
+        font-size: 1.04vw;
+        margin-top: 0.52vw;
+        margin-bottom: 2.08vw;
+    
+    }
+    
+    #check-objects .quiz-result .result-container,
+    #prices-and-benefits .quiz-result .result-container {
+        padding: 3.13vw;
+        padding-top: 0;
+        border-radius: 1.67vw;
+        top: 8.44vw;
+        height: auto;
+    
+    }
+    
+    #check-objects .quiz-result .result-container .result-footer,
+    #prices-and-benefits .quiz-result .result-container .result-footer {
+        padding: 1.56vw;
+        gap: 1.04vw;
+        min-height: unset;
+        height: 8.96vw;
+        width: 100%;
     
     }
     
@@ -1672,6 +1730,13 @@
         font-weight: 400;
         font-size: 0.68vw;
         line-height: 120%;
+    
+    }
+    
+    .form-agreement > div svg {
+        left: 2.5vw !important;
+        transform: scale(1.7);
+    
     }
     
     .form-agreement input {
@@ -1692,7 +1757,10 @@
         height: 2.08vw;
         padding: 0 1.3vw;
         width: auto;
+    }
     
+    #prices-and-benefits .form-button {
+        width: auto;
     }
     
     .form-button svg {
@@ -2163,7 +2231,8 @@
     /* main page end */
 
     #prices-and-benefits .header-content p {
-        margin-left: 4vw;
+        margin-left: 4.79vw;
+    
     }
     
     /* LINES start */

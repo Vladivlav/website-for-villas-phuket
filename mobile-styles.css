@@ -1188,8 +1188,9 @@
     }
     
     .form-agreement > div svg {
-        left: -1vw !important;
-        top: 1vw !important;
+        left: -1.2vw !important;
+        top: 0.5vw !important;
+        transform: none;
     
     }
     
@@ -1310,6 +1311,99 @@
     section#prices-and-benefits {
         width: 100%;
         height: auto;
+    }
+    
+    #check-objects .quiz-result, #prices-and-benefits .quiz-result {
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        padding: 0 2.78vw;
+        justify-content: center;
+    }
+    
+    #check-objects .quiz-result .close-popup,
+    #prices-and-benefits .quiz-result .close-popup {
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        height: 10.28vw;
+        transform: translateY(-59.5vw);
+        z-index: 2;
+        right: 5.56vw;
+    
+    }
+        
+    #check-objects .quiz-result .close-popup img,
+    #prices-and-benefits .quiz-result .close-popup img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10.28vw;
+        height: 10.28vw;
+    
+    }
+    #check-objects .quiz-result > img,
+    #prices-and-benefits .quiz-result > img,
+    #check-objects .quiz-result .close-popup,
+    #prices-and-benefits .quiz-result .close-popup
+    #check-objects .quiz-result > img,
+    #prices-and-benefits .quiz-result > img,
+    #check-objects .quiz-result .result-container,
+    #prices-and-benefits .quiz-result .result-container,
+    #check-objects .quiz-result .result-container .result-footer,
+    #prices-and-benefits .quiz-result .result-container .result-footer
+    {
+        width: 100%;
+    }
+    
+    #check-objects .quiz-result > img,
+    #prices-and-benefits .quiz-result > img {
+        position: relative;
+        top: 5.56vw;
+    
+    }
+    
+    #check-objects .quiz-result .result-container .result-footer,
+    #prices-and-benefits .quiz-result .result-container .result-footer {
+        padding: 8.33vw;
+        border-radius: 4.17vw;
+        gap: 5.56vw;
+    }
+    
+    #check-objects .quiz-result .result-footer p, #prices-and-benefits .quiz-result .result-footer p {
+        font-size: 3.89vw;
+        width: 100%;
+    }
+    
+    #check-objects .quiz-result .result-container .result-footer span,
+    #prices-and-benefits .quiz-result .result-container .result-footer span {
+        
+    }
+    
+    #check-objects .quiz-result .result-container,
+    #prices-and-benefits .quiz-result .result-container {
+        height: 91.67vw;
+        top: 0vw;
+        padding: 2.78vw;
+        border-radius: 5.56vw;
+        padding-top: 8.33vw;
+    
+    }
+    
+    #check-objects .quiz-result h4,
+    #prices-and-benefits .quiz-result h4 {
+        font-size: 7.5vw;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+    #check-objects .quiz-result .result-container > p,
+    #prices-and-benefits .quiz-result .result-container > p {
+        font-size: 3.89vw;
+        width: 94%;
+        margin-top: 1.11vw;
+        margin-bottom: 8.33vw;
+    
     }
 
     section#check-objects .header-section,
