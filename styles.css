@@ -3295,7 +3295,9 @@ section#news div#news-list .news-description {
 }
 
 .offers-header .header-text .line {
-    width: 8vw;
+    width: auto;
+    flex: 1;
+    margin: 0 7px;
 
 }
 
