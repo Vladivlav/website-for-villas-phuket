@@ -6,740 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template</title>
     <link rel="stylesheet" href="https://website-for-villas-phuket.onrender.com/fonts.css">
-
-    <style>
-        .text {
-            max-width: 91vw;
-        }
-        .text br.second-break {
-            display: none;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
-        }
-        .section {
-            padding: 10px;
-            padding: 1.67vw;
-            text-align: left;
-            background-color: #ffffff;
-            margin: 10px;
-            margin: 1.67vw;
-            border: 1px solid #ddd;
-            border-radius: 20px;
-            border-radius: 3.33vw;
-        }
-        .section:last-of-type {
-            padding: 0;
-            border: 0;
-            background-color: unset;
-        }
-        .section h3 {
-            margin-top: 0;
-            font-size: 20px;
-        }
-        .logo {
-            width: 150px;
-            height: 60px;
-            width: 25vw;
-            height: 10vw;
-            margin-left: 10px;
-            margin-top: 20px;
-            margin-left: 1.67vw;
-            margin-right: 3.33vw;
-            margin-bottom: 30px;
-            margin-bottom: 5vw;
-        }
-        .text {
-            margin: 0;
-            font-family: 'Igra Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 30px;
-            font-size: 5vw;
-            text-align: left;
-            line-height: 100%;
-            color: white;
-            margin-left: 10px;
-            margin-left: 1.67vw;
-            max-width: 424px;
-        }
-        .text span {
-            color: #FCBD21;
-            font-weight: bold;
-        }
-        .button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #007BFF;
-            color: #fff;
-            text-decoration: none;
-            font-size: 16px;
-            border-radius: 5px;
-            align-items: center;
-            justify-content: center;
-            background-color: #FCBD21;
-            border-radius: 4.17vw;
-            margin-left: 10px;
-            margin-top: 20px;
-            padding-right: 25px;
-            padding-left: 25px;
-            cursor: pointer;
-            font-family: 'Commissioner';
-            font-size: 15px;
-            font-size: 2.5vw;
-            line-height: 105%;
-            display: inline-flex;
-            align-items: center;
-            text-transform: uppercase;
-            color: #393939;
-            padding-left: 4.17vw;
-            padding-right: 4.17vw;
-            justify-content: flex-start;
-            margin-bottom: 20px;
-            margin-bottom: 3.33vw;
-        }
-        .button svg {
-            margin-left: 10px;
-            margin-left: 1.67vw;
-        }
-        .horizontal-block {
-            display: flex;
-            align-items: center;
-            margin: 30px 0;
-            margin: 5vw 0;
-        }
-        .horizontal-block img {
-            width: 175px;
-            width: 29.17vw;
-            margin-right: 20px;
-            margin-right: 3.33vw;
-        }
-        #right-area .horizontal-block div p {
-            font-family: 'Igra Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 30px;
-            font-size: 5vw;
-            line-height: 100%;
-            color: #299948;
-        }
-        #right-area .button {
-            background-color: #299948;
-            color: white;
-            margin-left: 0;
-        }
-        .contact-block {
-            display: flex;
-            align-items: end;
-            margin: 20px 0;
-            background: #393939;
-            height: 110px;
-            height: 18.33vw;
-            padding: 1.67vw;
-            box-sizing: border-box;
-            border-radius: 15px;
-            border-radius: 2.5vw;
-            justify-content: space-between;
-        }
-
-            .andrey-wrapper {
-            display: flex;
-            align-items: end;
-            justify-content: center;
-        }
-        .contact-block img {
-            margin-right: 15px;
-            width: 90px;
-            height: 90px;
-            border-radius: 10px;
-            width: 15.0vw;
-            height: 15.0vw;
-            border-radius: 1.67vw;
-        }
-        .contact-info {
-            text-align: left;
-        }
-        #right-area .contact-info p {
-            font-family: 'Igra Sans';
-            font-style: normal;
-            font-weight: 400 !important;
-            font-size: 24px;
-            font-size: 4vw;
-            line-height: 100%;
-            color: #FFFFFF;
-        }
-        #right-area .contact-sales p {
-            font-family: 'Igra Sans';
-            font-style: normal;
-            font-weight: 400 !important;
-            font-size: 24px;
-            font-size: 4vw;
-            line-height: 100%;
-            color: #FCBD21;
-            margin-right: 50px;
-            margin-right: 8.33vw;
-        }
-        #right-area .contact-info p:last-of-type {
-            font-family: 'Commissioner';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 14px;
-            font-size: 2.33vw;
-            line-height: 100%;
-            color: #FFFFFF;
-        }
-
-        .social-icons {
-            display: flex;
-            gap: 10px;
-            margin-top: 6px;
-            margin-top: 1vw;
-        }
-        .social-icons a {
-            width: 45px;
-            height: 45px;
-            width: 7.5vw;
-            height: 7.5vw;
-            border: 1px solid #FCBD21;
-            border-radius: 2.5vw;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-        }
-        .social-icons svg {
-            width: 4.67vw;
-            height: auto;
-        }
-        .youtube-section {
-            position: relative;
-        }
-        .youtube-section h3 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            font-family: 'Igra Sans';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 34px;
-            font-size: 5.67vw;
-            line-height: 100%;
-            color: #FFFFFF;
-        }
-        .youtube-section p {
-            font-family: 'Commissioner';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            font-size: 2.67vw;
-            line-height: 120%;
-            color: #FFFFFF;
-        }
-        .youtube-section img {
-            max-width: 100%;
-            margin-bottom: 0;
-            width: 100%;
-
-        }
-        .icons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 3.33vw;
-            gap: 1.67vw;
-        }
-        .icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 70px;
-            height: 70px;
-            border: 1px solid #299948;
-            border-radius: 2.5vw;
-            width: 11.7vw;
-            height: 11.7vw;
-            cursor: pointer;
-        }
-        .icon svg {
-            width: 44px;
-            height: auto;
-            width: 7.33vw;
-            height: auto;
-        }
-        .info-block {
-            display: flex;
-            justify-content: space-between;
-            margin-top: 20px;
-            margin-top: 3.33vw;
-            margin-bottom: 5.67vw;
-            margin-right: 5vw;
-            margin-left: 5vw;
-        }
-        .info-column {
-            text-align: left;
-        }
-        .info-column span, .info-column span a {
-            display: block;
-            margin-bottom: 15px;
-            font-family: 'Commissioner';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            font-size: 2.67vw;
-            line-height: 100%;
-            color: #959595;
-            margin-bottom: 2.5vw;
-        }
-        .info-column span a {
-            text-align: right;
-        }
-        .info-column span a.tel {
-            text-decoration: none;
-        }
-        #buy-for-myself {
-            background-color: #232323;
-            background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/open-guide-bg.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-        #seven-years-future {
-            background-color: #232323;
-            background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/handsome-denis-bg.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            padding: 20px;
-            padding: 3.33vw;
-            padding-top: 30px;
-            padding-top: 5vw;
-        }
-        #seven-years-future .youtube-logo {
-            width: 195px;
-            height: 49px;
-            height: 8.17vw;
-            width: 32.5vw;
-            background: #232323;
-            display: flex;
-            align-items: center;
-            position: relative;
-            left: -3.33vw;
-            padding-left: 4.17vw;
-            border-radius: 0 5vw 5vw 0;
-            margin-bottom: 30px;
-            margin-bottom: 5vw;
-        }
-        #seven-years-future .youtube-logo img {
-            height: 29px;
-            height: 4.83vw;
-        }
-        #right-area {
-            border: 0;
-            background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/download-guide-bg.png");
-            background-size: cover;
-            background-repeat: no-repeat;
-            padding-top: 30px;
-            padding-top: 5vw;
-            padding-left: 20px;
-            padding-left: 3.33vw;
-            background-position: bottom;
-        }
-        #right-area p {
-            font-family: 'Commissioner';
-            font-style: normal;
-            font-weight: 300;
-            font-size: 16px;
-            font-size: 2.67vw;
-            line-height: 120%;
-            color: #393939;
-            margin: 0;
-        }
-        #right-area p:first-of-type {
-            font-weight: 600;
-        }
-        #buy-for-myself img {
-            width: 100%;
-        }
-        .social-links-block {
-            display: flex;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #F9F9F9;
-            background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/footer-bg.png");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            align-items: center;
-            border-radius: 3.33vw;
-        }
-        .social-links-block p {
-            font-family: 'Commissioner';
-            font-style: normal;
-            font-weight: 400;
-            font-size: 16px;
-            font-size: 2.67vw;
-            line-height: 120%;
-            color: #393939;
-            margin: 3.33vw;
-            margin-right: 0;
-        }
-        
-        .contact-block a {
-            text-decoration: none ;
-        }
-
-        @media (max-width: 600px) {
-            #buy-for-myself {
-                background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/open-guide-bg_mobile.png");
-            }
-
-            #right-area {
-                background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/download-guide-bg.png");
-                padding-top: 30px;
-                padding-top: 8.33vw;
-                padding-left: 10px;
-                padding-left: 2.78vw;
-                background-position: bottom;
-            
-            }
-
-            .section {
-                padding: 10px;
-                padding: 2.78vw;
-                margin: 10px;
-                margin: 2.78vw;
-                border-radius: 20px;
-                border-radius: 5.56vw;
-            }
-
-            .logo {
-                width: 149px;
-                width: 41.39vw;
-                height: 59px;
-                height: 16.39vw;
-                margin-top: 20px;
-                margin-top: 5.56vw;
-                margin-left: 10px;
-                margin-left: 2.78vw;
-                margin-bottom: 30px;
-                margin-bottom: 8.33vw;
-            }
-
-            .text {
-                font-size: 27px;
-                font-size: 7.5vw;
-                line-height: 100%;
-                margin-right: 0;
-                max-width: unset;
-            
-            }
-
-            .button {
-                font-size: 15px;
-                font-size: 4.17vw;
-                line-height: 105%;
-                padding: 2.78vw 6.94vw;
-                margin: 20px 0 20px 10px;
-                margin: 5.56vw 0 5.56vw 2.78vw;
-                border-radius: 30px;
-                border-radius: 8.33vw;
-                height: 40px;
-                height: 11.11vw;
-                box-sizing: border-box;
-            }
-
-            .button svg {
-                margin-left: 2.78vw;
-            }
-
-            #right-area p {
-                font-size: 14px;
-                font-size: 3.89vw;
-                line-height: 120%;
-            }
-
-            .horizontal-block {
-                flex-direction: column;
-                margin-top: 30px;
-                margin-top: 8.33vw;
-                align-items: baseline;
-                margin-bottom: 0;
-            }
-
-            .horizontal-block img {
-                width: 170px;
-                width: 47.22vw;
-                margin-right: 20px;
-                margin-right: 5.56vw;
-                margin-bottom: 20px;
-                margin-bottom: 5.56vw;
-            }
-
-            #right-area .horizontal-block div p {
-                font-size: 27px;
-                font-size: 7.5vw;
-            }
-
-            #right-area .button {
-                margin-top: 10px;
-                margin-top: 2.78vw;
-                margin-bottom: 30px;
-                margin-bottom: 8.33vw;
-            }
-
-            .contact-block {
-                flex-direction: column;
-                height: 204px;
-                height: 56.67vw;
-                box-sizing: border-box;
-                align-items: start;
-                padding: 10px;
-                padding: 2.78vw;
-                height: auto;
-                border-radius: 15px;
-                border-radius: 4.17vw;
-            }
-
-            .contact-block img {
-                width: 90px;
-                width: 25vw;
-                height: 90px;
-                height: 25vw;
-                border-radius: 10px;
-                border-radius: 2.78vw;
-            }
-
-            #right-area .contact-info p:first-of-type {
-                font-size: 22px;
-                font-size: 6.11vw;
-            }
-
-            #right-area .contact-info p:last-of-type {
-                font-size: 12px;
-                font-size: 3.33vw;
-            }
-
-            #right-area .contact-info p br {
-                display: none;
-            }
-            #right-area .contact-info {
-                position: relative;
-                bottom: 5px;
-                bottom: 1.39vw;
-            }
-
-            #right-area .contact-sales p {
-                font-size: 24px;
-                font-size: 6.67vw;
-                margin-top: 19px;
-                margin-top: 5.28vw;
-            }
-
-            #right-area .social-icons {
-                margin-top: 6px;
-                margin-top: 1.67vw;
-            }
-            
-            .social-icons a {
-                width: 45px;
-                width: 12.5vw;
-                height: 45px;
-                height: 12.5vw;
-                border-radius: 15px;
-                border-radius: 4.17vw;
-            }
-            
-            .social-icons svg {
-                width: 28px;
-                width: 7.78vw;
-                height: auto;
-            }
-            
-
-            #right-area > * {
-                padding-left: 10px;
-                padding-left: 2.78vw;
-                padding-right: 10px
-            }
-
-            #seven-years-future {
-                padding: 20px;
-                padding: 5.56vw;
-                padding-top: 30px;
-                padding-top: 8.33vw;
-                padding-right: 2.78vw;
-            }
-            
-            #seven-years-future .button {
-                margin-left: 0;
-                margin-top: 20px;
-                margin-top: 5.56vw;
-                margin-bottom: 10px;
-                margin-bottom: 2.78vw;
-            }
-
-            #seven-years-future .youtube-logo {
-                width: 195px;
-                width: 54.17vw;
-                height: 49px;
-                height: 13.61vw;
-                border-radius: 0 7vw 7vw 0;
-                padding-left: 25px;
-                padding-left: 6.94vw;
-                left: -5.56vw;
-                margin-bottom: 20px;
-                margin-bottom: 5.56vw;
-                box-sizing: border-box;
-            
-            }
-
-            #seven-years-future .youtube-logo img {
-                width: 133px;
-                width: 36.94vw;
-                height: 29px;
-                height: 8.06vw;
-            }
-
-            .youtube-section h3 {
-                font-size: 27px;
-                font-size: 7.5vw;
-                max-width: 60vw;
-                margin-bottom: 5px;
-                margin-bottom: 1.39vw;
-            }
-            
-            .youtube-section p {
-                margin: 0;
-                margin-bottom: 20px;
-                margin-bottom: 5.56vw;
-                font-size: 14px;
-                font-size: 3.89vw;
-            }
-
-            .social-links-block {
-                flex-direction: column;
-                border-radius: 20px;
-                border-radius: 5.56vw;
-                align-items: baseline;
-                background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/footer-bg_mobile.png");
-            
-            }
-
-            .social-links-block p {
-                font-size: 14px;
-                font-size: 3.89vw;
-                margin-top: 30px;
-                margin-top: 8.33vw;
-                margin-left: 20px;
-                margin-left: 5.56vw;
-                max-width: 78vw;
-            }
-
-            .icons {
-                margin-bottom: 30px;
-                margin-bottom: 8.33vw;
-                margin-left: 20px;
-                margin-left: 5.56vw;
-                gap: 20px;
-                gap: 5.56vw;
-            
-            }
-
-            .icon {
-                width: 70px;
-                width: 19.44vw;
-                height: 70px;
-                height: 19.44vw;
-                border-radius: 15px;
-                border-radius: 4.17vw;
-            }
-
-            .icon svg {
-                width: 44px;
-                width: 12.22vw;
-                height: auto;
-            }
-
-            .info-column span, .info-column span a {
-                font-size: 12px;
-                font-size: 3.33vw;
-                margin-bottom: 10px;
-                margin-bottom: 2.78vw;;
-            
-            }
-
-            .info-block {
-                margin: 20px 15px 32px 15px;
-                margin: 5.56vw 4.17vw 8.89vw 4.17vw;
-            }
-        }
-
-    </style>
 </head>
-<body>
+<body style="font-family:Arial, sans-serif; background-color:#f9f9f9; color:#333; margin:0; padding:0" bgcolor="#f9f9f9">
     <!-- Первая секция -->
-    <div class="section" id="buy-for-myself">
+    <div class="section" id="buy-for-myself" style="background-color:#232323; border:1px solid #ddd; border-radius:3.33vw; margin:1.67vw; padding:1.67vw; text-align:left; background-image:url(https://website-for-villas-phuket.onrender.com/mails/images/open-guide-bg.png); background-position:center; background-repeat:no-repeat; background-size:cover" bgcolor="#232323" align="left">
         <picture>
             <source srcset="https://website-for-villas-phuket.onrender.com/mails/images/investments.png" media="(min-width: 600px)">
             <source srcset="https://website-for-villas-phuket.onrender.com/mails/images/investments_mobile.png" media="(max-width: 600px)">
-            <img src="https://website-for-villas-phuket.onrender.com/mails/images/investments.png" alt="Main Image">
-        </picture>
-        <div class="logo">
+            <img src="https://website-for-villas-phuket.onrender.com/mails/images/investments.png" alt="Main Image" style="width:100%" width="100%">
+        </source></source></picture>
+        <div class="logo" style="height:10vw; margin-bottom:5vw; margin-left:1.67vw; margin-right:3.33vw; margin-top:20px; width:25vw" height="10vw" width="25vw">
             <picture>
                 <source srcset="https://website-for-villas-phuket.onrender.com/mails/images/MERU-logo.png" media="(min-width: 600px)">
-                <img src="https://website-for-villas-phuket.onrender.com/mails/images/MERU-logo_mobile.png" alt="Main Image" media="(max-width: 600px)">
-            </picture>
+                <img src="https://website-for-villas-phuket.onrender.com/mails/images/MERU-logo_mobile.png" alt="Main Image" media="(max-width: 600px)" style="width:100%" width="100%">
+            </source></picture>
         </div>
-        <div class="text">
-            <span>Нравится объект?<br></span>Проверь его<br class="second-break"> на инвестиционную<br> привлекательность
+        <div class="text" style='max-width:424px; color:white; font-family:"Igra Sans"; font-size:5vw; font-style:normal; font-weight:400; line-height:100%; margin:0; margin-left:1.67vw; text-align:left' align="left">
+            <span style="color:#FCBD21; font-weight:bold">Нравится объект?<br></span>Проверь его<br class="second-break" style="display:none"> на инвестиционную<br> привлекательность
         </div>
-        <a href="#" class="button">
+        <a href="#" class="button" style='align-items:center; background-color:#FCBD21; border-radius:4.17vw; color:#393939; cursor:pointer; display:inline-flex; font-family:"Commissioner"; font-size:2.5vw; justify-content:flex-start; line-height:105%; margin-bottom:3.33vw; margin-left:10px; margin-top:20px; padding:10px 20px; padding-left:4.17vw; padding-right:4.17vw; text-decoration:none; text-transform:uppercase' bgcolor="#FCBD21">
             Открыть быстрее гайд
-            <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.9987 4H0M23.9987 4L20.7557 1M23.9987 4L20.7557 7" stroke="#393939"/>
+            <svg width="25" height="8" viewbox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:1.67vw">
+                <path d="M23.9987 4H0M23.9987 4L20.7557 1M23.9987 4L20.7557 7" stroke="#393939"></path>
             </svg>                
         </a>
     </div>
 
     <!-- Вторая секция -->
-    <div class="section" id="right-area">
-        <p>Благодарим за ваше доверие</p>
-        <p>В MERU Estate мы рады помочь каждому<br />на пути к мечте&nbsp;о недвижимости на Пхукете!</p>
-        <div class="horizontal-block">
-            <img src="https://website-for-villas-phuket.onrender.com/mails/images/investments-ipad.png" alt="Image">
+    <div class="section" id="right-area" style="background-color:#fff; border:0; border-radius:3.33vw; margin:1.67vw; padding:1.67vw; text-align:left; background-image:url(https://website-for-villas-phuket.onrender.com/mails/images/download-guide-bg.png); background-position:bottom; background-repeat:no-repeat; background-size:cover; padding-left:3.33vw; padding-top:5vw" bgcolor="#ffffff" align="left">
+        <p style='color:#393939; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:300; line-height:120%; margin:0'>Благодарим за ваше доверие</p>
+        <p style='color:#393939; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:300; line-height:120%; margin:0'>В MERU Estate мы рады помочь каждому<br>на пути к мечте о недвижимости на Пхукете!</p>
+        <div class="horizontal-block" style="align-items:center; display:flex; margin:5vw 0">
+            <img src="https://website-for-villas-phuket.onrender.com/mails/images/investments-ipad.png" alt="Image" style="margin-right:3.33vw; width:29.17vw" width="29.17vw">
             <div>
-                <p>Скачивайте<br /> гайд по ссылке</p>
-                <a href="file-download-link" class="button">
+                <p style='color:#299948; font-family:"Igra Sans"; font-size:5vw; font-style:normal; font-weight:400; line-height:100%; margin:0'>Скачивайте<br> гайд по ссылке</p>
+                <a href="file-download-link" class="button" style='align-items:center; background-color:#299948; border-radius:4.17vw; color:white; cursor:pointer; display:inline-flex; font-family:"Commissioner"; font-size:2.5vw; justify-content:flex-start; line-height:105%; margin-bottom:3.33vw; margin-left:0; margin-top:20px; padding:10px 20px; padding-left:4.17vw; padding-right:4.17vw; text-decoration:none; text-transform:uppercase' bgcolor="#299948">
                     СКАЧАТЬ ГАЙД
-                    <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M23.9987 4H0M23.9987 4L20.7557 1M23.9987 4L20.7557 7" stroke="white"/>
+                    <svg width="25" height="8" viewbox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:1.67vw">
+                        <path d="M23.9987 4H0M23.9987 4L20.7557 1M23.9987 4L20.7557 7" stroke="white"></path>
                     </svg>                        
                 </a>
             </div>
         </div>
-        <p>Если останутся вопросы, то незамедлительно<br /> пишите Андрею, он ответит на все вопросы!</p>
-        <div class="contact-block">
-            <div class="andrey-wrapper">
-                <img src="https://website-for-villas-phuket.onrender.com/mails/images/Andrey.png" alt="Andrey Agatiy">
-                <div class="contact-info">
-                    <p>Андрей <br/>Агатий</p>
-                    <p>Руководитель <br>отдела продаж</p>
+        <p style='color:#393939; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:300; line-height:120%; margin:0'>Если останутся вопросы, то незамедлительно<br> пишите Андрею, он ответит на все вопросы!</p>
+        <div class="contact-block" style="align-items:end; background:#393939; border-radius:2.5vw; box-sizing:border-box; display:flex; height:18.33vw; justify-content:space-between; margin:20px 0; padding:1.67vw" height="18.33vw">
+            <div class="andrey-wrapper" style="align-items:end; display:flex; justify-content:center">
+                <img src="https://website-for-villas-phuket.onrender.com/mails/images/Andrey.png" alt="Andrey Agatiy" style="border-radius:1.67vw; height:15vw; margin-right:15px; width:15vw" height="15vw" width="15vw">
+                <div class="contact-info" style="text-align:left" align="left">
+                    <p style='color:#FFF; font-family:"Igra Sans"; font-size:4vw; font-style:normal; font-weight:400; line-height:100%; margin:0'>Андрей <br>Агатий</p>
+                    <p style='color:#FFF; font-family:"Igra Sans"; font-size:4vw; font-style:normal; font-weight:400; line-height:100%; margin:0'>Руководитель <br>отдела продаж</p>
                 </div>
             </div>
             <div class="contact-sales">
-                <a class="tel" href="tel:+66980138581"><p>+66 98 013-85-81</p></a>
-                <div class="social-icons">
-                    <a href="https://t.me/meruestate" target="_blank">
-                        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M14 0C21.7321 0 28 6.2679 28 13.9999C28 21.7321 21.7321 28 14 28C6.26791 28 0 21.7321 0 13.9999C0 6.2679 6.26791 0 14 0ZM18.8294 19.7067C19.0867 18.9169 20.2936 11.0425 20.4423 9.4909C20.4872 9.02067 20.339 8.7086 20.048 8.56923C19.6963 8.40001 19.1753 8.48462 18.5704 8.70277C17.7415 9.00145 7.14291 13.5019 6.53044 13.762C5.95003 14.0088 5.40047 14.2776 5.40047 14.6673C5.40047 14.9415 5.56319 15.0955 6.01128 15.2554C6.47736 15.4215 7.65164 15.7774 8.34517 15.9688C9.01314 16.153 9.7732 15.9933 10.1991 15.7284C10.6505 15.4479 15.8631 11.9601 16.2371 11.6545C16.6109 11.3488 16.909 11.7401 16.6034 12.0463C16.2977 12.352 12.7202 15.8246 12.2482 16.3053C11.6753 16.8893 12.082 17.4942 12.4664 17.7363C12.9051 18.0128 16.0615 20.1296 16.5368 20.4691C17.0123 20.8087 17.4941 20.9626 17.9357 20.9626C18.3773 20.9626 18.6094 20.3817 18.8294 19.7067Z" fill="white"/>
+                <a class="tel" href="tel:+66980138581" style="text-decoration:none"><p style='color:#FCBD21; font-family:"Igra Sans"; font-size:4vw; font-style:normal; font-weight:400; line-height:100%; margin:0; margin-right:8.33vw'>+66 98 013-85-81</p></a>
+                <div class="social-icons" style="display:flex; gap:10px; margin-top:1vw">
+                    <a href="https://t.me/meruestate" target="_blank" style="align-items:center; border:1px solid #FCBD21; border-radius:2.5vw; display:inline-flex; height:7.5vw; justify-content:center; width:7.5vw; text-decoration:none" height="7.5vw" width="7.5vw">
+                        <svg width="4.67vw" height="auto" viewbox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:auto; width:4.67vw">
+                            <path d="M14 0C21.7321 0 28 6.2679 28 13.9999C28 21.7321 21.7321 28 14 28C6.26791 28 0 21.7321 0 13.9999C0 6.2679 6.26791 0 14 0ZM18.8294 19.7067C19.0867 18.9169 20.2936 11.0425 20.4423 9.4909C20.4872 9.02067 20.339 8.7086 20.048 8.56923C19.6963 8.40001 19.1753 8.48462 18.5704 8.70277C17.7415 9.00145 7.14291 13.5019 6.53044 13.762C5.95003 14.0088 5.40047 14.2776 5.40047 14.6673C5.40047 14.9415 5.56319 15.0955 6.01128 15.2554C6.47736 15.4215 7.65164 15.7774 8.34517 15.9688C9.01314 16.153 9.7732 15.9933 10.1991 15.7284C10.6505 15.4479 15.8631 11.9601 16.2371 11.6545C16.6109 11.3488 16.909 11.7401 16.6034 12.0463C16.2977 12.352 12.7202 15.8246 12.2482 16.3053C11.6753 16.8893 12.082 17.4942 12.4664 17.7363C12.9051 18.0128 16.0615 20.1296 16.5368 20.4691C17.0123 20.8087 17.4941 20.9626 17.9357 20.9626C18.3773 20.9626 18.6094 20.3817 18.8294 19.7067Z" fill="white"></path>
                         </svg>
                     </a>
-                    <a href="https://wa.me/66980138581" target ="_blank">
-                        <svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.83085 21.0621L0.867188 28.1978L8.20515 26.2836C10.2346 27.3837 12.5086 27.9602 14.8194 27.9604H14.8254C22.454 27.9604 28.6641 21.7797 28.6675 14.1846C28.6683 12.3745 28.3109 10.5819 27.6156 8.90934C26.9203 7.23675 25.9008 5.71693 24.6154 4.43668C23.3299 3.15644 21.8037 2.14086 20.1239 1.44797C18.4441 0.755071 16.6436 0.398437 14.8254 0.398438C7.1957 0.398438 0.98665 6.57772 0.983165 14.1742C0.980243 16.592 1.61755 18.9677 2.83085 21.0621ZM10.5861 7.82346C10.832 7.83337 11.1048 7.84477 11.3641 8.4181H11.3626C11.5393 8.80915 11.8362 9.53742 12.0733 10.1191C12.2491 10.5502 12.392 10.9009 12.4288 10.9741C12.5155 11.146 12.5732 11.3477 12.4577 11.5771C12.4397 11.613 12.423 11.6467 12.4072 11.6789C12.3216 11.8527 12.2584 11.9812 12.1123 12.1509C12.0541 12.2185 11.9939 12.2914 11.9338 12.3642C11.8149 12.5081 11.6962 12.6518 11.5931 12.7545C11.4199 12.926 11.2392 13.1118 11.4413 13.4567C11.6434 13.8016 12.3373 14.9284 13.3656 15.8412C14.4739 16.8251 15.4346 17.2393 15.9211 17.449C16.0145 17.4893 16.0905 17.522 16.1466 17.5498C16.495 17.7222 16.6946 17.6964 16.8972 17.4665C17.0998 17.2366 17.7613 16.4611 17.9923 16.1167C18.2233 15.7723 18.4537 15.8293 18.7708 15.9442C19.0879 16.0592 20.7882 16.8927 21.1342 17.0646C21.1992 17.097 21.2601 17.1263 21.3167 17.1536C21.5616 17.2715 21.7268 17.351 21.7972 17.4665C21.8838 17.6087 21.8828 18.2995 21.5951 19.1018C21.3074 19.904 19.8957 20.6796 19.2611 20.737C19.2001 20.7426 19.1395 20.7497 19.0771 20.757C18.4907 20.8256 17.7514 20.9122 15.1108 19.8753C11.8587 18.5974 9.71535 15.4335 9.27545 14.7842C9.23979 14.7315 9.21532 14.6954 9.20237 14.6782L9.19854 14.6731C9.01218 14.4251 7.79022 12.799 7.79022 11.1173C7.79022 9.53153 8.5734 8.70027 8.93348 8.31808C8.958 8.29206 8.98056 8.26811 9.00077 8.24615C9.11628 8.11478 9.25786 8.00865 9.4166 7.93445C9.57535 7.86025 9.74781 7.81959 9.92312 7.81504L9.95769 7.81504C10.1766 7.81501 10.3942 7.81499 10.5861 7.82346Z" fill="white"/>
+                    <a href="https://wa.me/66980138581" target="_blank" style="align-items:center; border:1px solid #FCBD21; border-radius:2.5vw; display:inline-flex; height:7.5vw; justify-content:center; width:7.5vw; text-decoration:none" height="7.5vw" width="7.5vw">
+                        <svg width="4.67vw" height="auto" viewbox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:auto; width:4.67vw">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.83085 21.0621L0.867188 28.1978L8.20515 26.2836C10.2346 27.3837 12.5086 27.9602 14.8194 27.9604H14.8254C22.454 27.9604 28.6641 21.7797 28.6675 14.1846C28.6683 12.3745 28.3109 10.5819 27.6156 8.90934C26.9203 7.23675 25.9008 5.71693 24.6154 4.43668C23.3299 3.15644 21.8037 2.14086 20.1239 1.44797C18.4441 0.755071 16.6436 0.398437 14.8254 0.398438C7.1957 0.398438 0.98665 6.57772 0.983165 14.1742C0.980243 16.592 1.61755 18.9677 2.83085 21.0621ZM10.5861 7.82346C10.832 7.83337 11.1048 7.84477 11.3641 8.4181H11.3626C11.5393 8.80915 11.8362 9.53742 12.0733 10.1191C12.2491 10.5502 12.392 10.9009 12.4288 10.9741C12.5155 11.146 12.5732 11.3477 12.4577 11.5771C12.4397 11.613 12.423 11.6467 12.4072 11.6789C12.3216 11.8527 12.2584 11.9812 12.1123 12.1509C12.0541 12.2185 11.9939 12.2914 11.9338 12.3642C11.8149 12.5081 11.6962 12.6518 11.5931 12.7545C11.4199 12.926 11.2392 13.1118 11.4413 13.4567C11.6434 13.8016 12.3373 14.9284 13.3656 15.8412C14.4739 16.8251 15.4346 17.2393 15.9211 17.449C16.0145 17.4893 16.0905 17.522 16.1466 17.5498C16.495 17.7222 16.6946 17.6964 16.8972 17.4665C17.0998 17.2366 17.7613 16.4611 17.9923 16.1167C18.2233 15.7723 18.4537 15.8293 18.7708 15.9442C19.0879 16.0592 20.7882 16.8927 21.1342 17.0646C21.1992 17.097 21.2601 17.1263 21.3167 17.1536C21.5616 17.2715 21.7268 17.351 21.7972 17.4665C21.8838 17.6087 21.8828 18.2995 21.5951 19.1018C21.3074 19.904 19.8957 20.6796 19.2611 20.737C19.2001 20.7426 19.1395 20.7497 19.0771 20.757C18.4907 20.8256 17.7514 20.9122 15.1108 19.8753C11.8587 18.5974 9.71535 15.4335 9.27545 14.7842C9.23979 14.7315 9.21532 14.6954 9.20237 14.6782L9.19854 14.6731C9.01218 14.4251 7.79022 12.799 7.79022 11.1173C7.79022 9.53153 8.5734 8.70027 8.93348 8.31808C8.958 8.29206 8.98056 8.26811 9.00077 8.24615C9.11628 8.11478 9.25786 8.00865 9.4166 7.93445C9.57535 7.86025 9.74781 7.81959 9.92312 7.81504L9.95769 7.81504C10.1766 7.81501 10.3942 7.81499 10.5861 7.82346Z" fill="white"></path>
                         </svg>                                                                                                                               
                     </a>
                 </div>
@@ -748,61 +76,61 @@
     </div>
 
     <!-- Третья секция -->
-    <div class="section youtube-section" id="seven-years-future">
-        <div class="youtube-logo">
-            <img src="https://website-for-villas-phuket.onrender.com/mails/images/youtube-logo.png">
+    <div class="section youtube-section" id="seven-years-future" style="background-color:#232323; border:1px solid #ddd; border-radius:3.33vw; margin:1.67vw; padding:3.33vw; text-align:left; position:relative; background-image:url(https://website-for-villas-phuket.onrender.com/mails/images/handsome-denis-bg.png); background-position:center; background-repeat:no-repeat; background-size:cover; padding-top:5vw" bgcolor="#232323" align="left">
+        <div class="youtube-logo" style="align-items:center; background:#232323; border-radius:0 5vw 5vw 0; display:flex; height:8.17vw; left:-3.33vw; margin-bottom:5vw; padding-left:4.17vw; position:relative; width:32.5vw" height="8.17vw" width="32.5vw">
+            <img src="https://website-for-villas-phuket.onrender.com/mails/images/youtube-logo.png" style="margin-bottom:0; max-width:100%; width:100%; height:4.83vw" width="100%" height="4.83vw">
         </div>
-        <h3>Откройте для себя Пхукет</h3>
-        <p>Подробнее рассказываем о жизни на Пхукете<br /> и делимся обзорами на самые топовые <br />проекты от застройщиков на YouTube канале</p>
+        <h3 style='font-size:5.67vw; margin-top:0; color:#FFF; font-family:"Igra Sans"; font-style:normal; font-weight:400; line-height:100%; margin-bottom:10px'>Откройте для себя Пхукет</h3>
+        <p style='color:#FFF; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:400; line-height:120%'>Подробнее рассказываем о жизни на Пхукете<br> и делимся обзорами на самые топовые <br>проекты от застройщиков на YouTube канале</p>
         <picture>
             <source srcset="https://website-for-villas-phuket.onrender.com/mails/images/handsome-denis.png" media="(min-width: 600px)">
-            <img src="https://website-for-villas-phuket.onrender.com/mails/images/handsome-denis_mobile.png" alt="Main Image" media="(max-width: 600px)">
-        </picture>
-        <a href="https://youtube.com/@meru_estate" class="button">
+            <img src="https://website-for-villas-phuket.onrender.com/mails/images/handsome-denis_mobile.png" alt="Main Image" media="(max-width: 600px)" style="margin-bottom:0; max-width:100%; width:100%" width="100%">
+        </source></picture>
+        <a href="https://youtube.com/@meru_estate" class="button" style='align-items:center; background-color:#FCBD21; border-radius:4.17vw; color:#393939; cursor:pointer; display:inline-flex; font-family:"Commissioner"; font-size:2.5vw; justify-content:flex-start; line-height:105%; margin-bottom:3.33vw; margin-left:10px; margin-top:20px; padding:10px 20px; padding-left:4.17vw; padding-right:4.17vw; text-decoration:none; text-transform:uppercase' bgcolor="#FCBD21">
             ПЕРЕЙТИ НА КАНАЛ
-            <svg width="25" height="8" viewBox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.9987 4H0M23.9987 4L20.7557 1M23.9987 4L20.7557 7" stroke="#393939"/>
+            <svg width="25" height="8" viewbox="0 0 25 8" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-left:1.67vw">
+                <path d="M23.9987 4H0M23.9987 4L20.7557 1M23.9987 4L20.7557 7" stroke="#393939"></path>
             </svg>  
         </a>
     </div>
 
     <!-- Четвёртая секция -->
-    <div class="section">
-        <div class="social-links-block">
-            <p>Если у вас возникли проблемы с&nbsp;открытием файлов, то напишите нам в&nbsp;любом удобном мессенджере</p>
-            <div class="icons">
-                <a href="https://wa.me/66980138581" target ="_blank">
-                    <div class="icon">
-                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M22 0C34.1504 0 44 9.84956 44 21.9999C44 34.1504 34.1504 44 22 44C9.84957 44 0 34.1504 0 21.9999C0 9.84956 9.84957 0 22 0ZM29.5891 30.9677C29.9933 29.7265 31.89 17.3526 32.1236 14.9143C32.1942 14.1753 31.9613 13.6849 31.504 13.4659C30.9513 13.2 30.1326 13.333 29.182 13.6758C27.8795 14.1451 11.2246 21.2172 10.2621 21.626C9.35005 22.0138 8.48645 22.4363 8.48645 23.0487C8.48645 23.4796 8.74216 23.7215 9.44629 23.9727C10.1787 24.2338 12.024 24.7931 13.1138 25.0938C14.1635 25.3833 15.3579 25.1323 16.0271 24.716C16.7365 24.2752 24.9278 18.7945 25.5154 18.3142C26.1029 17.8338 26.5713 18.4487 26.091 18.93C25.6107 19.4103 19.9888 24.8673 19.2472 25.6227C18.347 26.5403 18.986 27.4909 19.5901 27.8713C20.2795 28.3058 25.2395 31.6323 25.9865 32.1657C26.7336 32.6994 27.4907 32.9412 28.1847 32.9412C28.8786 32.9412 29.2433 32.0284 29.5891 30.9677Z" fill="#393939"/>
+    <div class="section" style="background-color:#fff; border:1px solid #ddd; border-radius:3.33vw; margin:1.67vw; padding:1.67vw; text-align:left" bgcolor="#ffffff" align="left">
+        <div class="social-links-block" style="align-items:center; background-color:#F9F9F9; background-image:url(https://website-for-villas-phuket.onrender.com/mails/images/footer-bg.png); background-position:center; background-repeat:no-repeat; background-size:cover; border-radius:3.33vw; box-sizing:border-box; display:flex; padding:0" bgcolor="#F9F9F9">
+            <p style='color:#393939; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:400; line-height:120%; margin:3.33vw; margin-right:0'>Если у вас возникли проблемы с открытием файлов, то напишите нам в любом удобном мессенджере</p>
+            <div class="icons" style="display:flex; gap:1.67vw; justify-content:center; margin:3.33vw">
+                <a href="https://wa.me/66980138581" target="_blank">
+                    <div class="icon" style="align-items:center; border:1px solid #299948; border-radius:2.5vw; cursor:pointer; display:flex; height:11.7vw; justify-content:center; width:11.7vw" height="11.7vw" width="11.7vw">
+                        <svg width="7.33vw" height="auto" viewbox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:auto; width:7.33vw">
+                            <path d="M22 0C34.1504 0 44 9.84956 44 21.9999C44 34.1504 34.1504 44 22 44C9.84957 44 0 34.1504 0 21.9999C0 9.84956 9.84957 0 22 0ZM29.5891 30.9677C29.9933 29.7265 31.89 17.3526 32.1236 14.9143C32.1942 14.1753 31.9613 13.6849 31.504 13.4659C30.9513 13.2 30.1326 13.333 29.182 13.6758C27.8795 14.1451 11.2246 21.2172 10.2621 21.626C9.35005 22.0138 8.48645 22.4363 8.48645 23.0487C8.48645 23.4796 8.74216 23.7215 9.44629 23.9727C10.1787 24.2338 12.024 24.7931 13.1138 25.0938C14.1635 25.3833 15.3579 25.1323 16.0271 24.716C16.7365 24.2752 24.9278 18.7945 25.5154 18.3142C26.1029 17.8338 26.5713 18.4487 26.091 18.93C25.6107 19.4103 19.9888 24.8673 19.2472 25.6227C18.347 26.5403 18.986 27.4909 19.5901 27.8713C20.2795 28.3058 25.2395 31.6323 25.9865 32.1657C26.7336 32.6994 27.4907 32.9412 28.1847 32.9412C28.8786 32.9412 29.2433 32.0284 29.5891 30.9677Z" fill="#393939"></path>
                         </svg>                                              
                     </div>
                 </a>
                 <a href="https://t.me/meruestate" target="_blank">
-                    <div class="icon">
-                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.10791 32.7047L0 43.9984L11.6139 40.9687C14.826 42.7099 18.425 43.6223 22.0823 43.6227H22.0918C34.1658 43.6227 43.9945 33.8404 44 21.8196C44.0012 18.9547 43.4355 16.1175 42.335 13.4703C41.2346 10.8231 39.6211 8.41765 37.5866 6.39139C35.5521 4.36512 33.1365 2.75776 30.4779 1.6611C27.8192 0.564449 24.9696 0 22.0918 0C10.0162 0 0.189074 9.78004 0.18356 21.8031C0.178934 25.6297 1.1876 29.3899 3.10791 32.7047ZM15.3855 11.7545C15.7747 11.7702 16.2064 11.7882 16.6169 12.6956H16.6145C16.8941 13.3146 17.364 14.4672 17.7393 15.3879C18.0174 16.0702 18.2436 16.6251 18.302 16.741C18.4391 17.0131 18.5304 17.3323 18.3477 17.6955C18.3191 17.7522 18.2928 17.8057 18.2677 17.8566C18.1323 18.1317 18.0322 18.335 17.8009 18.6037C17.7088 18.7106 17.6136 18.8259 17.5184 18.9412C17.3303 19.1689 17.1425 19.3964 16.9792 19.5589C16.7051 19.8303 16.4191 20.1244 16.739 20.6703C17.0588 21.2161 18.157 22.9996 19.7846 24.4442C21.5387 26.0016 23.0593 26.657 23.8293 26.9889C23.9771 27.0527 24.0973 27.1045 24.1861 27.1485C24.7376 27.4214 25.0535 27.3806 25.3742 27.0167C25.6948 26.6528 26.7418 25.4254 27.1073 24.8803C27.4729 24.3352 27.8376 24.4254 28.3395 24.6074C28.8413 24.7893 31.5325 26.1085 32.08 26.3806C32.1829 26.4318 32.2793 26.4782 32.369 26.5214C32.7566 26.708 33.018 26.8339 33.1294 27.0167C33.2664 27.2418 33.2649 28.3351 32.8095 29.6048C32.3542 30.8746 30.1199 32.102 29.1155 32.193C29.0189 32.2017 28.923 32.213 28.8243 32.2245C27.8962 32.3332 26.726 32.4702 22.5467 30.8291C17.3997 28.8065 14.0073 23.799 13.3111 22.7713C13.2546 22.688 13.2159 22.6308 13.1954 22.6035L13.1893 22.5955C12.8944 22.203 10.9604 19.6294 10.9604 16.9676C10.9604 14.4579 12.1999 13.1422 12.7698 12.5373C12.8086 12.4961 12.8443 12.4582 12.8763 12.4235C13.0591 12.2156 13.2832 12.0476 13.5345 11.9302C13.7857 11.8127 14.0587 11.7484 14.3361 11.7412L14.3908 11.7412C14.7373 11.7411 15.0816 11.7411 15.3855 11.7545Z" fill="#393939"/>
+                    <div class="icon" style="align-items:center; border:1px solid #299948; border-radius:2.5vw; cursor:pointer; display:flex; height:11.7vw; justify-content:center; width:11.7vw" height="11.7vw" width="11.7vw">
+                        <svg width="7.33vw" height="auto" viewbox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:auto; width:7.33vw">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.10791 32.7047L0 43.9984L11.6139 40.9687C14.826 42.7099 18.425 43.6223 22.0823 43.6227H22.0918C34.1658 43.6227 43.9945 33.8404 44 21.8196C44.0012 18.9547 43.4355 16.1175 42.335 13.4703C41.2346 10.8231 39.6211 8.41765 37.5866 6.39139C35.5521 4.36512 33.1365 2.75776 30.4779 1.6611C27.8192 0.564449 24.9696 0 22.0918 0C10.0162 0 0.189074 9.78004 0.18356 21.8031C0.178934 25.6297 1.1876 29.3899 3.10791 32.7047ZM15.3855 11.7545C15.7747 11.7702 16.2064 11.7882 16.6169 12.6956H16.6145C16.8941 13.3146 17.364 14.4672 17.7393 15.3879C18.0174 16.0702 18.2436 16.6251 18.302 16.741C18.4391 17.0131 18.5304 17.3323 18.3477 17.6955C18.3191 17.7522 18.2928 17.8057 18.2677 17.8566C18.1323 18.1317 18.0322 18.335 17.8009 18.6037C17.7088 18.7106 17.6136 18.8259 17.5184 18.9412C17.3303 19.1689 17.1425 19.3964 16.9792 19.5589C16.7051 19.8303 16.4191 20.1244 16.739 20.6703C17.0588 21.2161 18.157 22.9996 19.7846 24.4442C21.5387 26.0016 23.0593 26.657 23.8293 26.9889C23.9771 27.0527 24.0973 27.1045 24.1861 27.1485C24.7376 27.4214 25.0535 27.3806 25.3742 27.0167C25.6948 26.6528 26.7418 25.4254 27.1073 24.8803C27.4729 24.3352 27.8376 24.4254 28.3395 24.6074C28.8413 24.7893 31.5325 26.1085 32.08 26.3806C32.1829 26.4318 32.2793 26.4782 32.369 26.5214C32.7566 26.708 33.018 26.8339 33.1294 27.0167C33.2664 27.2418 33.2649 28.3351 32.8095 29.6048C32.3542 30.8746 30.1199 32.102 29.1155 32.193C29.0189 32.2017 28.923 32.213 28.8243 32.2245C27.8962 32.3332 26.726 32.4702 22.5467 30.8291C17.3997 28.8065 14.0073 23.799 13.3111 22.7713C13.2546 22.688 13.2159 22.6308 13.1954 22.6035L13.1893 22.5955C12.8944 22.203 10.9604 19.6294 10.9604 16.9676C10.9604 14.4579 12.1999 13.1422 12.7698 12.5373C12.8086 12.4961 12.8443 12.4582 12.8763 12.4235C13.0591 12.2156 13.2832 12.0476 13.5345 11.9302C13.7857 11.8127 14.0587 11.7484 14.3361 11.7412L14.3908 11.7412C14.7373 11.7411 15.0816 11.7411 15.3855 11.7545Z" fill="#393939"></path>
                         </svg>                                             
                     </div>
                 </a>
                 <a href="https://www.instagram.com/meru.estate/" target="_blank">
-                    <div class="icon">
-                        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M12.8297 0C5.75487 0 0 5.76026 0 12.8368V31.1703C0 38.2451 5.76025 44 12.837 44H31.1703C38.2451 44 44 38.2397 44 31.163V12.8297C44 5.75487 38.2397 0 31.163 0H12.8297ZM34.8333 7.33325C35.8453 7.33325 36.6667 8.15451 36.6667 9.16651C36.6667 10.1785 35.8453 11 34.8333 11C33.8213 11 33 10.1785 33 9.16651C33 8.15451 33.8213 7.33325 34.8333 7.33325ZM22 11C28.0664 11 33 15.9334 33 22C33 28.0664 28.0664 33 22 33C15.9334 33 11 28.0664 11 22C11 15.9334 15.9334 11 22 11ZM22 14.6665C20.0551 14.6665 18.1898 15.4393 16.8146 16.8146C15.4393 18.1898 14.6667 20.0551 14.6667 22C14.6667 23.9449 15.4393 25.8102 16.8146 27.1854C18.1898 28.5607 20.0551 29.3333 22 29.3333C23.9449 29.3333 25.8102 28.5607 27.1854 27.1854C28.5607 25.8102 29.3333 23.9449 29.3333 22C29.3333 20.0551 28.5607 18.1898 27.1854 16.8146C25.8102 15.4393 23.9449 14.6665 22 14.6665Z" fill="#393939"/>
+                    <div class="icon" style="align-items:center; border:1px solid #299948; border-radius:2.5vw; cursor:pointer; display:flex; height:11.7vw; justify-content:center; width:11.7vw" height="11.7vw" width="11.7vw">
+                        <svg width="7.33vw" height="auto" viewbox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" style="height:auto; width:7.33vw">
+                            <path d="M12.8297 0C5.75487 0 0 5.76026 0 12.8368V31.1703C0 38.2451 5.76025 44 12.837 44H31.1703C38.2451 44 44 38.2397 44 31.163V12.8297C44 5.75487 38.2397 0 31.163 0H12.8297ZM34.8333 7.33325C35.8453 7.33325 36.6667 8.15451 36.6667 9.16651C36.6667 10.1785 35.8453 11 34.8333 11C33.8213 11 33 10.1785 33 9.16651C33 8.15451 33.8213 7.33325 34.8333 7.33325ZM22 11C28.0664 11 33 15.9334 33 22C33 28.0664 28.0664 33 22 33C15.9334 33 11 28.0664 11 22C11 15.9334 15.9334 11 22 11ZM22 14.6665C20.0551 14.6665 18.1898 15.4393 16.8146 16.8146C15.4393 18.1898 14.6667 20.0551 14.6667 22C14.6667 23.9449 15.4393 25.8102 16.8146 27.1854C18.1898 28.5607 20.0551 29.3333 22 29.3333C23.9449 29.3333 25.8102 28.5607 27.1854 27.1854C28.5607 25.8102 29.3333 23.9449 29.3333 22C29.3333 20.0551 28.5607 18.1898 27.1854 16.8146C25.8102 15.4393 23.9449 14.6665 22 14.6665Z" fill="#393939"></path>
                         </svg>
                     </div>
                 </a>
             </div>
         </div>
-        <div class="info-block">
-            <div class="info-column">
-                <span>MERU ESTATE CO., LTD</span>
-                <span>Tax ID: 834 566 005 693</span>
-                <span>128/66 Moo5, Ratsada Sub-district, Muang Phuket district, Phuket, Thailand, 83 000</span>
+        <div class="info-block" style="display:flex; justify-content:space-between; margin-bottom:5.67vw; margin-left:5vw; margin-right:5vw; margin-top:3.33vw">
+            <div class="info-column" style="text-align:left" align="left">
+                <span style='color:#959595; display:block; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:400; line-height:100%; margin-bottom:2.5vw'>MERU ESTATE CO., LTD</span>
+                <span style='color:#959595; display:block; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:400; line-height:100%; margin-bottom:2.5vw'>Tax ID: 834 566 005 693</span>
+                <span style='color:#959595; display:block; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:400; line-height:100%; margin-bottom:2.5vw'>128/66 Moo5, Ratsada Sub-district, Muang Phuket district, Phuket, Thailand, 83 000</span>
             </div>
-            <div class="info-column">
-                <span><a href="mailto:info@meruestate.com">info@meruestate.com</a></span>
-                <span><a class="tel" href="tel:+66980138581">+66 98 013-85-81</a></span>
+            <div class="info-column" style="text-align:left" align="left">
+                <span style='color:#959595; display:block; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:400; line-height:100%; margin-bottom:2.5vw'><a href="mailto:info@meruestate.com" style='color:#959595; display:block; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:400; line-height:100%; margin-bottom:2.5vw; text-align:right' align="right">info@meruestate.com</a></span>
+                <span style='color:#959595; display:block; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:400; line-height:100%; margin-bottom:2.5vw'><a class="tel" href="tel:+66980138581" style='color:#959595; display:block; font-family:"Commissioner"; font-size:2.67vw; font-style:normal; font-weight:400; line-height:100%; margin-bottom:2.5vw; text-align:right; text-decoration:none' align="right">+66 98 013-85-81</a></span>
             </div>
         </div>
     </div>
