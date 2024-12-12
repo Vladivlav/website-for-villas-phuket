@@ -5,8 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Email Template</title>
-    <link rel="stylesheet" href="https://website-for-villas-phuket.onrender.com/mails/styles.css">
-    <link rel="stylesheet" href="https://website-for-villas-phuket.onrender.com/mails/mobile-styles.css">
     <link rel="stylesheet" href="https://website-for-villas-phuket.onrender.com/fonts.css">
 
     <style>
@@ -16,6 +14,669 @@
         .text br.second-break {
             display: none;
         }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .section {
+            padding: 10px;
+            padding: 1.67vw;
+            text-align: left;
+            background-color: #ffffff;
+            margin: 10px;
+            margin: 1.67vw;
+            border: 1px solid #ddd;
+            border-radius: 20px;
+            border-radius: 3.33vw;
+        }
+        .section:last-of-type {
+            padding: 0;
+            border: 0;
+            background-color: unset;
+        }
+        .section h3 {
+            margin-top: 0;
+            font-size: 20px;
+        }
+        .logo {
+            width: 150px;
+            height: 60px;
+            width: 25vw;
+            height: 10vw;
+            margin-left: 10px;
+            margin-top: 20px;
+            margin-left: 1.67vw;
+            margin-right: 3.33vw;
+            margin-bottom: 30px;
+            margin-bottom: 5vw;
+        }
+        .text {
+            margin: 0;
+            font-family: 'Igra Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            font-size: 5vw;
+            text-align: left;
+            line-height: 100%;
+            color: white;
+            margin-left: 10px;
+            margin-left: 1.67vw;
+            max-width: 424px;
+        }
+        .text span {
+            color: #FCBD21;
+            font-weight: bold;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+            border-radius: 5px;
+            align-items: center;
+            justify-content: center;
+            background-color: #FCBD21;
+            border-radius: 4.17vw;
+            margin-left: 10px;
+            margin-top: 20px;
+            padding-right: 25px;
+            padding-left: 25px;
+            cursor: pointer;
+            font-family: 'Commissioner';
+            font-size: 15px;
+            font-size: 2.5vw;
+            line-height: 105%;
+            display: inline-flex;
+            align-items: center;
+            text-transform: uppercase;
+            color: #393939;
+            padding-left: 4.17vw;
+            padding-right: 4.17vw;
+            justify-content: flex-start;
+            margin-bottom: 20px;
+            margin-bottom: 3.33vw;
+        }
+        .button svg {
+            margin-left: 10px;
+            margin-left: 1.67vw;
+        }
+        .horizontal-block {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            margin: 5vw 0;
+        }
+        .horizontal-block img {
+            width: 175px;
+            width: 29.17vw;
+            margin-right: 20px;
+            margin-right: 3.33vw;
+        }
+        #right-area .horizontal-block div p {
+            font-family: 'Igra Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            font-size: 5vw;
+            line-height: 100%;
+            color: #299948;
+        }
+        #right-area .button {
+            background-color: #299948;
+            color: white;
+            margin-left: 0;
+        }
+        .contact-block {
+            display: flex;
+            align-items: end;
+            margin: 20px 0;
+            background: #393939;
+            height: 110px;
+            height: 18.33vw;
+            padding: 1.67vw;
+            box-sizing: border-box;
+            border-radius: 15px;
+            border-radius: 2.5vw;
+            justify-content: space-between;
+        }
+
+            .andrey-wrapper {
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+        .contact-block img {
+            margin-right: 15px;
+            width: 90px;
+            height: 90px;
+            border-radius: 10px;
+            width: 15.0vw;
+            height: 15.0vw;
+            border-radius: 1.67vw;
+        }
+        .contact-info {
+            text-align: left;
+        }
+        #right-area .contact-info p {
+            font-family: 'Igra Sans';
+            font-style: normal;
+            font-weight: 400 !important;
+            font-size: 24px;
+            font-size: 4vw;
+            line-height: 100%;
+            color: #FFFFFF;
+        }
+        #right-area .contact-sales p {
+            font-family: 'Igra Sans';
+            font-style: normal;
+            font-weight: 400 !important;
+            font-size: 24px;
+            font-size: 4vw;
+            line-height: 100%;
+            color: #FCBD21;
+            margin-right: 50px;
+            margin-right: 8.33vw;
+        }
+        #right-area .contact-info p:last-of-type {
+            font-family: 'Commissioner';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            font-size: 2.33vw;
+            line-height: 100%;
+            color: #FFFFFF;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 6px;
+            margin-top: 1vw;
+        }
+        .social-icons a {
+            width: 45px;
+            height: 45px;
+            width: 7.5vw;
+            height: 7.5vw;
+            border: 1px solid #FCBD21;
+            border-radius: 2.5vw;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .social-icons svg {
+            width: 4.67vw;
+            height: auto;
+        }
+        .youtube-section {
+            position: relative;
+        }
+        .youtube-section h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            font-family: 'Igra Sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 34px;
+            font-size: 5.67vw;
+            line-height: 100%;
+            color: #FFFFFF;
+        }
+        .youtube-section p {
+            font-family: 'Commissioner';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            font-size: 2.67vw;
+            line-height: 120%;
+            color: #FFFFFF;
+        }
+        .youtube-section img {
+            max-width: 100%;
+            margin-bottom: 0;
+            width: 100%;
+
+        }
+        .icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 3.33vw;
+            gap: 1.67vw;
+        }
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 70px;
+            height: 70px;
+            border: 1px solid #299948;
+            border-radius: 2.5vw;
+            width: 11.7vw;
+            height: 11.7vw;
+            cursor: pointer;
+        }
+        .icon svg {
+            width: 44px;
+            height: auto;
+            width: 7.33vw;
+            height: auto;
+        }
+        .info-block {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            margin-top: 3.33vw;
+            margin-bottom: 5.67vw;
+            margin-right: 5vw;
+            margin-left: 5vw;
+        }
+        .info-column {
+            text-align: left;
+        }
+        .info-column span, .info-column span a {
+            display: block;
+            margin-bottom: 15px;
+            font-family: 'Commissioner';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            font-size: 2.67vw;
+            line-height: 100%;
+            color: #959595;
+            margin-bottom: 2.5vw;
+        }
+        .info-column span a {
+            text-align: right;
+        }
+        .info-column span a.tel {
+            text-decoration: none;
+        }
+        #buy-for-myself {
+            background-color: #232323;
+            background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/open-guide-bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        #seven-years-future {
+            background-color: #232323;
+            background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/handsome-denis-bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 20px;
+            padding: 3.33vw;
+            padding-top: 30px;
+            padding-top: 5vw;
+        }
+        #seven-years-future .youtube-logo {
+            width: 195px;
+            height: 49px;
+            height: 8.17vw;
+            width: 32.5vw;
+            background: #232323;
+            display: flex;
+            align-items: center;
+            position: relative;
+            left: -3.33vw;
+            padding-left: 4.17vw;
+            border-radius: 0 5vw 5vw 0;
+            margin-bottom: 30px;
+            margin-bottom: 5vw;
+        }
+        #seven-years-future .youtube-logo img {
+            height: 29px;
+            height: 4.83vw;
+        }
+        #right-area {
+            border: 0;
+            background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/download-guide-bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 30px;
+            padding-top: 5vw;
+            padding-left: 20px;
+            padding-left: 3.33vw;
+            background-position: bottom;
+        }
+        #right-area p {
+            font-family: 'Commissioner';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 16px;
+            font-size: 2.67vw;
+            line-height: 120%;
+            color: #393939;
+            margin: 0;
+        }
+        #right-area p:first-of-type {
+            font-weight: 600;
+        }
+        #buy-for-myself img {
+            width: 100%;
+        }
+        .social-links-block {
+            display: flex;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #F9F9F9;
+            background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/footer-bg.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            align-items: center;
+            border-radius: 3.33vw;
+        }
+        .social-links-block p {
+            font-family: 'Commissioner';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            font-size: 2.67vw;
+            line-height: 120%;
+            color: #393939;
+            margin: 3.33vw;
+            margin-right: 0;
+        }
+        
+        .contact-block a {
+            text-decoration: none ;
+        }
+
+        @media (max-width: 600px) {
+            #buy-for-myself {
+                background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/open-guide-bg_mobile.png");
+            }
+
+            #right-area {
+                background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/download-guide-bg.png");
+                padding-top: 30px;
+                padding-top: 8.33vw;
+                padding-left: 10px;
+                padding-left: 2.78vw;
+                background-position: bottom;
+            
+            }
+
+            .section {
+                padding: 10px;
+                padding: 2.78vw;
+                margin: 10px;
+                margin: 2.78vw;
+                border-radius: 20px;
+                border-radius: 5.56vw;
+            }
+
+            .logo {
+                width: 149px;
+                width: 41.39vw;
+                height: 59px;
+                height: 16.39vw;
+                margin-top: 20px;
+                margin-top: 5.56vw;
+                margin-left: 10px;
+                margin-left: 2.78vw;
+                margin-bottom: 30px;
+                margin-bottom: 8.33vw;
+            }
+
+            .text {
+                font-size: 27px;
+                font-size: 7.5vw;
+                line-height: 100%;
+                margin-right: 0;
+                max-width: unset;
+            
+            }
+
+            .button {
+                font-size: 15px;
+                font-size: 4.17vw;
+                line-height: 105%;
+                padding: 2.78vw 6.94vw;
+                margin: 20px 0 20px 10px;
+                margin: 5.56vw 0 5.56vw 2.78vw;
+                border-radius: 30px;
+                border-radius: 8.33vw;
+                height: 40px;
+                height: 11.11vw;
+                box-sizing: border-box;
+            }
+
+            .button svg {
+                margin-left: 2.78vw;
+            }
+
+            #right-area p {
+                font-size: 14px;
+                font-size: 3.89vw;
+                line-height: 120%;
+            }
+
+            .horizontal-block {
+                flex-direction: column;
+                margin-top: 30px;
+                margin-top: 8.33vw;
+                align-items: baseline;
+                margin-bottom: 0;
+            }
+
+            .horizontal-block img {
+                width: 170px;
+                width: 47.22vw;
+                margin-right: 20px;
+                margin-right: 5.56vw;
+                margin-bottom: 20px;
+                margin-bottom: 5.56vw;
+            }
+
+            #right-area .horizontal-block div p {
+                font-size: 27px;
+                font-size: 7.5vw;
+            }
+
+            #right-area .button {
+                margin-top: 10px;
+                margin-top: 2.78vw;
+                margin-bottom: 30px;
+                margin-bottom: 8.33vw;
+            }
+
+            .contact-block {
+                flex-direction: column;
+                height: 204px;
+                height: 56.67vw;
+                box-sizing: border-box;
+                align-items: start;
+                padding: 10px;
+                padding: 2.78vw;
+                height: auto;
+                border-radius: 15px;
+                border-radius: 4.17vw;
+            }
+
+            .contact-block img {
+                width: 90px;
+                width: 25vw;
+                height: 90px;
+                height: 25vw;
+                border-radius: 10px;
+                border-radius: 2.78vw;
+            }
+
+            #right-area .contact-info p:first-of-type {
+                font-size: 22px;
+                font-size: 6.11vw;
+            }
+
+            #right-area .contact-info p:last-of-type {
+                font-size: 12px;
+                font-size: 3.33vw;
+            }
+
+            #right-area .contact-info p br {
+                display: none;
+            }
+            #right-area .contact-info {
+                position: relative;
+                bottom: 5px;
+                bottom: 1.39vw;
+            }
+
+            #right-area .contact-sales p {
+                font-size: 24px;
+                font-size: 6.67vw;
+                margin-top: 19px;
+                margin-top: 5.28vw;
+            }
+
+            #right-area .social-icons {
+                margin-top: 6px;
+                margin-top: 1.67vw;
+            }
+            
+            .social-icons a {
+                width: 45px;
+                width: 12.5vw;
+                height: 45px;
+                height: 12.5vw;
+                border-radius: 15px;
+                border-radius: 4.17vw;
+            }
+            
+            .social-icons svg {
+                width: 28px;
+                width: 7.78vw;
+                height: auto;
+            }
+            
+
+            #right-area > * {
+                padding-left: 10px;
+                padding-left: 2.78vw;
+                padding-right: 10px
+            }
+
+            #seven-years-future {
+                padding: 20px;
+                padding: 5.56vw;
+                padding-top: 30px;
+                padding-top: 8.33vw;
+                padding-right: 2.78vw;
+            }
+            
+            #seven-years-future .button {
+                margin-left: 0;
+                margin-top: 20px;
+                margin-top: 5.56vw;
+                margin-bottom: 10px;
+                margin-bottom: 2.78vw;
+            }
+
+            #seven-years-future .youtube-logo {
+                width: 195px;
+                width: 54.17vw;
+                height: 49px;
+                height: 13.61vw;
+                border-radius: 0 7vw 7vw 0;
+                padding-left: 25px;
+                padding-left: 6.94vw;
+                left: -5.56vw;
+                margin-bottom: 20px;
+                margin-bottom: 5.56vw;
+                box-sizing: border-box;
+            
+            }
+
+            #seven-years-future .youtube-logo img {
+                width: 133px;
+                width: 36.94vw;
+                height: 29px;
+                height: 8.06vw;
+            }
+
+            .youtube-section h3 {
+                font-size: 27px;
+                font-size: 7.5vw;
+                max-width: 60vw;
+                margin-bottom: 5px;
+                margin-bottom: 1.39vw;
+            }
+            
+            .youtube-section p {
+                margin: 0;
+                margin-bottom: 20px;
+                margin-bottom: 5.56vw;
+                font-size: 14px;
+                font-size: 3.89vw;
+            }
+
+            .social-links-block {
+                flex-direction: column;
+                border-radius: 20px;
+                border-radius: 5.56vw;
+                align-items: baseline;
+                background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/footer-bg_mobile.png");
+            
+            }
+
+            .social-links-block p {
+                font-size: 14px;
+                font-size: 3.89vw;
+                margin-top: 30px;
+                margin-top: 8.33vw;
+                margin-left: 20px;
+                margin-left: 5.56vw;
+                max-width: 78vw;
+            }
+
+            .icons {
+                margin-bottom: 30px;
+                margin-bottom: 8.33vw;
+                margin-left: 20px;
+                margin-left: 5.56vw;
+                gap: 20px;
+                gap: 5.56vw;
+            
+            }
+
+            .icon {
+                width: 70px;
+                width: 19.44vw;
+                height: 70px;
+                height: 19.44vw;
+                border-radius: 15px;
+                border-radius: 4.17vw;
+            }
+
+            .icon svg {
+                width: 44px;
+                width: 12.22vw;
+                height: auto;
+            }
+
+            .info-column span, .info-column span a {
+                font-size: 12px;
+                font-size: 3.33vw;
+                margin-bottom: 10px;
+                margin-bottom: 2.78vw;;
+            
+            }
+
+            .info-block {
+                margin: 20px 15px 32px 15px;
+                margin: 5.56vw 4.17vw 8.89vw 4.17vw;
+            }
+        }
+
     </style>
 </head>
 <body>
