@@ -4,6 +4,12 @@
     font-weight: 100;
     font-style: normal;
   }
+
+
+  @font-face {
+    font-family: 'Igra Sans';
+    src: url("fonts/IgraSans.otf");
+  }
   
   @font-face {
     font-family: 'Commissioner';

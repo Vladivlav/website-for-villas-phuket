@@ -1,0 +1,285 @@
+@media (max-width: 600px) {
+    #buy-for-myself {
+        background-image: url("images/open-guide-bg_mobile.png");
+    }
+
+    #right-area {
+        background-image: url("images/download-guide-bg.png");
+        padding-top: 30px;
+        padding-top: 8.33vw;
+        padding-left: 10px;
+        padding-left: 2.78vw;
+        background-position: bottom;
+    
+    }
+
+    .section {
+        padding: 10px;
+        padding: 2.78vw;
+        margin: 10px;
+        margin: 2.78vw;
+        border-radius: 20px;
+        border-radius: 5.56vw;
+    }
+
+    .logo {
+        width: 149px;
+        width: 41.39vw;
+        height: 59px;
+        height: 16.39vw;
+        margin-top: 20px;
+        margin-top: 5.56vw;
+        margin-left: 10px;
+        margin-left: 2.78vw;
+        margin-bottom: 30px;
+        margin-bottom: 8.33vw;
+    }
+
+    .text {
+        font-size: 27px;
+        font-size: 7.5vw;
+        line-height: 100%;
+        margin-right: 0;
+        max-width: unset;
+    
+    }
+
+    .button {
+        font-size: 15px;
+        font-size: 4.17vw;
+        line-height: 105%;
+        padding: 2.78vw 6.94vw;
+        margin: 20px 0 20px 10px;
+        margin: 5.56vw 0 5.56vw 2.78vw;
+        border-radius: 30px;
+        border-radius: 8.33vw;
+        height: 40px;
+        height: 11.11vw;
+        box-sizing: border-box;
+    }
+
+    .button svg {
+        margin-left: 2.78vw;
+    }
+
+    #right-area p {
+        font-size: 14px;
+        font-size: 3.89vw;
+        line-height: 120%;
+    }
+
+    .horizontal-block {
+        flex-direction: column;
+        margin-top: 30px;
+        margin-top: 8.33vw;
+        align-items: baseline;
+        margin-bottom: 0;
+    }
+
+    .horizontal-block img {
+        width: 170px;
+        width: 47.22vw;
+        margin-right: 20px;
+        margin-right: 5.56vw;
+        margin-bottom: 20px;
+        margin-bottom: 5.56vw;
+    }
+
+    #right-area .horizontal-block div p {
+        font-size: 27px;
+        font-size: 7.5vw;
+    }
+
+    #right-area .button {
+        margin-top: 10px;
+        margin-top: 2.78vw;
+        margin-bottom: 30px;
+        margin-bottom: 8.33vw;
+    }
+
+    .contact-block {
+        flex-direction: column;
+        height: 204px;
+        height: 56.67vw;
+        box-sizing: border-box;
+        align-items: start;
+        padding: 10px;
+        padding: 2.78vw;
+        height: auto;
+        border-radius: 15px;
+        border-radius: 4.17vw;
+    }
+
+    .contact-block img {
+        width: 90px;
+        width: 25vw;
+        height: 90px;
+        height: 25vw;
+        border-radius: 10px;
+        border-radius: 2.78vw;
+    }
+
+    #right-area .contact-info p:first-of-type {
+        font-size: 22px;
+        font-size: 6.11vw;
+    }
+
+    #right-area .contact-info p:last-of-type {
+        font-size: 12px;
+        font-size: 3.33vw;
+    }
+
+    #right-area .contact-info p br {
+        display: none;
+    }
+    #right-area .contact-info {
+        position: relative;
+        bottom: 5px;
+        bottom: 1.39vw;
+    }
+
+    #right-area .contact-sales p {
+        font-size: 24px;
+        font-size: 6.67vw;
+        margin-top: 19px;
+        margin-top: 5.28vw;
+    }
+
+    #right-area .social-icons {
+        margin-top: 6px;
+        margin-top: 1.67vw;
+    }
+    
+    .social-icons a {
+        width: 45px;
+        width: 12.5vw;
+        height: 45px;
+        height: 12.5vw;
+        border-radius: 15px;
+        border-radius: 4.17vw;
+    }
+    
+    .social-icons svg {
+        width: 28px;
+        width: 7.78vw;
+        height: auto;
+    }
+    
+
+    #right-area > * {
+        padding-left: 10px;
+        padding-left: 2.78vw;
+        padding-right: 10px
+    }
+
+    #seven-years-future {
+        padding: 20px;
+        padding: 5.56vw;
+        padding-top: 30px;
+        padding-top: 8.33vw;
+        padding-right: 2.78vw;
+    }
+    
+    #seven-years-future .button {
+        margin-left: 0;
+        margin-top: 20px;
+        margin-top: 5.56vw;
+        margin-bottom: 10px;
+        margin-bottom: 2.78vw;
+    }
+
+    #seven-years-future .youtube-logo {
+        width: 195px;
+        width: 54.17vw;
+        height: 49px;
+        height: 13.61vw;
+        border-radius: 0 7vw 7vw 0;
+        padding-left: 25px;
+        padding-left: 6.94vw;
+        left: -5.56vw;
+        margin-bottom: 20px;
+        margin-bottom: 5.56vw;
+        box-sizing: border-box;
+    
+    }
+
+    #seven-years-future .youtube-logo img {
+        width: 133px;
+        width: 36.94vw;
+        height: 29px;
+        height: 8.06vw;
+    }
+
+    .youtube-section h3 {
+        font-size: 27px;
+        font-size: 7.5vw;
+        max-width: 60vw;
+        margin-bottom: 5px;
+        margin-bottom: 1.39vw;
+    }
+    
+    .youtube-section p {
+        margin: 0;
+        margin-bottom: 20px;
+        margin-bottom: 5.56vw;
+        font-size: 14px;
+        font-size: 3.89vw;
+    }
+
+    .social-links-block {
+        flex-direction: column;
+        border-radius: 20px;
+        border-radius: 5.56vw;
+        align-items: baseline;
+        background-image: url("images/footer-bg_mobile.png");
+    
+    }
+
+    .social-links-block p {
+        font-size: 14px;
+        font-size: 3.89vw;
+        margin-top: 30px;
+        margin-top: 8.33vw;
+        margin-left: 20px;
+        margin-left: 5.56vw;
+        max-width: 78vw;
+    }
+
+    .icons {
+        margin-bottom: 30px;
+        margin-bottom: 8.33vw;
+        margin-left: 20px;
+        margin-left: 5.56vw;
+        gap: 20px;
+        gap: 5.56vw;
+    
+    }
+
+    .icon {
+        width: 70px;
+        width: 19.44vw;
+        height: 70px;
+        height: 19.44vw;
+        border-radius: 15px;
+        border-radius: 4.17vw;
+    }
+
+    .icon svg {
+        width: 44px;
+        width: 12.22vw;
+        height: auto;
+    }
+
+    .info-column span, .info-column span a {
+        font-size: 12px;
+        font-size: 3.33vw;
+        margin-bottom: 10px;
+        margin-bottom: 2.78vw;;
+    
+    }
+
+    .info-block {
+        margin: 20px 15px 32px 15px;
+        margin: 5.56vw 4.17vw 8.89vw 4.17vw;
+    }
+}

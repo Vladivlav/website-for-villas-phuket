@@ -395,6 +395,8 @@
     
     section#attractive-direction .facts-wrapper {
         height: auto !important;
+        margin-top: 5.56vw;
+    
     }
 
     section#attractive-direction p.main-thought,
@@ -912,6 +914,7 @@
     
     #best-points .container > h2:nth-of-type(2) {
         padding-left: 2.78vw;
+    
     }
     
     section#best-points .container > h2 {
@@ -953,6 +956,7 @@
         display: flex;
         flex-direction: column;
         gap: 5.56vw;
+        padding-top: 8.33vw;
     
     }
     

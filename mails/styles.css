@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+.section {
+    padding: 10px;
+    padding: 1.67vw;
+    text-align: left;
+    background-color: #ffffff;
+    margin: 10px;
+    margin: 1.67vw;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    border-radius: 3.33vw;
+}
+.section:last-of-type {
+    padding: 0;
+    border: 0;
+    background-color: unset;
+}
+.section h3 {
+    margin-top: 0;
+    font-size: 20px;
+}
+.logo {
+    width: 150px;
+    height: 60px;
+    width: 25vw;
+    height: 10vw;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-left: 1.67vw;
+    margin-right: 3.33vw;
+    margin-bottom: 30px;
+    margin-bottom: 5vw;
+}
+.text {
+    margin: 0;
+    font-family: 'Igra Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    font-size: 5vw;
+    text-align: left;
+    line-height: 100%;
+    color: white;
+    margin-left: 10px;
+    margin-left: 1.67vw;
+    max-width: 424px;
+}
+.text span {
+    color: #FCBD21;
+    font-weight: bold;
+}
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    background-color: #FCBD21;
+    border-radius: 4.17vw;
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-right: 25px;
+    padding-left: 25px;
+    cursor: pointer;
+    font-family: 'Commissioner';
+    font-size: 15px;
+    font-size: 2.5vw;
+    line-height: 105%;
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #393939;
+    padding-left: 4.17vw;
+    padding-right: 4.17vw;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    margin-bottom: 3.33vw;
+}
+.button svg {
+    margin-left: 10px;
+    margin-left: 1.67vw;
+}
+.horizontal-block {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+    margin: 5vw 0;
+}
+.horizontal-block img {
+    width: 175px;
+    width: 29.17vw;
+    margin-right: 20px;
+    margin-right: 3.33vw;
+}
+#right-area .horizontal-block div p {
+    font-family: 'Igra Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    font-size: 5vw;
+    line-height: 100%;
+    color: #299948;
+}
+#right-area .button {
+    background-color: #299948;
+    color: white;
+    margin-left: 0;
+}
+.contact-block {
+    display: flex;
+    align-items: end;
+    margin: 20px 0;
+    background: #393939;
+    height: 110px;
+    height: 18.33vw;
+    padding: 1.67vw;
+    box-sizing: border-box;
+    border-radius: 15px;
+    border-radius: 2.5vw;
+    justify-content: space-between;
+}
+
+    .andrey-wrapper {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.contact-block img {
+    margin-right: 15px;
+    width: 90px;
+    height: 90px;
+    border-radius: 10px;
+    width: 15.0vw;
+    height: 15.0vw;
+    border-radius: 1.67vw;
+}
+.contact-info {
+    text-align: left;
+}
+#right-area .contact-info p {
+    font-family: 'Igra Sans';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 24px;
+    font-size: 4vw;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+#right-area .contact-sales p {
+    font-family: 'Igra Sans';
+    font-style: normal;
+    font-weight: 400 !important;
+    font-size: 24px;
+    font-size: 4vw;
+    line-height: 100%;
+    color: #FCBD21;
+    margin-right: 50px;
+    margin-right: 8.33vw;
+}
+#right-area .contact-info p:last-of-type {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    font-size: 2.33vw;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-top: 6px;
+    margin-top: 1vw;
+}
+.social-icons a {
+    width: 45px;
+    height: 45px;
+    width: 7.5vw;
+    height: 7.5vw;
+    border: 1px solid #FCBD21;
+    border-radius: 2.5vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-icons svg {
+    width: 4.67vw;
+    height: auto;
+}
+.youtube-section {
+    position: relative;
+}
+.youtube-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-family: 'Igra Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    font-size: 5.67vw;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.youtube-section p {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 2.67vw;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+.youtube-section img {
+    max-width: 100%;
+    margin-bottom: 0;
+    width: 100%;
+
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 3.33vw;
+    gap: 1.67vw;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border: 1px solid #299948;
+    border-radius: 2.5vw;
+    width: 11.7vw;
+    height: 11.7vw;
+    cursor: pointer;
+}
+.icon svg {
+    width: 44px;
+    height: auto;
+    width: 7.33vw;
+    height: auto;
+}
+.info-block {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-top: 3.33vw;
+    margin-bottom: 5.67vw;
+    margin-right: 5vw;
+    margin-left: 5vw;
+}
+.info-column {
+    text-align: left;
+}
+.info-column span, .info-column span a {
+    display: block;
+    margin-bottom: 15px;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 2.67vw;
+    line-height: 100%;
+    color: #959595;
+    margin-bottom: 2.5vw;
+}
+.info-column span a {
+    text-align: right;
+}
+.info-column span a.tel {
+    text-decoration: none;
+}
+#buy-for-myself {
+    background-color: #232323;
+    background-image: url("images/open-guide-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#seven-years-future {
+    background-color: #232323;
+    background-image: url("images/handsome-denis-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+    padding: 3.33vw;
+    padding-top: 30px;
+    padding-top: 5vw;
+}
+#seven-years-future .youtube-logo {
+    width: 195px;
+    height: 49px;
+    height: 8.17vw;
+    width: 32.5vw;
+    background: #232323;
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: -3.33vw;
+    padding-left: 4.17vw;
+    border-radius: 0 5vw 5vw 0;
+    margin-bottom: 30px;
+    margin-bottom: 5vw;
+}
+#seven-years-future .youtube-logo img {
+    height: 29px;
+    height: 4.83vw;
+}
+#right-area {
+    border: 0;
+    background-image: url("images/download-guide-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    padding-top: 5vw;
+    padding-left: 20px;
+    padding-left: 3.33vw;
+    background-position: bottom;
+}
+#right-area p {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    font-size: 2.67vw;
+    line-height: 120%;
+    color: #393939;
+    margin: 0;
+}
+#right-area p:first-of-type {
+    font-weight: 600;
+}
+#buy-for-myself img {
+    width: 100%;
+}
+.social-links-block {
+    display: flex;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #F9F9F9;
+    background-image: url("images/footer-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    align-items: center;
+    border-radius: 3.33vw;
+}
+.social-links-block p {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    font-size: 2.67vw;
+    line-height: 120%;
+    color: #393939;
+    margin: 3.33vw;
+    margin-right: 0;
+}
+   
+.contact-block a {
+    text-decoration: none ;
+}
