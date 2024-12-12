@@ -1,10 +1,10 @@
 @media (max-width: 600px) {
     #buy-for-myself {
-        background-image: url("images/open-guide-bg_mobile.png");
+        background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/open-guide-bg_mobile.png");
     }
 
     #right-area {
-        background-image: url("images/download-guide-bg.png");
+        background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/download-guide-bg.png");
         padding-top: 30px;
         padding-top: 8.33vw;
         padding-left: 10px;
@@ -231,7 +231,7 @@
         border-radius: 20px;
         border-radius: 5.56vw;
         align-items: baseline;
-        background-image: url("images/footer-bg_mobile.png");
+        background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/footer-bg_mobile.png");
     
     }
 

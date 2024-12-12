@@ -284,14 +284,14 @@ body {
 }
 #buy-for-myself {
     background-color: #232323;
-    background-image: url("images/open-guide-bg.png");
+    background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/open-guide-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 #seven-years-future {
     background-color: #232323;
-    background-image: url("images/handsome-denis-bg.png");
+    background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/handsome-denis-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -321,7 +321,7 @@ body {
 }
 #right-area {
     border: 0;
-    background-image: url("images/download-guide-bg.png");
+    background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/download-guide-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 30px;
@@ -351,7 +351,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: #F9F9F9;
-    background-image: url("images/footer-bg.png");
+    background-image: url("https://website-for-villas-phuket.onrender.com/mails/images/footer-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
