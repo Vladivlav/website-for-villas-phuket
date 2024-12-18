@@ -59,12 +59,53 @@ document.querySelectorAll('#prices-and-benefits .form-button').forEach(button =>
 
 document.querySelectorAll('#check-objects .form-button').forEach(button => {
   button.addEventListener('click', function() {
+    // Проверяем, что у кнопки есть класс 'active'
     if (button.classList.contains('active')) {
-      const backToBlur = document.querySelector('#check-objects .header-section');
-      const result     = document.querySelector('#check-objects .quiz-result');
+      const container = document.querySelector('#check-objects');
+      const backToBlur = container.querySelector('.header-section');
+      const result = container.querySelector('.quiz-result');
 
       result.classList.remove('hidden');
       backToBlur.classList.add('blur');
+
+      // Новый код для отправки данных
+      const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
+      const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
+      const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
+
+      // Проверяем, что пользователь дал согласие (наличие класса 'active')
+      if (!button.classList.contains('active')) {
+        alert('Вы должны согласиться с политикой конфиденциальности!');
+        return;
+      }
+
+      // Формируем данные для отправки
+      const data = {
+        to_email: email,
+        type: "fourth",
+        name: name,
+        phone: phone
+      };
+
+      // Отправляем запрос
+      fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then(response => response.text()) // Получаем текстовый ответ
+        .then(text => {
+          alert(text); // Отображаем текст ответа в alert
+        })
+        .catch(error => {
+          console.error('Ошибка:', error);
+          alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
+        });
+    } else {
+      // Если у кнопки нет класса 'active'
+      alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
     }
   });
 });
