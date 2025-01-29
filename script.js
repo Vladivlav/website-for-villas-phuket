@@ -435,6 +435,12 @@ function showNextFact() {
 
 factContainers.forEach(container => {
   container.addEventListener('click', showNextFact);
+
+  container.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', event => {
+      event.stopPropagation();
+    });
+  });
 });
 
 // slider first page

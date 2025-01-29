@@ -13,7 +13,6 @@ body, html {
     left: 1.667vw;
     border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
     z-index: 2000;
-
 }
 #line-around-sections-right {
     position: fixed;
@@ -22,7 +21,6 @@ body, html {
     left: 6.667vw;
     border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
     z-index: 2000;
-
 }
 #line-start-30 {
     position: fixed;
@@ -31,7 +29,6 @@ body, html {
     left: 40vw;
     border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
     z-index: 2000;
-
 }
 #line-start-640 {
     position: fixed;
@@ -49,7 +46,6 @@ body, html {
     right: 35vw;
     border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
     z-index: 2000;
-
 }
 
 .flex {
@@ -66,14 +62,12 @@ body, html {
 .space-between {
     display: flex;
     justify-content: space-between;
-
 }
 
 body {
     background-color: white;
     max-width: 100%;
     margin: 0 auto;
-
 }
 
 .soon-link {
@@ -82,7 +76,6 @@ body {
     height: 0.25vw;
     top: 0.25vw;
     right: -0.25vw;
-
 }
 
 section {
@@ -113,11 +106,8 @@ footer .grid16 .flex:first-of-type {
     padding-right: 18.25vw;
 }
 
-footer .grid8 .flex:first-of-type {}
-
 footer .footer-nav .grid16 {
     padding-right: 15.33vw;
-
 }
 
 .grid16 {
@@ -216,6 +206,7 @@ section#attractive-direction .last-fact-container > svg {
 
 section#attractive-direction .fact-container.current {
     display: grid;
+    z-index: 2020;
 }
 
 section#attractive-direction .fact-container.current .fact-left-part .fact-footer span.fact-button {
@@ -374,7 +365,11 @@ section#attractive-direction .fact-container .fact-left-part .fact-footer span.f
     padding: 0 1.25vw;
     right: -2.5vw;
     transition: 0.3s ease-in-out;
+}
 
+section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button a {
+    text-decoration: none;
+    color: inherit;
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button.yellow {
