@@ -1739,8 +1739,7 @@ section#best-points .grid .grid-item.img {
     margin-left: 0.25vw;
     stroke: black;
     width: 1.25vw;
-    height: 0.33vw;
-
+    height: auto;
 }
 
 .form-agreement {
