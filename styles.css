@@ -1835,7 +1835,7 @@ section#best-points .grid .grid-item.img {
     display: flex;
     flex-direction: column;
     margin-top: 7.08vw;
-
+    z-index: 2020;
 }
 
 #prices-and-benefits .header-section {
