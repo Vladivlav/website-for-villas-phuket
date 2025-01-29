@@ -829,7 +829,7 @@ section#main-page > header {
 }
 
 .main-nav a.highlight {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #848484;
     padding: 2vw 1.5vw;
     border-radius: 0.83vw;
     box-sizing: border-box;
@@ -841,6 +841,7 @@ section#main-page > header {
 .main-nav a.highlight:hover {
     background: #FCBD21;
     color: #393939;
+
 }
 
 .language-selector img {
@@ -1021,12 +1022,15 @@ div#special-offer-slider div.stats .digits-description {
 
 
 span#for-life::before {
-    content: url("images/for_life_before.png");
+    content: '';
     display: inline-block;
     position: relative;
     top: 0.5vw;
     margin-right: 0.92vw;
-
+    background-image: url("images/for_life_before.png");
+    background-size: contain;
+    width: 13.34vw;
+    height: 3.17vw;
 }
 
 section#company-owner {
@@ -3267,7 +3271,7 @@ section#news div#news-list .news-description {
     width: 100%;
     margin: 0 auto;
     padding: 2.5vw;
-    height: 29.17vw;
+    padding-top: 2.17vw;
     background-color: #393939;
     opacity: 0.9;
     border-radius: 1.67vw;
@@ -3276,7 +3280,6 @@ section#news div#news-list .news-description {
     left: 10.83vw;
     height: initial;
     overflow: hidden;
-
 }
 
 .offers-header {
@@ -3390,22 +3393,20 @@ section#news div#news-list .news-description {
 }
 
 .offer {
-    background-color: #333;
-    border-radius: 1.67vw;
     overflow: hidden;
     width: 23.33vw;
-
 }
 
 .offer-image {
-    width: 25.0vw;
+    width: 100%;
     position: relative;
-    height: 13.92vw;
+    height: auto;
 }
 
 .offer-image img {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
+
 }
 
 .offer-label {
@@ -3421,7 +3422,8 @@ section#news div#news-list .news-description {
 }
 
 .offer-info {
-    padding: 1.67vw;
+    padding-top: 1vw;
+
 }
 
 .offer-info h3 {
@@ -3448,7 +3450,7 @@ section#news div#news-list .news-description {
 
 .offer-button {
     display: inline-block;
-    margin-top: 0.83vw;
+    margin-top: 1vw;
     padding: 0.58vw 1.25vw;
     border: 1px solid #FCBD21;
     color: white;
@@ -3456,10 +3458,11 @@ section#news div#news-list .news-description {
     border-radius: 1.67vw;
     font-size: 0.75vw;
     transition: background-color 0.3s;
+
 }
 
 .offer-button svg {
-    margin-left: 1.25vw;
+    margin-left: 0.83vw;
     width: 1.25vw;
     height: auto;
     stroke: white;
