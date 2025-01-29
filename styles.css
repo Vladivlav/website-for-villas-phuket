@@ -1132,12 +1132,11 @@ section#best-points .grid .grid-item.img {
     flex-direction: row;
     gap: 3.33vw;
     flex-wrap: wrap;
-
 }
 
 #best-points .grid-item {
     background-color: #ffffff;
-    border-radius: 0.83vw;
+    border-radius: 1.25vw;
     padding: 1.67vw;
     box-shadow: 0 0.33vw 0.83vw rgba(0, 0, 0, 0.1);
     display: flex;
@@ -1145,7 +1144,7 @@ section#best-points .grid .grid-item.img {
     height: 10.83vw;
     justify-content: space-between;
     box-sizing: border-box;
-
+    z-index: 2010;
 }
   
 #best-points .item1 {
