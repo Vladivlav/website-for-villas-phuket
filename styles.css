@@ -59,6 +59,10 @@ body, html {
     overflow: hidden;
 }
 
+.height100 {
+    height: 100%;
+}
+
 .space-between {
     display: flex;
     justify-content: space-between;
@@ -142,6 +146,8 @@ section#main-page #logo {
 
 section#main-page #logo img {
     margin-top: 0.92vw;
+    width: 6.17vw;
+    height: auto;
 }
 
 section#main-page  .right-line {
@@ -198,7 +204,7 @@ section#attractive-direction .last-fact-container {
     opacity: 0;
     transition: 0.3s ease-in-out;
     height: 11.5vw;
-
+    z-index: 2010;
 }
 
 section#attractive-direction .last-fact-container > svg {
@@ -249,7 +255,7 @@ section#attractive-direction .fact-container .fact-left-part {
     transition: 0.3s ease-in-out;
     opacity: 0;
     background-size: 120%;
-
+    z-index: 2010;
 }
 
 section#attractive-direction .last-fact-container .fact-left-part {
@@ -529,6 +535,7 @@ section#attractive-direction .fact-container .fact-right-part {
     grid-row: span 1;
     width: 100%;
     height: 100%;
+    z-index: 2010;
 }
 
 section#attractive-direction .fact-container .fact-right-part {
@@ -736,8 +743,6 @@ section#main-page {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    z-index: 2;
-
 }
 
 section#main-page > header {
@@ -872,6 +877,11 @@ div#greetings {
     width: 100%;
     height: 100%;
     color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    padding-bottom: 1.67vw;
 }
 
 div#greetings .yellow-link {
@@ -920,7 +930,7 @@ div#text {
     display: flex;
     flex-direction: column;
     padding-left: 6.67vw;
-    padding-top: 7.92vw;
+    /* padding-top: 7.92vw; */
     font-family: igra-sans;
     font-style: normal;
     font-weight: 400;
@@ -939,11 +949,10 @@ div#location_tag {
     margin-bottom: 0.92vw;
 }
 
-div#location_tag::before {
-    content: url("images/location-mark.svg");
-    display: inline-block;
-    position: relative;
-    margin-right: 0.42vw;
+div#location_tag svg {
+    height: 0.83vw;
+    width: auto;
+    margin-right: 0.417vw;
 }
 
 div#special-offer-slider {
@@ -976,10 +985,9 @@ div#special-offer-slider div.stats .rent-stats {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
     padding: 0 1.25vw;
     background-size: cover;
-
+    position: relative;
 }
 
 div#special-offer-slider div.stats .sale-stats {
@@ -990,10 +998,9 @@ div#special-offer-slider div.stats .sale-stats {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    align-items: baseline;
     padding: 0 1.25vw;
     background-size: cover;
-
+    position: relative;
 }
 
 div#special-offer-slider div.stats .digits {
@@ -1002,9 +1009,10 @@ div#special-offer-slider div.stats .digits {
     font-style: normal;
     font-weight: 400;
     font-size: 3.0vw;
-    line-height: 3.0vw;
+    /* line-height: 3.0vw; */
     color: #FCBD21;
-    margin-top: 1.25vw;
+    position: relative;
+    top: 1.25vw;
 }
 
 div#special-offer-slider div.stats .digits-description {
@@ -1012,11 +1020,11 @@ div#special-offer-slider div.stats .digits-description {
     font-style: normal;
     font-weight: 400;
     font-size: 1.0vw;
-    line-height: 1.33vw;
+    line-height: 1vw;
     color: #FFFFFF;
     margin: 0;
-    position: relative;
-    bottom: 0.58vw;
+    position: absolute;
+    top: 3.60vw;
 }
 
 
@@ -3280,6 +3288,8 @@ section#news div#news-list .news-description {
     left: 10.83vw;
     height: initial;
     overflow: hidden;
+    margin-bottom: 0.5vw;
+    z-index: 2010;
 }
 
 .offers-header {
@@ -3394,7 +3404,7 @@ section#news div#news-list .news-description {
 
 .offer {
     overflow: hidden;
-    width: 23.33vw;
+    min-width: 23.33vw;
 }
 
 .offer-image {
@@ -3411,7 +3421,7 @@ section#news div#news-list .news-description {
 
 .offer-label {
     position: absolute;
-    top: 0.83vw;
+    top: 0.75vw;
     left: 0.83vw;
     padding: 0.42vw 0.83vw;
     background-color: #393939;
@@ -3451,14 +3461,15 @@ section#news div#news-list .news-description {
 .offer-button {
     display: inline-block;
     margin-top: 1vw;
-    padding: 0.58vw 1.25vw;
+    padding: 0 1.25vw;
+    height: 2.17vw;
+    line-height: 2.17vw;
     border: 1px solid #FCBD21;
     color: white;
     text-decoration: none;
     border-radius: 1.67vw;
     font-size: 0.75vw;
     transition: background-color 0.3s;
-
 }
 
 .offer-button svg {

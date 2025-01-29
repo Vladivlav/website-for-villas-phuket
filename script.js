@@ -437,36 +437,57 @@ factContainers.forEach(container => {
   container.addEventListener('click', showNextFact);
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-  const offersContent = document.querySelector('.offers-content');
-  const prevBtn = document.querySelector('.offers-nav .prev-btn');
-  const nextBtn = document.querySelector('.offers-nav .next-btn');
-  const currentNumber = document.querySelector('section#main-page .offers-count .current-number');
+// slider first page
+const slider = document.querySelector(".offers-content");
+const slides = Array.from(document.querySelectorAll(".offer"));
+const prevBtn = document.querySelector(".prev-btn");
+const nextBtn = document.querySelector(".next-btn");
+const currentNumber = document.querySelector(".current-number");
+const totalNumber = document.querySelector(".total-number");
 
-  // Изначальное значение left
-  let currentLeft = 0;
+const slideWidth = -25.83; // Перемещение с учетом ширины блока и gap в vw
 
-  prevBtn.addEventListener('click', function() {
-    if (currentLeft < 0) { // Не выполняем, если currentLeft == 0
-      currentLeft += 100;
-      offersContent.style.left = `${currentLeft}vw`;
+slider.style.transform = `translateX(0vw)`;
 
-      // Уменьшаем значение currentNumber, если больше 1
-      let number = parseInt(currentNumber.textContent);
-      if (number > 1) {
-        currentNumber.textContent = '0' + `${number - 1}`;
-      }
-    }
-  });
+totalNumber.textContent = `/0${slides.length}`;
 
-  nextBtn.addEventListener('click', function() {
-    if (currentLeft > -100) { // Не выполняем, если currentLeft == -100
-      currentLeft -= 100;
-      offersContent.style.left = `${currentLeft}vw`;
+let currentIndex = 1;
+const updateCounter = () => {
+    currentNumber.textContent = `0${currentIndex}`;
+};
 
-      // Увеличиваем значение currentNumber
-      let number = parseInt(currentNumber.textContent);
-      currentNumber.textContent = '0' + `${number + 1}`;
-    }
-  });
+const moveSlide = () => {
+    slider.style.transition = "transform 0.4s ease-in-out";
+    slider.style.transform = `translateX(${slideWidth}vw)`;
+};
+
+const moveSlideBack = () => {
+  slider.style.transition = "none";
+  slider.style.transform = `translateX(${slideWidth}vw)`;
+  slider.insertBefore(slider.lastElementChild, slider.firstElementChild);
+};
+
+nextBtn.addEventListener("click", () => {
+    moveSlide();
+    setTimeout(() => {
+        slider.style.transition = "none";
+        slider.appendChild(slider.firstElementChild);
+        slider.style.transform = "translateX(0vw)";
+        currentIndex = (currentIndex % slides.length) + 1;
+        updateCounter();
+    }, 400);
 });
+
+prevBtn.addEventListener("click", () => {
+  moveSlideBack();
+  setTimeout(() => {
+    slider.style.transition = "transform 0.4s ease-in-out";
+    slider.style.transform = `translateX(0vw)`;
+    currentIndex = (currentIndex - 2 + slides.length) % slides.length + 1;
+    updateCounter();
+  }, 100);
+});
+
+updateCounter();
+
+// slider first page end
