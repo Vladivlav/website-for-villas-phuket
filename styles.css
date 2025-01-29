@@ -631,6 +631,7 @@ section#youtube-video .youtube-container .text-container p {
     display: flex;
     align-items: center;
     color: #FFFFFF;
+    z-index: 2020;
 }
 
 section#youtube-video .youtube-container .text-container a {
@@ -4023,7 +4024,6 @@ section#tenth-section div.content .block-link span,
     position: relative;
     left: -2.08vw;
     top: 0;
-
 }
 
 #prices-and-benefits .quiz-option span {
