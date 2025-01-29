@@ -727,7 +727,27 @@ section#quote-with-four-men div.quote-sign {
     padding-bottom: 6.67vw;
     color: white;
     transform: translateX(-43.33vw);
+    display: flex;
+    flex-direction: column;
+    gap: 0.67vw;
+}
 
+section#quote-with-four-men div.quote-sign span:first-of-type {
+    font-family: 'Igra Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.33vw;
+    line-height: 100%;
+    max-width: 6vw;
+}
+
+section#quote-with-four-men div.quote-sign span:last-of-type {
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.75vw;
+    line-height: 113.2%;
+    max-width: 7vw;
 }
 
 section#main-page {
