@@ -385,7 +385,7 @@
         padding-bottom: 1.56vw;
         box-sizing: border-box;
         width: 32.19vw;
-    
+        min-width: unset;
     }
     
     section#attractive-direction .last-fact-container .fact-right-part svg {
@@ -2284,7 +2284,7 @@
         height: 100%;
         max-width: 85.42vw;
         left: 50%;
-        transform: translateX(42.71vw);
+        transform: translateX(42.65vw);
         border-right: 1px solid rgba(149, 149, 149, 0.15);
         z-index: 100;
     }
