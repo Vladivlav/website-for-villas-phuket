@@ -713,7 +713,6 @@
         max-width: 100.0vw;
         box-sizing: border-box;
         padding: 7.81vw 7.29vw 10.42vw 7.29vw;
-        z-index: 22;
     }
     
     #check-objects .quiz-result h4,
