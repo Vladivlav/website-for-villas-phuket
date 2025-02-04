@@ -2164,6 +2164,7 @@
         font-size: 2.97vw;
         line-height: 100%;
         margin-left: 1.56vw;
+        top: 1.25vw;
     }
     
     div#special-offer-slider div.stats .digits-description {
@@ -2196,12 +2197,9 @@
         min-height: 6.25vw;
         min-width: 13.54vw;
         background-size: contain;
-        justify-content: center;
         padding: 0;
     }
-    
-    
-    
+
     div#special-offer-slider div.stats .rent-stats {
         background-position: left;
     }
