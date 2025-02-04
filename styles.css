@@ -1596,9 +1596,10 @@ section#best-points .grid .grid-item.img {
 #check-objects .form-select div.feddback-options-list > span svg,
 #prices-and-benefits .form-select div.feddback-options-list > span svg
 {
-    padding-right: 0.83vw;
-    transform: rotate(180deg);
-
+    /* padding-right: 0.83vw; */
+    /* transform: rotate(180deg); */
+    position: absolute;
+    right: 1.25vw;
 }
 
 #investments-base .form-select div.feddback-options-list span,
@@ -1622,12 +1623,21 @@ section#best-points .grid .grid-item.img {
     border-radius: 50vw;
     border: 1px solid #FCBD21;
     box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
 }
 
 #prices-and-benefits .form-select div.feddback-options-list span:first-of-type {
     border-color: #4caf50;
     box-sizing: border-box;
+}
 
+#prices-and-benefits .form-select div.feddback-options-list > span:first-of-type {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 #investments-base .form-select div.feddback-options-list span.active:hover,
@@ -1660,6 +1670,8 @@ section#best-points .grid .grid-item.img {
     line-height: 2.17vw;
     padding-left: 1.25vw;
     z-index: 10;
+    justify-content: space-between;
+    padding-right: 1.25vw;
 }
 
 #prices-and-benefits .form-select > span {
@@ -1686,7 +1698,8 @@ section#best-points .grid .grid-item.img {
     border-radius: 1.08vw;
     box-sizing: border-box;
     background: white;
-
+    justify-content: space-between;
+    padding-right: 1.25vw;
 }
 
 .form-actions {

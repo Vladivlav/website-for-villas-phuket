@@ -266,38 +266,12 @@ document.querySelectorAll('#prices-and-benefits .prev-button').forEach(button =>
   });
 });
 
-document.querySelectorAll('#prices-and-benefits .form-select div.feddback-options-list > span.option').forEach(option => {
-  option.addEventListener('click', function() {
-    const option_text = option.textContent;
-    const option_list = document.querySelector('#prices-and-benefits .form-select div.feddback-options-list');
-    const option_input = document.querySelector('#prices-and-benefits .form-select > span');
-
-    option_list.style.display = 'none';
-    option_input.textContent = option_text;
-    option_input.classList.add('selected');
-    option_input.style.display = 'flex';
-  });
-});
-
 document.querySelectorAll('#prices-and-benefits .form-select > span').forEach(span => {
   span.addEventListener('click', function() {
     const option_list = document.querySelector('#prices-and-benefits .form-select div.feddback-options-list');
 
     option_list.style.display = '';
     span.style.display = 'none';
-  });
-});
-
-document.querySelectorAll('#check-objects .form-select div.feddback-options-list > span.option').forEach(option => {
-  option.addEventListener('click', function() {
-    const option_text = option.textContent;
-    const option_list = document.querySelector('#check-objects .form-select div.feddback-options-list');
-    const option_input = document.querySelector('#check-objects .form-select > span');
-
-    option_list.style.display = 'none';
-    option_input.textContent = option_text;
-    option_input.classList.add('selected');
-    option_input.style.display = 'flex';
   });
 });
 
@@ -315,12 +289,38 @@ document.querySelectorAll('#investments-base .form-select div.feddback-options-l
   option.addEventListener('click', function() {
     const option_text = option.textContent;
     const option_list = document.querySelector('#investments-base .form-select div.feddback-options-list');
-    const option_input = document.querySelector('#investments-base .form-select > span');
+    const option_input = document.querySelector('#investments-base .form-select > span > span');
 
     option_list.style.display = 'none';
     option_input.textContent = option_text;
     option_input.classList.add('selected');
-    option_input.style.display = 'flex';
+    document.querySelector('#investments-base .form-select > span').style.display = 'flex';
+  });
+});
+
+document.querySelectorAll('#check-objects .form-select div.feddback-options-list > span.option').forEach(option => {
+  option.addEventListener('click', function() {
+    const option_text = option.textContent;
+    const option_list = document.querySelector('#check-objects .form-select div.feddback-options-list');
+    const option_input = document.querySelector('#check-objects .form-select > span > span');
+
+    option_list.style.display = 'none';
+    option_input.textContent = option_text;
+    option_input.classList.add('selected');
+    document.querySelector('#check-objects .form-select > span').style.display = 'flex';
+  });
+});
+
+document.querySelectorAll('#prices-and-benefits .form-select div.feddback-options-list > span.option').forEach(option => {
+  option.addEventListener('click', function() {
+    const option_text = option.textContent;
+    const option_list = document.querySelector('#prices-and-benefits .form-select div.feddback-options-list');
+    const option_input = document.querySelector('#prices-and-benefits .form-select > span > span');
+
+    option_list.style.display = 'none';
+    option_input.textContent = option_text;
+    option_input.classList.add('selected');
+    document.querySelector('#prices-and-benefits .form-select > span').style.display = 'flex';
   });
 });
 
@@ -330,17 +330,6 @@ document.querySelectorAll('#investments-base .form-select > span').forEach(span 
 
     option_list.style.display = '';
     span.style.display = 'none';
-  });
-});
-
-document.querySelectorAll('#check-objects .form-select div.feddback-options-list > span.option').forEach(option => {
-  option.addEventListener('click', function() {
-    const option_text = option.textContent;
-    const option_list = document.querySelector('#check-objects .form-select div.feddback-options-list');
-    const option_input = document.querySelector('#check-objects .form-select > span');
-
-    option_list.style.display = 'none';
-    option_input.textContent = option_text
   });
 });
 
