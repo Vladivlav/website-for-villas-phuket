@@ -298,7 +298,7 @@
         font-size: 0.78vw;
         padding: 0 1.3vw;
         display: inline-flex;
-    
+        box-sizing: border-box;
     }
     
     section#attractive-direction p.main-thought {
@@ -1978,18 +1978,17 @@
         max-width: 100.0vw;
         margin: 0 auto;
         overflow: initial;
-        align-items: center;
         padding-top: 6.25vw;
+        box-sizing: border-box;
     }
     
     div#greetings {
         display: flex;
         flex-direction: column;
         align-items: baseline;
-        justify-content: center;
         padding-left: 7.29vw;
         padding-top: 0;
-        padding-bottom: 4.01vw;
+        margin-bottom: 4.01vw;
     }
     
     .offers-header .header-text {
@@ -2036,6 +2035,7 @@
         box-sizing: border-box;
         min-width: 46.67vw;
         left: 6.77vw;
+        bottom: 3.49vw;
     }
     
     .offers-nav button {
@@ -2069,16 +2069,16 @@
         font-size: 1.33vw;
         line-height: 100%;
         margin-top: 1.04vw;
-        margin-bottom: 0.26vw;
+        margin-bottom: 0.156vw;
     }
     
     .offer-info p {
         font-family: 'Commissioner';
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 1.04vw;
         line-height: 130%;
-        margin-bottom: 0.31vw;
+        /* margin-bottom: 0.31vw; */
     }
     
     .offer-image {
