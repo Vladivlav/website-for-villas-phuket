@@ -801,7 +801,7 @@ section#main-page > header {
     display: flex;
     padding-right: 9.17vw;
     gap: 2.500vw;
-
+    align-items: center;
 }
 
 .main-nav > ul > div.language-selector {
