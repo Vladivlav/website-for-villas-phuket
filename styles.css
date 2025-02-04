@@ -1162,6 +1162,10 @@ section#best-points .grid .grid-item.img {
     box-sizing: border-box;
     z-index: 2010;
 }
+
+#best-points .grid-item p.width1920 {
+    display: none;
+}
   
 #best-points .item1 {
     grid-column: span 7;

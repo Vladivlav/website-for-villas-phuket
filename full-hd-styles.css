@@ -613,7 +613,14 @@
         padding: 1.56vw;
         border-radius: 1.25vw;
         box-sizing: border-box;
-    
+    }
+
+    #best-points .grid-item p.width1200 {
+        display: none;
+    }
+
+    #best-points .grid-item p.width1920 {
+        display: inherit;
     }
     
     #best-points .grid {
