@@ -1932,10 +1932,25 @@
         width: 8.33vw;
         min-width: 8.33vw;
     }
+
+    .main-nav > ul > div {
+        padding-right: 0;
+        gap: 1.823vw;
+    }
+
+    .main-nav > ul > div:first-of-type {
+        margin-right: 9vw;
+        gap: 2.18vw;
+    }
+
+    .main-nav > ul > div > li {
+        height: unset;
+    }
     
     .main-nav > ul > div.language-selector {
         width: 3.75vw;
         height: 1.67vw;
+        margin-left: 16.667vw;
     }
     
     .language-selector img:nth-of-type(2) {
@@ -2210,9 +2225,10 @@
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 0.68vw;
+        font-size: 0.67vw;
         line-height: 0.78vw;
         align-self: center;
+        width: 100%;
     }
 
     section#main-page .main-nav > ul li.highlight {
@@ -2233,9 +2249,15 @@
     .main-nav a.highlight {
         padding: 1.72vw;
     }
+
+    .menu {
+        padding-left: 4.167vw;
+    }
     
     .main-nav > ul > li {
-        padding-left: 1.82vw;
+        padding-left: 2.604vw;
+        padding-right: 12.77vw;
+        min-width: 2.083vw;
     }
     
     /* main page end */
