@@ -1052,8 +1052,23 @@
         font-size: 2.92vw;
         line-height: 100%;
         margin-top: 0.78vw;
-    
     }
+
+    #prices-and-benefits .fact-item:nth-child(1) p.little-description {
+        max-width: 12.5vw; /* 240px */
+    }
+      
+    #prices-and-benefits .fact-item:nth-child(2) p.little-description {
+        max-width: 22.81vw; /* 438px */
+    }
+      
+    #prices-and-benefits .fact-item:nth-child(3) p.little-description {
+        max-width: 16.67vw; /* 320px */
+    }
+      
+    #prices-and-benefits .fact-item:nth-child(4) p.little-description {
+        max-width: 28.59vw; /* 549px */
+    }      
     
     #prices-and-benefits .fact-item p.little-description {
         font-size: 1.04vw;
