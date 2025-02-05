@@ -267,6 +267,7 @@
     .faq-ask-question img {
         width: 22.92vw;
         height: 24.06vw;
+        margin-bottom: 0;
     }
     
     .faq-ask-question h3 {
@@ -299,6 +300,10 @@
         padding: 0 1.3vw;
         display: inline-flex;
         box-sizing: border-box;
+    }
+
+    .faq-ask-question span {
+        margin-top: 1.5625vw; 
     }
     
     section#attractive-direction p.main-thought {
