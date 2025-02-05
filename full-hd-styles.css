@@ -403,7 +403,8 @@
     section#youtube-video .youtube-container .text-container a svg,
     #prices-and-benefits .next-button svg,
     section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button svg,
-    section#tenth-section div.content .block-link span svg {
+    section#tenth-section div.content .block-link span svg,
+    #check-objects .next-button svg {
         width: 1.25vw;
         height: auto;
     }
@@ -981,7 +982,6 @@
         line-height: 130%;
     }
     
-    #check-objects .quiz-section .quiz-progress p,
     #prices-and-benefits .quiz-section .quiz-progressprogress-bar p {
         width: 20.4vw;
     }
@@ -1208,11 +1208,6 @@
     
     section#attractive-direction .fact-container .fact-left-part.third {
         background-image: url("images/fact-3-bg-1920.png");
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part {
-    
-        
     }
     
     section#attractive-direction .fact-container.current .fact-left-part {
