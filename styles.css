@@ -2175,7 +2175,7 @@ section#best-points .grid .grid-item.img {
 
 #prices-and-benefits .quiz-options {
     display: flex;
-    gap: 0.83vw;
+    gap: 1.67vw;
     padding-bottom: 1.67vw;
     margin-top: 1.67vw;
     margin-left: 1.67vw;
@@ -2402,7 +2402,22 @@ section#best-points .grid .grid-item.img {
     line-height: 130%;
     color: #393939;
     min-width: unset !important;
+}
 
+#prices-and-benefits .fact-item:nth-child(1) p.little-description {
+    max-width: 11.75vw; /* 141px */
+}
+
+#prices-and-benefits .fact-item:nth-child(2) p.little-description {
+    max-width: 22.33vw; /* 268px */
+}
+
+#prices-and-benefits .fact-item:nth-child(3) p.little-description {
+    max-width: 15.92vw; /* 191px */
+}
+
+#prices-and-benefits .fact-item:nth-child(4) p.little-description {
+    max-width: 27.50vw; /* 330px */
 }
 
 #prices-and-benefits .fact-item strong {
