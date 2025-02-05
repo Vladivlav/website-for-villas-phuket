@@ -2703,7 +2703,7 @@ section#check-objects {
 
 section#additional-company-info {
     background-color: #393939;
-    background-image: url("images/meru-white-back.png");
+    background-image: url("images/meru-white-back.svg");
     background-position: bottom;
     background-repeat: no-repeat;
 }
@@ -2752,6 +2752,8 @@ section#additional-company-info div.award-card {
 
 section#additional-company-info div.award-card img {
     width: 100%;
+    z-index: 2020;
+    position: relative;
 }
 
 section#additional-company-info div.award-card.big {

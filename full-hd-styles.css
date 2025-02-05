@@ -524,7 +524,7 @@
     
     section#tenth-section {
         max-width: initial;
-        height: 100%;
+        height: 49.69vw;
         position: relative;
     }
     
@@ -540,25 +540,27 @@
     }
     
     section#tenth-section div.content {
-        height: calc(100% - 13.54vw);
+        height: 36.15vw;
         width: 100%;
         background-size: cover;
         box-sizing: border-box;
         margin: 0 auto;
-    
+        justify-content: flex-end;
     }
     
     section#tenth-section div.content .wrapper1920 {
-        margin: 0 auto;
-        padding: 7.81vw 7.29vw;
-        width: 100%;
+        margin: unset;
+        padding: 0;
+        width: 17.71vw;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: end;
-        gap: 2.6vw;
-    
+        gap: 2.6042vw;
+        left: unset;
+        transform: unset;
+        margin-right: 7.29vw;
+        max-width: unset;
+        margin-top: 7.29vw;
     }
     
     p#main-thought-comment {
@@ -1480,7 +1482,7 @@
         padding: 0;
         margin: auto;
         background-size: 100.0vw auto;
-    
+        
     }
     
     section#additional-company-info div.country-card.big {
@@ -1586,10 +1588,9 @@
     
     section#additional-company-info div.award-card.big {
         width: 28.13vw;
-        height: 25.21vw;
+        height: 28.125vw;
         box-sizing: border-box;
         padding: 1.56vw;
-    
     }
     
     section#additional-company-info div.award-card > img {
@@ -1882,7 +1883,7 @@
         max-width: 100%;
         height: 40.99vw;
         box-sizing: border-box;
-        background: url("images/check-objects-bg.png");
+        background: url("images/check-objects-bg-1920.png");
         background-repeat: no-repeat;
         background-size: cover;
     
