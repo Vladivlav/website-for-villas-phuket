@@ -1073,6 +1073,7 @@
     #prices-and-benefits .fact-item p.little-description {
         font-size: 1.04vw;
         line-height: 130%;
+        margin-top: 2px;
     }
     
     #prices-and-benefits .fact-item {
