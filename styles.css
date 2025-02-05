@@ -2644,7 +2644,7 @@ section#check-objects {
 #check-objects .quiz-question.active .quiz-option {
     visibility: visible;
     opacity: 1;
-
+    font-size: 1vw;
 }
 
 #check-objects .quiz-option.active span {
@@ -2691,7 +2691,7 @@ section#check-objects {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 500;
-    font-size: 0.75vw;
+    font-size: 1vw !important;!i;!;
     line-height: 100%;
     color: #393939;
 }
@@ -4005,7 +4005,7 @@ section#tenth-section div.content .block-link span,
 #prices-and-benefits .prev-button,
 #prices-and-benefits .quiz-option {
     height: 2.167vw;
-    font-size: 0.75vw;
+    font-size: 1vw;
     line-height: 2.167vw;
     box-sizing: border-box;
     border-radius: 50vw;
@@ -4014,7 +4014,6 @@ section#tenth-section div.content .block-link span,
     width: auto;
     display: inline-flex;
     align-items: center;
-
 }
 #check-objects .quiz-result .result-container .result-footer span,
 #prices-and-benefits .quiz-result .result-container .result-footer span,
