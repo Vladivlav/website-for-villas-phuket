@@ -242,7 +242,7 @@
         overflow: hidden;
         z-index: 10;
         opacity: 0;
-        /* transition: 0.3s ease-in max-height; */
+        transition: 0.3s ease-in;
         display: block;
     
     }
@@ -251,8 +251,6 @@
         opacity: 1;
         max-height: 18.23vw;
         padding-bottom: 1.56vw;
-        transition: 0.3s ease-in max-height;
-    
     }
     
     .faq-item img {
