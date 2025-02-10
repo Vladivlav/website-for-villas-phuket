@@ -2104,6 +2104,12 @@ section#best-points .grid .grid-item.img {
     background-size: auto 100%;
     position: relative;
     z-index: 2020;
+    height: 17.5vw;
+    transition: 0.4s ease-in-out;
+}
+#check-objects .quiz-section.last-slide,
+#prices-and-benefits .quiz-section.last-slide {
+    height: 19.67vw;
 }
 
 #prices-and-benefits .quiz-progress, #check-objects .quiz-progress {
@@ -2529,6 +2535,8 @@ section#check-objects {
     border-radius: 1.25vw;
     z-index: 2020;
     position: relative;
+    height: 17.5vw;
+    transition: 0.4s ease-in-out;
 }
 
 #check-objects .quiz-question {
@@ -2564,7 +2572,6 @@ section#check-objects {
 
 #check-objects .quiz-progress {
     display: flex;
-    margin-bottom: 1.67vw;
     flex-direction: column;
     align-items: baseline;
     position: relative;

@@ -187,46 +187,64 @@ function updateProgressFive(index) {
   // Обработчик для кнопок вперед
   document.querySelectorAll('#check-objects .next-button').forEach(button => {
     button.addEventListener('click', function() {
-      if (!this.classList.contains('active')) return;
-  
-      const currentQuestion = document.querySelector('#check-objects .quiz-question.active');
-      const allQuestions = document.querySelectorAll('#check-objects .quiz-question');
-  
-      if (currentQuestion) {
-        currentQuestion.classList.remove('active');
-        const nextQuestion = currentQuestion.nextElementSibling;
-        if (nextQuestion && nextQuestion.classList.contains('quiz-question')) {
-          nextQuestion.classList.add('active');
-          
-          // Получаем индекс следующего вопроса и обновляем прогресс
-          const newIndex = Array.from(allQuestions).indexOf(nextQuestion);
-          updateProgress(newIndex); // обновляем прогресс
-        }
-      }
-    });
-  });
+        if (!this.classList.contains('active')) return;
 
-  document.querySelectorAll('#prices-and-benefits .next-button').forEach(button => {
-    button.addEventListener('click', function() {
+        const currentQuestion = document.querySelector('#check-objects .quiz-question.active');
+        const allQuestions = document.querySelectorAll('#check-objects .quiz-question');
+        const quizSection = document.querySelector('#check-objects .quiz-section');
+
+        if (currentQuestion) {
+            currentQuestion.classList.remove('active');
+            const nextQuestion = currentQuestion.nextElementSibling;
+            
+            if (nextQuestion && nextQuestion.classList.contains('quiz-question')) {
+                nextQuestion.classList.add('active');
+
+                // Получаем индекс следующего вопроса и обновляем прогресс
+                const newIndex = Array.from(allQuestions).indexOf(nextQuestion);
+                updateProgress(newIndex);
+
+                // Проверяем, является ли следующий вопрос последним
+                if (newIndex === allQuestions.length - 1) {
+                    quizSection.classList.add('last-slide');
+                } else {
+                    quizSection.classList.remove('last-slide');
+                }
+            }
+        }
+    });
+});
+
+document.querySelectorAll('#prices-and-benefits .next-button').forEach(button => {
+  button.addEventListener('click', function() {
       if (!this.classList.contains('active')) return;
-  
+
       const currentQuestion = document.querySelector('#prices-and-benefits .quiz-question.active');
       const allQuestions = document.querySelectorAll('#prices-and-benefits .quiz-question');
-  
+      const quizSection = document.querySelector('#prices-and-benefits .quiz-section');
+
       if (currentQuestion) {
-        currentQuestion.classList.remove('active');
-        const nextQuestion = currentQuestion.nextElementSibling;
-        if (nextQuestion && nextQuestion.classList.contains('quiz-question')) {
-          nextQuestion.classList.add('active');
-          
-          // Получаем индекс следующего вопроса и обновляем прогресс
-          const newIndex = Array.from(allQuestions).indexOf(nextQuestion);
-          updateProgressFive(newIndex); // обновляем прогресс
-        }
+          currentQuestion.classList.remove('active');
+          const nextQuestion = currentQuestion.nextElementSibling;
+
+          if (nextQuestion && nextQuestion.classList.contains('quiz-question')) {
+              nextQuestion.classList.add('active');
+
+              // Получаем индекс следующего вопроса и обновляем прогресс
+              const newIndex = Array.from(allQuestions).indexOf(nextQuestion);
+              updateProgressFive(newIndex);
+
+              // Проверяем, является ли следующий вопрос последним
+              if (newIndex === allQuestions.length - 1) {
+                  quizSection.classList.add('last-slide');
+              } else {
+                  quizSection.classList.remove('last-slide');
+              }
+          }
       }
-    });
   });
-  
+});
+
   // Обработчик для кнопок назад
   document.querySelectorAll('#check-objects .prev-button').forEach(button => {
     button.addEventListener('click', function() {

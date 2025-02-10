@@ -1520,7 +1520,11 @@
         margin-top: 8.33vw;
         border-radius: 4.17vw;
         box-shadow: 1.39vw 1.67vw 3.61vw rgba(0, 0, 0, 0.1);
-    
+        height: unset;
+    }
+
+    #check-objects .quiz-section.last-slide, #prices-and-benefits .quiz-section.last-slide {
+        height: unset;
     }
     
     #prices-and-benefits .quiz-progress,  #check-objects .quiz-progress {
@@ -1727,6 +1731,7 @@
         padding: 5.56vw;
         margin-top: 8.33vw;
         border-radius: 4.17vw;
+        height: unset;
     }
     
 
