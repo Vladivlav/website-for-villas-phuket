@@ -1096,13 +1096,7 @@ section#company-owner div#picture img {
     height: 100%;
 }
 
-section#company-owner #owner-bage {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding-left: 1%;
-    padding-bottom: 1%;
-}
+section#company-owner #owner-bage {}
 
 #investment-info {
     padding-top: 6.67vw;
@@ -1115,15 +1109,34 @@ section#company-owner #owner-bage {
 
 section#company-owner .quote-sign {
     position: absolute;
-    top: 0;
     padding-left: 0.67vw;
     color: white;
-    font-size: 0.78em;
+    font-size: 0.75vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 100%;
+    height: 7.25vw;
+    border-radius: 0.83vw;
+    width: 11.42vw;
+    bottom: 0;
+    left: 0;
+    margin-left: 0.83vw;
+    margin-bottom: 1vw;
+    background-image: url("images/gray-badge-bg-1200.png");url(images/gray-badge-bg-1200.png")";;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+
+section#company-owner .quote-sign span:first-of-type {
+    font-family: igra-sans;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.33vw;
+    line-height: 100%;
+    display: flex;
+    align-items: center;
 }
 
 #best-points {
@@ -4125,8 +4138,6 @@ section#tenth-section div.content .block-link span,
 .lang-option {
     display: flex;
     align-items: center;
-    /* gap: 10px; */
-    /* padding: 10px; */
     cursor: pointer;
     transition: background 0.2s;
     width: 3.92vw;
