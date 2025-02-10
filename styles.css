@@ -963,6 +963,11 @@ div#text {
     color: #FFFFFF;
 }
 
+#for-life {
+    align-items: center;
+    display: inline-flex;
+}
+
 div#location_tag {
     font-family: 'Commissioner';
     font-style: normal;
@@ -1057,9 +1062,9 @@ span#for-life::before {
     content: '';
     display: inline-block;
     position: relative;
-    top: 0.5vw;
+    /* top: 0.5vw; */
     margin-right: 0.92vw;
-    background-image: url("images/for_life_before.png");
+    background-image: url("images/for_life_before-1200.png");
     background-size: contain;
     width: 13.34vw;
     height: 3.17vw;

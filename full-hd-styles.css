@@ -2159,14 +2159,13 @@
     }
     
     span#for-life::before {
-        content: url("images/for_life_before.png");
+        content: '';
         display: inline-block;
         position: relative;
-        top: 0.31vw;
         margin-right: 0.57vw;
         width: 13.33vw;
         height: 3.33vw;
-        background: url("images/for_life_before.png");
+        background-image: url("images/for_life_before-1920.png");
         content: '';
         background-size: 13.33vw 3.33vw;
         background-repeat: no-repeat;

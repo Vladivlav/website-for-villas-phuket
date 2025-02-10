@@ -91,7 +91,7 @@
     section#main-page span#for-life::before {
         width: 29.44vw;
         height: 6.67vw;
-        background: url("images/for_life_before.png");
+        background: url("images/for_life_before-360.png");
         background-repeat: no-repeat;
         content: '';
         background-size: 29.44vw 6.67vw;
