@@ -806,13 +806,13 @@ section#main-page > header {
 
 .main-nav > ul > div.language-selector {
     height: 2.25vw;
-    border-radius: 4.17vw;
-    border: 1px solid #575757;
+    border-radius: 1.17vw;
+    /* border: 1px solid #575757; */
     display: flex;
     align-items: center;
-    padding: 0.25vw;
+    padding: 0;
     gap: 0;
-
+    box-sizing: border-box;
 }
 
 .main-nav > ul > li {
@@ -866,7 +866,15 @@ section#main-page > header {
 }
 
 .language-selector img {
-    height: 2.0vw;
+    height: 1.75vw;
+    width: 1.75vw;
+}
+
+.lang-option img {
+    margin-right: 0.42vw;
+    border-radius: 100px;
+    width: 1.75vw;
+    height: 1.75vw;
 }
 
 .language-selector img:nth-of-type(2) {
@@ -4056,6 +4064,77 @@ section#tenth-section div.content .block-link span,
 
 #prices-and-benefits .quiz-option span {
     font-size: 1vw;
+}
+
+.language-selector {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.selected-lang {
+    display: flex;
+    align-items: center;
+    z-index: 2022;
+    padding: 0.25vw;
+    background: #393939;
+    border-radius: 1.17vw;
+    box-sizing: border-box;
+    width: 3.92vw;
+    border: 1px solid #575757;
+}
+
+.selected-lang .arrow {
+    transition: transform 0.3s;
+    width: 0.83vw;
+    height: auto;
+    margin: 0 0.42vw;
+}
+
+.lang-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-radius: 1.17vw;
+    display: none;
+    flex-direction: column;
+    gap: 0.42vw;
+    background-color: #393939;
+    width: 3.92vw;
+    box-sizing: border-box;
+    height: 9vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2021;
+    padding-top: 2.67vw;
+}
+
+.lang-option {
+    display: flex;
+    align-items: center;
+    /* gap: 10px; */
+    /* padding: 10px; */
+    cursor: pointer;
+    transition: background 0.2s;
+    width: 3.92vw;
+    box-sizing: border-box;
+    font-family: 'Commissioner';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 0.67vw;
+    line-height: 0.75vw;
+    color: #959595;
+    padding-left: 0.25vw;
+}
+
+/* Открытый список */
+.language-selector.open .lang-dropdown {
+    display: flex;
+}
+
+.language-selector.open .arrow {
+    transform: rotate(180deg);
 }
 
 @media (max-width: 64.0vw) {

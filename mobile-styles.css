@@ -370,7 +370,34 @@
         box-sizing: border-box;
         position: absolute;
         right: 23.33vw;
-    
+    }
+
+    .selected-lang {
+        width: 13.06vw;
+        border-radius: 3.89vw;
+        padding: 0.83vw;
+    }
+
+    .lang-dropdown {
+        height: 30vw;
+        width: 13.06vw;
+        border-radius: 3.89vw;
+        padding-top: 8.89vw;
+        gap: 1.38vw;
+    }
+
+    .lang-option {
+        font-size: 2.5vw;
+        padding-left: 0.83vw;
+    }
+
+    .lang-dropdown img {
+        margin-right: 1.39vw;
+    }
+
+    .selected-lang .arrow {
+        margin-left: 1.39vw;
+        width: 2.78vw;
     }
     
     section#main-page .main-nav > ul > div.language-selector img {

@@ -462,7 +462,11 @@ const moveSlideBack = () => {
   slider.insertBefore(slider.lastElementChild, slider.firstElementChild);
 };
 
-nextBtn.addEventListener("click", () => {
+let autoSlideInterval;
+const slideDuration = 400; // Длительность анимации
+const autoSlideDelay = 3000; // Интервал автоматического переключения
+
+function moveSlideForward() {
     moveSlide();
     setTimeout(() => {
         slider.style.transition = "none";
@@ -470,8 +474,27 @@ nextBtn.addEventListener("click", () => {
         slider.style.transform = "translateX(0vw)";
         currentIndex = (currentIndex % slides.length) + 1;
         updateCounter();
-    }, 400);
+
+        // Восстанавливаем transition после перестановки элементов
+        setTimeout(() => {
+            slider.style.transition = "";
+        }, 50);
+    }, slideDuration);
+}
+
+function startAutoSlide() {
+    clearInterval(autoSlideInterval); // Сброс текущего таймера
+    autoSlideInterval = setInterval(moveSlideForward, autoSlideDelay);
+}
+
+// Обработчик кнопки
+nextBtn.addEventListener("click", () => {
+    moveSlideForward();
+    startAutoSlide(); // Перезапуск таймера после ручного переключения
 });
+
+// Запуск автоматического слайдера при загрузке
+startAutoSlide();
 
 prevBtn.addEventListener("click", () => {
   moveSlideBack();
@@ -484,5 +507,23 @@ prevBtn.addEventListener("click", () => {
 });
 
 updateCounter();
+
+document.addEventListener("DOMContentLoaded", () => {
+  const selector = document.querySelector(".language-selector");
+  const dropdown = document.querySelector(".lang-dropdown");
+  const arrow = document.querySelector(".arrow");
+
+  selector.addEventListener("click", (event) => {
+      if (!event.target.closest(".lang-dropdown")) {
+          selector.classList.toggle("open");
+      }
+  });
+
+  document.addEventListener("click", (event) => {
+      if (!selector.contains(event.target)) {
+          selector.classList.remove("open");
+      }
+  });
+});
 
 // slider first page end
