@@ -2377,4 +2377,51 @@
         max-width: 100.0vw;
     
     }
+
+    /* FORMS  */
+
+    div#choose-property .form-container .form-section h2 {
+        font-size: 2.14vw;
+    }
+
+    div#choose-property .form-container {
+        width: 55.21vw;
+    }
+
+    div#choose-property .form-container .image-section {
+        width: 27.76vw;
+    }
+
+    div#choose-property .form-container .form-section {
+        width: 27.45vw;
+        padding: 3.13vw;
+    }
+
+    div#choose-property .form-container .form-section p {
+        font-size: 1.04vw;
+        max-width: 18.02vw;
+        margin-top: 0.52vw;
+        margin-bottom: 2.08vw;
+    }
+
+    div#choose-property .form-container .form-section .form-inputs .form-select,
+    div#choose-property .form-container .form-section .form-inputs > input {
+        height: 2.08vw;
+    }
+
+    div#choose-property .form-container .form-section .form-inputs .form-button {
+        width: 16.77vw;
+    }
+
+    div#choose-property .form-container .form-section .close-popup {
+        top: 1.04vw;
+        right: 1.04vw;
+        width: 2.08vw;
+        height: 2.08vw;
+    }
+
+    div#choose-property .form-container .form-section .close-popup img {
+        width: 0.62vw;
+        height: 0.62vw;
+    }
 }

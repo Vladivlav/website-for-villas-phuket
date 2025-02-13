@@ -415,40 +415,116 @@ updateProgress(initialIndex);
 
 
 const factContainers = document.querySelectorAll('.fact-container');
+let lastScrollTime = 0;
+let firstTransition = true;
+let lastTransition = true;
+
+function disableScroll() {
+  document.body.style.overflow = 'hidden';
+}
+
+function enableScroll(delay = 1000) {
+  setTimeout(() => {
+    document.body.style.overflow = '';
+  }, delay); // Включаем скролл с заданной задержкой
+}
+
+function handleScroll(event) {
+  const section = document.querySelector('section#attractive-direction');
+  const wrapper = section?.querySelector('div.wrapper1920');
+  const factsWrapper = section?.querySelector('.facts-wrapper');
+  const currentFact = document.querySelector('.fact-container.current');
+  if (!section || !wrapper || !factsWrapper || !currentFact) return;
+
+  const paddingLeft = parseFloat(getComputedStyle(wrapper).paddingLeft);
+  const factsTop = factsWrapper.getBoundingClientRect().top;
+  const sectionBottom = section.getBoundingClientRect().bottom;
+  const viewportHeight = window.innerHeight;
+
+  // Проверяем, достиг ли верхний край экрана верхней границы facts-wrapper с учетом padding-left
+  if (factsTop <= paddingLeft && factsTop > 0 && !currentFact.previousElementSibling) {
+    console.log("top is here");
+    if (!firstTransition) {
+      disableScroll();
+      enableScroll();
+      const now = Date.now();
+      if (now - lastScrollTime >= 1000) {
+        lastScrollTime = now;
+        
+        if (event.deltaY > 0) {
+          showNextFact();
+        } else {
+          showPreviousFact();
+        }
+      }
+    }
+    return; // Прерываем обработку, чтобы избежать смены слайдов раньше времени
+  }
+
+  // Проверяем, достиг ли нижний край секции нижнего края экрана
+  if (sectionBottom >= viewportHeight && !currentFact.nextElementSibling) {
+    console.log("bottom is here");
+    if (!lastTransition) {
+      disableScroll();
+      enableScroll();
+      const now = Date.now();
+      if (now - lastScrollTime >= 1000) {
+        lastScrollTime = now;
+        
+        if (event.deltaY > 0) {
+          showNextFact();
+        } else {
+          showPreviousFact();
+        }
+      }
+    }
+    return; // Прерываем обработку
+  }
+}
+
+window.addEventListener('wheel', handleScroll, { passive: false });
+window.addEventListener('DOMContentLoaded', enableScroll);
 
 function showNextFact() {
   const current = document.querySelector('.fact-container.current');
-  const last_fact = document.querySelector('.last-fact-container');
-  let next;
+  const lastFact = document.querySelector('.last-fact-container');
+  const next = current?.nextElementSibling?.classList.contains('fact-container') ? current.nextElementSibling : null;
 
-  if (current.nextElementSibling && current.nextElementSibling.classList.contains('fact-container')) {
-    next = current.nextElementSibling;
-  } else {
-    next = factContainers[0];
+  if (next) {
+    current?.classList.remove('current');
+    next?.classList.add('current');
   }
 
-  const parent = next.parentElement;
-  const elementsWithClass = parent.querySelectorAll('section#attractive-direction .fact-container');
-  
-  if (next === elementsWithClass[elementsWithClass.length - 1]) {
-    last_fact.style.opacity = 1;
-  } else {
-    last_fact.style.opacity = 0;
+  if (firstTransition && current?.classList.contains('fact-container') && !current.previousElementSibling) {
+    firstTransition = false;
+    console.log("show next is here");
+    disableScroll();
+    enableScroll(1000);
   }
 
-  current.classList.remove('current');
-  next.classList.add('current');
+  lastFact.style.opacity = (!next || !next.nextElementSibling) ? 1 : 0;
 }
 
-factContainers.forEach(container => {
-  container.addEventListener('click', showNextFact);
+function showPreviousFact() {
+  const current = document.querySelector('.fact-container.current');
+  const previous = current?.previousElementSibling?.classList.contains('fact-container') ? current.previousElementSibling : null;
+  const lastFact = document.querySelector('.last-fact-container');
 
-  container.querySelectorAll('a').forEach(link => {
-    link.addEventListener('click', event => {
-      event.stopPropagation();
-    });
-  });
-});
+  if (previous) {
+    current?.classList.remove('current');
+    previous?.classList.add('current');
+  }
+
+  if (lastTransition && current?.classList.contains('fact-container') && !current.nextElementSibling) {
+    lastTransition = false;
+    console.log("show previous is here");
+    disableScroll();
+    enableScroll(1000);
+  }
+
+  lastFact.style.opacity = 0;
+}
+
 
 // slider first page
 const slider = document.querySelector(".offers-content");
@@ -545,3 +621,17 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // slider first page end
+
+document.querySelector('div#choose-property .form-section .close-popup').addEventListener('click', function() {
+  document.getElementById('choose-property').style.display = 'none';
+});
+
+document.querySelector('div#choose-property').addEventListener('click', function(event) {
+  if (!event.target.closest('.form-container')) {
+      this.style.display = 'none';
+  }
+});
+
+document.querySelector('div.yellow-link').addEventListener('click', function() {
+  document.getElementById('choose-property').style.display = 'flex';
+});

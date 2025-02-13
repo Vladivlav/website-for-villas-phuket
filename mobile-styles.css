@@ -1175,6 +1175,7 @@
         margin-top: 2.78vw;
         width: auto;
         margin-bottom: 8.33vw;
+    
     }
     
     .form-agreement {
@@ -2630,6 +2631,90 @@ line-height: 100%;
         align-items: center;
         gap: 5vw;
         margin-top: 1.67vw;
+    }
+
+    div#choose-property .form-container {
+        flex-direction: column;
+        height: 169.44vw;
+        width: 100%;
+        margin: 0 2.78vw;
+        background-color: unset;
+        position: relative;
+        top: 2.78vw;
     
+    }
+
+    div#choose-property .form-container .image-section {
+        width: 100%;
+        height: 39.17vw;
+    }
+
+    div#choose-property .form-container .form-section {
+        background-color: #F9F9F9;
+        width: 100%;
+        height: 135.83vw;
+        border-radius: 5.56vw;
+        position: relative;
+        top: -5.56vw;
+        padding: 8.33vw;
+    }
+
+    div#choose-property .form-container .form-section .close-popup {
+        top: -30.83vw;
+        right: 2.78vw;
+        width: 10.28vw;
+        height: 10.28vw;
+        border-radius: 10.28vw;
+    
+    }
+
+    div#choose-property .form-container .form-section .close-popup img {
+        width: 3.06vw;
+        height: 3.06vw;
+    }
+
+    div#choose-property .form-container .form-section h2 {
+        font-size: 7.22vw;
+        text-align: center;
+        max-width: 70.28vw;
+        margin: 0 auto;
+    }
+
+    div#choose-property .form-container .form-section p {
+        font-size: 3.89vw;
+        max-width: 68.61vw;
+        text-align: center;
+        margin: 1.39vw auto 5.56vw auto;
+    }
+
+    div#choose-property .form-container .form-section .form-inputs .form-select,
+    div#choose-property .form-container .form-section .form-inputs > input {
+        height: 8.89vw;
+    }
+
+    div#choose-property .form-container .form-section .form-inputs {
+        gap: 5.56vw;
+    }
+
+    div#choose-property .form-container .form-section .form-inputs .form-button {
+        width: 70vw;
+        height: 8.89vw;
+        margin: 0 auto;
+        font-size: 3.33vw;
+        padding: 0 5.56vw;
+        margin-bottom: 2.78vw;
+    
+    }
+
+    div#choose-property .form-container .form-section .form-inputs .form-select > span {
+        height: 8.89vw;
+    }
+
+    div#choose-property .form-container .form-section .form-inputs .form-agreement span {
+        font-size: 2.5vw;
+    }
+
+    div#choose-property .form-container .form-section .form-inputs .form-actions {
+        margin-top: 0;
     }
 }
