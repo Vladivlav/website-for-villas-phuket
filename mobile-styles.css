@@ -2633,6 +2633,7 @@ line-height: 100%;
         margin-top: 1.67vw;
     }
 
+    div#personal-consultation .form-container,
     div#choose-property .form-container {
         flex-direction: column;
         height: 169.44vw;
@@ -2641,14 +2642,26 @@ line-height: 100%;
         background-color: unset;
         position: relative;
         top: 2.78vw;
-    
     }
 
+    div#personal-consultation .form-container {
+        height: 176.67vw;
+    }
+    
+
+    div#personal-consultation .form-container .image-section,
     div#choose-property .form-container .image-section {
         width: 100%;
         height: 39.17vw;
     }
 
+    div#personal-consultation .form-container .image-section img,
+    div#choose-property .form-container .image-section img {
+        width: 100%;
+        height: 58.89vw;
+    }
+
+    div#personal-consultation .form-container .form-section,
     div#choose-property .form-container .form-section {
         background-color: #F9F9F9;
         width: 100%;
@@ -2659,20 +2672,30 @@ line-height: 100%;
         padding: 8.33vw;
     }
 
+    div#personal-consultation .form-container .form-section {
+        height: 123.06vw;
+    }
+
+    div#personal-consultation .form-container .form-section .close-popup,
     div#choose-property .form-container .form-section .close-popup {
         top: -30.83vw;
         right: 2.78vw;
         width: 10.28vw;
         height: 10.28vw;
         border-radius: 10.28vw;
-    
     }
 
-    div#choose-property .form-container .form-section .close-popup img {
+    div#personal-consultation .form-container .form-section .close-popup {
+        top: -45.83vw;
+    }
+
+    div#personal-consultation .form-container .form-section .close-popup svg,
+    div#choose-property .form-container .form-section .close-popup svg {
         width: 3.06vw;
         height: 3.06vw;
     }
 
+    div#personal-consultation .form-container .form-section h2,
     div#choose-property .form-container .form-section h2 {
         font-size: 7.22vw;
         text-align: center;
@@ -2680,6 +2703,7 @@ line-height: 100%;
         margin: 0 auto;
     }
 
+    div#personal-consultation .form-container .form-section p,
     div#choose-property .form-container .form-section p {
         font-size: 3.89vw;
         max-width: 68.61vw;
@@ -2687,15 +2711,23 @@ line-height: 100%;
         margin: 1.39vw auto 5.56vw auto;
     }
 
+    div#personal-consultation .form-container .form-section p {
+        max-width: unset;
+    }
+
+    div#personal-consultation .form-container .form-section .form-inputs .form-select,
+    div#personal-consultation .form-container .form-section .form-inputs > input,
     div#choose-property .form-container .form-section .form-inputs .form-select,
     div#choose-property .form-container .form-section .form-inputs > input {
         height: 8.89vw;
     }
 
+    div#personal-consultation .form-container .form-section .form-inputs,
     div#choose-property .form-container .form-section .form-inputs {
         gap: 5.56vw;
     }
 
+    div#personal-consultation .form-container .form-section .form-inputs .form-button,
     div#choose-property .form-container .form-section .form-inputs .form-button {
         width: 70vw;
         height: 8.89vw;
@@ -2706,14 +2738,17 @@ line-height: 100%;
     
     }
 
+    div#personal-consultation .form-container .form-section .form-inputs .form-select > span,
     div#choose-property .form-container .form-section .form-inputs .form-select > span {
         height: 8.89vw;
     }
 
+    div#personal-consultation .form-container .form-section .form-inputs .form-agreement span,
     div#choose-property .form-container .form-section .form-inputs .form-agreement span {
         font-size: 2.5vw;
     }
 
+    div#personal-consultation .form-container .form-section .form-inputs .form-actions,
     div#choose-property .form-container .form-section .form-inputs .form-actions {
         margin-top: 0;
     }

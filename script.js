@@ -635,3 +635,17 @@ document.querySelector('div#choose-property').addEventListener('click', function
 document.querySelector('div.yellow-link').addEventListener('click', function() {
   document.getElementById('choose-property').style.display = 'flex';
 });
+
+document.querySelector('div#personal-consultation .form-section .close-popup').addEventListener('click', function() {
+  document.getElementById('personal-consultation').style.display = 'none';
+});
+
+document.querySelector('div#personal-consultation').addEventListener('click', function(event) {
+  if (!event.target.closest('.form-container')) {
+      this.style.display = 'none';
+  }
+});
+
+document.querySelector('#best-points .cta button').addEventListener('click', function() {
+  document.getElementById('personal-consultation').style.display = 'flex';
+});
