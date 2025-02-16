@@ -4178,6 +4178,7 @@ div#phuket-future-guide {
     justify-content: center;
     z-index: 300000;
     background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(3px);
 }
 
 div#personal-consultation .form-container,

@@ -131,7 +131,7 @@
         height: 20.56vw;
         margin-right: 3.61vw;
         background-size: contain;
-    
+        padding-top: 0;
     }
     
     section#main-page div#special-offer-slider div.stats .digits {
@@ -323,15 +323,18 @@
         align-items: baseline;
         justify-content: center;
         padding-left: 3.89vw;
+        display: initial;
     }
     
     section#main-page div#special-offer-slider div.stats p.digits {
         margin: 0;
+        top: 4.17vw;
     }
     
     div#special-offer-slider div.stats .digits-description {
         font-size: 3.61vw;
         line-height: 3.61vw;
+        top: 11.67vw;
     }
     
     div#special-offer-slider > span {
@@ -1028,13 +1031,17 @@
         top: 0.0vw;
         width: 3.89vw;
         height: 3.89vw;
-    
+
     }
     
     section#best-points .grid .grid-item.img {
         padding: 0;
         display: block;
-    
+        background: url("images/four-five-reasons-block.png");url(images/four-five-reasons-block.png")";;url(æimages/four-five-reasons-block.png")";;url(images/four-five-reasons-block.png")";
+        height: 42.78vw;
+        width: 100%;
+        background-size: contain;
+    ;height: 42.78vw;;
     }
     
     section#best-points .grid .grid-item.img img {
@@ -1812,7 +1819,6 @@
     section#prices-and-benefits .fact-item {
         height: auto;
         max-width: unset;
-    
     }
     
     section#prices-and-benefits .fact-item p.number {
@@ -1843,7 +1849,7 @@
         font-weight: 400;
         font-size: 3.89vw;
         line-height: 130%;
-    
+        max-width: unset !important;
     }
     
     section#prices-and-benefits .text-content h2:nth-of-type(2)::before {
@@ -2024,7 +2030,7 @@ line-height: 100%;
     section#additional-company-info div.country-card.last-with-image {
         height: 37.78vw;
         padding: 0 5.56vw;
-        background: url("images/last-country-bg.png");
+        background: url("images/last-country-bg-360.png");
         background-size: 100%;
         display: block;
     
