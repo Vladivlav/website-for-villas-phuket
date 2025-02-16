@@ -2634,7 +2634,8 @@ line-height: 100%;
     }
 
     div#personal-consultation .form-container,
-    div#choose-property .form-container {
+    div#choose-property .form-container,
+    div#faq-form .form-container {
         flex-direction: column;
         height: 169.44vw;
         width: 100%;
@@ -2644,40 +2645,57 @@ line-height: 100%;
         top: 2.78vw;
     }
 
+    div#faq-form .form-container {
+        background-image: url("images/faq-form-bg-360.png");
+        background-color: #393939;
+        border-radius: 5.5556vw;
+        background-repeat: no-repeat;
+        height: 130.8333vw;
+    }
+    
     div#personal-consultation .form-container {
         height: 176.67vw;
     }
     
-
     div#personal-consultation .form-container .image-section,
-    div#choose-property .form-container .image-section {
+    div#choose-property .form-container .image-section,
+    div#faq-form .form-container .image-section {
         width: 100%;
         height: 39.17vw;
     }
-
+    
     div#personal-consultation .form-container .image-section img,
-    div#choose-property .form-container .image-section img {
+    div#choose-property .form-container .image-section img,
+    div#faq-form .form-container .image-section img {
         width: 100%;
         height: 58.89vw;
     }
-
+    
     div#personal-consultation .form-container .form-section,
-    div#choose-property .form-container .form-section {
+    div#choose-property .form-container .form-section,
+    div#faq-form .form-container .form-section {
         background-color: #F9F9F9;
         width: 100%;
         height: 135.83vw;
         border-radius: 5.56vw;
         position: relative;
         top: -5.56vw;
-        padding: 8.33vw;
+        padding: 8.33vw 5.5556vw;
     }
 
+    div#faq-form .form-container .form-section {
+        background-color: unset;
+        position: static;
+        height: 130.8333vw;
+    }
+    
     div#personal-consultation .form-container .form-section {
         height: 123.06vw;
     }
-
+    
     div#personal-consultation .form-container .form-section .close-popup,
-    div#choose-property .form-container .form-section .close-popup {
+    div#choose-property .form-container .form-section .close-popup,
+    div#faq-form .form-container .form-section .close-popup {
         top: -30.83vw;
         right: 2.78vw;
         width: 10.28vw;
@@ -2685,71 +2703,89 @@ line-height: 100%;
         border-radius: 10.28vw;
     }
 
+    div#faq-form .form-container .form-section .close-popup {
+        top: 2.78vw;
+    }
+    
     div#personal-consultation .form-container .form-section .close-popup {
         top: -45.83vw;
     }
-
+    
     div#personal-consultation .form-container .form-section .close-popup svg,
-    div#choose-property .form-container .form-section .close-popup svg {
+    div#choose-property .form-container .form-section .close-popup svg,
+    div#faq-form .form-container .form-section .close-popup svg {
         width: 3.06vw;
         height: 3.06vw;
     }
-
+    
     div#personal-consultation .form-container .form-section h2,
-    div#choose-property .form-container .form-section h2 {
+    div#choose-property .form-container .form-section h2,
+    div#faq-form .form-container .form-section h2 {
         font-size: 7.22vw;
         text-align: center;
         max-width: 70.28vw;
         margin: 0 auto;
     }
 
+    div#faq-form .form-container .form-section h2 {
+        max-width: 66.6667vw;
+    }
+    
     div#personal-consultation .form-container .form-section p,
-    div#choose-property .form-container .form-section p {
+    div#choose-property .form-container .form-section p,
+    div#faq-form .form-container .form-section p {
         font-size: 3.89vw;
         max-width: 68.61vw;
         text-align: center;
         margin: 1.39vw auto 5.56vw auto;
     }
-
+    
     div#personal-consultation .form-container .form-section p {
         max-width: unset;
     }
-
+    
     div#personal-consultation .form-container .form-section .form-inputs .form-select,
     div#personal-consultation .form-container .form-section .form-inputs > input,
     div#choose-property .form-container .form-section .form-inputs .form-select,
-    div#choose-property .form-container .form-section .form-inputs > input {
+    div#choose-property .form-container .form-section .form-inputs > input,
+    div#faq-form .form-container .form-section .form-inputs .form-select,
+    div#faq-form .form-container .form-section .form-inputs > input {
         height: 8.89vw;
+        width: 100%;
     }
-
+    
     div#personal-consultation .form-container .form-section .form-inputs,
-    div#choose-property .form-container .form-section .form-inputs {
+    div#choose-property .form-container .form-section .form-inputs,
+    div#faq-form .form-container .form-section .form-inputs {
         gap: 5.56vw;
     }
-
+    
     div#personal-consultation .form-container .form-section .form-inputs .form-button,
-    div#choose-property .form-container .form-section .form-inputs .form-button {
+    div#choose-property .form-container .form-section .form-inputs .form-button,
+    div#faq-form .form-container .form-section .form-inputs .form-button {
         width: 70vw;
         height: 8.89vw;
         margin: 0 auto;
         font-size: 3.33vw;
         padding: 0 5.56vw;
         margin-bottom: 2.78vw;
-    
     }
-
+    
     div#personal-consultation .form-container .form-section .form-inputs .form-select > span,
-    div#choose-property .form-container .form-section .form-inputs .form-select > span {
+    div#choose-property .form-container .form-section .form-inputs .form-select > span,
+    div#faq-form .form-container .form-section .form-inputs .form-select > span {
         height: 8.89vw;
     }
-
+    
     div#personal-consultation .form-container .form-section .form-inputs .form-agreement span,
-    div#choose-property .form-container .form-section .form-inputs .form-agreement span {
+    div#choose-property .form-container .form-section .form-inputs .form-agreement span,
+    div#faq-form .form-container .form-section .form-inputs .form-agreement span {
         font-size: 2.5vw;
     }
-
+    
     div#personal-consultation .form-container .form-section .form-inputs .form-actions,
-    div#choose-property .form-container .form-section .form-inputs .form-actions {
+    div#choose-property .form-container .form-section .form-inputs .form-actions,
+    div#faq-form .form-container .form-section .form-inputs .form-actions {
         margin-top: 0;
     }
 }

@@ -649,3 +649,21 @@ document.querySelector('div#personal-consultation').addEventListener('click', fu
 document.querySelector('#best-points .cta button').addEventListener('click', function() {
   document.getElementById('personal-consultation').style.display = 'flex';
 });
+
+document.querySelector('div#faq-form .form-section .close-popup').addEventListener('click', function() {
+  document.getElementById('faq-form').style.display = 'none';
+});
+
+document.querySelector('div#faq-form').addEventListener('click', function(event) {
+  if (!event.target.closest('.form-container')) {
+      this.style.display = 'none';
+  }
+});
+
+document.querySelector('.faq-ask-question span').addEventListener('click', function() {
+  document.getElementById('faq-form').style.display = 'flex';
+});
+
+document.querySelector('footer .btn-ask').addEventListener('click', function() {
+  document.getElementById('faq-form').style.display = 'flex';
+});

@@ -1563,7 +1563,6 @@ section#best-points .grid .grid-item.img {
     font-weight: 300;
     width: 15.83vw;
     font-size: 1.0vw;
-
 }
 
 #prices-and-benefits .form-input, #prices-and-benefits .form-select {
@@ -2725,7 +2724,7 @@ section#check-objects {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 500;
-    font-size: 1vw !important;!i;!;
+    font-size: 1vw !important;
     line-height: 100%;
     color: #393939;
 }
@@ -4164,7 +4163,8 @@ section#tenth-section div.content .block-link span,
 /* FORMS choose property */
 
 div#personal-consultation,
-div#choose-property {
+div#choose-property,
+div#faq-form {
     position: fixed;
     top: 0;
     left: 0;
@@ -4179,7 +4179,8 @@ div#choose-property {
 }
 
 div#personal-consultation .form-container,
-div#choose-property .form-container {
+div#choose-property .form-container,
+div#faq-form .form-container {
     display: flex;
     flex-direction: row;
     width: 53.33vw;
@@ -4189,19 +4190,31 @@ div#choose-property .form-container {
     border-radius: 1.67vw;
 }
 
+div#faq-form .form-container {
+    width: 33.17vw;
+    height: 33.42vw;
+    background-color: #393939;
+    justify-content: center;
+    background-image: url("images/faq-form-bg-1200.png");
+    background-size: contain;
+    background-position: bottom;
+}
+
 div#personal-consultation .form-container {
     width: 53.33vw;
     height: 33.25vw;
 }
 
 div#personal-consultation .form-container .image-section,
-div#choose-property .form-container .image-section {
+div#choose-property .form-container .image-section,
+div#faq-form .form-container .image-section {
     height: 100%;
     width: 25.75vw;
 }
 
 div#personal-consultation .form-container .form-section h2,
-div#choose-property .form-container .form-section h2 {
+div#choose-property .form-container .form-section h2,
+div#faq-form .form-container .form-section h2 {
     font-family: 'igra-sans';
     font-style: normal;
     font-weight: 400;
@@ -4210,12 +4223,19 @@ div#choose-property .form-container .form-section h2 {
     color: #299948;
     margin: 0;
 }
+
+div#faq-form .form-container .form-section h2 {
+    text-align: center;
+    color: #FCBD21;
+}
+
 div#personal-consultation .form-container .form-section h2 {
     color: #27ABC1;
 }
 
 div#personal-consultation .form-container .form-section p,
-div#choose-property .form-container .form-section p {
+div#choose-property .form-container .form-section p,
+div#faq-form .form-container .form-section p {
     font-family: 'Commissioner';
     font-style: normal;
     font-weight: 400;
@@ -4227,12 +4247,19 @@ div#choose-property .form-container .form-section p {
     max-width: 16.75vw;
 }
 
+div#faq-form .form-container .form-section p {
+    color: white;
+    text-align: center;
+    max-width: unset;
+}
+
 div#personal-consultation .form-container .form-section p {
     max-width: unset;
 }
 
 div#personal-consultation .form-container .form-section,
-div#choose-property .form-container .form-section {
+div#choose-property .form-container .form-section,
+div#faq-form .form-container .form-section {
     padding: 3.33vw;
     box-sizing: border-box;
     height: 100%;
@@ -4240,8 +4267,13 @@ div#choose-property .form-container .form-section {
     position: relative;
 }
 
+div#faq-form .form-container .form-section {
+    width: 100%;
+}
+
 div#personal-consultation .form-container .form-section .close-popup,
-div#choose-property .form-container .form-section .close-popup {
+div#choose-property .form-container .form-section .close-popup,
+div#faq-form .form-container .form-section .close-popup {
     position: absolute;
     top: 0.83vw;
     right: 0.83vw;
@@ -4256,15 +4288,21 @@ div#choose-property .form-container .form-section .close-popup {
     cursor: pointer;
 }
 
+div#faq-form .form-container .form-section .close-popup {
+    background-color: #292929;
+}
+
 div#personal-consultation .form-container .form-section .close-popup svg,
-div#choose-property .form-container .form-section .close-popup svg {
+div#choose-property .form-container .form-section .close-popup svg,
+div#faq-form .form-container .form-section .close-popup svg {
     width: 0.92vw;
     height: 0.92vw;
     transform: rotate(945deg);
 }
 
 div#personal-consultation .form-container .form-section .form-inputs,
-div#choose-property .form-container .form-section .form-inputs {
+div#choose-property .form-container .form-section .form-inputs,
+div#faq-form .form-container .form-section .form-inputs {
     flex-direction: column;
     display: flex;
     padding: 0;
@@ -4272,7 +4310,8 @@ div#choose-property .form-container .form-section .form-inputs {
 }
 
 div#personal-consultation .form-container .form-section .form-inputs .form-button,
-div#choose-property .form-container .form-section .form-inputs .form-button {
+div#choose-property .form-container .form-section .form-inputs .form-button,
+div#faq-form .form-container .form-section .form-inputs .form-button {
     width: auto;
     font-family: 'Commissioner';
     font-weight: 500;
@@ -4282,8 +4321,13 @@ div#choose-property .form-container .form-section .form-inputs .form-button {
     padding: 0 1.25vw;
 }
 
+div#faq-form .form-container .form-section .form-inputs .form-button {
+    margin: 0 auto;
+}
+
 div#personal-consultation .form-container .form-section .form-inputs .form-button svg,
-div#choose-property .form-container .form-section .form-inputs .form-button svg {
+div#choose-property .form-container .form-section .form-inputs .form-button svg,
+div#faq-form .form-container .form-section .form-inputs .form-button svg {
     stroke: white;
     margin-left: 0.83vw;
 }
@@ -4291,12 +4335,26 @@ div#choose-property .form-container .form-section .form-inputs .form-button svg 
 div#personal-consultation .form-container .form-section .form-inputs .form-select,
 div#personal-consultation .form-container .form-section .form-inputs > input,
 div#choose-property .form-container .form-section .form-inputs .form-select,
-div#choose-property .form-container .form-section .form-inputs > input {
+div#choose-property .form-container .form-section .form-inputs > input,
+div#faq-form .form-container .form-section .form-inputs .form-select,
+div#faq-form .form-container .form-section .form-inputs > input {
     width: 100%;
     border: 1px solid #299948;
     height: 2.17vw;
     color: rgba(57, 57, 57, 0.5);
 }
+
+div#faq-form .form-container .form-section .form-inputs .form-select,
+div#faq-form .form-container .form-section .form-inputs > input {
+    border: 1px solid #FCBD21;
+    color: white;
+    width: 20.83vw;
+    margin: 0 auto;
+    height: 2.17vw;
+    line-height: 2.17vw;
+    background: #393939b3;
+}
+
 
 div#personal-consultation .form-container .form-section .form-inputs .form-select,
 div#personal-consultation .form-container .form-section .form-inputs > input {
@@ -4304,7 +4362,8 @@ div#personal-consultation .form-container .form-section .form-inputs > input {
 }
 
 div#personal-consultation .form-container .form-section .form-inputs .form-select > span,
-div#choose-property .form-container .form-section .form-inputs .form-select > span {
+div#choose-property .form-container .form-section .form-inputs .form-select > span,
+div#faq-form .form-container .form-section .form-inputs .form-select > span {
     height: 2.16vw;
     display: flex;
     align-items: center;
@@ -4312,26 +4371,30 @@ div#choose-property .form-container .form-section .form-inputs .form-select > sp
 }
 
 div#personal-consultation .form-container .form-section .form-inputs .form-select > span svg,
-div#choose-property .form-container .form-section .form-inputs .form-select > span svg {
+div#choose-property .form-container .form-section .form-inputs .form-select > span svg,
+div#faq-form .form-container .form-section .form-inputs .form-select > span svg {
     stroke: #299948;
     transform: rotate(180deg);
 }
 
 div#personal-consultation .form-container .form-section .form-inputs .form-agreement,
-div#choose-property .form-container .form-section .form-inputs .form-agreement {
+div#choose-property .form-container .form-section .form-inputs .form-agreement,
+div#faq-form .form-container .form-section .form-inputs .form-agreement {
     width: 100%;
     margin: 0;
 }
 
 div#personal-consultation .form-container .form-section .form-inputs .form-agreement > div,
-div#choose-property .form-container .form-section .form-inputs .form-agreement > div {
+div#choose-property .form-container .form-section .form-inputs .form-agreement > div,
+div#faq-form .form-container .form-section .form-inputs .form-agreement > div {
     align-items: center;
     left: 0;
     margin-top: 0.42vw;
 }
 
 div#personal-consultation .form-container .form-section .form-inputs .form-agreement span,
-div#choose-property .form-container .form-section .form-inputs .form-agreement span {
+div#choose-property .form-container .form-section .form-inputs .form-agreement span,
+div#faq-form .form-container .form-section .form-inputs .form-agreement span {
     font-weight: 400;
     font-size: 0.67vw;
     opacity: 0.7;
@@ -4339,8 +4402,14 @@ div#choose-property .form-container .form-section .form-inputs .form-agreement s
     margin: 0;
 }
 
+div#faq-form .form-container .form-section .form-inputs .form-agreement span {
+    color: white;
+    opacity: 0.7;
+}
+
 div#personal-consultation .form-container .form-section .form-inputs .form-agreement > div input,
-div#choose-property .form-container .form-section .form-inputs .form-agreement > div input {
+div#choose-property .form-container .form-section .form-inputs .form-agreement > div input,
+div#faq-form .form-container .form-section .form-inputs .form-agreement > div input {
     border-color: #299948;
     width: 0.75vw;
     height: 0.75vw;
@@ -4350,12 +4419,17 @@ div#choose-property .form-container .form-section .form-inputs .form-agreement >
     margin-top: 0;
 }
 
+div#faq-form .form-container .form-section .form-inputs .form-agreement > div input {
+    border-color: #FCBD21;
+}
+
 div#personal-consultation .form-container .form-section .form-inputs .form-agreement > div input {
     border-color: #27ABC1;
 }
 
 div#personal-consultation .form-container .image-section img,
-div#choose-property .form-container .image-section img {
+div#choose-property .form-container .image-section img,
+div#faq-form .form-container .image-section img {
     height: 100%;
     width: auto;
 }

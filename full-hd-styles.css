@@ -2381,48 +2381,69 @@
     /* FORMS  */
 
     div#personal-consultation .form-container .form-section h2,
-    div#choose-property .form-container .form-section h2 {
+    div#choose-property .form-container .form-section h2,
+    div#faq-form .form-container .form-section h2 {
         font-size: 2.14vw;
     }
 
     div#personal-consultation .form-container,
-    div#choose-property .form-container {
+    div#choose-property .form-container,
+    div#faq-form .form-container {
         width: 55.21vw;
         height: 33.59vw;
     }
 
+    div#faq-form .form-container {
+        width: 34.48vw;
+        background-image: url("images/faq-form-bg-1920.png");
+    }
+
     div#personal-consultation .form-container .image-section,
-    div#choose-property .form-container .image-section {
+    div#choose-property .form-container .image-section,
+    div#faq-form .form-container .image-section {
         width: 27.76vw;
     }
 
     div#personal-consultation .form-container .form-section,
-    div#choose-property .form-container .form-section {
+    div#choose-property .form-container .form-section,
+    div#faq-form .form-container .form-section {
         width: 27.45vw;
-        padding: 3.13vw;
+        padding: 3.10vw;
+    }
+
+    div#faq-form .form-container .form-section {
+        width: 100%;
     }
 
     div#personal-consultation .form-container .form-section p,
-    div#choose-property .form-container .form-section p {
+    div#choose-property .form-container .form-section p,
+    div#faq-form .form-container .form-section p {
         font-size: 1.04vw;
         max-width: 18.02vw;
         margin-top: 0.52vw;
         margin-bottom: 2.08vw;
     }
 
+    div#faq-form .form-container .form-section p {
+        max-width: unset;
+    }
+
     div#personal-consultation .form-container .form-section p {
         max-width: unset;
     }
 
-    div#cpersonal-consultation .form-container .form-section .form-inputs .form-select,
-    div#cpersonal-consultation .form-container .form-section .form-inputs > input,
+    div#personal-consultation .form-container .form-section .form-inputs .form-select,
+    div#personal-consultation .form-container .form-section .form-inputs > input,
     div#choose-property .form-container .form-section .form-inputs .form-select,
-    div#choose-property .form-container .form-section .form-inputs > input {
+    div#choose-property .form-container .form-section .form-inputs > input,
+    div#faq-form .form-container .form-section .form-inputs .form-select,
+    div#faq-form .form-container .form-section .form-inputs > input {
         height: 2.08vw;
     }
 
     div#personal-consultation .form-container .form-section .form-inputs .form-button,
-    div#choose-property .form-container .form-section .form-inputs .form-button {
+    div#choose-property .form-container .form-section .form-inputs .form-button,
+    div#faq-form .form-container .form-section .form-inputs .form-button {
         width: auto;
         padding: 0 1.3vw;
     }
@@ -2433,14 +2454,16 @@
     }
 
     div#personal-consultation .form-container .form-section .form-inputs .form-button svg,
-    div#choose-property .form-container .form-section .form-inputs .form-button svg {
+    div#choose-property .form-container .form-section .form-inputs .form-button svg,
+    div#faq-form .form-container .form-section .form-inputs .form-button svg {
         width: 1.25vw;
         height: auto;
         margin-left: 0.78vw;
     }
 
     div#personal-consultation .form-container .form-section .close-popup,
-    div#choose-property .form-container .form-section .close-popup {
+    div#choose-property .form-container .form-section .close-popup,
+    div#faq-form .form-container .form-section .close-popup {
         top: 1.04vw;
         right: 1.04vw;
         width: 2.08vw;
@@ -2448,7 +2471,8 @@
     }
 
     div#personal-consultation .form-container .form-section .close-popup svg,
-    div#choose-property .form-container .form-section .close-popup svg {
+    div#choose-property .form-container .form-section .close-popup svg,
+    div#faq-form .form-container .form-section .close-popup svg {
         width: 0.62vw;
         height: 0.62vw;
     }
