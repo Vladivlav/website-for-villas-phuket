@@ -419,6 +419,22 @@ let lastScrollTime = 0;
 let firstTransition = true;
 let lastTransition = true;
 
+function showNextFact() {
+  const current = document.querySelector('.fact-container.current');
+  let next;
+  if (current.nextElementSibling && current.nextElementSibling.classList.contains('fact-container')) {
+      next = current.nextElementSibling;
+  } else {
+      next = factContainers[0];
+  }
+  current.classList.remove('current');
+next.classList.add('current');
+}
+
+factContainers.forEach(container => {
+  container.addEventListener('click', showNextFact);
+});
+
 function disableScroll() {
   document.body.style.overflow = 'hidden';
 }
@@ -429,101 +445,101 @@ function enableScroll(delay = 1000) {
   }, delay); // Включаем скролл с заданной задержкой
 }
 
-function handleScroll(event) {
-  const section = document.querySelector('section#attractive-direction');
-  const wrapper = section?.querySelector('div.wrapper1920');
-  const factsWrapper = section?.querySelector('.facts-wrapper');
-  const currentFact = document.querySelector('.fact-container.current');
-  if (!section || !wrapper || !factsWrapper || !currentFact) return;
+// function handleScroll(event) {
+//   const section = document.querySelector('section#attractive-direction');
+//   const wrapper = section?.querySelector('div.wrapper1920');
+//   const factsWrapper = section?.querySelector('.facts-wrapper');
+//   const currentFact = document.querySelector('.fact-container.current');
+//   if (!section || !wrapper || !factsWrapper || !currentFact) return;
 
-  const paddingLeft = parseFloat(getComputedStyle(wrapper).paddingLeft);
-  const factsTop = factsWrapper.getBoundingClientRect().top;
-  const sectionBottom = section.getBoundingClientRect().bottom;
-  const viewportHeight = window.innerHeight;
+//   const paddingLeft = parseFloat(getComputedStyle(wrapper).paddingLeft);
+//   const factsTop = factsWrapper.getBoundingClientRect().top;
+//   const sectionBottom = section.getBoundingClientRect().bottom;
+//   const viewportHeight = window.innerHeight;
 
-  // Проверяем, достиг ли верхний край экрана верхней границы facts-wrapper с учетом padding-left
-  if (factsTop <= paddingLeft && factsTop > 0 && !currentFact.previousElementSibling) {
-    console.log("top is here");
-    if (!firstTransition) {
-      disableScroll();
-      enableScroll();
-      const now = Date.now();
-      if (now - lastScrollTime >= 1000) {
-        lastScrollTime = now;
+//   // Проверяем, достиг ли верхний край экрана верхней границы facts-wrapper с учетом padding-left
+//   if (factsTop <= paddingLeft && factsTop > 0 && !currentFact.previousElementSibling) {
+//     console.log("top is here");
+//     if (!firstTransition) {
+//       disableScroll();
+//       enableScroll();
+//       const now = Date.now();
+//       if (now - lastScrollTime >= 1000) {
+//         lastScrollTime = now;
         
-        if (event.deltaY > 0) {
-          showNextFact();
-        } else {
-          showPreviousFact();
-        }
-      }
-    }
-    return; // Прерываем обработку, чтобы избежать смены слайдов раньше времени
-  }
+//         if (event.deltaY > 0) {
+//           showNextFact();
+//         } else {
+//           showPreviousFact();
+//         }
+//       }
+//     }
+//     return; // Прерываем обработку, чтобы избежать смены слайдов раньше времени
+//   }
 
-  // Проверяем, достиг ли нижний край секции нижнего края экрана
-  if (sectionBottom >= viewportHeight && !currentFact.nextElementSibling) {
-    console.log("bottom is here");
-    if (!lastTransition) {
-      disableScroll();
-      enableScroll();
-      const now = Date.now();
-      if (now - lastScrollTime >= 1000) {
-        lastScrollTime = now;
+//   // Проверяем, достиг ли нижний край секции нижнего края экрана
+//   if (sectionBottom >= viewportHeight && !currentFact.nextElementSibling) {
+//     console.log("bottom is here");
+//     if (!lastTransition) {
+//       disableScroll();
+//       enableScroll();
+//       const now = Date.now();
+//       if (now - lastScrollTime >= 1000) {
+//         lastScrollTime = now;
         
-        if (event.deltaY > 0) {
-          showNextFact();
-        } else {
-          showPreviousFact();
-        }
-      }
-    }
-    return; // Прерываем обработку
-  }
-}
+//         if (event.deltaY > 0) {
+//           showNextFact();
+//         } else {
+//           showPreviousFact();
+//         }
+//       }
+//     }
+//     return; // Прерываем обработку
+//   }
+// }
 
-window.addEventListener('wheel', handleScroll, { passive: false });
-window.addEventListener('DOMContentLoaded', enableScroll);
+// window.addEventListener('wheel', handleScroll, { passive: false });
+// window.addEventListener('DOMContentLoaded', enableScroll);
 
-function showNextFact() {
-  const current = document.querySelector('.fact-container.current');
-  const lastFact = document.querySelector('.last-fact-container');
-  const next = current?.nextElementSibling?.classList.contains('fact-container') ? current.nextElementSibling : null;
+// function showNextFact() {
+//   const current = document.querySelector('.fact-container.current');
+//   const lastFact = document.querySelector('.last-fact-container');
+//   const next = current?.nextElementSibling?.classList.contains('fact-container') ? current.nextElementSibling : null;
 
-  if (next) {
-    current?.classList.remove('current');
-    next?.classList.add('current');
-  }
+//   if (next) {
+//     current?.classList.remove('current');
+//     next?.classList.add('current');
+//   }
 
-  if (firstTransition && current?.classList.contains('fact-container') && !current.previousElementSibling) {
-    firstTransition = false;
-    console.log("show next is here");
-    disableScroll();
-    enableScroll(1000);
-  }
+//   if (firstTransition && current?.classList.contains('fact-container') && !current.previousElementSibling) {
+//     firstTransition = false;
+//     console.log("show next is here");
+//     disableScroll();
+//     enableScroll(1000);
+//   }
 
-  lastFact.style.opacity = (!next || !next.nextElementSibling) ? 1 : 0;
-}
+//   lastFact.style.opacity = (!next || !next.nextElementSibling) ? 1 : 0;
+// }
 
-function showPreviousFact() {
-  const current = document.querySelector('.fact-container.current');
-  const previous = current?.previousElementSibling?.classList.contains('fact-container') ? current.previousElementSibling : null;
-  const lastFact = document.querySelector('.last-fact-container');
+// function showPreviousFact() {
+//   const current = document.querySelector('.fact-container.current');
+//   const previous = current?.previousElementSibling?.classList.contains('fact-container') ? current.previousElementSibling : null;
+//   const lastFact = document.querySelector('.last-fact-container');
 
-  if (previous) {
-    current?.classList.remove('current');
-    previous?.classList.add('current');
-  }
+//   if (previous) {
+//     current?.classList.remove('current');
+//     previous?.classList.add('current');
+//   }
 
-  if (lastTransition && current?.classList.contains('fact-container') && !current.nextElementSibling) {
-    lastTransition = false;
-    console.log("show previous is here");
-    disableScroll();
-    enableScroll(1000);
-  }
+//   if (lastTransition && current?.classList.contains('fact-container') && !current.nextElementSibling) {
+//     lastTransition = false;
+//     console.log("show previous is here");
+//     disableScroll();
+//     enableScroll(1000);
+//   }
 
-  lastFact.style.opacity = 0;
-}
+//   lastFact.style.opacity = 0;
+// }
 
 
 // slider first page
@@ -666,4 +682,62 @@ document.querySelector('.faq-ask-question span').addEventListener('click', funct
 
 document.querySelector('footer .btn-ask').addEventListener('click', function() {
   document.getElementById('faq-form').style.display = 'flex';
+});
+
+
+document.querySelector('div#phuket-future-guide .close-popup').addEventListener('click', function() {
+  document.getElementById('phuket-future-guide').style.display = 'none';
+});
+
+document.querySelector('div#phuket-future-guide').addEventListener('click', function(event) {
+  if (!event.target.closest('.form-container')) {
+      this.style.display = 'none';
+  }
+});
+
+document.querySelector('.phuket-future-guide-form-link').addEventListener('click', function() {
+  document.getElementById('phuket-future-guide').style.display = 'flex';
+});
+
+document.querySelector('div#areas-and-beaches-guide .close-popup').addEventListener('click', function() {
+  document.getElementById('areas-and-beaches-guide').style.display = 'none';
+});
+
+document.querySelector('div#areas-and-beaches-guide').addEventListener('click', function(event) {
+  if (!event.target.closest('.form-container')) {
+      this.style.display = 'none';
+  }
+});
+
+document.querySelector('.areas-and-beaches-guide-form-link').addEventListener('click', function() {
+  document.getElementById('areas-and-beaches-guide').style.display = 'flex';
+});
+
+document.querySelector('div#forms-of-ownerships-guide .close-popup').addEventListener('click', function() {
+  document.getElementById('forms-of-ownerships-guide').style.display = 'none';
+});
+
+document.querySelector('div#forms-of-ownerships-guide').addEventListener('click', function(event) {
+  if (!event.target.closest('.form-container')) {
+      this.style.display = 'none';
+  }
+});
+
+document.querySelector('.forms-of-ownerships-guide-form-link').addEventListener('click', function(event) {
+  event.preventDefault();
+  document.getElementById('forms-of-ownerships-guide').style.display = 'flex';
+});
+
+document.querySelector('div#special-offer-form .form-section .close-popup').addEventListener('click', function() {
+  document.getElementById('special-offer-form').style.display = 'none';
+});
+
+document.querySelector('div#special-offer-form').addEventListener('click', function(event) {
+  if (!event.target.closest('.form-container')) {
+      this.style.display = 'none';
+  }
+});
+
+document.querySelector('.offer-button').addEventListener('click', function() {
+  document.getElementById('special-offer-form').style.display = 'flex';
 });
