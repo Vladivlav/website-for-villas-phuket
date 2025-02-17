@@ -2876,4 +2876,45 @@ line-height: 100%;
     div.faq-form .form-container .form-section .form-inputs .form-actions {
         margin-top: 0;
     }
+
+    div#guide-form-result .form-container {
+        width: 100%;
+        margin: 0 2.78vw;
+        height: 75.83vw;
+    }
+    
+    div#guide-form-result .form-container .form-section {
+        width: 100%;
+        height: 42.5vw;
+        border-radius: 5.56vw;
+        background-color: #eaeaea;
+        position: relative;
+        top: -5.56vw;
+    }
+    
+    div#guide-form-result .form-container .image-section {
+        width: 100%;
+        height: 38.89vw;
+    }
+
+    div#guide-form-result .form-container .form-section h2 {
+        font-size: 7.5vw;
+    }
+
+    div#guide-form-result .form-container .form-section p {
+        font-size: 3.89vw;
+    }
+
+    div#guide-form-result .form-container .close-popup {
+        width: 10.28vw;
+        height: 10.28vw;
+        border-radius: 6vw;
+        top: 2.78vw;
+        right: 2.78vw;
+    }
+
+    div#guide-form-result .form-container .close-popup svg {
+        width: 3.06vw;
+        height: 3.06vw;
+    }
 }

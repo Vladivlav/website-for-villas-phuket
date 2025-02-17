@@ -2379,6 +2379,7 @@
 
     /* FORMS  */
 
+    div#guide-form-result .form-container .form-section h2,
     div#personal-consultation .form-container .form-section h2,
     div#choose-property .form-container .form-section h2,
     div.faq-form .form-container .form-section h2 {
@@ -2418,6 +2419,7 @@
         width: 100%;
     }
 
+    div#guide-form-result .form-container .form-section p,
     div#personal-consultation .form-container .form-section p,
     div#choose-property .form-container .form-section p,
     div.faq-form .form-container .form-section p {
@@ -2427,8 +2429,14 @@
         margin-bottom: 2.08vw;
     }
 
+    div#guide-form-result .form-container .form-section p,
     div.faq-form .form-container .form-section p {
         max-width: unset;
+    }
+
+    div#guide-form-result .form-container .form-section p {
+        margin: 0;
+        margin-top: 3px;
     }
 
     div#personal-consultation .form-container .form-section p {
@@ -2464,6 +2472,7 @@
         margin-left: 0.78vw;
     }
 
+    div#guide-form-result .form-container .close-popup,
     div#forms-of-ownerships-guide .form-container .close-popup,
     div#areas-and-beaches-guide .form-container .close-popup,
     div#phuket-future-guide .form-container .close-popup,
@@ -2476,6 +2485,12 @@
         height: 2.08vw;
     }
 
+    div#guide-form-result .form-container .close-popup {
+        top: 0.7813vw;
+        right: 0.7813vw;
+    }  
+
+    div#guide-form-result .form-container .close-popup svg,
     div#forms-of-ownerships-guide .form-container .close-popup svg,
     div#areas-and-beaches-guide .form-container .close-popup svg,
     div#phuket-future-guide .form-container .close-popup svg
@@ -2521,8 +2536,37 @@
         margin-bottom: 2.03vw;
         font-size: 1.04vw;
     }
-
-    div#forms-of-ownerships-guide .form-container .form-section h2, div#areas-and-beaches-guide .form-container .form-section h2, div#phuket-future-guide .form-container .form-section h2 {
-        font-size: 2.14vw;
+    
+    div#guide-form-result .form-container {
+        width: 39.58vw;
+        height: 19.83vw;
+        position: relative;
+        flex-direction: column;
+        padding: 0;
+        justify-content: unset;
+        background-color: unset;
+    }
+    
+    div#guide-form-result .form-container .form-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-height: 9.79vw;
+        border-radius: 1.67vw;;
+        background-color: #eaeaea;
+        position: relative;
+        top: -1.67vw;
+    }
+    
+    div#guide-form-result .form-container .image-section {
+        width: 100%;
+        height: 9.95vw;
+    }
+    
+    div#guide-form-result .form-container .image-section img {
+        height: 100%;
+        width: 100%;
     }
 }

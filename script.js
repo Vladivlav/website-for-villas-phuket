@@ -62,6 +62,7 @@ document.querySelectorAll('#check-objects .form-button').forEach(button => {
     // Проверяем, что у кнопки есть класс 'active'
     if (button.classList.contains('active')) {
       const container = document.querySelector('#check-objects');
+      const guideResult = document.querySelector('#guide-form-result');
       const backToBlur = container.querySelector('.header-section');
       const result = container.querySelector('.quiz-result');
 
@@ -98,6 +99,176 @@ document.querySelectorAll('#check-objects .form-button').forEach(button => {
         .then(response => response.text()) // Получаем текстовый ответ
         .then(text => {
           alert(text); // Отображаем текст ответа в alert
+          guideResult.style.display = 'flex';
+          container.style.display = 'none';
+        })
+        .catch(error => {
+          console.error('Ошибка:', error);
+          alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
+        });
+    } else {
+      // Если у кнопки нет класса 'active'
+      alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
+    }
+  });
+});
+
+document.querySelectorAll('#areas-and-beaches-guide .form-button').forEach(button => {
+  button.addEventListener('click', function() {
+    // Проверяем, что у кнопки есть класс 'active'
+    if (button.classList.contains('active')) {
+      const container = document.querySelector('#areas-and-beaches-guide');
+      const guideResult = document.querySelector('#guide-form-result');
+      const backToBlur = container.querySelector('.header-section');
+      const result = container.querySelector('.quiz-result');
+
+      result.classList.remove('hidden');
+      backToBlur.classList.add('blur');
+
+      // Новый код для отправки данных
+      const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
+      const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
+      const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
+
+      // Проверяем, что пользователь дал согласие (наличие класса 'active')
+      if (!button.classList.contains('active')) {
+        alert('Вы должны согласиться с политикой конфиденциальности!');
+        return;
+      }
+
+      // Формируем данные для отправки
+      const data = {
+        to_email: email,
+        type: "second",
+        name: name,
+        phone: phone
+      };
+
+      // Отправляем запрос
+      fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then(response => response.text()) // Получаем текстовый ответ
+        .then(text => {
+          alert(text); // Отображаем текст ответа в alert
+          guideResult.style.display = 'flex';
+          container.style.display = 'none';
+        })
+        .catch(error => {
+          console.error('Ошибка:', error);
+          alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
+        });
+    } else {
+      // Если у кнопки нет класса 'active'
+      alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
+    }
+  });
+});
+
+document.querySelectorAll('#forms-of-ownerships-guide .form-button').forEach(button => {
+  button.addEventListener('click', function() {
+    // Проверяем, что у кнопки есть класс 'active'
+    if (button.classList.contains('active')) {
+      const container = document.querySelector('#forms-of-ownerships-guide');
+      const guideResult = document.querySelector('#guide-form-result');
+      const backToBlur = container.querySelector('.header-section');
+      const result = container.querySelector('.quiz-result');
+
+      result.classList.remove('hidden');
+      backToBlur.classList.add('blur');
+
+      // Новый код для отправки данных
+      const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
+      const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
+      const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
+
+      // Проверяем, что пользователь дал согласие (наличие класса 'active')
+      if (!button.classList.contains('active')) {
+        alert('Вы должны согласиться с политикой конфиденциальности!');
+        return;
+      }
+
+      // Формируем данные для отправки
+      const data = {
+        to_email: email,
+        type: "first",
+        name: name,
+        phone: phone
+      };
+
+      // Отправляем запрос
+      fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then(response => response.text()) // Получаем текстовый ответ
+        .then(text => {
+          alert(text); // Отображаем текст ответа в alert
+          guideResult.style.display = 'flex';
+          container.style.display = 'none';
+        })
+        .catch(error => {
+          console.error('Ошибка:', error);
+          alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
+        });
+    } else {
+      // Если у кнопки нет класса 'active'
+      alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
+    }
+  });
+});
+
+document.querySelectorAll('#phuket-future-guide .form-button').forEach(button => {
+  button.addEventListener('click', function() {
+    // Проверяем, что у кнопки есть класс 'active'
+    if (button.classList.contains('active')) {
+      const container = document.querySelector('#phuket-future-guide');
+      const guideResult = document.querySelector('#guide-form-result');
+      const backToBlur = container.querySelector('.header-section');
+      const result = container.querySelector('.quiz-result');
+
+      result.classList.remove('hidden');
+      backToBlur.classList.add('blur');
+
+      // Новый код для отправки данных
+      const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
+      const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
+      const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
+
+      // Проверяем, что пользователь дал согласие (наличие класса 'active')
+      if (!button.classList.contains('active')) {
+        alert('Вы должны согласиться с политикой конфиденциальности!');
+        return;
+      }
+
+      // Формируем данные для отправки
+      const data = {
+        to_email: email,
+        type: "third",
+        name: name,
+        phone: phone
+      };
+
+      // Отправляем запрос
+      fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then(response => response.text()) // Получаем текстовый ответ
+        .then(text => {
+          alert(text); // Отображаем текст ответа в alert
+          guideResult.style.display = 'flex';
+          container.style.display = 'none';
         })
         .catch(error => {
           console.error('Ошибка:', error);
@@ -419,8 +590,13 @@ let lastScrollTime = 0;
 let firstTransition = true;
 let lastTransition = true;
 
-function showNextFact() {
+function showNextFact(event) {
   const current = document.querySelector('.fact-container.current');
+
+  if (event.target.closest('span.fact-button')) {
+    return; // Прерываем выполнение функции, если клик был по кнопке
+  }
+
   let next;
   if (current.nextElementSibling && current.nextElementSibling.classList.contains('fact-container')) {
       next = current.nextElementSibling;
@@ -428,7 +604,7 @@ function showNextFact() {
       next = factContainers[0];
   }
   current.classList.remove('current');
-next.classList.add('current');
+  next.classList.add('current');
 }
 
 factContainers.forEach(container => {
@@ -740,4 +916,14 @@ document.querySelector('div#special-offer-form').addEventListener('click', funct
 
 document.querySelector('.offer-button').addEventListener('click', function() {
   document.getElementById('special-offer-form').style.display = 'flex';
+});
+
+document.querySelector('div#guide-form-result .close-popup').addEventListener('click', function() {
+  document.getElementById('guide-form-result').style.display = 'none';
+});
+
+document.querySelector('div#guide-form-result').addEventListener('click', function(event) {
+  if (!event.target.closest('.form-container')) {
+      this.style.display = 'none';
+  }
 });
