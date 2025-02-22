@@ -1,722 +1,515 @@
-@media (max-width: 767px) {
-    #line-around-sections {
-        position: fixed;
-        height: 100%;
-        width: 0;
-        left: 2.78vw;
-        border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
-        z-index: 2000;
-    }
-
+@media (min-width: 768px) and (max-width: 1199px) {
     #line-around-sections-right {
-        position: fixed;
-        height: 100%;
-        width: 0;
-        left: 8.33vw;
-        border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
-        z-index: 2000;
-    }
-
-    #line-start-30 {
-        position: fixed;
-        height: 100%;
-        width: 0;
-        left: 47.22vw;
-        border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
-        z-index: 2000;
+        left: 39px;
     }
 
     #line-start-640 {
-        position: fixed;
-        height: 100%;
-        width: 0;
-        right: 2.78vw;
-        border-right: 0.08vw solid rgba(149, 149, 149, 0.15);
-        z-index: 2000;
-    }
-
-    .box {
-        width: 12.22vw;
-        height: 4.72vw;
-    }
-
-    .menu {
-        display: flex;
-        align-items: center;
-    }
-
-    .offers-header .header-text .line {
-        width: 23.33vw;
-        align-self: center;
-        margin: 0 2.22vw !important;
-    }
-    
-    .line:nth-child(3) {
-        width: 12.22vw;
-    }
-    
-    section#main-page > header {
-        height: 18.06vw;
-        max-height: 18.06vw;
-        padding: 2.78vw;
-        padding-bottom: 0;
-    }
-    
-    section#main-page #logo img {
-        width: 22.22vw;
-        margin-top: 2.78vw;
-    
-    }
-    section#main-page .right-line,
-    section#main-page #logo {
-        width: 26.94vw;
-        min-width: 26.94vw;
-    }
-    
-    section#main-page .right-line {
-        height: 5.56vw;
-    
+        right: 39px;
     }
 
     section#main-page {
         height: auto;
-        background-image: url("images/first_section_bg-360.png");
-    
     }
 
-    section#main-page .flex {
-        flex-direction: column;
-    }
-    
-    section#main-page span#for-life::before {
-        width: 29.44vw;
-        height: 6.67vw;
-        background: url("images/for_life_before-360.png");
-        background-repeat: no-repeat;
-        content: '';
-        background-size: 29.44vw 6.67vw;
-    }
-
-    section#main-page div#location_tag {
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
-        margin-bottom: 4.17vw;
-    
-    }
-    
-    section#main-page div#location_tag::before {
-        width: 2.22vw;
-        height: 3.61vw;
-        background: url("images/location-mark.svg");
-        background-repeat: no-repeat;
-        background-size: 2.22vw 3.61vw;
-        content: '';
-        margin-right: 1.39vw;
-    
-    }
-    
-    section#main-page .flex div#text {
-        font-weight: 400;
-        font-size: 8.89vw;
-        line-height: 100%;
-        padding: 22.22vw 8.33vw;
+    section#main-page > header {
+        height: 9.8958vw;
+        padding: 2.6042vw;
         padding-bottom: 0;
     }
-    
-    section#main-page div#special-offer-slider div.stats .rent-stats {
-        width: 38.89vw;
-        padding: 4.17vw;
-        box-sizing: border-box;
-        height: 20.56vw;
-        margin-right: 3.61vw;
-        background-size: contain;
-        padding-top: 0;
-    }
-    
-    section#main-page div#special-offer-slider div.stats .digits {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 8.89vw;
-        line-height: 100%;
-    }
-    
-    section#main-page div#special-offer-slider {
-        padding: 8.33vw;
-        margin-top: 0;
-    }
-    
-    section#main-page div#special-offer-slider > p {
-        text-transform: uppercase;
-        font-size: 3.89vw;
-        line-height: 3.89vw;
-        margin-bottom: 2.22vw;
-    
-    }
 
-    section#main-page section.offers .offer .offer-button {
-        line-height: 8.89vw;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 3.33vw;
-        box-sizing: border-box;
-        padding: 0 5.56vw;
-    }
-
-    section#main-page div#greetings .yellow-link {
-        margin: 0 8.33vw;
-        margin-bottom: 19.44vw;
-        height: 8.89vw;
-        width: 70.0vw;
-        box-sizing: border-box;
-        line-height: 8.89vw;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 3.33vw;
-        padding: 0 5.56vw;
-    }
-    
-    div#greetings .yellow-link svg {
-        width: 4.17vw;
-        margin-left: 2.78vw;
-    }
-    
-    section#main-page section.offers {
-        margin: 0;
-        box-sizing: border-box;
-        left: 2.78vw;
-        width: 150%;
-        align-self: baseline;
-        padding: 5.56vw;
-        height: 100vw;
-        margin-bottom: 13.89vw;
-        border-radius: 5.56vw;
-        padding-top: 5.00vw;
-        overflow: hidden;
-    
-    }
-    
-    section#main-page .offers-header .header-text {
-        width: unset;
-        align-items: end;
-    
-    }
-    
-    section#main-page .offers-header h2 {
-        font-size: 3.89vw;
-    }
-    
-    section#main-page .offers-count .current-number {
-        font-size: 5.00vw
-    }
-    
-    section#main-page .offers-count .total-number {
-        font-size: 3.89vw;
-    }
-    
-    section#main-page .offer-image {
-        width: 83.33vw;
-        height: 46.39vw;
-        margin-top: 4.17vw;
-        margin-bottom: 4.17vw;
-    }
-    
-    section#main-page .offer-label {
-        font-size: 3.89vw;
-        height: 5.83vw;
-        line-height: 5.83vw;
-        border-radius: 5.83vw;
-        padding: 0 2.78vw;
-        left: 2.78vw;
-        top: 2.78vw;
-    }
-    
-    section#main-page section.offers .offers-controls {
-        position: absolute;
-        bottom: 5.56vw;
-        left: 55.56vw;
-        width: auto;
-        height: 5.56vw;
-        z-index: 1000;
-        background-color: #393939;
-        border-radius: 50vw;
-    
-    }
-    
-    section#main-page section.offers .offers-controls .offers-nav button.next-btn,
-    section#main-page section.offers .offers-controls .offers-nav button.prev-btn {
-        width: 15.28vw;
-        height: 5.56vw;
-        margin: 0;
-    }
-    
-    section#main-page section.offers .offers-controls .offers-nav {
-        margin-left: 0;
-        gap: 2.78vw;
-        display: flex;
-    }
-    
-    section#main-page section.offers .offer {
-        width: 100vw;
-        min-width: 100vw;
-        border-radius: 0.0vw;
-        background-color: unset;
-    }
-    
-    .offers-content {
-        position: relative;
-        transition: 0.3s ease-in-out;
-        left: 0;
-        overflow: hidden;
-        width: 200vw;
-        /* left: -100vw; */
-    
-    }
-    
-    section#main-page section.offers .offer .offer-button {
-        margin-top: 4.17vw;
-        height: 8.89vw;
-        box-sizing: border-box;
-        line-height: 8.89vw;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 3.33vw;
-        padding: 0 5.56vw;
-        border-radius: 50px;
-        background-color: #FCBD21;
-        color: #393939;
+    .main-nav a {
+        font-size: 1.3021vw;
+        width: 100%;
+        height: 100%;
         display: inline-flex;
         align-items: center;
-    
-    }
-    
-    section#main-page section.offers .offer .offers-content {
-        border-radius: 0;
-    }
-    
-    section#main-page section.offers .offer .offer-info {
-        padding-left: 0;
-        padding-bottom: 0;
-        background-color: unset;
-        border-radius: 0.0vw;
-    }
-    
-    section#main-page .offer-info h3 {
-        font-size: 5.00vw;
-    }
-    
-    section#main-page .offer-info p {
-        font-size: 3.89vw;
-    }
-    
-    section#main-page div#special-offer-slider div.stats .sale-stats {
-        width: 40.83vw;
-        box-sizing: border-box;
-        padding: 0;
-        margin: 0;
-        height: 20.56vw;
-        background-size: contain;
-        background-image: url("images/sale-stats-bg-360.png");
-        align-items: baseline;
         justify-content: center;
-        padding-left: 3.89vw;
-        display: initial;
-    }
-    
-    section#main-page div#special-offer-slider div.stats p.digits {
-        margin: 0;
-        top: 4.17vw;
-    }
-    
-    div#special-offer-slider div.stats .digits-description {
-        font-size: 3.61vw;
-        line-height: 3.61vw;
-        top: 11.67vw;
-    }
-    
-    div#special-offer-slider > span {
-        font-size: 3.61vw;
-        margin-top: 1.67vw;
-        display: block;
-    
-    }
-    
-    div#special-offer-slider > span:before {
-        margin-right: 1.11vw;
-        width: 3.06vw;
-        height: 3.06vw;
-        background-image: url("images/passport-only-mark.svg");
-        content: '';
-        background-size: 100%;
-        position: relative;
-        top: 0.5vw;
-    }
-    
-    section#main-page .offer-button svg {
-        width: 4.17vw;
-        margin-left: 2.78vw;
-        stroke: #393939;
-        line-height: 8.89vw;
-    
     }
 
-    section#main-page .main-nav > ul li {
+    .main-nav a.highlight {
+        border-radius: 1.3021vw;
+    }
+
+    section#main-page #logo {
+        width: 15.4948vw;
+        height: 7.8125vw;
+        box-sizing: border-box;
+    }
+
+    section#main-page #logo img {
+        width: 11.7188vw;
+        margin-top: 1.2617vw;
+    }
+
+    .main-nav > ul > div > li:last-of-type {
         display: none;
     }
-    
-    section#main-page .main-nav > ul > div.language-selector {
-        width: 13.06vw;
-        height: 7.5vw;
-        box-sizing: border-box;
-        position: absolute;
-        right: 23.33vw;
+
+    section#main-page .right-line {
+        width: 15.4948vw;
+        height: 3.6458vw;
     }
 
-    .selected-lang {
-        width: 13.06vw;
-        border-radius: 3.89vw;
-        padding: 0.83vw;
+    .main-nav {
+        width: 73.5677vw;
+    }
+
+    .menu {
+        padding-left: 0;
+        width: 5.7292vw;
+    }
+
+    .main-nav > ul > li {
+        padding-left: 4.0365vw;
+        padding-right: 14.974vw;
+    }
+
+    .main-nav > ul > div:nth-of-type(2) > li:first-of-type {
+        display: none;
+    }
+
+    .main-nav > ul > div:first-of-type {
+        gap: 3.9063vw;
+        padding-right: 5.2083vw;
+    }
+
+    .main-nav > ul > div:nth-of-type(2) {
+        width: 7.2917vw;
+        height: 7.2917vw;
+        padding-right: 5.2083vw;
+    }
+
+    .main-nav > ul > div:nth-of-type(2) li.highlight {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main-nav > ul > div.language-selector {
+        width: 6.1198vw;
+        height: 3.5156vw;
+    }
+
+    .selected-lang {width: 100%;height: 100%;border-radius: 1.8229vw;padding: 0.3906vw;}
+
+    .language-selector img {width: 2.7344vw;height: 2.7344vw;}
+
+    .selected-lang .arrow {
+        
+    }
+
+    .lang-option {padding-left: 0.3906vw;font-size: 1.0417vw;}
+
+    .box {
+        width: 5.7292vw;
+        height: 2.474vw;
     }
 
     .lang-dropdown {
-        height: 30vw;
-        width: 13.06vw;
-        border-radius: 3.89vw;
-        padding-top: 8.89vw;
-        gap: 1.38vw;
+        padding-top: 4.0365vw;
+        height: 14.0625vw;
+        gap: 0.651vw;
+        border-radius: 1.8229vw;
+        width: 6.1198vw;
+        border: 1px solid #575757;
     }
 
-    .lang-option {
-        font-size: 2.5vw;
-        padding-left: 0.83vw;
+    section#main-page > div.flex {
+        display: flex;
+        flex-direction: column;
+        padding: 5.0781vw;
+        padding-top: 9.8958vw;
+        box-sizing: border-box;
     }
 
-    .lang-dropdown img {
-        margin-right: 1.39vw;
+    div#special-offer-slider,
+    div#text {
+        padding: 0;
     }
 
-    .selected-lang .arrow {
-        margin-left: 1.39vw;
-        width: 2.78vw;
+    div#special-offer-slider {
+        margin-top: 2.6042vw;
     }
-    
-    section#main-page .main-nav > ul > div.language-selector img {
-        width: 5.83vw;
-        height: 5.83vw;
+
+    div#greetings .yellow-link {
+        margin-left: 0;
+        margin-top: 3.9063vw;
+        height: 4.1667vw;
+        line-height: 4.1667vw;
+        font-size: 1.5625vw;
+        padding: 0 2.6042vw;
     }
-    
-    section#main-page .main-nav > ul > div.language-selector img:nth-of-type(2) {
-        width: 2.78vw;
-        height: auto;
+
+    div#greetings {
+        justify-content: unset;
+        padding-top: 14.3229vw;
+        padding-bottom: 9.1146vw;
+    }
+
+    div#text > span {
+        font-size: 6.7708vw;
+        line-height: 100%;
+    }
+
+    div#location_tag {
+        font-size: 1.8229vw;
+        margin-bottom: 2.6042vw;
+    }
+
+    div#location_tag svg {
+        height: 1.6927vw;
+        width: auto;
+        margin-right: 0.4336vw;
+    }
+
+    div#special-offer-slider > p {
+        font-size: 1.8229vw;
+        margin-bottom: 1.0417vw;
+        line-height: 130%;
+    }
+
+    div#special-offer-slider div.stats .rent-stats {
+        width: 19.6615vw;
+        height: 10.2865vw;
+        background-image: url("images/rent-stats-bg-768.png");
+        box-sizing: border-box;
+        padding: 1.9531vw;
+    }
+
+    div#special-offer-slider div.stats .sale-stats {
+        width: 22.0052vw;
+        height: 10.2865vw;
+        background-image: url("images/sale-stats-bg-768.png");
+        box-sizing: border-box;
+        padding: 1.9531vw;
+        /* padding-bottom: 0; */
+    }
+
+    div#special-offer-slider div.stats .digits-description {
+        font-size: 1.8229vw;
+        top: unset;
+        position: relative;
+    }
+
+    div#special-offer-slider div.stats .digits {
+        font-size: 4.9479vw;
+        top: 0;
+    }
+
+    div#special-offer-slider > span {
+        font-size: 1.8229vw;
+        margin-top: 0.651vw;
+        display: block;
+    }
+
+    div#special-offer-slider > span:before {
+        content: '';
+        background: url("images/passport-only-mark.svg");
+        width: 1.4323vw;
+        height: 1.4323vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    div#greetings .yellow-link svg {
+        width: 1.9531vw;
+        margin-left: 1.3021vw;
+    }
+
+    span#for-life::before {
+        background-image: url(images/for_life_before-768.png);
+        margin-right: 1.9531vw;
+        width: 22.3958vw;
+        height: 4.5573vw;
+        background-size: cover;
+    }
+
+    .offers {
+        position: static;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 2.6042vw;
+        height: 49.4792vw;
+        padding: 3.9063vw;
+        padding-top: 3.6458vw;
+    }
+
+    .offers-header {
+        margin-bottom: 1.9531vw;
+        justify-content: space-between;
+    }
+
+    .offers-header h2 {
+        font-size: 1.8229vw;
+    }
+
+    .offers-header .header-text {
+        width: 39.0625vw;
+    }
+
+    .offers-header .header-text .line {
+        margin: 0;
+        width: 10.9375vw;
+        max-width: 10.9375vw;
+    }
+
+    .offers-count .current-number {
+        font-size: 2.3438vw;
+    }
+
+    .offers-count .total-number {
+        font-size: 1.8229vw;
+    }
+
+    .offers-nav button {
+        width: 7.1615vw;
+        height: 2.6042vw;
+    }
+
+    .offer {
+        width: 50.7813vw;
+        height: 37.1094vw;
+    }
+
+    .offers-content {
+        display: inline-flex;
+    }
+
+    .offer-label {
+        font-size: 1.8229vw;
+        padding: 0 1.3021vw;
+        line-height: 2.7344vw;
+        height: 2.7344vw;
     }
 
     section#attractive-direction {
-        padding: 2.78vw;
-        padding-top: 27.78vw;
-        padding-bottom: 13.89vw;
-    }
-    
-    section#attractive-direction .wrapper1920 {
-        padding: 0;
-    }
-    
-    section#attractive-direction .facts-wrapper {
-        height: auto !important;
-        margin-top: 5.56vw;
-    
+        padding-top: 13.0208vw;
     }
 
-    section#attractive-direction p.main-thought,
-    section#attractive-direction p#main-thought {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 100%;
-        padding-left: 5.56vw;
-        padding-top: 0.0vw;
-        padding-right: 4.17vw;
-    
+    section#attractive-direction p.main-thought {
+        font-size: 4.6875vw;
+        padding-left: 0.2604vw;
+        max-width: 54.2969vw;
     }
-    
-    p.main-thought br {
-        display: none;
+
+    section#attractive-direction .wrapper1920 {
+        padding: 0 5.0781vw;
     }
-    
-    p.main-thought span::before, p#main-thought span::before {
-        height: 5.83vw;
-        width: 19.72vw;
-        margin-right: 3.06vw;
+
+    section#attractive-direction .fact-container,
+    section#attractive-direction .fact-container.current {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60.6719vw;
     }
-    
-    p.main-thought span::before {
-        background-image: url("images/facts-badge-360.png");
+
+    .facts-wrapper {
+        height: 71.224vw;
     }
-    
-    p#main-thought span::before {
-        background: url("images/sofa-badge-360.png");
-        width: 30.56vw;
-        height: 5.83vw;
-        background-size: 100%;
-    
+
+    section#attractive-direction .fact-container .fact-left-part {
+        width: 100%;
+        max-width: unset;
     }
-    
+
+    section#attractive-direction .fact-container .fact-right-part {
+        width: 100%;
+        height: 29.8177vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text {
+        width: 42.9688vw;
+        height: 27.0833vw;
+        border-radius: 1.9531vw;
+        gap: 4px;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part {
+        background-image: url("images/fact-1-bg-768.png");
+        height: 38.6719vw;
+        min-height: 38.6719vw;
+        top: 0;
+        border-radius: 1.9531vw;
+    }
+
+    section#attractive-direction .fact-container .fact-right-part img {
+        max-width: unset;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part.second {
+        background-image: url("images/fact-2-bg-768.png");
+    }
+
+    section#attractive-direction .fact-container .fact-left-part.third {
+        background-image: url("images/fact-3-bg-768.png");
+    }
+
     p.main-thought span.desktop-badge:before {
         display: none;
     }
-    
-    section#attractive-direction .fact-container {
-        height: 124.17vw;
-        display: none;
-        gap: 0.0vw;
-        flex-direction: column;
-        position: unset;
-        margin-bottom: 13.89vw;
+
+    p.main-thought span.mobile-badge:before {
+        display: inline-block;
+        width: 12.2396vw;
+        height: 3.2552vw;
+        background: url(images/why-investments-attract-badge-768.png);
+        background-size: contain;
+        margin-right: 1.9531vw;
     }
-    
-    section#attractive-direction .fact-container.current {
-        display: flex;
-        background: #393939;
-        box-shadow: 0.83vw 1.67vw 2.78vw rgba(0, 0, 0, 0.3);
-        border-radius: 0px 0px 5.56vw 5.56vw;
-    
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text .fact-badge {
+        top: 2.6042vw;
+        left: 2.6042vw;
+        font-size: 1.5625vw;
+        width: 9.5052vw;
+        height: 2.6042vw;
+        line-height: 2.6042vw;
     }
-    
-    section#attractive-direction .last-fact-container {
-        display: block;
-        opacity: 0;
-        background: url("images/last-fact-bg-767.png");
-        height: 121.94vw;
-        margin-top: 0;
-        padding: 5.56vw;
-        box-sizing: border-box;
-        background-size: 106%;
-        background-position: bottom;
-        box-shadow: 0.83vw 1.67vw 2.78vw rgba(0, 0, 0, 0.3);
-        border-radius: 5.56vw;
-    
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text p {
+        font-size: 2.3438vw;
+        margin-left: 2.6042vw;
+        line-height: 100%;
     }
-    
-    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .number {
-        margin-bottom: 5.83vw;
-        font-size: 3.33vw;
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge {
+        font-size: 1.8229vw;
+        margin-left: 2.6042vw;
     }
-    
-    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p,
-    section#attractive-direction .last-fact-container .fact-item p {
-        font-size: 4.17vw;
-    
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
+        content: unset;
     }
-    
-    section#attractive-direction .fact-items .fact-item p {
-        font-size: 4.17vw;
-    
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge svg {
+        width: 1.1719vw;
+        height: 1.1719vw;
+        margin-right: 0.2604vw;
     }
-    
-    section#attractive-direction .last-fact-container .fact-items span, section#attractive-direction .last-fact-container .fact-right-part span {
-        font-size: 3.89vw;
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text p.yellow {
+        max-width: 22.6563vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge:last-of-type {
+        margin-bottom: 2.6042vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button {
+        height: 4.1667vw;
+        line-height: 4.1667vw;
+        font-size: 1.5625vw;
+        padding: 0 2.6042vw;
         max-width: unset;
+        max-height: unset;
+        margin-bottom: 2.6042vw;
+        margin-right: 2.6042vw;
     }
-    
-    section#attractive-direction .last-fact-container .fact-items span.second-fact-item {
-        width: 41.94vw;
-    
+
+    section#attractive-direction .fact-container .fact-left-part .fact-footer {
+        bottom: 0;
     }
-    
-    section#attractive-direction .last-fact-container span.fourth-fact-item {
-        width: 70vw;
+
+    section#attractive-direction .fact-container .fact-left-part .fact-footer p {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.9531vw;
+        line-height: 120%;
+        margin: 0;
+        margin-bottom: 0;
+        margin-left: 2.6042vw;
+        height: 8.9844vw;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    section#attractive-direction .last-fact-container {
+        height: 40.4948vw;
+        border-radius: 1.9531vw;
+        margin-top: 10.4167vw;
+        background-image: url("images/last-fact-bg-768.svg");
+        background-size: 101%;
+        padding: 2.6042vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        position: relative;
     }
 
     section#attractive-direction .last-fact-container .fact-right-part svg,
     section#attractive-direction .last-fact-container > svg {
         display: none;
     }
-    
+
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .number {
+        font-size: 1.5625vw;
+    }
+
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item {
+        gap: 21px;
+        padding: 0;
+        max-width: 255px;
+        height: auto;
+    }
+
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p {
+        font-size: 18px;
+    }
+
+    section#attractive-direction .last-fact-container .fact-items p,
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item,
+    section#attractive-direction .last-fact-container .fact-right-part p {
+        font-size: 15px;
+    }
+
+    section#attractive-direction .last-fact-container .fact-items span {
+        font-size: 14px;
+        max-width: 181px;
+    }
+
+    section#attractive-direction .last-fact-container .fact-items span, section#attractive-direction .last-fact-container .fact-right-part span {
+        margin-top: 3px;
+    }
+
+    section#attractive-direction .last-fact-container .fact-right-part span {
+        max-width: 257px;
+        font-size: 14px;
+    }
+
     section#attractive-direction .last-fact-container .fact-left-part {
         flex-direction: column;
-        width: 100%;
+        justify-content: space-between;
+        width: 255px;
     }
 
     section#attractive-direction .last-fact-container .fact-items {
-        width: 100%;
         max-width: unset;
-        gap: 8.33vw;
+        gap: 30px;
         height: auto;
         padding: 0;
-    
-    }
-    
-    section#attractive-direction .last-fact-container .fact-right-part {
-        gap: 8.33vw;
-        height: auto;
-        padding: 0;
-    }
-    
-    
-    
-    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item p {
-        font-size: 5vw !important;
+        margin: 0;
+        padding-bottom: 14px;
     }
 
-    section#attractive-direction .last-fact-container .fact-right-part .fact-item:first-of-type,
-    section#attractive-direction .last-fact-container .fact-items .fact-item:first-of-type {
-        left: 27.78vw;
+    section#attractive-direction .last-fact-container .fact-right-part {
+        width: 257px;
         position: relative;
-        margin-top: 8.33vw;
-    
+        left: -7px;
+        justify-content: flex-end;
+        padding-bottom: 14px;
+        gap: 30px;
     }
-    
-    section#attractive-direction .fact-container .fact-left-part {
-        top: 0;
-        left: 0;
-        width: 100%;
-        max-width: unset;
-        max-height: unset;
-        grid-column: unset;
-        grid-row: unset;
-        background-image: url("images/fact-1-bg-767.png");
-        background-size: 94.44vw 72.22vw;
-        background-position: bottom;
-        height: 124.17vw;
-        opacity: 1;
-        border-radius: 4.17vw;
-    
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part.second {
-        background-image: url("images/fact-2-bg-767.png");
-        border-radius: 4.17vw;
-    }
-        section#attractive-direction .fact-container .fact-left-part.third {
-        background-image: url("images/fact-3-bg-767-shadow.png");
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part .fact-footer {
-        position: relative;
-        top: 0;
-        left: 0;
-        height: 66.39vw;
-        width: 100%;
-        flex-direction: column;
-        align-items: baseline;
-        justify-content: end;
-        padding: 5.56vw;
-        box-sizing: border-box;
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button {
-        margin: 0;
-        height: 8.89vw;
-        max-height: unset;
-        line-height: 8.89vw;
-        font-size: 3.33vw;
-        width: auto;
-        padding: 0 5.56vw;
-        box-sizing: border-box;
-        min-width: 44.44vw;
-        display: flex;
-        align-items: center;
-    }
-    
-    #check-objects .form-select > span svg {
-        transform: rotate(180deg);
-    }
-    
-    section#news div.header > span svg,
-    .btn-ask svg,
-    .faq-ask-question span svg,
-    section#tenth-section div.content .block-link span svg,
-    .form-button svg,
-    #check-objects .next-button svg,
-    #prices-and-benefits .next-button svg,
-    section#investments-base .form-button svg,
-    section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button svg {
-        width: 4.17vw;
-        margin-left: 2.78vw;
-        height: auto;
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part .fact-footer p {
-        margin: 0;
-        padding: 0;
-        margin-bottom: 4.17vw;
-        max-width: 83.33vw;
-        font-size: 4.17vw;
-    
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part .fact-text {
-        margin: 0;
-        width: 100%;
-        height: 57.78vw;
-        opacity: 1;
-        transform: unset;
-        border-radius: 4.17vw;
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part .fact-text .fact-badge {
-        font-size: 3.33vw;
-        height: 5.56vw;
-        padding: 0 2.78vw;
-        width: auto;
-        border-radius: 80px;
-        line-height: 5.56vw;
-        top: 5.56vw;
-        left: 5.56vw;
-    
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
-        margin: 0;
-        display: none;
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
-        position: relative;
-        margin-left: 5.56vw;
-        margin-top: 1.11vw;
-    
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge:last-of-type {
-        margin-bottom: 5.56vw;
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge svg {
-        width: 2.5vw;
-        height: 2.5vw;
-    }
-    
-    section#attractive-direction .fact-container .fact-left-part .fact-text p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 5.0vw;
-        line-height: 100%;
-        max-width: 60%;
-        margin-left: 5.56vw;
-    }
-    
-    section#attractive-direction .fact-container .fact-right-part {
-        top: 0;
-        left: 0;
-        width: 100%;
-        position: relative;
-        display: none;
-    }
-    
+
     section#youtube-video {
-        padding: 27.78vw 2.78vw;
+        padding: 100px 5.0781vw;
         position: relative;
         height: auto;
-        padding-bottom: 42.22vw;
-        background-position: 100% 35%;
-        background-size: 60%;
+        padding-bottom: 162px;
+        background-size: 391px 369px;
+        background-position-x: right;
+        background-position-y: 71px;
     }
     
     section#youtube-video .youtube-container {
@@ -726,59 +519,55 @@
     }
     
     section#youtube-video .youtube-container .text-container img {
-        width: 27.78vw;
-        height: 6.11vw;
+        width: 100px;
+        height: 22px;
     }
     
     section#youtube-video .youtube-container .image-container {
         width: 100%;
         order: 2;
         border-radius: 5.56vw;
-    
     }
     
     section#youtube-video .youtube-container .text-container {
         top: 0;
         left: 0;
         margin: 0;
-        padding: 0 5.56vw;
+        padding: 0;
         order: 1;
-    
     }
     
     section#youtube-video .youtube-container .text-container a {
+        margin-left: 0;
+        margin-top: 3.9063vw;
+        height: 32px;
+        line-height: 4.1667vw;
+        font-size: 1.5625vw;
+        padding: 0 2.6042vw;
         position: absolute;
-        bottom: 27.78vw;
-        right: 2.78vw;
+        bottom: 100px;
+        right: 5.0781vw;
         align-self: center;
         display: flex;
-        margin-top: 4.17vw;
-        height: 8.89vw;
-        line-height: 8.89vw;
         font-style: normal;
         font-weight: 500;
-        font-size: 3.33vw;
-        padding: 0 5.56vw;
         border-radius: 50px;
         max-width: unset;
-    
     }
     
     section#youtube-video .youtube-container .text-container a svg {
-        margin-left: 1.39vw;
         align-self: center;
-        width: 4.17vw;
-        margin-left: 2.78vw;
-    
+        width: 1.9531vw;
+        margin-left: 1.3021vw;
     }
     
     section#youtube-video .youtube-container .text-container p {
         font-style: normal;
         font-weight: 400;
-        font-size: 7.5vw;
+        font-size: 36px;
         line-height: 100%;
-        margin: 8.33vw 0;
-    
+        margin: 30px 0;
+        max-width: 513px;
     }
     
     section#youtube-video .youtube-container .image-container img {
@@ -789,294 +578,264 @@
     }
     
     section#youtube-video .youtube-container .image-container .play-icon {
-        width: 19.44vw;
-        height: 19.44vw;
+        width: 143.18px;
+        height: 143.18px;
         top: 50%;
         left: 50%;
-        transform: translate(-9.72vw, -9.72vw);
+        transform: translate(-71.6px, -71.6px);
     }
-    
+
     section#quote-with-four-men {
-        min-height: 109.72vw;
-        height: 109.72vw;
+        height: 599px;
     }
-    
-    section#quote-with-four-men div.quote-sign {
-        padding: 8.33vw;
-    }
-    
-    section#quote-with-four-men div.quote-sign {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.33vw;
-        line-height: 113.2%;
-        left: 0;
-        transform: unset;
-    }
-    
-    section#quote-with-four-men div.quote-sign span:first-of-type {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 5.0vw;
-        line-height: 100%;
-        margin-bottom: 2.22vw;
-        display: block;
-    }
-    
+
     section#quote-with-four-men img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: 60%;
     }
-    
-    section#quote-with-four-men div.quote {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 100%;
+
+    section#quote-with-four-men div.quote span {
+        font-size: 36px;
     }
-    
+
+    section#quote-with-four-men div.quote .left {
+        left: 39px;
+        transform: unset;
+    }
+
     section#quote-with-four-men div.quote .right {
         text-align: left;
-        padding-left: 30.56vw;
-        padding-right: 8.33vw;
-        position: unset;
-        left: unset;
+        right: 0;
         transform: unset;
-    
+        left: 220px;
     }
-    
-    section#quote-with-four-men div.quote .left {
-        padding-left: 8.33vw;
-        position: unset;
-        left: unset;
+
+    section#quote-with-four-men div.quote .right br {
+        display: initial;
+    }
+
+    section#quote-with-four-men div.quote-sign {
         transform: unset;
-    
+        left: 39px;
+        gap: 8px;
+        padding-bottom: 40px;
     }
-    
+
+    section#quote-with-four-men div.quote-sign span:first-of-type {
+        font-size: 18px;
+    }
+
+    section#quote-with-four-men div.quote-sign span:last-of-type {
+        font-size: 12px;
+    }
+
     section#company-owner {
-        flex-direction: column;
-        padding: 27.78vw 2.78vw 13.89vw 2.78vw;
-        position: relative;
-    
+        padding: 100px 39px 50px 39px;
     }
-    
-    section#company-owner div#i-know-everything {
-        padding: 0;
+
+    section#company-owner div#picture img {
         width: 100%;
-        padding-top: 28.06vw;
-    
+        height: 441px;
     }
-    
+
     section#company-owner div#picture {
-        width: 100%;
-        height: auto;
+        width: 330px;
+    }
+
+    #investment-info {
+        padding-left: 0;
+        margin-left: 30px;
     }
     
-    section#company-owner #investment-info {
-        padding-top: 8.33vw;
-        padding-left: 5.56vw;
-    
+    #investment-info > p {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 36px;
     }
-    
-    section#company-owner #investment-info > p {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 100%;
-        position: absolute;
-        top: 0;
-        margin: 0;
-        padding-top: 27.78vw;
-    }
-    
-    section#company-owner #investment-info .details-grid {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
-        gap: 5.56vw;
-        text-align: left;
-        row-gap: 11.11vw;
-    }
-    
-    #investment-info .detail-item {
-        width: 100% !important;
-    
-    }
-    
-    section#company-owner #investment-info .details-grid .column2-wide {
-        grid-column: 1 / -1 
-    }
-    
+
     #investment-info .detail-item h3 {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 5.0vw;
-        line-height: 100%;
-    
+        font-size: 18px;
     }
-    
+
     #investment-info .detail-item p {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
+        font-size: 14px;
     }
-    
-    section#best-points {
-        width: 100%;
-        height: auto;
-        padding: 27.78vw 2.78vw;
-        margin: 0;
-        box-sizing: border-box;
+
+    #investment-info .detail-item.column1 {
+        width: 133px;
+        /* order: 1; */
     }
-    
-    section#best-points .container {
-        max-width: 100.0vw;
+
+    #investment-info .detail-item:nth-of-type(4) {
+        width: 145px;
+        order: 2;
+    }
+
+    #investment-info .detail-item.column2-wide {
+        order: 5;
+        width: 246px;
+    }
+
+    #investment-info .detail-item.column2 {
+        width: 142px;
+        order: 4;
+    }
+
+    #investment-info .detail-item.column3 {
+        width: 133px;
+        order: 3;
+    }
+
+    #investment-info .details-grid {
+        column-gap: 47px;
+        row-gap: 30px;
+    }
+
+    section#company-owner .quote-sign {
+        width: 148px;
+        height: 97px;
+        background-image: url(images/gray-badge-bg-768.png);
+        margin: 15px;
+        background-size: cover;
+        padding: 15px;
+        font-size: 12px;
+        justify-content: space-between;
+    }
+
+    section#company-owner .quote-sign span:first-of-type {
+        font-size: 18px;
+    }
+
+    #best-points {
+        padding: 39px;
+    }
+
+    #best-points .container {
         padding: 0;
     }
+
+    #best-points .grid {gap: 30px;}
     
-    #best-points .container > h2:nth-of-type(2) {
-        padding-left: 2.78vw;
-    
+    #best-points .grid-item {
+        height: 154px;
+        padding: 20px;
+        border-radius: 15px;
     }
-    
-    section#best-points .container > h2 {
-        padding: 0 5.56vw;
-        font-size: 7.50vw;
-        display: inline;
-        padding-right: 0;
-    
+
+    #best-points .grid-item.item1 {
+        width: 330px;
+        order: 1;
     }
-    
-    section#best-points span.mobile-badge::before {
-        background: url("images/rectangle-points-from-denis.png");
-        content: '';
-        height: 6.39vw;
-        width: 20.56vw;
-        display: inline-block;
-        min-width: 20.56vw;
-        background-repeat: no-repeat;
+    #best-points .grid-item.item1 p {
+        max-width: 230px;
+    }
+    #best-points .grid-item.item3 p {
+        max-width: 256px;
+    }
+    #best-points .grid-item.item4 p {
+        max-width: 257px;
+    }
+    #best-points .grid-item.item7 p {
+        max-width: 210px;
+    }
+    #best-points .grid-item.item2 {
+        width: 330px;
+        order: 2;
+    }
+    #best-points .grid-item.item3 {
+        width: 330px;
+        order: 3;
+    }
+    #best-points .grid-item.item4 {
+        width: 330px;
+        order: 4;
+    }
+    #best-points .grid-item.item5 {
+        order: 5;
+        width: 238px;
+    }
+    #best-points .grid-item.item6 {
+        order: 7;
+        width: 240px;
+    }
+    #best-points .grid-item.item7 {
+        width: 330px;
+        order: 8;
+        height: 136px;
+    }
+    #best-points .grid-item.item8 {
+        width: 330px;
+        order: 9;
+        height: 136px;
+    }
+    #best-points .grid-item.item9 {
+        order: 10;
+        width: 100%;
+        height: 130px;
+        padding: 20px;
+        padding-top: 17px;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+    }
+    section#best-points .grid .grid-item.img {
+        order: 6;
+        display: initial;
+        width: 150px;
+        background: url(images/four-five-reasons-block-768.png);
         background-size: contain;
-        background-position: bottom;
-        margin-right: 1.94vw;
-    
     }
-    
-    section#best-points span.mobile-badge {
-        padding: 0 5.56vw;
-        display: block;
-    
+
+    #best-points .container > h2 {
+        font-size: 36px;
     }
 
     #best-points .container > h2:nth-of-type(2)::before {
-        height: 6.39vw;
-        width: 20.56vw;
-        display: none;
-        min-width: 20.56vw;
-    }
-    
-    section#best-points .grid {
-        display: flex;
-        flex-direction: column;
-        gap: 5.56vw;
-        padding-top: 8.33vw;
-    
-    }
-    
-    section#best-points .grid .grid-item {
-        width: 100%;
-        box-sizing: border-box;
-        height: auto;
-        padding: 5.56vw;
-        box-shadow: 0.83vw 1.67vw 2.78vw rgba(0, 0, 0, 0.15);
-        border-radius: 5.56vw;
-    
-    }
-    
-    #best-points .cta button {
-        width: 40.56vw;
-        display: flex;
-        height: 8.89vw;
-        line-height: 8.89vw;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 3.33vw;
-        padding: 0 5.56vw;
-        border-radius: 50px;
-    
-    }
-    
-    #best-points .cta button svg {
-        width: 4.17vw;
-        margin-left: 2.78vw;
-    
-    }
-    
-    #best-points .grid-item.cta p {
-        margin: 0;
-        padding-top: 8.61vw;
-        margin-bottom: 5.56vw;
-        font-size: 5.56vw;
-    
-    }
-    
-    .cta p::before {
-        top: 0.0vw;
-        width: 3.89vw;
-        height: 3.89vw;
-
-    }
-    
-    section#best-points .grid .grid-item.img {
-        padding: 0;
-        display: block;
-        background: url("images/four-five-reasons-block.png")
-        height: 42.78vw;
-        width: 100%;
-        background-size: contain;
-        height: 42.78vw;;
-    }
-    
-    section#best-points .grid .grid-item.img img {
-        display: initial;
-        width: 100%;
-    
-    }
-    
-    #best-points .grid-item h3 {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.33vw;
-        line-height: 100%;
+        width: 88px;
+        height: 25px;
+        position: relative;
+        top: -1px;
     }
 
     #best-points .grid-item h3:first-of-type {
-        font-size: 3.33vw;
+        font-size: 12px;
     }
-    
+
     #best-points .grid-item h3:nth-of-type(2) {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 5.0vw;
-        line-height: 100%;
-        padding-top: 2.78vw;
-    
+        font-size: 18px;
+        padding-top: 10px;
     }
-    
-    section#best-points .grid-item p {
-        margin-top: 5.56vw;
-        font-size: 3.89vw;
+
+    #best-points .grid-item p {
+        font-size: 14px;
     }
-    
+
+    #best-points .cta button {
+        margin-left: 0;
+        margin-top: 3.9063vw;
+        height: 4.1667vw;
+        line-height: 4.1667vw;
+        font-size: 1.5625vw;
+        padding: 0 2.6042vw;
+        box-sizing: border-box;
+        width: auto;
+        border-radius: 16px;
+    }
+
+    .cta p::before {
+        width: 14px;
+        height: 14px;
+        top: -44px;
+        position: absolute;
+    }
+
+    #best-points .grid-item.cta p {
+        font-size: 20px;
+        margin-bottom: 0;
+        width: 244px;
+    }
+
     section#investments-base {
         height: auto;
         position: relative;
@@ -1084,7 +843,8 @@
     }
     
     #investments-base .wrapper1920 {
-        padding: 0;
+        padding: 100px 34px;
+        align-items: center;
     }
     
     section#investments-base img {
@@ -1098,1823 +858,445 @@
     }
     
     section#investments-base .quote {
-        padding-top: 27.78vw;
-        padding-left: 8.33vw;
         box-sizing: border-box;
         position: relative;
-        z-index: 10;
-    
+        z-index: 37;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
     
     section#investments-base .quote p.title {
         font-style: normal;
         font-weight: 400;
-        font-size: 7.5vw;
+        font-size: 36px;
         line-height: 100%;
         margin-top: 0;
-        margin-bottom: 4.17vw;
+        margin-bottom: 10px;
+        text-align: center;
     }
     
     section#investments-base .quote p.description {
         width: 100%;
-        padding-right: 8.33vw;
-        text-align: right;
+        text-align: center;
         box-sizing: border-box;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 300;
-        font-size: 3.89vw;
+        font-size: 14px;
         line-height: 130%;
-    
+        width: 390px;
     }
-    
-    section#investments-base .quote p.description br {
-        display: none;
-    }
-    
+
     #get-properties {
-        margin: 0 2.78vw;
-        margin-top: 8.33vw;
-        height: auto;
-        width: calc(100% - 5.56vw);
+        margin: 0;
+        margin-top: 50px;
+        height: 466px;
+        width: 490px;
         position: relative;
-        border-radius: 5.56vw;
-    
+        border-radius: 30px;
+        padding: 50px;
+        box-sizing: border-box;
     }
     
     #get-properties .form-text {
-        padding-top: 8.33vw;
-        padding-left: 9.44vw;
-        padding-right: 9.44vw;
         box-sizing: border-box;
         text-align: center;
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 300;
-        font-size: 3.89vw;
         line-height: 130%;
+        padding: 0;
     }
     
     #get-properties .form-text p {
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 3.89vw;
+        font-size: 14px;
         line-height: 130%;
-    
+        margin-bottom: 30px;
+    }
+
+    #get-properties .form-text p br {
+        display: none;
     }
     
     #get-properties .form-inputs {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-top: 8.33vw;
-        gap: 5.56vw;
-        padding: 0 5.56vw 0 5.56vw;
-    
-    }
-    
-    #prices-and-benefits .form-inputs .form-actions {
-        margin-bottom: 0;
-    }
-    
-    .form-inputs .form-actions {
-        margin-top: 2.78vw;
-        width: auto;
-        margin-bottom: 8.33vw;
-    
-    }
-    
-    .form-agreement {
-        font-size: 2.5vw !important;
-        width: 41.94vw;
-        margin: 0 auto;
-    
-    }
-    
-    .form-agreement > div {
-        left: 2.22vw;
-        align-items: center;
-    
-    }
-    #check-objects .form-button,
-    #get-properties .form-inputs .form-actions .form-button {
-        margin-bottom: 2.78vw;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 3.33vw;
-        line-height: 100%;
-        width: 57.78vw;
-        box-sizing: border-box;
-        padding: 0 5.56vw;
-        height: 8.89vw;
-        color: #393939;
-    
-    }
-    
-    .form-agreement > div svg,
-    .form-agreement > div input {
-        position: relative;
-        left: -4.72vw;
-        width: 2.50vw;
-        height: 2.50vw;
-        margin: 0;
-    }
-    
-    .form-agreement > div svg {
-        left: -1.2vw !important;
-        top: 0.5vw !important;
-        transform: none;
-    
-    }
-    
-    input#agreement {
-        margin-right: 0.83vw;
-        border-radius: 0.56vw;
-    
-    }
-    
-    .form-agreement .first-line {
-        position: relative;
-        left: -4.72vw;
-        height: unset;
-        line-height: unset;
-    
-    }
-    
-    #get-properties .form-input,
-    #get-properties .form-select {
-        width: 100%;
-        height: 8.89vw;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        height: 32px;
-        height: 8.89vw !important;
-        font-size: 3.61vw;
-        border-radius: 8.89vw;
-        padding: 0 5.56vw;
-    }
-    
-    #get-properties .form-select span svg {
-        transform: rotate(180deg);
-    }
-    
-    #investments-base .form-select div.feddback-options-list > span svg {
-        transform: rotate(0deg);
-    }
-    
-    #check-objects .form-select div.feddback-options-list,
-    #investments-base .form-select div.feddback-options-list {
-        border-radius: 4.44vw;
-        border: 1px solid #FCBD21;
-        height: 26.67vw;
-        padding-top: 8.89vw;
-    
-    }
-    
-    .feddback-options-list span {
-        height: 8.89vw !important;
-        line-height: 8.89vw !important;
-        padding: 0 5.56vw !important;
-        font-size: 3.61vw !important;
-        border-radius: 8.89vw;    
-    }
-    
-    #prices-and-benefits div.feddback-options-list span {
-        color: rgba(57, 57, 57, 0.49);
-    }
-
-    .feddback-options-list span:first-of-type {
-        display: flex !important;
-        justify-content: space-between;
-        align-items: center;
-    
-    }
-    
-    #investments-base .form-select > span, #check-objects .form-select > span, #prices-and-benefits .form-select > span {
-        height: 8.89vw;
-        line-height: 8.89vw;
-        justify-content: space-between;
-        align-items: center;
-        padding-left: 0;
-        height: 8.89vw;
-        font-size: 3.61vw;
-        border-radius: 8.89vw;
-        padding: 0 5.56vw;
-        color: rgba(57, 57, 57, 0.49);
-    }
-    
-    #investments-base .form-select > span, #check-objects .form-select > span {
-        color: rgba(255, 255, 255, 0.5);
+        gap: 20px;
         padding: 0;
     }
-    
-    #check-objects .form-select > span.selected,
-    #investments-base .form-select > span.selected {
-        color: white;
-    }
-    
-    #check-objects .form-select > span {
-        padding: 0 5.56vw;
-    }
-    
-    #check-objects .form-button,
-    #prices-and-benefits .form-button {
-        margin-bottom: 2.78vw;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 3.33vw;
-        line-height: 100%;
-        width: 57.78vw;
-        box-sizing: border-box;
-        padding: 0 5.56vw;
-        height: 8.89vw;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    #prices-and-benefits .form-button svg {
-        width: 4.17vw;
-        margin-left: 2.78vw;
-        height: auto;
-    
-    }
-    
-    section#prices-and-benefits {
-        width: 100%;
-        height: auto;
-    }
-    
-    #check-objects .quiz-result, #prices-and-benefits .quiz-result {
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        padding: 0 2.78vw;
-        justify-content: center;
-    }
-    
-    #check-objects .quiz-result .close-popup,
-    #prices-and-benefits .quiz-result .close-popup {
-        position: absolute;
-        width: 100%;
-        top: 50%;
-        height: 10.28vw;
-        transform: translateY(-59.5vw);
-        z-index: 2;
-        right: 5.56vw;
-    }
-        
-    #check-objects .quiz-result .close-popup img,
-    #prices-and-benefits .quiz-result .close-popup img {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 10.28vw;
-        height: 10.28vw;
-        padding: 2.5vw;
-    }
-    
-    #check-objects .quiz-result .close-popup {
-        transform: translateY(-70.5vw);
-    
-    }
-    
-    #check-objects .quiz-result > img,
-    #prices-and-benefits .quiz-result > img,
-    #check-objects .quiz-result .close-popup,
-    #prices-and-benefits .quiz-result .close-popup
-    #check-objects .quiz-result > img,
-    #prices-and-benefits .quiz-result > img,
-    #check-objects .quiz-result .result-container,
-    #prices-and-benefits .quiz-result .result-container,
-    #check-objects .quiz-result .result-container .result-footer,
-    #prices-and-benefits .quiz-result .result-container .result-footer
-    {
-        width: 100%;
-    }
-    
-    #check-objects .quiz-result > img,
-    #prices-and-benefits .quiz-result > img {
-        position: relative;
-        top: 2.78vw;
-    
-    }
-    
-    #check-objects .quiz-result .result-container .result-footer,
-    #prices-and-benefits .quiz-result .result-container .result-footer {
-        padding: 8.33vw;
-        border-radius: 4.17vw;
-        gap: 5.56vw;
-    }
-    
-    #check-objects .quiz-result .result-footer p, #prices-and-benefits .quiz-result .result-footer p {
-        font-size: 3.89vw;
-        width: 100%;
-    }
-    
-    #check-objects .quiz-result .result-container .result-footer span,
-    #prices-and-benefits .quiz-result .result-container .result-footer span {
-        height: 8.89vw;
-        font-size: 3.33vw;
-        padding: 0 5.56vw;
-    }
-    
-    #check-objects .quiz-result .result-container .result-footer span svg,
-    #prices-and-benefits .quiz-result .result-container .result-footer span svg {
-        margin-left: 2.78vw;
-    }
-    
-    #check-objects .quiz-result .result-container,
-    #prices-and-benefits .quiz-result .result-container {
-        height: 91.67vw;
-        top: -2.78vw;
-        padding: 2.78vw;
-        border-radius: 5.56vw;
-        padding-top: 8.33vw;
-    
-    }
-    
-    #check-objects .quiz-result .result-container {
-        height: 113.89vw;
-    
-    }
-    
-    #check-objects .quiz-result h4,
-    #prices-and-benefits .quiz-result h4 {
-        font-size: 7.5vw;
-        text-align: center;
-        margin-top: 0;
-    }
-    
-    #check-objects .quiz-result .result-container > p,
-    #prices-and-benefits .quiz-result .result-container > p {
-        font-size: 3.89vw;
-        width: 94%;
-        margin-top: 1.11vw;
-        margin-bottom: 0;
-    }
-    
-    #check-objects .quiz-result .result-container > p br:nth-of-type(2) {
-        display: none;
-    }
-    
-    #prices-and-benefits .quiz-result .result-container > p {
-        margin-bottom: 8.33vw;
-    }
-    
-    #check-objects .quiz-result .result-container .social-icons svg {
-        width: 11.11vw;
-        height: 11.11vw;
-    }
-    
-    #check-objects .quiz-result .result-container .social-icons {
-        gap: 10.56vw;
-        margin-top: 5.56vw;
-        margin-bottom: 8.33vw;
-    
+
+    .form-input, .form-select {
+        height: 32px;
+        width: 330px;
+        font-size: 13px;
+        padding: 0 20px;
     }
 
-    section#check-objects .header-section,
-    section#prices-and-benefits .header-section {
-        padding: 27.78vw 2.78vw 13.89vw 2.78vw;
+    #prices-and-benefits .form-input,
+    #prices-and-benefits .form-select {
+        width: 317px;
+        background: #ffffffb3;
     }
-    
-    section#check-objects {
-        background: url("images/check-objects-bg-360.png");
-        background-size: cover;
-    
+
+    #check-objects .form-input,
+    #check-objects .form-select {
+        width: 317px;
     }
-    
-    section#check-objects .header-section {
-        padding-bottom: 27.78vw;
-    
+
+    #investments-base .form-select, #check-objects .form-select, #prices-and-benefits .form-select {
+        font-size: 13px;
+        padding: 0;
+        height: 32px;
+        line-height: 32px;
     }
-    
-    #check-objects .header-content h3,
-    section#prices-and-benefits .header-content h1 {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 100%;
-        margin-bottom: 2.78vw;
-    
+
+    #investments-base .form-select > span, #check-objects .form-select > span, #prices-and-benefits .form-select > span {
+        height: 32px;
+        line-height: 32px;
+        padding: 0;
+        align-items: center;
+        width: 317px;
+        border-radius: 16px;
+        padding: 0 20px;
+        box-sizing: border-box;
     }
-    
-    section#check-objects .header-content p,
-    section#prices-and-benefits .header-content p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
-        margin: 0;
-        margin-top: 2.78vw;
-        width: unset;
-    
+
+        #investments-base .form-select > span {
+            box-sizing: border-box;
+        }
+
+    .form-button {
+        margin-left: 0;
+        margin-top: 10px;
+        height: 4.1667vw;
+        line-height: 4.1667vw;
+        font-size: 1.5625vw;
+        padding: 0 2.6042vw;
+        box-sizing: border-box;
+        width: auto;
+        border-radius: 16px;
+        color: #393939;
     }
-    
-    section#check-objects .header-content p {
-        margin-top: 0;
+
+    #prices-and-benefits .form-button {
+        width: 206px;
+        height: 32px;
     }
-    
-    section#prices-and-benefits .quiz-section {
-        background: white;
-        display: flex;
+
+    .form-agreement {
+        margin-top: 10px;
+        font-size: 9px !important;
+        width: auto;
+    }
+
+    #prices-and-benefits .form-agreement {
+        color: #959595;
+    }
+
+    .form-actions {
+        margin-bottom: 0;
+    }
+
+    .form-button svg {
+        align-self: center;
+        width: 1.9531vw;
+        margin-left: 1.3021vw;
+    }
+
+    #check-objects .header-section,
+    #prices-and-benefits .header-section {
+        padding: 100px 39px 50px;
+    }
+
+    #check-objects .header-content,
+    #prices-and-benefits .header-content {
         flex-direction: column;
-        padding: 5.56vw;
-        margin-top: 8.33vw;
-        border-radius: 4.17vw;
-        box-shadow: 1.39vw 1.67vw 3.61vw rgba(0, 0, 0, 0.1);
-        height: unset;
+        align-items: start;
+        gap: 10px;
+    }
+
+    #check-objects .header-content h3, #prices-and-benefits .header-content h1 {
+        font-size: 36px;
+    }
+    
+    #check-objects .header-content p,
+    #prices-and-benefits .header-content p {
+        margin: 0;
+        font-size: 14px;
+        width: 349px;
+    }
+
+    #check-objects .quiz-section,
+    #prices-and-benefits .quiz-section {
+        margin-top: 30px;
+        height: auto;
+        padding: 20px;
+        box-sizing: border-box;
+        transition: 0.3s ease-in-out;
     }
 
     #check-objects .quiz-section.last-slide, #prices-and-benefits .quiz-section.last-slide {
         height: unset;
     }
-    
-    #prices-and-benefits .quiz-progress,  #check-objects .quiz-progress {
-        margin-bottom: 0;
-        position: unset;
-        display: flex;
-    }
-    
+
     #check-objects .progress-bar,
     #prices-and-benefits .progress-bar {
-        margin-top: 0;
-        height: 2.5vw;
-        border-radius: 2.5vw;
+        margin-top: 0px;
         width: 100%;
     }
-    
-    #prices-and-benefits .progress {
-        border-radius: 8vw;
+
+    #prices-and-benefits .quiz-progress, #check-objects .quiz-progress {
+        align-items: self-start;
+        margin-bottom: 10px;
     }
-    
-    #check-objects .quiz-question p.green-question,
-    #prices-and-benefits .quiz-question p.green-question {
-        margin: 0;
-        margin-top: 2.78vw;
-        font-size: 5.00vw;
-    }
-    
+
     #check-objects .quiz-questions-container, #prices-and-benefits .quiz-questions-container {
         height: auto;
-        position: relative;
-    }
-    
-    #check-objects .quiz-question.active, #prices-and-benefits .quiz-question.active {
-        position: relative;
-    }
-    
-    #prices-and-benefits .form-select > span svg {
-        transform: rotate(180deg);
-    }
-    
-    .quiz-buttons {
-        display: flex;
-        gap: 4.17vw;
     }
 
-    #check-objects .quiz-question p.green-question {
-        margin-top: 0;        
+    #check-objects .quiz-section .quiz-question,
+    #prices-and-benefits .quiz-section .quiz-question {
+        position: relative;
+        display: none;
     }
-    
+
+    #check-objects .quiz-question.active, #prices-and-benefits .quiz-question.active {
+        display: inherit;
+    }
+
     .form-inputs {
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         padding: 0;
-        gap: 5.56vw;
-        margin-top: 5.56vw;
-    
-    }
-    
-    .form-input, .form-select {
-        width: 100%;
-        height: 8.89vw;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        height: 32px;
-        height: 8.89vw;
-        font-size: 3.61vw;
-        border-radius: 8.89vw;
-        padding: 0 5.56vw;
-    }
-    
-    #prices-and-benefits .form-select span:first-of-type {
-        padding: 0 5.56vw;
-    }
-        #prices-and-benefits .form-select span.selected {
-    color: #393939;
-    }
-    
-    #prices-and-benefits .form-select div.feddback-options-list {
-        border-radius: 4.44vw;
-        border: 1px solid #4caf50;
-        height: 37.5vw;
-        padding-top: 8.89vw;
-    
-    }
-    
-    .btn-ask,
-    .faq-ask-question span,
-    section#tenth-section div.content .block-link span,
-    #check-objects .quiz-option span,
-    #check-objects .next-button,
-    #check-objects .prev-button,
-    #check-objects .quiz-option,
-    #prices-and-benefits .quiz-option span,
-    #prices-and-benefits .next-button,
-    #prices-and-benefits .prev-button,
-    #prices-and-benefits .quiz-option {
-        height: 8.89vw;
-        font-size: 3.33vw;
-        line-height: 8.89vw;
-        box-sizing: border-box;
-        border-radius: 50vw;
-    
-    }
-    
-    #prices-and-benefits .quiz-option.need-width span {
-        font-weight: 300;
-    
+        margin-top: 15px;
     }
 
-    #check-objects .next-button,
-    #check-objects .prev-button,
-    #prices-and-benefits .next-button,
-    #prices-and-benefits .prev-button {
-        padding: 0 5.56vw !important;
-        display: flex;
-        width: 29.72vw;
-        align-items: center;
-        min-width: 29.72vw;
-        border-radius: 20vw;
-    
-    }
-    
-    #check-objects .quiz-option span,
-    #prices-and-benefits .quiz-option span {
-        margin-left: 2.78vw;
-        margin-right: 5.56vw;
-        font-size: 3.89vw;    
-    }
-    
-    #check-objects .quiz-option div.circle, #prices-and-benefits .quiz-option div.circle {
-        width: 6.11vw;
-        height: 6.11vw;
-        margin: 1.39vw;
-        border-width: 0.28vw;
-        box-sizing: border-box;
-        margin-right: 0;
-    
-    }
-
-    #check-objects .quiz-question.active .quiz-option {
-        opacity: 1;
-    }
-    
-    #check-objects .quiz-question {
-        position: absolute;
-        visibility: hidden;
-    }
-    
     #check-objects .quiz-options,
     #prices-and-benefits .quiz-options {
         margin: 0;
-        margin-top: 4.17vw;
-        max-width: 100%;
-        overflow: hidden;
-        gap: 4.17vw;
+        margin-top: 16px;
+        height: auto;
         flex-wrap: wrap;
-        padding-bottom: 0;
-    
+        padding: 0;
+        gap: 15px;
     }
-    
+
+    #check-objects .quiz-question.active .next-button,
+    #check-objects .quiz-question.active .prev-button,
+    #prices-and-benefits .quiz-question.active .next-button,
+    #prices-and-benefits .quiz-question.active .prev-button {
+        padding: 0 20px;
+    }
+
+    #prices-and-benefits .quiz-question .quiz-option,
+    #prices-and-benefits .quiz-question .next-button,
+    #prices-and-benefits .quiz-question .prev-button,
+    #check-objects .quiz-question .quiz-option,
+    #check-objects .quiz-question .next-button,
+    #check-objects .quiz-question .prev-button {
+        height: 32px;
+        font-size: 12px !important;
+    }
+
+    #check-objects .quiz-option div.circle, #prices-and-benefits .quiz-option .circle {
+        width: 22px;
+        height: 22px;
+        margin-right: 0;
+    }
+
+    #check-objects .quiz-option span,
+    #prices-and-benefits .quiz-option span {
+        margin-left: 10px;
+        margin-right: 20px;
+        height: 32px;
+        font-size: 14px;
+    }
+
     #check-objects .quiz-section p,
-    section#prices-and-benefits .quiz-section p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
-        max-width: 100%;
-        margin-top: 5.56vw;
-        margin-left: 0;
-        font-weight: 300;
-    
+    #prices-and-benefits .quiz-section p {
+        font-size: 14px;
+        margin: 0px;
+        margin-top: 20px;
     }
-    
+
     #check-objects .quiz-progress span,
     #prices-and-benefits .quiz-progress span {
-        margin-top: 8.33vw;
-        font-size: 3.33vw;
-        width: 10.56vw;
-        height: 4.72vw;
-        margin-left: 0;
-    }
-    
-    #check-objects .quiz-progress span {
-        background-color: #575757;
-        color: white;
-        width: 10.56vw;
-        height: 4.72vw;
-        line-height: 4.72vw;
-    
-    }
-
-    section#check-objects .header-content,
-    section#prices-and-benefits .header-content {
-        flex-direction: column;
-        padding: 0 5.56vw;
-        align-items: unset;
-    }
-    
-    #check-objects .quiz-section {
-        background-image: unset;
-        display: flex;
-        flex-direction: column;
-        padding: 5.56vw;
-        margin-top: 8.33vw;
-        border-radius: 4.17vw;
-        height: unset;
-    }
-    
-
-    #prices-and-benefits .prev-button,
-    #check-objects .prev-button {
-        width: 23.06vw;
-        min-width: unset;
-        flex-basis: 100%;
-        max-width: 23.06vw;
-    }
-    #check-objects .prev-button {
-        background: #959595;
-    }
-    
-    #prices-and-benefits .prev-button {
-        background-color: #D7D9D8;
-        color: #393939;
-    }
-    
-    #check-objects .quiz-progress {
-        margin-bottom: 2.78vw;
-    }
-    
-    section#prices-and-benefits .content-section {
-        padding-top: 27.78vw;
-        padding-left: 2.78vw;
-        padding-right: 2.78vw;
-        box-sizing: border-box;
-        width: 100%;
-        flex-direction: column;
-        gap: 8.33vw;
-    
-    }
-    
-    section#prices-and-benefits .text-content {
-        margin-left: 5.56vw;
-        margin-right: 5.56vw;
-        width: 100%;
         margin: 0;
-        padding: 5.56vw;
-        box-sizing: border-box;
-    
+        margin-top: 30px;
+        width: 38px;
+        height: 17px;
+        line-height: 17px;
+        font-size: 12px;
     }
-    
-    section#prices-and-benefits .text-content h2 {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 7.50vw;
-        width: 106%;
-    
+    #check-objects .quiz-question p.green-question,
+    #prices-and-benefits .quiz-question p.green-question {
+        margin-left: 0px;
+        font-size: 18px;
     }
-    
-    section#prices-and-benefits .text-content p {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
-        width: 64.44vw;
-        margin-bottom: 11.11vw;
-        margin-top: 2.78vw;
+
+    #prices-and-benefits .content-section .image-content {
+        width: 330px;
+        height: 678px;
+        min-width: 330px;
     }
-    
-    section#prices-and-benefits .text-content p br {
-        display: none;
+
+    #prices-and-benefits .text-content {
+    margin-top: 10px;
     }
-    
-    section#prices-and-benefits .fact-list {
+
+    #prices-and-benefits .fact-list {
+        margin-top: 40px;
+        gap: 30px;
         display: flex;
         flex-direction: column;
-        gap: 11.11vw;
-    
     }
-    
-    section#prices-and-benefits .fact-item {
+
+    #prices-and-benefits .fact-item p.little-title {
+        margin-top: 10px;
+        font-size: 36px;
+    }
+
+    #prices-and-benefits .fact-item p.number {
+        font-size: 12px;
+        margin-top: 0;
+    }
+
+    #prices-and-benefits .fact-item p.little-description {
+        font-size: 14px;
+        max-width: unset !important;
+        margin-top: 0;
+    }
+
+    #prices-and-benefits .fact-item {
         height: auto;
         max-width: unset;
     }
-    
-    section#prices-and-benefits .fact-item p.number {
-        margin-bottom: 2.78vw;
-        font-size: 3.33vw;
-        margin-top: 0;
-    
+
+    #prices-and-benefits .text-content h2 {
+        font-size: 36px;
+        display: inline;
+        margin-right: 4px;
     }
-    
-    section#prices-and-benefits .fact-item p.little-title {
-        width: 100%;
-        margin-bottom: 2.5vw;
-        margin-top: 0.0vw;
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 100%;
-    
+
+    #prices-and-benefits .text-content p {
+        font-size: 14px;
+        margin-top: 10px;
     }
-    
-    section#prices-and-benefits .fact-item p.little-description {
-        margin: 0;
-        width: 100%;
-        min-width: unset !important;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
-        max-width: unset !important;
-    }
-    
-    section#prices-and-benefits .text-content h2:nth-of-type(2)::before {
+
+    #prices-and-benefits .text-content h2:nth-of-type(2)::before {
         content: '';
-        margin: 0;
+        display: none;
     }
-    section#prices-and-benefits .content-section .image-content {
-        width: 100%;
-    
+
+    #prices-and-benefits .content-section {
+        padding: 100px 39px;
+        gap: 30px;
     }
-    
-    section#prices-and-benefits .content-section .image-content img {
-        height: auto;
-        width: 100%;
-    }
-    
-    /*   FIX LATER!!!111   */
-    .grid8,
-    .footer-bottom p {
-        min-width: unset;
-        transform: unset;
-        left: 0;
-        position: relative;
-    }
-    
-    section#additional-company-info {
-        padding: 38.34vw 2.78vw 13.89vw 2.78vw;
-        background-image: unset;
-    
-    }
-    
+
     section#additional-company-info .wrapper1920 {
-        padding: 0;
+        padding: 100px 39px;
     }
-    
+
     section#additional-company-info > div > h2 {
         margin: 0;
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 100%;
-        padding: 0 5.56vw;
-        margin-bottom: 5.56vw;
-        position: relative;
+        margin-bottom: 30px;
+        font-size: 36px;
     }
-    
-    section#additional-company-info > div > h2::before {
-        position: absolute;
-        top: -10.56vw;
-        width: 17.78vw;
-        height: 7.78vw;
-    }
-    
+
     section#additional-company-info div.awards-section {
-        flex-direction: column;
-    }
-    
-    section#additional-company-info div.award-card {
-        width: 100%;
-    }
-    
-        section#additional-company-info div.award-card img {
-        width: 100%;
-    }
-    
-    section#additional-company-info div.award-card > img {
-        width: 100%;
-        order: 1;
-        border-radius: 4.17vw;
-    
-    }
-    
-    section#additional-company-info div.award-card.big p {
-        order: 2;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 5.0vw;
-        line-height: 100%;
-        padding: 0;
-        margin-top: 2.78vw;
-    
-    }
-    
-    section#additional-company-info div.conference-logos {
-        order: 3;
-        margin-top: 1.94vw;
-        gap: 1.39vw;
-        align-items: baseline;
-    }
-    
-    section#additional-company-info div.conference-logos img {
-        width: 23.89vw;
-        min-width: 23.89vw;
-        max-width: unset !important;
-    
-    }
-    
-    section#additional-company-info div.conference-logos img {
-        height: auto;
-        max-height: unset;
-        max-width: 30%;
-    }
-    
-    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item {
-        height: auto;
-        max-width: 72.83vw;
-        padding: 0;
-        margin-bottom: 0;
-    
-    }
-    
-    section#additional-company-info div.award-card p {
-        margin-top: 2.78vw;
-        margin-bottom: 5.56vw;
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 5.0vw;
-        line-height: 100%;
-        padding-left: 5.56vw;
-        padding-right: 5.56vw;
-    }
-    
-    section#additional-company-info div.award-card.big {
-        width: 100%;
-        box-sizing: border-box;
-        margin-top: 2.78vw;
         display: flex;
-        flex-direction: column;
-        border-radius: 5.56vw;
-        padding: 5.56vw;
-    
+        flex-wrap: wrap;
+        gap: 40px 30px;
+        margin-bottom: 100px;
     }
-    
+
     section#additional-company-info > div > h3 {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 100%;
-        padding: 13.89vw 12.78vw 5.56vw 5.56vw;
-        background: url("images/meru-white-back.png");
-        background-size: 100%;
-        margin-top: 8.33vw;
-        margin-bottom: 0;
-        background-position: bottom;
-        background-repeat: no-repeat;
-    
+        font-size: 32px;
+        margin-bottom: 42px;
     }
-    
+
     section#additional-company-info div.countries-section {
-        flex-direction: column;
-        gap: 5.56vw;
-        padding: 0 5.56vw;
-        box-sizing: border-box;
-        width: 100%;
-    
-    }
-    
-    section#additional-company-info div.country-card div.header > h4 {
-        font-family: igra-sans;
-font-style: normal;
-font-weight: 400;
-font-size: 5.0vw;
-line-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
     }
 
-    section#additional-company-info div.country-card.big,
-    section#additional-company-info div.country-card {
-        width: 100%;
-        max-height: 37.78vw;
-        height: auto;
-        border-radius: 4.17vw;
-        padding: 5.56vw;
-    }
-    
     section#additional-company-info div.country-card.last-with-image {
-        height: 37.78vw;
-        padding: 0 5.56vw;
+        display: flex;
         background: url("images/last-country-bg-360.png");
-        background-size: 100%;
-        display: block;
-    
+        background-size: cover;
+        border-radius: 15px;
+        order: 1;
     }
-    
-    section#additional-company-info div.country-card .agent-info .agent-details p.agent-name {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 5.0vw;
-        line-height: 100%;
+
+    section#additional-company-info div.country-card {
+        width: 330px !important;
+        box-sizing: border-box;
+        height: 136px;
+        padding: 20px;
+        border-radius: 15px;
     }
-    
-    section#additional-company-info div.country-card div.header div.agent-flags img {
-        width: 6.11vw;
-        height: 6.11vw;
-        margin-left: 2.78vw;
-    
+
+    section#additional-company-info div.country-card div.header,
+    section#additional-company-info div.country-card div.header > h4 {
+        font-size: 18px;
     }
-    
-    section#additional-company-info div.country-card .agent-info .agent-details p.agent-position {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
-    
-    }
-    
-    section#additional-company-info div.country-card .agent-info .agent-details {
-        margin-left: 2.78vw;
-    }
-    
+
     section#additional-company-info div.country-card .agent-info img {
-        width: 19.44vw;
-        height: 19.44vw;
+        width: 70px;
+        height: 70px;
+        border-radius: 15px;
     }
-    
-    section#tenth-section div.header {
-        padding: 27.78vw 8.33vw 2.78vw 8.33vw;
-        flex-direction: column;
+
+    section#additional-company-info div.country-card:nth-of-type(3) {
+        order: 2;
     }
-    
-    section#tenth-section div.content .wrapper1920 {
-        transform: unset;
-        position: unset;
-        left: 0;
-        padding: 0 8.33vw;
-    
+
+    section#additional-company-info div.award-card {
+        width: 330px;
     }
-    
-    section#tenth-section div.content .block-link {
-        margin: 0;
-        padding: 0;
-        width: 83.33vw;
-        height: 35.56vw;
-        margin-top: 5.56vw !important;
-        justify-content: space-between;
-        display: flex;
-        flex-direction: column;
-    
-    }
-    
-    section#tenth-section div.content .block-link:first-of-type {
-        background-color: #252525;
-        box-sizing: border-box;
-        border-radius: 4.17vw;
-        padding: 5.56vw;
-        background-size: contain;
-    
-    }
-    
-    section#tenth-section div.content .block-link p {
-        font-size: 5vw;
-    }
-    
-    section#tenth-section div.content .block-link span {
-        height: 8.89vw;
-        width: 31.11vw;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 3.33vw;
-        line-height: 8.33vw;
-        justify-content: space-evenly;
-        padding: 0 5.56vw;
-    
-    }
-    
-    section#tenth-section div.content .block-link:nth-of-type(2) {
-        margin-bottom: 5.56vw;
-        box-sizing: border-box;
-        border-radius: 4.17vw;
-        padding: 5.56vw;
-        background-size: contain;
-    
-    }
-    
-    section#tenth-section div.content {
+
+    section#additional-company-info div.award-card.big {
+        height: 346px;
         width: 100%;
-        height: auto;
-        align-items: center;
-        padding-bottom: 54.2vw;
-        background: url("images/10-section-bg-360.png");
-        background-repeat: no-repeat;
-        background-position: bottom;
-        background-size: contain;
-    
-    }
-    
-    section#tenth-section p.main-thought,
-    section#tenth-section p#main-thought {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 100%;
-        margin-bottom: 2.78vw;
-    }
-    
-    section#tenth-section p.main-thought, section#tenth-section p#main-thought br {
-        display: none;
-    }
-    
-    section#tenth-section p.main-thought-comment,
-    section#tenth-section  p#main-thought-comment {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 3.89vw;
-        line-height: 130%;
-    }
-    
-    section#our-partners {
-        padding: 27.78vw 0.0vw 13.89vw 0.0vw;
-        overflow: hidden;
-    
-    }
-    
-    section#our-partners h3 {
-        margin: 0;
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 100%;
-    }
-    
-    section#our-partners p {
-        margin-top: 2.78vw;
-        margin-bottom: 0;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
-    }
-    
-    section#our-partners #partners-carousel {
-        display: grid;
-        row-gap: 9.44vw;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, auto);
-        column-gap: 17.5vw;
-        margin-bottom: 0;
-        margin-top: 11.11vw;
-    
-    }
-    
-    section#our-partners #partners-carousel img {
-        
-        width: 37.22vw;
-        height: auto;
-    }
-    
-    section#our-partners #partners-carousel img:nth-of-type(2),
-    section#our-partners #partners-carousel img:first-of-type {
+        display: flex;
         position: relative;
-        left: 13.89vw;
+        border-radius: 20px;
+        padding: 20px;
+        box-sizing: border-box;
     }
-    
-    
-    section#our-partners #partners-carousel img:nth-of-type(3n) {
-        display: none;
+
+    section#additional-company-info div.award-card p {
+        font-size: 18px;
+        margin-top: 15px;
+        margin-bottom: 0;
     }
-    
-    section#news {
-        padding-top: 27.78vw;
-        padding-left: 2.78vw;
-        padding-right: 2.78vw;
-        position: relative;
-        padding-bottom: 31.11vw;
-    
-    }
-    
-    section#news div.header p {
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 100%;
-        margin-left: 5.56vw;
-        margin-bottom: 8.33vw;
-    
-    }
-    
-    section#news div.header > p > span::before {
-        height: 6.67vw;
-        width: 20.28vw;
-        background-repeat: no-repeat;
-        max-width: unset;
-        max-height: unset;
-        background-position: bottom;
-        margin-right: 2.50vw;
-    
-    }
-    
-    section#news div.header > span {
+    section#additional-company-info div.award-card.big p {
         position: absolute;
-        bottom: 13.89vw;
-        right: 2.78vw;
-        width: auto;
-        height: 8.89vw;
-        line-height: 8.89vw;
-        font-weight: 500;
-        font-size: 3.33vw;
-        border-width: 1px;
-        padding: 0 5.56vw;
-        border-radius: 50px;
-    
+        top: 20px;
+        right: 34px;
+        font-size: 18px;
     }
-    
-    section#news div#news-list {
-        flex-direction: column;
-        gap: 8.33vw;
-    
-    }
-    
-    section#news div#news-list div.news-block-link {
-        width: 100%;
-        height: auto;
-        border-radius: 5.56vw;
-    }
-    
-    section#news div#news-list div.news-block-link .image-wrapper {
-        widows: 94.44vw;
-        height: 94.44vw;
-        border-radius: 5.56vw;
-    }
-    
-    section#news div#news-list .news-date {
-        font-size: 2.78vw;
-        margin-top: 4.17vw;
-        margin-left: 5.56vw;
-    
-    }
-    
-    section#news div#news-list .news-title {
-        font-size: 5.0vw;
-        margin-top: 4.17vw;
-        margin-left: 5.56vw;
-    
-    }
-    
-    section#news div#news-list .news-description {
-        font-size: 3.89vw;
-        padding-bottom: 5.56vw;
-        margin-left: 5.56vw;
-        margin-top: 1.39vw;
-    
-    }
-    
-    section.faq-container {
-        padding: 27.78vw 8.33vw;
-        flex-direction: column;
-    
-    }
-    
-    section.faq-container .faq-header h1 {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 10.0vw;
-        line-height: 100%;
-    }
-    
-    section.faq-container .faq-header p {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
-    }
-
-    .faq-left {
-        max-width: 40%;
-        margin-bottom: 11.11vw;
-        width: unset;
-    
-    }
-    
-    .faq-header img {
-        width: 21.11vw;
-        height: 5.83vw;
-        margin-bottom: 2.78vw;
-    
-    }
-    
-    .faq-right {
-        padding: 0;
-    }
-    
-    .faq-item {
-        max-width: unset;
-        width: unset;
-    
-    }
-    
-    .faq-ask-question {
-        margin-top: 13.89vw;
-        max-width: 100%;
-    
-    }
-    
-    .faq-ask-question img {
-        margin-bottom: 0;
-    }
-    
-    .faq-ask-question h3 {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
-        width: 70%;
-        margin-bottom: 0;
-        margin-top: 5.56vw;
-    
-    }
-    
-    .btn-ask,
-    .faq-ask-question span {
-        width: 47.78vw;
-        height: 8.89vw;
-        line-height: 8.89vw;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 3.33vw;
-        box-sizing: border-box;
-        margin-top: 2.78vw;
-        padding: 0 5.56vw;
-    
-    }
-    
-    .faq-answer {
-        padding-bottom: 0;
-        font-size: 3.89vw;
-        max-height: 0;
-        line-height: 3.89vw;
-        transition: 0.3s ease-in;
-    
-    }
-    
-    .faq-item img {
-        right: 0;
-        background-color: #F9F9F9;
-        width: 4.17vw;
-        height: 4.17vw;
-        top: 5.56vw;
-    
-    }
-    
-    .faq-question {
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 600;
-        font-size: 4.17vw;
-        overflow: hidden;
-        height: 13.89vw;
-        line-height: 13.89vw;
-    
-    }
-    
-    .faq-answer.current {
-        opacity: 1;
-        padding-bottom: 8.33vw;
-        transition: 0.3s ease-in max-height;
-        visibility: unset;
-    
-    }
-    
-    footer {
-        height: auto;
-        padding: 27.78vw 2.78vw;
-        padding-bottom: 18.61vw;
-        position: relative;
-        box-sizing: border-box;
-        background-image: url("images/footer-palm-bg-360.png");
-        background-position: top right;
-        background-size: 81.39vw 146vw;
-    
-    }
-    
-    footer .footer-container {
+    section#additional-company-info div.conference-logos {
+        width: 120px;
+        height: 162px;
+        margin-left: 29px;
         display: flex;
         flex-direction: column;
-        padding-bottom: 22.22vw;
-        border-bottom: 0.28vw solid #848484;
-        margin-bottom: 0;
+        align-self: flex-end;
     }
-    
-    .footer-nav ul {
-        display: flex;
-        flex-wrap: wrap;
-        height: auto;
-        border-bottom-width: 0.28vw;
-        column-gap: 6.67vw;
-        row-gap: 8.33vw;
-        padding-bottom: 5.56vw;
-        justify-content: center;
-    
+    section#additional-company-info div.award-card.big > picture > img {
+        width: 400px;
+        height: 306px;
+        border-radius: 15px;
     }
-    
-    .footer-nav {
-        height: initial;
-        padding-top: 5.56vw;
-    
-    }
-    
-    .footer-nav ul div.grid8,
-    .footer-nav ul div.grid16 {
-        display: none;
-    }
-    
-    .footer-nav ul div {
-        position: unset;
-        top: unset;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        column-gap: 11.11vw;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
-    .footer-nav ul div.grid16.space-between div:last-of-type {
-        display: none;
-    
-    }
-    
-    .footer-nav .flex {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 6.67vw;
-        margin-bottom: 5.56vw;
-    
-    }
-    
-    .footer-nav ul li {
-        margin: 0;
-        white-space: nowrap;
-        height: unset;
-        display: initial;
-    
-    }
-    
-    footer .footer-left {
-        padding: 0 5.56vw;
-        margin-bottom: 13.89vw;
-        position: unset;
-        left: 0;
-        transform: unset;
-    
-    }
-    
-    .footer-right {
-        padding: 0 5.56vw;
-        position: unset;
-        left: 0;
-        transform: unset;
-    }
-    
-    .contact-title {
-        font-weight: 400;
-        font-size: 3.89vw;
-        line-height: 130%;
-        margin-bottom: 5.28vw;
-    }
-    
-    .contact-phone, .contact-email {
-        margin-top: 0;
-        margin-bottom: 4.72vw;
-    
-    }
-    
-    .social-icons a svg {
-        width: 8.61vw;
-        height: 8.61vw;
-    }
-    
-    svg#youtube-svg {
-        width: 10.56vw;
-        height: 6.94vw;
-    }
-    
-    .contact-phone span, .contact-email span, .social-title {
-        font-style: normal;
-        font-weight: 300;
-        font-size: 3.06vw;
-        line-height: 3.61vw;
-        margin-bottom: 1.67vw;
-    
-    }
-    
-    .contact-email a, .contact-phone a {
-        font-family: igra-sans;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 5.0vw;
-        line-height: 100%;
-    }
-    
-    footer .footer-left h2 {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 7.5vw;
-        line-height: 100%;
-    }
-    
-    .footer-left h2 span::before {
-        width: 13.89vw;
-        height: 5.28vw;
-        background: url("images/footer-text-badge-767.png");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        content: '';
-        position: relative;
-        top: 0.56vw;
-        margin-right: 2.22vw;
-    }
-    
-    .footer-nav ul li a {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2.78vw;
-        line-height: 113.2%;
-    }
-    
-    footer .footer-bottom {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    footer .footer-bottom p:first-of-type {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-        font-family: 'Commissioner';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 2.78vw;
-        line-height: 6.94vw;
-        width: 60.0vw;
-        margin: 0 auto;
-        border-bottom: 0.28vw solid #848484;
-        position: unset;
-    }
-    
-    footer .footer-bottom p:first-of-type span {
-        position: absolute;
-        bottom: 5.56vw;
-        width: 100%;
-        left: 0;
-    }
-    
-    footer .footer-bottom p.grid8 {
-        font-size: 2.78vw;
-        text-align: center;
-        line-height: 130%;
-        width: 100%;
-        padding: 0 8.33vw;
-        box-sizing: border-box;
-        height: auto;
-    }
-    
-    footer .footer-bottom p:first-of-type img {
-        display: none;
-    }
-    
-    .footer-bottom a:last-of-type {
-        padding-bottom: 2.78vw;
-        margin-bottom: 0;
-        text-decoration: underline;
-    }
-    
-    .footer-bottom a:first-of-type {
-        padding-top: 2.78vw;
-        margin-bottom: 0;
-        text-decoration: underline;
-    }
-    
-    .social-icons {
-        display: flex;
-        align-items: center;
-        gap: 5vw;
-        margin-top: 1.67vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container,
-    div#areas-and-beaches-guide .form-container,
-    div#phuket-future-guide .form-container,
-    div#personal-consultation .form-container,
-    div#choose-property .form-container,
-    div.faq-form .form-container {
-        flex-direction: column;
-        height: 169.44vw;
-        width: 100%;
-        margin: 0 2.78vw;
-        background-color: unset;
-        position: relative;
-        top: 2.78vw;
-    }
-
-    div#special-offer-form .form-container {
-        background-image: url("images/special-offer-form-bg-360.png");
-    }
-
-    div#forms-of-ownerships-guide .form-container,
-    div#areas-and-beaches-guide .form-container,
-    div#phuket-future-guide .form-container {
-        flex-direction: column-reverse;
-        height: 198.06vw;
-    }
-
-    div.faq-form .form-container {
-        background-image: url("images/faq-form-bg-360.png");
-        background-color: #393939;
-        border-radius: 5.5556vw;
-        background-repeat: no-repeat;
-        height: 130.8333vw;
-    }
-    
-    div#personal-consultation .form-container {
-        height: 176.67vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container .image-section,
-    div#areas-and-beaches-guide .form-container .image-section,
-    div#phuket-future-guide .form-container .image-section,
-    div#personal-consultation .form-container .image-section,
-    div#choose-property .form-container .image-section,
-    div.faq-form .form-container .image-section {
-        width: 100%;
-        height: 39.17vw;
-    }
-    div#forms-of-ownerships-guide .form-container .image-section,
-    div#areas-and-beaches-guide .form-container .image-section,
-    div#phuket-future-guide .form-container .image-section {
-        height: 100%;
-    }
-
-    div#forms-of-ownerships-guide .form-container .image-section img,
-    div#areas-and-beaches-guide .form-container .image-section img,
-    div#phuket-future-guide .form-container .image-section img {
-        height: unset;
-    }
-    
-    div#forms-of-ownerships-guide .form-container .image-section img,
-    div#areas-and-beaches-guide .form-container .image-section img,
-    div#phuket-future-guide .form-container .image-section img,
-    div#personal-consultation .form-container .image-section img,
-    div#choose-property .form-container .image-section img,
-    div.faq-form .form-container .image-section img {
-        width: 100%;
-        height: auto;
-    }
-
-
-    div#forms-of-ownerships-guide .form-container .form-section,
-    div#areas-and-beaches-guide .form-container .form-section,
-    div#phuket-future-guide .form-container .form-section,
-    div#personal-consultation .form-container .form-section,
-    div#choose-property .form-container .form-section,
-    div.faq-form .form-container .form-section {
-        background-color: #F9F9F9;
-        width: 100%;
-        height: 135.83vw;
-        border-radius: 5.56vw;
-        position: relative;
-        top: -5.56vw;
-        padding: 8.33vw 5.5556vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container .form-section,
-    div#areas-and-beaches-guide .form-container .form-section,
-    div#phuket-future-guide .form-container .form-section {
-        height: 129.17vw;
-        padding-top: 12.5vw;
-        padding-bottom: 9.72vw;
-    }
-
-    div.faq-form .form-container .form-section {
-        background-color: unset;
-        position: static;
-        height: 130.8333vw;
-    }
-    
-    div#personal-consultation .form-container .form-section {
-        height: 123.06vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container .close-popup,
-    div#areas-and-beaches-guide .form-container .close-popup,
-    div#phuket-future-guide .form-container .close-popup,
-    div#personal-consultation .form-container .form-section .close-popup,
-    div#choose-property .form-container .form-section .close-popup,
-    div.faq-form .form-container .form-section .close-popup {
-        top: -30.83vw;
-        right: 2.78vw;
-        width: 10.28vw;
-        height: 10.28vw;
-        border-radius: 10.28vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container .close-popup,
-    div#areas-and-beaches-guide .form-container .close-popup,
-    div#phuket-future-guide .form-container .close-popup {
-        top: -5.56vw;
-    }
-
-    div.faq-form .form-container .form-section .close-popup {
-        top: 2.78vw;
-    }
-    
-    div#personal-consultation .form-container .form-section .close-popup {
-        top: -45.83vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container .close-popup svg,
-    div#areas-and-beaches-guide .form-container .close-popup svg,
-    div#phuket-future-guide .form-container .close-popup svg,
-    div#personal-consultation .form-container .form-section .close-popup svg,
-    div#choose-property .form-container .form-section .close-popup svg,
-    div.faq-form .form-container .form-section .close-popup svg {
-        width: 3.06vw;
-        height: 3.06vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container .form-section h2,
-    div#areas-and-beaches-guide .form-container .form-section h2,
-    div#phuket-future-guide .form-container .form-section h2,
-    div#personal-consultation .form-container .form-section h2,
-    div#choose-property .form-container .form-section h2,
-    div.faq-form .form-container .form-section h2 {
-        font-size: 7.22vw;
-        text-align: center;
-        max-width: 70.28vw;
-        margin: 0 auto;
-    }
-
-    div.faq-form .form-container .form-section h2 {
-        max-width: 66.6667vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container .form-section p,
-    div#areas-and-beaches-guide .form-container .form-section p,
-    div#phuket-future-guide .form-container .form-section p,
-    div#personal-consultation .form-container .form-section p,
-    div#choose-property .form-container .form-section p,
-    div.faq-form .form-container .form-section p {
-        font-size: 3.89vw;
-        max-width: 68.61vw;
-        text-align: center;
-        margin: 1.39vw auto 5.56vw auto;
-    }
-    
-    div#personal-consultation .form-container .form-section p {
-        max-width: unset;
-    }
-
-    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-select,
-    div#forms-of-ownerships-guide .form-container .form-section .form-inputs > input,
-    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-select,
-    div#areas-and-beaches-guide .form-container .form-section .form-inputs > input,
-    div#phuket-future-guide .form-container .form-section .form-inputs .form-select,
-    div#phuket-future-guide .form-container .form-section .form-inputs > input,
-    div#personal-consultation .form-container .form-section .form-inputs .form-select,
-    div#personal-consultation .form-container .form-section .form-inputs > input,
-    div#choose-property .form-container .form-section .form-inputs .form-select,
-    div#choose-property .form-container .form-section .form-inputs > input,
-    div.faq-form .form-container .form-section .form-inputs .form-select,
-    div.faq-form .form-container .form-section .form-inputs > input {
-        height: 8.89vw;
-        width: 100%;
-    }
-
-    div#forms-of-ownerships-guide .form-container .form-section .form-inputs,
-    div#areas-and-beaches-guide .form-container .form-section .form-inputs,
-    div#phuket-future-guide .form-container .form-section .form-inputs,
-    div#personal-consultation .form-container .form-section .form-inputs,
-    div#choose-property .form-container .form-section .form-inputs,
-    div.faq-form .form-container .form-section .form-inputs {
-        gap: 5.56vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-button,
-    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-button,
-    div#phuket-future-guide .form-container .form-section .form-inputs .form-button,
-    div#personal-consultation .form-container .form-section .form-inputs .form-button,
-    div#choose-property .form-container .form-section .form-inputs .form-button,
-    div.faq-form .form-container .form-section .form-inputs .form-button {
-        width: 70vw;
-        height: 8.89vw;
-        margin: 0 auto;
-        font-size: 3.33vw;
-        padding: 0 5.56vw;
-        margin-bottom: 2.78vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-select > span,
-    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-select > span,
-    div#phuket-future-guide .form-container .form-section .form-inputs .form-select > span,
-    div#personal-consultation .form-container .form-section .form-inputs .form-select > span,
-    div#choose-property .form-container .form-section .form-inputs .form-select > span,
-    div.faq-form .form-container .form-section .form-inputs .form-select > span {
-        height: 8.89vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement span,
-    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement span,
-    div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement span,
-    div#personal-consultation .form-container .form-section .form-inputs .form-agreement span,
-    div#choose-property .form-container .form-section .form-inputs .form-agreement span,
-    div.faq-form .form-container .form-section .form-inputs .form-agreement span {
-        font-size: 2.5vw;
-    }
-
-    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-actions,
-    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-actions,
-    div#phuket-future-guide .form-container .form-section .form-inputs .form-actions,
-    div#personal-consultation .form-container .form-section .form-inputs .form-actions,
-    div#choose-property .form-container .form-section .form-inputs .form-actions,
-    div.faq-form .form-container .form-section .form-inputs .form-actions {
-        margin-top: 0;
-    }
-
-    div#guide-form-result .form-container {
-        width: 100%;
-        margin: 0 2.78vw;
-        height: 75.83vw;
-    }
-    
-    div#guide-form-result .form-container .form-section {
-        width: 100%;
-        height: 42.5vw;
-        border-radius: 5.56vw;
-        background-color: #eaeaea;
-        position: relative;
-        top: -5.56vw;
-    }
-    
-    div#guide-form-result .form-container .image-section {
-        width: 100%;
-        height: 38.89vw;
-    }
-
-    div#guide-form-result .form-container .form-section h2 {
-        font-size: 7.5vw;
-    }
-
-    div#guide-form-result .form-container .form-section p {
-        font-size: 3.89vw;
-    }
-
-    div#guide-form-result .form-container .close-popup {
-        width: 10.28vw;
-        height: 10.28vw;
-        border-radius: 6vw;
-        top: 2.78vw;
-        right: 2.78vw;
-    }
-
-    div#guide-form-result .form-container .close-popup svg {
-        width: 3.06vw;
-        height: 3.06vw;
+    section#additional-company-info div.award-card > img {
+        width: 330px;
+        height: 227px;
     }
 }
