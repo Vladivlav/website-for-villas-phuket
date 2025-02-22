@@ -1,17 +1,17 @@
 @media (min-width: 768px) and (max-width: 1199px) {
     .pr15 {
-        padding-right: 15px !important;
+        padding-right: 1.9531vw !important;
     }
     #line-around-sections-right {
-        left: 39px;
+        left: 5.0781vw;
     }
 
     #line-start-30 {
-        left: 369px;
+        left: 48.0469vw;
     }
 
     #line-start-640 {
-        right: 39px;
+        right: 5.0781vw;
     }
 
     #line-end-208 {
@@ -103,10 +103,6 @@
     .selected-lang {width: 100%;height: 100%;border-radius: 1.8229vw;padding: 0.3906vw;}
 
     .language-selector img {width: 2.7344vw;height: 2.7344vw;}
-
-    .selected-lang .arrow {
-        
-    }
 
     .lang-option {padding-left: 0.3906vw;font-size: 1.0417vw;}
 
@@ -332,7 +328,7 @@
         width: 42.9688vw;
         height: 27.0833vw;
         border-radius: 1.9531vw;
-        gap: 4px;
+        gap: 0.5208vw;
     }
 
     section#attractive-direction .fact-container .fact-left-part {
@@ -459,68 +455,68 @@
     }
 
     section#attractive-direction .last-fact-container .fact-left-part .big-fact-item {
-        gap: 21px;
+        gap: 2.7344vw;
         padding: 0;
-        max-width: 255px;
+        max-width: 33.2031vw;
         height: auto;
     }
 
     section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p {
-        font-size: 18px;
+        font-size: 2.3438vw;
     }
 
     section#attractive-direction .last-fact-container .fact-items p,
     section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item,
     section#attractive-direction .last-fact-container .fact-right-part p {
-        font-size: 15px;
+        font-size: 1.9531vw;
     }
 
     section#attractive-direction .last-fact-container .fact-items span {
-        font-size: 14px;
-        max-width: 181px;
+        font-size: 1.8229vw;
+        max-width: 23.5677vw;
     }
 
     section#attractive-direction .last-fact-container .fact-items span, section#attractive-direction .last-fact-container .fact-right-part span {
-        margin-top: 3px;
+        margin-top: 0.3906vw;
     }
 
     section#attractive-direction .last-fact-container .fact-right-part span {
-        max-width: 257px;
-        font-size: 14px;
+        max-width: 33.4635vw;
+        font-size: 1.8229vw;
     }
 
     section#attractive-direction .last-fact-container .fact-left-part {
         flex-direction: column;
         justify-content: space-between;
-        width: 255px;
+        width: 33.2031vw;
     }
 
     section#attractive-direction .last-fact-container .fact-items {
         max-width: unset;
-        gap: 30px;
+        gap: 3.9063vw;
         height: auto;
         padding: 0;
         margin: 0;
-        padding-bottom: 14px;
+        padding-bottom: 1.8229vw;
     }
 
     section#attractive-direction .last-fact-container .fact-right-part {
-        width: 257px;
+        width: 33.4635vw;
         position: relative;
-        left: -7px;
+        left: -0.9115vw;
         justify-content: flex-end;
-        padding-bottom: 14px;
-        gap: 30px;
+        padding-bottom: 1.8229vw;
+        gap: 3.9063vw;
     }
 
     section#youtube-video {
-        padding: 100px 5.0781vw;
+        padding: 13.0208vw 5.0781vw;
         position: relative;
         height: auto;
-        padding-bottom: 162px;
-        background-size: 391px 369px;
+        padding-bottom: 21.0938vw;
+        background-size: 50.9115vw 48.0469vw;
         background-position-x: right;
-        background-position-y: 71px;
+        background-position-y: 9.2448vw;
     }
     
     section#youtube-video .youtube-container {
@@ -530,8 +526,8 @@
     }
     
     section#youtube-video .youtube-container .text-container img {
-        width: 100px;
-        height: 22px;
+        width: 13.0208vw;
+        height: 2.8646vw;
     }
     
     section#youtube-video .youtube-container .image-container {
@@ -551,18 +547,18 @@
     section#youtube-video .youtube-container .text-container a {
         margin-left: 0;
         margin-top: 3.9063vw;
-        height: 32px;
+        height: 4.1667vw;
         line-height: 4.1667vw;
         font-size: 1.5625vw;
         padding: 0 2.6042vw;
         position: absolute;
-        bottom: 100px;
+        bottom: 13.0208vw;
         right: 5.0781vw;
         align-self: center;
         display: flex;
         font-style: normal;
         font-weight: 500;
-        border-radius: 50px;
+        border-radius: 6.5104vw;
         max-width: unset;
     }
     
@@ -575,10 +571,10 @@
     section#youtube-video .youtube-container .text-container p {
         font-style: normal;
         font-weight: 400;
-        font-size: 36px;
+        font-size: 4.6875vw;
         line-height: 100%;
-        margin: 30px 0;
-        max-width: 513px;
+        margin: 3.9063vw 0;
+        max-width: 66.7969vw;
     }
     
     section#youtube-video .youtube-container .image-container img {
@@ -589,15 +585,20 @@
     }
     
     section#youtube-video .youtube-container .image-container .play-icon {
-        width: 143.18px;
-        height: 143.18px;
+        width: 18.6432vw;
+        height: 18.6432vw;
         top: 50%;
         left: 50%;
-        transform: translate(-71.6px, -71.6px);
+        transform: translate(-9.3229vw, -9.3229vw);
+    }
+
+    section#youtube-video .youtube-container .image-container .play-icon svg {
+        width: 57px;
+        height: 54px;
     }
 
     section#quote-with-four-men {
-        height: 599px;
+        height: 77.9948vw;
     }
 
     section#quote-with-four-men img {
@@ -607,11 +608,11 @@
     }
 
     section#quote-with-four-men div.quote span {
-        font-size: 36px;
+        font-size: 4.6875vw;
     }
 
     section#quote-with-four-men div.quote .left {
-        left: 39px;
+        left: 5.0781vw;
         transform: unset;
     }
 
@@ -619,7 +620,7 @@
         text-align: left;
         right: 0;
         transform: unset;
-        left: 220px;
+        left: 28.6458vw;
     }
 
     section#quote-with-four-men div.quote .right br {
@@ -628,164 +629,164 @@
 
     section#quote-with-four-men div.quote-sign {
         transform: unset;
-        left: 39px;
-        gap: 8px;
-        padding-bottom: 40px;
+        left: 5.0781vw;
+        gap: 1.0417vw;
+        padding-bottom: 5.2083vw;
     }
 
     section#quote-with-four-men div.quote-sign span:first-of-type {
-        font-size: 18px;
+        font-size: 2.3438vw;
     }
 
     section#quote-with-four-men div.quote-sign span:last-of-type {
-        font-size: 12px;
+        font-size: 1.5625vw;
     }
 
     section#company-owner {
-        padding: 100px 39px 50px 39px;
+        padding: 13.0208vw 5.0781vw 6.5104vw 5.0781vw;
     }
 
     section#company-owner div#picture img {
         width: 100%;
-        height: 441px;
+        height: 57.4219vw;
     }
 
     section#company-owner div#picture {
-        width: 330px;
+        width: 42.9688vw;
     }
 
     #investment-info {
         padding-left: 0;
-        margin-left: 30px;
+        margin-left: 3.9063vw;
     }
     
     #investment-info > p {
-        margin-top: 10px;
-        margin-bottom: 30px;
-        font-size: 36px;
+        margin-top: 1.3021vw;
+        margin-bottom: 3.9063vw;
+        font-size: 4.6875vw;
     }
 
     #investment-info .detail-item h3 {
-        font-size: 18px;
+        font-size: 2.3438vw;
     }
 
     #investment-info .detail-item p {
-        font-size: 14px;
+        font-size: 1.8229vw;
     }
 
     #investment-info .detail-item.column1 {
-        width: 133px;
+        width: 17.3177vw;
         /* order: 1; */
     }
 
     #investment-info .detail-item:nth-of-type(4) {
-        width: 145px;
+        width: 18.8802vw;
         order: 2;
     }
 
     #investment-info .detail-item.column2-wide {
         order: 5;
-        width: 246px;
+        width: 32.0313vw;
     }
 
     #investment-info .detail-item.column2 {
-        width: 142px;
+        width: 18.4896vw;
         order: 4;
     }
 
     #investment-info .detail-item.column3 {
-        width: 133px;
+        width: 17.3177vw;
         order: 3;
     }
 
     #investment-info .details-grid {
-        column-gap: 47px;
-        row-gap: 30px;
+        column-gap: 6.1198vw;
+        row-gap: 3.9063vw;
     }
 
     section#company-owner .quote-sign {
-        width: 148px;
-        height: 97px;
+        width: 19.2708vw;
+        height: 12.6302vw;
         background-image: url(images/gray-badge-bg-768.png);
-        margin: 15px;
+        margin: 1.9531vw;
         background-size: cover;
-        padding: 15px;
-        font-size: 12px;
+        padding: 1.9531vw;
+        font-size: 1.5625vw;
         justify-content: space-between;
     }
 
     section#company-owner .quote-sign span:first-of-type {
-        font-size: 18px;
+        font-size: 2.3438vw;
     }
 
     #best-points {
-        padding: 39px;
+        padding: 5.0781vw;
     }
 
     #best-points .container {
         padding: 0;
     }
 
-    #best-points .grid {gap: 30px;}
+    #best-points .grid {gap: 3.9063vw;}
     
     #best-points .grid-item {
-        height: 154px;
-        padding: 20px;
-        border-radius: 15px;
+        height: 20.0521vw;
+        padding: 2.6042vw;
+        border-radius: 1.9531vw;
     }
 
     #best-points .grid-item.item1 {
-        width: 330px;
+        width: 42.9688vw;
         order: 1;
     }
     #best-points .grid-item.item1 p {
-        max-width: 230px;
+        max-width: 29.9479vw;
     }
     #best-points .grid-item.item3 p {
-        max-width: 256px;
+        max-width: 33.3333vw;
     }
     #best-points .grid-item.item4 p {
-        max-width: 257px;
+        max-width: 33.4635vw;
     }
     #best-points .grid-item.item7 p {
-        max-width: 210px;
+        max-width: 27.3438vw;
     }
     #best-points .grid-item.item2 {
-        width: 330px;
+        width: 42.9688vw;
         order: 2;
     }
     #best-points .grid-item.item3 {
-        width: 330px;
+        width: 42.9688vw;
         order: 3;
     }
     #best-points .grid-item.item4 {
-        width: 330px;
+        width: 42.9688vw;
         order: 4;
     }
     #best-points .grid-item.item5 {
         order: 5;
-        width: 238px;
+        width: 30.9896vw;
     }
     #best-points .grid-item.item6 {
         order: 7;
-        width: 240px;
+        width: 31.25vw;
     }
     #best-points .grid-item.item7 {
-        width: 330px;
+        width: 42.9688vw;
         order: 8;
-        height: 136px;
+        height: 17.7083vw;
     }
     #best-points .grid-item.item8 {
-        width: 330px;
+        width: 42.9688vw;
         order: 9;
-        height: 136px;
+        height: 17.7083vw;
     }
     #best-points .grid-item.item9 {
         order: 10;
         width: 100%;
-        height: 130px;
-        padding: 20px;
-        padding-top: 17px;
+        height: 16.9271vw;
+        padding: 2.6042vw;
+        padding-top: 2.2135vw;
         display: flex;
         flex-direction: row;
         align-items: end;
@@ -793,33 +794,33 @@
     section#best-points .grid .grid-item.img {
         order: 6;
         display: initial;
-        width: 150px;
+        width: 19.5313vw;
         background: url(images/four-five-reasons-block-768.png);
         background-size: contain;
     }
 
     #best-points .container > h2 {
-        font-size: 36px;
+        font-size: 4.6875vw;
     }
 
     #best-points .container > h2:nth-of-type(2)::before {
-        width: 88px;
-        height: 25px;
+        width: 11.4583vw;
+        height: 3.2552vw;
         position: relative;
-        top: -1px;
+        top: -0.1302vw;
     }
 
     #best-points .grid-item h3:first-of-type {
-        font-size: 12px;
+        font-size: 1.5625vw;
     }
 
     #best-points .grid-item h3:nth-of-type(2) {
-        font-size: 18px;
-        padding-top: 10px;
+        font-size: 2.3438vw;
+        padding-top: 1.3021vw;
     }
 
     #best-points .grid-item p {
-        font-size: 14px;
+        font-size: 1.8229vw;
     }
 
     #best-points .cta button {
@@ -831,20 +832,20 @@
         padding: 0 2.6042vw;
         box-sizing: border-box;
         width: auto;
-        border-radius: 16px;
+        border-radius: 2.0833vw;
     }
 
     .cta p::before {
-        width: 14px;
-        height: 14px;
-        top: -44px;
+        width: 1.8229vw;
+        height: 1.8229vw;
+        top: -5.7292vw;
         position: absolute;
     }
 
     #best-points .grid-item.cta p {
-        font-size: 20px;
+        font-size: 2.6042vw;
         margin-bottom: 0;
-        width: 244px;
+        width: 31.7708vw;
     }
 
     section#investments-base {
@@ -854,7 +855,7 @@
     }
     
     #investments-base .wrapper1920 {
-        padding: 100px 34px;
+        padding: 13.0208vw 4.4271vw;
         align-items: center;
     }
     
@@ -880,10 +881,10 @@
     section#investments-base .quote p.title {
         font-style: normal;
         font-weight: 400;
-        font-size: 36px;
+        font-size: 4.6875vw;
         line-height: 100%;
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 1.3021vw;
         text-align: center;
     }
     
@@ -894,19 +895,19 @@
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 300;
-        font-size: 14px;
+        font-size: 1.8229vw;
         line-height: 130%;
-        width: 390px;
+        width: 50.7813vw;
     }
 
     #get-properties {
         margin: 0;
-        margin-top: 50px;
-        height: 466px;
-        width: 490px;
+        margin-top: 6.5104vw;
+        height: 60.6771vw;
+        width: 63.8021vw;
         position: relative;
-        border-radius: 30px;
-        padding: 50px;
+        border-radius: 3.9063vw;
+        padding: 6.5104vw;
         box-sizing: border-box;
     }
     
@@ -924,9 +925,9 @@
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 1.8229vw;
         line-height: 130%;
-        margin-bottom: 30px;
+        margin-bottom: 3.9063vw;
     }
 
     #get-properties .form-text p br {
@@ -937,43 +938,43 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 20px;
+        gap: 2.6042vw;
         padding: 0;
     }
 
     .form-input, .form-select {
-        height: 32px;
-        width: 330px;
-        font-size: 13px;
-        padding: 0 20px;
+        height: 4.1667vw;
+        width: 42.9688vw;
+        font-size: 1.6927vw;
+        padding: 0 2.6042vw;
     }
 
     #prices-and-benefits .form-input,
     #prices-and-benefits .form-select {
-        width: 317px;
+        width: 41.276vw;
         background: #ffffffb3;
     }
 
     #check-objects .form-input,
     #check-objects .form-select {
-        width: 317px;
+        width: 41.276vw;
     }
 
     #investments-base .form-select, #check-objects .form-select, #prices-and-benefits .form-select {
-        font-size: 13px;
+        font-size: 1.6927vw;
         padding: 0;
-        height: 32px;
-        line-height: 32px;
+        height: 4.1667vw;
+        line-height: 4.1667vw;
     }
 
     #investments-base .form-select > span, #check-objects .form-select > span, #prices-and-benefits .form-select > span {
-        height: 32px;
-        line-height: 32px;
+        height: 4.1667vw;
+        line-height: 4.1667vw;
         padding: 0;
         align-items: center;
-        width: 317px;
-        border-radius: 16px;
-        padding: 0 20px;
+        width: 41.276vw;
+        border-radius: 2.0833vw;
+        padding: 0 2.6042vw;
         box-sizing: border-box;
     }
 
@@ -983,25 +984,25 @@
 
     .form-button {
         margin-left: 0;
-        margin-top: 10px;
+        margin-top: 1.3021vw;
         height: 4.1667vw;
         line-height: 4.1667vw;
         font-size: 1.5625vw;
         padding: 0 2.6042vw;
         box-sizing: border-box;
         width: auto;
-        border-radius: 16px;
+        border-radius: 2.0833vw;
         color: #393939;
     }
 
     #prices-and-benefits .form-button {
-        width: 206px;
-        height: 32px;
+        width: 26.8229vw;
+        height: 4.1667vw;
     }
 
     .form-agreement {
-        margin-top: 10px;
-        font-size: 9px !important;
+        margin-top: 1.3021vw;
+        font-size: 1.1719vw !important;
         width: auto;
     }
 
@@ -1021,32 +1022,32 @@
 
     #check-objects .header-section,
     #prices-and-benefits .header-section {
-        padding: 100px 39px 50px;
+        padding: 13.0208vw 5.0781vw 6.5104vw;
     }
 
     #check-objects .header-content,
     #prices-and-benefits .header-content {
         flex-direction: column;
         align-items: start;
-        gap: 10px;
+        gap: 1.3021vw;
     }
 
     #check-objects .header-content h3, #prices-and-benefits .header-content h1 {
-        font-size: 36px;
+        font-size: 4.6875vw;
     }
     
     #check-objects .header-content p,
     #prices-and-benefits .header-content p {
         margin: 0;
-        font-size: 14px;
-        width: 349px;
+        font-size: 1.8229vw;
+        width: 45.4427vw;
     }
 
     #check-objects .quiz-section,
     #prices-and-benefits .quiz-section {
-        margin-top: 30px;
+        margin-top: 3.9063vw;
         height: auto;
-        padding: 20px;
+        padding: 2.6042vw;
         box-sizing: border-box;
         transition: 0.3s ease-in-out;
     }
@@ -1057,13 +1058,13 @@
 
     #check-objects .progress-bar,
     #prices-and-benefits .progress-bar {
-        margin-top: 0px;
+        margin-top: 0;
         width: 100%;
     }
 
     #prices-and-benefits .quiz-progress, #check-objects .quiz-progress {
         align-items: self-start;
-        margin-bottom: 10px;
+        margin-bottom: 1.3021vw;
     }
 
     #check-objects .quiz-questions-container, #prices-and-benefits .quiz-questions-container {
@@ -1084,24 +1085,24 @@
         display: flex;
         flex-wrap: wrap;
         padding: 0;
-        margin-top: 15px;
+        margin-top: 1.9531vw;
     }
 
     #check-objects .quiz-options,
     #prices-and-benefits .quiz-options {
         margin: 0;
-        margin-top: 16px;
+        margin-top: 2.0833vw;
         height: auto;
         flex-wrap: wrap;
         padding: 0;
-        gap: 15px;
+        gap: 1.9531vw;
     }
 
     #check-objects .quiz-question.active .next-button,
     #check-objects .quiz-question.active .prev-button,
     #prices-and-benefits .quiz-question.active .next-button,
     #prices-and-benefits .quiz-question.active .prev-button {
-        padding: 0 20px;
+        padding: 0 2.6042vw;
     }
 
     #prices-and-benefits .quiz-question .quiz-option,
@@ -1110,75 +1111,75 @@
     #check-objects .quiz-question .quiz-option,
     #check-objects .quiz-question .next-button,
     #check-objects .quiz-question .prev-button {
-        height: 32px;
-        font-size: 12px !important;
+        height: 4.1667vw;
+        font-size: 1.5625vw !important;
     }
 
     #check-objects .quiz-option div.circle, #prices-and-benefits .quiz-option .circle {
-        width: 22px;
-        height: 22px;
+        width: 2.8646vw;
+        height: 2.8646vw;
         margin-right: 0;
     }
 
     #check-objects .quiz-option span,
     #prices-and-benefits .quiz-option span {
-        margin-left: 10px;
-        margin-right: 20px;
-        height: 32px;
-        font-size: 14px;
+        margin-left: 1.3021vw;
+        margin-right: 2.6042vw;
+        height: 4.1667vw;
+        font-size: 1.8229vw;
     }
 
     #check-objects .quiz-section p,
     #prices-and-benefits .quiz-section p {
-        font-size: 14px;
-        margin: 0px;
-        margin-top: 20px;
+        font-size: 1.8229vw;
+        margin: 0;
+        margin-top: 2.6042vw;
     }
 
     #check-objects .quiz-progress span,
     #prices-and-benefits .quiz-progress span {
         margin: 0;
-        margin-top: 30px;
-        width: 38px;
-        height: 17px;
-        line-height: 17px;
-        font-size: 12px;
+        margin-top: 3.9063vw;
+        width: 4.9479vw;
+        height: 2.2135vw;
+        line-height: 2.2135vw;
+        font-size: 1.5625vw;
     }
     #check-objects .quiz-question p.green-question,
     #prices-and-benefits .quiz-question p.green-question {
-        margin-left: 0px;
-        font-size: 18px;
+        margin-left: 0;
+        font-size: 2.3438vw;
     }
 
     #prices-and-benefits .content-section .image-content {
-        width: 330px;
-        height: 678px;
-        min-width: 330px;
+        width: 42.9688vw;
+        height: 88.2813vw;
+        min-width: 42.9688vw;
     }
 
     #prices-and-benefits .text-content {
-    margin-top: 10px;
+    margin-top: 1.3021vw;
     }
 
     #prices-and-benefits .fact-list {
-        margin-top: 40px;
-        gap: 30px;
+        margin-top: 5.2083vw;
+        gap: 3.9063vw;
         display: flex;
         flex-direction: column;
     }
 
     #prices-and-benefits .fact-item p.little-title {
-        margin-top: 10px;
-        font-size: 36px;
+        margin-top: 1.3021vw;
+        font-size: 4.6875vw;
     }
 
     #prices-and-benefits .fact-item p.number {
-        font-size: 12px;
+        font-size: 1.5625vw;
         margin-top: 0;
     }
 
     #prices-and-benefits .fact-item p.little-description {
-        font-size: 14px;
+        font-size: 1.8229vw;
         max-width: unset !important;
         margin-top: 0;
     }
@@ -1189,14 +1190,14 @@
     }
 
     #prices-and-benefits .text-content h2 {
-        font-size: 36px;
+        font-size: 4.6875vw;
         display: inline;
-        margin-right: 4px;
+        margin-right: 0.5208vw;
     }
 
     #prices-and-benefits .text-content p {
-        font-size: 14px;
-        margin-top: 10px;
+        font-size: 1.8229vw;
+        margin-top: 1.3021vw;
     }
 
     #prices-and-benefits .text-content h2:nth-of-type(2)::before {
@@ -1205,57 +1206,57 @@
     }
 
     #prices-and-benefits .content-section {
-        padding: 100px 39px;
-        gap: 30px;
+        padding: 13.0208vw 5.0781vw;
+        gap: 3.9063vw;
     }
 
     section#additional-company-info .wrapper1920 {
-        padding: 100px 39px 50px;
+        padding: 13.0208vw 5.0781vw 6.5104vw;
     }
 
     section#additional-company-info {
-        background-size: 100% 256px;
-        background-position-y: 880px;
+        background-size: 100% 33.3333vw;
+        background-position-y: 114.5833vw;
     }
 
     section#additional-company-info > div > h2 {
         margin: 0;
-        margin-bottom: 30px;
-        font-size: 36px;
+        margin-bottom: 3.9063vw;
+        font-size: 4.6875vw;
     }
 
     section#additional-company-info div.awards-section {
         display: flex;
         flex-wrap: wrap;
-        gap: 40px 30px;
-        margin-bottom: 100px;
+        gap: 5.2083vw 3.9063vw;
+        margin-bottom: 13.0208vw;
     }
 
     section#additional-company-info > div > h3 {
-        font-size: 32px;
-        margin-bottom: 42px;
+        font-size: 4.1667vw;
+        margin-bottom: 5.4688vw;
     }
 
     section#additional-company-info div.countries-section {
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 3.9063vw;
     }
 
     section#additional-company-info div.country-card.last-with-image {
         display: flex;
         background: url("images/last-country-bg-360.png");
         background-size: cover;
-        border-radius: 15px;
+        border-radius: 1.9531vw;
         order: 1;
     }
 
     section#additional-company-info div.country-card {
-        width: 330px !important;
+        width: 42.9688vw !important;
         box-sizing: border-box;
-        height: 136px;
-        padding: 20px;
-        border-radius: 15px;
+        height: 17.7083vw;
+        padding: 2.6042vw;
+        border-radius: 1.9531vw;
     }
 
     section#additional-company-info div.country-card.last-with-image {
@@ -1264,29 +1265,29 @@
     }
 
     section#additional-company-info div.country-card div.header div.agent-flags img {
-        width: 17px;
-        height: 17px;
+        width: 2.2135vw;
+        height: 2.2135vw;
     }
 
     section#additional-company-info div.country-card div.header,
     section#additional-company-info div.country-card div.header > h4 {
-        font-size: 18px;
+        font-size: 2.3438vw;
     }
 
     section#additional-company-info div.country-card .agent-info .agent-details p.agent-name {
-        font-size: 18px;   
+        font-size: 2.3438vw;   
     }
     section#additional-company-info div.country-card .agent-info .agent-details {
-        margin-left: 10px;
+        margin-left: 1.3021vw;
     }
     section#additional-company-info div.country-card .agent-info .agent-details p.agent-position {
-        font-size: 14px;
+        font-size: 1.8229vw;
     }
 
     section#additional-company-info div.country-card .agent-info img {
-        width: 70px;
-        height: 70px;
-        border-radius: 15px;
+        width: 9.1146vw;
+        height: 9.1146vw;
+        border-radius: 1.9531vw;
     }
 
     section#additional-company-info div.country-card:nth-of-type(3) {
@@ -1294,98 +1295,98 @@
     }
 
     section#additional-company-info div.award-card {
-        width: 330px;
+        width: 42.9688vw;
     }
 
     section#additional-company-info div.award-card.big {
-        height: 346px;
+        height: 45.0521vw;
         width: 100%;
         display: flex;
         position: relative;
-        border-radius: 20px;
-        padding: 20px;
+        border-radius: 2.6042vw;
+        padding: 2.6042vw;
         box-sizing: border-box;
     }
 
     section#additional-company-info div.award-card p {
-        font-size: 18px;
-        margin-top: 15px;
+        font-size: 2.3438vw;
+        margin-top: 1.9531vw;
         margin-bottom: 0;
     }
     section#additional-company-info div.award-card.big p {
         position: absolute;
-        top: 20px;
-        right: 34px;
-        font-size: 18px;
+        top: 2.6042vw;
+        right: 4.4271vw;
+        font-size: 2.3438vw;
     }
     section#additional-company-info div.conference-logos {
-        width: 120px;
-        height: 162px;
-        margin-left: 29px;
+        width: 15.625vw;
+        height: 21.0938vw;
+        margin-left: 3.776vw;
         display: flex;
         flex-direction: column;
         align-self: flex-end;
     }
     section#additional-company-info div.award-card.big > picture > img {
-        width: 400px;
-        height: 306px;
-        border-radius: 15px;
+        width: 52.0833vw;
+        height: 39.8438vw;
+        border-radius: 1.9531vw;
     }
     section#additional-company-info div.award-card > img {
-        width: 330px;
-        height: 227px;
+        width: 42.9688vw;
+        height: 29.5573vw;
     }
 
     section#tenth-section div.header {
-        padding: 100px 69px 30px 39px;
+        padding: 13.0208vw 8.9844vw 3.9063vw 5.0781vw;
         position: relative;
     }
 
     p#main-thought {
-        font-size: 36px;
+        font-size: 4.6875vw;
     }
 
     p#main-thought span:before {
         background: url(images/sofa-badge-768.png);
         background-size: contain;
-        width: 110px;
-        height: 25px;
+        width: 14.3229vw;
+        height: 3.2552vw;
     }
 
     p#main-thought-comment {
         position: absolute;
-        width: 342px;
-        font-size: 14px;
-        top: 268px;
-        left: 330px;
+        width: 44.5313vw;
+        font-size: 1.8229vw;
+        top: 34.8958vw;
+        left: 42.9688vw;
     }
 
     section#tenth-section div.content {
-        height: 507px;
+        height: 66.0156vw;
         width: 100%;
         background-size: cover;
     }
 
     section#tenth-section div.content .wrapper1920 {
-        left: 330px;
+        left: 42.9688vw;
         transform: unset;
         display: flex;
         flex-direction: column;
         justify-content: end;
-        gap: 30px;
-        padding-bottom: 50px;
+        gap: 3.9063vw;
+        padding-bottom: 6.5104vw;
     }
 
     section#tenth-section div.content .block-link {
         margin: 0 !important;
-        width: 270px;
-        height: 128px;
-        padding: 20px;
-        border-radius: 15px;
+        width: 35.1563vw;
+        height: 16.6667vw;
+        padding: 2.6042vw;
+        border-radius: 1.9531vw;
     }
     section#tenth-section div.content .block-link p {
-        font-size: 18px;
-        margin-bottom: 20px;
+        font-size: 2.3438vw;
+        margin-bottom: 2.6042vw;
     }
 
     section#tenth-section div.content .block-link span {
@@ -1402,38 +1403,38 @@
     }
 
     section#our-partners h3 {
-        margin-top: 100px;
-        font-size: 36px;
+        margin-top: 13.0208vw;
+        font-size: 4.6875vw;
     }
 
     section#our-partners p {
-        font-size: 14px;
+        font-size: 1.8229vw;
         color: #393939;
-        margin-top: 10px;
-        margin-bottom: 40px;
+        margin-top: 1.3021vw;
+        margin-bottom: 5.2083vw;
     }
 
     section#our-partners #partners-carousel {
         margin: 0;
-        margin-bottom: 50px;
-        gap: 63px;
+        margin-bottom: 6.5104vw;
+        gap: 8.2031vw;
         overflow: hidden;
     }
 
     section#our-partners {
-        padding: 0 39px;
+        padding: 0 5.0781vw;
     }
 
     section#our-partners #partners-carousel img {
-        width: 134px;
+        width: 17.4479vw;
     }
 
     section#news div.header p {
-        font-size: 36px;
+        font-size: 4.6875vw;
     }
 
     section#news div.header > span {
-        margin-bottom: 9px;
+        margin-bottom: 1.1719vw;
         height: 4.1667vw;
         line-height: 4.1667vw;
         font-size: 1.5625vw;
@@ -1448,8 +1449,8 @@
 
     section#news div.header > p > span::before {
         background: url(images/news-title-badge-768.png);
-        width: 97px;
-        height: 27px;
+        width: 12.6302vw;
+        height: 3.5156vw;
         background-size: contain;
         max-width: unset;
         min-width: unset;
@@ -1457,11 +1458,11 @@
     }
 
     section#news {
-        padding: 100px 39px 50px 39px;
+        padding: 13.0208vw 5.0781vw 6.5104vw 5.0781vw;
     }
 
     section#news div.header {
-        margin-bottom: 30px;
+        margin-bottom: 3.9063vw;
     }
 
     section#news div#news-list {
@@ -1471,51 +1472,51 @@
 
     section#news div#news-list div.news-block-link:nth-of-type(3),
     section#news div#news-list div.news-block-link:nth-of-type(4) {
-        margin-top: 30px;
-        height: 449px;
+        margin-top: 3.9063vw;
+        height: 58.4635vw;
     }
 
     section#news div#news-list div.news-block-link {
-        width: 330px;
-        height: 467px;
-        border-radius: 20px;
+        width: 42.9688vw;
+        height: 60.8073vw;
+        border-radius: 2.6042vw;
     }
 
     section#news div#news-list div.news-block-link .image-wrapper {
-        width: 330px;
-        height: 330px;
-        border-radius: 20px;
+        width: 42.9688vw;
+        height: 42.9688vw;
+        border-radius: 2.6042vw;
     }
 
     section#news div#news-list .news-date {
-        margin-left: 20px;
-        margin-top: 15px;
-        font-size: 10px;
+        margin-left: 2.6042vw;
+        margin-top: 1.9531vw;
+        font-size: 1.3021vw;
     }
 
     section#news div#news-list .news-title {
-        font-size: 18px;
-        margin-top: 15px;
-        margin-left: 20px;
+        font-size: 2.3438vw;
+        margin-top: 1.9531vw;
+        margin-left: 2.6042vw;
     }
 
     section#news div#news-list .news-description {
-        font-size: 14px;
-        margin-left: 20px;
-        margin-top: 5px;
+        font-size: 1.8229vw;
+        margin-left: 2.6042vw;
+        margin-top: 0.651vw;
     }
 
     .faq-container {
         display: flex;
         flex-wrap: wrap;
-        column-gap: 65px;
-        padding: 100px 39px;
-        row-gap: 52px;
+        column-gap: 8.4635vw;
+        padding: 13.0208vw 5.0781vw;
+        row-gap: 6.7708vw;
         justify-content: end;
     }
 
     .faq-right {
-        width: 510px;
+        width: 66.4063vw;
         padding: 0;
     }
 
@@ -1524,68 +1525,68 @@
     }
 
     .faq-left {
-        width: 115px;
-        height: 131px;
+        width: 14.974vw;
+        height: 14.7135vw;
         padding: 0;
     }
 
     .faq-header img {
-        width: 76px;
-        height: 21px;
-        margin-bottom: 10px;
+        width: 9.8958vw;
+        height: 2.7344vw;
+        margin-bottom: 1.3021vw;
     }
 
     .faq-header h1 {
-        font-size: 36px;
+        font-size: 4.6875vw;
     }
 
     .faq-header p {
-        font-size: 14px;
-        margin-top: 10px;
+        font-size: 1.8229vw;
+        margin-top: 1.3021vw;
         line-height: 130%;
     }
 
     .faq-question {
-        font-size: 15px;
-        padding: 20px 0px;
-        height: 11px;
-        line-height: 11px;
+        font-size: 1.9531vw;
+        padding: 2.6042vw 0;
+        height: 1.4323vw;
+        line-height: 1.4323vw;
     }
 
     .faq-answer {
-        font-size: 14px;
+        font-size: 1.8229vw;
         line-height: 130%;
     }
 
     .faq-answer.current {
-        padding-bottom: 20px;
+        padding-bottom: 2.6042vw;
     }
 
     .faq-item img {
-        width: 15px;
-        height: 15px;
-        top: 18px;
+        width: 1.9531vw;
+        height: 1.9531vw;
+        top: 2.3438vw;
     }
 
     .faq-ask-question {
-        width: 510px;
+        width: 66.4063vw;
         max-width: unset;
     }
 
     .faq-ask-question img {
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: 2.6042vw;
     }
 
     .faq-ask-question h3 {
-        font-size: 14px;
+        font-size: 1.8229vw;
         line-height: 130%;
-        width: 210px;
+        width: 27.3438vw;
     }
 
     .btn-ask,
     .faq-ask-question span {
-        margin-top: 10px;
+        margin-top: 1.3021vw;
         height: 4.1667vw;
         line-height: 4.1667vw;
         font-size: 1.5625vw;
@@ -1593,7 +1594,7 @@
     }
 
     .btn-ask {
-        margin-top: 53px;
+        margin-top: 6.901vw;
     }
 
     .btn-ask svg,
@@ -1603,52 +1604,56 @@
         margin-left: 1.3021vw;
     }
 
-    footer {padding-top: 100px;background-image: url(images/footer-palm-bg-768.png);background-size: 375px;}
+    footer {
+        padding-top: 13.0208vw;
+        background-image: url(images/footer-palm-bg-768.png);
+        background-size: 48.8281vw;
+    }
 
     .footer-container {
-        height: 293px;
+        height: 38.151vw;
         margin-bottom: 0;
     }
 
-    .footer-left {left: 39px;transform: unset;}
+    .footer-left {left: 5.0781vw;transform: unset;}
 
     .footer-right {
-        left: 489px;
+        left: 63.6719vw;
     }
 
     .footer-left h2 {
-        font-size: 36px;
-        line-height: 36px;
+        font-size: 4.6875vw;
+        line-height: 4.6875vw;
     }
 
     .footer-left h2 span::before {
         background: url(images/footer-text-badge-768.png);
-        width: 44px;
-        height: 21px;
+        width: 5.7292vw;
+        height: 2.7344vw;
         background-size: cover;
     }
 
     .contact-phone span, .contact-email span, .social-title {
-        font-size: 11px;
+        font-size: 1.4323vw;
         margin-bottom: 0;
-        height: 13px;
-        line-height: 13px;
+        height: 1.6927vw;
+        line-height: 1.6927vw;
         display: inline-block;
     }
 
     .social-title {
-        margin-bottom: 7px;
+        margin-bottom: 0.9115vw;
     }
 
     .social-icons {
-        height: 31px;
+        height: 4.0365vw;
         display: flex;
-        gap: 25px;
+        gap: 3.2552vw;
     }
 
     .social-icons a {
-        height: 31px;
-        min-width: 31px;
+        height: 4.0365vw;
+        min-width: 4.0365vw;
         display: flex;
         align-items: center;
         margin: 0;
@@ -1660,33 +1665,33 @@
     }
 
     .social-icons a svg#youtube-svg {
-        width: 38px;
-        height: 25px;
+        width: 4.9479vw;
+        height: 3.2552vw;
     }
 
     .contact-title {
-        font-size: 14px;
-        height: 18px;
-        line-height: 18px;
+        font-size: 1.8229vw;
+        height: 2.3438vw;
+        line-height: 2.3438vw;
     }
 
     .contact-email a, .contact-phone a {
-        font-size: 18px;
-        height: 18px;
-        line-height: 18px;
+        font-size: 2.3438vw;
+        height: 2.3438vw;
+        line-height: 2.3438vw;
     }
 
     .contact-phone, .contact-email {
-        height: 36px;
+        height: 4.6875vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-bottom: 17px;
+        margin-bottom: 2.2135vw;
     }
 
     .contact-phone {
-        margin-top: 19px;
-        margin-bottom: 17px;
+        margin-top: 2.474vw;
+        margin-bottom: 2.2135vw;
     }
 
     .contact-phone > br, .contact-email > br {
@@ -1694,13 +1699,13 @@
     }
 
     .footer-nav ul li {
-        font-size: 10px;
-        padding-right: 15px;
+        font-size: 1.3021vw;
+        padding-right: 1.9531vw;
     }
 
     .footer-nav ul > div > div > li:first-of-type {
-        min-width: 32px;
-        padding-right: 30px;
+        min-width: 4.1667vw;
+        padding-right: 3.9063vw;
     }
 
     .footer-nav {
@@ -1708,7 +1713,7 @@
     }
 
     footer .grid16 .flex:first-of-type {
-        padding-right: 89px;
+        padding-right: 11.5885vw;
     }
 
     footer .footer-nav .grid8 div.flex li:first-of-type {
@@ -1720,7 +1725,7 @@
     }
 
     footer .footer-nav .grid16 {
-        padding-right: 76px;
+        padding-right: 9.8958vw;
     }
 
     footer .footer-nav .grid8 {
@@ -1728,25 +1733,25 @@
     }
 
     .footer-bottom {
-        height: 71px;
-        margin: 0 20px;
+        height: 9.2448vw;
+        margin: 0 2.6042vw;
     }
 
     .footer-bottom p {
-        font-size: 10px;
+        font-size: 1.3021vw;
         line-height: 130%;
     }
 
     .footer-bottom p.grid8 {
-        width: 334px;
+        width: 43.4896vw;
     }
 
     .footer-bottom p:first-of-type {
         display: flex;
         flex-direction: column;
-        gap: 10px;
-        min-width: 349px;
-        max-width: 349px;
+        gap: 1.3021vw;
+        min-width: 45.4427vw;
+        max-width: 45.4427vw;
     }
 
     .footer-bottom p:first-of-type img {
@@ -1755,10 +1760,25 @@
 
     .footer-bottom p:first-of-type a,
     .footer-bottom p:first-of-type span {
-        height: 7px;
+        height: 0.9115vw;
     }
 
     .footer-bottom a {
         text-decoration: underline;
+    }
+
+    #best-points .cta button svg {
+        align-self: center;
+        width: 1.9531vw;
+        margin-left: 1.3021vw;
+    }
+
+    section#additional-company-info > div > h2::before {
+        width: 8.3333vw;
+        height: 3.6458vw;
+        content: '';
+        background-image: url(images/black-badge-768.png);
+        background-size: contain;
+        margin-right: 1.1719vw;
     }
 }
