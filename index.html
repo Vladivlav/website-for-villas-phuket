@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="mobile-styles.css">
+    <link rel="stylesheet" href="medium-styles.css">
     <link rel="stylesheet" href="full-hd-styles.css">
     <link rel="stylesheet" href="fonts.css">
     <title>MERU Estate</title>
@@ -225,7 +226,8 @@
                     <div class="fact-right-part">
                         <picture>
                             <source srcset="images/fact-1-image-1920.png" media="(min-width: 1920px)">
-                            <source srcset="images/fact-1-image.png" media="(max-width: 1919px)">
+                            <source srcset="images/fact-1-image.png" media="(min-width: 1200px) and (max-width: 1919px)">
+                            <source srcset="images/fact-1-image-768.png" media="(min-width: 768px) and (max-width: 1199px)">
                             <img src="images/fact-1-image.png" alt="Описание изображения">
                         </picture>
                     </div>
@@ -252,7 +254,8 @@
                     <div class="fact-right-part">
                         <picture>
                             <source srcset="images/fact-2-image-1920.png" media="(min-width: 1920px)">
-                            <source srcset="images/fact-2-image.png" media="(max-width: 1919px)">
+                            <source srcset="images/fact-2-image.png" media="(min-width: 1200px) and (max-width: 1919px)">
+                            <source srcset="images/fact-2-image-768.png" media="(min-width: 768px) and (max-width: 1199px)">
                             <img src="images/fact-2-image.png" alt="Описание изображения">
                         </picture>
                     </div>
@@ -299,7 +302,8 @@
                     <div class="fact-right-part">
                         <picture>
                             <source srcset="images/fact-3-image-1920.png" media="(min-width: 1920px)">
-                            <source srcset="images/fact-3-image.png" media="(max-width: 1919px)">
+                            <source srcset="images/fact-3-image.png" media="(min-width: 1200px) and (max-width: 1919px)">
+                            <source srcset="images/fact-3-image-768.png" media="(min-width: 768px) and (max-width: 1199px)">
                             <img src="images/fact-3-image.png" alt="Описание изображения">
                         </picture>
                     </div>
@@ -345,7 +349,7 @@
                     </div>
                     <svg width="161" height="138" viewBox="0 0 161 138" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path opacity="0.3" d="M30.5053 135.667C34.5224 128.825 38.4768 122.107 42.3684 115.513C46.26 108.857 50.7166 101.3 55.738 92.8398L83.0421 46.5598C86.4943 40.7748 89.6327 35.4564 92.4573 30.6045C95.3446 25.6903 98.1064 20.9939 100.743 16.5152C103.442 11.9743 106.172 7.3401 108.934 2.61258H130.401C127.639 7.3401 124.908 11.9743 122.209 16.5152C119.573 20.9939 116.811 25.6903 113.924 30.6045C111.037 35.4564 107.898 40.7748 104.509 46.5598L77.2047 92.8398C72.1832 101.3 67.7267 108.857 63.8351 115.513C59.9435 122.107 55.9577 128.825 51.8778 135.667H30.5053ZM36.6251 67.3671C29.4068 67.3671 23.0359 66.0298 17.5123 63.355C12.0515 60.618 7.75185 56.7302 4.61345 51.6917C1.53782 46.6531 0 40.6504 0 33.6836C0 27.2765 1.53782 21.5538 4.61345 16.5152C7.75185 11.4145 12.0828 7.4023 17.6064 4.47871C23.13 1.4929 29.501 0 36.7193 0C43.9376 0 50.2772 1.4929 55.738 4.47871C61.2616 7.4023 65.5612 11.4145 68.6368 16.5152C71.7752 21.5538 73.3444 27.2765 73.3444 33.6836C73.3444 40.6504 71.7752 46.6531 68.6368 51.6917C65.5612 56.7302 61.2616 60.618 55.738 63.355C50.2772 66.0298 43.9062 67.3671 36.6251 67.3671ZM36.6251 52.1582C42.5253 52.1582 47.1074 50.5409 50.3713 47.3063C53.6353 44.0717 55.2672 39.593 55.2672 33.8702C55.2672 30.3245 54.514 27.1521 53.0076 24.3529C51.5639 21.5538 49.4612 19.3455 46.6994 17.7282C43.9376 16.1109 40.6109 15.3022 36.7193 15.3022C30.9446 15.3022 26.3626 17.0439 22.9731 20.5274C19.6464 24.0108 17.983 28.4584 17.983 33.8702C17.983 39.593 19.6464 44.0717 22.9731 47.3063C26.3626 50.5409 30.9133 52.1582 36.6251 52.1582ZM124.375 138C117.094 138 110.691 136.663 105.168 133.988C99.707 131.251 95.4074 127.363 92.269 122.325C89.1934 117.224 87.6556 111.221 87.6556 104.316C87.6556 97.9094 89.1934 92.1866 92.269 87.1481C95.4074 82.0473 99.7384 78.0352 105.262 75.1116C110.786 72.1258 117.157 70.6329 124.375 70.6329C131.656 70.6329 138.027 72.1258 143.488 75.1116C149.011 78.0352 153.311 82.0473 156.387 87.1481C159.462 92.1866 161 97.9094 161 104.316C161 111.221 159.462 117.224 156.387 122.325C153.311 127.363 149.011 131.251 143.488 133.988C137.964 136.663 131.593 138 124.375 138ZM124.375 122.791C130.212 122.791 134.763 121.174 138.027 117.939C141.354 114.642 143.017 110.164 143.017 104.503C143.017 100.957 142.264 97.785 140.757 94.9858C139.251 92.1866 137.117 89.9784 134.355 88.361C131.593 86.7437 128.266 85.9351 124.375 85.9351C118.6 85.9351 114.018 87.6768 110.629 91.1602C107.302 94.5815 105.639 99.0291 105.639 104.503C105.639 110.164 107.302 114.642 110.629 117.939C114.018 121.174 118.6 122.791 124.375 122.791Z" fill="black"/>
-                    </svg>                    
+                    </svg>
                 </div>
             </div>
             </section>
@@ -376,7 +380,7 @@
         <img src="images/quote-with-four-men-bg.png" />
         <div class="quote">
             <span class="left">“B момент покупки нужно понимать,</span>
-            <span class="right">как вы будете это продавать в будущем”</span>
+            <span class="right">как вы будете <br />это продавать в будущем”</span>
         </div>
         <div class="quote-sign">
             <span>Рочняк Денис</span>
@@ -389,8 +393,10 @@
                 <div id="owner-bage">
                     <picture>
                         <source srcset="images/rochnyak-denis-1920.png" media="(min-width: 1920px)">
+                        <source srcset="images/rochnyak-denis-1200.png" media="(min-width: 1200px) and (max-width: 1919px)">
+                        <source srcset="images/rochnyak-denis-768.png" media="(min-width: 768px) and (max-width: 1199px)">
                         <source srcset="images/rochnyak-denis-360.png" media="(max-width: 767px)">
-                        <img src="images/rochnyak-denis-1200.png" />
+                        <img src="images/rochnyak-denis-1200.png" alt="Rochnyak Denis">
                     </picture>
                     <div class="quote-sign">
                         <span>Рочняк<br />Денис</span>

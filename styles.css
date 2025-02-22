@@ -718,7 +718,10 @@ section#quote-with-four-men div.quote .right {
     position: relative;
     right: 50%;
     transform: translateX(39.67vw);
+}
 
+section#quote-with-four-men div.quote .right br {
+    display: none;
 }
 
 section#quote-with-four-men div.quote-sign {

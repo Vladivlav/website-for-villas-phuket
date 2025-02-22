@@ -1,0 +1,839 @@
+@media (min-width: 768px) and (max-width: 1199px) {
+    #line-around-sections-right {
+        left: 39px;
+    }
+
+    #line-start-640 {
+        right: 39px;
+    }
+
+    section#main-page {
+        height: auto;
+    }
+
+    section#main-page > header {
+        height: 9.8958vw;
+        padding: 2.6042vw;
+        padding-bottom: 0;
+    }
+
+    .main-nav a {
+        font-size: 1.3021vw;
+        width: 100%;
+        height: 100%;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .main-nav a.highlight {
+        border-radius: 1.3021vw;
+    }
+
+    section#main-page #logo {
+        width: 15.4948vw;
+        height: 7.8125vw;
+        box-sizing: border-box;
+    }
+
+    section#main-page #logo img {
+        width: 11.7188vw;
+        margin-top: 1.2617vw;
+    }
+
+    .main-nav > ul > div > li:last-of-type {
+        display: none;
+    }
+
+    section#main-page .right-line {
+        width: 15.4948vw;
+        height: 3.6458vw;
+    }
+
+    .main-nav {
+        width: 73.5677vw;
+    }
+
+    .menu {
+        padding-left: 0;
+        width: 5.7292vw;
+    }
+
+    .main-nav > ul > li {
+        padding-left: 4.0365vw;
+        padding-right: 14.974vw;
+    }
+
+    .main-nav > ul > div:nth-of-type(2) > li:first-of-type {
+        display: none;
+    }
+
+    .main-nav > ul > div:first-of-type {
+        gap: 3.9063vw;
+        padding-right: 5.2083vw;
+    }
+
+    .main-nav > ul > div:nth-of-type(2) {
+        width: 7.2917vw;
+        height: 7.2917vw;
+        padding-right: 5.2083vw;
+    }
+
+    .main-nav > ul > div:nth-of-type(2) li.highlight {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .main-nav > ul > div.language-selector {
+        width: 6.1198vw;
+        height: 3.5156vw;
+    }
+
+    .selected-lang {width: 100%;height: 100%;border-radius: 1.8229vw;padding: 0.3906vw;}
+
+    .language-selector img {width: 2.7344vw;height: 2.7344vw;}
+
+    .selected-lang .arrow {
+        
+    }
+
+    .lang-option {padding-left: 0.3906vw;font-size: 1.0417vw;}
+
+    .box {
+        width: 5.7292vw;
+        height: 2.474vw;
+    }
+
+    .lang-dropdown {
+        padding-top: 4.0365vw;
+        height: 14.0625vw;
+        gap: 0.651vw;
+        border-radius: 1.8229vw;
+        width: 6.1198vw;
+        border: 1px solid #575757;
+    }
+
+    section#main-page > div.flex {
+        display: flex;
+        flex-direction: column;
+        padding: 5.0781vw;
+        padding-top: 9.8958vw;
+        box-sizing: border-box;
+    }
+
+    div#special-offer-slider,
+    div#text {
+        padding: 0;
+    }
+
+    div#special-offer-slider {
+        margin-top: 2.6042vw;
+    }
+
+    div#greetings .yellow-link {
+        margin-left: 0;
+        margin-top: 3.9063vw;
+        height: 4.1667vw;
+        line-height: 4.1667vw;
+        font-size: 1.5625vw;
+        padding: 0 2.6042vw;
+    }
+
+    div#greetings {
+        justify-content: unset;
+        padding-top: 14.3229vw;
+        padding-bottom: 9.1146vw;
+    }
+
+    div#text > span {
+        font-size: 6.7708vw;
+        line-height: 100%;
+    }
+
+    div#location_tag {
+        font-size: 1.8229vw;
+        margin-bottom: 2.6042vw;
+    }
+
+    div#location_tag svg {
+        height: 1.6927vw;
+        width: auto;
+        margin-right: 0.4336vw;
+    }
+
+    div#special-offer-slider > p {
+        font-size: 1.8229vw;
+        margin-bottom: 1.0417vw;
+        line-height: 130%;
+    }
+
+    div#special-offer-slider div.stats .rent-stats {
+        width: 19.6615vw;
+        height: 10.2865vw;
+        background-image: url("images/rent-stats-bg-768.png");
+        box-sizing: border-box;
+        padding: 1.9531vw;
+    }
+
+    div#special-offer-slider div.stats .sale-stats {
+        width: 22.0052vw;
+        height: 10.2865vw;
+        background-image: url("images/sale-stats-bg-768.png");
+        box-sizing: border-box;
+        padding: 1.9531vw;
+        /* padding-bottom: 0; */
+    }
+
+    div#special-offer-slider div.stats .digits-description {
+        font-size: 1.8229vw;
+        top: unset;
+        position: relative;
+    }
+
+    div#special-offer-slider div.stats .digits {
+        font-size: 4.9479vw;
+        top: 0;
+    }
+
+    div#special-offer-slider > span {
+        font-size: 1.8229vw;
+        margin-top: 0.651vw;
+        display: block;
+    }
+
+    div#special-offer-slider > span:before {
+        content: '';
+        background: url("images/passport-only-mark.svg");
+        width: 1.4323vw;
+        height: 1.4323vw;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    div#greetings .yellow-link svg {
+        width: 1.9531vw;
+        margin-left: 1.3021vw;
+    }
+
+    span#for-life::before {
+        background-image: url(images/for_life_before-768.png);
+        margin-right: 1.9531vw;
+        width: 22.3958vw;
+        height: 4.5573vw;
+        background-size: cover;
+    }
+
+    .offers {
+        position: static;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 2.6042vw;
+        height: 49.4792vw;
+        padding: 3.9063vw;
+        padding-top: 3.6458vw;
+    }
+
+    .offers-header {
+        margin-bottom: 1.9531vw;
+        justify-content: space-between;
+    }
+
+    .offers-header h2 {
+        font-size: 1.8229vw;
+    }
+
+    .offers-header .header-text {
+        width: 39.0625vw;
+    }
+
+    .offers-header .header-text .line {
+        margin: 0;
+        width: 10.9375vw;
+        max-width: 10.9375vw;
+    }
+
+    .offers-count .current-number {
+        font-size: 2.3438vw;
+    }
+
+    .offers-count .total-number {
+        font-size: 1.8229vw;
+    }
+
+    .offers-nav button {
+        width: 7.1615vw;
+        height: 2.6042vw;
+    }
+
+    .offer {
+        width: 50.7813vw;
+        height: 37.1094vw;
+    }
+
+    .offers-content {
+        display: inline-flex;
+    }
+
+    .offer-label {
+        font-size: 1.8229vw;
+        padding: 0 1.3021vw;
+        line-height: 2.7344vw;
+        height: 2.7344vw;
+    }
+
+    section#attractive-direction {
+        padding-top: 13.0208vw;
+    }
+
+    section#attractive-direction p.main-thought {
+        font-size: 4.6875vw;
+        padding-left: 0.2604vw;
+        max-width: 54.2969vw;
+    }
+
+    section#attractive-direction .wrapper1920 {
+        padding: 0 5.0781vw;
+    }
+
+    section#attractive-direction .fact-container,
+    section#attractive-direction .fact-container.current {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 60.6719vw;
+    }
+
+    .facts-wrapper {
+        height: 71.224vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part {
+        width: 100%;
+        max-width: unset;
+    }
+
+    section#attractive-direction .fact-container .fact-right-part {
+        width: 100%;
+        height: 29.8177vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text {
+        width: 42.9688vw;
+        height: 27.0833vw;
+        border-radius: 1.9531vw;
+        gap: 4px;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part {
+        background-image: url("images/fact-1-bg-768.png");
+        height: 38.6719vw;
+        min-height: 38.6719vw;
+        top: 0;
+        border-radius: 1.9531vw;
+    }
+
+    section#attractive-direction .fact-container .fact-right-part img {
+        max-width: unset;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part.second {
+        background-image: url("images/fact-2-bg-768.png");
+    }
+
+    section#attractive-direction .fact-container .fact-left-part.third {
+        background-image: url("images/fact-3-bg-768.png");
+    }
+
+    p.main-thought span.desktop-badge:before {
+        display: none;
+    }
+
+    p.main-thought span.mobile-badge:before {
+        display: inline-block;
+        width: 12.2396vw;
+        height: 3.2552vw;
+        background: url(images/why-investments-attract-badge-768.png);
+        background-size: contain;
+        margin-right: 1.9531vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text .fact-badge {
+        top: 2.6042vw;
+        left: 2.6042vw;
+        font-size: 1.5625vw;
+        width: 9.5052vw;
+        height: 2.6042vw;
+        line-height: 2.6042vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text p {
+        font-size: 2.3438vw;
+        margin-left: 2.6042vw;
+        line-height: 100%;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge {
+        font-size: 1.8229vw;
+        margin-left: 2.6042vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
+        content: unset;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge svg {
+        width: 1.1719vw;
+        height: 1.1719vw;
+        margin-right: 0.2604vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text p.yellow {
+        max-width: 22.6563vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge:last-of-type {
+        margin-bottom: 2.6042vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button {
+        height: 4.1667vw;
+        line-height: 4.1667vw;
+        font-size: 1.5625vw;
+        padding: 0 2.6042vw;
+        max-width: unset;
+        max-height: unset;
+        margin-bottom: 2.6042vw;
+        margin-right: 2.6042vw;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-footer {
+        bottom: 0;
+    }
+
+    section#attractive-direction .fact-container .fact-left-part .fact-footer p {
+        font-family: 'Commissioner';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.9531vw;
+        line-height: 120%;
+        margin: 0;
+        margin-bottom: 0;
+        margin-left: 2.6042vw;
+        height: 8.9844vw;
+        display: inline-flex;
+        align-items: center;
+    }
+
+    section#attractive-direction .last-fact-container {
+        height: 40.4948vw;
+        border-radius: 1.9531vw;
+        margin-top: 10.4167vw;
+        background-image: url("images/last-fact-bg-768.svg");
+        background-size: 101%;
+        padding: 2.6042vw;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        gap: 0;
+        position: relative;
+    }
+
+    section#attractive-direction .last-fact-container .fact-right-part svg,
+    section#attractive-direction .last-fact-container > svg {
+        display: none;
+    }
+
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .number {
+        font-size: 1.5625vw;
+    }
+
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item {
+        gap: 21px;
+        padding: 0;
+        max-width: 255px;
+        height: auto;
+    }
+
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p {
+        font-size: 18px;
+    }
+
+    section#attractive-direction .last-fact-container .fact-items p,
+    section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item,
+    section#attractive-direction .last-fact-container .fact-right-part p {
+        font-size: 15px;
+    }
+
+    section#attractive-direction .last-fact-container .fact-items span {
+        font-size: 14px;
+        max-width: 181px;
+    }
+
+    section#attractive-direction .last-fact-container .fact-items span, section#attractive-direction .last-fact-container .fact-right-part span {
+        margin-top: 3px;
+    }
+
+    section#attractive-direction .last-fact-container .fact-right-part span {
+        max-width: 257px;
+        font-size: 14px;
+    }
+
+    section#attractive-direction .last-fact-container .fact-left-part {
+        flex-direction: column;
+        justify-content: space-between;
+        width: 255px;
+    }
+
+    section#attractive-direction .last-fact-container .fact-items {
+        max-width: unset;
+        gap: 30px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        padding-bottom: 14px;
+    }
+
+    section#attractive-direction .last-fact-container .fact-right-part {
+        width: 257px;
+        position: relative;
+        left: -7px;
+        justify-content: flex-end;
+        padding-bottom: 14px;
+        gap: 30px;
+    }
+
+    section#youtube-video {
+        padding: 100px 5.0781vw;
+        position: relative;
+        height: auto;
+        padding-bottom: 162px;
+        background-size: 391px 369px;
+        background-position-x: right;
+        background-position-y: 71px;
+    }
+    
+    section#youtube-video .youtube-container {
+        flex-direction: column;
+        padding: 0;
+        max-width: unset;
+    }
+    
+    section#youtube-video .youtube-container .text-container img {
+        width: 100px;
+        height: 22px;
+    }
+    
+    section#youtube-video .youtube-container .image-container {
+        width: 100%;
+        order: 2;
+        border-radius: 5.56vw;
+    }
+    
+    section#youtube-video .youtube-container .text-container {
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        order: 1;
+    }
+    
+    section#youtube-video .youtube-container .text-container a {
+        margin-left: 0;
+        margin-top: 3.9063vw;
+        height: 22px;
+        line-height: 4.1667vw;
+        font-size: 1.5625vw;
+        padding: 0 2.6042vw;
+        position: absolute;
+        bottom: 100px;
+        right: 5.0781vw;
+        align-self: center;
+        display: flex;
+        font-style: normal;
+        font-weight: 500;
+        border-radius: 50px;
+        max-width: unset;
+    }
+    
+    section#youtube-video .youtube-container .text-container a svg {
+        align-self: center;
+        width: 1.9531vw;
+        margin-left: 1.3021vw;
+    }
+    
+    section#youtube-video .youtube-container .text-container p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 100%;
+        margin: 30px 0;
+        max-width: 513px;
+    }
+    
+    section#youtube-video .youtube-container .image-container img {
+        width: 100%;
+        height: auto;
+        border-radius: 5.56vw;
+    
+    }
+    
+    section#youtube-video .youtube-container .image-container .play-icon {
+        width: 143.18px;
+        height: 143.18px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-71.6px, -71.6px);
+    }
+
+    section#quote-with-four-men {
+        height: 599px;
+    }
+
+    section#quote-with-four-men img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    section#quote-with-four-men div.quote span {
+        font-size: 36px;
+    }
+
+    section#quote-with-four-men div.quote .left {
+        left: 39px;
+        transform: unset;
+    }
+
+    section#quote-with-four-men div.quote .right {
+        text-align: left;
+        right: 0;
+        transform: unset;
+        left: 220px;
+    }
+
+    section#quote-with-four-men div.quote .right br {
+        display: initial;
+    }
+
+    section#quote-with-four-men div.quote-sign {
+        transform: unset;
+        left: 39px;
+        gap: 8px;
+        padding-bottom: 40px;
+    }
+
+    section#quote-with-four-men div.quote-sign span:first-of-type {
+        font-size: 18px;
+    }
+
+    section#quote-with-four-men div.quote-sign span:last-of-type {
+        font-size: 12px;
+    }
+
+    section#company-owner {
+        padding: 100px 39px 50px 39px;
+    }
+
+    section#company-owner div#picture img {
+        width: 100%;
+        height: 441px;
+    }
+
+    section#company-owner div#picture {
+        width: 330px;
+    }
+
+    #investment-info {
+        padding-left: 0;
+        margin-left: 30px;
+    }
+    
+    #investment-info > p {
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 36px;
+    }
+
+    #investment-info .detail-item h3 {
+        font-size: 18px;
+    }
+
+    #investment-info .detail-item p {
+        font-size: 14px;
+    }
+
+    #investment-info .detail-item.column1 {
+        width: 133px;
+        /* order: 1; */
+    }
+
+    #investment-info .detail-item:nth-of-type(4) {
+        width: 145px;
+        order: 2;
+    }
+
+    #investment-info .detail-item.column2-wide {
+        order: 5;
+        width: 246px;
+    }
+
+    #investment-info .detail-item.column2 {
+        width: 142px;
+        order: 4;
+    }
+
+    #investment-info .detail-item.column3 {
+        width: 133px;
+        order: 3;
+    }
+
+    #investment-info .details-grid {
+        column-gap: 47px;
+        row-gap: 30px;
+    }
+
+    section#company-owner .quote-sign {
+        width: 148px;
+        height: 97px;
+        background-image: url(images/gray-badge-bg-768.png);
+        margin: 15px;
+        background-size: cover;
+        padding: 15px;
+        font-size: 12px;
+        justify-content: space-between;
+    }
+
+    section#company-owner .quote-sign span:first-of-type {
+        font-size: 18px;
+    }
+
+    #best-points {
+        padding: 39px;
+    }
+
+    #best-points .container {
+        padding: 0;
+    }
+
+    #best-points .grid {gap: 30px;}
+    
+    #best-points .grid-item {
+        height: 154px;
+        padding: 20px;
+        border-radius: 15px;
+    }
+
+    #best-points .grid-item.item1 {
+        width: 330px;
+        order: 1;
+    }
+    #best-points .grid-item.item1 p {
+        max-width: 230px;
+    }
+    #best-points .grid-item.item3 p {
+        max-width: 256px;
+    }
+    #best-points .grid-item.item4 p {
+        max-width: 257px;
+    }
+    #best-points .grid-item.item7 p {
+        max-width: 210px;
+    }
+    #best-points .grid-item.item2 {
+        width: 330px;
+        order: 2;
+    }
+    #best-points .grid-item.item3 {
+        width: 330px;
+        order: 3;
+    }
+    #best-points .grid-item.item4 {
+        width: 330px;
+        order: 4;
+    }
+    #best-points .grid-item.item5 {
+        order: 5;
+        width: 238px;
+    }
+    #best-points .grid-item.item6 {
+        order: 7;
+        width: 240px;
+    }
+    #best-points .grid-item.item7 {
+        width: 330px;
+        order: 8;
+        height: 136px;
+    }
+    #best-points .grid-item.item8 {
+        width: 330px;
+        order: 9;
+        height: 136px;
+    }
+    #best-points .grid-item.item9 {
+        order: 10;
+        width: 100%;
+        height: 130px;
+        padding: 20px;
+        padding-top: 17px;
+        display: flex;
+        flex-direction: row;
+        align-items: end;
+    }
+    section#best-points .grid .grid-item.img {
+        order: 6;
+        display: initial;
+        width: 150px;
+        background: url(images/four-five-reasons-block-768.png);
+        background-size: contain;
+    }
+
+    #best-points .container > h2 {
+        font-size: 36px;
+    }
+
+    #best-points .container > h2:nth-of-type(2)::before {
+        width: 88px;
+        height: 25px;
+        position: relative;
+        top: -1px;
+    }
+
+    #best-points .grid-item h3:first-of-type {
+        font-size: 12px;
+    }
+
+    #best-points .grid-item h3:nth-of-type(2) {
+        font-size: 18px;
+        padding-top: 10px;
+    }
+
+    #best-points .grid-item p {
+        font-size: 14px;
+    }
+
+    #best-points .cta button {
+        margin-left: 0;
+        margin-top: 3.9063vw;
+        height: 4.1667vw;
+        line-height: 4.1667vw;
+        font-size: 1.5625vw;
+        padding: 0 2.6042vw;
+        box-sizing: border-box;
+        width: auto;
+        border-radius: 16px;
+    }
+
+    .cta p::before {
+        width: 14px;
+        height: 14px;
+        top: -44px;
+        position: absolute;
+    }
+
+    #best-points .grid-item.cta p {
+        font-size: 20px;
+        margin-bottom: 0;
+        width: 244px;
+    }
+}
+

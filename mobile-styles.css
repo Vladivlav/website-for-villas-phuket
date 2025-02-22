@@ -1037,11 +1037,11 @@
     section#best-points .grid .grid-item.img {
         padding: 0;
         display: block;
-        background: url("images/four-five-reasons-block.png");url(images/four-five-reasons-block.png")";;url(æimages/four-five-reasons-block.png")";;url(images/four-five-reasons-block.png")";
+        background: url("images/four-five-reasons-block.png")
         height: 42.78vw;
         width: 100%;
         background-size: contain;
-    ;height: 42.78vw;;
+        height: 42.78vw;;
     }
     
     section#best-points .grid .grid-item.img img {

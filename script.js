@@ -590,8 +590,32 @@ let lastScrollTime = 0;
 let firstTransition = true;
 let lastTransition = true;
 
+
+// function showNextFact() {
+//   const current = document.querySelector('.fact-container.current');
+//   const lastFact = document.querySelector('.last-fact-container');
+//   const next = current?.nextElementSibling?.classList.contains('fact-container') ? current.nextElementSibling : null;
+
+//   if (next) {
+//     current?.classList.remove('current');
+//     next?.classList.add('current');
+//   }
+
+//   if (firstTransition && current?.classList.contains('fact-container') && !current.previousElementSibling) {
+//     firstTransition = false;
+//     console.log("show next is here");
+//     disableScroll();
+//     enableScroll(1000);
+//   }
+
+//   lastFact.style.opacity = (!next || !next.nextElementSibling) ? 1 : 0;
+// }
+
 function showNextFact(event) {
   const current = document.querySelector('.fact-container.current');
+  const lastFact = document.querySelector('.last-fact-container');
+  const factContainers = document.querySelectorAll('.fact-container'); // Получаем все элементы
+  const lastFactContainer = factContainers[factContainers.length - 1]; // Берём последний элемент
 
   if (event.target.closest('span.fact-button')) {
     return; // Прерываем выполнение функции, если клик был по кнопке
@@ -602,9 +626,15 @@ function showNextFact(event) {
       next = current.nextElementSibling;
   } else {
       next = factContainers[0];
+      lastFact.style.opacity = 0
   }
+
   current.classList.remove('current');
   next.classList.add('current');
+
+  if (next == lastFactContainer) {
+    lastFact.style.opacity = 1;
+  }
 }
 
 factContainers.forEach(container => {
@@ -780,7 +810,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 // Запуск автоматического слайдера при загрузке
-startAutoSlide();
+//startAutoSlide();
 
 prevBtn.addEventListener("click", () => {
   moveSlideBack();
@@ -927,3 +957,8 @@ document.querySelector('div#guide-form-result').addEventListener('click', functi
       this.style.display = 'none';
   }
 });
+
+function pxToVw(px, viewportWidth = 768) {
+  const vw = (px / viewportWidth) * 100;
+  return `${parseFloat(vw.toFixed(4))}vw`; // Ограничиваем до 4 цифр после запятой и добавляем "vw"
+}
