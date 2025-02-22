@@ -180,6 +180,7 @@
         background-image: url("images/rent-stats-bg-768.png");
         box-sizing: border-box;
         padding: 1.9531vw;
+        margin-right: 1.3021vw;
     }
 
     div#special-offer-slider div.stats .sale-stats {
@@ -188,7 +189,7 @@
         background-image: url("images/sale-stats-bg-768.png");
         box-sizing: border-box;
         padding: 1.9531vw;
-        /* padding-bottom: 0; */
+        margin-right: 0;
     }
 
     div#special-offer-slider div.stats .digits-description {
@@ -581,7 +582,7 @@
         width: 100%;
         height: auto;
         border-radius: 5.56vw;
-    
+        z-index: 2022;
     }
     
     section#youtube-video .youtube-container .image-container .play-icon {
@@ -590,6 +591,7 @@
         top: 50%;
         left: 50%;
         transform: translate(-9.3229vw, -9.3229vw);
+        z-index: 2050;
     }
 
     section#youtube-video .youtube-container .image-container .play-icon svg {
@@ -1118,7 +1120,9 @@
     #check-objects .quiz-option div.circle, #prices-and-benefits .quiz-option .circle {
         width: 2.8646vw;
         height: 2.8646vw;
+        margin: 0.651vw;
         margin-right: 0;
+        box-sizing: border-box;
     }
 
     #check-objects .quiz-option span,
@@ -1306,6 +1310,8 @@
         border-radius: 2.6042vw;
         padding: 2.6042vw;
         box-sizing: border-box;
+        z-index: 2022;
+        background: #222222;
     }
 
     section#additional-company-info div.award-card p {
@@ -1571,6 +1577,7 @@
     .faq-ask-question {
         width: 66.4063vw;
         max-width: unset;
+        z-index: 2022;
     }
 
     .faq-ask-question img {
@@ -1713,7 +1720,7 @@
     }
 
     footer .grid16 .flex:first-of-type {
-        padding-right: 11.5885vw;
+        padding-right: 11.75vw;
     }
 
     footer .footer-nav .grid8 div.flex li:first-of-type {
@@ -1734,7 +1741,7 @@
 
     .footer-bottom {
         height: 9.2448vw;
-        margin: 0 2.6042vw;
+        margin: 0 1.667vw;
     }
 
     .footer-bottom p {
@@ -1750,8 +1757,9 @@
         display: flex;
         flex-direction: column;
         gap: 1.3021vw;
-        min-width: 45.4427vw;
+        min-width: 46.4427vw;
         max-width: 45.4427vw;
+        width: 45.4427vw;
     }
 
     .footer-bottom p:first-of-type img {
