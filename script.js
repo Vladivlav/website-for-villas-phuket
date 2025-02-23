@@ -761,6 +761,8 @@ const gapVw = parseFloat(window.getComputedStyle(slider).gap);
 const totalWidthVw = -1 * (offerWidthVw + gapVw);
 
 const slideWidth = totalWidthVw; // Перемещение с учетом ширины блока и gap в vw
+let isCursorOnOffers = false;
+
 
 slider.style.transform = `translateX(0vw)`;
 
@@ -781,6 +783,15 @@ const moveSlideBack = () => {
   slider.style.transform = `translateX(${slideWidth}px)`;
   slider.insertBefore(slider.lastElementChild, slider.firstElementChild);
 };
+
+document.querySelector('section.offers').addEventListener('mouseenter', () => {
+  isCursorOnOffers = true;
+});
+
+// Отслеживаем, когда курсор покидает section.offers
+document.querySelector('section.offers').addEventListener('mouseleave', () => {
+  isCursorOnOffers = false;
+});
 
 let autoSlideInterval;
 const slideDuration = 400; // Длительность анимации
@@ -804,7 +815,12 @@ function moveSlideForward() {
 
 function startAutoSlide() {
     clearInterval(autoSlideInterval); // Сброс текущего таймера
-    autoSlideInterval = setInterval(moveSlideForward, autoSlideDelay);
+    autoSlideInterval = setInterval(autoMoveSlideForward, autoSlideDelay);
+}
+
+function autoMoveSlideForward() {
+  if (isCursorOnOffers) return;
+  moveSlideForward();
 }
 
 // Обработчик кнопки
@@ -814,7 +830,7 @@ nextBtn.addEventListener("click", () => {
 });
 
 // Запуск автоматического слайдера при загрузке
-//startAutoSlide();
+startAutoSlide();
 
 prevBtn.addEventListener("click", () => {
   moveSlideBack();
