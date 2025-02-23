@@ -241,7 +241,7 @@ section#attractive-direction .fact-container .fact-left-part {
     position: relative;
     top: 0.83vw;
     max-width: 53.33vw;
-    max-height: 24.67vw;
+    height: 24.0833vw;
     width: 51.67vw;
     transition: 0.3s ease-in-out;
     opacity: 0;
