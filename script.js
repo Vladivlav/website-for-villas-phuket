@@ -617,7 +617,7 @@ function showNextFact(event) {
   const factContainers = document.querySelectorAll('.fact-container'); // Получаем все элементы
   const lastFactContainer = factContainers[factContainers.length - 1]; // Берём последний элемент
 
-  if (event.target.closest('span.fact-button')) {
+  if (event && event.target.closest('span.fact-button')) {
     return; // Прерываем выполнение функции, если клик был по кнопке
   }
 
@@ -637,9 +637,10 @@ function showNextFact(event) {
   }
 }
 
-factContainers.forEach(container => {
-  container.addEventListener('click', showNextFact);
-});
+// Next fact on click
+// factContainers.forEach(container => {
+//   container.addEventListener('click', showNextFact);
+// });
 
 function disableScroll() {
   document.body.style.overflow = 'hidden';
@@ -727,25 +728,24 @@ function enableScroll(delay = 1000) {
 //   lastFact.style.opacity = (!next || !next.nextElementSibling) ? 1 : 0;
 // }
 
-// function showPreviousFact() {
-//   const current = document.querySelector('.fact-container.current');
-//   const previous = current?.previousElementSibling?.classList.contains('fact-container') ? current.previousElementSibling : null;
-//   const lastFact = document.querySelector('.last-fact-container');
+function showPreviousFact() {
+  const current = document.querySelector('.fact-container.current');
+  const previous = current?.previousElementSibling?.classList.contains('fact-container') ? current.previousElementSibling : null;
+  const lastFact = document.querySelector('.last-fact-container');
 
-//   if (previous) {
-//     current?.classList.remove('current');
-//     previous?.classList.add('current');
-//   }
+  if (previous) {
+    current?.classList.remove('current');
+    previous?.classList.add('current');
+  }
 
-//   if (lastTransition && current?.classList.contains('fact-container') && !current.nextElementSibling) {
-//     lastTransition = false;
-//     console.log("show previous is here");
-//     disableScroll();
-//     enableScroll(1000);
-//   }
+  if (lastTransition && current?.classList.contains('fact-container') && !current.nextElementSibling) {
+    lastTransition = false;
+    disableScroll();
+    enableScroll(1000);
+  }
 
-//   lastFact.style.opacity = 0;
-// }
+  lastFact.style.opacity = 0;
+}
 
 
 // slider first page
@@ -978,7 +978,7 @@ document.querySelector('div#guide-form-result').addEventListener('click', functi
   }
 });
 
-function pxToVw(px, viewportWidth = 768) {
+function pxToVw(px, viewportWidth = 360) {
   const vw = (px / viewportWidth) * 100;
   return `${parseFloat(vw.toFixed(4))}vw`; // Ограничиваем до 4 цифр после запятой и добавляем "vw"
 }

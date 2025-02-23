@@ -6,6 +6,14 @@ body, html {
     font-family: igra-sans;
 }
 
+.sticky-container{
+    position:sticky;
+    top: 0;
+    height: 29.5833vw;
+    width: 100%;
+    overflow:hidden;
+}
+
 #line-around-sections {
     position: fixed;
     height: 100%;
@@ -169,6 +177,7 @@ section#attractive-direction .wrapper1920 {
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 6.67vw;
+    overflow: hidden;
 }
 
 section#attractive-direction .fact-container {
@@ -326,7 +335,7 @@ section#attractive-direction .fact-container .fact-left-part .fact-text {
 section#attractive-direction .fact-container .fact-left-part .fact-footer {
     display: flex;
     position: absolute;
-    bottom: 0.42vw;
+    bottom: 0;
     left: 0;
     justify-content: space-between;
     width: 100%;
@@ -339,8 +348,9 @@ section#attractive-direction .fact-container .fact-left-part .fact-footer p {
     font-style: normal;
     font-weight: 500;
     font-size: 1.08vw;
-    line-height: 120%;
+    line-height: 100%;
     color: #FFFFFF;
+    height: 2.0833vw;
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-footer span.fact-button {
@@ -360,7 +370,8 @@ section#attractive-direction .fact-container .fact-left-part .fact-footer span.f
     max-width: 10.25vw;
     max-height: 2.17vw;
     margin: auto 0;
-    margin-right: 1.67vw;
+    margin-right: 1.6667vw;
+    margin-bottom: 1.6667vw;
     background-color: white;
     padding: 0 1.25vw;
     right: -2.5vw;

@@ -646,7 +646,7 @@
         margin-bottom: 4.17vw;
         max-width: 83.33vw;
         font-size: 4.17vw;
-    
+        height: unset;
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-text {
@@ -2930,5 +2930,9 @@ line-height: 100%;
     div#guide-form-result .form-container .close-popup svg {
         width: 3.06vw;
         height: 3.06vw;
+    }
+
+    .sticky-container {
+        height: 133.6667vw;
     }
 }

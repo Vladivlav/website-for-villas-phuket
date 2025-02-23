@@ -317,6 +317,7 @@
         flex-direction: column;
         width: 100%;
         height: 60.6719vw;
+        gap: 2.6042vw;
     }
 
     .facts-wrapper {
@@ -1974,5 +1975,9 @@
 
     .offer-image {
         height: 167px;
+    }
+
+    .sticky-container {
+        height: 73.724vw;
     }
 }
