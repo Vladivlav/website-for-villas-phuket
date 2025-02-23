@@ -424,7 +424,7 @@ section#attractive-direction .fact-container .fact-left-part .fact-text .fact-ba
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
-    content: '';
+    content: ;
     display: inline-block;
     position: relative;
 }
