@@ -263,6 +263,8 @@
         min-width: 100vw;
         border-radius: 0.0vw;
         background-color: unset;
+        filter: unset;
+        opacity: 1
     }
     
     .offers-content {

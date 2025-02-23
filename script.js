@@ -756,7 +756,11 @@ const nextBtn = document.querySelector(".next-btn");
 const currentNumber = document.querySelector(".current-number");
 const totalNumber = document.querySelector(".total-number");
 
-const slideWidth = -25.83; // Перемещение с учетом ширины блока и gap в vw
+const offerWidthVw = parseFloat(window.getComputedStyle(slides[0]).width);
+const gapVw = parseFloat(window.getComputedStyle(slider).gap);
+const totalWidthVw = -1 * (offerWidthVw + gapVw);
+
+const slideWidth = totalWidthVw; // Перемещение с учетом ширины блока и gap в vw
 
 slider.style.transform = `translateX(0vw)`;
 
@@ -769,12 +773,12 @@ const updateCounter = () => {
 
 const moveSlide = () => {
     slider.style.transition = "transform 0.4s ease-in-out";
-    slider.style.transform = `translateX(${slideWidth}vw)`;
+    slider.style.transform = `translateX(${slideWidth}px)`;
 };
 
 const moveSlideBack = () => {
   slider.style.transition = "none";
-  slider.style.transform = `translateX(${slideWidth}vw)`;
+  slider.style.transform = `translateX(${slideWidth}px)`;
   slider.insertBefore(slider.lastElementChild, slider.firstElementChild);
 };
 

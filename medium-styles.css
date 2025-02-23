@@ -239,6 +239,7 @@
         height: 49.4792vw;
         padding: 3.9063vw;
         padding-top: 3.6458vw;
+        margin-bottom: 0;
     }
 
     .offers-header {
@@ -276,6 +277,13 @@
     .offer {
         width: 50.7813vw;
         height: 37.1094vw;
+        filter: grayscale(1);
+        opacity: 0.7;
+    }
+
+    .offer:first-of-type {
+        filter: unset;
+        opacity: 1;
     }
 
     .offers-content {
@@ -1930,5 +1938,41 @@
         background-image: url(images/special-offer-form-bg-768.png);
         margin: 0;
         border-radius: 20px;
+    }
+
+    .offer-info {
+        padding-top: 15px;
+    }
+
+    .offer-info h3 {
+        font-size: 18px;
+        margin-bottom: 2px;
+    }
+
+    .offer-info p {
+        font-size: 14px;
+        height: 36px;
+    }
+
+    .offer-button {
+        height: 4.1667vw;
+        line-height: 4.1667vw;
+        font-size: 1.5625vw;
+        padding: 0 2.6042vw;
+        max-width: unset;
+        max-height: unset;
+        margin-top: 15px;
+        box-sizing: border-box;
+        border-radius: 16px;
+    }
+
+    .offer-button svg {
+        width: 1.25vw;
+        margin-left: 0.83vw;
+        height: auto;
+    }
+
+    .offer-image {
+        height: 167px;
     }
 }

@@ -1130,6 +1130,7 @@ section#company-owner .quote-sign {
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
+;;;;;;;background-size: cover;;;;;;;;
 }
 
 section#company-owner .quote-sign span:first-of-type {
@@ -3485,6 +3486,13 @@ section#news div#news-list .news-description {
 .offer {
     overflow: hidden;
     min-width: 23.33vw;
+    filter: grayscale(1);
+    opacity: 0.7;
+}
+
+.offer:first-of-type {
+    filter: unset;
+    opacity: 1;
 }
 
 .offer-image {
