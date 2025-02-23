@@ -4522,6 +4522,7 @@ div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agr
 div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement {
     width: 100%;
     margin: 0;
+    align-items: center;
 }
 
 div#personal-consultation .form-container .form-section .form-inputs .form-agreement > div,

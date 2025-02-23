@@ -522,10 +522,13 @@ document.querySelectorAll('#investments-base .form-select > span').forEach(span 
   });
 });
 
-document.querySelectorAll('#investments-base .form-agreement svg').forEach(input => {
+document.querySelectorAll('.form-agreement svg').forEach(input => {
   input.addEventListener('click', function() {
-    const icon = document.querySelector('#investments-base .form-agreement svg');
-    const button = document.querySelector('#investments-base .form-button');
+    const icon = input;
+    const formActions = input.closest('.form-actions'); // Ищем родителя .form-actions
+    const button = formActions ? formActions.querySelector('.form-button') : null; // Ищем .form-button внутри
+
+    if (!button) return; // Если кнопка не найдена, выходим
 
     console.log('click');
     if (icon.style.opacity == 0) {
@@ -535,40 +538,9 @@ document.querySelectorAll('#investments-base .form-agreement svg').forEach(input
       icon.style.opacity = 0;
       button.classList.remove('active');
     }
-  })
-})
+  });
+});
 
-document.querySelectorAll('#prices-and-benefits .form-agreement svg').forEach(input => {
-  input.addEventListener('click', function() {
-    const icon = document.querySelector('#prices-and-benefits .form-agreement svg');
-    const button = document.querySelector('#prices-and-benefits .form-button');
-
-    console.log('click');
-    if (icon.style.opacity == 0) {
-      icon.style.opacity = 1;
-      button.classList.add('active');
-    } else {
-      icon.style.opacity = 0;
-      button.classList.remove('active');
-    }
-  })
-})
-
-document.querySelectorAll('#check-objects .form-agreement svg').forEach(input => {
-  input.addEventListener('click', function() {
-    const icon = document.querySelector('#check-objects .form-agreement svg');
-    const button = document.querySelector('#check-objects .form-button');
-
-    console.log('click');
-    if (icon.style.opacity == 0) {
-      icon.style.opacity = 1;
-      button.classList.add('active');
-    } else {
-      icon.style.opacity = 0;
-      button.classList.remove('active');
-    }
-  })
-})
 
 document.querySelectorAll('#check-objects .form-select > span').forEach(span => {
   span.addEventListener('click', function() {
@@ -795,7 +767,7 @@ document.querySelector('section.offers').addEventListener('mouseleave', () => {
 
 let autoSlideInterval;
 const slideDuration = 400; // Длительность анимации
-const autoSlideDelay = 3000; // Интервал автоматического переключения
+const autoSlideDelay = 5000; // Интервал автоматического переключения
 
 function moveSlideForward() {
     moveSlide();

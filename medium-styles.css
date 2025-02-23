@@ -604,8 +604,8 @@
     }
 
     section#youtube-video .youtube-container .image-container .play-icon svg {
-        width: 57px;
-        height: 54px;
+        width: 7.42vw;
+        height: 7.03vw;
     }
 
     section#quote-with-four-men {
@@ -961,7 +961,7 @@
     }
 
     div#personal-consultation .form-container .form-section .form-inputs .form-select > span, div#choose-property .form-container .form-section .form-inputs .form-select > span, div.faq-form .form-container .form-section .form-inputs .form-select > span, div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-select > span, div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-select > span, div#phuket-future-guide .form-container .form-section .form-inputs .form-select > span {
-        height: 32px;
+        height: 4.17vw;
     }
 
     #prices-and-benefits .form-input,
@@ -1012,18 +1012,18 @@
 
     div#special-offer-form .form-container .form-section .form-inputs .form-agreement span,
     div#choose-property .form-container .form-section .form-inputs .form-agreement span {
-        height: 22px;
-        font-size: 9px;
+        height: 2.86vw;
+        font-size: 1.17vw;
         line-height: 130%;
-        min-width: 151px;
+        min-width: 19.66vw;
     }
 
     div.faq-form .form-container .form-section .form-inputs .form-button,
     div#choose-property .form-container .form-section .form-inputs .form-button {
         margin-top: 0;
-        margin-bottom: 10px;
-        font-size: 13px;
-        padding: 0 20px;
+        margin-bottom: 1.30vw;
+        font-size: 1.69vw;
+        padding: 0 2.60vw;
     }
 
     #prices-and-benefits .form-button {
@@ -1040,7 +1040,7 @@
     div.faq-form .form-container .form-section .form-inputs .form-agreement,
     div#choose-property .form-container .form-section .form-inputs .form-agreement,
     div#choose-property .form-container .form-section .form-inputs .form-agreement > div {
-        width: 95px;
+        width: 12.37vw;
     }
 
     #prices-and-benefits .form-agreement {
@@ -1130,7 +1130,7 @@
 
     div.faq-form .form-container .form-section .form-inputs,
     div#choose-property .form-container .form-section .form-inputs {
-        gap: 20px;
+        gap: 2.60vw;
         margin-top: 0;
     }
 
@@ -1841,8 +1841,8 @@
     div#choose-property .form-container,
     div.faq-form .form-container {
         flex-direction: column;
-        height: 700px;
-        width: 400px;
+        height: 91.15vw;
+        width: 52.08vw;
         margin: 0 2.78vw;
         background-color: unset;
         position: relative;
@@ -1850,19 +1850,19 @@
     }
 
     div#personal-consultation .form-container .image-section, div#choose-property .form-container .image-section, div.faq-form .form-container .image-section, div#forms-of-ownerships-guide .form-container .image-section, div#areas-and-beaches-guide .form-container .image-section, div#phuket-future-guide .form-container .image-section {
-        height: 200px;
+        height: 26.04vw;
         width: 100%;
     }
 
     div#personal-consultation .form-container .form-section, div#choose-property .form-container .form-section, div.faq-form .form-container .form-section, div#forms-of-ownerships-guide .form-container .form-section, div#areas-and-beaches-guide .form-container .form-section, div#phuket-future-guide .form-container .form-section {
-        height: 520px;
-        min-height: 520px;
+        height: 67.71vw;
+        min-height: 67.71vw;
         width: 100%;
-        border-radius: 20px;
+        border-radius: 2.60vw;
         position: relative;
-        top: -20px;
-        padding: 50px;
-        padding-bottom: 40px;
+        top: -2.60vw;
+        padding: 6.51vw;
+        padding-bottom: 5.21vw;
         align-items: center;
         display: flex;
         flex-direction: column;
@@ -1874,7 +1874,7 @@
         width: 100%;
         min-height: unset;
         top: 0;
-        border-radius: 20px;
+        border-radius: 2.60vw;
     }
 
     div#choose-property .form-container .form-section {
@@ -1882,77 +1882,77 @@
     }
 
     div#guide-form-result .form-container .form-section h2, div#personal-consultation .form-container .form-section h2, div#choose-property .form-container .form-section h2, div.faq-form .form-container .form-section h2, div#forms-of-ownerships-guide .form-container .form-section h2, div#areas-and-beaches-guide .form-container .form-section h2, div#phuket-future-guide .form-container .form-section h2 {
-        font-size: 26px;
+        font-size: 3.39vw;
         text-align: center;
     }
 
     div#guide-form-result .form-container .form-section p, div#personal-consultation .form-container .form-section p, div#choose-property .form-container .form-section p, div.faq-form .form-container .form-section p, div#forms-of-ownerships-guide .form-container .form-section p, div#areas-and-beaches-guide .form-container .form-section p, div#phuket-future-guide .form-container .form-section p {
-        font-size: 14px;
+        font-size: 1.82vw;
     }
 
     div#special-offer-form .form-container .form-section .form-inputs .form-select, div#special-offer-form .form-container .form-section .form-inputs > input ,
     div#choose-property .form-container .form-section .form-inputs > input {
-        width: 300px;
+        width: 39.06vw;
     }
 
     div#special-offer-form .form-container .form-section p,
     div#choose-property .form-container .form-section p {
-        width: 293px;
-        margin: 6px 0 20px 0;
-        max-width: 293px;
+        width: 38.15vw;
+        margin: 0.78vw 0 2.60vw 0;
+        max-width: 38.15vw;
         text-align: center;
     }
 
     div#special-offer-form .form-container .form-section p {
-        margin-bottom: 30px;
+        margin-bottom: 3.91vw;
     }
 
     div#choose-property .form-container .close-popup {
         position: absolute;
-        top: -170px;
-        right: 10px;
+        top: -22.14vw;
+        right: 1.30vw;
     }
 
     div#special-offer-form .form-container .close-popup,
     div#choose-property .form-container .close-popup {
-        width: 37px;
-        height: 37px;
-        border-radius: 19px;
+        width: 4.82vw;
+        height: 4.82vw;
+        border-radius: 2.47vw;
      }
 
     div#special-offer-form .form-container .close-popup {
-        top: 10px;
-        right: 10px;
+        top: 1.30vw;
+        right: 1.30vw;
     }
 
     div.faq-form .form-container .close-popup svg,
     div#choose-property .form-container .close-popup svg {
-        width: 11px;
-        height: 11px;
+        width: 1.43vw;
+        height: 1.43vw;
     }
 
     div#special-offer-form .form-container {
-        height: 496px;
-        width: 444px;
+        height: 64.58vw;
+        width: 57.81vw;
         padding: 0;
         box-sizing: border-box;
         background-image: url(images/special-offer-form-bg-768.png);
         margin: 0;
-        border-radius: 20px;
+        border-radius: 2.60vw;
     }
 
     .offer-info {
-        padding-top: 15px;
+        padding-top: 1.95vw;
     }
 
     .offer-info h3 {
-        font-size: 18px;
-        margin-bottom: 2px;
+        font-size: 2.34vw;
+        margin-bottom: 0.26vw;
     }
 
     .offer-info p {
-        font-size: 14px;
-        height: 36px;
+        font-size: 1.82vw;
+        height: 4.69vw;
     }
 
     .offer-button {
@@ -1962,9 +1962,9 @@
         padding: 0 2.6042vw;
         max-width: unset;
         max-height: unset;
-        margin-top: 15px;
+        margin-top: 1.95vw;
         box-sizing: border-box;
-        border-radius: 16px;
+        border-radius: 2.08vw;
     }
 
     .offer-button svg {
@@ -1974,7 +1974,7 @@
     }
 
     .offer-image {
-        height: 167px;
+        height: 21.74vw;
     }
 
     .sticky-container {

@@ -1,0 +1,33 @@
+@media (min-width: 1200px) and (max-width: 1910.75vw) {
+    .form-agreement > div input {
+        position: absolute;
+        top: 0.04vw;
+        left: 1.42vw;
+        margin: 0;
+        border-width: 0.1vw;
+        max-width: 0.75vw;
+        max-height: 0.75vw;
+        min-width: unset;
+        min-height: unset;
+        width: 0.75vw !important;
+    }
+
+    .form-agreement > div svg {
+        position: absolute;
+        width: 0.67vw;
+        height: 0.67vw;
+        transform: unset;
+        top: 0.04vw !important;
+        left: 1.50vw !important;
+    }
+
+    .form-agreement .first-line {
+        line-height: 120%;
+        margin: 0;
+    }
+
+    .form-agreement > div {
+        left: 0;
+        width: 13.42vw;
+    }
+}
