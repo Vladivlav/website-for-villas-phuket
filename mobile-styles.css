@@ -863,7 +863,20 @@
         flex-direction: column;
         padding: 27.78vw 2.78vw 13.89vw 2.78vw;
         position: relative;
-    
+    }
+
+    section#company-owner .quote-sign {
+        width: 41.1111vw;
+        height: 26.9444vw;
+        margin: 5.5556vw;
+        padding: 4.1667vw;
+        font-size: 3.3333vw;
+        justify-content: space-between;
+        gap: 2.2222vw;
+    }
+
+    section#company-owner .quote-sign span:first-of-type {
+        font-size: 5vw;
     }
     
     section#company-owner div#i-know-everything {

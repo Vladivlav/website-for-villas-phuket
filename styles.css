@@ -1126,11 +1126,13 @@ section#company-owner .quote-sign {
     left: 0;
     margin-left: 0.83vw;
     margin-bottom: 1vw;
-    background-image: url("images/gray-badge-bg-1200.png");url(images/gray-badge-bg-1200.png")";;
+    background-image: url("images/gray-badge-bg-1200.png");
     background-size: cover;
     background-repeat: no-repeat;
     box-sizing: border-box;
-;;;;;;;background-size: cover;;;;;;;;
+    background-size: cover;
+    gap: 0.67vw;
+    padding-left: 1.25vw;
 }
 
 section#company-owner .quote-sign span:first-of-type {

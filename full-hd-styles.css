@@ -1118,6 +1118,8 @@
         transform: translateX(42.71vw);
     }
     
+
+
     section#quote-with-four-men div.quote-sign {
         padding-left: 7.29vw;
         padding-bottom: 7.81vw;
@@ -1413,7 +1415,11 @@
     section#company-owner {
         padding: 10.42vw 7.29vw 2.6vw 7.29vw;
         max-width: 100.0vw;
-    
+    }
+
+    section#company-owner .quote-sign {
+        gap: 0.5208vw;
+        padding-left: 1.3021vw;
     }
     
     section#company-owner div#i-know-everything,
