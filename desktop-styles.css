@@ -1,4 +1,4 @@
-@media (min-width: 1200px) and (max-width: 1910.75vw) {
+@media (min-width: 1200px) and (max-width: 1919px) {
     .form-agreement > div svg,
     .form-agreement > div input {
         position: absolute;
@@ -59,7 +59,6 @@
         display: flex;
         align-items: start !important;
     }
-
 
     #personal-consultation .form-agreement .first-line br,
     #choose-property .form-agreement .first-line br {

@@ -1225,8 +1225,7 @@
         font-weight: 400;
         font-size: 1.35vw;
         line-height: 100%;
-        max-width: 60%;
-    
+        max-width: 67%;
     }
     
     section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge {
@@ -1754,8 +1753,7 @@
     
     .form-agreement > div svg {
         left: 2.5vw !important;
-        transform: scale(1.7);
-    
+        transform: unset;
     }
     
     .form-agreement input {
@@ -2527,8 +2525,29 @@
         width: 26.04vw;
     }
 
-    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement > div, div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement > div, div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement > div {
+    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement > div,
+    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement > div,
+    div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement > div {
+        width: 100%;
         justify-content: flex-start;
+        left: 1.25vw;
+        position: relative;
+        align-items: flex-start;
+    }
+
+    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement > div input,
+    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement > div input,
+    div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement > div input {
+        position: absolute;
+        left: -21px;
+        width: 15px;
+        height: 15px;
+    }
+
+    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement > div svg,
+    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement > div svg,
+    div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement > div svg {
+        left: -21px !important;
     }
 
     div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-select, div#forms-of-ownerships-guide .form-container .form-section .form-inputs > input, div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-select, div#areas-and-beaches-guide .form-container .form-section .form-inputs > input, div#phuket-future-guide .form-container .form-section .form-inputs .form-select, div#phuket-future-guide .form-container .form-section .form-inputs > input {
@@ -2574,5 +2593,31 @@
     div#guide-form-result .form-container .image-section img {
         height: 100%;
         width: 100%;
+    }
+
+    div#forms-of-ownerships-guide .form-agreement .first-line br,
+    div#areas-and-beaches-guide .form-agreement .first-line br,
+    div#phuket-future-guide .form-agreement .first-line br {
+        display: none;
+        width: unset;
+    }
+
+    
+    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement,
+    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement,
+    div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement {
+        margin-top: 11px;
+    }
+
+    div#faq-form .form-container .form-section .form-inputs .form-agreement > div input {
+        position: absolute;
+        top: 5px;
+        left: 6px;
+    }
+
+    div#faq-form .form-container .form-section .form-inputs .form-agreement > div svg {
+        width: 15px;
+        height: 15px;
+        left: 6px !important;
     }
 }
