@@ -950,7 +950,7 @@ document.querySelector('div#guide-form-result').addEventListener('click', functi
   }
 });
 
-function pxToVw(px, viewportWidth = 360) {
+function pxToVw(px, viewportWidth = 768) {
   const vw = (px / viewportWidth) * 100;
   return `${parseFloat(vw.toFixed(4))}vw`; // Ограничиваем до 4 цифр после запятой и добавляем "vw"
 }
