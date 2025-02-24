@@ -886,7 +886,7 @@ section#main-page > header {
 
 .lang-option img {
     margin-right: 0.42vw;
-    border-radius: 100px;
+    border-radius: 8.33vw;
     width: 1.75vw;
     height: 1.75vw;
 }
@@ -1996,7 +1996,7 @@ section#best-points .grid .grid-item.img {
     padding: 0.83vw;
     box-sizing: border-box;
     background-color: #ffffff;
-    border-radius: 50px;
+    border-radius: 4.17vw;
     transform: rotate(45deg);
 
 }
@@ -2054,7 +2054,7 @@ section#best-points .grid .grid-item.img {
     font-family: igra-sans;
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 2.00vw;
     line-height: 100%;
     color: #299948;
     margin: 0;
@@ -3404,7 +3404,7 @@ section#news div#news-list .news-description {
 .offers-header .header-text .line {
     width: auto;
     flex: 1;
-    margin: 0 7px;
+    margin: 0 0.58vw;
 
 }
 
@@ -4315,7 +4315,7 @@ div#guide-form-result .form-container .form-section p {
     max-width: unset;
     text-align: center;
     margin: 0;
-    margin-top: 3px;
+    margin-top: 0.25vw;
 }
 
 div#forms-of-ownerships-guide .form-container .form-section p,

@@ -287,7 +287,7 @@
         font-weight: 500;
         font-size: 3.33vw;
         padding: 0 5.56vw;
-        border-radius: 50px;
+        border-radius: 13.89vw;
         background-color: #FCBD21;
         color: #393939;
         display: inline-flex;
@@ -663,7 +663,7 @@
         height: 5.56vw;
         padding: 0 2.78vw;
         width: auto;
-        border-radius: 80px;
+        border-radius: 22.22vw;
         line-height: 5.56vw;
         top: 5.56vw;
         left: 5.56vw;
@@ -761,7 +761,7 @@
         font-weight: 500;
         font-size: 3.33vw;
         padding: 0 5.56vw;
-        border-radius: 50px;
+        border-radius: 13.89vw;
         max-width: unset;
     
     }
@@ -1024,8 +1024,7 @@
         font-weight: 500;
         font-size: 3.33vw;
         padding: 0 5.56vw;
-        border-radius: 50px;
-    
+        border-radius: 13.89vw;
     }
     
     #best-points .cta button svg {
@@ -1265,7 +1264,6 @@
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        height: 32px;
         height: 8.89vw !important;
         font-size: 3.61vw;
         border-radius: 8.89vw;
@@ -1612,7 +1610,6 @@
         font-family: 'Commissioner';
         font-style: normal;
         font-weight: 400;
-        height: 32px;
         height: 8.89vw;
         font-size: 3.61vw;
         border-radius: 8.89vw;
@@ -2272,8 +2269,7 @@ line-height: 100%;
         font-size: 3.33vw;
         border-width: 1px;
         padding: 0 5.56vw;
-        border-radius: 50px;
-    
+        border-radius: 13.89vw;
     }
     
     section#news div#news-list {
