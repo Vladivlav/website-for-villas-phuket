@@ -2540,6 +2540,7 @@
     div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement > div input {
         position: absolute;
         left: -21px;
+        top: 5px;
         width: 15px;
         height: 15px;
     }
@@ -2595,6 +2596,8 @@
         width: 100%;
     }
 
+    div#personal-consultation .form-agreement .first-line br,
+    div#choose-property .form-agreement .first-line br,
     div#forms-of-ownerships-guide .form-agreement .first-line br,
     div#areas-and-beaches-guide .form-agreement .first-line br,
     div#phuket-future-guide .form-agreement .first-line br {
