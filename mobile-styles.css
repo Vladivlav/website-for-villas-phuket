@@ -1051,7 +1051,7 @@
     section#best-points .grid .grid-item.img {
         padding: 0;
         display: block;
-        background: url("images/four-five-reasons-block.png")
+        background: url("images/four-five-reasons-block.png");
         height: 42.78vw;
         width: 100%;
         background-size: contain;
@@ -1667,7 +1667,12 @@
         border-radius: 20vw;
     
     }
-    
+
+    #check-objects .next-button, #check-objects .prev-button,
+    #prices-and-benefits .next-button, #prices-and-benefits .prev-button {
+        font-size: 3.33vw !important;
+    }
+
     #check-objects .quiz-option span,
     #prices-and-benefits .quiz-option span {
         margin-left: 2.78vw;
