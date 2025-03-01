@@ -685,8 +685,38 @@ section#youtube-video .youtube-container .text-container a svg {
 section#quote-with-four-men {
     background: linear-gradient(236.63deg, rgba(0, 0, 0, 0) 41.75%, rgba(0, 0, 0, 0.7) 100%);
     width: 100%;
-    height: auto;
     position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#investments-base .parallax-bg {
+    background-image: url(images/investments-base-3.png);
+}
+
+#check-objects .parallax-bg {
+    background-image: url("images/check-objects-bg-3.png");
+}
+
+#tenth-section .content {
+    position: relative;
+    overflow: hidden;
+}
+
+#tenth-section .parallax-bg {
+    background-image: url("images/10-section-bg-1.png");
+}
+
+.parallax-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* Растягиваем полностью */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(images/quote-with-four-men-bg-2.png);
 }
 
 section#quote-with-four-men img {
@@ -788,7 +818,8 @@ section#main-page > header {
     display: flex;
     padding-top: 1.5vw;
     background: linear-gradient(360deg, rgba(57, 57, 57, 0) 0%, #393939 100%);
-
+    position: fixed;
+    z-index: 20001;
 }
 
 .main-nav {
@@ -1486,7 +1517,8 @@ section#best-points .grid .grid-item.img {
     background: linear-gradient(286.18deg, rgba(0, 0, 0, 0) 44.31%, rgba(0, 0, 0, 0.4) 80.9%), linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-blend-mode: multiply, multiply, normal;
     position: relative;
-    height: auto;
+    height: 100vh;
+    overflow: hidden;
 }
 
 #investments-base .wrapper1920 {
@@ -2486,12 +2518,12 @@ section#best-points .grid .grid-item.img {
 }
 
 section#check-objects {
-    background: url("images/check-objects-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
-
+    height: 100vh;
+    overflow: hidden;
 }
 
 #check-objects .header-section {
@@ -3027,14 +3059,13 @@ p#main-thought-comment {
 }
 
 section#tenth-section div.content {
-    background: url("images/10-section-bg.png");
     height: auto;
     width: auto;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
     display: flex;
-
+    background-size: cover;
 }
 
 section#tenth-section div.content .wrapper1920 {

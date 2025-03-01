@@ -2222,4 +2222,8 @@
     .sticky-container {
         height: 73.724vw;
     }
+
+    #investments-base .parallax-bg {
+        background-image: url(images/investments-base-768.png);
+    }
 }

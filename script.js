@@ -1042,3 +1042,29 @@ function pxToVw(px, viewportWidth = 1920) {
   const vw = (px / viewportWidth) * 100;
   return `${parseFloat(vw.toFixed(4))}vw`; // Ограничиваем до 4 цифр после запятой и добавляем "vw"
 }
+
+function applyParallax(blockSelector, intensity = 300) {
+  const block = document.querySelector(blockSelector);
+  const parallax = block.querySelector(".parallax-bg");
+
+  if (!block || !parallax) return; // Если блок не найден, пропускаем
+
+  const rect = block.getBoundingClientRect();
+  const windowHeight = window.innerHeight;
+
+  if (rect.top < windowHeight && rect.bottom > 0) {
+      const progress = (windowHeight - rect.top) / (windowHeight + rect.height);
+      const translateY = (progress - 0.5) * intensity; // Настроить интенсивность
+
+      console.log(`${blockSelector} progress: ${progress}, translateY: ${translateY}px`);
+
+      parallax.style.transform = `translateY(${translateY}px)`;
+  }
+}
+
+window.addEventListener("scroll", function () {
+  applyParallax("#quote-with-four-men", 300);
+  applyParallax("#investments-base", 300);
+  applyParallax("#check-objects", 300);
+  applyParallax("#tenth-section .content", 300);
+});
