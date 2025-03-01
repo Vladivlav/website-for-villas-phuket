@@ -2226,4 +2226,8 @@
     #investments-base .parallax-bg {
         background-image: url(images/investments-base-768.png);
     }
+
+    .parallax-bg {
+        background-image: url(images/quote-with-four-men-bg-768.png);
+    }
 }

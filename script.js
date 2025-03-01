@@ -1042,26 +1042,32 @@ function pxToVw(px, viewportWidth = 1920) {
   const vw = (px / viewportWidth) * 100;
   return `${parseFloat(vw.toFixed(4))}vw`; // Ограничиваем до 4 цифр после запятой и добавляем "vw"
 }
-
 function applyParallax(blockSelector, intensity = 300) {
   const block = document.querySelector(blockSelector);
   const parallax = block.querySelector(".parallax-bg");
 
-  if (!block || !parallax) return; // Если блок не найден, пропускаем
+  if (!block || !parallax) return;
 
   const rect = block.getBoundingClientRect();
   const windowHeight = window.innerHeight;
 
+  const blockHeight = block.offsetHeight;
+  const imageHeight = parallax.offsetHeight;
+
+  // Обновленный коэффициент скорости: Чем больше разница, тем выше интенсивность
+  const scrollRatio = imageHeight > blockHeight ? imageHeight / blockHeight : 1;
+
   if (rect.top < windowHeight && rect.bottom > 0) {
       const progress = (windowHeight - rect.top) / (windowHeight + rect.height);
-      const translateY = (progress - 0.5) * intensity; // Настроить интенсивность
+      const translateY = (progress - 0.5) * intensity * scrollRatio; // Скорректированная скорость
 
-      console.log(`${blockSelector} progress: ${progress}, translateY: ${translateY}px`);
+      console.log(`${blockSelector} progress: ${progress}, translateY: ${translateY}px (ratio: ${scrollRatio})`);
 
       parallax.style.transform = `translateY(${translateY}px)`;
   }
 }
 
+// Использование:
 window.addEventListener("scroll", function () {
   applyParallax("#quote-with-four-men", 300);
   applyParallax("#investments-base", 300);
