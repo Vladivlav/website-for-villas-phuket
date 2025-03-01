@@ -810,7 +810,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-    
+        height: 16.9270833vw;
     }
     
     #check-objects .quiz-question, #prices-and-benefits .quiz-question {
@@ -830,7 +830,7 @@
         margin: 0;
         margin-top: 1.56vw;
         gap: 1.56vw;
-    
+        padding-bottom: 1.5625vw;
     }
     
     #prices-and-benefits .quiz-option,
@@ -906,14 +906,13 @@
     #check-objects .quiz-question p.green-question {
         font-family: igra-sans;
         margin: 0;
-        margin-top: 0.78vw;
+        margin-top: 0;
         font-weight: 400;
         font-size: 1.35vw;
         line-height: 100%;
         position: relative;
         left: -2.08vw;
         opacity: 0;
-    
     }
     
     #prices-and-benefits .quiz-question.active p.green-question,
@@ -970,7 +969,10 @@
         font-weight: 400;
         font-size: 1.04vw;
         line-height: 1.41vw;
-    
+    }
+
+    #prices-and-benefits .quiz-progress,  #check-objects .quiz-progress {
+        margin-bottom: 0.78125vw;
     }
     
     #prices-and-benefits .quiz-section p,
@@ -1750,6 +1752,12 @@
         line-height: 120%;
     
     }
+    div#personal-consultation .form-agreement > div svg,
+    div#choose-property .form-agreement > div svg {
+        left: 0 !important;
+        width: 0.75vw;
+        height: 0.75vw;
+    }
     
     .form-agreement > div svg {
         left: 2.5vw !important;
@@ -1851,10 +1859,9 @@
     
     #prices-and-benefits .quiz-question .form-text p,
     #check-objects .quiz-question .form-text p {
-        margin-top: 0.52vw;
+        margin-top: 0;
         margin-bottom: 1.04vw;
         font-family: igra-sans;
-    
     }
     
     #investments-base .wrapper1920 {
@@ -2535,23 +2542,38 @@
         align-items: flex-start;
     }
 
+    
     div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement > div input,
     div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement > div input,
     div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement > div input {
         position: absolute;
         left: -21px;
-        top: 5px;
+        top: 0px;
         width: 15px;
         height: 15px;
     }
+
 
     div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement > div svg,
     div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement > div svg,
     div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement > div svg {
         left: -21px !important;
+        width: 0.75vw;
+        height: 0.75vw;
+        top: 0 !important;
     }
 
-    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-select, div#forms-of-ownerships-guide .form-container .form-section .form-inputs > input, div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-select, div#areas-and-beaches-guide .form-container .form-section .form-inputs > input, div#phuket-future-guide .form-container .form-section .form-inputs .form-select, div#phuket-future-guide .form-container .form-section .form-inputs > input {
+    div#personal-consultation .form-container .form-section .form-inputs .form-agreement > div svg,
+    div#choose-property .form-container .form-section .form-inputs .form-agreement > div svg {
+        top: 0 !important;
+    }
+
+    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-select,
+    div#forms-of-ownerships-guide .form-container .form-section .form-inputs > input,
+    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-select,
+    div#areas-and-beaches-guide .form-container .form-section .form-inputs > input,
+    div#phuket-future-guide .form-container .form-section .form-inputs .form-select,
+    div#phuket-future-guide .form-container .form-section .form-inputs > input {
         height: 2.08vw;
     }
 
@@ -2605,7 +2627,20 @@
         width: unset;
     }
 
-    
+    .form-agreement .first-line {
+        font-size: 0.677083vw;
+        height: 1.67vw;
+        line-height: 130%;
+    }
+
+    div#personal-consultation .first-line,
+    div#phuket-future-guide .first-line,
+    div#areas-and-beaches-guide .first-line,
+    div#forms-of-ownerships-guide .first-line,
+    div#choose-property .first-line {
+        height: 0.83vw;
+    }
+
     div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement,
     div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement,
     div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement {
@@ -2618,9 +2653,37 @@
         left: 6px;
     }
 
-    div#faq-form .form-container .form-section .form-inputs .form-agreement > div svg {
-        width: 15px;
-        height: 15px;
-        left: 6px !important;
+    #check-objects .quiz-section.last-slide {
+        height: 19.21vw;
+    }
+
+    #special-offer-form .form-agreement > div svg,
+    #special-offer-form .form-agreement > div input,
+    #investments-base .form-agreement > div svg,
+    #investments-base .form-agreement > div input,
+    #faq-form .form-agreement > div svg,
+    #faq-form .form-agreement > div input,
+    #prices-and-benefits .form-agreement > div svg,
+    #prices-and-benefits .form-agreement > div input,
+    #check-objects .form-agreement > div svg,
+    #check-objects .form-agreement > div input {
+        position: absolute !important;
+        top: 0.073vw !important;
+        left: 1.354167vw !important;
+        width: 0.78vw;
+        height: 0.78vw;
+        box-sizing: border-box;
+        margin-right: 0px !important;
+    }
+
+    #special-offer-form span.first-line,
+    #faq-form span.first-line {
+        width: 13.385vw;
+    }
+
+    #investments-base .form-agreement > div,
+    #check-objects .form-agreement > div,
+    #prices-and-benefits .form-agreement > div {
+        left: 0;
     }
 }

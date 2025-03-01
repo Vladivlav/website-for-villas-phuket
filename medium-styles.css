@@ -1010,6 +1010,11 @@
         color: #393939;
     }
 
+    #prices-and-benefits .form-button,
+    #check-objects .form-button {
+        margin-top: 0;
+    }
+
     #faq-form .form-button {
         line-height: 4.1667vw;
         font-size: 1.5625vw;
@@ -1032,6 +1037,11 @@
         border-radius: 2.0833vw;
     }
 
+    div#phuket-future-guide .form-container .form-section .form-inputs .form-button {
+        margin-top: 0;
+        margin-bottom: 1.3021vw;
+    }
+
     div#personal-consultation .form-container .form-section .form-inputs .form-agreement span,
     div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement span,
     div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement span,
@@ -1044,6 +1054,7 @@
         min-width: 19.66vw;
     }
 
+    div#special-offer-form .form-container .form-section .form-inputs .form-button,
     div#personal-consultation .form-container .form-section .form-inputs .form-button,
     div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-button,
     div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-button,
@@ -1062,8 +1073,8 @@
     }
 
     .form-agreement .first-line {
-        width: 151px;
-        min-width: 151px;
+        width: 19.66146vw;
+        min-width: 19.66146vw;
     }
 
     div#faq-form .form-agreement .first-line {
@@ -1079,7 +1090,7 @@
     .form-agreement {
         margin-top: 1.3021vw;
         font-size: 1.1719vw !important;
-        width: 151px;
+        width: 19.66146vw;
     }
 
     div.faq-form .form-container .form-section .form-inputs .form-agreement,
@@ -1091,10 +1102,10 @@
     .form-agreement > div svg,
     #agreement {
         position: absolute;
-        top: 1px !important;!i;!;
-        left: 7px !important;!i;!;
-        width: 9px !important;
-        height: 9px !important;
+        top: 1px !important;
+        left: 0.91145vw !important;
+        width: 1.171875vw !important;
+        height: 1.171875vw !important;
         margin: 0;
         transform: unset;
     }
@@ -1150,6 +1161,7 @@
 
     #check-objects .quiz-section.last-slide, #prices-and-benefits .quiz-section.last-slide {
         height: unset;
+        border-radius: 1.953125vw;
     }
 
     #check-objects .progress-bar,
@@ -1164,17 +1176,31 @@
     }
 
     #check-objects .quiz-questions-container, #prices-and-benefits .quiz-questions-container {
-        height: auto;
+        height: 8.59375vw;
+        transition: 0.2s ease-in-out;
     }
 
     #check-objects .quiz-section .quiz-question,
     #prices-and-benefits .quiz-section .quiz-question {
-        position: relative;
-        display: none;
+        position: absolute;
+        opacity: 0;
+        transition: unset;
     }
 
     #check-objects .quiz-question.active, #prices-and-benefits .quiz-question.active {
-        display: inherit;
+        opacity: 1;
+        transition: 0.4s ease-out;
+    }
+
+    #prices-and-benefits .quiz-questions-container:nth-child(1),
+    #prices-and-benefits .quiz-questions-container:nth-child(4),
+    #prices-and-benefits .quiz-questions-container:nth-child(5) {
+        height: 8.59375vw;
+    }
+
+    #prices-and-benefits .quiz-questions-container:nth-child(2),
+    #prices-and-benefits .quiz-questions-container:nth-chils(3) {
+        height: 15.364583vw;
     }
 
     .form-inputs {
@@ -1182,6 +1208,7 @@
         flex-wrap: wrap;
         padding: 0;
         margin-top: 1.9531vw;
+        gap: 1.953125vw;
     }
 
     div#personal-consultation .form-container .form-section .form-inputs,
@@ -1269,6 +1296,9 @@
     #prices-and-benefits .quiz-question p.green-question {
         margin-left: 0;
         font-size: 2.3438vw;
+    }
+    #check-objects .quiz-question p.green-question {
+        margin-top: 0;
     }
 
     #prices-and-benefits .content-section .image-content {
@@ -1999,10 +2029,14 @@
         flex-direction: column;
         box-sizing: border-box;
     }
+
+    div#special-offer-form .form-container .form-section {
+        padding-bottom: 6.51vw;
+    }
     
     div#personal-consultation .form-container .form-section {
         background: #F9F9F9;
-        height: 64.3229vw;
+        height: auto;
         min-height: unset;
     }
 
@@ -2043,6 +2077,11 @@
     div#areas-and-beaches-guide .form-container .form-section p,
     div#phuket-future-guide .form-container .form-section p {
         font-size: 1.815vw;
+    }
+
+    div#personal-consultation .form-container .form-section p {
+        margin-top: 0.78125vw;
+        margin-bottom: 3.90625vw;
     }
 
     div#forms-of-ownerships-guide .form-container .form-section p,
@@ -2109,7 +2148,7 @@
         top: -28.9063vw;
         width: 4.8177vw;
         height: 4.8177vw;
-        right: 10px;
+        right: 1.3021vw;
         border-radius: 4.8177vw;
     }
 

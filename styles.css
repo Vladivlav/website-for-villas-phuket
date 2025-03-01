@@ -1562,7 +1562,7 @@ section#best-points .grid .grid-item.img {
 .form-inputs {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1.5vw;
+    gap: 1.67vw;
     justify-content: space-between;
     padding: 1.67vw 1.67vw 0 1.67vw;
 }
@@ -2505,7 +2505,7 @@ section#check-objects {
 }
 
 .header-section.blur {
-    filter: blur(3px);
+    filter: blur(0.25vw);
 }
 
 #check-objects .header-content {
@@ -4094,7 +4094,24 @@ section#tenth-section div.content .block-link span,
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
     visibility: visible;
+}
 
+#prices-and-benefits .quiz-question .quiz-option.inactive,
+#prices-and-benefits .quiz-question .quiz-option.inactive .circle {
+    border-color: #D7D9D8;
+}
+
+#prices-and-benefits .quiz-question .quiz-option.inactive > span {
+    color: #959595;
+}
+
+#check-objects .quiz-question .quiz-option.inactive .circle,
+#check-objects .quiz-question .quiz-option.inactive {
+    border-color: #959595;
+}
+
+#check-objects .quiz-question .quiz-option.inactive > span {
+    color: #D7D9D8;
 }
 
 #prices-and-benefits .quiz-option,
@@ -4202,7 +4219,7 @@ div#phuket-future-guide {
     justify-content: center;
     z-index: 300000;
     background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(0.25vw);
 }
 
 div#personal-consultation .form-container,
@@ -4608,7 +4625,7 @@ div#guide-form-result {
     justify-content: center;
     z-index: 300000;
     background: rgba(0, 0, 0, 0.4);
-    backdrop-filter: blur(3px);
+    backdrop-filter: blur(0.25vw);
 }
 
 div#guide-form-result .form-container {

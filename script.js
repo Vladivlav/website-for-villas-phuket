@@ -284,15 +284,17 @@ document.querySelectorAll('#phuket-future-guide .form-button').forEach(button =>
 document.querySelectorAll('.quiz-option').forEach(option => {
     option.addEventListener('click', function() {
         // Убираем класс active у всех соседних элементов с классом quiz-option
-        document.querySelectorAll('.quiz-option').forEach(el => el.classList.remove('active'));
+        this.parentNode.querySelectorAll('.quiz-option').forEach(el => el.classList.remove('active'));
+        this.parentNode.querySelectorAll('.quiz-option').forEach(el => el.classList.add('inactive'));
 
         // Добавляем класс active к текущему элементу quiz-option
+        this.classList.remove('inactive');
         this.classList.add('active');
 
         // Находим кнопку .next-button рядом с кликнутым элементом и добавляем ей класс active
         const nextButton = this.parentNode.querySelector('.next-button');
         if (nextButton) {
-        nextButton.classList.add('active');
+          nextButton.classList.add('active');
         }
     });
 });
@@ -382,9 +384,31 @@ function updateProgressFive(index) {
                     quizSection.classList.remove('last-slide');
                 }
             }
-        }
+          }
+          if (window.matchMedia("(min-width: 768px) and (max-width: 1199px)").matches) {
+            const container = document.querySelector("#check-objects .quiz-questions-container");
+            const questions = document.querySelectorAll("#check-objects .quiz-question");
+        
+            questions.forEach(q => q.style.opacity = "0");
+        
+            const current = document.querySelector("#check-objects .quiz-question.active");
+            if (current) {
+                current.style.opacity = "1";
+    
+                const index = Array.from(questions).indexOf(current) + 1;
+    
+                if ([1].includes(index)) {
+                    container.style.height = "8.59375vw";
+                } else if ([2, 3].includes(index)) {
+                    container.style.height = "15.364583vw";
+                } else if (index == 4) {
+                  container.style.height = "24.739583333333336vw";
+                }
+            }
+          }
     });
 });
+
 
 document.querySelectorAll('#prices-and-benefits .next-button').forEach(button => {
   button.addEventListener('click', function() {
@@ -413,6 +437,28 @@ document.querySelectorAll('#prices-and-benefits .next-button').forEach(button =>
               }
           }
       }
+
+      if (window.matchMedia("(min-width: 768px) and (max-width: 1199px)").matches) {
+        const container = document.querySelector("#prices-and-benefits .quiz-questions-container");
+        const questions = document.querySelectorAll("#prices-and-benefits .quiz-question");
+    
+        questions.forEach(q => q.style.opacity = "0");
+    
+        const current = document.querySelector("#prices-and-benefits .quiz-question.active");
+        if (current) {
+            current.style.opacity = "1";
+
+            const index = Array.from(questions).indexOf(current) + 1;
+
+            if ([1, 4, 5].includes(index)) {
+                container.style.height = "8.59375vw";
+            } else if ([2, 3].includes(index)) {
+                container.style.height = "15.364583vw";
+            } else if (index == 6) {
+              container.style.height = "24.739583333333336vw";
+            }
+        }
+      }
   });
 });
 
@@ -433,6 +479,27 @@ document.querySelectorAll('#prices-and-benefits .next-button').forEach(button =>
           updateProgress(newIndex, allQuestions.length) - 1; // обновляем прогресс
         }
       }
+
+      if (window.matchMedia("(min-width: 768px) and (max-width: 1199px)").matches) {
+        const container = document.querySelector("#check-objects .quiz-questions-container");
+    
+        allQuestions.forEach(q => q.style.opacity = "0");
+    
+        const current = document.querySelector("#check-objects .quiz-question.active");
+        if (current) {
+            current.style.opacity = "1";
+  
+            const index = Array.from(allQuestions).indexOf(current) + 1;
+  
+            if ([1].includes(index)) {
+              container.style.height = "8.59375vw";
+            } else if ([2, 3].includes(index)) {
+                container.style.height = "15.364583vw";
+            } else if (index == 4) {
+              container.style.height = "24.739583333333336vw";
+          }
+        }
+      }
     });
   });
 
@@ -450,6 +517,27 @@ document.querySelectorAll('#prices-and-benefits .prev-button').forEach(button =>
         // Получаем индекс предыдущего вопроса и обновляем прогресс
         const newIndex = Array.from(allQuestions).indexOf(prevQuestion);
         updateProgressFive(newIndex); // обновляем прогресс
+      }
+    }
+
+    if (window.matchMedia("(min-width: 768px) and (max-width: 1199px)").matches) {
+      const container = document.querySelector("#prices-and-benefits .quiz-questions-container");
+  
+      allQuestions.forEach(q => q.style.opacity = "0");
+  
+      const current = document.querySelector("#prices-and-benefits .quiz-question.active");
+      if (current) {
+          current.style.opacity = "1";
+
+          const index = Array.from(allQuestions).indexOf(current) + 1;
+
+          if ([1, 4, 5].includes(index)) {
+              container.style.height = "8.59375vw";
+          } else if ([2, 3].includes(index)) {
+              container.style.height = "15.364583vw";
+          } else if (index == 6) {
+            container.style.height = "24.739583333333336vw";
+          }
       }
     }
   });

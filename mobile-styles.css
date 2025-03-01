@@ -1207,9 +1207,8 @@
     }
     
     .form-agreement > div {
-        left: 2.22vw;
+        left: 0;
         align-items: center;
-    
     }
     #check-objects .form-button,
     #get-properties .form-inputs .form-actions .form-button {
@@ -1251,10 +1250,9 @@
     
     .form-agreement .first-line {
         position: relative;
-        left: -4.72vw;
+        min-width: 41.96vw;
         height: unset;
         line-height: unset;
-    
     }
     
     #get-properties .form-input,
@@ -2857,7 +2855,7 @@ line-height: 100%;
     div#personal-consultation .form-container .form-section .form-inputs .form-button,
     div#choose-property .form-container .form-section .form-inputs .form-button,
     div.faq-form .form-container .form-section .form-inputs .form-button {
-        width: 70vw;
+        width: auto;
         height: 8.89vw;
         margin: 0 auto;
         font-size: 3.33vw;
@@ -2881,6 +2879,7 @@ line-height: 100%;
     div#choose-property .form-container .form-section .form-inputs .form-agreement span,
     div.faq-form .form-container .form-section .form-inputs .form-agreement span {
         font-size: 2.5vw;
+        left: 0;
     }
 
     div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-actions,
@@ -2935,5 +2934,32 @@ line-height: 100%;
 
     .sticky-container {
         height: 133.6667vw;
+    }
+
+    div#special-offer-form .form-container .form-section .form-inputs .form-agreement > div input,
+    div#special-offer-form .form-container .form-section .form-inputs .form-agreement > div svg,
+    div#choose-property .form-container .form-section .form-inputs .form-agreement > div input,
+    div#choose-property .form-container .form-section .form-inputs .form-agreement > div svg,
+    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement > div input,
+    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement > div input,
+    div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement > div input,
+    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-agreement > div svg,
+    div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-agreement > div svg,
+    div#phuket-future-guide .form-container .form-section .form-inputs .form-agreement > div svg,
+    div#personal-consultation .form-container .form-section .form-inputs .form-agreement > div input,
+    div#personal-consultation .form-container .form-section .form-inputs .form-agreement > div svg,
+    #investments-base .form-agreement input,
+    #investments-base .form-agreement svg,
+    section#prices-and-benefits .form-agreement input,
+    section#prices-and-benefits .form-agreement svg,
+    section#check-objects .form-agreement input,
+    section#check-objects .form-agreement svg,
+    #faq-form .form-agreement input,
+    #faq-form .form-agreement svg {
+        position: absolute;
+        top: 0.27778vw !important;
+        left: 1.94vw !important;
+        width: 2.5vw;
+        height: 2.5vw;
     }
 }
