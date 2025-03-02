@@ -618,7 +618,6 @@ document.querySelectorAll('.form-agreement svg').forEach(input => {
 
     if (!button) return; // Если кнопка не найдена, выходим
 
-    console.log('click');
     if (icon.style.opacity == 0) {
       icon.style.opacity = 1;
       button.classList.add('active');
@@ -1060,8 +1059,6 @@ function applyParallax(blockSelector, intensity = 300) {
   if (rect.top < windowHeight && rect.bottom > 0) {
       const progress = (windowHeight - rect.top) / (windowHeight + rect.height);
       const translateY = (progress - 0.5) * intensity * scrollRatio; // Скорректированная скорость
-
-      console.log(`${blockSelector} progress: ${progress}, translateY: ${translateY}px (ratio: ${scrollRatio})`);
 
       parallax.style.transform = `translateY(${translateY}px)`;
   }

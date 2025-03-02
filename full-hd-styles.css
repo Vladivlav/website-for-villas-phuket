@@ -1872,9 +1872,8 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
-        z-index: 200000;
         max-width: 100.0vw;
-    
+        z-index: 2100;
     }
     
     #investments-base img {
@@ -2236,11 +2235,10 @@
     }
     
     section#main-page > header {
-        height: 6.3vw;
+        height: 7.86vw;
         z-index: 1000;
         padding: 1.56vw;
-        padding-bottom: 0;
-    
+        z-index: 21000;
     }
     
     section#main-page .main-nav > ul li a {
