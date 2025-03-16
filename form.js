@@ -8,9 +8,10 @@ document.addEventListener("click", function(event) {
         let isValid = true;
 
         function showError(input, message, type) {
-            const errorDiv = input.nextElementSibling; // Ошибка сразу под инпутом
+            const errorDiv = input.closest(".input-group").querySelector(".error-message"); // Ошибка сразу под инпутом
 
             if (message) {
+                console.log(errorDiv);
                 input.classList.remove("empty", "invalid");
                 errorDiv.classList.remove("empty", "invalid");
 
@@ -41,6 +42,7 @@ document.addEventListener("click", function(event) {
 
         // Проверка имени
         if (nameInput) {
+            console.log("check name");
             if (name === "") {
                 showError(nameInput, "Поле обязательное для заполнения", "empty");
             } else if (!/^[А-ЯЁа-яёA-Za-z\s-]+$/.test(name)) {
@@ -52,6 +54,7 @@ document.addEventListener("click", function(event) {
 
         // Проверка телефона
         if (phoneInput) {
+            console.log("check phone");
             if (phone === "") {
                 showError(phoneInput, "Поле обязательное для заполнения", "empty");
             } else if (!/^\+\d{1,3}[\s\d-]{7,15}$/.test(phone)) {

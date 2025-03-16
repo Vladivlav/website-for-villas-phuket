@@ -919,6 +919,7 @@
         border-radius: 3.9063vw;
         padding: 6.5104vw;
         box-sizing: border-box;
+        align-items: center;
     }
     
     #get-properties .form-text {
@@ -950,6 +951,7 @@
         align-items: center;
         gap: 2.6042vw;
         padding: 0;
+        width: 42.9688vw;
     }
 
     .form-input, .form-select {
@@ -1213,6 +1215,7 @@
         padding: 0;
         margin-top: 1.9531vw;
         gap: 1.953125vw;
+        position: relative;
     }
 
     div#personal-consultation .form-container .form-section .form-inputs,
@@ -2242,5 +2245,17 @@
         position: absolute;
         left: 2.60vw;
         margin-top: 0.13vw;
+    }
+
+    div#special-offer-form .form-container .form-section .form-inputs .input-group, div#special-offer-form .form-container .form-section .form-inputs .form-select, div#special-offer-form .form-container .form-section .form-inputs .input-group input {
+        margin: unset;
+    }
+
+    .input-group {
+        position: relative;
+    }
+
+    div#faq-form .form-container .form-section .form-inputs .input-group, div#faq-form .form-container .form-section .form-inputs .form-select, div#faq-form .form-container .form-section .form-inputs .input-group input {
+        width: 100%;
     }
 }

@@ -2837,7 +2837,7 @@ line-height: 100%;
     div.faq-form .form-container .form-section .form-inputs .form-select,
     div.faq-form .form-container .form-section .form-inputs .input-group input {
         height: 8.89vw;
-        width: 100%;
+        width: 100% !important;!i;!;
     }
 
     div#forms-of-ownerships-guide .form-container .form-section .form-inputs,
@@ -2961,5 +2961,21 @@ line-height: 100%;
         left: 1.94vw !important;
         width: 2.5vw;
         height: 2.5vw;
+    }
+
+    .form-inputs .input-group > div.iti,
+    .form-inputs .input-group,
+    div#faq-form .form-container .form-section .form-inputs .input-group, div#faq-form .form-container .form-section .form-inputs .form-select, div#faq-form .form-container .form-section .form-inputs .input-group input {
+        width: 100% !important;
+    }
+
+    .error-message {
+        font-size: 2.5vw;
+        text-align: left;
+        margin-left: 5.555vw !important;
+        color: #FF6559;
+        line-height: 120%;
+        font-weight: 400;
+        position: absolute;
     }
 }

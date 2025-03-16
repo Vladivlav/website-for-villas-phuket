@@ -3825,7 +3825,6 @@ section#news div#news-list .news-description {
     color: #393939;
     max-height: 0;
     opacity: 0;
-    visibility: hidden;
     max-width: 90%;
 
 }
@@ -4623,11 +4622,21 @@ div.faq-form .form-container .form-section .form-inputs .input-group input {
     background: #393939b3;
 }
 
+div#faq-form .form-container .form-section .form-inputs .input-group,
+div#faq-form .form-container .form-section .form-inputs .form-select,
+div#faq-form .form-container .form-section .form-inputs .input-group input {
+    width: 20.83vw;
+    margin: 0 auto;
+}
+
+div#special-offer-form .form-container .form-section .form-inputs .input-group,
 div#special-offer-form .form-container .form-section .form-inputs .form-select,
 div#special-offer-form .form-container .form-section .form-inputs .input-group input {
     background: #ffffffb3;
     border-color: #299948;
     color: rgba(57, 57, 57, 0.8);
+    width: 20.83vw;
+    margin: 0 auto;
 }
 
 div#personal-consultation .form-container .form-section .form-inputs .form-select,
@@ -4802,6 +4811,34 @@ div#guide-form-result .form-container .image-section img {height: 100%;width: 10
 .form-container .form-section .form-inputs .input-group,
 .form-container .form-section .form-inputs .input-group input {
     width: 100%;
+}
+#faq-form .error-message,
+#personal-consultation .error-message,
+#phuket-future-guide .error-message,
+#areas-and-beaches-guide .error-message,
+#forms-of-ownerships-guide .error-message,
+#special-offer-form .error-message,
+#choose-property .error-message {
+    position: absolute;
+    text-align: left;
+    margin-top: 1px;
+    margin-left: 1.667vw;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+    
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    opacity: 0;
+}
+    
+.faq-answer.open {
+    opacity: 1;
 }
 
 @media (max-width: 64.0vw) {

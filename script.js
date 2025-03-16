@@ -1,29 +1,29 @@
-const faqItems   = document.querySelectorAll('.faq-question');
-const faqAnswers = document.querySelectorAll('.faq-answer');
-const faqButtons = document.querySelectorAll('.faq-item img');
+// const faqItems   = document.querySelectorAll('.faq-question');
+// const faqAnswers = document.querySelectorAll('.faq-answer');
+// const faqButtons = document.querySelectorAll('.faq-item img');
 
-faqButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      button.parentNode.querySelector('.faq-question').click();
-    })
-});
+// faqButtons.forEach(button => {
+//     button.addEventListener('click', () => {
+//       button.parentNode.querySelector('.faq-question').click();
+//     })
+// });
 
-faqItems.forEach(item => {
-    item.addEventListener('click', () => {
-        const answer = item.nextElementSibling;
-        var faqItemElement = answer.parentElement;
-        var imgElement = faqItemElement.querySelector('img');
-        if (answer.classList.contains('current')) {
-            answer.classList.remove('current');
-            imgElement.classList.remove('animated');
-        } else {
-            faqAnswers.forEach((element) => { element.classList.remove('current'); });
-            answer.classList.add('current');
-            faqButtons.forEach(img => { img.classList.remove('animated') });
-            imgElement.classList.add('animated');
-        }
-    });
-});
+// faqItems.forEach(item => {
+//     item.addEventListener('click', () => {
+//         const answer = item.nextElementSibling;
+//         var faqItemElement = answer.parentElement;
+//         var imgElement = faqItemElement.querySelector('img');
+//         if (answer.classList.contains('current')) {
+//             answer.classList.remove('current');
+//             imgElement.classList.remove('animated');
+//         } else {
+//             faqAnswers.forEach((element) => { element.classList.remove('current'); });
+//             answer.classList.add('current');
+//             faqButtons.forEach(img => { img.classList.remove('animated') });
+//             imgElement.classList.add('animated');
+//         }
+//     });
+// });
 
 document.querySelectorAll('#prices-and-benefits .quiz-result .close-popup').forEach(button => {
   button.addEventListener('click', function() {
