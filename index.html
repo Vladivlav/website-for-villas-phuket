@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="desktop-styles.css">
     <link rel="stylesheet" href="full-hd-styles.css">
     <link rel="stylesheet" href="fonts.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
     <title>MERU Estate</title>
 </head>
 <body>
@@ -545,9 +548,19 @@
                     <p>Получите индивидуальную подборку квартир или вилл на&nbsp;Пхукете под&nbsp;ваши<br/> цели и&nbsp;задачи со&nbsp;стратегией дальнейших шагов по&nbsp;получению&nbsp;дохода</p>
                 </div>
                 <div class="form-inputs">
-                    <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
-                    <input type="text" placeholder="Ваш номер телефона" class="form-input">
-                    <input type="text" placeholder="Ваш e-mail" class="form-input">
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input" id="name">
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш номер телефона" class="form-input" id="phone">
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш e-mail" class="form-input" id="email">
+                        <div class="error-message" id="email-error"></div>
+                    </div>
                     <div class="form-select">
                         <span>
                             <span class="text">Как удобнее связаться?</span>
@@ -749,9 +762,19 @@
                             <p class="green-question">Заполните форму и&nbsp;получите индивидуальную&nbsp;подборку</p>
                         </div>
                         <div class="form-inputs">
-                            <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
-                            <input type="text" placeholder="Ваш номер телефона" class="form-input">
-                            <input type="text" placeholder="Ваш e-mail" class="form-input">
+                            <div class="input-group">
+                                <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input" id="name">
+                                <div class="error-message" id="name-error"></div>
+                            </div>
+                        
+                            <div class="input-group">
+                                <input type="text" placeholder="Ваш номер телефона" class="form-input" id="phone">
+                                <div class="error-message" id="phone-error"></div>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Ваш e-mail" class="form-input" id="email">
+                                <div class="error-message" id="email-error"></div>
+                            </div>
                             <div class="form-select">
                                 <span>
                                     <span class="text">Как удобнее связаться?</span>
@@ -966,9 +989,19 @@
                             <p class="green-question">Заполните форму и&nbsp;получите гайд по&nbsp;проверке&nbsp;объектов</p>
                         </div>
                         <div class="form-inputs">
-                            <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
-                            <input type="text" placeholder="Ваш номер телефона" class="form-input">
-                            <input type="text" placeholder="Ваш e-mail" class="form-input">
+                            <div class="input-group">
+                                <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input" id="name">
+                                <div class="error-message" id="name-error"></div>
+                            </div>
+                        
+                            <div class="input-group">
+                                <input type="text" placeholder="Ваш номер телефона" class="form-input" id="phone">
+                                <div class="error-message" id="phone-error"></div>
+                            </div>
+                            <div class="input-group">
+                                <input type="text" placeholder="Ваш e-mail" class="form-input" id="email">
+                                <div class="error-message" id="email-error"></div>
+                            </div>
                             <div class="form-select">
                                 <span>
                                     <span class="text">Как удобнее связаться?</span>
@@ -1501,9 +1534,18 @@
                 <h2>Заполните форму и&nbsp;мы подберём объект для&nbsp;вас</h2>
                 <p>Наш менеджер свяжется с вами, чтобы подобрать лучшие варианты недвижимости на острове для вас.</p>
                 <div class="form-inputs">
-                    <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
-                    <input type="text" placeholder="Ваш номер телефона" class="form-input">
-                    <input type="text" placeholder="Ваш e-mail" class="form-input">
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input" id="name">
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш номер телефона" class="form-input" id="phone">
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш e-mail" class="form-input" id="email">
+                        <div class="error-message" id="email-error"></div>
+                    </div>
                     <div class="form-select">
                         <span>
                             <span class="text">Как удобнее связаться?</span>
@@ -1566,9 +1608,18 @@
                 <h2>Заполните форму и&nbsp;Денис свяжется с&nbsp;вами лично</h2>
                 <p>Денис лично ответит на ваши вопросы</p>
                 <div class="form-inputs">
-                    <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
-                    <input type="text" placeholder="Ваш номер телефона" class="form-input">
-                    <input type="text" placeholder="Ваш e-mail" class="form-input">
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input" id="name">
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш номер телефона" class="form-input" id="phone">
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш e-mail" class="form-input" id="email">
+                        <div class="error-message" id="email-error"></div>
+                    </div>
                     <div class="form-select">
                         <span>
                             <span class="text">Как удобнее связаться?</span>
@@ -1622,9 +1673,19 @@
                 <h2>Заполните форму для&nbsp;связи с&nbsp;менеджером</h2>
                 <p>Наш менеджер расскажет всю информацию<br />о проекте и ответит на все вопросы</p>
                 <div class="form-inputs">
-                    <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
-                    <input type="text" placeholder="Ваш номер телефона" class="form-input">
-                    <input type="text" placeholder="Ваш e-mail" class="form-input">
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input" id="name">
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш номер телефона" class="form-input" id="phone">
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш e-mail" class="form-input" id="email">
+                        <div class="error-message" id="email-error"></div>
+                    </div>
                     <div class="form-select">
                         <span>
                             <span class="text">Как удобнее связаться?</span>
@@ -1678,9 +1739,18 @@
                 <h2>Заполните форму для&nbsp;связи с&nbsp;менеджером</h2>
                 <p>Наш менеджер подробно<br />и полно ответит на ваши вопросы</p>
                 <div class="form-inputs">
-                    <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
-                    <input type="text" placeholder="Ваш номер телефона" class="form-input">
-                    <input type="text" placeholder="Ваш e-mail" class="form-input">
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input" id="name">
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш номер телефона" class="form-input" id="phone">
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш e-mail" class="form-input" id="email">
+                        <div class="error-message" id="email-error"></div>
+                    </div>
                     <div class="form-select">
                         <span>
                             <span class="text">Как удобнее связаться?</span>
@@ -1734,9 +1804,19 @@
                 <h2>Заполните форму и&nbsp;получите гайд</h2>
                 <p>Мы вышлем его вам на указанную почту ниже</p>
                 <div class="form-inputs">
-                    <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
-                    <input type="text" placeholder="Ваш номер телефона" class="form-input">
-                    <input type="text" placeholder="Ваш e-mail" class="form-input">
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input" id="name">
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш номер телефона" class="form-input" id="phone">
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш e-mail" class="form-input" id="email">
+                        <div class="error-message" id="email-error"></div>
+                    </div>
                     <div class="form-select">
                         <span>
                             <span class="text">Как удобнее связаться?</span>
@@ -1799,9 +1879,18 @@
                 <h2>Заполните форму и&nbsp;получите гайд</h2>
                 <p>Мы вышлем его вам на указанную почту ниже</p>
                 <div class="form-inputs">
-                    <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
-                    <input type="text" placeholder="Ваш номер телефона" class="form-input">
-                    <input type="text" placeholder="Ваш e-mail" class="form-input">
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input" id="name">
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш номер телефона" class="form-input" id="phone">
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш e-mail" class="form-input" id="email">
+                        <div class="error-message" id="email-error"></div>
+                    </div>
                     <div class="form-select">
                         <span>
                             <span class="text">Как удобнее связаться?</span>
@@ -1864,9 +1953,18 @@
                 <h2>Заполните форму и&nbsp;получите гайд</h2>
                 <p>Мы вышлем его вам на указанную почту ниже</p>
                 <div class="form-inputs">
-                    <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input">
-                    <input type="text" placeholder="Ваш номер телефона" class="form-input">
-                    <input type="text" placeholder="Ваш e-mail" class="form-input">
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваши Имя и Фамилия" class="form-input" id="name">
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш номер телефона" class="form-input" id="phone">
+                        <div class="error-message" id="phone-error"></div>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" placeholder="Ваш e-mail" class="form-input" id="email">
+                        <div class="error-message" id="email-error"></div>
+                    </div>
                     <div class="form-select">
                         <span>
                             <span class="text">Как удобнее связаться?</span>
@@ -1943,6 +2041,24 @@
     </div>
     <script src="script.js"></script>
     <script src="slider.js"></script>
+    <script src="form.js"></script>
     <script src="header.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+    <script>
+        document.querySelectorAll("#phone").forEach(input => {
+            window.intlTelInput(input, {
+                loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/utils.js"),
+            });
+
+            const observer = new MutationObserver(() => {
+                if (input.offsetParent !== null) { // Проверяем, стал ли он видимым
+                    input.dispatchEvent(new Event("focus")); // Принудительно триггерим обновление
+                }
+            });
+
+            observer.observe(input, { attributes: true, attributeFilter: ["style", "class"] });
+        });
+    </script>
 </body>
 </html>

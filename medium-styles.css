@@ -969,6 +969,10 @@
         background: #ffffffb3;
     }
 
+    section#check-objects {
+        height: 92.0573vw;
+    }
+
     #check-objects .form-input,
     #check-objects .form-select {
         width: 41.276vw;
@@ -1129,6 +1133,7 @@
     #check-objects .header-section,
     #prices-and-benefits .header-section {
         padding: 13.0208vw 5.0781vw 6.5104vw;
+        padding-bottom: 13.02vw;
     }
 
     #check-objects .header-content,
@@ -1224,6 +1229,7 @@
         width: 39.0625vw;
         gap: 2.6042vw;
         margin-top: 0;
+        position: relative;
     }
 
     div#personal-consultation .form-container .form-section .form-inputs,
@@ -1510,6 +1516,7 @@
         font-size: 1.8229vw;
         top: 34.8958vw;
         left: 48.0469vw;
+        z-index: 2000;
     }
 
     section#tenth-section div.content {
@@ -2095,15 +2102,15 @@
         margin-bottom: 3.9063vw;
     }
 
-    div#forms-of-ownerships-guide .form-container .form-section .form-inputs > input,
-    div#areas-and-beaches-guide .form-container .form-section .form-inputs > input,
-    div#phuket-future-guide .form-container .form-section .form-inputs > input,
+    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .input-group input,
+    div#areas-and-beaches-guide .form-container .form-section .form-inputs .input-group input,
+    div#phuket-future-guide .form-container .form-section .form-inputs .input-group input,
     div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-select,
     div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-select,
     div#phuket-future-guide .form-container .form-section .form-inputs .form-select,
     div#special-offer-form .form-container .form-section .form-inputs .form-select,
-    div#special-offer-form .form-container .form-section .form-inputs > input ,
-    div#choose-property .form-container .form-section .form-inputs > input {
+    div#special-offer-form .form-container .form-section .form-inputs .input-group input ,
+    div#choose-property .form-container .form-section .form-inputs .input-group input {
         width: 39.06vw;
     }
 
@@ -2228,5 +2235,12 @@
 
     .parallax-bg {
         background-image: url(images/quote-with-four-men-bg-768.png);
+    }
+
+    .error-message {
+        font-size: 1.171875vw;
+        position: absolute;
+        left: 2.60vw;
+        margin-top: 0.13vw;
     }
 }

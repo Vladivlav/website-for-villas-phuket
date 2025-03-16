@@ -138,4 +138,10 @@
     #check-objects .prev-button {
         font-size: 0.75vw;
     }
+
+    div#choose-property .form-container .form-section .form-inputs .input-group > div,
+    div#choose-property .form-container .form-section .form-inputs .input-group,
+    div#choose-property .form-container .form-section .form-inputs .input-group input {
+        width: 100%;
+    }
 }

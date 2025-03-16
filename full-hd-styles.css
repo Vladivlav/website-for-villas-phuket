@@ -2453,11 +2453,11 @@
     }
 
     div#personal-consultation .form-container .form-section .form-inputs .form-select,
-    div#personal-consultation .form-container .form-section .form-inputs > input,
+    div#personal-consultation .form-container .form-section .form-inputs .input-group input,
     div#choose-property .form-container .form-section .form-inputs .form-select,
-    div#choose-property .form-container .form-section .form-inputs > input,
+    div#choose-property .form-container .form-section .form-inputs .input-group input,
     div.faq-form .form-container .form-section .form-inputs .form-select,
-    div.faq-form .form-container .form-section .form-inputs > input {
+    div.faq-form .form-container .form-section .form-inputs .input-group input {
         height: 2.08vw;
     }
 
@@ -2469,7 +2469,7 @@
     }
 
     div#personal-consultation .form-container .form-section .form-inputs .form-select,
-    div#personal-consultation .form-container .form-section .form-inputs > input {
+    div#personal-consultation .form-container .form-section .form-inputs .input-group input {
         height: 2.08vw;
     }
 
@@ -2567,11 +2567,11 @@
     }
 
     div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-select,
-    div#forms-of-ownerships-guide .form-container .form-section .form-inputs > input,
+    div#forms-of-ownerships-guide .form-container .form-section .form-inputs .input-group input,
     div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-select,
-    div#areas-and-beaches-guide .form-container .form-section .form-inputs > input,
+    div#areas-and-beaches-guide .form-container .form-section .form-inputs .input-group input,
     div#phuket-future-guide .form-container .form-section .form-inputs .form-select,
-    div#phuket-future-guide .form-container .form-section .form-inputs > input {
+    div#phuket-future-guide .form-container .form-section .form-inputs .input-group input {
         height: 2.08vw;
     }
 

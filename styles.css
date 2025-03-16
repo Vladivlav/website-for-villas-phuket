@@ -4586,17 +4586,17 @@ div#phuket-future-guide .form-container .form-section .form-inputs .form-button 
 }
 
 div#personal-consultation .form-container .form-section .form-inputs .form-select,
-div#personal-consultation .form-container .form-section .form-inputs > input,
+div#personal-consultation .form-container .form-section .form-inputs .input-group input,
 div#choose-property .form-container .form-section .form-inputs .form-select,
-div#choose-property .form-container .form-section .form-inputs > input,
+div#choose-property .form-container .form-section .form-inputs .input-group input,
 div.faq-form .form-container .form-section .form-inputs .form-select,
-div.faq-form .form-container .form-section .form-inputs > input,
+div.faq-form .form-container .form-section .form-inputs .input-group input,
 div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-select,
-div#forms-of-ownerships-guide .form-container .form-section .form-inputs > input,
+div#forms-of-ownerships-guide .form-container .form-section .form-inputs .input-group input,
 div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-select,
-div#areas-and-beaches-guide .form-container .form-section .form-inputs > input,
+div#areas-and-beaches-guide .form-container .form-section .form-inputs .input-group input,
 div#phuket-future-guide .form-container .form-section .form-inputs .form-select,
-div#phuket-future-guide .form-container .form-section .form-inputs > input {
+div#phuket-future-guide .form-container .form-section .form-inputs .input-group input {
     width: 100%;
     border: 1px solid #299948;
     height: 2.17vw;
@@ -4604,16 +4604,16 @@ div#phuket-future-guide .form-container .form-section .form-inputs > input {
 }
 
 div#forms-of-ownerships-guide .form-container .form-section .form-inputs .form-select,
-div#forms-of-ownerships-guide .form-container .form-section .form-inputs > input,
+div#forms-of-ownerships-guide .form-container .form-section .form-inputs .input-group input,
 div#areas-and-beaches-guide .form-container .form-section .form-inputs .form-select,
-div#areas-and-beaches-guide .form-container .form-section .form-inputs > input,
+div#areas-and-beaches-guide .form-container .form-section .form-inputs .input-group input,
 div#phuket-future-guide .form-container .form-section .form-inputs .form-select,
-div#phuket-future-guide .form-container .form-section .form-inputs > input {
+div#phuket-future-guide .form-container .form-section .form-inputs .input-group input {
     width: 20.83vw;
 }
 
 div.faq-form .form-container .form-section .form-inputs .form-select,
-div.faq-form .form-container .form-section .form-inputs > input {
+div.faq-form .form-container .form-section .form-inputs .input-group input {
     border: 1px solid #FCBD21;
     color: white;
     width: 20.83vw;
@@ -4624,14 +4624,14 @@ div.faq-form .form-container .form-section .form-inputs > input {
 }
 
 div#special-offer-form .form-container .form-section .form-inputs .form-select,
-div#special-offer-form .form-container .form-section .form-inputs > input {
+div#special-offer-form .form-container .form-section .form-inputs .input-group input {
     background: #ffffffb3;
     border-color: #299948;
     color: rgba(57, 57, 57, 0.8);
 }
 
 div#personal-consultation .form-container .form-section .form-inputs .form-select,
-div#personal-consultation .form-container .form-section .form-inputs > input {
+div#personal-consultation .form-container .form-section .form-inputs .input-group input {
     border: 1px solid #27ABC1;
 }
 
@@ -4769,6 +4769,40 @@ div#guide-form-result .form-container .form-section {display: flex;flex-directio
 div#guide-form-result .form-container .image-section {width: 100%;height: 9.83vw;}
 
 div#guide-form-result .form-container .image-section img {height: 100%;width: 100%;}
+
+.error-message {
+    font-size: 0.67vw;
+    text-align: center;
+    margin-top: 5px;
+    color: #FF6559;
+    line-height: 120%;
+    font-weight: 400;
+    min-width: 15.917vw;
+}
+
+.iti--inline-dropdown .iti__dropdown-content {
+    background: #393939;
+}
+
+.iti--inline-dropdown .iti__dropdown-content span {
+    font-size: 12px;
+}
+
+.iti__country {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.iti__dial-code {
+    margin-left: auto;
+}
+
+.form-container .form-section .form-inputs .input-group > div,
+.form-container .form-section .form-inputs .input-group,
+.form-container .form-section .form-inputs .input-group input {
+    width: 100%;
+}
 
 @media (max-width: 64.0vw) {
     #investment-info .details-grid {
