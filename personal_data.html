@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="mobile-styles.css">
+    <link rel="stylesheet" href="medium-styles.css">
+    <link rel="stylesheet" href="desktop-styles.css">
+    <link rel="stylesheet" href="full-hd-styles.css">
+    <link rel="stylesheet" href="fonts.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/css/intlTelInput.css">
+
+    <title>Согласие на обработку персональных данных</title>
+</head>
+<body>
+    <style>
+        a {
+            color: rgb(43 153 72);
+        }
+
+        section#main-page > header.light {
+            background-color: unset;
+        }
+
+        section#main-page {
+            background-image: unset;
+            background-color: #f9f9f9;
+            height: auto;
+        }
+
+        section#main-page > header {
+            position: unset;
+        }
+
+        .height100 {
+            padding: 8.33vw;
+            display: block;
+            width: 75vw;
+        }
+
+        .height100 p {
+            margin-top: 1.25vw;
+            margin-bottom: 1.25vw;
+        }
+
+        .height100 > strong {
+            font-size: 1.083vw;
+            font-weight: 600;
+            line-height: 120%;
+            color: #393939;
+            margin-top: 3.33vw;
+            display: block;
+        }
+
+        ul li,
+        .height100 p {
+            font-size: 1vw;
+            font-weight: 400;
+            line-height: 130%;
+            color: #393939;
+        }
+
+        ul {
+            padding: 0;
+            margin: 0.417vw 0 1.25vw 0;
+        }
+
+        ul.initial {
+            padding-inline-start: 1.67vw;
+        }
+
+        ul.initial li {
+            display: list-item;
+        }
+
+        ul li {
+            display: block;
+            margin: 0.417vw 0;
+        }
+
+        .height100 p.margin-bottom-5 {
+            margin-bottom: 0.417vw;
+        }
+
+
+        h1 {
+            font-family: 'igra-sans';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 3vw;
+            line-height: 100%;
+            color: #393939;
+            margin: 0;
+        }
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            section#main-page > div.flex {
+                width: 100%;
+                display: block;
+            }
+
+            section#main-page > div.flex p {
+                margin-top: 2.604167vw;
+                margin-bottom: 2.604167vw;
+            }
+
+            .height100 > strong {
+                font-size: 1.953125vw;
+                margin-top: 6.51041667vw;
+            }
+
+            ul li,
+            .height100 p {
+                font-size: 1.8229167vw;
+            }
+
+            section#main-page > div.flex p.margin-bottom-5 {
+               margin-bottom: 1.3vw;
+            }
+
+            h1 {
+                font-size: 4.6875vw;
+            }
+        }
+
+        @media (min-width: 1920px) {
+            section#main-page > div.flex {
+                width: 78.125vw;
+                display: block;
+                margin: 0;
+                padding-left: 7.29167vw;
+                box-sizing: unset;
+                padding-bottom: 5.208333333333334vw;
+            }
+
+            section#main-page > div.flex p {
+                margin-top: 1.041667vw;
+                margin-bottom: 1.041667vw;
+            }
+
+            .height100 > strong {
+                font-size: 1.09375vw;
+                margin-top: 2.604167vw;
+            }
+
+            ul li,
+            .height100 p {
+                font-size: 1.041667vw;
+            }
+
+            section#main-page > div.flex p.margin-bottom-5 {
+               margin-bottom: 0;
+            }
+
+            h1 {
+                font-size: 2.9167vw;
+            }
+        }
+
+        @media (max-width: 767px) {
+            section#main-page > div.flex {
+                width: 100%;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            section#main-page > div.flex p {
+                margin-top: 5.55555vw;
+                margin-bottom: 5.55555vw;
+            }
+
+            .height100 > strong {
+                font-size: 4.16667vw;
+                margin-top: 13.88889vw;
+            }
+
+            ul li,
+            .height100 p {
+                font-size: 3.88889vw;
+            }
+
+            section#main-page > div.flex p.margin-bottom-5 {
+               margin-bottom: 0;
+            }
+
+            h1 {
+                font-size: 6.1111vw;
+            }
+        }
+
+    </style>
+    <section id="main-page" class="full-section">
+        <header class="light">
+            <div id="logo">
+                <div class="right-line"></div>
+                <img class="light" src="images/main-logo.svg" />
+                <img class="dark" src="images/main-logo-dark.svg" />
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#about">О нас</a></li>
+                    <div>
+                        <li><a href="#sales">Продажа</a></li>
+                        <li><a href="#resales">Перепродажа</a></li>
+                        <li>
+                            <img class="soon-link" src="images/soon-green-dot.svg">
+                            <a href="#rentals">Аренда</a>
+                        </li>
+                    </div>
+                    <div>
+                        <li><a href="#consulting">Консультация</a></li>
+                        <li class="highlight"><a href="#blog" class="highlight">Блог</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
+                    </div>
+                    <div class="language-selector">
+                        <div class="selected-lang">
+                            <img src="images/ru-flag.png" alt="Russian" />
+                            <svg class="arrow" width="12" height="6" viewBox="0 0 12 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1L6 5L11 1" stroke="#848484"/>
+                            </svg>
+                        </div>
+                        <div class="lang-dropdown">
+                            <div class="lang-option" data-lang="en">
+                                <img src="images/en-flag.png" alt="English" />
+                                EN
+                            </div>
+                            <div class="lang-option" data-lang="de">
+                                <img src="images/de-flag.png" alt="German" />
+                                DE
+                            </div>
+                            <div class="lang-option" data-lang="ch">
+                                <img src="images/ch-flag.png" alt="Chinese" />
+                                CH
+                            </div>
+                        </div>
+                    </div>                    
+                </ul>
+            </nav>
+            <div class="menu">
+                <div class="box">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+        </header>
+        <div class="flex height100">
+                <h1>Согласие на обработку<br> персональных данных</h1>
+
+                <p><span style="font-weight: 400;">Физическое лицо, оставляя заявку на веб-сайте <a href="https://meruestate.com/"> <span style="font-weight: 400;">https://meruestate.com/</span></a> через формы «Консультация», «Подобрать объект», «Задать вопрос», «Выбрать объект» действуя свободно, своей волей и в своем интересе, а также подтверждая свою дееспособность, предоставляет свое согласие на обработку персональных данных (далее — Согласие) компании Meru Estate CO., LTD (Tax ID 834 566 005 693, <a href="mailto:info@meruestate.com">info@meruestate.com</a>, +66 98 013  581), которой принадлежит веб-сайт <a href="https://meruestate.com/"> <span style="font-weight: 400;">https://meruestate.com/</span></a> и которое зарегистрировано по адресу 128/66 Moo5, Ratsada Sub-district, Muang Phuket district, Phuket, Thailand, 83 000, на обработку своих персональных данных со следующими условиями:</span></p>
+                <p><strong>1. </strong><span style="font-weight: 400;">Данное Согласие дается на обработку персональных данных, как без использования средств автоматизации, так и с их использованием.</span></p>
+                <p><strong>2. </strong><span style="font-weight: 400;">Согласие дается на обработку следующих моих персональных данных:<br>персональные данные, не относящиеся специальной категории персональных данных или к биометрическим персональным данным: адрес электронной почты (e-mail); имя; фамилия; номер мобильного телефона; информация о том, откуда пришел на сайт (метка).</span></p>
+                <p><strong>3. </strong><span style="font-weight: 400;">Цель обработки персональных данных: обсуждение возможного проекта.</span></p>
+                <p><strong>4. </strong><span style="font-weight: 400;">В ходе обработки с персональными данными будут совершены следующие действия: сбор; запись; систематизация; накопление; хранение; уточнение (обновление, изменение); извлечение; использование; передача (предоставление, доступ); блокирование; удаление; уничтожение.</span></p>
+                <p><strong>5. </strong><span style="font-weight: 400;">Третьи лица не обрабатывают персональные данные по поручению Meru Estate CO., LTD для указанной в согласии цели.</span></p>
+                <p><strong>6. </strong><span style="font-weight: 400;">Персональные данные обрабатываются до отказа в дальнейшем обсуждении проекта или до заключения договора на проект, смотря что произойдет быстрее.</span></p>
+                <p><strong>7. </strong><span style="font-weight: 400;">Согласие может быть отозвано вами или вашим представителем путем направления Meru Estate CO., LTD письменного заявления или электронного заявления, подписанного согласно законодательству Российской Федерации в области электронной подписи, по адресу, указанному в начале Согласия.</span></p>
+                <p><strong>8. </strong><span style="font-weight: 400;">В случае отзыва вами или вашим представителем Согласия Meru Estate CO., LTD вправе продолжить обработку персональных данных без него при наличии оснований, указанных в пунктах 2 — 11 части 1 статьи 6, части 2 статьи 10 и части 2 статьи 11 Федерального закона № 152-ФЗ «О персональных данных» от 27.07.2006 г.</span></p>
+                <p><strong>9. </strong><span style="font-weight: 400;">Настоящее согласие действует все время до момента прекращения обработки персональных данных, указанных в п. 6 и п. 7 Согласия.</span></p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+          <div class="footer-left">
+            <h2>Остались<br><span>вопросы?</span><br/>Напишите&nbsp;нам</h2>
+            <span class="btn-ask">
+                Задать вопрос
+                <svg width="16" height="6" viewBox="0 0 16 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M15 3H0M15 3L12.973 1M15 3L12.973 5" stroke-width="0.6"/>
+                </svg>
+            </span>
+          </div>
+          <div class="footer-right">
+            <div class="contact-info">
+              <p class="contact-title">Наши контакты</p>
+              <p class="contact-phone"><span>thai</span><br><a href="tel:+66 98 013-85-81">+66 98 013-85-81</a></p>
+              <p class="contact-email"><span>e-mail</span><br> <a href="mailto:info@meruestate.com">info@meruestate.com</a></p>
+              <p class="social-title">наши соц.сети</p>
+              <div class="social-icons">
+                <a href="https://www.instagram.com/meru.estate/">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6.70646 0.398438C3.00823 0.398438 0 3.27857 0 6.81682V15.9836C0 19.521 3.01104 22.3984 6.71025 22.3984H16.2935C19.9918 22.3984 23 19.5183 23 15.9799V6.81331C23 3.27587 19.989 0.398438 16.2897 0.398438H6.70646ZM18.2083 4.06506C18.7373 4.06506 19.1667 4.47569 19.1667 4.98169C19.1667 5.48769 18.7373 5.89844 18.2083 5.89844C17.6793 5.89844 17.25 5.48769 17.25 4.98169C17.25 4.47569 17.6793 4.06506 18.2083 4.06506ZM11.5 5.89844C14.6711 5.89844 17.25 8.36513 17.25 11.3984C17.25 14.4316 14.6711 16.8984 11.5 16.8984C8.32881 16.8984 5.75 14.4316 5.75 11.3984C5.75 8.36513 8.32881 5.89844 11.5 5.89844ZM11.5 7.73169C10.4833 7.73169 9.5083 8.1181 8.78943 8.80571C8.07055 9.49333 7.66671 10.426 7.66671 11.3984C7.66671 12.3709 8.07055 13.3035 8.78943 13.9912C9.5083 14.6788 10.4833 15.0651 11.5 15.0651C12.5166 15.0651 13.4917 14.6788 14.2106 13.9912C14.9294 13.3035 15.3333 12.3709 15.3333 11.3984C15.3333 10.426 14.9294 9.49333 14.2106 8.80571C13.4917 8.1181 12.5166 7.73169 11.5 7.73169Z" fill="white"/>
+                    </svg>                        
+                </a>
+                <a href="https://t.me/denis_rochnyak">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="white" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11.5 0.398438C17.8514 0.398438 23 5.32322 23 11.3984C23 17.4737 17.8514 22.3984 11.5 22.3984C5.14864 22.3984 0 17.4737 0 11.3984C0 5.32322 5.14864 0.398438 11.5 0.398438ZM15.467 15.8823C15.6783 15.2617 16.6698 9.07473 16.7919 7.85557C16.8288 7.48611 16.707 7.24091 16.468 7.1314C16.1791 6.99845 15.7511 7.06493 15.2542 7.23633C14.5734 7.471 5.86739 11.0071 5.36429 11.2114C4.88752 11.4054 4.4361 11.6166 4.4361 11.9228C4.4361 12.1382 4.56976 12.2592 4.93784 12.3848C5.32069 12.5154 6.28527 12.795 6.85496 12.9453C7.40365 13.0901 8.02799 12.9646 8.3778 12.7564C8.7486 12.5361 13.0304 9.79569 13.3376 9.55552C13.6447 9.31535 13.8895 9.6228 13.6385 9.86342C13.3874 10.1036 10.4487 12.8321 10.061 13.2098C9.59046 13.6686 9.92449 14.1439 10.2403 14.3341C10.6006 14.5514 13.1934 16.2146 13.5838 16.4813C13.9744 16.7481 14.3702 16.8691 14.7329 16.8691C15.0956 16.8691 15.2863 16.4126 15.467 15.8823Z" fill="white"/>
+                    </svg>                        
+                </a>
+                <a href="https://api.whatsapp.com/message/VUHRDYSDTPALP1">
+                    <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M1.61026 16.9449L0 22.7963L6.01736 21.2266C7.68157 22.1287 9.54628 22.6015 11.4412 22.6017H11.4461C17.7018 22.6017 22.7943 17.5333 22.7971 11.3051C22.7978 9.82073 22.5046 8.35077 21.9345 6.9792C21.3643 5.60763 20.5283 4.36132 19.4742 3.31148C18.4201 2.26164 17.1686 1.42884 15.7911 0.860645C14.4136 0.29245 12.9372 0 11.4461 0C5.18957 0 0.0979626 5.0672 0.0951054 11.2966C0.0927088 13.2792 0.615318 15.2274 1.61026 16.9449ZM7.97145 6.08894C8.17308 6.09707 8.39677 6.10642 8.60943 6.57656H8.6082C8.75308 6.89724 8.99652 7.49444 9.19097 7.97146C9.33508 8.32499 9.45229 8.61251 9.48252 8.67253C9.55354 8.81353 9.60089 8.97891 9.50619 9.16706C9.49139 9.19647 9.47776 9.22415 9.46477 9.25055C9.39461 9.39307 9.34276 9.49842 9.22292 9.63761C9.17519 9.69304 9.12586 9.75278 9.07655 9.81249C8.97909 9.93049 8.88175 10.0484 8.79719 10.1325C8.65514 10.2731 8.50697 10.4255 8.67269 10.7083C8.83842 10.9912 9.40741 11.9152 10.2507 12.6637C11.1595 13.4706 11.9473 13.8102 12.3463 13.9822C12.4229 14.0152 12.4852 14.042 12.5312 14.0648C12.8169 14.2062 12.9806 14.1851 13.1467 13.9965C13.3129 13.808 13.8553 13.1721 14.0447 12.8896C14.2341 12.6072 14.4231 12.654 14.6831 12.7482C14.9431 12.8425 16.3375 13.526 16.6211 13.667C16.6744 13.6935 16.7244 13.7175 16.7709 13.7399C16.9717 13.8366 17.1072 13.9018 17.1648 13.9965C17.2359 14.1132 17.235 14.6796 16.9991 15.3375C16.7632 15.9954 15.6056 16.6313 15.0852 16.6785C15.0351 16.683 14.9854 16.6888 14.9343 16.6948C14.4534 16.7511 13.8471 16.8221 11.6818 15.9718C9.01502 14.9239 7.25737 12.3294 6.89664 11.7969C6.8674 11.7538 6.84733 11.7241 6.83671 11.71L6.83358 11.7058C6.68076 11.5025 5.67871 10.1691 5.67871 8.78996C5.67871 7.48961 6.32094 6.80795 6.61621 6.49455C6.63632 6.4732 6.65482 6.45357 6.6714 6.43556C6.76611 6.32783 6.88222 6.2408 7.01239 6.17996C7.14257 6.11911 7.28399 6.08577 7.42775 6.08204L7.45613 6.08203C7.6356 6.08201 7.81402 6.082 7.97145 6.08894Z" fill="white"/>
+                    </svg>        
+                </a>
+                <a href="https://www.youtube.com/@meruestate">
+                    <svg id="youtube-svg" width="29" height="20" viewBox="0 0 29 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.658 1.17922C26.8597 1.48255 27.8042 2.37302 28.1258 3.50616C28.7071 5.55792 28.7094 9.8413 28.7094 9.8413C28.7094 9.8413 28.7094 14.1247 28.1258 16.1765C27.8042 17.3096 26.8597 18.2001 25.658 18.5033C23.4822 19.0537 14.7531 19.0537 14.7531 19.0537C14.7531 19.0537 6.02415 19.0537 3.84822 18.5033C2.64653 18.2001 1.70217 17.3096 1.38049 16.1765C0.796875 14.1247 0.796875 9.8413 0.796875 9.8413C0.796875 9.8413 0.796875 5.55792 1.38049 3.50616C1.70217 2.37302 2.64653 1.48255 3.84822 1.17922C6.02415 0.628906 14.7531 0.628906 14.7531 0.628906C14.7531 0.628906 23.4822 0.628906 25.658 1.17922ZM19.2115 9.84211L11.96 13.7896V5.89453L19.2115 9.84211Z" fill="white"/>
+                    </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-nav">
+          <ul>
+            <div class="grid16 space-between">
+                <div class="flex ">
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Продажа</a></li>
+                    <li><a href="#">Перепродажа</a></li>
+                    <li>
+                        <img class="soon-link" src="images/soon-green-dot.svg">
+                        <a href="#">Аренда</a>
+                    </li>
+                </div>
+                <div class="flex ">
+                    <li class="pr15"><a href="#">Технадзор</a></li>
+                    <li><a href="#">Сервис</a></li>
+                </div>
+                <div></div>
+            </div>
+            <div class="grid8 space-between">
+                <div class="flex ">
+                    <li><a href="#">Блог</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                </div>
+                <div class="flex">
+                    <li><a href="#">Партнёрская программа</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </div>
+            </div>
+            <li><a href="#">Продажа</a></li>
+            <li><a href="#">Перепродажа</a></li>
+            <li><a href="#">Аренда</a></li>
+            <li><a href="#">Сервисы</a></li>
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Технадзор</a></li>
+            <li><a href="#">Отзывы</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Партнерская программа</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+      
+        <div class="footer-bottom">
+          <p class="grid16">
+            <span>&copy;&nbsp;2023&nbsp;&mdash; MERU&nbsp;ESTATE&nbsp;CO., LTD. </span>
+            <img src="images/footer-dot.svg">
+            <a href="#">Политика обработки персональных&nbsp;данных</a>
+            <img src="images/footer-dot.svg">
+            <a href="#">Согласие на&nbsp;обработку персональных&nbsp;данных</a>
+          </p>
+          <p class="grid8">Мы&nbsp;используем cookies для&nbsp;сбора обезличенных персональных данных. Они помогают настраивать рекламу и&nbsp;анализировать трафик. Оставаясь на&nbsp;сайте, вы&nbsp;соглашаетесь на&nbsp;сбор таких&nbsp;данных.</p>
+        </div>
+    </footer>
+</body>
+</html>
