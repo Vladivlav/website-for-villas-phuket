@@ -896,13 +896,12 @@ section#main-page  > header.dark .right-line {
 }
 
 section#main-page > header.light {
-    background: unset;
-    background-color: #F9F9F9;;
+    background: linear-gradient(360deg, rgba(249, 249, 249, 0) 0%, #F9F9F9 100%);
 }
 
+section#main-page > header.image,
 section#main-page > header.dark {
-    background: unset;
-    background-color: #393939;
+    background: linear-gradient(360deg, rgba(57, 57, 57, 0) 0%, #393939 100%);
 }
 
 section#main-page > header.light .main-nav a {
