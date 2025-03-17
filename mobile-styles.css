@@ -383,12 +383,21 @@
         padding: 0.83vw;
     }
 
-    .lang-dropdown {
+    .language-selector.open .lang-dropdown {
         height: 30vw;
-        width: 13.06vw;
         border-radius: 3.89vw;
         padding-top: 8.89vw;
         gap: 1.38vw;
+        opacity: 1;
+    }
+
+    .lang-dropdown {
+        height: 0vw;
+        width: 13.06vw;
+        border-radius: 0vw;
+        padding-top: 0vw;
+        gap: 0vw;
+        opacity: 0;
     }
 
     .lang-option {

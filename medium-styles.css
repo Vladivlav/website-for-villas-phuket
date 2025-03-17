@@ -110,13 +110,23 @@
         height: 2.474vw;
     }
 
-    .lang-dropdown {
+    
+    .language-selector.open .lang-dropdown {
         padding-top: 4.0365vw;
         height: 14.0625vw;
         gap: 0.651vw;
+        border: 1px solid #575757;
+        opacity: 1;
+    }
+    
+    .lang-dropdown {
+        padding-top: 0vw;
+        height: 0vw;
+        gap: 0vw;
         border-radius: 1.8229vw;
         width: 6.1198vw;
-        border: 1px solid #575757;
+        border: 0px solid #575757;
+        opacity: 0;
     }
 
     section#main-page > div.flex {

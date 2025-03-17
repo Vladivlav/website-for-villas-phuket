@@ -4286,18 +4286,18 @@ section#tenth-section div.content .block-link span,
     top: 100%;
     left: 0;
     border-radius: 1.17vw;
-    display: none;
+    display: flex;
     flex-direction: column;
     gap: 0.42vw;
     background-color: #393939;
     width: 3.92vw;
     box-sizing: border-box;
-    height: 9vw;
+    height: 0vw;
     position: absolute;
     top: 0;
     left: 0;
     z-index: 2021;
-    padding-top: 2.67vw;
+    padding-top: 0;
 }
 
 .lang-option {
@@ -4314,11 +4314,20 @@ section#tenth-section div.content .block-link span,
     line-height: 0.75vw;
     color: #959595;
     padding-left: 0.25vw;
+    opacity: 0;
+}
+
+.language-selector.open .lang-option {
+    opacity: 1;
+    transition: 0.4s ease-in-out;
+    transition-delay: 0.1s;
 }
 
 /* Открытый список */
 .language-selector.open .lang-dropdown {
     display: flex;
+    height: 9vw;
+    padding-top: 2.67vw;
 }
 
 .language-selector.open .arrow {
