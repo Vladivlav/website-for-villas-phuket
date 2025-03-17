@@ -1184,8 +1184,6 @@ div#special-offer-slider div.stats .digits-description {
     top: 3.60vw;
 }
 
-
-
 span#for-life::before {
     content: '';
     display: inline-block;
@@ -1204,14 +1202,12 @@ section#company-owner {
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 6.67vw;
-
 }
 
 section#company-owner div#i-know-everything {
     padding-top: 6.67vw;
     height: auto;
     position: relative;
-
 }
 
 section#company-owner div#picture {
@@ -1230,7 +1226,6 @@ section#company-owner div#picture img {
     display: flex;
     flex-direction: column;
     justify-content: start;
-
 }
 
 section#company-owner .quote-sign {
@@ -1271,7 +1266,6 @@ section#company-owner .quote-sign span:first-of-type {
 #best-points {
     background-color: #F9F9F9;
     padding: 6.67vw 0;
-
 }
 
 section#best-points .grid .grid-item.img {
@@ -1283,7 +1277,6 @@ section#best-points .grid .grid-item.img {
     margin: 0 auto;
     box-sizing: border-box;
     padding: 0 6.67vw;
-
 }
   
 #best-points h2 {

@@ -1,47 +1,20 @@
-// const faqItems   = document.querySelectorAll('.faq-question');
-// const faqAnswers = document.querySelectorAll('.faq-answer');
-// const faqButtons = document.querySelectorAll('.faq-item img');
+// Устанавливаем начальный прогресс при загрузке страницы
+const initialQuestion = document.querySelector('#check-objects .quiz-question.active');
+const allQuestions = document.querySelectorAll('#check-objects .quiz-question');
+const initialIndex = Array.from(allQuestions).indexOf(initialQuestion);
+updateProgress(initialIndex);
 
-// faqButtons.forEach(button => {
-//     button.addEventListener('click', () => {
-//       button.parentNode.querySelector('.faq-question').click();
-//     })
-// });
-
-// faqItems.forEach(item => {
-//     item.addEventListener('click', () => {
-//         const answer = item.nextElementSibling;
-//         var faqItemElement = answer.parentElement;
-//         var imgElement = faqItemElement.querySelector('img');
-//         if (answer.classList.contains('current')) {
-//             answer.classList.remove('current');
-//             imgElement.classList.remove('animated');
-//         } else {
-//             faqAnswers.forEach((element) => { element.classList.remove('current'); });
-//             answer.classList.add('current');
-//             faqButtons.forEach(img => { img.classList.remove('animated') });
-//             imgElement.classList.add('animated');
-//         }
-//     });
-// });
-
-document.querySelectorAll('#prices-and-benefits .quiz-result .close-popup').forEach(button => {
+document.querySelectorAll('.quiz-result .close-popup').forEach(button => {
   button.addEventListener('click', function() {
-    const backToBlur = document.querySelector('#prices-and-benefits .header-section');
-    const result     = document.querySelector('#prices-and-benefits .quiz-result');
+    const result = this.closest('.quiz-result');
+    if (!result) return;
 
+    const backToBlur = result.closest('section')?.querySelector('.header-section');
+    
     result.classList.add('hidden');
-    backToBlur.classList.remove('blur');
-  });
-});
-
-document.querySelectorAll('#check-objects .quiz-result .close-popup').forEach(button => {
-  button.addEventListener('click', function() {
-    const backToBlur = document.querySelector('#check-objects .header-section');
-    const result     = document.querySelector('#check-objects .quiz-result');
-
-    result.classList.add('hidden');
-    backToBlur.classList.remove('blur');
+    if (backToBlur) {
+      backToBlur.classList.remove('blur');
+    }
   });
 });
 
@@ -543,70 +516,35 @@ document.querySelectorAll('#prices-and-benefits .prev-button').forEach(button =>
   });
 });
 
-document.querySelectorAll('#prices-and-benefits .form-select > span').forEach(span => {
+document.querySelectorAll('.non-popup-form .form-select > span').forEach(span => {
   span.addEventListener('click', function() {
-    const option_list = document.querySelector('#prices-and-benefits .form-select div.feddback-options-list');
+    const parentForm = this.closest('.non-popup-form');
+    if (!parentForm) return;
 
-    option_list.style.display = '';
-    span.style.display = 'none';
+    const optionList = parentForm.querySelector('.form-select .feddback-options-list');
+
+    if (optionList) {
+      optionList.style.display = '';
+      this.style.display = 'none';
+    }
   });
 });
 
-document.querySelectorAll('#check-objects .form-select > span').forEach(span => {
-  span.addEventListener('click', function() {
-    const option_list = document.querySelector('#check-objects .form-select div.feddback-options-list');
-
-    option_list.style.display = '';
-    span.style.display = 'none';
-  });
-});
-
-
-document.querySelectorAll('#investments-base .form-select div.feddback-options-list > span.option').forEach(option => {
+document.querySelectorAll('.non-popup-form .form-select .feddback-options-list > span.option').forEach(option => {
   option.addEventListener('click', function() {
-    const option_text = option.textContent;
-    const option_list = document.querySelector('#investments-base .form-select div.feddback-options-list');
-    const option_input = document.querySelector('#investments-base .form-select > span > span');
+    const parentForm = this.closest('.non-popup-form');
+    if (!parentForm) return;
 
-    option_list.style.display = 'none';
-    option_input.textContent = option_text;
-    option_input.classList.add('selected');
-    document.querySelector('#investments-base .form-select > span').style.display = 'flex';
-  });
-});
+    const optionText = this.textContent;
+    const optionList = parentForm.querySelector('.form-select .feddback-options-list');
+    const optionInput = parentForm.querySelector('.form-select > span > span');
 
-document.querySelectorAll('#check-objects .form-select div.feddback-options-list > span.option').forEach(option => {
-  option.addEventListener('click', function() {
-    const option_text = option.textContent;
-    const option_list = document.querySelector('#check-objects .form-select div.feddback-options-list');
-    const option_input = document.querySelector('#check-objects .form-select > span > span');
-
-    option_list.style.display = 'none';
-    option_input.textContent = option_text;
-    option_input.classList.add('selected');
-    document.querySelector('#check-objects .form-select > span').style.display = 'flex';
-  });
-});
-
-document.querySelectorAll('#prices-and-benefits .form-select div.feddback-options-list > span.option').forEach(option => {
-  option.addEventListener('click', function() {
-    const option_text = option.textContent;
-    const option_list = document.querySelector('#prices-and-benefits .form-select div.feddback-options-list');
-    const option_input = document.querySelector('#prices-and-benefits .form-select > span > span');
-
-    option_list.style.display = 'none';
-    option_input.textContent = option_text;
-    option_input.classList.add('selected');
-    document.querySelector('#prices-and-benefits .form-select > span').style.display = 'flex';
-  });
-});
-
-document.querySelectorAll('#investments-base .form-select > span').forEach(span => {
-  span.addEventListener('click', function() {
-    const option_list = document.querySelector('#investments-base .form-select div.feddback-options-list');
-
-    option_list.style.display = '';
-    span.style.display = 'none';
+    if (optionList && optionInput) {
+      optionList.style.display = 'none';
+      optionInput.textContent = optionText;
+      optionInput.classList.add('selected');
+      parentForm.querySelector('.form-select > span').style.display = 'flex';
+    }
   });
 });
 
@@ -628,337 +566,18 @@ document.querySelectorAll('.form-agreement svg').forEach(input => {
   });
 });
 
-
-document.querySelectorAll('#check-objects .form-select > span').forEach(span => {
-  span.addEventListener('click', function() {
-    const option_list = document.querySelector('#check-objects .form-select div.feddback-options-list');
-
-    option_list.style.display = '';
+document.querySelectorAll('.form-close .form-section .close-popup').forEach(button => {
+  button.addEventListener('click', function(event) {
+    event.target.closest('.form-close').style.display = 'none';
   });
-});
-  
-// Устанавливаем начальный прогресс при загрузке страницы
-const initialQuestion = document.querySelector('#check-objects .quiz-question.active');
-const allQuestions = document.querySelectorAll('#check-objects .quiz-question');
-const initialIndex = Array.from(allQuestions).indexOf(initialQuestion);
-updateProgress(initialIndex);
-
-
-const factContainers = document.querySelectorAll('.fact-container');
-let lastScrollTime = 0;
-let firstTransition = true;
-let lastTransition = true;
-
-
-// function showNextFact() {
-//   const current = document.querySelector('.fact-container.current');
-//   const lastFact = document.querySelector('.last-fact-container');
-//   const next = current?.nextElementSibling?.classList.contains('fact-container') ? current.nextElementSibling : null;
-
-//   if (next) {
-//     current?.classList.remove('current');
-//     next?.classList.add('current');
-//   }
-
-//   if (firstTransition && current?.classList.contains('fact-container') && !current.previousElementSibling) {
-//     firstTransition = false;
-//     console.log("show next is here");
-//     disableScroll();
-//     enableScroll(1000);
-//   }
-
-//   lastFact.style.opacity = (!next || !next.nextElementSibling) ? 1 : 0;
-// }
-
-function showNextFact(event) {
-  const current = document.querySelector('.fact-container.current');
-  const lastFact = document.querySelector('.last-fact-container');
-  const factContainers = document.querySelectorAll('.fact-container'); // Получаем все элементы
-  const lastFactContainer = factContainers[factContainers.length - 1]; // Берём последний элемент
-
-  if (event && event.target.closest('span.fact-button')) {
-    return; // Прерываем выполнение функции, если клик был по кнопке
-  }
-
-  let next;
-  if (current.nextElementSibling && current.nextElementSibling.classList.contains('fact-container')) {
-      next = current.nextElementSibling;
-  } else {
-      next = factContainers[0];
-      lastFact.style.opacity = 0
-  }
-
-  current.classList.remove('current');
-  next.classList.add('current');
-
-  if (next == lastFactContainer) {
-    lastFact.style.opacity = 1;
-  }
-}
-
-// Next fact on click
-// factContainers.forEach(container => {
-//   container.addEventListener('click', showNextFact);
-// });
-
-function disableScroll() {
-  document.body.style.overflow = 'hidden';
-}
-
-function enableScroll(delay = 1000) {
-  setTimeout(() => {
-    document.body.style.overflow = '';
-  }, delay); // Включаем скролл с заданной задержкой
-}
-
-// function handleScroll(event) {
-//   const section = document.querySelector('section#attractive-direction');
-//   const wrapper = section?.querySelector('div.wrapper1920');
-//   const factsWrapper = section?.querySelector('.facts-wrapper');
-//   const currentFact = document.querySelector('.fact-container.current');
-//   if (!section || !wrapper || !factsWrapper || !currentFact) return;
-
-//   const paddingLeft = parseFloat(getComputedStyle(wrapper).paddingLeft);
-//   const factsTop = factsWrapper.getBoundingClientRect().top;
-//   const sectionBottom = section.getBoundingClientRect().bottom;
-//   const viewportHeight = window.innerHeight;
-
-//   // Проверяем, достиг ли верхний край экрана верхней границы facts-wrapper с учетом padding-left
-//   if (factsTop <= paddingLeft && factsTop > 0 && !currentFact.previousElementSibling) {
-//     console.log("top is here");
-//     if (!firstTransition) {
-//       disableScroll();
-//       enableScroll();
-//       const now = Date.now();
-//       if (now - lastScrollTime >= 1000) {
-//         lastScrollTime = now;
-        
-//         if (event.deltaY > 0) {
-//           showNextFact();
-//         } else {
-//           showPreviousFact();
-//         }
-//       }
-//     }
-//     return; // Прерываем обработку, чтобы избежать смены слайдов раньше времени
-//   }
-
-//   // Проверяем, достиг ли нижний край секции нижнего края экрана
-//   if (sectionBottom >= viewportHeight && !currentFact.nextElementSibling) {
-//     console.log("bottom is here");
-//     if (!lastTransition) {
-//       disableScroll();
-//       enableScroll();
-//       const now = Date.now();
-//       if (now - lastScrollTime >= 1000) {
-//         lastScrollTime = now;
-        
-//         if (event.deltaY > 0) {
-//           showNextFact();
-//         } else {
-//           showPreviousFact();
-//         }
-//       }
-//     }
-//     return; // Прерываем обработку
-//   }
-// }
-
-// window.addEventListener('wheel', handleScroll, { passive: false });
-// window.addEventListener('DOMContentLoaded', enableScroll);
-
-// function showNextFact() {
-//   const current = document.querySelector('.fact-container.current');
-//   const lastFact = document.querySelector('.last-fact-container');
-//   const next = current?.nextElementSibling?.classList.contains('fact-container') ? current.nextElementSibling : null;
-
-//   if (next) {
-//     current?.classList.remove('current');
-//     next?.classList.add('current');
-//   }
-
-//   if (firstTransition && current?.classList.contains('fact-container') && !current.previousElementSibling) {
-//     firstTransition = false;
-//     console.log("show next is here");
-//     disableScroll();
-//     enableScroll(1000);
-//   }
-
-//   lastFact.style.opacity = (!next || !next.nextElementSibling) ? 1 : 0;
-// }
-
-function showPreviousFact() {
-  const current = document.querySelector('.fact-container.current');
-  const previous = current?.previousElementSibling?.classList.contains('fact-container') ? current.previousElementSibling : null;
-  const lastFact = document.querySelector('.last-fact-container');
-
-  if (previous) {
-    current?.classList.remove('current');
-    previous?.classList.add('current');
-  }
-
-  if (lastTransition && current?.classList.contains('fact-container') && !current.nextElementSibling) {
-    lastTransition = false;
-    disableScroll();
-    enableScroll(1000);
-  }
-
-  lastFact.style.opacity = 0;
-}
-
-
-// slider first page
-const slider = document.querySelector(".offers-content");
-const slides = Array.from(document.querySelectorAll(".offer"));
-const prevBtn = document.querySelector(".prev-btn");
-const nextBtn = document.querySelector(".next-btn");
-const currentNumber = document.querySelector(".current-number");
-const totalNumber = document.querySelector(".total-number");
-
-const offerWidthVw = parseFloat(window.getComputedStyle(slides[0]).width);
-const gapVw = parseFloat(window.getComputedStyle(slider).gap);
-const totalWidthVw = -1 * (offerWidthVw + gapVw);
-
-const slideWidth = totalWidthVw; // Перемещение с учетом ширины блока и gap в vw
-let isCursorOnOffers = false;
-
-
-slider.style.transform = `translateX(0vw)`;
-
-totalNumber.textContent = `/0${slides.length}`;
-
-let currentIndex = 1;
-const updateCounter = () => {
-    currentNumber.textContent = `0${currentIndex}`;
-};
-
-const moveSlide = () => {
-    slider.style.transition = "transform 0.4s ease-in-out";
-    slider.style.transform = `translateX(${slideWidth}px)`;
-};
-
-const moveSlideBack = () => {
-  slider.style.transition = "none";
-  slider.style.transform = `translateX(${slideWidth}px)`;
-  slider.insertBefore(slider.lastElementChild, slider.firstElementChild);
-};
-
-document.querySelector('section.offers').addEventListener('mouseenter', () => {
-  isCursorOnOffers = true;
-});
-
-// Отслеживаем, когда курсор покидает section.offers
-document.querySelector('section.offers').addEventListener('mouseleave', () => {
-  isCursorOnOffers = false;
-});
-
-let autoSlideInterval;
-const slideDuration = 400; // Длительность анимации
-const autoSlideDelay = 5000; // Интервал автоматического переключения
-
-function moveSlideForward() {
-    moveSlide();
-    setTimeout(() => {
-        slider.style.transition = "none";
-        slider.appendChild(slider.firstElementChild);
-        slider.style.transform = "translateX(0vw)";
-        currentIndex = (currentIndex % slides.length) + 1;
-        updateCounter();
-
-        // Восстанавливаем transition после перестановки элементов
-        setTimeout(() => {
-            slider.style.transition = "";
-        }, 50);
-    }, slideDuration);
-}
-
-function startAutoSlide() {
-    clearInterval(autoSlideInterval); // Сброс текущего таймера
-    autoSlideInterval = setInterval(autoMoveSlideForward, autoSlideDelay);
-}
-
-function autoMoveSlideForward() {
-  if (isCursorOnOffers) return;
-  moveSlideForward();
-}
-
-// Обработчик кнопки
-nextBtn.addEventListener("click", () => {
-    moveSlideForward();
-    startAutoSlide(); // Перезапуск таймера после ручного переключения
-});
-
-// Запуск автоматического слайдера при загрузке
-startAutoSlide();
-
-prevBtn.addEventListener("click", () => {
-  moveSlideBack();
-  setTimeout(() => {
-    slider.style.transition = "transform 0.4s ease-in-out";
-    slider.style.transform = `translateX(0vw)`;
-    currentIndex = (currentIndex - 2 + slides.length) % slides.length + 1;
-    updateCounter();
-  }, 100);
-});
-
-updateCounter();
-
-document.addEventListener("DOMContentLoaded", () => {
-  const selector = document.querySelector(".language-selector");
-  const dropdown = document.querySelector(".lang-dropdown");
-  const arrow = document.querySelector(".arrow");
-
-  selector.addEventListener("click", (event) => {
-      if (!event.target.closest(".lang-dropdown")) {
-          selector.classList.toggle("open");
-      }
-  });
-
-  document.addEventListener("click", (event) => {
-      if (!selector.contains(event.target)) {
-          selector.classList.remove("open");
-      }
-  });
-});
-
-// slider first page end
-
-document.querySelector('div#choose-property .form-section .close-popup').addEventListener('click', function() {
-  document.getElementById('choose-property').style.display = 'none';
-});
-
-document.querySelector('div#choose-property').addEventListener('click', function(event) {
-  if (!event.target.closest('.form-container')) {
-      this.style.display = 'none';
-  }
 });
 
 document.querySelector('div.yellow-link').addEventListener('click', function() {
   document.getElementById('choose-property').style.display = 'flex';
 });
 
-document.querySelector('div#personal-consultation .form-section .close-popup').addEventListener('click', function() {
-  document.getElementById('personal-consultation').style.display = 'none';
-});
-
-document.querySelector('div#personal-consultation').addEventListener('click', function(event) {
-  if (!event.target.closest('.form-container')) {
-      this.style.display = 'none';
-  }
-});
-
 document.querySelector('#best-points .cta button').addEventListener('click', function() {
   document.getElementById('personal-consultation').style.display = 'flex';
-});
-
-document.querySelector('div#faq-form .form-section .close-popup').addEventListener('click', function() {
-  document.getElementById('faq-form').style.display = 'none';
-});
-
-document.querySelector('div#faq-form').addEventListener('click', function(event) {
-  if (!event.target.closest('.form-container')) {
-      this.style.display = 'none';
-  }
 });
 
 document.querySelector('.faq-ask-question span').addEventListener('click', function() {
@@ -969,43 +588,12 @@ document.querySelector('footer .btn-ask').addEventListener('click', function() {
   document.getElementById('faq-form').style.display = 'flex';
 });
 
-
-document.querySelector('div#phuket-future-guide .close-popup').addEventListener('click', function() {
-  document.getElementById('phuket-future-guide').style.display = 'none';
-});
-
-document.querySelector('div#phuket-future-guide').addEventListener('click', function(event) {
-  if (!event.target.closest('.form-container')) {
-      this.style.display = 'none';
-  }
-});
-
 document.querySelector('.phuket-future-guide-form-link').addEventListener('click', function() {
   document.getElementById('phuket-future-guide').style.display = 'flex';
 });
 
-document.querySelector('div#areas-and-beaches-guide .close-popup').addEventListener('click', function() {
-  document.getElementById('areas-and-beaches-guide').style.display = 'none';
-});
-
-document.querySelector('div#areas-and-beaches-guide').addEventListener('click', function(event) {
-  if (!event.target.closest('.form-container')) {
-      this.style.display = 'none';
-  }
-});
-
 document.querySelector('.areas-and-beaches-guide-form-link').addEventListener('click', function() {
   document.getElementById('areas-and-beaches-guide').style.display = 'flex';
-});
-
-document.querySelector('div#forms-of-ownerships-guide .close-popup').addEventListener('click', function() {
-  document.getElementById('forms-of-ownerships-guide').style.display = 'none';
-});
-
-document.querySelector('div#forms-of-ownerships-guide').addEventListener('click', function(event) {
-  if (!event.target.closest('.form-container')) {
-      this.style.display = 'none';
-  }
 });
 
 document.querySelector('.forms-of-ownerships-guide-form-link').addEventListener('click', function(event) {
@@ -1013,61 +601,20 @@ document.querySelector('.forms-of-ownerships-guide-form-link').addEventListener(
   document.getElementById('forms-of-ownerships-guide').style.display = 'flex';
 });
 
-document.querySelector('div#special-offer-form .form-section .close-popup').addEventListener('click', function() {
-  document.getElementById('special-offer-form').style.display = 'none';
-});
-
-document.querySelector('div#special-offer-form').addEventListener('click', function(event) {
-  if (!event.target.closest('.form-container')) {
-      this.style.display = 'none';
-  }
-});
-
 document.querySelector('.offer-button').addEventListener('click', function() {
   document.getElementById('special-offer-form').style.display = 'flex';
 });
 
-document.querySelector('div#guide-form-result .close-popup').addEventListener('click', function() {
-  document.getElementById('guide-form-result').style.display = 'none';
+document.querySelectorAll('.form-close').forEach(button => {
+  button.addEventListener('click', function(event) {
+    if (!event.target.closest('.form-container')) {
+      this.style.display = 'none';
+    }
+  });
 });
 
-document.querySelector('div#guide-form-result').addEventListener('click', function(event) {
-  if (!event.target.closest('.form-container')) {
-      this.style.display = 'none';
-  }
-});
 
 function pxToVw(px, viewportWidth = 1920) {
   const vw = (px / viewportWidth) * 100;
   return `${parseFloat(vw.toFixed(4))}vw`; // Ограничиваем до 4 цифр после запятой и добавляем "vw"
 }
-function applyParallax(blockSelector, intensity = 300) {
-  const block = document.querySelector(blockSelector);
-  const parallax = block.querySelector(".parallax-bg");
-
-  if (!block || !parallax) return;
-
-  const rect = block.getBoundingClientRect();
-  const windowHeight = window.innerHeight;
-
-  const blockHeight = block.offsetHeight;
-  const imageHeight = parallax.offsetHeight;
-
-  // Обновленный коэффициент скорости: Чем больше разница, тем выше интенсивность
-  const scrollRatio = imageHeight > blockHeight ? imageHeight / blockHeight : 1;
-
-  if (rect.top < windowHeight && rect.bottom > 0) {
-      const progress = (windowHeight - rect.top) / (windowHeight + rect.height);
-      const translateY = (progress - 0.5) * intensity * scrollRatio; // Скорректированная скорость
-
-      parallax.style.transform = `translateY(${translateY}px)`;
-  }
-}
-
-// Использование:
-window.addEventListener("scroll", function () {
-  applyParallax("#quote-with-four-men", 300);
-  applyParallax("#investments-base", 300);
-  applyParallax("#check-objects", 300);
-  applyParallax("#tenth-section .content", 300);
-});

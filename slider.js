@@ -11,6 +11,31 @@ function unlockScroll() {
     document.body.style.overflow = "";  
 }
 
+function showNextFact(event) {
+  const current = document.querySelector('.fact-container.current');
+  const lastFact = document.querySelector('.last-fact-container');
+  const factContainers = document.querySelectorAll('.fact-container'); // Получаем все элементы
+  const lastFactContainer = factContainers[factContainers.length - 1]; // Берём последний элемент
+
+  if (event && event.target.closest('span.fact-button')) {
+    return; // Прерываем выполнение функции, если клик был по кнопке
+  }
+
+  let next;
+  if (current.nextElementSibling && current.nextElementSibling.classList.contains('fact-container')) {
+      next = current.nextElementSibling;
+  } else {
+      next = factContainers[0];
+      lastFact.style.opacity = 0
+  }
+
+  current.classList.remove('current');
+  next.classList.add('current');
+
+  if (next == lastFactContainer) {
+    lastFact.style.opacity = 1;
+  }
+}
 
 function handleScroll(event) {
     if (isScrolling) return;
