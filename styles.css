@@ -271,7 +271,6 @@ section#attractive-direction .last-fact-container .fact-left-part {
     justify-content: space-between;
     z-index: 10;
     width: 51.67vw;
-
 }
 
 section#attractive-direction .last-fact-container .fact-left-part .big-fact-item {
@@ -282,8 +281,6 @@ section#attractive-direction .last-fact-container .fact-left-part .big-fact-item
     padding: 1.67vw;
     height: 11.5vw;
     box-sizing: border-box;
-    
-
 }
 
 section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p {
@@ -295,7 +292,6 @@ section#attractive-direction .last-fact-container .fact-left-part .big-fact-item
     font-size: 1.33vw;
     line-height: 100%;
     color: white;
-
 }
 
 section#attractive-direction .last-fact-container .fact-left-part .big-fact-item p.yellow {
@@ -309,9 +305,6 @@ section#attractive-direction .last-fact-container .fact-left-part .big-fact-item
     font-size: 1.0vw;
     line-height: 100%;
     color: #FFFFFF;
-}
-
-section#attractive-direction .last-fact-container .fact-left-part .big-fact-item .fact-item {
 }
 
 section#attractive-direction .fact-container .fact-left-part.second {
@@ -440,7 +433,7 @@ section#attractive-direction .fact-container .fact-left-part .fact-text .fact-ba
 }
 
 section#attractive-direction .fact-container .fact-left-part .fact-text .info-badge::before {
-    content: ;
+    content: '';
     display: inline-block;
     position: relative;
 }
@@ -1230,8 +1223,6 @@ section#company-owner div#picture img {
     width: 100%;
     height: 100%;
 }
-
-section#company-owner #owner-bage {}
 
 #investment-info {
     padding-top: 6.67vw;
@@ -3080,7 +3071,7 @@ section#additional-company-info div.country-card .agent-info .agent-details p.ag
     font-style: normal;
     font-weight: 400;
     font-size: 1.0vw;
-    line-height: 130%;/
+    line-height: 130%;
     color: #393939;
 }
 
