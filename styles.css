@@ -848,7 +848,7 @@ section#main-page > header.light .selected-lang {
 
 section#main-page > header.light .lang-dropdown {
     background-color: #F9F9F9;
-    border: 1px solid #959595;
+    border: 0px solid #959595;
 }
 
 section#main-page > header.light #logo img.dark {
