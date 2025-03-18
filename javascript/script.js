@@ -37,43 +37,43 @@ document.querySelectorAll('#check-objects .form-button').forEach(button => {
       result.classList.remove('hidden');
       backToBlur.classList.add('blur');
 
-      // Новый код для отправки данных
-      const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
-      const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
-      const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
+      // // Новый код для отправки данных
+      // const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
+      // const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
+      // const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
 
-      // Проверяем, что пользователь дал согласие (наличие класса 'active')
-      if (!button.classList.contains('active')) {
-        alert('Вы должны согласиться с политикой конфиденциальности!');
-        return;
-      }
+      // // Проверяем, что пользователь дал согласие (наличие класса 'active')
+      // if (!button.classList.contains('active')) {
+      //   alert('Вы должны согласиться с политикой конфиденциальности!');
+      //   return;
+      // }
 
-      // Формируем данные для отправки
-      const data = {
-        to_email: email,
-        type: "fourth",
-        name: name,
-        phone: phone
-      };
+      // // Формируем данные для отправки
+      // const data = {
+      //   to_email: email,
+      //   type: "fourth",
+      //   name: name,
+      //   phone: phone
+      // };
 
-      // Отправляем запрос
-      fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-        .then(response => response.text()) // Получаем текстовый ответ
-        .then(text => {
-          alert(text); // Отображаем текст ответа в alert
-          guideResult.style.display = 'flex';
-          container.style.display = 'none';
-        })
-        .catch(error => {
-          console.error('Ошибка:', error);
-          alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
-        });
+      // // Отправляем запрос
+      // fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify(data),
+      // })
+      //   .then(response => response.text()) // Получаем текстовый ответ
+      //   .then(text => {
+      //     alert(text); // Отображаем текст ответа в alert
+      //     guideResult.style.display = 'flex';
+      //     container.style.display = 'none';
+      //   })
+      //   .catch(error => {
+      //     console.error('Ошибка:', error);
+      //     alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
+      //   });
     } else {
       // Если у кнопки нет класса 'active'
       alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
@@ -93,43 +93,43 @@ document.querySelectorAll('#areas-and-beaches-guide .form-button').forEach(butto
       result.classList.remove('hidden');
       backToBlur.classList.add('blur');
 
-      // Новый код для отправки данных
-      const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
-      const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
-      const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
+      // // Новый код для отправки данных
+      // const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
+      // const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
+      // const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
 
-      // Проверяем, что пользователь дал согласие (наличие класса 'active')
-      if (!button.classList.contains('active')) {
-        alert('Вы должны согласиться с политикой конфиденциальности!');
-        return;
-      }
+      // // Проверяем, что пользователь дал согласие (наличие класса 'active')
+      // if (!button.classList.contains('active')) {
+      //   alert('Вы должны согласиться с политикой конфиденциальности!');
+      //   return;
+      // }
 
-      // Формируем данные для отправки
-      const data = {
-        to_email: email,
-        type: "second",
-        name: name,
-        phone: phone
-      };
+      // // Формируем данные для отправки
+      // const data = {
+      //   to_email: email,
+      //   type: "second",
+      //   name: name,
+      //   phone: phone
+      // };
 
-      // Отправляем запрос
-      fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-        .then(response => response.text()) // Получаем текстовый ответ
-        .then(text => {
-          alert(text); // Отображаем текст ответа в alert
-          guideResult.style.display = 'flex';
-          container.style.display = 'none';
-        })
-        .catch(error => {
-          console.error('Ошибка:', error);
-          alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
-        });
+      // // Отправляем запрос
+      // fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify(data),
+      // })
+      //   .then(response => response.text()) // Получаем текстовый ответ
+      //   .then(text => {
+      //     alert(text); // Отображаем текст ответа в alert
+      //     guideResult.style.display = 'flex';
+      //     container.style.display = 'none';
+      //   })
+      //   .catch(error => {
+      //     console.error('Ошибка:', error);
+      //     alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
+      //   });
     } else {
       // Если у кнопки нет класса 'active'
       alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
@@ -149,43 +149,43 @@ document.querySelectorAll('#forms-of-ownerships-guide .form-button').forEach(but
       result.classList.remove('hidden');
       backToBlur.classList.add('blur');
 
-      // Новый код для отправки данных
-      const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
-      const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
-      const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
+      // // Новый код для отправки данных
+      // const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
+      // const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
+      // const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
 
-      // Проверяем, что пользователь дал согласие (наличие класса 'active')
-      if (!button.classList.contains('active')) {
-        alert('Вы должны согласиться с политикой конфиденциальности!');
-        return;
-      }
+      // // Проверяем, что пользователь дал согласие (наличие класса 'active')
+      // if (!button.classList.contains('active')) {
+      //   alert('Вы должны согласиться с политикой конфиденциальности!');
+      //   return;
+      // }
 
-      // Формируем данные для отправки
-      const data = {
-        to_email: email,
-        type: "first",
-        name: name,
-        phone: phone
-      };
+      // // Формируем данные для отправки
+      // const data = {
+      //   to_email: email,
+      //   type: "first",
+      //   name: name,
+      //   phone: phone
+      // };
 
-      // Отправляем запрос
-      fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-        .then(response => response.text()) // Получаем текстовый ответ
-        .then(text => {
-          alert(text); // Отображаем текст ответа в alert
-          guideResult.style.display = 'flex';
-          container.style.display = 'none';
-        })
-        .catch(error => {
-          console.error('Ошибка:', error);
-          alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
-        });
+      // // Отправляем запрос
+      // fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify(data),
+      // })
+      //   .then(response => response.text()) // Получаем текстовый ответ
+      //   .then(text => {
+      //     alert(text); // Отображаем текст ответа в alert
+      //     guideResult.style.display = 'flex';
+      //     container.style.display = 'none';
+      //   })
+      //   .catch(error => {
+      //     console.error('Ошибка:', error);
+      //     alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
+      //   });
     } else {
       // Если у кнопки нет класса 'active'
       alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
@@ -205,43 +205,43 @@ document.querySelectorAll('#phuket-future-guide .form-button').forEach(button =>
       result.classList.remove('hidden');
       backToBlur.classList.add('blur');
 
-      // Новый код для отправки данных
-      const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
-      const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
-      const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
+      // // Новый код для отправки данных
+      // const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
+      // const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
+      // const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
 
-      // Проверяем, что пользователь дал согласие (наличие класса 'active')
-      if (!button.classList.contains('active')) {
-        alert('Вы должны согласиться с политикой конфиденциальности!');
-        return;
-      }
+      // // Проверяем, что пользователь дал согласие (наличие класса 'active')
+      // if (!button.classList.contains('active')) {
+      //   alert('Вы должны согласиться с политикой конфиденциальности!');
+      //   return;
+      // }
 
-      // Формируем данные для отправки
-      const data = {
-        to_email: email,
-        type: "third",
-        name: name,
-        phone: phone
-      };
+      // // Формируем данные для отправки
+      // const data = {
+      //   to_email: email,
+      //   type: "third",
+      //   name: name,
+      //   phone: phone
+      // };
 
-      // Отправляем запрос
-      fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      })
-        .then(response => response.text()) // Получаем текстовый ответ
-        .then(text => {
-          alert(text); // Отображаем текст ответа в alert
-          guideResult.style.display = 'flex';
-          container.style.display = 'none';
-        })
-        .catch(error => {
-          console.error('Ошибка:', error);
-          alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
-        });
+      // // Отправляем запрос
+      // fetch('https://asia-east1-fifth-sprite-443116-h3.cloudfunctions.net/send_guide', {
+      //   method: 'POST',
+      //   headers: {
+      //     'Content-Type': 'application/json',
+      //   },
+      //   body: JSON.stringify(data),
+      // })
+      //   .then(response => response.text()) // Получаем текстовый ответ
+      //   .then(text => {
+      //     alert(text); // Отображаем текст ответа в alert
+      //     guideResult.style.display = 'flex';
+      //     container.style.display = 'none';
+      //   })
+      //   .catch(error => {
+      //     console.error('Ошибка:', error);
+      //     alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
+      //   });
     } else {
       // Если у кнопки нет класса 'active'
       alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
@@ -299,7 +299,7 @@ document.querySelectorAll('.form-agreement svg').forEach(input => {
   });
 });
 
-document.querySelectorAll('.form-close .form-section .close-popup').forEach(button => {
+document.querySelectorAll('.form-close .close-popup').forEach(button => {
   button.addEventListener('click', function(event) {
     event.target.closest('.form-close').style.display = 'none';
   });

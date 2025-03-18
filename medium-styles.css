@@ -2083,12 +2083,42 @@
         background: white;
     }
 
-    div#guide-form-result .form-container .form-section h2, div#personal-consultation .form-container .form-section h2, div#choose-property .form-container .form-section h2, div.faq-form .form-container .form-section h2, div#forms-of-ownerships-guide .form-container .form-section h2, div#areas-and-beaches-guide .form-container .form-section h2, div#phuket-future-guide .form-container .form-section h2 {
+    div.form-result .form-container {
+        width: 66.40625vw;
+        height: 35.41667vw;
+    }
+
+    div.form-result .form-container .close-popup {
+        height: 4.81771vw;
+        width: 4.81771vw;
+        border-radius: 4.8177vw;
+        top: 1.302083vw;
+        right: 1.302083vw;
+    }
+
+    div.form-result .form-container .close-popup svg {
+        width: 1.43229vw;
+        height: 1.43229vw;
+    }
+
+    div.form-result .form-container .image-section,
+    div.form-result .form-container .image-section img {
+        width: 100%;
+        height: 15.885vw;
+    }
+
+    div.form-result .form-container .form-section {
+        top: -2.60416667vw;
+        height: 19.791667vw;
+        border-radius: 2.60416667vw;
+    }
+
+    div.form-result .form-container .form-section h2, div#personal-consultation .form-container .form-section h2, div#choose-property .form-container .form-section h2, div.faq-form .form-container .form-section h2, div#forms-of-ownerships-guide .form-container .form-section h2, div#areas-and-beaches-guide .form-container .form-section h2, div#phuket-future-guide .form-container .form-section h2 {
         font-size: 3.38vw;
         text-align: center;
     }
 
-    div#guide-form-result .form-container .form-section p,
+    div.form-result .form-container .form-section p,
     div#personal-consultation .form-container .form-section p,
     div#choose-property .form-container .form-section p,
     div.faq-form .form-container .form-section p,
@@ -2096,6 +2126,10 @@
     div#areas-and-beaches-guide .form-container .form-section p,
     div#phuket-future-guide .form-container .form-section p {
         font-size: 1.815vw;
+    }
+
+    div.form-result .form-container .form-section p {
+        margin-top: 1.302083vw;
     }
 
     div#personal-consultation .form-container .form-section p {

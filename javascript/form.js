@@ -83,7 +83,23 @@ document.addEventListener("click", function(event) {
         }
 
         if (isValid) {
-            alert("Форма успешно отправлена");
+            const parent = event.target.closest('#phuket-future-guide, #forms-of-ownerships-guide, #areas-and-beaches-guide');
+
+            let result;
+            if (parent) {
+                result = document.getElementById('guide-form-result');
+            } else {
+                result = document.getElementById('popup-form-result');
+            }
+
+            event.target.closest('.form, .faq-form').style.filter = 'blur(9px)';
+            document.querySelector('.loader-wrapper').style.opacity = '1';
+            setTimeout(() => {
+                event.target.closest('.form, .faq-form').style.display = 'none';
+                event.target.closest('.form, .faq-form').style.filter = '';
+                result.style.display = 'flex';
+                document.querySelector('.loader-wrapper').style.opacity = '0';
+            }, 500);
         }
     }
 });

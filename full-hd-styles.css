@@ -2370,7 +2370,7 @@
     }
     
     .column3 {
-        grid-column: 3; /* Второй элемент второй колонки */
+        grid-column: 3; /* Ð’Ñ‚Ð¾Ñ€Ð¾Ð¹ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚ Ð²Ñ‚Ð¾Ñ€Ð¾Ð¹ ÐºÐ¾Ð»Ð¾Ð½ÐºÐ¸ */
     }
     
     .wrapper1920 {
@@ -2388,7 +2388,7 @@
 
     /* FORMS  */
 
-    div#guide-form-result .form-container .form-section h2,
+    div.form-result .form-container .form-section h2,
     div#personal-consultation .form-container .form-section h2,
     div#choose-property .form-container .form-section h2,
     div.faq-form .form-container .form-section h2 {
@@ -2428,7 +2428,7 @@
         width: 100%;
     }
 
-    div#guide-form-result .form-container .form-section p,
+    div.form-result .form-container .form-section p,
     div#personal-consultation .form-container .form-section p,
     div#choose-property .form-container .form-section p,
     div.faq-form .form-container .form-section p {
@@ -2438,14 +2438,14 @@
         margin-bottom: 2.08vw;
     }
 
-    div#guide-form-result .form-container .form-section p,
+    div.form-result .form-container .form-section p,
     div.faq-form .form-container .form-section p {
         max-width: unset;
     }
 
-    div#guide-form-result .form-container .form-section p {
+    div.form-result .form-container .form-section p {
         margin: 0;
-        margin-top: 0.16vw;
+        margin-top: 0.78125vw;
     }
 
     div#personal-consultation .form-container .form-section p {
@@ -2481,7 +2481,7 @@
         margin-left: 0.78vw;
     }
 
-    div#guide-form-result .form-container .close-popup,
+    div.form-result .form-container .close-popup,
     div#forms-of-ownerships-guide .form-container .close-popup,
     div#areas-and-beaches-guide .form-container .close-popup,
     div#phuket-future-guide .form-container .close-popup,
@@ -2494,12 +2494,12 @@
         height: 2.08vw;
     }
 
-    div#guide-form-result .form-container .close-popup {
+    div.form-result .form-container .close-popup {
         top: 0.7813vw;
         right: 0.7813vw;
     }  
 
-    div#guide-form-result .form-container .close-popup svg,
+    div.form-result .form-container .close-popup svg,
     div#forms-of-ownerships-guide .form-container .close-popup svg,
     div#areas-and-beaches-guide .form-container .close-popup svg,
     div#phuket-future-guide .form-container .close-popup svg
@@ -2583,7 +2583,7 @@
         font-size: 1.04vw;
     }
     
-    div#guide-form-result .form-container {
+    div.form-result .form-container {
         width: 39.58vw;
         height: 19.83vw;
         position: relative;
@@ -2593,7 +2593,7 @@
         background-color: unset;
     }
     
-    div#guide-form-result .form-container .form-section {
+    div.form-result .form-container .form-section {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -2606,12 +2606,12 @@
         top: -1.67vw;
     }
     
-    div#guide-form-result .form-container .image-section {
+    div.form-result .form-container .image-section {
         width: 100%;
         height: 9.95vw;
     }
     
-    div#guide-form-result .form-container .image-section img {
+    div.form-result .form-container .image-section img {
         height: 100%;
         width: 100%;
     }

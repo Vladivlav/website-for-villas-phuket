@@ -2900,13 +2900,13 @@ line-height: 100%;
         margin-top: 0;
     }
 
-    div#guide-form-result .form-container {
+    div.form-result .form-container {
         width: 100%;
         margin: 0 2.78vw;
         height: 75.83vw;
     }
     
-    div#guide-form-result .form-container .form-section {
+    div.form-result .form-container .form-section {
         width: 100%;
         height: 42.5vw;
         border-radius: 5.56vw;
@@ -2915,20 +2915,21 @@ line-height: 100%;
         top: -5.56vw;
     }
     
-    div#guide-form-result .form-container .image-section {
+    div.form-result .form-container .image-section {
         width: 100%;
         height: 38.89vw;
     }
 
-    div#guide-form-result .form-container .form-section h2 {
-        font-size: 7.5vw;
+    div.form-result .form-container .form-section h2 {
+        font-size: 5.555vw;
     }
 
-    div#guide-form-result .form-container .form-section p {
+    div.form-result .form-container .form-section p {
         font-size: 3.89vw;
+        margin-top: 1.1111vw;
     }
 
-    div#guide-form-result .form-container .close-popup {
+    div.form-result .form-container .close-popup {
         width: 10.28vw;
         height: 10.28vw;
         border-radius: 6vw;
@@ -2936,7 +2937,7 @@ line-height: 100%;
         right: 2.78vw;
     }
 
-    div#guide-form-result .form-container .close-popup svg {
+    div.form-result .form-container .close-popup svg {
         width: 3.06vw;
         height: 3.06vw;
     }

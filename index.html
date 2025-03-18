@@ -1077,10 +1077,10 @@
                 <div class="award-card big">
                     <p>Мы постоянные<br /> участники и спикеры</p>
                     <picture>
-                        <source srcset="images/images/constant-speakers-1920.png" media="(min-width: 1920px)">
+                        <source srcset="images/constant-speakers-1920.png" media="(min-width: 1920px)">
                         <source srcset="images/constant-speakers.png" media="(min-width: 1200px) and (max-width: 1919px)">
                         <source srcset="images/constant-speakers-768.png" media="(min-width: 768px) and (max-width: 1199px)">
-                        <source srcset="images/images/constant-speakers-360.png" media="(max-width: 767px)">
+                        <source srcset="images/constant-speakers-360.png" media="(max-width: 767px)">
                         <img src="images/constant-speakers.png" alt="Choose property form image">
                     </picture>
                     <div class="conference-logos">
@@ -2026,7 +2026,30 @@
             </div>
         </div>
     </div>
-    <div class="form form-close" id="guide-form-result">
+    <div class="form form-close form-result" id="popup-form-result">
+        <div class="form-container">
+            <span class="close-popup">
+                <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M7 8V15H8V8H15V7H8V0H7V7H0V8H7Z" fill="#299948"/>
+                </svg>
+            </span>
+            <div class="image-section">
+                <picture>
+                    <source srcset="images/guide-form-result-form-1920.png" media="(min-width: 1920px)">
+                    <source srcset="images/guide-form-result-form-1200.png" media="(min-width: 1200px) and (max-width: 1919px)">
+                    <source srcset="images/guide-form-result-form-768.png" media="(min-width: 768px) and (max-width: 1199px)">
+                    <source srcset="images/guide-form-result-form-360.png" media="(max-width: 767px)">
+                    <img src="images/guide-form-result-form-360.png" alt="Choose property form image">
+                </picture>                
+            </div>
+            <div class="form-section">
+                <h2>Благодарим за доверие!</h2>
+                <p>Наш менеджер свяжется с вами <br/>в ближайшее время.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="form form-close form-result" id="guide-form-result">
         <div class="form-container">
             <span class="close-popup">
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2045,9 +2068,18 @@
             <div class="form-section">
                 <h2>Гайд уже у вас!</h2>
                 <p>Благодарим! Данные успешно отправлены.<br />Гайд уже отправлен на указанную вами почту.</p>
-                </div>
             </div>
         </div>
+    </div>
+
+    <div class="loader-wrapper">
+        <div class="profile-main-loader">
+          <div class="loader">
+            <svg class="circular-loader"viewBox="25 25 50 50" >
+              <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#FCBD21" stroke-width="2" />
+            </svg>
+          </div>
+        </div>  
     </div>
     <script src="javascript/script.js"></script>
     <script src="javascript/slider.js"></script>
