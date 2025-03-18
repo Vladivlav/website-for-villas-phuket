@@ -1,10 +1,10 @@
 // slider first page
-const slider = document.querySelector(".offers-content");
-const slides = Array.from(document.querySelectorAll(".offer"));
-const prevBtn = document.querySelector(".prev-btn");
-const nextBtn = document.querySelector(".next-btn");
+const slider        = document.querySelector(".offers-content");
+const slides        = Array.from(document.querySelectorAll(".offer"));
+const prevBtn       = document.querySelector(".prev-btn");
+const nextBtn       = document.querySelector(".next-btn");
 const currentNumber = document.querySelector(".current-number");
-const totalNumber = document.querySelector(".total-number");
+const totalNumber   = document.querySelector(".total-number");
 
 const offerWidthVw = parseFloat(window.getComputedStyle(slides[0]).width);
 const gapVw = parseFloat(window.getComputedStyle(slider).gap);

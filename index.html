@@ -2039,30 +2039,69 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
-    <script src="slider.js"></script>
-    <script src="form.js"></script>
-    <script src="header.js"></script>
-    <script src="faq.js"></script>
-    <script src="parallax.js"></script>
-    <script src="special-offer-slide.js"></script>
+    <script src="javascript/script.js"></script>
+    <script src="javascript/slider.js"></script>
+    <script src="javascript/form.js"></script>
+    <script src="javascript/header.js"></script>
+    <script src="javascript/faq.js"></script>
+    <script src="javascript/parallax.js"></script>
+    <script src="javascript/special-offer-slide.js"></script>
+    <script src="javascript/quizes.js"></script>
 
+    <script src="country_phone_masks.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/intlTelInput.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.1/css/intlTelInput.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/18.1.1/js/intlTelInput.min.js"></script>
+
+    <!-- libphonenumber-js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/libphonenumber-js/1.9.48/libphonenumber-js.min.js"></script>
+
     <script>
         document.querySelectorAll("#phone").forEach(input => {
-            window.intlTelInput(input, {
-                loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/utils.js"),
+            const iti = window.intlTelInput(input, {
+                initialCountry: "ru",
+                loadUtils: "https://cdn.jsdelivr.net/npm/intl-tel-input@25.3.0/build/js/utils.js",
             });
 
-            const observer = new MutationObserver(() => {
-                if (input.offsetParent !== null) { // Проверяем, стал ли он видимым
-                    input.dispatchEvent(new Event("focus")); // Принудительно триггерим обновление
-                }
-            });
+            input.addEventListener("countrychange", () => applyMask(input, iti));
+            input.addEventListener("input", () => validatePhone(input, iti));
 
-            observer.observe(input, { attributes: true, attributeFilter: ["style", "class"] });
+            setTimeout(() => applyMask(input, iti), 100);
         });
+
+        function applyMask(input, iti) {
+            const countryData = iti.getSelectedCountryData();
+            const countryCode = countryData.iso2.toUpperCase();
+
+            // Берём маску из загруженного JSON
+            console.log(window.countryMasks);
+            const mask = window.countryMasks?.[countryCode] || "XXXXXXXXXX";
+            input.setAttribute("placeholder", mask);
+        }
+
+        async function validatePhone(input, iti) {
+            const countryData = iti.getSelectedCountryData();
+            const countryCode = countryData.iso2.toUpperCase();
+            const phoneNumber = input.value.trim();
+
+            try {
+                const { parsePhoneNumber } = 
+                    await import("https://unpkg.com/libphonenumber-js@1.9.48/max/index.js");
+
+                const parsedNumber = parsePhoneNumber(phoneNumber, countryCode);
+                if (parsedNumber && parsedNumber.isValid()) {
+                    input.classList.remove("error");
+                    input.classList.add("valid");
+                } else {
+                    input.classList.remove("valid");
+                    input.classList.add("error");
+                }
+            } catch (e) {
+                input.classList.remove("valid");
+                input.classList.add("error");
+            }
+        }
+
     </script>
 </body>
 </html>
