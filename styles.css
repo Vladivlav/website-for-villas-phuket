@@ -996,6 +996,9 @@ section#main-page > header.dark .main-nav a {
 .language-selector img {
     height: 1.75vw;
     width: 1.75vw;
+    border: 1px solid #959595;
+    border-radius: 50%;
+    box-sizing: border-box;
 }
 
 .lang-option img {
@@ -3026,6 +3029,8 @@ section#additional-company-info div.country-card div.header div.agent-flags img 
     width: 1.42vw;
     height: 1.42vw;
     border-radius: 50%;
+    border: 1px solid #959595;
+    box-sizing: border-box;
 }
 
 section#additional-company-info div.country-card div.header > h4 {

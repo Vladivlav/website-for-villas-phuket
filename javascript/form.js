@@ -11,7 +11,6 @@ document.addEventListener("click", function(event) {
             const errorDiv = input.closest(".input-group").querySelector(".error-message"); // Ошибка сразу под инпутом
 
             if (message) {
-                console.log(errorDiv);
                 input.classList.remove("empty", "invalid");
                 errorDiv.classList.remove("empty", "invalid");
 
@@ -33,16 +32,17 @@ document.addEventListener("click", function(event) {
         }
 
         const nameInput = formContainer.querySelector("input[placeholder='Ваши Имя и Фамилия']");
-        const phoneInput = formContainer.querySelector("input[placeholder='Ваш номер телефона']");
+        const phoneInput = formContainer.querySelector("input#phone");
         const emailInput = formContainer.querySelector("input[placeholder='Ваш e-mail']");
+        const messengerInput = formContainer.querySelector(".form-select span.text");
 
         const name = nameInput?.value.trim();
         const phone = phoneInput?.value.trim();
         const email = emailInput?.value.trim();
+        const messenger = messengerInput?.textContent.trim();
 
         // Проверка имени
         if (nameInput) {
-            console.log("check name");
             if (name === "") {
                 showError(nameInput, "Поле обязательное для заполнения", "empty");
             } else if (!/^[А-ЯЁа-яёA-Za-z\s-]+$/.test(name)) {
@@ -52,9 +52,16 @@ document.addEventListener("click", function(event) {
             }
         }
 
+        if (messengerInput) {
+            if (messenger === "Как удобнее связаться?") {
+                showError(messengerInput, "Поле обязательное для заполнения", "empty");
+            } else {
+                showError(messengerInput, "", "");
+            }
+        }
+
         // Проверка телефона
         if (phoneInput) {
-            console.log("check phone");
             if (phone === "") {
                 showError(phoneInput, "Поле обязательное для заполнения", "empty");
             } else if (!/^\+\d{1,3}[\s\d-]{7,15}$/.test(phone)) {

@@ -334,9 +334,16 @@ document.querySelector('.forms-of-ownerships-guide-form-link').addEventListener(
   document.getElementById('forms-of-ownerships-guide').style.display = 'flex';
 });
 
-document.querySelector('.offer-button').addEventListener('click', function() {
+document.addEventListener('click', function(event) {
+  const buttons = Array.from(document.querySelectorAll('.offer-button'));
+  const clickedButton = event.target.closest('.offer-button'); // Определяем, кликнули ли по кнопке
+
+  event.preventDefault();
+  if (!clickedButton || clickedButton !== buttons[0]) return; // Если не первая, выходим
+
   document.getElementById('special-offer-form').style.display = 'flex';
 });
+
 
 document.querySelectorAll('.form-close').forEach(button => {
   button.addEventListener('click', function(event) {

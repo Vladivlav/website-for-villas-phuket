@@ -95,33 +95,33 @@ prevBtn.addEventListener("click", () => {
 updateCounter();
 
 function disableScroll() {
-    document.body.style.overflow = 'hidden';
+  document.body.style.overflow = 'hidden';
+}
+
+function enableScroll(delay = 1000) {
+  setTimeout(() => {
+    document.body.style.overflow = '';
+  }, delay);
+}
+
+function showPreviousFact() {
+  const current = document.querySelector('.fact-container.current');
+  const previous = current?.previousElementSibling?.classList.contains('fact-container') ? current.previousElementSibling : null;
+  const lastFact = document.querySelector('.last-fact-container');
+
+  if (previous) {
+    current?.classList.remove('current');
+    previous?.classList.add('current');
   }
-  
-  function enableScroll(delay = 1000) {
-    setTimeout(() => {
-      document.body.style.overflow = '';
-    }, delay);
+
+  if (lastTransition && current?.classList.contains('fact-container') && !current.nextElementSibling) {
+    lastTransition = false;
+    disableScroll();
+    enableScroll(1000);
   }
-  
-  function showPreviousFact() {
-    const current = document.querySelector('.fact-container.current');
-    const previous = current?.previousElementSibling?.classList.contains('fact-container') ? current.previousElementSibling : null;
-    const lastFact = document.querySelector('.last-fact-container');
-  
-    if (previous) {
-      current?.classList.remove('current');
-      previous?.classList.add('current');
-    }
-  
-    if (lastTransition && current?.classList.contains('fact-container') && !current.nextElementSibling) {
-      lastTransition = false;
-      disableScroll();
-      enableScroll(1000);
-    }
-  
-    lastFact.style.opacity = 0;
-  }
+
+  lastFact.style.opacity = 0;
+}
 
 document.addEventListener("DOMContentLoaded", () => {
   const selector = document.querySelector(".language-selector");
