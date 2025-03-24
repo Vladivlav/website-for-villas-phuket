@@ -1264,8 +1264,7 @@
         line-height: unset;
     }
     
-    #get-properties .form-input,
-    #get-properties .form-select {
+    #get-properties .form-input {
         width: 100%;
         height: 8.89vw;
         font-family: 'Commissioner';
@@ -1275,6 +1274,14 @@
         font-size: 3.61vw;
         border-radius: 8.89vw;
         padding: 0 5.56vw;
+    }
+
+    .form-select {
+        padding: 0;
+    }
+
+    .form-select span.selected-option {
+        padding: 0 5.56vw !important;
     }
     
     #get-properties .form-select span svg {
@@ -1338,6 +1345,12 @@
     
     #check-objects .form-select > span {
         padding: 0 5.56vw;
+    }
+
+    .form-select.open div.feddback-options-list {
+        height: 27vw;
+        border-radius: 4.46vw;
+        padding-top: 8.89vw;
     }
     
     #check-objects .form-button,
@@ -1623,19 +1636,22 @@
         padding: 0 5.56vw;
     }
     
-    #prices-and-benefits .form-select span:first-of-type {
-        padding: 0 5.56vw;
-    }
-        #prices-and-benefits .form-select span.selected {
-    color: #393939;
+    #prices-and-benefits .form-select span.selected {
+        color: #393939;
     }
     
+    #check-objects .form-select div.feddback-options-list,
     #prices-and-benefits .form-select div.feddback-options-list {
         border-radius: 4.44vw;
         border: 1px solid #4caf50;
         height: 37.5vw;
         padding-top: 8.89vw;
-    
+        visibility: hidden;
+    }
+
+    #check-objects .form-select.open div.feddback-options-list,
+    #prices-and-benefits .form-select.open div.feddback-options-list {
+        visibility: unset;
     }
     
     .btn-ask,
@@ -2103,7 +2119,7 @@ line-height: 100%;
         position: unset;
         left: 0;
         padding: 0 8.33vw;
-    
+        z-index: 200;
     }
     
     section#tenth-section div.content .block-link {
@@ -2847,6 +2863,14 @@ line-height: 100%;
     div.faq-form .form-container .form-section .form-inputs .input-group input {
         height: 8.89vw;
         width: 100% !important;!i;!;
+    }
+
+    .form-container .form-section .form-inputs .form-select {
+        padding: 0;
+    }
+
+    .form-container .form-section .form-inputs .form-select span.selected-option {
+        padding: 0 5.56vw;
     }
 
     div#forms-of-ownerships-guide .form-container .form-section .form-inputs,

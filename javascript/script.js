@@ -13,29 +13,29 @@ document.querySelectorAll('.quiz-result .close-popup').forEach(button => {
   });
 });
 
-document.querySelectorAll('#prices-and-benefits .form-button').forEach(button => {
-  button.addEventListener('click', function() {
-    if (button.classList.contains('active')) {
-      const backToBlur = document.querySelector('#prices-and-benefits .header-section');
-      const result     = document.querySelector('#prices-and-benefits .quiz-result');
+// document.querySelectorAll('#prices-and-benefits .form-button').forEach(button => {
+//   button.addEventListener('click', function() {
+//     if (button.classList.contains('active')) {
+//       const backToBlur = document.querySelector('#prices-and-benefits .header-section');
+//       const result     = document.querySelector('#prices-and-benefits .quiz-result');
 
-      result.classList.remove('hidden');
-      backToBlur.classList.add('blur');
-    }
-  });
-});
+//       result.classList.remove('hidden');
+//       backToBlur.classList.add('blur');
+//     }
+//   });
+// });
 
-document.querySelectorAll('#check-objects .form-button').forEach(button => {
-  button.addEventListener('click', function() {
-    // Проверяем, что у кнопки есть класс 'active'
-    if (button.classList.contains('active')) {
-      const container = document.querySelector('#check-objects');
-      const guideResult = document.querySelector('#guide-form-result');
-      const backToBlur = container.querySelector('.header-section');
-      const result = container.querySelector('.quiz-result');
+// document.querySelectorAll('#check-objects .form-button').forEach(button => {
+//   button.addEventListener('click', function() {
+//     // Проверяем, что у кнопки есть класс 'active'
+//     if (button.classList.contains('active')) {
+//       const container = document.querySelector('#check-objects');
+//       const guideResult = document.querySelector('#guide-form-result');
+//       const backToBlur = container.querySelector('.header-section');
+//       const result = container.querySelector('.quiz-result');
 
-      result.classList.remove('hidden');
-      backToBlur.classList.add('blur');
+//       result.classList.remove('hidden');
+//       backToBlur.classList.add('blur');
 
       // // Новый код для отправки данных
       // const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
@@ -74,26 +74,26 @@ document.querySelectorAll('#check-objects .form-button').forEach(button => {
       //     console.error('Ошибка:', error);
       //     alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
       //   });
-    } else {
-      // Если у кнопки нет класса 'active'
-      alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
-    }
-  });
-});
+//     } else {
+//       // Если у кнопки нет класса 'active'
+//       alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
+//     }
+//   });
+// });
 
-document.querySelectorAll('#areas-and-beaches-guide .form-button').forEach(button => {
-  button.addEventListener('click', function() {
-    // Проверяем, что у кнопки есть класс 'active'
-    if (button.classList.contains('active')) {
-      const container = document.querySelector('#areas-and-beaches-guide');
-      const guideResult = document.querySelector('#guide-form-result');
-      const backToBlur = container.querySelector('.header-section');
-      const result = container.querySelector('.quiz-result');
+// document.querySelectorAll('#areas-and-beaches-guide .form-button').forEach(button => {
+//   button.addEventListener('click', function() {
+//     // Проверяем, что у кнопки есть класс 'active'
+//     if (button.classList.contains('active')) {
+//       const container = document.querySelector('#areas-and-beaches-guide');
+//       const guideResult = document.querySelector('#guide-form-result');
+//       const backToBlur = container.querySelector('.header-section');
+//       const result = container.querySelector('.quiz-result');
 
-      result.classList.remove('hidden');
-      backToBlur.classList.add('blur');
+//       result.classList.remove('hidden');
+//       backToBlur.classList.add('blur');
 
-      // // Новый код для отправки данных
+//       // // Новый код для отправки данных
       // const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
       // const phone = container.querySelector('input[placeholder="Ваш номер телефона"]').value;
       // const email = container.querySelector('input[placeholder="Ваш e-mail"]').value;
@@ -130,24 +130,24 @@ document.querySelectorAll('#areas-and-beaches-guide .form-button').forEach(butto
       //     console.error('Ошибка:', error);
       //     alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
       //   });
-    } else {
-      // Если у кнопки нет класса 'active'
-      alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
-    }
-  });
-});
+//     } else {
+//       // Если у кнопки нет класса 'active'
+//       alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
+//     }
+//   });
+// });
 
-document.querySelectorAll('#forms-of-ownerships-guide .form-button').forEach(button => {
-  button.addEventListener('click', function() {
-    // Проверяем, что у кнопки есть класс 'active'
-    if (button.classList.contains('active')) {
-      const container = document.querySelector('#forms-of-ownerships-guide');
-      const guideResult = document.querySelector('#guide-form-result');
-      const backToBlur = container.querySelector('.header-section');
-      const result = container.querySelector('.quiz-result');
+// document.querySelectorAll('#forms-of-ownerships-guide .form-button').forEach(button => {
+//   button.addEventListener('click', function() {
+//     // Проверяем, что у кнопки есть класс 'active'
+//     if (button.classList.contains('active')) {
+//       const container = document.querySelector('#forms-of-ownerships-guide');
+//       const guideResult = document.querySelector('#guide-form-result');
+//       const backToBlur = container.querySelector('.header-section');
+//       const result = container.querySelector('.quiz-result');
 
-      result.classList.remove('hidden');
-      backToBlur.classList.add('blur');
+//       result.classList.remove('hidden');
+//       backToBlur.classList.add('blur');
 
       // // Новый код для отправки данных
       // const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
@@ -186,24 +186,24 @@ document.querySelectorAll('#forms-of-ownerships-guide .form-button').forEach(but
       //     console.error('Ошибка:', error);
       //     alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
       //   });
-    } else {
-      // Если у кнопки нет класса 'active'
-      alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
-    }
-  });
-});
+//     } else {
+//       // Если у кнопки нет класса 'active'
+//       alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
+//     }
+//   });
+// });
 
-document.querySelectorAll('#phuket-future-guide .form-button').forEach(button => {
-  button.addEventListener('click', function() {
-    // Проверяем, что у кнопки есть класс 'active'
-    if (button.classList.contains('active')) {
-      const container = document.querySelector('#phuket-future-guide');
-      const guideResult = document.querySelector('#guide-form-result');
-      const backToBlur = container.querySelector('.header-section');
-      const result = container.querySelector('.quiz-result');
+// document.querySelectorAll('#phuket-future-guide .form-button').forEach(button => {
+//   button.addEventListener('click', function() {
+//     // Проверяем, что у кнопки есть класс 'active'
+//     if (button.classList.contains('active')) {
+//       const container = document.querySelector('#phuket-future-guide');
+//       const guideResult = document.querySelector('#guide-form-result');
+//       const backToBlur = container.querySelector('.header-section');
+//       const result = container.querySelector('.quiz-result');
 
-      result.classList.remove('hidden');
-      backToBlur.classList.add('blur');
+//       result.classList.remove('hidden');
+//       backToBlur.classList.add('blur');
 
       // // Новый код для отправки данных
       // const name = container.querySelector('input[placeholder="Ваши Имя и Фамилия"]').value;
@@ -242,41 +242,44 @@ document.querySelectorAll('#phuket-future-guide .form-button').forEach(button =>
       //     console.error('Ошибка:', error);
       //     alert('Не удалось отправить запрос. Проверьте подключение к интернету.');
       //   });
-    } else {
-      // Если у кнопки нет класса 'active'
-      alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
-    }
-  });
-});
+//     } else {
+//       // Если у кнопки нет класса 'active'
+//       alert('Пожалуйста, завершите все шаги квиза перед отправкой.');
+//     }
+//   });
+// });
 
 document.querySelectorAll('.non-popup-form .form-select > span').forEach(span => {
   span.addEventListener('click', function() {
-    const parentForm = this.closest('.non-popup-form');
-    if (!parentForm) return;
+    const selector = this.closest('.form-select');
+    if (!selector) return;
 
-    const optionList = parentForm.querySelector('.form-select .feddback-options-list');
-
-    if (optionList) {
-      optionList.style.display = '';
-      this.style.display = 'none';
-    }
+    selector.classList.toggle("open");
   });
 });
 
-document.querySelectorAll('.non-popup-form .form-select .feddback-options-list > span.option').forEach(option => {
+document.querySelectorAll('.form .form-select > span, .faq-form .form-select > span').forEach(span => {
+  span.addEventListener('click', function() {
+    const selector = this.closest('.form-select');
+    if (!selector) return;
+
+    selector.classList.toggle("open");
+  });
+});
+
+document.querySelectorAll('.form-select .feddback-options-list > span.option').forEach(option => {
   option.addEventListener('click', function() {
-    const parentForm = this.closest('.non-popup-form');
-    if (!parentForm) return;
+    const selector   = this.closest('.form-select');
+    if (!selector) return;
 
     const optionText = this.textContent;
-    const optionList = parentForm.querySelector('.form-select .feddback-options-list');
-    const optionInput = parentForm.querySelector('.form-select > span > span');
+    const optionList = selector.querySelector('.feddback-options-list');
+    const optionInput = selector.querySelector('span > span');
 
     if (optionList && optionInput) {
-      optionList.style.display = 'none';
+      selector.classList.toggle("open");
       optionInput.textContent = optionText;
       optionInput.classList.add('selected');
-      parentForm.querySelector('.form-select > span').style.display = 'flex';
     }
   });
 });

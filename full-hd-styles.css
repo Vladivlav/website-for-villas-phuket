@@ -1681,16 +1681,25 @@
         line-height: 100%;
         padding: 0 1.3vw;
     }
+
+    .form-select div.feddback-options-list span {
+        padding: 0 1.3vw;
+    }
     
     .form-select {
         border: 0.0vw;
     }
-    
+
+    #investments-base .form-button,
+    #check-objects .form-button,
+    #prices-and-benefits .form-button {
+        min-width: 13.802083333333334vw;
+    }
     #investments-base .form-select > span,
     #check-objects .form-select > span,
     #prices-and-benefits .form-select > span {
         width: 100%;
-        height: 2.08vw;
+        height: 2.08vw !important;
         line-height: 2.08vw;
         padding: 0;
         padding-left: 1.56vw;
@@ -1702,18 +1711,20 @@
         z-index: 8;
         font-size: 0.94vw;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 0 !important;!i;!;
+        left: 0 !important;!i;!;
         width: 100%;
         color: white;
         font-weight: 300;
+        z-index: 10;
+        min-width: 100%;
     }
     
     #prices-and-benefits .form-select > span {
         border: 1px solid #4caf50;
         color: #393939;
         font-weight: 300;
-    
+        z-index: 10;
     }
     
     #investments-base .form-select > span svg,
@@ -1730,7 +1741,7 @@
         height: 2.08vw;
         border-width: 0;
         padding: 0;
-    
+        position: relative;
     }
     
     #investments-base .form-actions,
@@ -1806,11 +1817,17 @@
         justify-content: space-between;
         font-size: 0.94vw;
         font-weight: 300;
-    
     }
+
+    #check-objects .form-select.open div.feddback-options-list,
+    #prices-and-benefits .form-select.open div.feddback-options-list,
+    #investments-base .form-select.open div.feddback-options-list {
+        height: 8.59vw;
+    }
+
     
     #investments-base .form-select div.feddback-options-list, #check-objects .form-select div.feddback-options-list,       #prices-and-benefits .form-select div.feddback-options-list {
-        height: 8.59vw;
+        height: 0vw;
         box-sizing: border-box;
         top: -0.05vw;
         left: 0;
@@ -1824,7 +1841,6 @@
         left: 0.0vw;
         width: 100%;
         box-sizing: border-box;
-    
     }
     
     #investments-base .form-select div.feddback-options-list > span svg, #check-objects .form-select div.feddback-          options-list > span svg, #prices-and-benefits .form-select div.feddback-options-list > span svg {
@@ -2468,6 +2484,14 @@
         padding: 0 1.3vw;
     }
 
+    div.form-select {
+        padding: 0;
+    }
+
+    div.form-select > span {
+        padding: 0 1.3vw;
+    }
+
     div#personal-consultation .form-container .form-section .form-inputs .form-select,
     div#personal-consultation .form-container .form-section .form-inputs .input-group input {
         height: 2.08vw;
@@ -2683,5 +2707,12 @@
     #check-objects .form-agreement > div,
     #prices-and-benefits .form-agreement > div {
         left: 0;
+    }
+
+    .form-select .error-message {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        min-width: unset;
     }
 }

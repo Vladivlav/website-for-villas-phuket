@@ -997,6 +997,17 @@
         line-height: 4.1667vw;
     }
 
+    #investments-base .form-select div.feddback-options-list span,
+    #check-objects .form-select div.feddback-options-list span,
+    #prices-and-benefits .form-select div.feddback-options-list span,
+    .form-select div.feddback-options-list span {
+        height: 4.1667vw;
+        align-items: center;
+        display: flex;
+        font-size: 1.6927vw;
+        padding: 0 2.6042vw;
+    }
+
     #investments-base .form-select > span, #check-objects .form-select > span, #prices-and-benefits .form-select > span {
         height: 4.1667vw;
         line-height: 4.1667vw;
@@ -1008,8 +1019,24 @@
         box-sizing: border-box;
     }
 
-    #investments-base .form-select > span {
-        box-sizing: border-box;
+    #check-objects .form-select.open div.feddback-options-list,
+    #prices-and-benefits .form-select.open div.feddback-options-list,
+    #investments-base .form-select.open div.feddback-options-list,
+    .form-select.open div.feddback-options-list {
+        height: 12.5vw;
+        padding-top: 4.1667vw;
+        border-radius: 2.08vw;
+        box-sizing: unset;
+    }
+
+    #check-objects .form-select div.feddback-options-list, #prices-and-benefits .form-select div.feddback-options-list, #investments-base .form-select div.feddback-options-list {height: 12.5vw;padding-top: 4.1667vw;}
+
+    #check-objects .form-select span.selected-option,
+    #prices-and-benefits .form-select span.selected-option,
+    #investments-base .form-select span.selected-option,
+    .form-select span.selected-option {
+        height: 4.1667vw;
+        width: 100%;
     }
 
     .form-button {

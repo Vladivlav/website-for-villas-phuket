@@ -1712,12 +1712,14 @@ section#best-points .grid .grid-item.img {
     cursor: unset !important;
     position: relative;
     padding: 0;
-
+    box-sizing: border-box;
+    border: 0;
 }
 
 #investments-base .form-select div.feddback-options-list,
 #check-objects .form-select div.feddback-options-list,
-#prices-and-benefits .form-select div.feddback-options-list
+#prices-and-benefits .form-select div.feddback-options-list,
+.form-select div.feddback-options-list
 {
     position: absolute;
     top: -1px;
@@ -1729,7 +1731,33 @@ section#best-points .grid .grid-item.img {
     background-color: #393939;
     z-index: 9;
     padding-top: 2.17vw;
+}
 
+#faq-form .form-select div.feddback-options-list
+{
+    background-color: #393939;
+    border: 1px solid #FCBD21;
+}
+
+#faq-form .form-select div.feddback-options-list span
+{
+    color: white;
+}
+
+.form-select div.feddback-options-list
+{
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    height: 6.9vw;
+    width: 100%;
+    border-radius: 1.08vw;
+    z-index: 9;
+    padding-top: 2.17vw;
+    background-color: #fffffff3;
+    border-color: #299948;
+    display: flex;
+    flex-direction: column;
 }
 
 #prices-and-benefits .form-select div.feddback-options-list {
@@ -1741,7 +1769,19 @@ section#best-points .grid .grid-item.img {
     right: 0;
     box-sizing: border-box;
     height: 9.07vw;
+}
 
+.form-select div.feddback-options-list {
+    height: 0vw;
+    overflow: hidden;
+    box-sizing: content-box;
+    opacity: 0;
+}
+
+.form-select.open div.feddback-options-list {
+    height: 7.256vw;
+    transition: 0.4s ease-in-out;
+    opacity: 1;
 }
 
 #investments-base .form-select div.feddback-options-list > span svg,
@@ -1756,7 +1796,8 @@ section#best-points .grid .grid-item.img {
 
 #investments-base .form-select div.feddback-options-list span,
 #check-objects .form-select div.feddback-options-list span,
-#prices-and-benefits .form-select div.feddback-options-list span
+#prices-and-benefits .form-select div.feddback-options-list span,
+.form-select div.feddback-options-list span
 {
     display: block;
     height: 2.17vw;
@@ -1765,31 +1806,33 @@ section#best-points .grid .grid-item.img {
     color: white;
     cursor: pointer;
 }
-#check-objects .form-select div.feddback-options-list span:first-of-type,
-#prices-and-benefits .form-select div.feddback-options-list span:first-of-type,
-#investments-base .form-select div.feddback-options-list span:first-of-type {
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    right: -1px;
+.form-select div.feddback-options-list span {
+   color:  rgba(57, 57, 57, 0.5);
+   padding: 0 1.67vw;
+}
+
+.form-select span.selected-option {
     border-radius: 50vw;
     border: 1px solid #FCBD21;
     box-sizing: border-box;
     justify-content: space-between;
     align-items: center;
     display: flex;
+    cursor: pointer;
+    position: relative;
+    top: -1px;
+    width: calc(100% + 2px);
+    left: -1px;
+    height: calc(2.17vw + 2px);
 }
 
-#prices-and-benefits .form-select div.feddback-options-list span:first-of-type {
+#prices-and-benefits .form-select span.selected-option {
+    left: 0;
+}
+
+#prices-and-benefits .form-select span.selected-option {
     border-color: #299948;
     box-sizing: border-box;
-}
-
-#prices-and-benefits .form-select div.feddback-options-list > span:first-of-type {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
 #investments-base .form-select div.feddback-options-list span.active:hover,
@@ -1824,6 +1867,7 @@ section#best-points .grid .grid-item.img {
     z-index: 10;
     justify-content: space-between;
     padding-right: 1.25vw;
+    position: relative;
 }
 
 #prices-and-benefits .form-select > span {
@@ -1836,9 +1880,18 @@ section#best-points .grid .grid-item.img {
 {
     height: 2.17vw;
     line-height: 2.17vw;
-    padding-right: 0.83vw;
     transform: rotate(180deg);
+    transition: 0.2s ease-in-out;
+}
 
+#prices-and-benefits .form-select > span svg {
+    stroke: #299948;
+}
+
+#investments-base .form-select.open > span svg,
+#check-objects .form-select.open > span svg,
+#prices-and-benefits .form-select.open > span svg {
+    transform: rotate(0deg);
 }
 
 #prices-and-benefits .form-input {
@@ -4651,6 +4704,8 @@ div#phuket-future-guide .form-container .form-section .form-inputs .form-select 
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 20;
+    position: relative;
 }
 
 div#personal-consultation .form-container .form-section .form-inputs .form-select > span svg,
@@ -4855,6 +4910,7 @@ html,body{
     transform: translate(-25px, -25px);
     opacity: 0;
     z-index: 2000000;
+    visibility: hidden;;
 }
 
 .profile-main-loader{
@@ -4894,6 +4950,15 @@ html,body{
   -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
           animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
   stroke-linecap: round;
+}
+
+.form span.selected-option, .faq-form span.selected-option {
+    border: unset;
+}
+
+.form-inputs .form-select.input-group {
+    position: relative;
+    z-index: 20;
 }
 
 @-webkit-keyframes rotate {

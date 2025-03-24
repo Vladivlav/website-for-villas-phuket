@@ -92,13 +92,18 @@ document.addEventListener("click", function(event) {
                 result = document.getElementById('popup-form-result');
             }
 
-            event.target.closest('.form, .faq-form').style.filter = 'blur(9px)';
+            const mainSection = event.target.closest('.form, .faq-form, #investments-base, #check-objects, #prices-and-benefits');
+            mainSection.style.filter = 'blur(9px)';
             document.querySelector('.loader-wrapper').style.opacity = '1';
+            document.querySelector('.loader-wrapper').style.visibility = 'unset';
             setTimeout(() => {
-                event.target.closest('.form, .faq-form').style.display = 'none';
-                event.target.closest('.form, .faq-form').style.filter = '';
+                if (mainSection.classList.contains('faq-form, .form')) {
+                    event.target.closest('.form, .faq-form').style.display = 'none';
+                }
+                mainSection.style.filter = '';
                 result.style.display = 'flex';
                 document.querySelector('.loader-wrapper').style.opacity = '0';
+                document.querySelector('.loader-wrapper').style.visibility = 'hidden';
             }, 500);
         }
     }

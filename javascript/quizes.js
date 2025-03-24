@@ -22,7 +22,6 @@ function updateProgress(index, totalSteps, formId) {
 
   const progress = form.querySelector('.quiz-progress span');
   const progressBar = form.querySelector('.progress');
-  console.log(progressBar);
 
   const stepPercentage = index / (totalSteps - 1) * 100;
   progressBar.style.width = `${stepPercentage}%`;
