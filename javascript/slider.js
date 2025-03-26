@@ -4,11 +4,11 @@ let isScrolling = false;
 const totalSlides = document.querySelectorAll('.fact-container').length;
 
 function lockScroll() {
-    document.body.style.overflow = "hidden";
+  document.body.style.overflow = "hidden";
 }
 
 function unlockScroll() {
-    document.body.style.overflow = "";  
+  document.body.style.overflow = "";  
 }
 
 function showNextFact(event) {
@@ -41,6 +41,7 @@ function handleScroll(event) {
     if (isScrolling) return;
     
     if (factIndex < totalSlides - 1 && event.deltaY > 0) {
+      console.log("I am here");
       isScrolling = true;
       showNextFact();
       factIndex++;
@@ -65,5 +66,23 @@ function handleScroll(event) {
     event.preventDefault(); // Блокируем скролл, пока листаем слайды
   }
 
+factsSlider.addEventListener('scroll', handleScroll, { passive: false });
 factsSlider.addEventListener('wheel', handleScroll, { passive: false });
+factsSlider.addEventListener('touchmove', handleScroll, { passive: false });
 
+function handleAllScroll(event) {
+  const element = document.getElementById('attractive-direction');
+  const rect = element.getBoundingClientRect();
+  console.log(rect.top);
+  if (rect.top <= 0 && event.deltaY > 0 && factIndex < totalSlides - 1) {
+    event.preventDefault();
+    window.scrollBy(0, rect.top);
+  } else if (rect.top > 0 && event.deltaY < 0 && factIndex == totalSlides - 1) {
+    event.preventDefault();
+    window.scrollBy(0, rect.top);
+  }
+}
+
+window.addEventListener('scroll', handleAllScroll, { passive: false });
+window.addEventListener('wheel', handleAllScroll, { passive: false });
+window.addEventListener('touchmove', handleAllScroll, { passive: false });

@@ -7,7 +7,7 @@ body, html {
 }
 
 .sticky-container{
-    position:sticky;
+    position: sticky;
     top: 0;
     height: 29.5833vw;
     width: 100%;
